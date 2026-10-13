@@ -1,0 +1,932 @@
+[
+  {
+    "section": "cover",
+    "role": "cover",
+    "file": "images/art/couverture.jpg",
+    "alt": "Un vieillard assis près d'une fenêtre, à côté d'un escalier en colimaçon plongé dans l'ombre",
+    "caption": "Rembrandt, Philosophe en méditation (1632, Paris, musée du Louvre).",
+    "credit": "Rembrandt, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Philosopher_in_Meditation.jpg"
+  },
+  {
+    "section": "epicure-et-lucrece",
+    "role": "portrait",
+    "file": "images/auteurs/epicure.jpg",
+    "alt": "Portrait de Épicure",
+    "caption": "Épicure, portrait en marbre, copie romaine d'un original grec (Rome, Museo Nazionale Romano, Palazzo Massimo).",
+    "credit": "Sculpteur inconnu, photo Marie-Lan Nguyen, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Epicurus_Massimo_Inv197306.jpg"
+  },
+  {
+    "section": "epicure-et-lucrece",
+    "role": "portrait",
+    "file": "images/auteurs/lucrece.png",
+    "alt": "Portrait de Lucrèce",
+    "caption": "Lucrèce : aucun portrait authentique n'est connu, cette effigie est conventionnelle.",
+    "credit": "Auteur inconnu, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lucretius1.png"
+  },
+  {
+    "section": "maitre-eckhart",
+    "role": "portrait",
+    "file": "images/auteurs/eckhart.jpg",
+    "alt": "Portrait de Maître Eckhart",
+    "caption": "Figure traditionnellement identifiée comme Maître Eckhart, détail de la fresque d'Andrea di Bonaiuto, chapelle des Espagnols, Santa Maria Novella, Florence (v. 1365-1367) ; aucun portrait authentique n'existe.",
+    "credit": "Andrea di Bonaiuto, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Meister_Eckhart_base_copie.jpg"
+  },
+  {
+    "section": "pascal",
+    "role": "portrait",
+    "file": "images/auteurs/pascal.jpg",
+    "alt": "Portrait de Blaise Pascal",
+    "caption": "Blaise Pascal, gravure de Gérard Edelinck.",
+    "credit": "Gérard Edelinck, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:FR-631136102_GRA_6025_Portrait_de_Blaise_Pascal_par_Edelinck_(cropped).jpg"
+  },
+  {
+    "section": "spinoza",
+    "role": "portrait",
+    "file": "images/auteurs/spinoza.jpg",
+    "alt": "Portrait de Baruch Spinoza",
+    "caption": "Baruch Spinoza",
+    "credit": "Anonyme, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Spinoza.jpg"
+  },
+  {
+    "section": "bayle",
+    "role": "portrait",
+    "file": "images/auteurs/bayle.jpg",
+    "alt": "Portrait de Pierre Bayle",
+    "caption": "Pierre Bayle",
+    "credit": "Attribué à Louis Ferdinand Elle le Jeune, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pierre_Bayle_by_Louis_Ferdinand_Elle.jpg"
+  },
+  {
+    "section": "hume",
+    "role": "portrait",
+    "file": "images/auteurs/hume.jpg",
+    "alt": "Portrait de David Hume",
+    "caption": "David Hume, portrait par Allan Ramsay.",
+    "credit": "Allan Ramsay, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:David_Hume_Ramsay.jpg"
+  },
+  {
+    "section": "voltaire",
+    "role": "portrait",
+    "file": "images/auteurs/voltaire.jpg",
+    "alt": "Portrait de Voltaire",
+    "caption": "Voltaire, portrait par Nicolas de Largillière (Paris, musée Carnavalet).",
+    "credit": "Nicolas de Largillière, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_(1694-1778)_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_(cropped).jpg"
+  },
+  {
+    "section": "d-holbach",
+    "role": "portrait",
+    "file": "images/auteurs/holbach.jpg",
+    "alt": "Portrait de le baron d'Holbach",
+    "caption": "Paul Henri Thiry d'Holbach, portrait par Alexander Roslin.",
+    "credit": "Alexander Roslin, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Paul_Heinrich_Dietrich_Baron_d%27Holbach_Roslin.jpg"
+  },
+  {
+    "section": "kant",
+    "role": "portrait",
+    "file": "images/auteurs/kant.jpg",
+    "alt": "Portrait de Immanuel Kant",
+    "caption": "Immanuel Kant",
+    "credit": "Becker, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_2.jpg"
+  },
+  {
+    "section": "friedrich-schleiermacher",
+    "role": "portrait",
+    "file": "images/auteurs/schleiermacher.jpg",
+    "alt": "Portrait de Friedrich Schleiermacher",
+    "caption": "Friedrich Schleiermacher",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Friedrich_Daniel_Ernst_Schleiermacher.jpg"
+  },
+  {
+    "section": "georg-wilhelm-friedrich-hegel",
+    "role": "portrait",
+    "file": "images/auteurs/hegel.jpg",
+    "alt": "Portrait de Hegel",
+    "caption": "Hegel, portrait par Jakob Schlesinger (1831).",
+    "credit": "Jakob Schlesinger, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jakob_Schlesinger_-_Hegel_1831.jpg"
+  },
+  {
+    "section": "david-friedrich-strauss-et-bruno-bauer",
+    "role": "portrait",
+    "file": "images/auteurs/strauss.jpg",
+    "alt": "Portrait de David Friedrich Strauss",
+    "caption": "David Friedrich Strauss",
+    "credit": "Hermann Günther, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:David_Friedrich_Strauss_BW.jpg"
+  },
+  {
+    "section": "david-friedrich-strauss-et-bruno-bauer",
+    "role": "portrait",
+    "file": "images/auteurs/bauer.jpg",
+    "alt": "Portrait de Bruno Bauer",
+    "caption": "Bruno Bauer",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Bruno_Bauer.jpg"
+  },
+  {
+    "section": "ernest-renan",
+    "role": "portrait",
+    "file": "images/auteurs/renan.jpg",
+    "alt": "Portrait de Ernest Renan",
+    "caption": "Ernest Renan",
+    "credit": "Antoine Samuel Adam-Salomon, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ernest_Renan_1876-84.jpg"
+  },
+  {
+    "section": "ludwig-feuerbach",
+    "role": "portrait",
+    "file": "images/auteurs/feuerbach.jpg",
+    "alt": "Portrait de Ludwig Feuerbach",
+    "caption": "Ludwig Feuerbach",
+    "credit": "August Weger, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Feuerbach_Ludwig.jpg"
+  },
+  {
+    "section": "max-stirner",
+    "role": "portrait",
+    "file": "images/auteurs/stirner.jpg",
+    "alt": "Portrait de Max Stirner",
+    "caption": "Max Stirner, détail du dessin d'Engels représentant les Freien (1842) ; on ne connaît de lui que des croquis d'Engels.",
+    "credit": "Friedrich Engels, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Friedrich_Engels_-_Die_Freien_(1842)-1.1_V01-1.2_raw_RGASPI_(Stirner_cropped).jpg"
+  },
+  {
+    "section": "karl-marx-et-friedrich-engels",
+    "role": "portrait",
+    "file": "images/auteurs/marx.jpg",
+    "alt": "Portrait de Karl Marx",
+    "caption": "Karl Marx",
+    "credit": "John Jabez Edwin Mayall, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Karl_Marx_001_restored.jpg"
+  },
+  {
+    "section": "karl-marx-et-friedrich-engels",
+    "role": "portrait",
+    "file": "images/auteurs/engels.jpg",
+    "alt": "Portrait de Friedrich Engels",
+    "caption": "Friedrich Engels",
+    "credit": "William Hall, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Friedrich_Engels_portrait_(cropped).jpg"
+  },
+  {
+    "section": "soren-kierkegaard",
+    "role": "portrait",
+    "file": "images/auteurs/kierkegaard.jpg",
+    "alt": "Portrait de Søren Kierkegaard",
+    "caption": "Søren Kierkegaard",
+    "credit": "Bibliothèque royale du Danemark, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:S%C3%B8ren_Kierkegaard_(1813-1855)_-_(cropped).jpg"
+  },
+  {
+    "section": "auguste-comte",
+    "role": "portrait",
+    "file": "images/auteurs/comte.jpg",
+    "alt": "Portrait de Auguste Comte",
+    "caption": "Auguste Comte, portrait conservé à la Maison d'Auguste Comte, Paris.",
+    "credit": "photo Jean-Pierre Dalbéra, CC BY 2.0",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_dAuguste_Comte_(maison_dA._Comte,_Paris)_(2424895050).jpg"
+  },
+  {
+    "section": "arthur-schopenhauer",
+    "role": "portrait",
+    "file": "images/auteurs/schopenhauer.jpg",
+    "alt": "Portrait de Arthur Schopenhauer",
+    "caption": "Arthur Schopenhauer, photographie de J. Schäfer (1859).",
+    "credit": "Johann Schäfer, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Arthur_Schopenhauer_by_J_Sch%C3%A4fer,_1859b.jpg"
+  },
+  {
+    "section": "dostoievski",
+    "role": "portrait",
+    "file": "images/auteurs/dostoievski.jpg",
+    "alt": "Portrait de Fiodor Dostoïevski",
+    "caption": "Dostoïevski, portrait par Vassili Perov (1872, Moscou, galerie Tretiakov).",
+    "credit": "Vasily Perov, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "nietzsche",
+    "role": "portrait",
+    "file": "images/auteurs/nietzsche.jpg",
+    "alt": "Portrait de Friedrich Nietzsche",
+    "caption": "Friedrich Nietzsche",
+    "credit": "Friedrich Hermann Hartmann, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Nietzsche187a.jpg"
+  },
+  {
+    "section": "durkheim",
+    "role": "portrait",
+    "file": "images/auteurs/durkheim.jpg",
+    "alt": "Portrait de Émile Durkheim",
+    "caption": "Émile Durkheim",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%89mile_Durkheim.jpg"
+  },
+  {
+    "section": "weber",
+    "role": "portrait",
+    "file": "images/auteurs/weber.png",
+    "alt": "Portrait de Max Weber",
+    "caption": "Max Weber en 1918.",
+    "credit": "Ernst Gottmann, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Max_Weber_in_1918.png"
+  },
+  {
+    "section": "william-james",
+    "role": "portrait",
+    "file": "images/auteurs/william-james.jpg",
+    "alt": "Portrait de William James",
+    "caption": "William James, photographie d'Alice Boughton (v. 1907).",
+    "credit": "Alice Boughton, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:William_James_by_Alice_M._Boughton,_c._1907,_platinum_print,_from_the_National_Portrait_Gallery_-_NPG-NPG_87_37James-000001_(cropped).jpg"
+  },
+  {
+    "section": "rudolf-otto",
+    "role": "portrait",
+    "file": "images/auteurs/otto.jpg",
+    "alt": "Portrait de Rudolf Otto",
+    "caption": "Rudolf Otto",
+    "credit": "Photographe inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:RudolfOtto.jpg"
+  },
+  {
+    "section": "freud",
+    "role": "portrait",
+    "file": "images/auteurs/freud.jpg",
+    "alt": "Portrait de Sigmund Freud",
+    "caption": "Sigmund Freud, photographie de Max Halberstadt.",
+    "credit": "Max Halberstadt, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sigmund_Freud,_by_Max_Halberstadt_(cropped).jpg"
+  },
+  {
+    "section": "bergson",
+    "role": "portrait",
+    "file": "images/auteurs/bergson.jpg",
+    "alt": "Portrait de Henri Bergson",
+    "caption": "Henri Bergson",
+    "credit": "Henri Manuel, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Henri_Bergson_02.jpg"
+  },
+  {
+    "section": "heidegger",
+    "role": "portrait",
+    "file": "images/auteurs/heidegger.jpg",
+    "alt": "Portrait de Martin Heidegger",
+    "caption": "Martin Heidegger en 1960.",
+    "credit": "Willy Pragher, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Heidegger_2_(1960).jpg"
+  },
+  {
+    "section": "barth",
+    "role": "portrait",
+    "file": "images/auteurs/barth.png",
+    "alt": "Portrait de Karl Barth",
+    "caption": "Karl Barth",
+    "credit": "Hans Lachmann, CC BY-SA 3.0 de",
+    "license": "CC BY-SA 3.0 de",
+    "source": "https://commons.wikimedia.org/wiki/File:Karl_Barth_Bundesarchiv_Bild.png"
+  },
+  {
+    "section": "bonhoeffer",
+    "role": "portrait",
+    "file": "images/auteurs/bonhoeffer.jpg",
+    "alt": "Portrait de Dietrich Bonhoeffer",
+    "caption": "Dietrich Bonhoeffer",
+    "credit": "Auteur inconnu, CC BY-SA 3.0 de",
+    "license": "CC BY-SA 3.0 de",
+    "source": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1987-074-16,_Dietrich_Bonhoeffer.jpg"
+  },
+  {
+    "section": "simone-weil",
+    "role": "portrait",
+    "file": "images/auteurs/simone-weil.jpg",
+    "alt": "Portrait de Simone Weil",
+    "caption": "Simone Weil",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Simone_Weil_1943.jpg"
+  },
+  {
+    "section": "bataille",
+    "role": "portrait",
+    "file": "images/auteurs/bataille.jpg",
+    "alt": "Portrait de Georges Bataille",
+    "caption": "Georges Bataille vers 1943.",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Georges_Bataille_vers_1943.jpg"
+  },
+  {
+    "section": "sartre",
+    "role": "portrait",
+    "file": "images/auteurs/sartre.jpg",
+    "alt": "Portrait de Jean-Paul Sartre",
+    "caption": "Jean-Paul Sartre en 1967.",
+    "credit": "T1980, CC BY 3.0",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean_Paul_Sartre_1967.jpg"
+  },
+  {
+    "section": "camus",
+    "role": "portrait",
+    "file": "images/auteurs/camus.jpg",
+    "alt": "Portrait de Albert Camus",
+    "caption": "Albert Camus",
+    "credit": "United Press International, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Albert_Camus,_gagnant_de_prix_Nobel,_portrait_en_buste,_pos%C3%A9_au_bureau,_faisant_face_%C3%A0_gauche,_cigarette_de_tabagisme.jpg"
+  },
+  {
+    "section": "marion",
+    "role": "portrait",
+    "file": "images/auteurs/marion.png",
+    "alt": "Portrait de Jean-Luc Marion",
+    "caption": "Jean-Luc Marion",
+    "credit": "Aymeric De La Toune, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Luc_Marion.png"
+  },
+  {
+    "section": "carl-schmitt",
+    "role": "portrait",
+    "file": "images/auteurs/schmitt.jpg",
+    "alt": "Portrait de Carl Schmitt",
+    "caption": "Carl Schmitt en 1904, détail d'une photographie de classe.",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Carl_Schmitt_1904_Schulklasse.jpg"
+  },
+  {
+    "section": "marcel-gauchet",
+    "role": "portrait",
+    "file": "images/auteurs/gauchet.jpg",
+    "alt": "Portrait de Marcel Gauchet",
+    "caption": "Marcel Gauchet en 2017.",
+    "credit": "13okouran, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Marcel_Gauchet_en_f%C3%A9vrier_2017.jpg"
+  },
+  {
+    "section": "charles-taylor",
+    "role": "portrait",
+    "file": "images/auteurs/taylor.jpg",
+    "alt": "Portrait de Charles Taylor",
+    "caption": "Charles Taylor en 2019.",
+    "credit": "Lëa-Kim Châteauneuf, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Charles_Taylor_(2019).jpg"
+  },
+  {
+    "section": "jurgen-habermas",
+    "role": "portrait",
+    "file": "images/auteurs/habermas.jpg",
+    "alt": "Portrait de Jürgen Habermas",
+    "caption": "Jürgen Habermas",
+    "credit": "Wolfram Huke, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:JuergenHabermas_retouched.jpg"
+  },
+  {
+    "section": "michel-foucault",
+    "role": "portrait",
+    "file": "images/auteurs/foucault.jpg",
+    "alt": "Portrait de Michel Foucault",
+    "caption": "Michel Foucault en 1974.",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Michel_Foucault_1974_Brasil.jpg"
+  },
+  {
+    "section": "andre-comte-sponville",
+    "role": "portrait",
+    "file": "images/auteurs/comte-sponville.jpg",
+    "alt": "Portrait de André Comte-Sponville",
+    "caption": "André Comte-Sponville au Salon du livre de Paris, 2014.",
+    "credit": "Wikinade, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Comte-Sponville_-_Salon_du_livre_de_Paris_-_23_mars_2014.JPG"
+  },
+  {
+    "section": "luc-ferry",
+    "role": "portrait",
+    "file": "images/auteurs/ferry.jpg",
+    "alt": "Portrait de Luc Ferry",
+    "caption": "Luc Ferry au Salon du livre de Paris, 2017.",
+    "credit": "Thesupermat, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Paris_-_Salon_du_livre_de_Paris_2017_-_Luc_Ferry_-_005.jpg"
+  },
+  {
+    "section": "comte-sponville-et-ferry",
+    "role": "portrait",
+    "file": "images/auteurs/comte-sponville.jpg",
+    "alt": "Portrait de André Comte-Sponville",
+    "caption": "André Comte-Sponville au Salon du livre de Paris, 2014.",
+    "credit": "Wikinade, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Comte-Sponville_-_Salon_du_livre_de_Paris_-_23_mars_2014.JPG"
+  },
+  {
+    "section": "comte-sponville-et-ferry",
+    "role": "portrait",
+    "file": "images/auteurs/ferry.jpg",
+    "alt": "Portrait de Luc Ferry",
+    "caption": "Luc Ferry au Salon du livre de Paris, 2017.",
+    "credit": "Thesupermat, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Paris_-_Salon_du_livre_de_Paris_2017_-_Luc_Ferry_-_005.jpg"
+  },
+  {
+    "section": "abdennour-bidar",
+    "role": "portrait",
+    "file": "images/auteurs/bidar.jpg",
+    "alt": "Portrait de Abdennour Bidar",
+    "caption": "Abdennour Bidar",
+    "credit": "Anne-Sophie Plard, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Abdennour-bidar-03_copy.jpg"
+  },
+  {
+    "section": "michel-onfray",
+    "role": "portrait",
+    "file": "images/auteurs/onfray.jpg",
+    "alt": "Portrait de Michel Onfray",
+    "caption": "Michel Onfray en 2012.",
+    "credit": "Fronteiras do Pensamento, CC BY-SA 2.0",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Michel_Onfray_no_Fronteiras_do_Pensamento_Santa_Catarina_2012_(8212742449).jpg"
+  },
+  {
+    "section": "pascal",
+    "role": "figure",
+    "file": "images/oeuvres/pascal-memorial.jpg",
+    "alt": "Feuillet manuscrit couvert d'une écriture serrée, avec une croix en tête",
+    "caption": "Le Mémorial de Pascal (nuit du 23 novembre 1654), fac-similé de l'autographe dans l'édition Brunschvicg : le feuillet du « Dieu d'Abraham, Dieu d'Isaac, Dieu de Jacob, non des philosophes et des savants ».",
+    "credit": "Blaise Pascal, fac-similé de l'édition Brunschvicg, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:M%C3%A9morial_de_Pascal_autographe_(Brunschwicg).jpg"
+  },
+  {
+    "section": "pascal",
+    "role": "figure",
+    "file": "images/art/rembrandt-sacrifice-isaac.jpg",
+    "alt": "Un ange retient le bras d'Abraham au moment où il va égorger Isaac ; le couteau tombe",
+    "caption": "Rembrandt, Le Sacrifice d'Abraham (1635, Saint-Pétersbourg, Ermitage) : le Dieu d'Abraham et d'Isaac, que le Mémorial oppose au Dieu des philosophes.",
+    "credit": "Rembrandt, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Abraham%27s_Sacrifice_(Hermitage).jpg"
+  },
+  {
+    "section": "pascal",
+    "role": "figure",
+    "file": "images/art/michel-ange-isaie.jpg",
+    "alt": "Le prophète Isaïe assis, un livre fermé sous la main, se détournant vers un enfant",
+    "caption": "Michel-Ange, le prophète Isaïe, voûte de la chapelle Sixtine (1508-1512) : Isaïe est le prophète du Dieu caché, Deus absconditus (Is 45, 15), au centre des Pensées.",
+    "credit": "Michelangelo, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jesaja_(Michelangelo).jpg"
+  },
+  {
+    "section": "spinoza",
+    "role": "figure",
+    "file": "images/oeuvres/spinoza-tractatus-1670.jpg",
+    "alt": "Page de titre imprimée en latin du Tractatus theologico-politicus",
+    "caption": "Page de titre du Tractatus theologico-politicus (1670), paru sans nom d'auteur et sous une fausse adresse d'imprimeur à Hambourg : le livre où Spinoza soumet l'Écriture à la critique historique.",
+    "credit": "Benedictus de Spinoza, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Benedictus_de_Spinoza_-_Tractatus_theologico-politicus_continens_dissertationes_aliquot,_Hamburg,_Henricus_K%C3%BCnrath,_1670.jpg"
+  },
+  {
+    "section": "bayle",
+    "role": "figure",
+    "file": "images/oeuvres/bayle-pensees-comete.jpg",
+    "alt": "Page de titre des Pensées diverses sur la comète, édition de 1749",
+    "caption": "Page de titre des Pensées diverses écrites à un docteur de Sorbonne à l'occasion de la comète (sixième édition, 1749) : le livre de l'hypothèse d'une société d'athées, né de la comète de décembre 1680.",
+    "credit": "Pierre Bayle, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Bayle_-_Pens%C3%A9es_diverses_sur_la_com%C3%A8te,_%C3%A9dition_1749,_tome_1.djvu"
+  },
+  {
+    "section": "hume",
+    "role": "figure",
+    "file": "images/oeuvres/hume-dialogues-1779.jpg",
+    "alt": "Page de titre des Dialogues concerning Natural Religion, 1779",
+    "caption": "Page de titre des Dialogues concerning Natural Religion (1779), publiés trois ans après la mort de Hume, qui les avait gardés inédits de son vivant.",
+    "credit": "David Hume, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hume_titlepage1779.jpg"
+  },
+  {
+    "section": "d-holbach",
+    "role": "figure",
+    "file": "images/oeuvres/holbach-systeme-nature-1770.jpg",
+    "alt": "Page de titre du Système de la nature, attribué à M. Mirabaud, Londres, 1770",
+    "caption": "Page de titre du Système de la nature (1770), paru sous le nom de Mirabaud, mort dix ans plus tôt, et sous l'adresse fictive de Londres.",
+    "credit": "Paul Henri Thiry d'Holbach, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Holbach_-_Syst%C3%A8me_de_la_nature,_1770,_tome_1.djvu"
+  },
+  {
+    "section": "kant",
+    "role": "figure",
+    "file": "images/oeuvres/kant-religion-1793.jpg",
+    "alt": "Page de titre de Die Religion innerhalb der Grenzen der bloßen Vernunft, 1793",
+    "caption": "Page de titre de Die Religion innerhalb der Grenzen der bloßen Vernunft (1793), le livre qui valut à Kant la réprimande royale de 1794.",
+    "credit": "Immanuel Kant, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Religion_within_the_bounds_of_bare_reason_(German_edition).jpg"
+  },
+  {
+    "section": "friedrich-schleiermacher",
+    "role": "figure",
+    "file": "images/oeuvres/schleiermacher-uber-die-religion-1799.jpg",
+    "alt": "Page de titre de Über die Religion, 1799",
+    "caption": "Page de titre de Über die Religion. Reden an die Gebildeten unter ihren Verächtern (1799), paru sans nom d'auteur.",
+    "credit": "Friedrich Schleiermacher, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cover_of_1799_edition_of_%C3%9Cber_die_Religion.jpg"
+  },
+  {
+    "section": "david-friedrich-strauss-et-bruno-bauer",
+    "role": "figure",
+    "file": "images/oeuvres/strauss-leben-jesu-1835.jpg",
+    "alt": "Page de titre du premier volume de Das Leben Jesu de Strauss",
+    "caption": "Page de titre du premier volume de Das Leben Jesu, kritisch bearbeitet (1835), qui fait du mythe la catégorie centrale de la critique des Évangiles.",
+    "credit": "David Friedrich Strauss, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:David_Friedrich_Strauss_-_Das_Leben_Jesu_(1)_-_Titelseite.jpg"
+  },
+  {
+    "section": "ernest-renan",
+    "role": "figure",
+    "file": "images/oeuvres/renan-vie-de-jesus-1863.jpg",
+    "alt": "Page de titre de la Vie de Jésus d'Ernest Renan, 1863",
+    "caption": "Page de titre de la Vie de Jésus (1863), premier volume de l'Histoire des origines du christianisme.",
+    "credit": "Ernest Renan, numérisation Gallica, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Vie_de_J%C3%A9sus_(Ernest_Renan).jpg"
+  },
+  {
+    "section": "ludwig-feuerbach",
+    "role": "figure",
+    "file": "images/oeuvres/feuerbach-wesen-des-christenthums-1841.jpg",
+    "alt": "Page de titre en caractères gothiques de Das Wesen des Christenthums, Leipzig, 1841",
+    "caption": "Page de titre de Das Wesen des Christenthums (Leipzig, Otto Wigand, 1841).",
+    "credit": "Ludwig Feuerbach, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Das_Wesen_des_Christentums_(1841).pdf"
+  },
+  {
+    "section": "max-stirner",
+    "role": "figure",
+    "file": "images/oeuvres/stirner-der-einzige.png",
+    "alt": "Page de titre de Der Einzige und sein Eigenthum",
+    "caption": "Page de titre de Der Einzige und sein Eigenthum (Leipzig, Otto Wigand), paru en octobre 1844 avec le millésime 1845.",
+    "credit": "Max Stirner, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ein1844v2.png"
+  },
+  {
+    "section": "karl-marx-et-friedrich-engels",
+    "role": "figure",
+    "file": "images/oeuvres/marx-kapital-1867.png",
+    "alt": "Page de titre du premier livre de Das Kapital, Hambourg, 1867",
+    "caption": "Page de titre du premier livre de Das Kapital (Hambourg, Otto Meissner, 1867), en fac-similé.",
+    "credit": "Karl Marx, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Kapital_titel_bd1.png"
+  },
+  {
+    "section": "auguste-comte",
+    "role": "figure",
+    "file": "images/oeuvres/comte-catechisme-positiviste-1852.jpg",
+    "alt": "Page de titre du Catéchisme positiviste, Paris, 1852",
+    "caption": "Page de titre du Catéchisme positiviste (1852), « sommaire exposition de la religion universelle » en entretiens entre une femme et un prêtre de l'Humanité.",
+    "credit": "Auguste Comte, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cat%C3%A9chisme_positiviste,_ou,_Sommaire_exposition_de_la_religion_universelle_-_en_onze_entretiens_syst%C3%A9matiques_entre_une_femme_et_un_Pr%C3%AAtre_de_l%27humanit%C3%A9_(IA_catchismeposit00comt).pdf"
+  },
+  {
+    "section": "arthur-schopenhauer",
+    "role": "figure",
+    "file": "images/oeuvres/schopenhauer-welt-1819.jpg",
+    "alt": "Exemplaire ouvert de l'édition originale de Die Welt als Wille und Vorstellung",
+    "caption": "Édition originale de Die Welt als Wille und Vorstellung (Leipzig, Brockhaus, millésime 1819, parue à la fin de 1818).",
+    "credit": "photo H.-P. Haack, CC BY 3.0",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Schopenhauer_Die_Welt_als_Wille_und_Vorstellung_1819.jpg"
+  },
+  {
+    "section": "dostoievski",
+    "role": "figure",
+    "file": "images/oeuvres/dostoievski-karamazov.jpg",
+    "alt": "Page imprimée en russe portant le titre Les Frères Karamazov",
+    "caption": "Les Frères Karamazov dans le Rousski Vestnik, où le roman parut en feuilleton (1879-1880).",
+    "credit": "Russkii Vestnik, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Dostoevsky-Brothers_Karamazov.jpg"
+  },
+  {
+    "section": "nietzsche",
+    "role": "figure",
+    "file": "images/oeuvres/nietzsche-frohliche-wissenschaft-1882.jpg",
+    "alt": "Page de titre de la première édition de Die fröhliche Wissenschaft, 1882",
+    "caption": "Page de titre de la première édition de Die fröhliche Wissenschaft (1882), où paraît au § 125 l'insensé qui annonce la mort de Dieu.",
+    "credit": "Friedrich Nietzsche, Chemnitz, Ernst Schmeitzner, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:FW82.jpg"
+  },
+  {
+    "section": "durkheim",
+    "role": "figure",
+    "file": "images/oeuvres/durkheim-formes-elementaires-1912.jpg",
+    "alt": "Page de titre des Formes élémentaires de la vie religieuse, 1912",
+    "caption": "Les Formes élémentaires de la vie religieuse (1912), où Durkheim fait du sacré la matrice de la société.",
+    "credit": "Kysuu, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:E.Durkheim_Form-Elem-Vie-Relig_1912.jpg"
+  },
+  {
+    "section": "william-james",
+    "role": "figure",
+    "file": "images/oeuvres/james-varieties-1902.jpg",
+    "alt": "Couverture de The Varieties of Religious Experience, 1902",
+    "caption": "Couverture de The Varieties of Religious Experience (1902), issu des Gifford Lectures données à Édimbourg en 1901-1902.",
+    "credit": "William James, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_varieties_of_religious_experience,_a_study_in_human_nature_-_frontcover.jpg"
+  },
+  {
+    "section": "freud",
+    "role": "figure",
+    "file": "images/oeuvres/freud-zukunft-einer-illusion-1927.jpg",
+    "alt": "Couverture de la première édition de Die Zukunft einer Illusion, 1927",
+    "caption": "Couverture de la première édition de Die Zukunft einer Illusion (1927).",
+    "credit": "Graphiste inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Freud_1927_Die_Zukunft_einer_Illusion.jpg"
+  },
+  {
+    "section": "ludwig-feuerbach",
+    "role": "figure",
+    "file": "images/auteurs/george-eliot.jpg",
+    "alt": "Portrait de George Eliot jeune, assise",
+    "caption": "George Eliot, portrait par François D'Albert Durade : traductrice de Feuerbach, elle publie The Essence of Christianity en 1854 sous son nom de Marian Evans.",
+    "credit": "François D'Albert Durade (réplique), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:George_Eliot,_por_Fran%C3%A7ois_D%27Albert_Durade.jpg"
+  },
+  {
+    "section": "freud",
+    "role": "figure",
+    "file": "images/auteurs/romain-rolland.jpg",
+    "alt": "Photographie de Romain Rolland en 1915",
+    "caption": "Romain Rolland en 1915 : c'est à sa lettre sur le « sentiment océanique » que Freud répond au début de Das Unbehagen in der Kultur (1930).",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Romain_Rolland_1915.jpg"
+  },
+  {
+    "section": "georg-wilhelm-friedrich-hegel",
+    "role": "figure",
+    "file": "images/art/velazquez-christ-crucifie.jpg",
+    "alt": "Le Christ en croix sur fond noir, la tête inclinée",
+    "caption": "Velázquez, Christ crucifié (v. 1632, Madrid, Prado) : le Vendredi saint spéculatif, où Hegel reprend le « Gott selbst ist tot » du cantique luthérien.",
+    "credit": "Diego Velázquez, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cristo_crucificado.jpg"
+  },
+  {
+    "section": "dostoievski",
+    "role": "figure",
+    "file": "images/art/duccio-tentation.jpg",
+    "alt": "Le Christ sur une montagne repousse le diable ; à ses pieds, des villes miniatures",
+    "caption": "Duccio, La Tentation du Christ sur la montagne (1308-1311, New York, Frick Collection), panneau de la Maestà de Sienne : les tentations que reprend le Grand Inquisiteur.",
+    "credit": "Duccio di Buoninsegna, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Duccio_-_The_Temptation_on_the_Mount.jpg"
+  },
+  {
+    "section": "dostoievski",
+    "role": "figure",
+    "file": "images/art/berruguete-autodafe.jpg",
+    "alt": "Saint Dominique sur une estrade préside un autodafé ; en bas, des condamnés au bûcher",
+    "caption": "Pedro Berruguete, Saint Dominique présidant un autodafé (v. 1493-1499, Madrid, Prado) : l'Inquisition, que le Grand Inquisiteur transporte à Séville.",
+    "credit": "Pedro Berruguete, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pedro_Berruguete_Saint_Dominic_Presiding_over_an_Auto-da-fe_1495.jpg"
+  },
+  {
+    "section": "nietzsche",
+    "role": "figure",
+    "file": "images/art/caravage-conversion-saint-paul.jpg",
+    "alt": "Saul renversé de son cheval, les bras ouverts vers la lumière",
+    "caption": "Caravage, La Conversion de saint Paul (1600-1601, Rome, Santa Maria del Popolo, chapelle Cerasi) : Paul, le « Dysangelist » de Der Antichrist.",
+    "credit": "Caravaggio, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Conversion_on_the_Way_to_Damascus-Caravaggio_(c.1600-1).jpg"
+  },
+  {
+    "section": "nietzsche",
+    "role": "figure",
+    "file": "images/art/gerome-diogene.jpg",
+    "alt": "Diogène assis dans sa jarre allume une lanterne, entouré de chiens",
+    "caption": "Jean-Léon Gérôme, Diogène (1860, Baltimore, Walters Art Museum) : la lanterne en plein jour, modèle de l'insensé qui cherche Dieu au § 125 du Gai Savoir.",
+    "credit": "Jean-Léon Gérôme, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-L%C3%A9on_G%C3%A9r%C3%B4me_-_Diogenes_-_Walters_37131.jpg"
+  },
+  {
+    "section": "camus",
+    "role": "figure",
+    "file": "images/art/titien-sisyphe.jpg",
+    "alt": "Sisyphe portant un énorme rocher sur ses épaules",
+    "caption": "Titien, Sisyphe (1548-1549, Madrid, Prado) : la figure dont Camus fait le héros de l'absurde.",
+    "credit": "Titian, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Titian_-_Sisyphus_-_Madrid_-_Prado.jpg"
+  },
+  {
+    "section": "jurgen-habermas",
+    "role": "figure",
+    "file": "images/art/michel-ange-creation-adam.jpg",
+    "alt": "Dieu tend le doigt vers celui d'Adam allongé",
+    "caption": "Michel-Ange, La Création d'Adam, voûte de la Sixtine (v. 1511) : l'homme créé à l'image de Dieu (Gn 1, 27), que Habermas veut traduire dans le langage séculier de la dignité.",
+    "credit": "Michelangelo, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg"
+  },
+  {
+    "section": "auguste-comte",
+    "role": "figure",
+    "file": "images/art/temple-humanite-paris.jpg",
+    "alt": "Façade du temple de l'Humanité, rue Payenne, avec un buste et une inscription",
+    "caption": "Façade du temple de l'Humanité, 5 rue Payenne à Paris : la religion positiviste a eu ses lieux de culte.",
+    "credit": "Poulpy, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Paris,_Rue_Payenne,_Temple_de_l%27Humanit%C3%A9,_Fa%C3%A7ade.jpg"
+  },
+  {
+    "section": "auguste-comte",
+    "role": "figure",
+    "file": "images/art/temple-positiviste-porto-alegre.jpg",
+    "alt": "Façade à colonnes du temple positiviste de Porto Alegre",
+    "caption": "Le temple positiviste de Porto Alegre (Brésil) : le culte de l'Humanité a pris racine au Brésil, dont le drapeau porte la devise comtienne Ordem e Progresso.",
+    "credit": "Eugenio Hansen, OFS, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Templo_Positivista_em_Porto_Alegre.JPG"
+  },
+  {
+    "section": "prologue",
+    "role": "partcard",
+    "file": "images/art/partie-prologue.jpg",
+    "alt": "Philosophes grecs réunis sous des voûtes antiques autour de Platon et d'Aristote",
+    "caption": "Raphaël, L'École d'Athènes (1509-1511, Vatican, chambre de la Signature).",
+    "credit": "Raphael, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+  },
+  {
+    "section": "premiere-partie",
+    "role": "partcard",
+    "file": "images/art/partie-premiere.jpg",
+    "alt": "Buste en marbre d'Épicure",
+    "caption": "Buste d'Épicure, copie romaine d'un original hellénistique (Londres, British Museum).",
+    "credit": "Sculpteur inconnu, photo Marie-Lan Nguyen, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Epikouros_BM_1843.jpg"
+  },
+  {
+    "section": "deuxieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-deuxieme.jpg",
+    "alt": "Des visages éclairés par la lampe centrale d'un planétaire mécanique",
+    "caption": "Joseph Wright of Derby, Un philosophe faisant une conférence sur le planétaire (v. 1766, Derby Museum).",
+    "credit": "Joseph Wright of Derby, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Joseph_Wright_of_Derby_-_Philosopher_giving_a_lecture_on_the_orrery_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "troisieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-troisieme.jpg",
+    "alt": "Un homme de dos sur un rocher contemple une mer de nuages",
+    "caption": "Caspar David Friedrich, Le Voyageur contemplant une mer de nuages (v. 1818, Hambourg, Kunsthalle).",
+    "credit": "Caspar David Friedrich, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"
+  },
+  {
+    "section": "quatrieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-quatrieme.jpg",
+    "alt": "Caricature à la plume d'un groupe d'hommes attablés qui se disputent",
+    "caption": "Friedrich Engels, les Freien (dessin, v. 1842) : le cercle berlinois de Bruno Bauer et de Max Stirner.",
+    "credit": "Friedrich Engels, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Die_Freien_by_Friedrich_Engels.jpg"
+  },
+  {
+    "section": "cinquieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-cinquieme.jpg",
+    "alt": "Le corps du Christ mort allongé dans un tombeau étroit, et un détail du visage",
+    "caption": "Hans Holbein le Jeune, Le Christ mort au tombeau (1521-1522, Bâle, Kunstmuseum) : tableau qui bouleversa Dostoïevski à Bâle en 1867, et qu'il met en scène dans L'Idiot.",
+    "credit": "Hans Holbein the Younger, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Body_of_the_Dead_Christ_in_the_Tomb,_and_a_detail,_by_Hans_Holbein_the_Younger.jpg"
+  },
+  {
+    "section": "sixieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-sixieme.jpg",
+    "alt": "Procession villageoise avec dais et bannières traversant un champ de blé",
+    "caption": "Jules Breton, La Bénédiction des blés en Artois (1857) : la religion vécue, objet des sciences de la religion.",
+    "credit": "Jules Breton, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jules_Breton_-_La_B%C3%A9n%C3%A9diction_des_bl%C3%A9s_en_Artois.jpg"
+  },
+  {
+    "section": "septieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-septieme.jpg",
+    "alt": "Ruine d'abbaye gothique entourée de chênes nus dans la brume",
+    "caption": "Caspar David Friedrich, L'Abbaye dans une forêt de chênes (1809-1810, Berlin, Alte Nationalgalerie).",
+    "credit": "Caspar David Friedrich, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Abtei_im_Eichwald_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "huitieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-huitieme.jpg",
+    "alt": "Façade de Notre-Dame de Paris en photochromie",
+    "caption": "Notre-Dame de Paris vers 1890-1900 (Library of Congress).",
+    "credit": "Photographe inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Notre_Dame,_Paris,_France,_ca._1890-1900.jpg"
+  },
+  {
+    "section": "neuvieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-neuvieme.jpg",
+    "alt": "Statue équestre en bronze de Marc Aurèle, le bras tendu",
+    "caption": "Statue équestre de Marc Aurèle sur la place du Capitole à Rome (réplique ; l'original en bronze est aux musées du Capitole).",
+    "credit": "Alvesgaspar, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Marcus_Aurelius_Capitoline_Hill_September_2015-1.jpg"
+  },
+  {
+    "section": "conclusion",
+    "role": "partcard",
+    "file": "images/art/partie-conclusion.jpg",
+    "alt": "Une femme de dos, les bras ouverts, face au soleil bas",
+    "caption": "Caspar David Friedrich, Femme devant le soleil couchant (v. 1818, Essen, Museum Folkwang).",
+    "credit": "Caspar David Friedrich, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Woman_before_the_Rising_Sun_(Woman_before_the_Setting_Sun)_-_WGA08253.jpg"
+  }
+]
