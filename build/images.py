@@ -131,7 +131,7 @@ TARGETS = [
     P("comte-sponville-et-ferry", "comte-sponville", "Q247016", "André Comte-Sponville",
       "André Comte-Sponville au Salon du livre de Paris, 2014."),
     P("comte-sponville-et-ferry", "ferry", "Q740110", "Luc Ferry", "Luc Ferry au Salon du livre de Paris, 2017."),
-    P("abdennour-bidar", "bidar", "Q2821215", "Abdennour Bidar"),
+    P("l-islam-devant-la-sortie-de-la-religion", "bidar", "Q2821215", "Abdennour Bidar"),
     P("les-athees-militants-contemporains", "onfray", "Q7060", "Michel Onfray", "Michel Onfray en 2012."),
 
     # ----------------------------------------------------------- figures : pascal (3)
@@ -453,6 +453,50 @@ TARGETS = [
       commons="ETH-BIB-Jung, Carl Gustav (1875-1961)-Portrait-Portr 14163 (cropped).tif"),
     P("girard", "girard", "Q129228", "René Girard", "René Girard à Paris en 2007.", commons="René Girard.jpg"),
     P("norris-et-inglehart", "norris", "Q7197476", "Pippa Norris", "Pippa Norris en 2022.", commons="PippaNorris2.jpg"),
+
+    # ----------------------------------------------------------- clifford, james, voegelin, strauss, murdoch, islam, bouddhisme
+    # Portraits ecartes : Voegelin et Murdoch (aucun portrait libre sur Commons) ;
+    # Leo Strauss (photo de 1939 declaree "own work" par un descendant, auteur reel inconnu) ;
+    # Mohammed Arkoun (CC BY-SA "par un membre de sa famille", transmise par courriel, sans ticket VRT).
+    P("a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique", "clifford", "Q323228",
+      "William Kingdon Clifford",
+      "William Kingdon Clifford, portrait publié dans The Popular Science Monthly (1879), l'année de sa mort : l'auteur de « The Ethics of Belief » (1877).",
+      artist="Auteur inconnu, The Popular Science Monthly", commons="W. Kingdon Clifford.jpg"),
+    P("a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique", "william-james", "Q125249",
+      "William James",
+      "William James, photographie d'Alice Boughton (v. 1907) : « The Will to Believe » (1896) répond directement à Clifford.",
+      commons="William James by Alice M. Boughton, c. 1907, platinum print, from the National Portrait Gallery - NPG-NPG 87 37James-000001 (cropped).jpg"),
+    P("a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique", "russell", "Q33760",
+      "Bertrand Russell", "Bertrand Russell en 1907.", artist="Photographe inconnu", commons="Russell1907-2.jpg"),
+    P("voegelin-et-aron", "aron", "Q160640", "Raymond Aron",
+      "Raymond Aron en 1956, photographie du Studio Harcourt : l'auteur de « L'avenir des religions séculières » (1944) et de L'Opium des intellectuels (1955).",
+      artist="Studio Harcourt", commons="RaymondAron-StudioHarcourt-1956.png"),
+
+    F("voegelin-et-aron", "art", "bruegel-tour-babel",
+      "Pieter Bruegel the Elder - The Tower of Babel (Vienna) - Google Art Project - edited.jpg",
+      "Une tour colossale en spirale, inachevée, s'élève au-dessus d'une ville portuaire ; au premier plan, un roi visite le chantier",
+      "Pieter Bruegel l'Ancien, La Tour de Babel (1563, Vienne, Kunsthistorisches Museum) : l'ouvrage humain qui prétend atteindre le ciel, figure de ce que Voegelin nomme l'immanentisation de l'eschaton, le salut transporté du ciel dans l'histoire et confié aux mains des hommes.",
+      width=800, artist="Pieter Bruegel l'Ancien"),
+    F("leo-strauss", "oeuvres", "maimonide-dux-1520",
+      "Rabi Mosei Dux seu director dubitantium aut perplexorum (IA 10140241bsb).pdf",
+      "Page de titre gravée, encadrée d'un décor Renaissance, avec au centre une presse d'imprimerie",
+      "Page de titre du Dux seu director dubitantium aut perplexorum (Paris, Josse Bade, 1520), la traduction latine médiévale du Guide des égarés de Maïmonide, révisée par Agostino Giustiniani (Munich, Bayerische Staatsbibliothek) : le livre dont Leo Strauss fait le modèle de l'écriture ésotérique, qui parle au petit nombre sous le voile de l'enseignement commun.",
+      width=800, page=3, artist="Moïse Maïmonide, éd. Agostino Giustiniani, impr. Josse Bade"),
+    F("iris-murdoch", "art", "saenredam-caverne-platon",
+      "Jan Pietersz Saenredam after Cornelis Cornelisz van Haarlem, Plato's Cave, 1604, NGA 62542.jpg",
+      "Gravure : des hommes enchaînés dans une grotte regardent des ombres projetées par un feu, tandis qu'au fond s'ouvre la lumière du jour",
+      "Jan Saenredam d'après Cornelis van Haarlem, L'Antre de Platon (gravure, 1604, Washington, National Gallery of Art) : les prisonniers de la caverne (République, livre VII) ; Murdoch fait de ce mythe le schéma de la vie morale, conversion de l'attention qui se détourne du moi vers le Bien.",
+      width=800, artist="Jan Saenredam d'après Cornelis van Haarlem"),
+    F("l-islam-devant-la-sortie-de-la-religion", "oeuvres", "coran-birmingham",
+      "Birmingham Quran manuscript folio 1 recto.jpg",
+      "Feuillet de parchemin couvert d'une écriture arabe ancienne, penchée, sans points diacritiques systématiques",
+      "Feuillet du manuscrit coranique de Birmingham (Cadbury Research Library, collection Mingana), en écriture hijazi ; le parchemin a été daté au carbone 14 entre 568 et 645 : l'un des plus anciens témoins du texte coranique, au cœur de la lecture historique du Coran que réclamait Mohammed Arkoun.",
+      width=800, artist="Copiste anonyme, Cadbury Research Library, Université de Birmingham"),
+    F("le-bouddhisme-des-philosophes", "art", "bouddha-gandhara",
+      "Standing Buddha, near Peshawar, Pakistan, Kushan dynasty, 100s-200s AD, schist - Tokyo National Museum - Tokyo, Japan - DSC08671.jpg",
+      "Statue de schiste d'un Bouddha debout, vêtu d'un manteau aux plis profonds, à la manière d'une statue grecque",
+      "Bouddha debout, art du Gandhara, région de Peshawar (Pakistan), époque kouchane, IIe-IIIe siècle ap. J.-C., schiste (Tokyo, Musée national) : le Bouddha drapé comme un orateur hellénistique, rencontre ancienne de l'Inde et de la Grèce bien avant que les philosophes européens ne découvrent le bouddhisme.",
+      width=800, artist="Sculpteur du Gandhara, photo Daderot"),
 
     # ----------------------------------------------------------- cartes des parties
     # Les deux cartes suivantes precedent les anciennes cartes des memes sections :

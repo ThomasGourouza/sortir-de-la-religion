@@ -1,0 +1,506 @@
+[
+ {
+  "de": "Justin Martyr",
+  "a": "Platon",
+  "type": "attestee",
+  "section": "justin-martyr",
+  "note": "Le Logos semé : Platon aurait emprunté à Moïse, et Socrate fut chrétien avant le Christ."
+ },
+ {
+  "de": "Origène",
+  "a": "Celse",
+  "type": "attestee",
+  "section": "celse-et-origene",
+  "note": "Le *Contre Celse* répond pied à pied au *Discours véritable* : Jésus magicien, plagiat de Platon, religion d'ignorants."
+ },
+ {
+  "de": "Augustin",
+  "a": "Porphyre",
+  "type": "attestee",
+  "section": "porphyre-et-augustin",
+  "note": "La *Cité de Dieu* discute les platoniciens, les plus proches des chrétiens, et Porphyre leur adversaire."
+ },
+ {
+  "de": "Nietzsche",
+  "a": "Paul de Tarse",
+  "type": "attestee",
+  "section": "paul-de-tarse",
+  "note": "*L'Antéchrist* § 42 : Paul, inventeur du christianisme contre la bonne nouvelle."
+ },
+ {
+  "de": "Schweitzer",
+  "a": "Strauss et Bauer",
+  "type": "attestee",
+  "section": "jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste",
+  "note": "*Von Reimarus zu Wrede* (1906) fait l'histoire de la quête du Jésus historique et juge ses prédécesseurs."
+ },
+ {
+  "de": "Goguel",
+  "a": "Couchoud",
+  "type": "attestee",
+  "section": "jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste",
+  "note": "*Jésus de Nazareth : mythe ou histoire ?* (1925) répond au *Mystère de Jésus* (1924)."
+ },
+ {
+  "de": "Ehrman",
+  "a": "les mythistes",
+  "type": "attestee",
+  "section": "jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste",
+  "note": "*Did Jesus Exist?* (2012) : un agnostique défend l'historicité de Jésus contre la thèse mythiste."
+ },
+ {
+  "de": "Spinoza",
+  "a": "Maïmonide",
+  "type": "attestee",
+  "section": "maimonide",
+  "note": "*Traité théologico-politique*, ch. VII : contre l'accommodation de l'Écriture à la raison."
+ },
+ {
+  "de": "Pascal",
+  "a": "Descartes",
+  "type": "attestee",
+  "section": "pascal",
+  "note": "« Je ne puis pardonner à Descartes » : le Dieu des philosophes contre le Dieu d'Abraham."
+ },
+ {
+  "de": "Pascal",
+  "a": "Montaigne",
+  "type": "attestee",
+  "section": "montaigne",
+  "note": "L'*Entretien avec M. de Sacy* et les *Pensées* lisent Montaigne en sceptique utile et dangereux."
+ },
+ {
+  "de": "Leibniz",
+  "a": "Bayle",
+  "type": "attestee",
+  "section": "leibniz",
+  "note": "Les *Essais de théodicée* (1710) répondent aux objections de Bayle sur le mal."
+ },
+ {
+  "de": "Leibniz",
+  "a": "Spinoza",
+  "type": "attestee",
+  "section": "leibniz",
+  "note": "Contre la nécessité aveugle et géométrique du Dieu de Spinoza."
+ },
+ {
+  "de": "Leibniz",
+  "a": "Descartes",
+  "type": "attestee",
+  "section": "leibniz",
+  "note": "*Monadologie* § 46 : contre la création des vérités éternelles par la volonté divine."
+ },
+ {
+  "de": "Voltaire",
+  "a": "Leibniz",
+  "type": "attestee",
+  "section": "leibniz",
+  "note": "*Candide* (1759) raille l'optimisme et le meilleur des mondes possibles."
+ },
+ {
+  "de": "Rousseau",
+  "a": "Voltaire",
+  "type": "attestee",
+  "section": "rousseau",
+  "note": "La *Lettre sur la Providence* (1756) répond au *Poème sur le désastre de Lisbonne*."
+ },
+ {
+  "de": "Voltaire",
+  "a": "d'Holbach",
+  "type": "attestee",
+  "section": "d-holbach",
+  "note": "L'article « Dieu, dieux » (1771) contre le *Système de la nature*."
+ },
+ {
+  "de": "Hegel",
+  "a": "Schleiermacher",
+  "type": "attestee",
+  "section": "georg-wilhelm-friedrich-hegel",
+  "note": "Préface à Hinrichs (1822) : si la piété est sentiment de dépendance, le chien serait le meilleur chrétien."
+ },
+ {
+  "de": "Feuerbach",
+  "a": "Schleiermacher",
+  "type": "attestee",
+  "section": "ludwig-feuerbach",
+  "note": "Le sentiment de dépendance repris et retourné vers la nature."
+ },
+ {
+  "de": "Stirner",
+  "a": "Feuerbach",
+  "type": "attestee",
+  "section": "max-stirner",
+  "note": "*Der Einzige* (1844) : l'Homme de Feuerbach est un fantôme, une nouvelle divinité."
+ },
+ {
+  "de": "Feuerbach",
+  "a": "Stirner",
+  "type": "attestee",
+  "section": "ludwig-feuerbach",
+  "note": "La réponse de 1845 : les prédicats transportés dans l'homme perdent leur caractère divin."
+ },
+ {
+  "de": "Marx",
+  "a": "Feuerbach",
+  "type": "attestee",
+  "section": "karl-marx-et-friedrich-engels",
+  "note": "Les *Thèses sur Feuerbach* (1845) : il faut transformer la base terrestre de la religion."
+ },
+ {
+  "de": "Marx",
+  "a": "Stirner",
+  "type": "attestee",
+  "section": "karl-marx-et-friedrich-engels",
+  "note": "*L'Idéologie allemande* et « saint Max »."
+ },
+ {
+  "de": "Engels",
+  "a": "Feuerbach",
+  "type": "attestee",
+  "section": "ludwig-feuerbach",
+  "note": "*Ludwig Feuerbach* (1886) : il ne veut pas abolir la religion, il veut l'achever."
+ },
+ {
+  "de": "Engels",
+  "a": "Bruno Bauer",
+  "type": "attestee",
+  "section": "karl-marx-et-friedrich-engels",
+  "note": "L'article de 1882 sur Bauer et le christianisme primitif."
+ },
+ {
+  "de": "Kierkegaard",
+  "a": "Hegel",
+  "type": "attestee",
+  "section": "soren-kierkegaard",
+  "note": "L'existant contre le système, la foi contre la médiation."
+ },
+ {
+  "de": "Dostoïevski",
+  "a": "Renan",
+  "type": "attestee",
+  "section": "dostoievski",
+  "note": "Le *Journal d'un écrivain* (1873) sur le Christ de Renan, idéal de la beauté humaine."
+ },
+ {
+  "de": "Nietzsche",
+  "a": "Strauss",
+  "type": "attestee",
+  "section": "david-friedrich-strauss-et-bruno-bauer",
+  "note": "La première *Considération inactuelle* (1873) contre le « Bildungsphilister »."
+ },
+ {
+  "de": "Nietzsche",
+  "a": "Schopenhauer",
+  "type": "attestee",
+  "section": "arthur-schopenhauer",
+  "note": "De l'éducateur au repoussoir : la négation du vouloir-vivre comme dernier avatar de l'idéal ascétique."
+ },
+ {
+  "de": "Freud",
+  "a": "Romain Rolland",
+  "type": "attestee",
+  "section": "freud",
+  "note": "*Malaise dans la civilisation* (1930) discute le sentiment océanique de la lettre de 1927."
+ },
+ {
+  "de": "Bergson",
+  "a": "Durkheim",
+  "type": "attestee",
+  "section": "bergson",
+  "note": "*Les Deux Sources* (1932) discutent la théorie sociologique de la religion."
+ },
+ {
+  "de": "Ricœur",
+  "a": "Freud",
+  "type": "attestee",
+  "section": "ricoeur",
+  "note": "*De l'interprétation* (1965) : lire Freud jusqu'au bout pour traverser la critique."
+ },
+ {
+  "de": "Wittgenstein",
+  "a": "Frazer",
+  "type": "attestee",
+  "section": "tylor-et-frazer",
+  "note": "Les remarques sur *Le Rameau d'or* : contre l'explication intellectualiste des rites."
+ },
+ {
+  "de": "Buber",
+  "a": "Jung",
+  "type": "attestee",
+  "section": "jung",
+  "note": "*Eclipse of God* (1952) : la religion de Jung réduite à la psyché."
+ },
+ {
+  "de": "Girard",
+  "a": "Nietzsche",
+  "type": "attestee",
+  "section": "girard",
+  "note": "« Dionysos contre le Crucifié » : Girard lit Nietzsche comme celui qui a vu la différence et choisi Dionysos, c'est-à-dire la foule contre la victime."
+ },
+ {
+  "de": "Girard",
+  "a": "Freud",
+  "type": "attestee",
+  "section": "girard",
+  "note": "Le meurtre fondateur de *Totem und Tabu* repris et transformé."
+ },
+ {
+  "de": "Girard",
+  "a": "Durkheim",
+  "type": "attestee",
+  "section": "girard",
+  "note": "L'unanimité sociale du sacré expliquée par la victime émissaire."
+ },
+ {
+  "de": "Hume",
+  "a": "Lucrèce",
+  "type": "attestee",
+  "section": "pourquoi-croit-on-un-debat-construit",
+  "note": "La *Natural History of Religion* discute Lucrèce (sections 5 et 12) ; la crainte comme origine des dieux leur est commune."
+ },
+ {
+  "de": "William James",
+  "a": "Clifford",
+  "type": "attestee",
+  "section": "a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique",
+  "note": "*The Will to Believe* (1896) répond à *The Ethics of Belief* (1877)."
+ },
+ {
+  "de": "Heidegger",
+  "a": "Nietzsche",
+  "type": "attestee",
+  "section": "heidegger",
+  "note": "« Le mot de Nietzsche Dieu est mort » : Nietzsche dernier métaphysicien."
+ },
+ {
+  "de": "Heidegger",
+  "a": "Leibniz",
+  "type": "attestee",
+  "section": "pourquoi-y-a-t-il-quelque-chose-plutot-que-rien-un-debat-construit",
+  "note": "L'introduction de 1949 à *Was ist Metaphysik?* reprend la question de Leibniz."
+ },
+ {
+  "de": "Bergson",
+  "a": "Leibniz",
+  "type": "attestee",
+  "section": "pourquoi-y-a-t-il-quelque-chose-plutot-que-rien-un-debat-construit",
+  "note": "*L'Évolution créatrice*, ch. IV : l'idée de néant comme pseudo-idée, chez Spinoza ou Leibniz."
+ },
+ {
+  "de": "Barth",
+  "a": "Feuerbach",
+  "type": "attestee",
+  "section": "barth",
+  "note": "Feuerbach a raison pour la religion comme expérience de l'homme mauvais et mortel."
+ },
+ {
+  "de": "Bonhoeffer",
+  "a": "Barth",
+  "type": "attestee",
+  "section": "bonhoeffer",
+  "note": "Les lettres de 1944 : le « positivisme de la révélation »."
+ },
+ {
+  "de": "Sartre",
+  "a": "Bataille",
+  "type": "attestee",
+  "section": "bataille",
+  "note": "« Un nouveau mystique » (1943) contre *L'Expérience intérieure*."
+ },
+ {
+  "de": "Camus",
+  "a": "Jaspers",
+  "type": "attestee",
+  "section": "jaspers",
+  "note": "*Le Mythe de Sisyphe* (1942) : le saut de Jaspers vers la transcendance."
+ },
+ {
+  "de": "Camus",
+  "a": "Dostoïevski",
+  "type": "attestee",
+  "section": "camus",
+  "note": "*L'Homme révolté* (1951) lit Ivan Karamazov et la révolte métaphysique."
+ },
+ {
+  "de": "Sartre et Jeanson",
+  "a": "Camus",
+  "type": "attestee",
+  "section": "camus",
+  "note": "La querelle de *L'Homme révolté* dans *Les Temps modernes* (1952)."
+ },
+ {
+  "de": "Levinas",
+  "a": "Heidegger",
+  "type": "attestee",
+  "section": "levinas",
+  "note": "L'éthique avant l'ontologie ; « Heidegger, Gagarine et nous » (1961)."
+ },
+ {
+  "de": "Marion",
+  "a": "Heidegger",
+  "type": "attestee",
+  "section": "marion",
+  "note": "*Dieu sans l'être* (1982) retourne la critique de l'onto-théologie au service de la foi."
+ },
+ {
+  "de": "Jaspers",
+  "a": "Bultmann",
+  "type": "attestee",
+  "section": "jaspers",
+  "note": "*Die Frage der Entmythologisierung* (1954) : le mythe ne se traduit pas sans perte."
+ },
+ {
+  "de": "Blumenberg",
+  "a": "Löwith",
+  "type": "attestee",
+  "section": "hans-blumenberg",
+  "note": "*Die Legitimität der Neuzeit* (1966) contre la thèse de l'eschatologie sécularisée."
+ },
+ {
+  "de": "Blumenberg",
+  "a": "Schmitt",
+  "type": "attestee",
+  "section": "hans-blumenberg",
+  "note": "La réoccupation contre la théologie politique."
+ },
+ {
+  "de": "Löwith",
+  "a": "Marx et Comte",
+  "type": "attestee",
+  "section": "karl-lowith",
+  "note": "*Meaning in History* (1949) : l'eschatologie chrétienne transposée."
+ },
+ {
+  "de": "Leo Strauss",
+  "a": "Spinoza",
+  "type": "attestee",
+  "section": "leo-strauss",
+  "note": "*Die Religionskritik Spinozas* (1930) : la critique moderne n'a pas réfuté la révélation."
+ },
+ {
+  "de": "Leo Strauss",
+  "a": "Löwith",
+  "type": "attestee",
+  "section": "leo-strauss",
+  "note": "Une longue correspondance sur la modernité : la critique de l'historicisme et le retour aux Anciens."
+ },
+ {
+  "de": "Hadot",
+  "a": "Foucault",
+  "type": "attestee",
+  "section": "pierre-hadot",
+  "note": "Hadot discute le « souci de soi » de Foucault, trop esthétique à ses yeux."
+ },
+ {
+  "de": "Ferry",
+  "a": "Gauchet",
+  "type": "attestee",
+  "section": "luc-ferry",
+  "note": "Le débat public sur ce qui survit à la sortie de la religion."
+ },
+ {
+  "de": "Comte-Sponville",
+  "a": "Ferry",
+  "type": "attestee",
+  "section": "comte-sponville-et-ferry",
+  "note": "La querelle des deux sagesses : immanence contre transcendance horizontale."
+ },
+ {
+  "de": "Bayle",
+  "a": "Ivan Karamazov",
+  "type": "construite",
+  "section": "bayle",
+  "note": "La société d'athées vertueux devant le « tout est permis »."
+ },
+ {
+  "de": "Montaigne",
+  "a": "Hume",
+  "type": "construite",
+  "section": "montaigne",
+  "note": "Une parenté sceptique, non une influence établie."
+ },
+ {
+  "de": "Ivan Karamazov",
+  "a": "Leibniz",
+  "type": "construite",
+  "section": "leibniz",
+  "note": "Le refus de l'harmonie payée par la larme d'un enfant, devant la théodicée."
+ },
+ {
+  "de": "Lucrèce",
+  "a": "Platon",
+  "type": "construite",
+  "section": "platon",
+  "note": "La paix épicurienne devant la loi contre les impies des *Lois*."
+ },
+ {
+  "de": "Rousseau",
+  "a": "Platon",
+  "type": "construite",
+  "section": "rousseau",
+  "note": "La religion civile reprend la sanction que les *Lois* réservaient à l'impie."
+ },
+ {
+  "de": "Feuerbach",
+  "a": "Maïmonide",
+  "type": "construite",
+  "section": "maimonide",
+  "note": "La théologie négative lue comme un athéisme subtil."
+ },
+ {
+  "de": "Wittgenstein",
+  "a": "Leibniz",
+  "type": "construite",
+  "section": "pourquoi-y-a-t-il-quelque-chose-plutot-que-rien-un-debat-construit",
+  "note": "L'étonnement que le monde soit, sans demande de raison suffisante."
+ },
+ {
+  "de": "Becker",
+  "a": "Pascal",
+  "type": "construite",
+  "section": "becker",
+  "note": "Le déni de la mort et le divertissement."
+ },
+ {
+  "de": "Boyer",
+  "a": "Hume",
+  "type": "construite",
+  "section": "boyer",
+  "note": "La détection d'agents : les visages que Hume voyait déjà dans la lune."
+ },
+ {
+  "de": "Levinas",
+  "a": "Feuerbach",
+  "type": "construite",
+  "section": "levinas",
+  "note": "Le Je et le Tu : l'unité de l'homme avec l'homme, ou la trace de l'Autre."
+ },
+ {
+  "de": "Stirner",
+  "a": "les nouveaux athées",
+  "type": "construite",
+  "section": "les-athees-militants-contemporains",
+  "note": "« Nos athées sont des gens pieux » : la Raison et la Science comme essences."
+ },
+ {
+  "de": "Voltaire",
+  "a": "le Grand Inquisiteur",
+  "type": "construite",
+  "section": "voltaire",
+  "note": "« Si Dieu n'existait pas, il faudrait l'inventer » : le programme de l'Inquisiteur en un alexandrin."
+ },
+ {
+  "de": "Simone Weil",
+  "a": "Feuerbach",
+  "type": "construite",
+  "section": "simone-weil",
+  "note": "Deux athéismes : celui qui purifie la notion de Dieu, et l'athéisme humaniste, qui met l'homme à sa place et n'est qu'une idolâtrie de plus."
+ },
+ {
+  "de": "Girard",
+  "a": "Gauchet",
+  "type": "construite",
+  "section": "girard",
+  "note": "Le christianisme, sortie du sacrifice ou religion de la sortie de la religion."
+ }
+]

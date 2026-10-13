@@ -254,6 +254,188 @@ def inserer_figures(blocs_html, figs):
     return out
 
 
+def charger(nom, defaut):
+    p = os.path.join(ICI, nom)
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else defaut
+
+
+def slug_terme(t):
+    t = unicodedata.normalize("NFKD", t.replace("œ", "oe")).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-zA-Z0-9]+", "-", t.lower()).strip("-")
+
+
+def lier_lexique(h):
+    """Relie la premiere occurrence de chaque terme du lexique, hors liens, titres et legendes."""
+    termes = charger("lexique.json", [])
+    motifs = []
+    for e in termes:
+        for m in e.get("motifs", []):
+            fl = 0 if m[:1].isupper() and not m.isupper() and m not in ("Logos",) else re.I
+            motifs.append((slug_terme(e["terme"]), re.compile(r"(?<![\w-])(%s)(?![\w-])" % re.escape(html.escape(m, quote=False)), fl)))
+    faits = set()
+    morceaux = re.split(r"(<[^>]+>)", h)
+    bloque = 0
+    for i, m in enumerate(morceaux):
+        if m.startswith("<"):
+            nom = re.match(r"</?\s*([a-zA-Z0-9]+)", m)
+            if nom and nom.group(1).lower() in ("a", "summary", "figcaption", "h1", "h2", "h3", "h4", "th", "button"):
+                bloque += -1 if m.startswith("</") else (0 if m.endswith("/>") else 1)
+            continue
+        if bloque > 0 or not m.strip():
+            continue
+        poses = []
+        for sl, rx in motifs:
+            if sl in faits:
+                continue
+            r = rx.search(m)
+            if r and not any(a < r.end() and r.start() < b for a, b, _ in poses):
+                poses.append((r.start(), r.end(), sl))
+                faits.add(sl)
+        for a, b, sl in sorted(poses, reverse=True):
+            m = m[:a] + '<a class="lex" href="lexique.html#%s" title="Voir le lexique">%s</a>' % (sl, m[a:b]) + m[b:]
+        morceaux[i] = m
+    return "".join(morceaux)
+
+
+ROMAINS = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV",
+           "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI"]
+
+
+def siecle(y):
+    n = (-y - 1) // 100 + 1 if y < 0 else (y - 1) // 100 + 1
+    nom = "Ier" if n == 1 else ROMAINS[n] + "e"
+    return "%s siècle%s" % (nom, " av. J.-C." if y < 0 else "")
+
+
+def annee(dates):
+    """Annee de tri tiree d'une chaine de dates ('428/427-348/347 av. J.-C.', 'né en 1946', 'v. 1260-1328')."""
+    m = re.search(r"(\d{1,4})", dates)
+    if not m:
+        return None
+    y = int(m.group(1))
+    avant = re.match(r"^\D*\d+(?:/\d+)?\s*av\. J\.-C\.", dates) or ("av. J.-C." in dates and "ap." not in dates)
+    return -y if avant else y
+
+
+def personnes(titre):
+    """'Strauss (1808-1874) et Bauer (1809-1882) : ...' -> [(nom, dates)]."""
+    tete = titre.split(" : ")[0]
+    return [(re.sub(r"^(et|,)\s+", "", n.strip()), d.strip())
+            for n, d in re.findall(r"([^()]+?)\s*\(([^)]*\d[^)]*)\)", tete)]
+
+
+def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, version):
+    tpl = open(os.path.join(ICI, "page.template.html"), encoding="utf-8").read()
+    nav = " ".join('<a class="chip%s" href="%s">%s</a>' % (" actif" if f == nom else "", f, l)
+                   for f, l in (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique")))
+    rempl = {"TITRE_PAGE": titre_page, "TITRE_BRUT": html.escape(titre), "DESCRIPTION": description,
+             "OG_IMAGE": og_image, "NAV": nav, "INTRO": intro, "CONTENU": contenu}
+    for k, v in rempl.items():
+        tpl = tpl.replace("{{%s}}" % k, v)
+    tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace(
+        'src="js/pages.js"', 'src="js/pages.js?v=%s"' % version)
+    open(os.path.join(RACINE, nom), "w", encoding="utf-8").write(tpl)
+
+
+def pages_outils(titre, infos, version, og_image, ids):
+    # ---------------------------------------------------------------- frise
+    dates_sup = charger("auteurs.json", {})
+    gens = []
+    for s in infos:
+        if s["id"] in dates_sup:
+            for nom, d, y in dates_sup[s["id"]]:
+                gens.append((y, nom, d, s))
+            continue
+        for nom, d in personnes(s["titre"]):
+            y = annee(d)
+            if y is not None:
+                gens.append((y, nom, d, s))
+    vus, uniques = set(), []
+    for g in sorted(gens, key=lambda g: (g[0], g[1])):
+        if g[1] in vus:
+            continue
+        vus.add(g[1])
+        uniques.append(g)
+    parties = []
+    for s in infos:
+        if s["partie"] not in [p[0] for p in parties]:
+            parties.append((s["partie"], s["partie_titre"]))
+    opts = '<option value="">Toutes les parties</option>' + "".join(
+        '<option value="%s">%s</option>' % (pid, html.escape(pt.split(" : ")[0])) for pid, pt in parties
+        if "partie" in pt.lower())
+    h, cur = [], None
+    for y, nom, d, s in uniques:
+        sc = siecle(y)
+        if sc != cur:
+            if cur:
+                h.append("</ol></section>")
+            h.append('<section class="siecle" data-groupe><h2>%s</h2><ol class="frise">' % sc)
+            cur = sc
+        h.append('<li data-item data-partie="%s"><a href="index.html#%s"><span class="f-nom">%s</span>'
+                 '<span class="f-dates">%s</span><span class="f-partie">%s</span></a></li>' % (
+                     s["partie"], s["id"], html.escape(nom), html.escape(d), html.escape(s["partie_titre"])))
+    h.append("</ol></section>")
+    filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" '
+               'aria-label="Chercher un auteur"><select data-filtre-partie aria-label="Filtrer par partie">%s</select></div>' % opts)
+    page_outil("frise.html", "Frise chronologique",
+               "Les %d auteurs de l'essai, du plus ancien au plus récent. Un toucher sur un nom ouvre sa section." % len(uniques),
+               "Frise chronologique des auteurs de l'essai.", filtres + "".join(h) + '<p id="aucun" hidden>Aucun auteur ne correspond.</p>',
+               titre, og_image, version)
+
+    # ---------------------------------------------------------------- reponses
+    rel = charger("reponses.json", [])
+    for r in rel:
+        if r["section"] not in ids:
+            print("  reponses.json : section inconnue", r["section"])
+    noms = []
+    for r in rel:
+        for n in (r["de"], r["a"]):
+            if n not in noms:
+                noms.append(n)
+    noms.sort(key=lambda n: slug_terme(n))
+    cartes = []
+    for n in noms:
+        sort = [r for r in rel if r["de"] == n]
+        entre = [r for r in rel if r["a"] == n]
+
+        def li(r, autre):
+            lab = "réponse attestée" if r["type"] == "attestee" else "confrontation construite"
+            return ('<li data-item data-type="%s"><span class="r-type %s">%s</span> <a href="index.html#%s">%s</a>'
+                    '<span class="r-note">%s</span></li>') % (r["type"], r["type"], lab, r["section"], html.escape(autre), en_ligne(r["note"]))
+        blocs_html = ""
+        if sort:
+            blocs_html += "<h3>répond à</h3><ul>%s</ul>" % "".join(li(r, r["a"]) for r in sort)
+        if entre:
+            blocs_html += "<h3>reçoit une réponse de</h3><ul>%s</ul>" % "".join(li(r, r["de"]) for r in entre)
+        cartes.append('<section class="rep-carte" data-groupe id="%s"><h2>%s</h2>%s</section>' % (slug_terme(n), html.escape(n), blocs_html))
+    att = sum(1 for r in rel if r["type"] == "attestee")
+    filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" aria-label="Chercher">'
+               '<div class="chips"><button class="chip" data-filtre-type="tous" aria-pressed="true">Toutes</button>'
+               '<button class="chip" data-filtre-type="attestee" aria-pressed="false">Attestées</button>'
+               '<button class="chip" data-filtre-type="construite" aria-pressed="false">Construites</button></div></div>')
+    page_outil("reponses.html", "Qui répond à qui",
+               "Les %d échanges que l'essai met en scène : %d réponses attestées, quand un auteur a réellement lu un autre et lui a répondu, et %d confrontations construites, quand l'essai fait se rencontrer deux pensées que l'histoire n'a pas mises face à face." % (len(rel), att, len(rel) - att),
+               "Carte des réponses entre les auteurs de l'essai.", filtres + "".join(cartes) + '<p id="aucun" hidden>Aucun échange ne correspond.</p>',
+               titre, og_image, version)
+
+    # ---------------------------------------------------------------- lexique
+    lex = sorted(charger("lexique.json", []), key=lambda e: slug_terme(e["terme"]))
+    items = []
+    for e in lex:
+        if e["section"] not in ids:
+            print("  lexique.json : section inconnue", e["section"])
+        items.append('<div class="lex-entree" data-item id="%s"><dt>%s%s</dt><dd>%s <a class="lex-voir" href="index.html#%s">Lire dans l\'essai</a></dd></div>' % (
+            slug_terme(e["terme"]), html.escape(e["terme"]),
+            ' <span class="lex-langue">%s</span>' % en_ligne(e["langue"]) if e.get("langue") else "",
+            en_ligne(e["definition"]), e["section"]))
+    page_outil("lexique.html", "Lexique",
+               "%d notions de l'essai, définies brièvement. Dans le texte, la première occurrence de chacune renvoie ici." % len(lex),
+               "Lexique des notions de l'essai.",
+               '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher une notion…" aria-label="Chercher une notion"></div>'
+               '<dl class="lexique">%s</dl><p id="aucun" hidden>Aucune notion ne correspond.</p>' % "".join(items),
+               titre, og_image, version)
+
+
 def construire(chemin):
     titre, sous_titre, intro, parties = structurer(lire_article(chemin))
     images = charger_images()
@@ -285,6 +467,7 @@ def construire(chemin):
 
     sources_html, toc, corps, cartes = "", [], [], []
     total_mots, nb_parties, resume_id = 0, 0, ""
+    infos = []  # sections, pour la frise
     for part in parties:
         pid = uid(slug(part["titre"]), "p")
         ptitre = part["titre"]
@@ -311,6 +494,7 @@ def construire(chemin):
             base = slug(sec["titre"])
             sid = uid(base, pid)
             nom, dates, formule = analyser_titre(sec["titre"])
+            infos.append({"id": sid, "titre": sec["titre"], "partie": pid, "partie_titre": ptitre})
             corps_sec = rendre_blocs(sec["lignes"])
             smots = sum(mots(x) for x in corps_sec)
             pmots += smots
@@ -377,6 +561,7 @@ def construire(chemin):
         for i in images)
     cover = par_section.get(("cover", "cover"), [])
     heures = total_mots / MOTS_MINUTE / 60
+    corps_html = lier_lexique("\n".join(corps))
     tpl = open(os.path.join(ICI, "template.html"), encoding="utf-8").read()
     version = str(int(time.time()))
     rempl = {
@@ -389,7 +574,7 @@ def construire(chemin):
         "A_PROPOS": "".join("<p>%s</p>" % x for x in a_propos),
         "CARTES": "\n".join(cartes),
         "TOC": "\n".join(toc),
-        "CORPS": "\n".join(corps),
+        "CORPS": corps_html,
         "SOURCES": sources_html,
         "CREDITS": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>",
         "NB_PARTIES": NOMBRES.get(nb_parties, str(nb_parties)),
@@ -403,6 +588,7 @@ def construire(chemin):
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
     open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)
+    pages_outils(titre, infos, version, rempl["OG_IMAGE"], ids_vus)
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
     sw = sw.replace("{{VERSION}}", version)
     open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw)

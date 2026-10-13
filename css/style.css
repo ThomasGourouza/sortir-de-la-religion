@@ -265,3 +265,50 @@ th { background: var(--bg-soft); }
   details > summary::after { display: none; }
   .section { border: 0; background: none; }
 }
+
+/* Liens du lexique dans l'essai */
+a.lex { color: inherit; text-decoration: underline dotted var(--accent); text-underline-offset: 3px; }
+a.lex:hover { color: var(--accent); }
+.hero-outils { font: 14px var(--sans); color: var(--ink-soft); margin: 0 0 12px; }
+.drawer-outils { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 12px 8px; }
+.drawer-outils .chip { text-decoration: none; }
+
+/* Pages outils : frise, réponses, lexique */
+.outil { max-width: var(--measure); margin: 0 auto; padding: 0 16px 24px; }
+.outil h1 { font-size: clamp(1.5rem, 6vw, 2.1rem); margin: 16px 0 6px; }
+.outil-intro { color: var(--ink-soft); font-size: .95em; }
+.outils-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.outils-nav .chip { text-decoration: none; }
+.chip.actif, .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.outil-filtres { position: sticky; top: var(--topbar); z-index: 5; background: var(--bg); padding: 10px 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.outil-filtres input, .outil-filtres select {
+  flex: 1 1 200px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--card); color: var(--ink); font: 16px var(--sans);
+}
+.outil-filtres .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.siecle h2 { font: 600 13px var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin: 22px 0 6px; }
+.frise { list-style: none; margin: 0; padding: 0 0 0 14px; border-left: 2px solid var(--line); }
+.frise li { position: relative; margin: 0 0 6px; }
+.frise li::before { content: ""; position: absolute; left: -20px; top: 16px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+.frise a { display: flex; flex-direction: column; padding: 8px 12px; border-radius: 12px; background: var(--card); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+.f-nom { font-weight: 600; }
+.f-dates { font: 13px var(--sans); color: var(--ink-soft); }
+.f-partie { font: 12px var(--sans); color: var(--ink-soft); opacity: .85; }
+.rep-carte { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 6px 16px 10px; margin: 12px 0; }
+.rep-carte h2 { font-size: 1.15em; margin: 8px 0 2px; }
+.rep-carte h3 { font: 600 12px var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); margin: 10px 0 4px; }
+.rep-carte ul { list-style: none; margin: 0; padding: 0; }
+.rep-carte li { padding: 6px 0; border-top: 1px solid var(--line); }
+.rep-carte li:first-child { border-top: 0; }
+.r-type { display: inline-block; font: 600 11px var(--sans); padding: 1px 7px; border-radius: 999px; margin-right: 4px; }
+.r-type.attestee { background: var(--accent); color: #fff; }
+.r-type.construite { background: var(--bg-soft); color: var(--ink-soft); border: 1px dashed var(--ink-soft); }
+.r-note { display: block; font-size: .9em; color: var(--ink-soft); }
+.lexique { margin: 0; }
+.lex-entree { padding: 10px 0; border-top: 1px solid var(--line); scroll-margin-top: calc(var(--topbar) + 70px); }
+.lex-entree dt { font-weight: 600; font-size: 1.05em; }
+.lex-langue { font: 12.5px var(--sans); color: var(--ink-soft); font-weight: 400; }
+.lex-entree dd { margin: 4px 0 0; }
+.lex-voir { font: 13px var(--sans); white-space: nowrap; }
+.lex-entree.cible { background: var(--accent-soft); border-radius: 10px; padding: 10px; }
+body.page-outil { padding-left: 0 !important; }

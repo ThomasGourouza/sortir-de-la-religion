@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITRE_PAGE}} · {{TITRE_BRUT}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta name="theme-color" content="#f7f3ea">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="{{TITRE_PAGE}} · {{TITRE_BRUT}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  try {
+    var t = localStorage.getItem("sdr-theme");
+    var f = localStorage.getItem("sdr-font");
+    if (t) document.documentElement.dataset.theme = t;
+    if (f) document.documentElement.style.setProperty("--fs", f + "px");
+  } catch (e) {}
+</script>
+</head>
+<body class="page-outil">
+<header class="topbar">
+  <a class="icon-btn" href="index.html" aria-label="Revenir à l'essai">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+  <span class="topbar-title">{{TITRE_PAGE}}</span>
+  <div class="topbar-actions">
+    <button class="icon-btn" id="font-down" aria-label="Réduire le texte">A<sup>−</sup></button>
+    <button class="icon-btn" id="font-up" aria-label="Agrandir le texte">A<sup>+</sup></button>
+    <button class="icon-btn" id="theme-btn" aria-label="Changer de thème">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+<main class="outil">
+  <nav class="outils-nav" aria-label="Outils de lecture">{{NAV}}</nav>
+  <h1>{{TITRE_PAGE}}</h1>
+  <p class="outil-intro">{{INTRO}}</p>
+  {{CONTENU}}
+</main>
+<footer class="footer"><p><a href="index.html">Revenir à l'essai</a></p></footer>
+<script src="js/pages.js"></script>
+</body>
+</html>

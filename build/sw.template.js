@@ -8,7 +8,11 @@ var SHELL = [
   "index.html",
   "css/style.css?v=" + VERSION,
   "js/app.js?v=" + VERSION,
-  "favicon.svg"
+  "favicon.svg",
+  "frise.html",
+  "reponses.html",
+  "lexique.html",
+  "js/pages.js?v=" + VERSION
 ];
 
 self.addEventListener("install", function (e) {
@@ -36,14 +40,15 @@ function cacheFirst(req, name) {
 }
 
 function networkFirst(req) {
+  var page = (new URL(req.url).pathname.match(/([a-z]+\.html)$/) || [null, "index.html"])[1];
   return fetch(req).then(function (res) {
     if (res && res.ok) {
       var copy = res.clone();
-      caches.open(SHELL_CACHE).then(function (c) { c.put("index.html", copy); });
+      caches.open(SHELL_CACHE).then(function (c) { c.put(page, copy); });
     }
     return res;
   }).catch(function () {
-    return caches.match("index.html", { ignoreSearch: true });
+    return caches.match(page, { ignoreSearch: true });
   });
 }
 
@@ -56,7 +61,7 @@ self.addEventListener("fetch", function (e) {
     return;
   }
   if (url.origin !== self.location.origin) return;
-  if (req.mode === "navigate" || /\/(index\.html)?$/.test(url.pathname)) {
+  if (req.mode === "navigate" || /\/([a-z]+\.html)?$/.test(url.pathname)) {
     e.respondWith(networkFirst(req));
     return;
   }

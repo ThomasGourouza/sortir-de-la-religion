@@ -1,0 +1,409 @@
+[
+ {
+  "terme": "Huit régimes de la critique",
+  "motifs": [
+   "huit régimes"
+  ],
+  "section": "huit-regimes-de-la-critique",
+  "definition": "La grille de lecture de l'essai : la religion y est tour à tour une erreur à corriger, un symptôme d'un monde qui a besoin d'elle, une valeur dont on fait la généalogie, une pièce de la métaphysique (onto-théologie), une illusion commandée par le désir, une fonction sociale, un héritage dont on discute la sécularisation, ou une expérience qui survit aux dogmes. Ces régimes ne s'additionnent pas, ils s'accusent."
+ },
+ {
+  "terme": "Critère du sacrifice",
+  "motifs": [
+   "critère du sacrifice"
+  ],
+  "section": "these",
+  "definition": "Le critère que propose l'essai : on refonde une religion, au sens qui importe ici, quand on installe à la place de Dieu un absolu auquel l'individu doit se sacrifier, et dont la critique devient un sacrilège. Le critère ne dépend pas de la présence ou de l'absence de Dieu."
+ },
+ {
+  "terme": "Religio, relegere, religare",
+  "langue": "latin",
+  "motifs": [
+   "religare"
+  ],
+  "section": "religion-et-spiritualite",
+  "definition": "Les deux étymologies antiques du mot religion. Pour Cicéron (*De natura deorum* II, 72), *religio* vient de *relegere*, relire, reprendre avec scrupule : une exactitude rituelle et civique. Pour Lactance (*Institutions divines* IV, 28), elle vient de *religare*, relier : le lien personnel qui attache l'homme à Dieu. L'essai voit dans ce conflit deux conceptions de la chose."
+ },
+ {
+  "terme": "Spiritualité",
+  "motifs": [
+   "spiritualité"
+  ],
+  "section": "religion-et-spiritualite",
+  "definition": "Dans l'usage de Foucault et de Hadot, que retient l'essai : l'ensemble des pratiques par lesquelles un sujet se transforme pour avoir accès à une vérité. La notion ne suppose ni Dieu, ni culte, ni croyance, ce qui permet de parler de spiritualités sans Dieu."
+ },
+ {
+  "terme": "Onto-théologie",
+  "langue": "allemand : Onto-Theo-Logik",
+  "motifs": [
+   "onto-théologie"
+  ],
+  "section": "heidegger",
+  "definition": "Mot de Kant, que Heidegger reprend (*Identität und Differenz*, 1957) pour la constitution de la métaphysique occidentale depuis Platon et Aristote : la pensée de l'être en tant qu'être se confond avec la pensée d'un étant suprême, cause de soi, qui fonde tout le reste. Ce dieu des philosophes, dit Heidegger, n'a rien de divin : on ne peut ni le prier ni danser devant lui."
+ },
+ {
+  "terme": "Théologie négative",
+  "langue": "aussi apophatique, du grec ἀπόφασις (apophasis), négation",
+  "motifs": [
+   "théologie négative"
+  ],
+  "section": "maimonide",
+  "definition": "Manière de parler de Dieu en niant de lui tout ce qu'on peut en dire, parce que tout attribut positif le rabaisserait au rang des créatures. Elle traverse Plotin, le Pseudo-Denys, Maïmonide (les attributs négatifs) et Eckhart. Feuerbach y voyait un athéisme subtil."
+ },
+ {
+  "terme": "Logos",
+  "langue": "grec λόγος (logos), parole, raison",
+  "motifs": [
+   "Logos"
+  ],
+  "section": "philon-d-alexandrie",
+  "definition": "La raison ou la parole divine par laquelle le monde est ordonné. Chez Philon d'Alexandrie, intermédiaire entre Dieu et le monde ; dans le prologue de Jean, le Verbe fait chair ; chez Justin, le Logos « semé » en tout homme, qui permet de dire Socrate chrétien avant le Christ. C'est par lui que le Dieu des philosophes grecs entre dans le christianisme."
+ },
+ {
+  "terme": "Double vérité",
+  "motifs": [
+   "double vérité"
+  ],
+  "section": "averroes",
+  "definition": "Doctrine qu'on a prêtée aux averroïstes latins : une proposition pourrait être vraie en philosophie et fausse en théologie. Averroès ne l'a jamais enseignée ; il soutient au contraire que la vérité ne contredit pas la vérité. L'expression vient surtout de la condamnation parisienne de 1277 et de ses lecteurs polémiques."
+ },
+ {
+  "terme": "Fidéisme",
+  "motifs": [
+   "fidéisme"
+  ],
+  "section": "montaigne",
+  "definition": "Position qui fonde la religion sur la seule foi en ruinant les prétentions de la raison. Chez Montaigne, le scepticisme humilie la raison humaine et laisse la foi reçue intacte, ce qu'on peut lire comme une apologie ou comme une manière discrète de réduire la religion à une coutume."
+ },
+ {
+  "terme": "Théodicée",
+  "langue": "grec θεός (theos), dieu, et δίκη (dikê), justice",
+  "motifs": [
+   "théodicée"
+  ],
+  "section": "leibniz",
+  "definition": "Mot forgé par Leibniz (*Essais de théodicée*, 1710) pour la justification de Dieu devant l'existence du mal : le monde réel est le meilleur des mondes possibles, et le mal de la partie sert la perfection du tout. Voltaire la raille dans *Candide*, Ivan Karamazov la refuse au nom de la larme d'un enfant."
+ },
+ {
+  "terme": "Déisme",
+  "motifs": [
+   "déisme"
+  ],
+  "section": "voltaire",
+  "definition": "Croyance en un Dieu créateur et rémunérateur établie par la seule raison, sans révélation, dogmes ni Églises. C'est la position de Voltaire, qui garde Dieu comme fondement de la morale et frein social, et que d'Holbach tient pour une demi-mesure."
+ },
+ {
+  "terme": "Religion civile",
+  "motifs": [
+   "religion civile"
+  ],
+  "section": "rousseau",
+  "definition": "Chez Rousseau (*Du contrat social* IV, 8), une profession de foi purement civile, dont le souverain fixe les articles : existence de Dieu, vie à venir, sainteté du contrat et des lois, et un dogme négatif, l'intolérance exclue. Qui ne la croit pas peut être banni ; qui se conduit comme ne la croyant pas après l'avoir reconnue doit être puni de mort. Cas d'école pour le critère du sacrifice."
+ },
+ {
+  "terme": "Sentiment de dépendance absolue",
+  "langue": "allemand : schlechthinniges Abhängigkeitsgefühl",
+  "motifs": [
+   "sentiment de dépendance absolue",
+   "Abhängigkeitsgefühl"
+  ],
+  "section": "friedrich-schleiermacher",
+  "definition": "Chez Schleiermacher (*Der christliche Glaube*, 1821-1822), l'essence de la piété : la conscience d'être absolument dépendant. Hegel le raille, Feuerbach le reprend et le retourne : l'homme dépend d'abord de la nature, et c'est elle que la religion divinise."
+ },
+ {
+  "terme": "Aufhebung",
+  "langue": "allemand, de aufheben",
+  "motifs": [
+   "Aufhebung"
+  ],
+  "section": "georg-wilhelm-friedrich-hegel",
+  "definition": "Le mouvement dialectique chez Hegel, qui à la fois supprime, conserve et élève. Appliquée à la religion, elle signifie que la philosophie dépasse la représentation religieuse en la conservant dans le concept : la religion n'est pas réfutée, elle est comprise."
+ },
+ {
+  "terme": "Projection",
+  "motifs": [
+   "projection"
+  ],
+  "section": "ludwig-feuerbach",
+  "definition": "La thèse de Feuerbach (*Das Wesen des Christentums*, 1841) : l'homme pose hors de lui, dans un Dieu, les qualités de son propre genre, la raison, la volonté, l'amour, puis s'agenouille devant elles. Le secret de la théologie est l'anthropologie. Le mot vient du vocabulaire de ses lecteurs ; Feuerbach parle d'objectivation et d'aliénation."
+ },
+ {
+  "terme": "Opium du peuple",
+  "langue": "allemand : das Opium des Volkes",
+  "motifs": [
+   "opium"
+  ],
+  "section": "karl-marx-et-friedrich-engels",
+  "definition": "Formule de Marx (1844) qu'on cite sans la phrase qui la précède : la religion est le soupir de la créature opprimée, l'âme d'un monde sans cœur, et aussi une protestation contre la détresse réelle. Elle est un symptôme, qu'on ne supprime qu'en changeant le monde qui la produit."
+ },
+ {
+  "terme": "Grand Inquisiteur",
+  "motifs": [
+   "Grand Inquisiteur"
+  ],
+  "section": "dostoievski",
+  "definition": "Le poème d'Ivan dans *Les Frères Karamazov* (1879-1880) : un vieux cardinal de Séville reproche au Christ revenu d'avoir laissé aux hommes une liberté qu'ils ne peuvent porter, et défend une Église qui leur donne le pain et les gouverne par le miracle, le mystère et l'autorité. L'essai en fait la figure de qui sort de Dieu en gardant la religion."
+ },
+ {
+  "terme": "Mort de Dieu",
+  "langue": "allemand : Gott ist tot",
+  "motifs": [
+   "mort de Dieu"
+  ],
+  "section": "nietzsche",
+  "definition": "Chez Nietzsche (*Le Gai Savoir*, § 125 et § 343), non pas une thèse sur l'inexistence de Dieu mais un événement de la culture : la croyance au Dieu chrétien est devenue incroyable, et l'on n'a pas encore mesuré tout ce qui tombe avec elle, à commencer par la morale. D'où la mort de Dieu comme tâche."
+ },
+ {
+  "terme": "Généalogie",
+  "motifs": [
+   "généalogie"
+  ],
+  "section": "nietzsche",
+  "definition": "La méthode de Nietzsche (*Zur Genealogie der Moral*, 1887) : demander d'où viennent nos valeurs et quelle volonté les a voulues, plutôt que si elles sont vraies. La religion y apparaît comme une manière d'évaluer, qui survit à la croyance en Dieu."
+ },
+ {
+  "terme": "Nihilisme",
+  "motifs": [
+   "nihilisme"
+  ],
+  "section": "nietzsche",
+  "definition": "Chez Nietzsche, la dévalorisation des valeurs suprêmes : quand le monde vrai s'effondre, rien ne semble plus valoir. Il le tient pour une conséquence de la morale chrétienne elle-même, et pour une épreuve à traverser plutôt qu'un état où s'installer."
+ },
+ {
+  "terme": "Amor fati",
+  "langue": "latin, amour du destin",
+  "motifs": [
+   "amor fati"
+  ],
+  "section": "nietzsche",
+  "definition": "Chez Nietzsche, le consentement qui veut ce qui est, sans rien vouloir d'autre, ni en avant ni en arrière. L'essai le distingue de l'obéissance au destin : c'est un exercice qui transforme celui qui consent, non une soumission à un absolu."
+ },
+ {
+  "terme": "Sacré",
+  "motifs": [
+   "sacré"
+  ],
+  "section": "durkheim",
+  "definition": "Chez Durkheim (*Les Formes élémentaires de la vie religieuse*, 1912), ce qui est séparé et interdit, par opposition au profane. Le sacré est la forme sous laquelle une société se représente sa propre force ; aucune société ne s'en passe, d'où l'objection durkheimienne à toute idée d'une sortie complète de la religion."
+ },
+ {
+  "terme": "Désenchantement du monde",
+  "langue": "allemand : Entzauberung der Welt",
+  "motifs": [
+   "désenchantement"
+  ],
+  "section": "weber",
+  "definition": "Chez Max Weber (*Wissenschaft als Beruf*, 1919), le recul des puissances mystérieuses devant le calcul rationnel. Il ne signifie pas la fin du sens mais l'impossibilité d'un sens commun garanti : les dieux anciens reviennent, dépersonnalisés, sous la forme de valeurs en guerre."
+ },
+ {
+  "terme": "Numineux",
+  "langue": "latin numen, puissance divine",
+  "motifs": [
+   "numineux"
+  ],
+  "section": "rudolf-otto",
+  "definition": "Chez Rudolf Otto (*Das Heilige*, 1917), l'élément irrationnel du sacré, saisi par un sentiment propre : le mystère terrible et fascinant, le tout autre. Otto fait du sacré, catégorie composée de moments rationnels et irrationnels, une « Kategorie rein a priori », et tient le numineux pour un moment a priori de l'esprit."
+ },
+ {
+  "terme": "Illusion",
+  "langue": "allemand : Illusion",
+  "motifs": [
+   "illusion"
+  ],
+  "section": "freud",
+  "definition": "Chez Freud (*Die Zukunft einer Illusion*, 1927), au sens technique : une croyance commandée par un désir, et non forcément fausse. La religion répète le désir infantile d'un père protecteur devant la détresse ; Freud lui oppose « notre dieu Logos », la science."
+ },
+ {
+  "terme": "Sentiment océanique",
+  "motifs": [
+   "sentiment océanique"
+  ],
+  "section": "freud",
+  "definition": "Expression de Romain Rolland dans sa lettre à Freud de 1927 : une sensation d'éternité et d'union sans bornes, qu'il tenait pour la source vraie de la religion. Freud avoue, dans *Malaise dans la civilisation* (1930), ne pas la trouver en lui-même ; il la rapporte au sentiment primaire du moi du nourrisson, qui ne se distingue pas encore du monde, suggère qu'elle pourrait viser la restauration d'un narcissisme illimité, et refuse d'y voir la source de la religion, qu'il trouve dans la détresse infantile."
+ },
+ {
+  "terme": "Religion statique et religion dynamique",
+  "motifs": [
+   "religion statique"
+  ],
+  "section": "bergson",
+  "definition": "Chez Bergson (*Les Deux Sources de la morale et de la religion*, 1932), la religion statique, née de la fonction fabulatrice, protège la société contre l'angoisse de la mort et de l'imprévu ; la religion dynamique est celle des mystiques, qui ouvre l'âme à l'élan créateur. La première se quitte, la seconde ne se quitte pas."
+ },
+ {
+  "terme": "Maîtres du soupçon",
+  "motifs": [
+   "maîtres du soupçon"
+  ],
+  "section": "ricoeur",
+  "definition": "Formule tirée par la tradition de *De l'interprétation. Essai sur Freud* (1965), où Ricœur range Marx, Nietzsche et Freud dans une même « école du soupçon » : tous trois lisent la conscience comme un texte à déchiffrer. Ricœur leur oppose une herméneutique qui restaure le sens, et propose une foi passée par la critique, qu'il appelle depuis 1960 « seconde naïveté »."
+ },
+ {
+  "terme": "Seconde naïveté",
+  "motifs": [
+   "seconde naïveté"
+  ],
+  "section": "ricoeur",
+  "definition": "Chez Ricœur (*La Symbolique du mal*, 1960), la manière de croire qui revient aux symboles après avoir traversé la critique : non plus l'adhésion immédiate du premier croyant, mais une écoute instruite par le soupçon."
+ },
+ {
+  "terme": "Animisme",
+  "motifs": [
+   "animisme"
+  ],
+  "section": "tylor-et-frazer",
+  "definition": "Chez Edward Tylor (*Primitive Culture*, 1871), la croyance en des êtres spirituels, qu'il tient pour la définition minimale de la religion et pour une philosophie primitive, née du rêve et de la mort. L'intellectualisme de Tylor et de Frazer sera critiqué par Durkheim, Malinowski et Wittgenstein."
+ },
+ {
+  "terme": "Mécanisme victimaire",
+  "motifs": [
+   "mécanisme victimaire"
+  ],
+  "section": "girard",
+  "definition": "Chez René Girard (*La Violence et le sacré*, 1972), l'origine du sacré : une communauté en crise mimétique retrouve son unité en déchargeant sa violence sur une victime, qu'elle tient pour coupable puis divinise. Pour Girard, les Évangiles dévoilent ce mécanisme en prenant le parti de la victime innocente."
+ },
+ {
+  "terme": "Désir mimétique",
+  "motifs": [
+   "désir mimétique"
+  ],
+  "section": "girard",
+  "definition": "Chez Girard, le désir qui imite le désir d'un autre et fait de lui un rival. Sa propagation produit la crise que résout le mécanisme victimaire."
+ },
+ {
+  "terme": "Démythologisation",
+  "langue": "allemand : Entmythologisierung",
+  "motifs": [
+   "démythologisation"
+  ],
+  "section": "jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste",
+  "definition": "Programme de Rudolf Bultmann (1941) : interpréter existentiellement le message du Nouveau Testament, le kérygme, en le dégageant de l'image mythique du monde qui l'enveloppe. Jaspers lui oppose en 1953, dans une conférence recueillie en 1954 dans *Die Frage der Entmythologisierung*, que le mythe ne se traduit pas sans perte."
+ },
+ {
+  "terme": "Kérygme",
+  "langue": "grec κήρυγμα (kêrugma), proclamation",
+  "motifs": [
+   "kérygme"
+  ],
+  "section": "jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste",
+  "definition": "La proclamation de la foi chrétienne primitive : le Christ mort et ressuscité. Bultmann distingue le Christ du kérygme, objet de foi, du Jésus de l'histoire, objet d'enquête."
+ },
+ {
+  "terme": "Thèse mythiste",
+  "motifs": [
+   "mythiste"
+  ],
+  "section": "jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste",
+  "definition": "La thèse selon laquelle Jésus n'aurait pas existé et serait une construction mythique (Bauer, Drews, Couchoud, Carrier ; Onfray la vulgarise). Elle est marginale : l'existence historique de Jésus est le consensus des historiens, y compris des plus sceptiques."
+ },
+ {
+  "terme": "Athéologie",
+  "motifs": [
+   "athéologie"
+  ],
+  "section": "bataille",
+  "definition": "Projet de Georges Bataille (*Somme athéologique*, 1943-1945) : une expérience intérieure du sacré sans Dieu, qui conduit la pensée jusqu'au non-savoir. Michel Onfray reprend le mot en 2005 dans un sens tout autre, celui d'une critique des monothéismes."
+ },
+ {
+  "terme": "Idole et icône",
+  "motifs": [
+   "icône"
+  ],
+  "section": "marion",
+  "definition": "Chez Jean-Luc Marion (*L'Idole et la distance*, 1977 ; *Dieu sans l'être*, 1982), l'idole arrête le regard et lui renvoie sa propre mesure, l'icône le traverse vers ce qui le dépasse. Le dieu de l'onto-théologie est une idole conceptuelle."
+ },
+ {
+  "terme": "Théologie politique",
+  "langue": "allemand : politische Theologie",
+  "motifs": [
+   "théologie politique"
+  ],
+  "section": "carl-schmitt",
+  "definition": "Chez Carl Schmitt (*Politische Theologie*, 1922), la thèse que les concepts prégnants de la théorie moderne de l'État sont des concepts théologiques sécularisés : le souverain qui décide de l'exception est le Dieu tout-puissant devenu législateur."
+ },
+ {
+  "terme": "Sécularisation",
+  "motifs": [
+   "sécularisation"
+  ],
+  "section": "onzieme-partie",
+  "definition": "Le passage d'institutions, de biens ou de concepts du domaine religieux au domaine profane. Le débat porte sur sa nature : transposition de contenus chrétiens (Schmitt, Löwith), réoccupation de places vides (Blumenberg), ou sortie de la religion produite par le christianisme lui-même (Gauchet)."
+ },
+ {
+  "terme": "Eschatologie sécularisée",
+  "motifs": [
+   "eschatologie"
+  ],
+  "section": "karl-lowith",
+  "definition": "La thèse de Karl Löwith (*Meaning in History*, 1949) : les philosophies modernes de l'histoire, de Hegel à Marx et Comte, sont l'eschatologie chrétienne transposée, l'attente du salut devenue progrès ou révolution."
+ },
+ {
+  "terme": "Réoccupation",
+  "langue": "allemand : Umbesetzung",
+  "motifs": [
+   "réoccupation"
+  ],
+  "section": "hans-blumenberg",
+  "definition": "Concept de Blumenberg (*Die Legitimität der Neuzeit*, 1966) contre la thèse de la sécularisation : la modernité n'hérite pas de contenus chrétiens, elle occupe avec des réponses neuves des places, des questions, que la théologie avait ouvertes."
+ },
+ {
+  "terme": "Religions séculières",
+  "motifs": [
+   "religions séculières",
+   "religions politiques"
+  ],
+  "section": "voegelin-et-aron",
+  "definition": "Expression de Raymond Aron (1944), voisine des « religions politiques » d'Eric Voegelin (1938), pour les doctrines qui prennent dans les âmes la place de la foi disparue et situent ici-bas le salut de l'humanité, au prix du sacrifice des individus : le communisme et le nazisme au premier chef."
+ },
+ {
+  "terme": "Postséculier",
+  "motifs": [
+   "postséculier"
+  ],
+  "section": "jurgen-habermas",
+  "definition": "Chez Habermas (discours de Francfort, 2001), l'état de sociétés sécularisées qui doivent compter durablement avec la présence des communautés religieuses, et où la raison publique a la tâche de traduire les contenus religieux plutôt que de les liquider."
+ },
+ {
+  "terme": "Exercices spirituels",
+  "motifs": [
+   "exercices spirituels"
+  ],
+  "section": "pierre-hadot",
+  "definition": "Chez Pierre Hadot (*Exercices spirituels et philosophie antique*, 1981), les pratiques par lesquelles les écoles antiques transformaient la manière de voir et d'être : attention à soi, méditation de la mort, vue d'en haut. La philosophie y est une manière de vivre avant d'être un discours."
+ },
+ {
+  "terme": "Foi philosophique",
+  "langue": "allemand : philosophischer Glaube",
+  "motifs": [
+   "foi philosophique"
+  ],
+  "section": "jaspers",
+  "definition": "Chez Jaspers (*Der philosophische Glaube*, 1948), une foi sans révélation ni Église, rapport à la transcendance qui se donne en chiffres et dans les situations-limites, et que nulle orthodoxie ne peut posséder."
+ },
+ {
+  "terme": "Situations-limites",
+  "langue": "allemand : Grenzsituationen",
+  "motifs": [
+   "situations-limites"
+  ],
+  "section": "jaspers",
+  "definition": "Chez Jaspers, les situations qu'on ne peut ni changer ni éviter, la mort, la souffrance, la lutte, la faute, et où l'existence s'éprouve elle-même devant la transcendance."
+ },
+ {
+  "terme": "Englobant",
+  "langue": "allemand : das Umgreifende",
+  "motifs": [
+   "Englobant"
+  ],
+  "section": "jaspers",
+  "definition": "Chez Jaspers, ce qui enveloppe tout horizon sans pouvoir devenir objet : l'être même, que ni le sujet ni l'objet n'épuisent."
+ },
+ {
+  "terme": "Éthique de la croyance",
+  "langue": "anglais : ethics of belief",
+  "motifs": [
+   "éthique de la croyance"
+  ],
+  "section": "a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique",
+  "definition": "La question de savoir si croire est soumis à des devoirs. Clifford (1877) soutient qu'il est toujours mal de croire sur des preuves insuffisantes ; William James (1896) répond qu'on a le droit de croire quand l'option est vivante, forcée et capitale, et que la raison ne peut trancher."
+ }
+]

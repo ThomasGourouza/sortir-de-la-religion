@@ -480,7 +480,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Paris_-_Salon_du_livre_de_Paris_2017_-_Luc_Ferry_-_005.jpg"
   },
   {
-    "section": "abdennour-bidar",
+    "section": "l-islam-devant-la-sortie-de-la-religion",
     "role": "portrait",
     "file": "images/auteurs/bidar.jpg",
     "alt": "Portrait de Abdennour Bidar",
@@ -1338,6 +1338,96 @@
     "credit": "Topjur01, CC BY-SA 4.0",
     "license": "CC BY-SA 4.0",
     "source": "https://commons.wikimedia.org/wiki/File:PippaNorris2.jpg"
+  },
+  {
+    "section": "a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique",
+    "role": "portrait",
+    "file": "images/auteurs/clifford.jpg",
+    "alt": "Portrait de William Kingdon Clifford",
+    "caption": "William Kingdon Clifford, portrait publié dans The Popular Science Monthly (1879), l'année de sa mort : l'auteur de « The Ethics of Belief » (1877).",
+    "credit": "Auteur inconnu, The Popular Science Monthly, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:W._Kingdon_Clifford.jpg"
+  },
+  {
+    "section": "a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique",
+    "role": "portrait",
+    "file": "images/auteurs/william-james.jpg",
+    "alt": "Portrait de William James",
+    "caption": "William James, photographie d'Alice Boughton (v. 1907) : « The Will to Believe » (1896) répond directement à Clifford.",
+    "credit": "Alice Boughton, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:William_James_by_Alice_M._Boughton,_c._1907,_platinum_print,_from_the_National_Portrait_Gallery_-_NPG-NPG_87_37James-000001_(cropped).jpg"
+  },
+  {
+    "section": "a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique",
+    "role": "portrait",
+    "file": "images/auteurs/russell.jpg",
+    "alt": "Portrait de Bertrand Russell",
+    "caption": "Bertrand Russell en 1907.",
+    "credit": "Photographe inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Russell1907-2.jpg"
+  },
+  {
+    "section": "voegelin-et-aron",
+    "role": "portrait",
+    "file": "images/auteurs/aron.png",
+    "alt": "Portrait de Raymond Aron",
+    "caption": "Raymond Aron en 1956, photographie du Studio Harcourt : l'auteur de « L'avenir des religions séculières » (1944) et de L'Opium des intellectuels (1955).",
+    "credit": "Studio Harcourt, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:RaymondAron-StudioHarcourt-1956.png"
+  },
+  {
+    "section": "voegelin-et-aron",
+    "role": "figure",
+    "file": "images/art/bruegel-tour-babel.jpg",
+    "alt": "Une tour colossale en spirale, inachevée, s'élève au-dessus d'une ville portuaire ; au premier plan, un roi visite le chantier",
+    "caption": "Pieter Bruegel l'Ancien, La Tour de Babel (1563, Vienne, Kunsthistorisches Museum) : l'ouvrage humain qui prétend atteindre le ciel, figure de ce que Voegelin nomme l'immanentisation de l'eschaton, le salut transporté du ciel dans l'histoire et confié aux mains des hommes.",
+    "credit": "Pieter Bruegel l'Ancien, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg"
+  },
+  {
+    "section": "leo-strauss",
+    "role": "figure",
+    "file": "images/oeuvres/maimonide-dux-1520.jpg",
+    "alt": "Page de titre gravée, encadrée d'un décor Renaissance, avec au centre une presse d'imprimerie",
+    "caption": "Page de titre du Dux seu director dubitantium aut perplexorum (Paris, Josse Bade, 1520), la traduction latine médiévale du Guide des égarés de Maïmonide, révisée par Agostino Giustiniani (Munich, Bayerische Staatsbibliothek) : le livre dont Leo Strauss fait le modèle de l'écriture ésotérique, qui parle au petit nombre sous le voile de l'enseignement commun.",
+    "credit": "Moïse Maïmonide, éd. Agostino Giustiniani, impr. Josse Bade, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rabi_Mosei_Dux_seu_director_dubitantium_aut_perplexorum_(IA_10140241bsb).pdf"
+  },
+  {
+    "section": "iris-murdoch",
+    "role": "figure",
+    "file": "images/art/saenredam-caverne-platon.jpg",
+    "alt": "Gravure : des hommes enchaînés dans une grotte regardent des ombres projetées par un feu, tandis qu'au fond s'ouvre la lumière du jour",
+    "caption": "Jan Saenredam d'après Cornelis van Haarlem, L'Antre de Platon (gravure, 1604, Washington, National Gallery of Art) : les prisonniers de la caverne (République, livre VII) ; Murdoch fait de ce mythe le schéma de la vie morale, conversion de l'attention qui se détourne du moi vers le Bien.",
+    "credit": "Jan Saenredam d'après Cornelis van Haarlem, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jan_Pietersz_Saenredam_after_Cornelis_Cornelisz_van_Haarlem,_Plato%27s_Cave,_1604,_NGA_62542.jpg"
+  },
+  {
+    "section": "l-islam-devant-la-sortie-de-la-religion",
+    "role": "figure",
+    "file": "images/oeuvres/coran-birmingham.jpg",
+    "alt": "Feuillet de parchemin couvert d'une écriture arabe ancienne, penchée, sans points diacritiques systématiques",
+    "caption": "Feuillet du manuscrit coranique de Birmingham (Cadbury Research Library, collection Mingana), en écriture hijazi ; le parchemin a été daté au carbone 14 entre 568 et 645 : l'un des plus anciens témoins du texte coranique, au cœur de la lecture historique du Coran que réclamait Mohammed Arkoun.",
+    "credit": "Copiste anonyme, Cadbury Research Library, Université de Birmingham, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Birmingham_Quran_manuscript_folio_1_recto.jpg"
+  },
+  {
+    "section": "le-bouddhisme-des-philosophes",
+    "role": "figure",
+    "file": "images/art/bouddha-gandhara.jpg",
+    "alt": "Statue de schiste d'un Bouddha debout, vêtu d'un manteau aux plis profonds, à la manière d'une statue grecque",
+    "caption": "Bouddha debout, art du Gandhara, région de Peshawar (Pakistan), époque kouchane, IIe-IIIe siècle ap. J.-C., schiste (Tokyo, Musée national) : le Bouddha drapé comme un orateur hellénistique, rencontre ancienne de l'Inde et de la Grèce bien avant que les philosophes européens ne découvrent le bouddhisme.",
+    "credit": "Sculpteur du Gandhara, photo Daderot, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Standing_Buddha,_near_Peshawar,_Pakistan,_Kushan_dynasty,_100s-200s_AD,_schist_-_Tokyo_National_Museum_-_Tokyo,_Japan_-_DSC08671.jpg"
   },
   {
     "section": "deuxieme-partie",

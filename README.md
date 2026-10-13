@@ -4,6 +4,8 @@ Version web de lecture de l'essai, pensée pour le téléphone : résumé de dix
 
 Le sommaire coche les sections lues (une section n'est marquée que si l'on a vu sa fin passer à l'écran), et compte les sections lues par partie. Chaque section et chaque partie a un bouton qui copie son lien direct, ou ouvre le partage du téléphone. Un service worker (`sw.js`, généré par `build/build.py`) garde la page en cache ; le bouton « Lire hors connexion » du sommaire enregistre aussi toutes les images. Les balises Open Graph donnent un aperçu (titre, description, couverture) quand on partage le lien.
 
+Trois pages complètent l'essai, générées par `build/build.py` : `frise.html` (frise chronologique des auteurs, d'après les titres de sections et `build/auteurs.json`), `reponses.html` (qui répond à qui, d'après `build/reponses.json`, avec la distinction entre réponses attestées et confrontations construites) et `lexique.html` (d'après `build/lexique.json` ; la première occurrence de chaque notion dans l'essai renvoie au lexique).
+
 En ligne : https://thomasgourouza.github.io/sortir-de-la-religion/
 
 Site statique : HTML, CSS et JavaScript sans dépendance, à part la police Literata chargée depuis Google Fonts.

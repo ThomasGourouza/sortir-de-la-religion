@@ -1,0 +1,12 @@
+{
+  "_note": "Dates des auteurs dont la section ne porte pas de dates dans son titre, ou qui partagent une section. Clé : identifiant de section ; valeur : liste [nom, dates affichées, année de tri].",
+  "paul-de-tarse": [["Paul de Tarse", "mort v. 64/67", 5]],
+  "celse-et-origene": [["Celse", "IIe siècle", 150], ["Origène", "v. 185-v. 254", 185]],
+  "porphyre-et-augustin": [["Porphyre", "v. 234-v. 305", 234], ["Augustin", "354-430", 354]],
+  "jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste": [["Drews", "1865-1935", 1865], ["Schweitzer", "1875-1965", 1875], ["Couchoud", "1879-1959", 1879], ["Goguel", "1880-1955", 1880]],
+  "norris-et-inglehart": [["Inglehart", "1934-2021", 1934], ["Norris", "née en 1953", 1953]],
+  "l-islam-devant-la-sortie-de-la-religion": [["Arkoun", "1928-2010", 1928], ["Bidar", "né en 1971", 1971]],
+  "a-t-on-le-droit-de-croire-clifford-james-et-la-philosophie-analytique": [["Clifford", "1845-1879", 1845], ["Russell", "1872-1970", 1872]],
+  "boyer": [["Boyer", "contemporain", 1960]],
+  "les-athees-militants-contemporains": [["Onfray", "né en 1959", 1959]]
+}
