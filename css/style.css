@@ -312,3 +312,28 @@ a.lex:hover { color: var(--accent); }
 .lex-voir { font: 13px var(--sans); white-space: nowrap; }
 .lex-entree.cible { background: var(--accent-soft); border-radius: 10px; padding: 10px; }
 body.page-outil { padding-left: 0 !important; }
+
+/* Recherche plein texte */
+.search-panel {
+  position: fixed; z-index: 95; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg);
+  display: flex; flex-direction: column; font-family: var(--sans);
+  padding: env(safe-area-inset-top) max(12px, env(safe-area-inset-right)) 0 max(12px, env(safe-area-inset-left));
+}
+@media (min-width: 760px) {
+  .search-panel { top: calc(var(--topbar) + 8px); bottom: auto; left: 50%; right: auto; transform: translateX(-50%);
+    width: min(720px, 94vw); max-height: 78vh; border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,.25); padding: 0 12px; }
+}
+.search-head { display: flex; gap: 6px; align-items: center; padding: 10px 0 4px; }
+#search-input { flex: 1; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: 16px var(--sans); }
+.search-aide { font-size: 12.5px; color: var(--ink-soft); margin: 2px 2px 8px; }
+.search-results { list-style: none; margin: 0; padding: 0 0 16px; overflow-y: auto; flex: 1; -webkit-overflow-scrolling: touch; }
+.search-results a { display: block; padding: 10px 8px; border-top: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+.search-results a:hover, .search-results a:focus-visible { background: var(--bg-soft); }
+.res-titre { display: block; font: 600 12px var(--sans); color: var(--accent); text-transform: uppercase; letter-spacing: .05em; }
+.res-extrait { display: block; font: 14.5px/1.45 var(--serif); }
+mark { background: var(--accent-soft); color: inherit; border-radius: 3px; padding: 0 1px; }
+.trouve { animation: trouve 2.4s ease-out; border-radius: 6px; }
+@keyframes trouve { 0%, 40% { background: var(--accent-soft); box-shadow: 0 0 0 6px var(--accent-soft); } 100% { background: transparent; box-shadow: none; } }
+.vers-integral { font: 13px var(--sans); }
+p.vers-integral { text-align: right !important; margin-top: .4em; }
+@media print { .search-panel, #search-btn, .vers-integral { display: none !important; } }

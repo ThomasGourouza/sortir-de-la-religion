@@ -6,6 +6,7 @@
     get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   };
+  var P = (document.body && document.body.dataset.store) || "sdr-";
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
@@ -119,11 +120,11 @@
 
   /* Mémoire des parties ouvertes */
   function saveOpen() {
-    store.set("sdr-open", JSON.stringify(parties.filter(function (d) { return d.open; }).map(function (d) { return d.id; })));
+    store.set(P + "open", JSON.stringify(parties.filter(function (d) { return d.open; }).map(function (d) { return d.id; })));
   }
   parties.forEach(function (d) { d.addEventListener("toggle", saveOpen); });
   try {
-    var saved = JSON.parse(store.get("sdr-open") || "[]");
+    var saved = JSON.parse(store.get(P + "open") || "[]");
     saved.forEach(function (id) { var d = document.getElementById(id); if (d) d.open = true; });
   } catch (e) {}
 
@@ -182,7 +183,7 @@
       if (best) {
         var s = best.querySelector("summary .sec-nom, summary .part-sub, summary .part-label");
         setCurrent(best.id, s ? s.textContent : "");
-        store.set("sdr-pos", best.id);
+        store.set(P + "pos", best.id);
       } else {
         setCurrent(null, "");
       }
@@ -191,7 +192,7 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   toTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
 
-  var resume = $("#resume-btn"), pos = store.get("sdr-pos");
+  var resume = $("#resume-btn"), pos = store.get(P + "pos");
   if (resume && pos && document.getElementById(pos)) {
     resume.hidden = false;
     resume.addEventListener("click", function () { reveal(pos); });
@@ -209,7 +210,7 @@
 
   /* Sections lues : marquées quand leur fin est passée au-dessus du milieu de l'écran */
   var lus = {};
-  try { (JSON.parse(store.get("sdr-lus") || "[]")).forEach(function (id) { lus[id] = true; }); } catch (e) {}
+  try { (JSON.parse(store.get(P + "lus") || "[]")).forEach(function (id) { lus[id] = true; }); } catch (e) {}
   var sections = $$("details.section");
   var clearBtn = $("#clear-read");
   function paintRead() {
@@ -241,7 +242,7 @@
       else if (r.bottom < mid && vues[d.id]) { lus[d.id] = true; changed = true; }
     }
     if (changed) {
-      store.set("sdr-lus", JSON.stringify(Object.keys(lus)));
+      store.set(P + "lus", JSON.stringify(Object.keys(lus)));
       paintRead();
     }
   }
@@ -253,7 +254,7 @@
   }, { passive: true });
   clearBtn.addEventListener("click", function () {
     lus = {};
-    store.set("sdr-lus", "[]");
+    store.set(P + "lus", "[]");
     paintRead();
   });
   paintRead();
@@ -265,7 +266,7 @@
   if (swOk) {
     navigator.serviceWorker.register("sw.js").catch(function () {});
     offBox.hidden = false;
-    if (store.get("sdr-offline")) offStatus.textContent = "Déjà enregistré sur cet appareil.";
+    if (store.get(P + "offline")) offStatus.textContent = "Déjà enregistré sur cet appareil.";
     offBtn.addEventListener("click", function () {
       var srcs = {};
       $$("img[src]").forEach(function (i) { srcs[i.getAttribute("src")] = true; });
@@ -287,9 +288,106 @@
           offStatus.textContent = failed + " images non enregistrées ; réessayez avec une meilleure connexion.";
         } else {
           offStatus.textContent = "Tout l'essai est disponible hors connexion.";
-          store.set("sdr-offline", "1");
+          store.set(P + "offline", "1");
         }
       });
+    });
+  }
+
+  /* Recherche dans tout le texte */
+  var sPanel = $("#search-panel"), sInput = $("#search-input"), sList = $("#search-results"),
+      sStatus = $("#search-status"), sBtn = $("#search-btn"), sAide = sStatus ? sStatus.textContent : "";
+  var index = null, sTimer = null;
+  var fold = function (t) { return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’ʼ]/g, "'"); };
+  var esc = function (t) { return t.replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+
+  function construireIndex() {
+    index = [];
+    var n = 0;
+    $$("#lecture p, #lecture li, #lecture td, #lecture figcaption").forEach(function (el) {
+      if (el.closest("summary") || el.closest(".part-end") || el.closest(".vers-integral")) return;
+      if (el.tagName === "P" && el.closest("li, td")) return;
+      var txt = el.textContent.replace(/\s+/g, " ").trim();
+      if (txt.length < 3) return;
+      if (!el.id) el.id = "t" + (n++);
+      var sec = el.closest("details.section"), part = el.closest("details.partie");
+      var lab = sec ? sec.querySelector("summary .sec-nom") : null;
+      var plab = part ? part.querySelector("summary .part-sub") : null;
+      index.push({ el: el, txt: txt, f: fold(txt), titre: (lab ? lab.textContent : "") || (plab ? plab.textContent : "") });
+    });
+  }
+
+  function termes(q) {
+    var out = [], m, re = /"([^"]+)"|(\S+)/g;
+    while ((m = re.exec(q))) out.push(fold(m[1] || m[2]));
+    return out.filter(function (t) { return t.length > 0; });
+  }
+
+  function extrait(r, ts) {
+    var pos = r.f.indexOf(ts[0]), deb = Math.max(0, pos - 70), fin = Math.min(r.txt.length, deb + 170);
+    var bout = r.txt.slice(deb, fin), fb = fold(bout), marques = [];
+    ts.forEach(function (t) {
+      var i = fb.indexOf(t);
+      while (i >= 0) { marques.push([i, i + t.length]); i = fb.indexOf(t, i + t.length); }
+    });
+    marques.sort(function (a, b) { return a[0] - b[0]; });
+    var h = "", k = 0;
+    marques.forEach(function (m) {
+      if (m[0] < k) return;
+      h += esc(bout.slice(k, m[0])) + "<mark>" + esc(bout.slice(m[0], m[1])) + "</mark>";
+      k = m[1];
+    });
+    h += esc(bout.slice(k));
+    return (deb > 0 ? "… " : "") + h + (fin < r.txt.length ? " …" : "");
+  }
+
+  function chercher() {
+    var q = sInput.value.trim();
+    sList.innerHTML = "";
+    if (q.length < 2) { sStatus.textContent = sAide; return; }
+    if (!index) construireIndex();
+    var ts = termes(q);
+    var res = index.filter(function (r) { return ts.every(function (t) { return r.f.indexOf(t) >= 0; }); });
+    sStatus.textContent = res.length ? (res.length + (res.length > 1 ? " passages" : " passage") + (res.length > 50 ? ", les 50 premiers :" : "")) : "Aucun passage ne correspond.";
+    res.slice(0, 50).forEach(function (r) {
+      var li = document.createElement("li");
+      li.innerHTML = '<a href="#' + r.el.id + '" data-res="' + r.el.id + '"><span class="res-titre">' + esc(r.titre) + '</span><span class="res-extrait">' + extrait(r, ts) + "</span></a>";
+      sList.appendChild(li);
+    });
+  }
+
+  function ouvrirRecherche() {
+    sPanel.hidden = false;
+    sBtn.setAttribute("aria-expanded", "true");
+    closeDrawer();
+    setTimeout(function () { sInput.focus(); sInput.select(); }, 30);
+  }
+  function fermerRecherche() {
+    sPanel.hidden = true;
+    sBtn.setAttribute("aria-expanded", "false");
+  }
+  if (sPanel) {
+    sBtn.addEventListener("click", function () { sPanel.hidden ? ouvrirRecherche() : fermerRecherche(); });
+    $("#search-close").addEventListener("click", fermerRecherche);
+    sInput.addEventListener("input", function () { clearTimeout(sTimer); sTimer = setTimeout(chercher, 180); });
+    sList.addEventListener("click", function (e) {
+      var a = e.target.closest("a[data-res]");
+      if (!a) return;
+      e.preventDefault();
+      var el = document.getElementById(a.getAttribute("data-res"));
+      fermerRecherche();
+      reveal(el.id);
+      el.classList.remove("trouve");
+      void el.offsetWidth;
+      el.classList.add("trouve");
+      setTimeout(function () { el.classList.remove("trouve"); }, 2400);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !sPanel.hidden) fermerRecherche();
+      if (e.key === "/" && sPanel.hidden && !/input|textarea|select/i.test((document.activeElement || {}).tagName || "")) {
+        e.preventDefault();
+        ouvrirRecherche();
+      }
     });
   }
 

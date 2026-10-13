@@ -6,7 +6,7 @@
 <title>Sortir de la religion sans en fonder une autre ?</title>
 <meta name="description" content="Un débat de Platon à Onfray : critiques de la religion, sciences du religieux et spiritualités sans Dieu.">
 <meta name="theme-color" content="#f7f3ea">
-<link rel="canonical" href="https://thomasgourouza.github.io/sortir-de-la-religion/">
+<link rel="canonical" href="https://thomasgourouza.github.io/sortir-de-la-religion/index.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="article">
@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Sortir de la religion sans en fonder une autre ?">
 <meta property="og:title" content="Sortir de la religion sans en fonder une autre ?">
 <meta property="og:description" content="Un débat de Platon à Onfray : critiques de la religion, sciences du religieux et spiritualités sans Dieu.">
-<meta property="og:url" content="https://thomasgourouza.github.io/sortir-de-la-religion/">
+<meta property="og:url" content="https://thomasgourouza.github.io/sortir-de-la-religion/index.html">
 <meta property="og:image" content="https://thomasgourouza.github.io/sortir-de-la-religion/images/art/couverture.jpg">
 <meta property="og:image:width" content="960">
 <meta property="og:image:height" content="797">
@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Inter:wght@400;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=1791901706">
+<link rel="stylesheet" href="css/style.css?v=1791905581">
 <script>
   try {
     var t = localStorage.getItem("sdr-theme");
@@ -33,7 +33,7 @@
   } catch (e) {}
 </script>
 </head>
-<body>
+<body data-store="sdr-">
 <a class="skip" href="#lecture">Aller au texte</a>
 <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
 
@@ -43,6 +43,9 @@
   </button>
   <a class="topbar-title" href="#top" id="current-title">Sortir de la religion sans en fonder une autre ?</a>
   <div class="topbar-actions">
+    <button class="icon-btn" id="search-btn" aria-label="Chercher dans le texte" aria-controls="search-panel" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2.2" fill="none"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
     <button class="icon-btn" id="font-down" aria-label="Réduire le texte">A<sup>−</sup></button>
     <button class="icon-btn" id="font-up" aria-label="Agrandir le texte">A<sup>+</sup></button>
     <button class="icon-btn" id="theme-btn" aria-label="Changer de thème">
@@ -50,6 +53,17 @@
     </button>
   </div>
 </header>
+
+<div class="search-panel" id="search-panel" role="dialog" aria-modal="true" aria-label="Chercher dans le texte" hidden>
+  <div class="search-head">
+    <input type="search" id="search-input" placeholder="Chercher dans tout le texte…" aria-label="Chercher dans tout le texte" autocomplete="off" enterkeyhint="search">
+    <button class="icon-btn" id="search-close" aria-label="Fermer la recherche">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <p class="search-aide" id="search-status">Plusieurs mots : tous doivent figurer. Une expression entre guillemets droits est cherchée telle quelle.</p>
+  <ol class="search-results" id="search-results"></ol>
+</div>
 
 <div class="drawer-backdrop" id="backdrop" hidden></div>
 <nav class="drawer" id="drawer" aria-label="Table des matières">
@@ -65,7 +79,7 @@
     <button class="chip" id="collapse-all">Tout replier</button>
     <button class="chip" id="clear-read" hidden>Effacer les marques de lecture</button>
   </div>
-  <div class="drawer-outils"><a class="chip" href="frise.html">Frise</a><a class="chip" href="reponses.html">Qui répond à qui</a><a class="chip" href="lexique.html">Lexique</a></div>
+  <div class="drawer-outils"><a class="chip" href="index.html">Version intégrale</a><a class="chip" href="abrege.html">Abrégé</a><a class="chip" href="frise.html">Frise</a><a class="chip" href="reponses.html">Qui répond à qui</a><a class="chip" href="lexique.html">Lexique</a></div>
   <div class="drawer-offline" id="offline-box" hidden>
     <button class="chip" id="offline-btn">Lire hors connexion (environ 10 Mo)</button>
     <span id="offline-status" class="offline-status" aria-live="polite"></span>
@@ -99,6 +113,7 @@
     <p class="hero-meta">141 237 mots · environ 10 h 14 de lecture</p>
     <div class="hero-actions">
       <a class="btn" href="#l-essai-en-dix-minutes" data-target="l-essai-en-dix-minutes">L'essai en dix minutes</a>
+      <a class="btn" href="abrege.html">L'abrégé (environ 2 h 09)</a>
       <a class="btn primary" href="#prologue" data-target="prologue">Commencer la lecture</a>
       <button class="btn" id="resume-btn" hidden>Reprendre où j'en étais</button>
     </div>
@@ -106,7 +121,7 @@
     <details class="about">
       <summary>Comment lire cet essai</summary>
       <div>
-        <p>L'essai s'ouvre sur un résumé de dix minutes, puis se compose d'un prologue, de douze parties et d'une conclusion. Chaque partie se déplie d'un toucher ; à l'intérieur, chaque auteur a sa section, elle aussi repliable. Le bouton en haut à gauche ouvre le sommaire, où l'on peut chercher un auteur par son nom. La page retient où vous en êtes, et le sommaire coche les sections déjà lues. Le petit bouton en forme de chaîne, à côté de chaque titre, copie le lien direct vers la section. Depuis le sommaire, on peut aussi rendre tout l'essai, images comprises, lisible hors connexion.</p>
+        <p>L'essai s'ouvre sur un résumé de dix minutes, puis se compose d'un prologue, de douze parties et d'une conclusion. Chaque partie se déplie d'un toucher ; à l'intérieur, chaque auteur a sa section, elle aussi repliable. Le bouton en haut à gauche ouvre le sommaire, où l'on peut chercher un auteur par son nom, et la loupe cherche dans tout le texte. La page retient où vous en êtes, et le sommaire coche les sections déjà lues. Le petit bouton en forme de chaîne, à côté de chaque titre, copie le lien direct vers la section. Depuis le sommaire, on peut aussi rendre tout l'essai, images comprises, lisible hors connexion. Une version abrégée, une frise, une carte des réponses et un lexique complètent la lecture.</p>
         <p>Les auteurs de cet essai se répondent, mais pas tous de la même manière. Je parle de <strong>réponse attestée</strong> quand un auteur a réellement lu un autre et lui a répondu, dans un texte qu'on peut citer : Hegel contre Schleiermacher, Stirner contre Feuerbach, Marx contre Stirner, Freud contre Romain Rolland, Origène contre Celse, Spinoza contre Maïmonide, Leibniz contre Bayle, Voltaire contre Leibniz, Rousseau contre Voltaire, Goguel contre Couchoud, William James contre Clifford, Leo Strauss contre Spinoza, Blumenberg contre Löwith, Heidegger contre Leibniz, Marion contre Heidegger. Je parle de <strong>confrontation construite</strong> quand c'est moi qui fais se rencontrer deux pensées que l'histoire n'a pas mises face à face : Bayle devant Ivan Karamazov, Montaigne devant Hume. Les deux sont légitimes ; les confondre serait une faute.</p>
         <p>Les statuts de vérification des citations (citation contrôlée sur le texte, citation rapportée par une source secondaire, citation de mémoire) ont été retirés de cette version de lecture. Ils figurent dans le texte source de l'essai, avec la liste des éditions consultées, rappelée en fin de page.</p>
       </div>
@@ -1095,6 +1110,6 @@
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 14l6-6 6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
-<script src="js/app.js?v=1791901706"></script>
+<script src="js/app.js?v=1791905581"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@ var SHELL = [
   "css/style.css?v=" + VERSION,
   "js/app.js?v=" + VERSION,
   "favicon.svg",
+  "abrege.html",
   "frise.html",
   "reponses.html",
   "lexique.html",
