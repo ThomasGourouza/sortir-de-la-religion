@@ -490,7 +490,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Abdennour-bidar-03_copy.jpg"
   },
   {
-    "section": "michel-onfray",
+    "section": "les-athees-militants-contemporains",
     "role": "portrait",
     "file": "images/auteurs/onfray.jpg",
     "alt": "Portrait de Michel Onfray",
@@ -1020,7 +1020,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Karl_Jaspers_1946.jpg"
   },
   {
-    "section": "pourquoi-y-a-t-il-quelque-chose-plutot-que-rien",
+    "section": "pourquoi-y-a-t-il-quelque-chose-plutot-que-rien-un-debat-construit",
     "role": "figure",
     "file": "images/art/friedrich-moine-bord-de-mer.jpg",
     "alt": "Une minuscule silhouette de moine sur une grève, face à une mer sombre sous un ciel immense",
@@ -1028,6 +1028,336 @@
     "credit": "Caspar David Friedrich, Public domain",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Friedrich,_Caspar_David_-_M%C3%B6nch_am_Meer_-_Alte_Nationalgalerie_in_Berlin.jpg"
+  },
+  {
+    "section": "platon",
+    "role": "figure",
+    "file": "images/art/david-mort-de-socrate.jpg",
+    "alt": "Socrate assis sur son lit tend la main vers la coupe de ciguë, entouré de disciples accablés",
+    "caption": "Jacques-Louis David, La Mort de Socrate (1787, New York, Metropolitan Museum of Art) : condamné en 399 av. J.-C. pour impiété (ἀσέβεια, asebeia) et corruption de la jeunesse, Socrate boit la ciguë ; David place au pied du lit un Platon âgé, que le Phédon (59b) dit absent ce jour-là.",
+    "credit": "Jacques-Louis David, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Death_of_Socrates_MET_DT40.jpg"
+  },
+  {
+    "section": "maimonide",
+    "role": "figure",
+    "file": "images/art/rembrandt-moise-tables.jpg",
+    "alt": "Moïse élève à deux mains au-dessus de sa tête les tables de la Loi",
+    "caption": "Rembrandt, Moïse brisant les tables de la Loi (1659, Berlin, Gemäldegalerie) : on discute s'il les brise (Ex 32, 19) ou les présente au peuple ; Moïse est le prophète à qui Dieu ne montre que son dos (Ex 33, 23), c'est-à-dire, selon le Guide des égarés (I, 54), ses seuls attributs d'action.",
+    "credit": "Rembrandt, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Moses_mit_den_Gesetzestafeln,_Moses_zerschmettert_die_Gesetzestafeln_-_Gem%C3%A4ldegalerie_Berlin_-_5250004.jpg"
+  },
+  {
+    "section": "ludwig-feuerbach",
+    "role": "figure",
+    "file": "images/art/poussin-veau-d-or.jpg",
+    "alt": "Les Hébreux dansent en ronde autour du veau d'or dressé sur un autel ; au loin, Moïse descend du Sinaï",
+    "caption": "Nicolas Poussin, L'Adoration du veau d'or (v. 1633-1634, Londres, National Gallery) : le dieu fabriqué de main d'homme (Ex 32), figure ancienne de ce que Feuerbach généralise : l'homme adore en Dieu ce qu'il a lui-même projeté.",
+    "credit": "Nicolas Poussin, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_L%27Adoration_du_Veau_d%27or.jpg"
+  },
+  {
+    "section": "ludwig-feuerbach",
+    "role": "figure",
+    "file": "images/art/leonard-cene.jpg",
+    "alt": "Le Christ au centre d'une longue table, entouré des douze apôtres agités",
+    "caption": "Léonard de Vinci, La Cène (1495-1498, Milan, réfectoire de Santa Maria delle Grazie) : le pain et le vin, que les dernières pages de Das Wesen des Christenthums rendent à leur sens naturel et humain.",
+    "credit": "Leonardo da Vinci, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg"
+  },
+  {
+    "section": "dostoievski",
+    "role": "figure",
+    "file": "images/art/holbein-christ-mort.jpg",
+    "alt": "Le corps décharné du Christ mort, allongé de profil dans une niche étroite",
+    "caption": "Hans Holbein le Jeune, Le Christ mort au tombeau (1521-1522, Bâle, Kunstmuseum) : devant une copie de ce tableau chez Rogojine, le prince Mychkine dit, dans L'Idiot (1868-1869), qu'on peut y perdre la foi.",
+    "credit": "Hans Holbein the Younger, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Body_of_the_Dead_Christ_in_the_Tomb_by_Hans_Holbein_the_Younger.jpg"
+  },
+  {
+    "section": "hume",
+    "role": "figure",
+    "file": "images/art/caravage-incredulite-thomas.jpg",
+    "alt": "Thomas enfonce le doigt dans la plaie du côté du Christ, que deux apôtres observent penchés",
+    "caption": "Le Caravage, L'Incrédulité de saint Thomas (v. 1601-1602, Potsdam, Sanssouci, Bildergalerie) : la foi qui réclame la preuve (Jn 20, 24-29), face à la question humienne du témoignage sur les miracles.",
+    "credit": "Caravaggio, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Incredulity_of_Saint_Thomas-Caravaggio_(1601-2).jpg"
+  },
+  {
+    "section": "rousseau",
+    "role": "figure",
+    "file": "images/art/demachy-fete-etre-supreme.jpg",
+    "alt": "Une montagne artificielle surmontée d'un arbre et d'une colonne au milieu du Champ-de-Mars, entourée d'une foule",
+    "caption": "Pierre-Antoine Demachy, La Fête de l'Être suprême au Champ-de-Mars, 8 juin 1794 (20 prairial an II) (Paris, musée Carnavalet) : le culte civique de Robespierre, lecteur de la religion civile du Contrat social (IV, 8).",
+    "credit": "Pierre-Antoine Demachy, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:F%C3%AAte_de_l%27Etre_supr%C3%AAme_2.jpg"
+  },
+  {
+    "section": "pierre-hadot",
+    "role": "figure",
+    "file": "images/art/la-tour-madeleine-veilleuse.jpg",
+    "alt": "Une femme assise dans l'obscurité, la main posée sur un crâne, regarde la flamme d'une lampe",
+    "caption": "Georges de La Tour, La Madeleine à la veilleuse, dite Madeleine Terff (v. 1640-1645, Paris, musée du Louvre) : le crâne, les livres et la flamme, méditation de la mort qui rejoint l'exercice spirituel antique au sens de Hadot.",
+    "credit": "Georges de La Tour, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:La_Tour_-_La_Madeleine_%C3%A0_la_veilleuse_dite_La_Madeleine_Terff,_vers_1642_-_1644,_RF_1949_11.jpg"
+  },
+  {
+    "section": "soren-kierkegaard",
+    "role": "figure",
+    "file": "images/art/delacroix-jacob-ange.jpg",
+    "alt": "Sous de grands arbres, Jacob lutte corps à corps avec un ange qui le retient sans effort",
+    "caption": "Eugène Delacroix, La Lutte de Jacob avec l'ange (1854-1861, Paris, église Saint-Sulpice, chapelle des Saints-Anges) : le combat nocturne de Gn 32, 25-33, image de la foi comme épreuve singulière devant Dieu.",
+    "credit": "Eugène Delacroix, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Ferdinand_Victor_Delacroix_061.jpg"
+  },
+  {
+    "section": "dixieme-partie",
+    "role": "figure",
+    "file": "images/art/grunewald-crucifixion-issenheim.jpg",
+    "alt": "Le Christ crucifié au corps supplicié, entre la Vierge soutenue par Jean, Marie-Madeleine et Jean-Baptiste désignant la croix",
+    "caption": "Matthias Grünewald, la Crucifixion du retable d'Issenheim (1512-1516, Colmar, musée Unterlinden) : Karl Barth gardait une reproduction de ce panneau au-dessus de sa table de travail, et l'index tendu de Jean-Baptiste lui servait de figure du témoignage.",
+    "credit": "Matthias Grünewald, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Mathis_Gothart_Gr%C3%BCnewald_022.jpg"
+  },
+  {
+    "section": "girard",
+    "role": "figure",
+    "file": "images/art/zurbaran-agnus-dei.jpg",
+    "alt": "Un agneau aux pattes liées, couché sur une table devant un fond noir",
+    "caption": "Francisco de Zurbarán, Agnus Dei (v. 1635-1640, Madrid, Prado) : l'agneau ligoté de la victime sacrificielle (Jn 1, 29), où Girard lit la révélation chrétienne de l'innocence de la victime émissaire.",
+    "credit": "Francisco de Zurbarán, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Agnus_Dei,_por_Francisco_de_Zurbar%C3%A1n.jpg"
+  },
+  {
+    "section": "girard",
+    "role": "figure",
+    "file": "images/art/caravage-sacrifice-isaac.jpg",
+    "alt": "Un ange arrête la main d'Abraham qui maintient Isaac hurlant sous le couteau ; un bélier s'avance",
+    "caption": "Le Caravage, Le Sacrifice d'Isaac (v. 1603, Florence, galerie des Offices) : le sacrifice humain suspendu et remplacé par le bélier (Gn 22), moment clé dans la lecture girardienne de la Bible.",
+    "credit": "Caravaggio, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sacrifice_of_Isaac-Caravaggio_(Uffizi).jpg"
+  },
+  {
+    "section": "becker",
+    "role": "figure",
+    "file": "images/art/holbein-ambassadeurs.jpg",
+    "alt": "Deux hommes debout de part et d'autre d'une étagère chargée d'instruments ; au sol, une forme oblique déformée",
+    "caption": "Hans Holbein le Jeune, Les Ambassadeurs (1533, Londres, National Gallery) : au premier plan, un crâne en anamorphose, lisible seulement de biais, au milieu des emblèmes du savoir et du pouvoir : la mort tenue hors du regard, que Becker place au centre de The Denial of Death (1973).",
+    "credit": "Hans Holbein the Younger, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "neuvieme-partie",
+    "role": "figure",
+    "file": "images/art/gauguin-d-ou-venons-nous.jpg",
+    "alt": "Grande frise de figures tahitiennes, de l'enfant au vieillard, autour d'une idole bleue",
+    "caption": "Paul Gauguin, D'où venons-nous ? Que sommes-nous ? Où allons-nous ? (1897-1898, Boston, Museum of Fine Arts) : les trois questions inscrites sur la toile sont celles auxquelles on attend que la religion réponde.",
+    "credit": "Paul Gauguin, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_D%27ou_venons-nous.jpg"
+  },
+  {
+    "section": "deuxieme-partie",
+    "role": "figure",
+    "file": "images/art/sarcophage-junius-bassus.jpg",
+    "alt": "Sarcophage de marbre sculpté sur deux registres de scènes bibliques séparées par des colonnettes",
+    "caption": "Sarcophage de Junius Bassus (359 ap. J.-C., Cité du Vatican, Trésor de Saint-Pierre) : préfet de Rome mort néophyte, il est inhumé sous le premier grand programme sculpté de scènes de l'Ancien et du Nouveau Testament ; au centre du registre supérieur, le Christ trône entre Pierre et Paul.",
+    "credit": "Sculpteur romain anonyme, photo Sailko, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tesoro_di_san_pietro,_sarcofago_di_giunio_basso.JPG"
+  },
+  {
+    "section": "philon-d-alexandrie",
+    "role": "figure",
+    "file": "images/art/pantocrator-deesis-sainte-sophie.jpg",
+    "alt": "Visage du Christ en mosaïque sur fond d'or, la main droite levée pour bénir",
+    "caption": "Le Christ Pantocrator de la mosaïque de la Déisis (XIIIe siècle, Istanbul, Sainte-Sophie) : le Christ-Logos de la théologie byzantine, héritière lointaine de la doctrine du Logos médiateur que Philon élabore à Alexandrie.",
+    "credit": "Mosaïste byzantin, photo Myrabella, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Christ_Pantocrator_Deesis_mosaic_Hagia_Sophia.jpg"
+  },
+  {
+    "section": "justin-martyr",
+    "role": "figure",
+    "file": "images/art/christ-helios-mausolee-julii.jpg",
+    "alt": "Mosaïque de voûte : un conducteur de char à la tête rayonnante sur fond de rinceaux de vigne",
+    "caption": "Mosaïque de la voûte du mausolée des Julii (mausolée M) dans la nécropole sous Saint-Pierre du Vatican (IIIe siècle ap. J.-C.) : le Soleil sur son char, interprété comme le Christ-Hélios, à l'époque où les apologistes revendiquent pour le Christ le langage des philosophes et des cultes païens.",
+    "credit": "Mosaïste romain anonyme, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:ChristAsSol.jpg"
+  },
+  {
+    "section": "porphyre-et-augustin",
+    "role": "figure",
+    "file": "images/art/botticelli-saint-augustin.jpg",
+    "alt": "Saint Augustin en habit d'évêque, la main sur le cœur, lève les yeux de son pupitre",
+    "caption": "Sandro Botticelli, Saint Augustin dans son cabinet de travail (1480, Florence, église d'Ognissanti), fresque peinte en pendant du Saint Jérôme de Ghirlandaio.",
+    "credit": "Sandro Botticelli, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_050.jpg"
+  },
+  {
+    "section": "paul-de-tarse",
+    "role": "figure",
+    "file": "images/art/rembrandt-apotre-paul.jpg",
+    "alt": "Un vieil homme barbu assis à une table devant des feuillets, la main sur la garde d'une épée",
+    "caption": "Rembrandt (et atelier ?), L'Apôtre Paul (v. 1657, Washington, National Gallery of Art) : l'apôtre méditant devant ses lettres, l'épée de son martyre à la main.",
+    "credit": "Rembrandt van Rijn (et atelier ?), CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_(and_Workshop%3F),_The_Apostle_Paul,_c._1657,_NGA_1198.jpg"
+  },
+  {
+    "section": "jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste",
+    "role": "figure",
+    "file": "images/art/piero-resurrection.jpg",
+    "alt": "Le Christ debout, un pied sur le bord du tombeau, tenant un étendard, au-dessus de soldats endormis",
+    "caption": "Piero della Francesca, La Résurrection (v. 1463-1465, Sansepolcro, Museo Civico) : le Christ de la foi pascale, que la recherche historique distingue du Jésus de l'histoire.",
+    "credit": "Piero della Francesca, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Resurrezione_Piero_della_Francesca_post_restauro.jpg"
+  },
+  {
+    "section": "celse-et-origene",
+    "role": "figure",
+    "file": "images/art/bon-pasteur-crypte-lucine.jpg",
+    "alt": "Peinture murale : un berger portant une brebis sur les épaules, entre deux autres brebis",
+    "caption": "Le Bon Pasteur, peinture de la crypte de Lucine, catacombe de Calixte (Rome, IIIe siècle ap. J.-C.), planche de Joseph Wilpert, Die Malereien der Katakomben Roms (1903) : l'imagerie de l'Église que Celse attaque et qu'Origène défend dans le Contre Celse (v. 248).",
+    "credit": "Peintre romain anonyme, planche de Joseph Wilpert, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Good_Shepherd,_Priscilla_Catacomb,from_the_1903_book_Die_Malereien_der_Katakomben_Roms_(Tafeln)_by_Wilpert,_Joseph.jpg"
+  },
+  {
+    "section": "philon-d-alexandrie",
+    "role": "portrait",
+    "file": "images/auteurs/philon.jpg",
+    "alt": "Portrait de Philon d'Alexandrie",
+    "caption": "Philon d'Alexandrie, portrait imaginaire paru dans Les Vrais Pourtraits et vies des hommes illustres d'André Thevet (1584) ; aucun portrait authentique n'existe, l'effigie est conventionnelle.",
+    "credit": "André Thevet, Les Vrais Pourtraits (1584), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:PhiloThevet.jpg"
+  },
+  {
+    "section": "justin-martyr",
+    "role": "portrait",
+    "file": "images/auteurs/justin.jpg",
+    "alt": "Portrait de Justin Martyr",
+    "caption": "Justin Martyr, portrait imaginaire paru dans Les Vrais Pourtraits et vies des hommes illustres d'André Thevet (1584) ; aucun portrait authentique n'existe, l'effigie est conventionnelle.",
+    "credit": "André Thevet, Les Vrais Pourtraits (1584), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Justin_Martyr.jpg"
+  },
+  {
+    "section": "celse-et-origene",
+    "role": "portrait",
+    "file": "images/auteurs/origene.jpg",
+    "alt": "Portrait de Origène",
+    "caption": "Origène, détail d'un portrait imaginaire paru dans Les Vrais Pourtraits et vies des hommes illustres d'André Thevet (1584) ; aucun portrait authentique n'existe, l'effigie est conventionnelle.",
+    "credit": "André Thevet, Les Vrais Pourtraits (1584), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Origen_(3x4).jpg"
+  },
+  {
+    "section": "porphyre-et-augustin",
+    "role": "portrait",
+    "file": "images/auteurs/augustin.jpg",
+    "alt": "Portrait de Augustin d'Hippone",
+    "caption": "Saint Augustin, par Philippe de Champaigne (v. 1645-1650, Los Angeles County Museum of Art) ; portrait imaginaire, aucun portrait authentique n'existe.",
+    "credit": "Philippe de Champaigne, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Saint_Augustine_by_Philippe_de_Champaigne.jpg"
+  },
+  {
+    "section": "tylor-et-frazer",
+    "role": "portrait",
+    "file": "images/auteurs/tylor.png",
+    "alt": "Portrait de Edward Burnett Tylor",
+    "caption": "Edward Burnett Tylor, photographie du studio Elliot & Fry, publiée dans Folk-Lore, vol. 28 (1917).",
+    "credit": "Elliot & Fry, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:E._B._Tylor_portrait._Folk-Lore,_vol._28.png"
+  },
+  {
+    "section": "tylor-et-frazer",
+    "role": "portrait",
+    "file": "images/auteurs/frazer.jpg",
+    "alt": "Portrait de James George Frazer",
+    "caption": "James George Frazer, buste en bronze d'Antoine Bourdelle (1922, Montauban, musée Ingres-Bourdelle).",
+    "credit": "Antoine Bourdelle, photo Didier Descouens, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Ingres-Bourdelle_-_SIR_JAMES_GEORGE_FRAZER_(1854-1941)_-_Bronze_-_Antoine_Bourdelle_-_Joconde000SC013124.jpg"
+  },
+  {
+    "section": "malinowski",
+    "role": "portrait",
+    "file": "images/auteurs/malinowski.jpg",
+    "alt": "Portrait de Bronisław Malinowski",
+    "caption": "Bronisław Malinowski, professeur d'anthropologie à la London School of Economics, vers 1930 (LSE Library).",
+    "credit": "Photographe inconnu, LSE Library, No restrictions",
+    "license": "No restrictions",
+    "source": "https://commons.wikimedia.org/wiki/File:Bronislawmalinowski.jpg"
+  },
+  {
+    "section": "jung",
+    "role": "portrait",
+    "file": "images/auteurs/jung.jpg",
+    "alt": "Portrait de Carl Gustav Jung",
+    "caption": "Carl Gustav Jung vers 1935 (Zurich, ETH-Bibliothek).",
+    "credit": "Photographe inconnu, ETH-Bibliothek Zürich, PDM-owner",
+    "license": "PDM-owner",
+    "source": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Jung,_Carl_Gustav_(1875-1961)-Portrait-Portr_14163_(cropped).tif"
+  },
+  {
+    "section": "girard",
+    "role": "portrait",
+    "file": "images/auteurs/girard.jpg",
+    "alt": "Portrait de René Girard",
+    "caption": "René Girard à Paris en 2007.",
+    "credit": "Vicq, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ren%C3%A9_Girard.jpg"
+  },
+  {
+    "section": "norris-et-inglehart",
+    "role": "portrait",
+    "file": "images/auteurs/norris.jpg",
+    "alt": "Portrait de Pippa Norris",
+    "caption": "Pippa Norris en 2022.",
+    "credit": "Topjur01, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:PippaNorris2.jpg"
+  },
+  {
+    "section": "deuxieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-naissance-christianisme.jpg",
+    "alt": "Peinture murale : une femme assise tenant un enfant, et un homme debout qui désigne une étoile",
+    "caption": "La Vierge à l'Enfant et un prophète désignant une étoile, catacombe de Priscille (Rome, IIIe siècle ap. J.-C.), planche de Joseph Wilpert, Die Malereien der Katakomben Roms (1903).",
+    "credit": "Peintre romain anonyme, planche de Joseph Wilpert, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Isaias_predicts_the_birth_of_the_Messiah_from_the_Virgin,_from_the_from_the_book_Die_Malereien_der_Katakomben_Roms,_plate_22.jpg"
+  },
+  {
+    "section": "neuvieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-pourquoi-croit-on.jpg",
+    "alt": "Grande frise de figures tahitiennes, de l'enfant au vieillard, autour d'une idole bleue",
+    "caption": "Paul Gauguin, D'où venons-nous ? Que sommes-nous ? Où allons-nous ? (1897-1898, Boston, Museum of Fine Arts).",
+    "credit": "Paul Gauguin, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_D%27ou_venons-nous.jpg"
   },
   {
     "section": "prologue",
@@ -1040,7 +1370,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
   },
   {
-    "section": "troisieme-partie",
+    "section": "quatrieme-partie",
     "role": "partcard",
     "file": "images/art/partie-deuxieme.jpg",
     "alt": "Des visages éclairés par la lampe centrale d'un planétaire mécanique",
@@ -1050,7 +1380,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Joseph_Wright_of_Derby_-_Philosopher_giving_a_lecture_on_the_orrery_-_Google_Art_Project.jpg"
   },
   {
-    "section": "quatrieme-partie",
+    "section": "cinquieme-partie",
     "role": "partcard",
     "file": "images/art/partie-troisieme.jpg",
     "alt": "Un homme de dos sur un rocher contemple une mer de nuages",
@@ -1060,7 +1390,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"
   },
   {
-    "section": "cinquieme-partie",
+    "section": "sixieme-partie",
     "role": "partcard",
     "file": "images/art/partie-quatrieme.jpg",
     "alt": "Caricature à la plume d'un groupe d'hommes attablés qui se disputent",
@@ -1070,7 +1400,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Die_Freien_by_Friedrich_Engels.jpg"
   },
   {
-    "section": "sixieme-partie",
+    "section": "septieme-partie",
     "role": "partcard",
     "file": "images/art/partie-cinquieme.jpg",
     "alt": "Le corps du Christ mort allongé dans un tombeau étroit, et un détail du visage",
@@ -1080,7 +1410,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:The_Body_of_the_Dead_Christ_in_the_Tomb,_and_a_detail,_by_Hans_Holbein_the_Younger.jpg"
   },
   {
-    "section": "septieme-partie",
+    "section": "huitieme-partie",
     "role": "partcard",
     "file": "images/art/partie-sixieme.jpg",
     "alt": "Procession villageoise avec dais et bannières traversant un champ de blé",
@@ -1090,7 +1420,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Jules_Breton_-_La_B%C3%A9n%C3%A9diction_des_bl%C3%A9s_en_Artois.jpg"
   },
   {
-    "section": "huitieme-partie",
+    "section": "dixieme-partie",
     "role": "partcard",
     "file": "images/art/partie-septieme.jpg",
     "alt": "Ruine d'abbaye gothique entourée de chênes nus dans la brume",
@@ -1100,7 +1430,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Abtei_im_Eichwald_-_Google_Art_Project.jpg"
   },
   {
-    "section": "neuvieme-partie",
+    "section": "onzieme-partie",
     "role": "partcard",
     "file": "images/art/partie-huitieme.jpg",
     "alt": "Façade de Notre-Dame de Paris en photochromie",
@@ -1110,7 +1440,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Notre_Dame,_Paris,_France,_ca._1890-1900.jpg"
   },
   {
-    "section": "dixieme-partie",
+    "section": "douzieme-partie",
     "role": "partcard",
     "file": "images/art/partie-neuvieme.jpg",
     "alt": "Statue équestre en bronze de Marc Aurèle, le bras tendu",
@@ -1140,7 +1470,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
   },
   {
-    "section": "deuxieme-partie",
+    "section": "troisieme-partie",
     "role": "partcard",
     "file": "images/art/partie-age-classique.jpg",
     "alt": "Portrait de Descartes en habit noir et col blanc",
