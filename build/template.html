@@ -4,8 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{{TITRE_BRUT}}</title>
-<meta name="description" content="Un débat de Lucrèce à Onfray : critiques de la religion, sciences du religieux et spiritualités sans Dieu.">
+<meta name="description" content="Un débat de Platon à Onfray : critiques de la religion, sciences du religieux et spiritualités sans Dieu.">
 <meta name="theme-color" content="#f7f3ea">
+<link rel="canonical" href="{{BASE_URL}}">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="{{TITRE_BRUT}}">
+<meta property="og:title" content="{{TITRE_BRUT}}">
+<meta property="og:description" content="Un débat de Platon à Onfray : critiques de la religion, sciences du religieux et spiritualités sans Dieu.">
+<meta property="og:url" content="{{BASE_URL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:image:width" content="{{OG_W}}">
+<meta property="og:image:height" content="{{OG_H}}">
+<meta property="og:image:alt" content="Rembrandt, Philosophe en méditation">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Inter:wght@400;600&display=swap">
@@ -49,6 +63,11 @@
   <div class="drawer-tools">
     <button class="chip" id="expand-all">Tout déplier</button>
     <button class="chip" id="collapse-all">Tout replier</button>
+    <button class="chip" id="clear-read" hidden>Effacer les marques de lecture</button>
+  </div>
+  <div class="drawer-offline" id="offline-box" hidden>
+    <button class="chip" id="offline-btn">Lire hors connexion (environ 10 Mo)</button>
+    <span id="offline-status" class="offline-status" aria-live="polite"></span>
   </div>
   <ol class="toc" id="toc">
     <li class="toc-part"><a href="#top" data-target="top">Accueil</a></li>
@@ -64,13 +83,14 @@
     <p class="subtitle">{{SOUS_TITRE}}</p>
     <p class="hero-meta">{{MOTS}} mots · environ {{DUREE}} de lecture</p>
     <div class="hero-actions">
+      {{RESUME_BTN}}
       <a class="btn primary" href="#prologue" data-target="prologue">Commencer la lecture</a>
       <button class="btn" id="resume-btn" hidden>Reprendre où j'en étais</button>
     </div>
     <details class="about">
       <summary>Comment lire cet essai</summary>
       <div>
-        <p>L'essai se compose d'un prologue, de neuf parties et d'une conclusion. Chaque partie se déplie d'un toucher ; à l'intérieur, chaque auteur a sa section, elle aussi repliable. Le bouton en haut à gauche ouvre le sommaire, où l'on peut chercher un auteur par son nom. La page retient où vous en êtes.</p>
+        <p>L'essai s'ouvre sur un résumé de dix minutes, puis se compose d'un prologue, de {{NB_PARTIES}} parties et d'une conclusion. Chaque partie se déplie d'un toucher ; à l'intérieur, chaque auteur a sa section, elle aussi repliable. Le bouton en haut à gauche ouvre le sommaire, où l'on peut chercher un auteur par son nom. La page retient où vous en êtes, et le sommaire coche les sections déjà lues. Le petit bouton en forme de chaîne, à côté de chaque titre, copie le lien direct vers la section. Depuis le sommaire, on peut aussi rendre tout l'essai, images comprises, lisible hors connexion.</p>
         {{A_PROPOS}}
         <p>Les statuts de vérification des citations (citation contrôlée sur le texte, citation rapportée par une source secondaire, citation de mémoire) ont été retirés de cette version de lecture. Ils figurent dans le texte source de l'essai, avec la liste des éditions consultées, rappelée en fin de page.</p>
       </div>
@@ -98,6 +118,8 @@
 <footer class="footer">
   <p>{{TITRE}}. Version de lecture, essai rédigé en octobre 2026.</p>
 </footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <button class="to-top" id="to-top" aria-label="Revenir en haut" hidden>
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 14l6-6 6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>

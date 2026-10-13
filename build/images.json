@@ -820,6 +820,216 @@
     "source": "https://commons.wikimedia.org/wiki/File:Templo_Positivista_em_Porto_Alegre.JPG"
   },
   {
+    "section": "premiere-partie",
+    "role": "figure",
+    "file": "images/art/raphael-ecole-athenes.jpg",
+    "alt": "Philosophes grecs réunis sous des voûtes antiques autour de Platon et d'Aristote",
+    "caption": "Raphaël, L'École d'Athènes (1509-1511, Vatican, chambre de la Signature) : au centre, Platon montrant le ciel et Aristote tendant la main vers la terre ; à gauche, la figure au turban traditionnellement identifiée comme Averroès.",
+    "credit": "Raphael, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+  },
+  {
+    "section": "platon",
+    "role": "portrait",
+    "file": "images/auteurs/platon.jpg",
+    "alt": "Portrait de Platon",
+    "caption": "Platon, copie romaine du portrait réalisé par Silanion vers 370 av. J.-C. pour l'Académie (Rome, Musei Capitolini).",
+    "credit": "D'après Silanion, photo Marie-Lan Nguyen, CC BY 2.5",
+    "license": "CC BY 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.jpg"
+  },
+  {
+    "section": "aristote",
+    "role": "portrait",
+    "file": "images/auteurs/aristote.jpg",
+    "alt": "Portrait de Aristote",
+    "caption": "Aristote, copie romaine en marbre d'un bronze de Lysippe (v. 330 av. J.-C.), le manteau d'albâtre est moderne (Rome, Museo Nazionale Romano, Palazzo Altemps).",
+    "credit": "D'après Lysippe, photo Jastrow, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg"
+  },
+  {
+    "section": "plotin",
+    "role": "portrait",
+    "file": "images/auteurs/plotin.jpg",
+    "alt": "Portrait de Plotin",
+    "caption": "Tête en marbre trouvée à Ostie (IIIe siècle ap. J.-C., Ostie, Museo Ostiense), l'une des quatre répliques d'un même portrait ; l'identification avec Plotin est traditionnelle et discutée.",
+    "credit": "Sculpteur inconnu, photo Sailko, CC BY 3.0",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ritratto_di_plotino,_da_ostia,_terme_del_filosofo,_250-300_ca._(museo_arch._ostia).JPG"
+  },
+  {
+    "section": "averroes",
+    "role": "portrait",
+    "file": "images/auteurs/averroes.jpg",
+    "alt": "Portrait de Averroès",
+    "caption": "Averroès, détail du Triomphe de saint Thomas d'Aquin d'Andrea di Bonaiuto, chapelle des Espagnols, Santa Maria Novella, Florence (v. 1365-1367) ; aucun portrait authentique n'existe, l'effigie est conventionnelle.",
+    "credit": "Andrea di Bonaiuto, photo Sailko, CC BY 3.0",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Andrea_di_bonaiuto,_apoteosi_di_san_tommaso_d%27aquino,_11_averro%C3%A8.jpg"
+  },
+  {
+    "section": "maimonide",
+    "role": "portrait",
+    "file": "images/auteurs/maimonide.jpg",
+    "alt": "Portrait de Maïmonide",
+    "caption": "Maïmonide, portrait imaginaire paru dans le Thesaurus antiquitatum sacrarum de Blasio Ugolini (1744), dont dérivent les effigies modernes ; aucun portrait authentique n'existe.",
+    "credit": "Graveur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rambam-portrait.jpg"
+  },
+  {
+    "section": "maimonide",
+    "role": "figure",
+    "file": "images/oeuvres/maimonide-moreh-nevukhim-copenhague.jpg",
+    "alt": "Page enluminée d'un manuscrit hébreu : un maître assis sous un ciel étoilé enseigne à un groupe d'hommes debout",
+    "caption": "Moreh Nevukhim (Guide des égarés) dans la traduction hébraïque, manuscrit enluminé daté de 1347-1348 (Copenhague, Bibliothèque royale, Cod. Heb. 37) : un maître enseigne devant la voûte céleste.",
+    "credit": "Copiste et enlumineur anonymes, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Maimonides_teaching.jpeg"
+  },
+  {
+    "section": "montaigne",
+    "role": "portrait",
+    "file": "images/auteurs/montaigne.jpg",
+    "alt": "Portrait de Michel de Montaigne",
+    "caption": "Michel de Montaigne, portrait anonyme parfois attribué à Daniel Dumonstier (Chantilly, musée Condé).",
+    "credit": "Anonyme, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Montaigne-Dumonstier.jpg"
+  },
+  {
+    "section": "montaigne",
+    "role": "figure",
+    "file": "images/oeuvres/montaigne-exemplaire-bordeaux.jpg",
+    "alt": "Frontispice gravé des Essais, édition de 1588, avec des corrections manuscrites dans le cartouche central",
+    "caption": "Page de titre gravée des Essais (Paris, Abel L'Angelier, 1588), dans l'Exemplaire de Bordeaux, que Montaigne a couvert de corrections et d'additions jusqu'à sa mort (Bordeaux, bibliothèque municipale).",
+    "credit": "Michel de Montaigne, Bibliothèque municipale de Bordeaux, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:B330636101_S1238ResC_EB_0001.jpg"
+  },
+  {
+    "section": "descartes",
+    "role": "portrait",
+    "file": "images/auteurs/descartes.jpg",
+    "alt": "Portrait de René Descartes",
+    "caption": "René Descartes, d'après Frans Hals (Paris, musée du Louvre).",
+    "credit": "D'après Frans Hals, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg"
+  },
+  {
+    "section": "descartes",
+    "role": "figure",
+    "file": "images/oeuvres/descartes-meditationes-1641.jpg",
+    "alt": "Page de titre en latin des Meditationes de prima philosophia, Paris, 1641",
+    "caption": "Page de titre de la première édition des Meditationes de prima philosophia (Paris, Michel Soly, 1641), « in qua Dei existentia et animae immortalitas demonstratur ».",
+    "credit": "René Descartes, Bibliothèque nationale de France, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Meditationes_de_prima_philosophia_1641.jpg"
+  },
+  {
+    "section": "leibniz",
+    "role": "portrait",
+    "file": "images/auteurs/leibniz.jpg",
+    "alt": "Portrait de Gottfried Wilhelm Leibniz",
+    "caption": "Leibniz, portrait par Christoph Bernhard Francke (v. 1695, Brunswick, Herzog Anton Ulrich-Museum).",
+    "credit": "Christoph Bernhard Francke, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_(ca._1695).jpg"
+  },
+  {
+    "section": "leibniz",
+    "role": "figure",
+    "file": "images/oeuvres/leibniz-theodicee-1734.jpg",
+    "alt": "Page de titre des Essais de théodicée, Amsterdam, 1734",
+    "caption": "Page de titre des Essais de théodicée sur la bonté de Dieu, la liberté de l'homme et l'origine du mal, dans la nouvelle édition d'Amsterdam (1734) ; la première édition parut en 1710.",
+    "credit": "Gottfried Wilhelm Leibniz, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Th%C3%A9odic%C3%A9e_title_page.jpeg"
+  },
+  {
+    "section": "rousseau",
+    "role": "portrait",
+    "file": "images/auteurs/rousseau.jpg",
+    "alt": "Portrait de Jean-Jacques Rousseau",
+    "caption": "Jean-Jacques Rousseau, pastel de Maurice Quentin de La Tour, réplique du portrait exposé au Salon de 1753 (Saint-Quentin, musée Antoine-Lécuyer).",
+    "credit": "Maurice Quentin de La Tour, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Jacques_Rousseau_(painted_portrait).jpg"
+  },
+  {
+    "section": "rousseau",
+    "role": "figure",
+    "file": "images/oeuvres/rousseau-emile-1762.jpg",
+    "alt": "Page de titre d'Émile, ou De l'éducation, 1762",
+    "caption": "Page de titre de la première édition d'Émile, ou De l'éducation (1762), dont le livre IV contient la Profession de foi du vicaire savoyard ; le livre fut condamné à Paris et à Genève.",
+    "credit": "Jean-Jacques Rousseau, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:EmileTitle.jpeg"
+  },
+  {
+    "section": "ricoeur",
+    "role": "portrait",
+    "file": "images/auteurs/ricoeur.jpg",
+    "alt": "Portrait de Paul Ricœur",
+    "caption": "Paul Ricœur (à droite) avec Maarten van Buuren au colloque de Cerisy-la-Salle, août 1988.",
+    "credit": "Jmendrik, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Maarten_van_Buuren_and_Paul_Ricoeur_1988.jpg"
+  },
+  {
+    "section": "levinas",
+    "role": "portrait",
+    "file": "images/auteurs/levinas.jpg",
+    "alt": "Portrait de Emmanuel Levinas",
+    "caption": "Emmanuel Levinas en 1991.",
+    "credit": "Bracha L. Ettinger, CC BY-SA 2.5",
+    "license": "CC BY-SA 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Emmanuel_Levinas.jpg"
+  },
+  {
+    "section": "wittgenstein",
+    "role": "portrait",
+    "file": "images/auteurs/wittgenstein.jpg",
+    "alt": "Portrait de Ludwig Wittgenstein",
+    "caption": "Ludwig Wittgenstein, photographie de Moritz Nähr (1930).",
+    "credit": "Moritz Nähr, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ludwig_Wittgenstein.jpg"
+  },
+  {
+    "section": "wittgenstein",
+    "role": "figure",
+    "file": "images/oeuvres/wittgenstein-tractatus-1922.png",
+    "alt": "Page de titre du Tractatus Logico-Philosophicus, 1922",
+    "caption": "Page de titre de la première édition anglaise du Tractatus Logico-Philosophicus (1922), parue simultanément à Londres chez Kegan Paul et à New York chez Harcourt, Brace, avec l'introduction de Bertrand Russell.",
+    "credit": "Ludwig Wittgenstein, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Tractatus_title_page_1922_Harcourt.png"
+  },
+  {
+    "section": "jaspers",
+    "role": "portrait",
+    "file": "images/auteurs/jaspers.jpg",
+    "alt": "Portrait de Karl Jaspers",
+    "caption": "Karl Jaspers en 1946.",
+    "credit": "Photographe inconnu (Mondadori), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Karl_Jaspers_1946.jpg"
+  },
+  {
+    "section": "pourquoi-y-a-t-il-quelque-chose-plutot-que-rien",
+    "role": "figure",
+    "file": "images/art/friedrich-moine-bord-de-mer.jpg",
+    "alt": "Une minuscule silhouette de moine sur une grève, face à une mer sombre sous un ciel immense",
+    "caption": "Caspar David Friedrich, Le Moine au bord de la mer (1808-1810, Berlin, Alte Nationalgalerie) : l'homme seul devant l'immensité, figure de l'étonnement qu'il y ait un monde plutôt que rien.",
+    "credit": "Caspar David Friedrich, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Friedrich,_Caspar_David_-_M%C3%B6nch_am_Meer_-_Alte_Nationalgalerie_in_Berlin.jpg"
+  },
+  {
     "section": "prologue",
     "role": "partcard",
     "file": "images/art/partie-prologue.jpg",
@@ -830,17 +1040,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
   },
   {
-    "section": "premiere-partie",
-    "role": "partcard",
-    "file": "images/art/partie-premiere.jpg",
-    "alt": "Buste en marbre d'Épicure",
-    "caption": "Buste d'Épicure, copie romaine d'un original hellénistique (Londres, British Museum).",
-    "credit": "Sculpteur inconnu, photo Marie-Lan Nguyen, Public domain",
-    "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Epikouros_BM_1843.jpg"
-  },
-  {
-    "section": "deuxieme-partie",
+    "section": "troisieme-partie",
     "role": "partcard",
     "file": "images/art/partie-deuxieme.jpg",
     "alt": "Des visages éclairés par la lampe centrale d'un planétaire mécanique",
@@ -850,7 +1050,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Joseph_Wright_of_Derby_-_Philosopher_giving_a_lecture_on_the_orrery_-_Google_Art_Project.jpg"
   },
   {
-    "section": "troisieme-partie",
+    "section": "quatrieme-partie",
     "role": "partcard",
     "file": "images/art/partie-troisieme.jpg",
     "alt": "Un homme de dos sur un rocher contemple une mer de nuages",
@@ -860,7 +1060,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"
   },
   {
-    "section": "quatrieme-partie",
+    "section": "cinquieme-partie",
     "role": "partcard",
     "file": "images/art/partie-quatrieme.jpg",
     "alt": "Caricature à la plume d'un groupe d'hommes attablés qui se disputent",
@@ -870,7 +1070,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Die_Freien_by_Friedrich_Engels.jpg"
   },
   {
-    "section": "cinquieme-partie",
+    "section": "sixieme-partie",
     "role": "partcard",
     "file": "images/art/partie-cinquieme.jpg",
     "alt": "Le corps du Christ mort allongé dans un tombeau étroit, et un détail du visage",
@@ -880,7 +1080,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:The_Body_of_the_Dead_Christ_in_the_Tomb,_and_a_detail,_by_Hans_Holbein_the_Younger.jpg"
   },
   {
-    "section": "sixieme-partie",
+    "section": "septieme-partie",
     "role": "partcard",
     "file": "images/art/partie-sixieme.jpg",
     "alt": "Procession villageoise avec dais et bannières traversant un champ de blé",
@@ -890,7 +1090,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Jules_Breton_-_La_B%C3%A9n%C3%A9diction_des_bl%C3%A9s_en_Artois.jpg"
   },
   {
-    "section": "septieme-partie",
+    "section": "huitieme-partie",
     "role": "partcard",
     "file": "images/art/partie-septieme.jpg",
     "alt": "Ruine d'abbaye gothique entourée de chênes nus dans la brume",
@@ -900,7 +1100,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Abtei_im_Eichwald_-_Google_Art_Project.jpg"
   },
   {
-    "section": "huitieme-partie",
+    "section": "neuvieme-partie",
     "role": "partcard",
     "file": "images/art/partie-huitieme.jpg",
     "alt": "Façade de Notre-Dame de Paris en photochromie",
@@ -910,7 +1110,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Notre_Dame,_Paris,_France,_ca._1890-1900.jpg"
   },
   {
-    "section": "neuvieme-partie",
+    "section": "dixieme-partie",
     "role": "partcard",
     "file": "images/art/partie-neuvieme.jpg",
     "alt": "Statue équestre en bronze de Marc Aurèle, le bras tendu",
@@ -928,5 +1128,25 @@
     "credit": "Caspar David Friedrich, Public domain",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Woman_before_the_Rising_Sun_(Woman_before_the_Setting_Sun)_-_WGA08253.jpg"
+  },
+  {
+    "section": "premiere-partie",
+    "role": "partcard",
+    "file": "images/art/partie-anciens-monotheismes.jpg",
+    "alt": "Philosophes grecs réunis sous des voûtes antiques autour de Platon et d'Aristote",
+    "caption": "Raphaël, L'École d'Athènes (1509-1511, Vatican, chambre de la Signature) : Platon et Aristote au centre ; à gauche, la figure au turban traditionnellement identifiée comme Averroès.",
+    "credit": "Raphael, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+  },
+  {
+    "section": "deuxieme-partie",
+    "role": "partcard",
+    "file": "images/art/partie-age-classique.jpg",
+    "alt": "Portrait de Descartes en habit noir et col blanc",
+    "caption": "René Descartes, d'après Frans Hals (Paris, musée du Louvre).",
+    "credit": "D'après Frans Hals, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg"
   }
 ]

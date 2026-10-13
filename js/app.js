@@ -47,10 +47,45 @@
       var y = el.getBoundingClientRect().top + window.pageYOffset - 60;
       window.scrollTo(0, Math.max(0, y));
     };
+    /* Les images ont leurs dimensions : un défilement suffit ; le rattrapage couvre le chargement des polices. */
     setTimeout(go, 0);
-    setTimeout(go, 150);
-    setTimeout(go, 450);
+    setTimeout(go, 300);
   }
+  /* Copier le lien d'une section */
+  var toast = $("#toast"), toastTimer = null;
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.hidden = true; }, 2200);
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+    return new Promise(function (ok, ko) {
+      var ta = document.createElement("textarea");
+      ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy") ? ok() : ko(); } catch (err) { ko(err); }
+      document.body.removeChild(ta);
+    });
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".lien-btn");
+    if (!b) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var id = b.getAttribute("data-lien");
+    var url = location.origin + location.pathname + "#" + id;
+    var holder = document.getElementById(id);
+    var nom = holder && holder.querySelector("summary .sec-nom, summary .part-sub");
+    var coarse = window.matchMedia("(pointer: coarse)").matches;
+    if (navigator.share && coarse) {
+      navigator.share({ title: (nom ? nom.textContent + " · " : "") + document.title, url: url }).catch(function () {});
+      return;
+    }
+    copyText(url).then(function () { showToast("Lien copié"); }, function () { showToast("Copiez ce lien : " + url); });
+  }, true);
+
   document.addEventListener("click", function (e) {
     var a = e.target.closest("a[data-target]");
     if (!a) return;
@@ -171,6 +206,92 @@
     var id = decodeURIComponent(location.hash.slice(1));
     if (id && document.getElementById(id)) reveal(id);
   });
+
+  /* Sections lues : marquées quand leur fin est passée au-dessus du milieu de l'écran */
+  var lus = {};
+  try { (JSON.parse(store.get("sdr-lus") || "[]")).forEach(function (id) { lus[id] = true; }); } catch (e) {}
+  var sections = $$("details.section");
+  var clearBtn = $("#clear-read");
+  function paintRead() {
+    var n = 0;
+    sections.forEach(function (d) {
+      var r = !!lus[d.id];
+      if (r) n++;
+      d.classList.toggle("lu", r);
+      if (tocLinks[d.id]) tocLinks[d.id].classList.toggle("lu", r);
+    });
+    $$(".toc-count").forEach(function (c) {
+      var pid = c.getAttribute("data-count");
+      var secs = sections.filter(function (d) { return d.getAttribute("data-partie") === pid; });
+      var done = secs.filter(function (d) { return lus[d.id]; }).length;
+      c.textContent = done ? done + "/" + secs.length : "";
+      c.classList.toggle("complet", done === secs.length && done > 0);
+    });
+    clearBtn.hidden = n === 0;
+  }
+  /* Une section n'est marquée que si l'on a vu sa fin arriver à l'écran : un saut par le sommaire ne marque rien. */
+  var vues = {};
+  function checkRead() {
+    var h = window.innerHeight, mid = h / 2, changed = false;
+    for (var i = 0; i < sections.length; i++) {
+      var d = sections[i];
+      if (lus[d.id] || !d.open || !d.offsetParent) continue;
+      var r = d.getBoundingClientRect();
+      if (r.bottom >= mid && r.bottom <= h * 1.5 && r.top < h) vues[d.id] = true;
+      else if (r.bottom < mid && vues[d.id]) { lus[d.id] = true; changed = true; }
+    }
+    if (changed) {
+      store.set("sdr-lus", JSON.stringify(Object.keys(lus)));
+      paintRead();
+    }
+  }
+  var readTick = false;
+  window.addEventListener("scroll", function () {
+    if (readTick) return;
+    readTick = true;
+    setTimeout(function () { readTick = false; checkRead(); }, 250);
+  }, { passive: true });
+  clearBtn.addEventListener("click", function () {
+    lus = {};
+    store.set("sdr-lus", "[]");
+    paintRead();
+  });
+  paintRead();
+
+  /* Lecture hors connexion */
+  var offBox = $("#offline-box"), offBtn = $("#offline-btn"), offStatus = $("#offline-status");
+  var swOk = "serviceWorker" in navigator && "caches" in window &&
+    (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1");
+  if (swOk) {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+    offBox.hidden = false;
+    if (store.get("sdr-offline")) offStatus.textContent = "Déjà enregistré sur cet appareil.";
+    offBtn.addEventListener("click", function () {
+      var srcs = {};
+      $$("img[src]").forEach(function (i) { srcs[i.getAttribute("src")] = true; });
+      var list = Object.keys(srcs), done = 0, failed = 0;
+      offBtn.disabled = true;
+      offStatus.textContent = "Enregistrement : 0/" + list.length;
+      caches.open("sdr-images").then(function (c) {
+        return Promise.all(list.map(function (u) {
+          return c.match(u).then(function (hit) {
+            return hit || fetch(u).then(function (res) { if (res.ok) return c.put(u, res); failed++; });
+          }).catch(function () { failed++; }).then(function () {
+            done++;
+            offStatus.textContent = "Enregistrement : " + done + "/" + list.length;
+          });
+        }));
+      }).then(function () {
+        offBtn.disabled = false;
+        if (failed) {
+          offStatus.textContent = failed + " images non enregistrées ; réessayez avec une meilleure connexion.";
+        } else {
+          offStatus.textContent = "Tout l'essai est disponible hors connexion.";
+          store.set("sdr-offline", "1");
+        }
+      });
+    });
+  }
 
   /* Impression : tout déplier */
   window.addEventListener("beforeprint", function () { $$("details").forEach(function (d) { d.open = true; }); });

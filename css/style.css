@@ -95,7 +95,7 @@ em { font-style: italic; }
   margin: 4px 12px 8px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line);
   background: var(--bg); color: var(--ink); font: 16px var(--sans);
 }
-.drawer-tools { display: flex; gap: 8px; padding: 0 12px 8px; }
+.drawer-tools { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 12px 8px; }
 .chip {
   border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 999px;
   padding: 6px 12px; font: 13px var(--sans); cursor: pointer; min-height: 36px;
@@ -109,6 +109,14 @@ em { font-style: italic; }
 .toc ul a { padding: 7px 16px 7px 28px; color: var(--ink-soft); }
 .toc small { color: var(--ink-soft); font-size: 12px; }
 .toc a.active { border-left-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+.toc ul a.lu::after { content: " ✓"; color: var(--accent); font-weight: 600; }
+.toc-count { float: right; font: 600 11.5px var(--sans); color: var(--ink-soft); background: var(--bg-soft); border-radius: 999px; padding: 1px 7px; margin-left: 6px; }
+.toc-count:empty { display: none; }
+.toc-count.complet { background: var(--accent); color: #fff; }
+.drawer-offline { padding: 0 12px 10px; display: flex; flex-direction: column; gap: 4px; }
+.drawer-offline .chip { align-self: flex-start; }
+.offline-status { font-size: 12.5px; color: var(--ink-soft); }
+.chip:disabled { opacity: .6; cursor: progress; }
 .toc li.hidden { display: none; }
 
 /* Accueil */
@@ -167,6 +175,25 @@ details > summary::-webkit-details-marker { display: none; }
 .part-label { font: 600 12px var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
 .part-sub { font-size: 1.35em; font-weight: 600; line-height: 1.25; }
 .part-meta { font: 12.5px var(--sans); color: var(--ink-soft); }
+.partie > summary { padding-right: 84px; }
+.partie > summary .lien-btn { position: absolute; right: 34px; top: 50%; transform: translateY(-50%); }
+.lien-btn {
+  width: 36px; height: 36px; border: 0; border-radius: 10px; background: transparent; color: var(--ink-soft);
+  display: inline-flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;
+}
+.lien-btn:hover, .lien-btn:focus-visible { background: var(--bg-soft); color: var(--accent); }
+
+/* Résumé d'ouverture */
+.partie.resume { border-top: 0; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 0 16px; margin-bottom: 24px; box-shadow: var(--shadow); }
+.partie.resume > summary::after { right: 16px; }
+.partie.resume > summary .lien-btn { right: 42px; }
+.partie.resume .part-label { color: var(--ink-soft); }
+
+.toast {
+  position: fixed; left: 50%; bottom: max(24px, env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 90;
+  background: var(--ink); color: var(--bg); font: 600 14px var(--sans); padding: 10px 16px; border-radius: 999px;
+  box-shadow: var(--shadow); max-width: calc(100vw - 32px); overflow-wrap: anywhere;
+}
 .part-body { padding-bottom: 24px; }
 .part-end { text-align: right; font: 13px var(--sans); }
 
@@ -177,7 +204,9 @@ details > summary::-webkit-details-marker { display: none; }
 .sec-nom { font-weight: 600; font-size: 1.08em; line-height: 1.25; }
 .sec-dates { font: 12.5px var(--sans); color: var(--ink-soft); }
 .sec-formule { font-style: italic; font-size: .9em; color: var(--ink-soft); line-height: 1.3; }
-.sec-time { position: absolute; right: 34px; top: 8px; font: 11px var(--sans); color: var(--ink-soft); }
+.sec-side { margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex: none; }
+.sec-time { font: 11px var(--sans); color: var(--ink-soft); white-space: nowrap; }
+.section.lu > summary .sec-time::before { content: "✓ lu · "; color: var(--accent); }
 .sec-body { padding: 4px 16px 8px; }
 .avatars { display: flex; flex: none; }
 .avatar {
@@ -230,7 +259,7 @@ th { background: var(--bg-soft); }
 }
 
 @media print {
-  .topbar, .drawer, .drawer-backdrop, .progress, .to-top, .cards-grid, .hero-actions { display: none !important; }
+  .topbar, .drawer, .drawer-backdrop, .progress, .to-top, .cards-grid, .hero-actions, .lien-btn, .toast { display: none !important; }
   body { padding: 0; background: #fff; color: #000; font-size: 11pt; }
   details { display: block; }
   details > summary::after { display: none; }

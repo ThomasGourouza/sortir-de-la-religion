@@ -1,6 +1,10 @@
 # Sortir de la religion sans en fonder une autre ?
 
-Version web de lecture de l'essai, pensée pour le téléphone : sommaire, parties et sections repliables, portraits, pages de titre et tableaux, thème clair, sépia ou sombre, taille de texte réglable, reprise de la lecture là où on l'avait laissée.
+Version web de lecture de l'essai, pensée pour le téléphone : résumé de dix minutes avec liens vers chaque section, sommaire, parties et sections repliables, portraits, pages de titre et tableaux, thème clair, sépia ou sombre, taille de texte réglable, reprise de la lecture là où on l'avait laissée.
+
+Le sommaire coche les sections lues (une section n'est marquée que si l'on a vu sa fin passer à l'écran), et compte les sections lues par partie. Chaque section et chaque partie a un bouton qui copie son lien direct, ou ouvre le partage du téléphone. Un service worker (`sw.js`, généré par `build/build.py`) garde la page en cache ; le bouton « Lire hors connexion » du sommaire enregistre aussi toutes les images. Les balises Open Graph donnent un aperçu (titre, description, couverture) quand on partage le lien.
+
+En ligne : https://thomasgourouza.github.io/sortir-de-la-religion/
 
 Site statique : HTML, CSS et JavaScript sans dépendance, à part la police Literata chargée depuis Google Fonts.
 
@@ -10,7 +14,9 @@ Site statique : HTML, CSS et JavaScript sans dépendance, à part la police Lite
 |---|---|
 | `index.html` | la page, générée ; ne pas l'éditer à la main |
 | `css/style.css` | mise en page et thèmes |
-| `js/app.js` | sommaire, sections repliables, thème, taille du texte, mémoire de lecture |
+| `js/app.js` | sommaire, sections repliables, thème, taille du texte, mémoire de lecture, sections lues, copie de lien, hors connexion |
+| `sw.js` | service worker, généré depuis `build/sw.template.js` |
+| `favicon.svg`, `apple-touch-icon.png` | icônes |
 | `images/` | portraits (`auteurs/`), pages de titre (`oeuvres/`), tableaux et photographies (`art/`) |
 | `build/build.py` | convertit l'essai Markdown en `index.html` |
 | `build/template.html` | gabarit de la page |
