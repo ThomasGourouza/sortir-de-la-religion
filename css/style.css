@@ -177,11 +177,13 @@ details > summary::-webkit-details-marker { display: none; }
 .part-meta { font: 12.5px var(--sans); color: var(--ink-soft); }
 .partie > summary { padding-right: 84px; }
 .partie > summary .lien-btn { position: absolute; right: 34px; top: 50%; transform: translateY(-50%); }
-.lien-btn {
+.lien-btn, .lu-btn {
   width: 36px; height: 36px; border: 0; border-radius: 10px; background: transparent; color: var(--ink-soft);
   display: inline-flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;
 }
-.lien-btn:hover, .lien-btn:focus-visible { background: var(--bg-soft); color: var(--accent); }
+.lien-btn:hover, .lien-btn:focus-visible, .lu-btn:hover, .lu-btn:focus-visible { background: var(--bg-soft); color: var(--accent); }
+.sec-btns { display: flex; gap: 2px; }
+.lu-btn[aria-pressed="true"] { color: var(--accent); }
 
 /* Résumé d'ouverture */
 .partie.resume { border-top: 0; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 0 16px; margin-bottom: 24px; box-shadow: var(--shadow); }
@@ -260,7 +262,7 @@ th { background: var(--bg-soft); }
 }
 
 @media print {
-  .topbar, .drawer, .drawer-backdrop, .progress, .to-top, .cards-grid, .hero-actions, .lien-btn, .toast { display: none !important; }
+  .topbar, .drawer, .drawer-backdrop, .progress, .to-top, .cards-grid, .hero-actions, .lien-btn, .lu-btn, .toast { display: none !important; }
   body { padding: 0; background: #fff; color: #000; font-size: 11pt; }
   details { display: block; }
   details > summary::after { display: none; }

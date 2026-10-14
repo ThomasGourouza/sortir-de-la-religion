@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Ce dépôt
 
-Version web statique de l'essai *Sortir de la religion sans en fonder une autre ?* de Thomas Gourouza (l'utilisateur de ce dépôt), rédigé en octobre 2026. Environ 137 000 mots selon le compteur du site, près de dix heures de lecture, plus de quatre-vingts auteurs de Platon à Onfray : un résumé de dix minutes, un prologue, douze parties, une conclusion et une section de sources. Un abrégé d'environ 30 000 mots (`abrege.html`) suit le seul fil du critère du sacrifice.
+Version web statique de l'essai *Sortir de la religion sans en fonder une autre ?* de Thomas Gourouza (l'utilisateur de ce dépôt), rédigé en octobre 2026. Environ 137 000 mots selon le compteur du site, près de dix heures de lecture, plus de quatre-vingts auteurs de Platon à Onfray : un prologue, douze parties, une conclusion et une section de sources. Le site ne publie que la version intégrale : l'abrégé et le résumé de dix minutes en ont été retirés en octobre 2026.
 
-Le Markdown source vit dans un autre dépôt (`~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md` et `…-abrege.md`), qui n'est pas présent sur cette machine. Ici, le texte intégral n'existe que dans `index.html` et `abrege.html`, tous deux générés. Les statuts de vérification des citations ont été retirés de la version web ; ils restent dans le Markdown.
+Le Markdown source vit dans un autre dépôt (`~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md`), qui n'est pas présent sur cette machine. Ici, le texte intégral n'existe que dans `index.html`, généré. Les statuts de vérification des citations ont été retirés de la version web ; ils restent dans le Markdown.
 
 Le rôle principal de Claude dans ce dépôt est de répondre en spécialiste de cet essai (contenu, auteurs, arguments, débats, verdicts, sources), accessoirement de faire évoluer le site.
 
@@ -18,7 +18,7 @@ Le rôle principal de Claude dans ce dépôt est de répondre en spécialiste de
 - Pour tout débat entre deux auteurs, préciser s'il s'agit d'une réponse attestée (l'un a lu l'autre et lui a répondu) ou d'une confrontation construite (c'est l'essai qui les met face à face). `build/reponses.json` liste les 72 échanges (58 attestés, 14 construits) avec leur section.
 - Pour citer exactement, aller chercher le passage dans `index.html` (recette ci-dessous) plutôt que citer de mémoire. L'essai cite les textes dans la langue originale puis en traduction ; reproduire les deux quand la précision compte.
 - Respecter les réserves que l'essai formule lui-même (section « Réserves » plus bas) : ne pas présenter comme vérifié ce que l'essai donne comme rapporté, paraphrasé ou non contrôlé.
-- Ne pas confondre l'intégral et l'abrégé : l'abrégé nomme « loi des refondations » ce que l'intégral appelle « une régularité qui finit par ressembler à une loi » ; ses formulations sont plus condensées, ses conclusions identiques.
+- L'abrégé de l'essai n'est plus publié ici ; s'il est évoqué, c'est lui qui nomme « loi des refondations » ce que l'intégral appelle « une régularité qui finit par ressembler à une loi ».
 
 ## Retrouver un passage exact
 
@@ -32,7 +32,7 @@ s=$(grep -n 'id="nietzsche"' index.html | head -1 | cut -d: -f1)
 sed -n "${s},\$p" index.html | awk 'NR>1 && /<details class="(section|partie)/{exit} {print}' | sed 's/<[^>]*>//g'
 ```
 
-Autres index : `build/lexique.json` (48 notions, définition, section d'ancrage), `build/reponses.json` (qui répond à qui, type `attestee` ou `construite`, section, note), `build/auteurs.json` (dates des auteurs sans dates dans leur titre), et les pages générées `lexique.html`, `reponses.html`, `frise.html`. `abrege.html` a les mêmes ids de sections.
+Autres index : `build/lexique.json` (48 notions, définition, section d'ancrage), `build/reponses.json` (qui répond à qui, type `attestee` ou `construite`, section, note), `build/auteurs.json` (dates des auteurs sans dates dans leur titre), et les pages générées `lexique.html`, `reponses.html`, `frise.html`.
 
 ## La carte de l'essai
 
@@ -98,9 +98,8 @@ Reste « le soupir sans ciel » (Marx : la religion est aussi Protestation). Les
 
 ## Structure et identifiants des sections
 
-Ids des parties : `l-essai-en-dix-minutes`, `prologue`, `premiere-partie` à `douzieme-partie`, `conclusion`, `sources`. Ids des sections entre parenthèses.
+Ids des parties : `prologue`, `premiere-partie` à `douzieme-partie`, `conclusion`, `sources`. Ids des sections entre parenthèses.
 
-- Pour commencer : L'essai en dix minutes (`l-essai-en-dix-minutes`), résumé avec liens vers chaque section.
 - Prologue : il n'y a pas « l'athéisme ». Huit régimes de la critique (`huit-regimes-de-la-critique`) ; Religion et spiritualité (`religion-et-spiritualite`) ; Thèse (`these`) ; Tableau des auteurs (`tableau-des-auteurs` : auteur, régime, texte pivot, débat avec).
 - Première partie : les Anciens et les monothéismes devant la raison. Platon (`platon`), Aristote (`aristote`), Épicure et Lucrèce (`epicure-et-lucrece`), Plotin (`plotin`), Averroès (`averroes`), Maïmonide (`maimonide`), Maître Eckhart (`maitre-eckhart`), Passage : de la Loi à la raison (`passage`).
 - Deuxième partie : la naissance du christianisme, entre Athènes et Jérusalem. Philon (`philon-d-alexandrie`), Paul (`paul-de-tarse`), Justin (`justin-martyr`), Celse et Origène (`celse-et-origene`), Porphyre et Augustin (`porphyre-et-augustin`), Jésus a-t-il existé ? (`jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste`), Passage (`deuxieme-partie-passage`).
@@ -347,10 +346,10 @@ Ne pas affirmer plus que le texte. L'essai signale explicitement :
 ## Mécanique du site
 
 - Site statique sans dépendance (HTML, CSS, JS ; police Literata via Google Fonts). En ligne : https://thomasgourouza.github.io/sortir-de-la-religion/ (GitHub Pages, branche `main`, racine, `.nojekyll`).
-- `python3 build/build.py [chemin/vers/article.md]` reconstruit tout : `index.html`, `abrege.html` (si l'abrégé existe au chemin attendu), `frise.html`, `reponses.html`, `lexique.html`, `sw.js`. Sans argument, il prend le chemin par défaut dans `~/Documents/litterature`. Python sans dépendance. Le script masque les statuts de citation entre crochets, insère les images décrites dans `build/images.json`, relie la première occurrence de chaque terme de `build/lexique.json`, calcule les temps de lecture (230 mots par minute), ajoute `?v=<horodatage>` aux CSS et JS et au service worker. Il signale les ids de section inconnus référencés par `reponses.json` et `lexique.json`.
+- `python3 build/build.py [chemin/vers/article.md]` reconstruit tout : `index.html`, `frise.html`, `reponses.html`, `lexique.html`, `sw.js`. Sans argument, il prend le chemin par défaut dans `~/Documents/litterature`. Python sans dépendance. Le script masque les statuts de citation entre crochets, insère les images décrites dans `build/images.json`, relie la première occurrence de chaque terme de `build/lexique.json`, calcule les temps de lecture (230 mots par minute), ajoute `?v=<horodatage>` aux CSS et JS et au service worker. Il ignore la partie « L'essai en dix minutes » du Markdown et signale les ids de section inconnus référencés par `reponses.json` et `lexique.json`.
 - `python3 build/images.py` récupère à nouveau les images (Wikimedia Commons) et remplit `build/images.json`.
 - Prévisualiser : `python3 -m http.server 8000`, puis http://localhost:8000.
-- Générés, à ne pas éditer à la main : `index.html`, `abrege.html`, `frise.html`, `reponses.html`, `lexique.html`, `sw.js`. Le texte de l'essai se corrige dans le Markdown source, puis on reconstruit.
-- Éditables : `css/style.css` (mise en page, thèmes clair, sépia et sombre), `js/app.js` (sommaire, sections repliables, thème, taille du texte, reprise de lecture, sections lues, copie de lien, hors connexion, recherche plein texte, raccourci `/`), `js/pages.js` (filtres des pages frise, réponses, lexique), les gabarits `build/template.html`, `build/page.template.html`, `build/sw.template.js`, et les JSON `build/lexique.json`, `build/reponses.json`, `build/auteurs.json`, `build/images.json`.
-- Conventions : id = slug du titre (accents retirés, parenthèses et formule après « : » supprimées) ; les collisions sont résolues par un préfixe de partie (`deuxieme-partie-passage`) ; les titres de sections d'auteur ont le format « Nom (dates) : formule ». Stockage local sous les préfixes `sdr-` (essai) et `sdr-a-` (abrégé) : `open`, `pos`, `lus`, `offline` ; `sdr-theme` et `sdr-font` sont partagés.
+- Générés, à ne pas éditer à la main : `index.html`, `frise.html`, `reponses.html`, `lexique.html`, `sw.js`. Le texte de l'essai se corrige dans le Markdown source, puis on reconstruit.
+- Éditables : `css/style.css` (mise en page, thèmes clair, sépia et sombre), `js/app.js` (sommaire, sections repliables, thème, taille du texte, reprise de lecture, sections lues avec marquage manuel lu/non lu, copie de lien, hors connexion, recherche plein texte, raccourci `/`), `js/pages.js` (filtres des pages frise, réponses, lexique), les gabarits `build/template.html`, `build/page.template.html`, `build/sw.template.js`, et les JSON `build/lexique.json`, `build/reponses.json`, `build/auteurs.json`, `build/images.json`.
+- Conventions : id = slug du titre (accents retirés, parenthèses et formule après « : » supprimées) ; les collisions sont résolues par un préfixe de partie (`deuxieme-partie-passage`) ; les titres de sections d'auteur ont le format « Nom (dates) : formule ». Stockage local sous le préfixe `sdr-` : `open`, `pos`, `lus`, `offline`, plus `sdr-theme` et `sdr-font`.
 - Commits en français ; pas de tiret cadratin nulle part.

@@ -21,8 +21,6 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
 ARTICLE = os.path.expanduser(
     "~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md")
-ABREGE = os.path.expanduser(
-    "~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion-abrege.md")
 MOTS_MINUTE = 230
 BASE_URL = "https://thomasgourouza.github.io/sortir-de-la-religion/"
 RESUME = "L'essai en dix minutes"
@@ -329,8 +327,7 @@ def personnes(titre):
 def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, version):
     tpl = open(os.path.join(ICI, "page.template.html"), encoding="utf-8").read()
     nav = " ".join('<a class="chip%s" href="%s">%s</a>' % (" actif" if f == nom else "", f, l)
-                   for f, l in (("index.html", "L'essai"), ("abrege.html", "Abrégé"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique"))
-                   if f != "abrege.html" or os.path.exists(ABREGE))
+                   for f, l in (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique")))
     rempl = {"TITRE_PAGE": titre_page, "TITRE_BRUT": html.escape(titre), "DESCRIPTION": description,
              "OG_IMAGE": og_image, "NAV": nav, "INTRO": intro, "CONTENU": contenu}
     for k, v in rempl.items():
@@ -439,9 +436,8 @@ def pages_outils(titre, infos, version, og_image, ids):
                titre, og_image, version)
 
 
-def construire(chemin, sortie="index.html", integral=None, version=None):
-    """Rend l'essai (sortie index.html) ou l'abrege (integral = identifiants de l'essai complet)."""
-    abrege = integral is not None
+def construire(chemin, version=None):
+    """Rend l'essai (index.html)."""
     titre, sous_titre, intro, parties = structurer(lire_article(chemin))
     images = charger_images()
     par_section = {}
@@ -471,11 +467,13 @@ def construire(chemin, sortie="index.html", integral=None, version=None):
                 a_propos.append(en_ligne(masquer_statuts(m.group(1)).strip()))
 
     sources_html, toc, corps, cartes = "", [], [], []
-    total_mots, nb_parties, resume_id = 0, 0, ""
+    total_mots, nb_parties = 0, 0
     infos = []  # sections, pour la frise
     for part in parties:
         pid = uid(slug(part["titre"]), "p")
         ptitre = part["titre"]
+        if ptitre.startswith(RESUME):
+            continue  # le resume de dix minutes n'est pas publie : seule la version integrale l'est
         if pid == "sources":
             secs = []
             for sec in part["sections"]:
@@ -484,11 +482,7 @@ def construire(chemin, sortie="index.html", integral=None, version=None):
             sources_html = "\n".join(rendre_blocs(part["lignes"]) + secs)
             continue
         label, _, sous = ptitre.partition(" : ")
-        est_resume = ptitre.startswith(RESUME)
-        if est_resume:
-            resume_id = pid
-            label, sous = "Pour commencer", ptitre
-        elif "partie" in label.lower():
+        if "partie" in label.lower():
             nb_parties += 1
         intro_p = rendre_blocs(part["lignes"])
         pmots = sum(mots(x) for x in intro_p)
@@ -526,34 +520,25 @@ def construire(chemin, sortie="index.html", integral=None, version=None):
             secs_html.append(
                 '<details class="section%s" id="%s" data-partie="%s" open><summary>%s'
                 '<span class="sec-side"><span class="sec-time">%d min</span>%s</span></summary>'
-                '<div class="sec-body">%s%s%s</div></details>' % (
+                '<div class="sec-body">%s%s</div></details>' % (
                     " auteur" if est_auteur else "", sid, pid, head,
-                    max(1, round(smots / MOTS_MINUTE)), lien_btn(sid), "\n".join(corps_sec), credits,
-                    '<p class="vers-integral"><a href="index.html#%s">Lire cette section dans la version intégrale</a></p>' % sid
-                    if abrege and sid in integral else ""))
+                    max(1, round(smots / MOTS_MINUTE)), lien_btn(sid), "\n".join(corps_sec), credits))
             toc_secs.append('<li><a href="#%s" data-target="%s">%s%s</a></li>' % (
                 sid, sid, en_ligne(nom if est_auteur else sec["titre"]),
                 ' <small>%s</small>' % html.escape(dates) if dates else ""))
         total_mots += pmots
         minutes = max(1, round(pmots / MOTS_MINUTE))
         meta = "%s%d min de lecture" % ("%d auteurs · " % nb_auteurs if nb_auteurs else "", minutes)
-        if est_resume:
-            meta = "%d min de lecture" % minutes
         corps.append(
-            '<details class="partie%s" id="%s"%s><summary><span class="part-label">%s</span>'
+            '<details class="partie" id="%s"><summary><span class="part-label">%s</span>'
             '<span class="part-sub">%s</span><span class="part-meta">%s</span>%s</summary>'
-            '<div class="part-body">%s%s<p class="part-end">%s<a href="#%s" data-target="%s">Haut de la partie</a></p></div></details>' % (
-                " resume" if est_resume else "", pid, " open" if est_resume else "",
-                en_ligne(label), en_ligne(sous), meta, lien_btn(pid),
-                "\n".join(intro_p), "\n".join(secs_html),
-                '<a class="vers-integral" href="index.html#%s">Lire la partie complète</a> · ' % pid if abrege and pid in integral else "",
-                pid, pid))
+            '<div class="part-body">%s%s<p class="part-end"><a href="#%s" data-target="%s">Haut de la partie</a></p></div></details>' % (
+                pid, en_ligne(label), en_ligne(sous), meta, lien_btn(pid),
+                "\n".join(intro_p), "\n".join(secs_html), pid, pid))
         toc.append('<li class="toc-part"><a href="#%s" data-target="%s">%s%s</a>%s</li>' % (
             pid, pid, en_ligne(ptitre),
             '<span class="toc-count" data-count="%s"></span>' % pid if toc_secs else "",
             "<ul>%s</ul>" % "".join(toc_secs) if toc_secs else ""))
-        if est_resume:
-            continue
         card_img = par_section.get((pid, "partcard"), [])
         cartes.append(
             '<a class="card" href="#%s" data-target="%s">%s<span class="card-text">'
@@ -574,21 +559,13 @@ def construire(chemin, sortie="index.html", integral=None, version=None):
     tpl = open(os.path.join(ICI, "template.html"), encoding="utf-8").read()
     version = version or str(int(time.time()))
     duree = "%d h %02d" % divmod(round(heures * 60), 60)
-    if abrege:
-        autre = '<a class="btn" href="index.html">La version intégrale</a>'
-        comment = ("<p>Ce texte est l'abrégé d'un essai plus long : il suit un seul fil, le critère du sacrifice, et ne garde "
-                   "que les débats qui le font avancer. Chaque partie et chaque section renvoie à sa version intégrale. "
-                   "La loupe, en haut, cherche dans tout le texte ; la page retient où vous en êtes.</p>")
-    else:
-        autre = '<a class="btn" href="abrege.html">L\'abrégé%s</a>' % (
-            " (environ %s)" % ABREGE_DUREE[0] if ABREGE_DUREE[0] else "") if os.path.exists(ABREGE) else ""
-        comment = ("<p>L'essai s'ouvre sur un résumé de dix minutes, puis se compose d'un prologue, de %s parties et d'une conclusion. "
-                   "Chaque partie se déplie d'un toucher ; à l'intérieur, chaque auteur a sa section, elle aussi repliable. "
-                   "Le bouton en haut à gauche ouvre le sommaire, où l'on peut chercher un auteur par son nom, et la loupe cherche dans tout le texte. "
-                   "La page retient où vous en êtes, et le sommaire coche les sections déjà lues. Le petit bouton en forme de chaîne, "
-                   "à côté de chaque titre, copie le lien direct vers la section. Depuis le sommaire, on peut aussi rendre tout l'essai, "
-                   "images comprises, lisible hors connexion. Une version abrégée, une frise, une carte des réponses et un lexique "
-                   "complètent la lecture.</p>") % NOMBRES.get(nb_parties, str(nb_parties))
+    comment = ("<p>L'essai se compose d'un prologue, de %s parties et d'une conclusion. "
+               "Chaque partie se déplie d'un toucher ; à l'intérieur, chaque auteur a sa section, elle aussi repliable. "
+               "Le bouton en haut à gauche ouvre le sommaire, où l'on peut chercher un auteur par son nom, et la loupe cherche dans tout le texte. "
+               "La page retient où vous en êtes, et le sommaire coche les sections déjà lues. Le petit bouton en forme de chaîne, "
+               "à côté de chaque titre, copie le lien direct vers la section. Depuis le sommaire, on peut aussi rendre tout l'essai, "
+               "images comprises, lisible hors connexion. Une frise, une carte des réponses et un lexique "
+               "complètent la lecture.</p>") % NOMBRES.get(nb_parties, str(nb_parties))
     rempl = {
         "TITRE": en_ligne(titre),
         "TITRE_BRUT": html.escape(titre),
@@ -596,19 +573,17 @@ def construire(chemin, sortie="index.html", integral=None, version=None):
         "COUVERTURE": figure(cover[0], "cover") if cover else "",
         "MOTS": "{:,}".format(total_mots).replace(",", " "),
         "DUREE": duree,
-        "AUTRE_VERSION": autre,
         "COMMENT_LIRE": comment,
-        "STORE": "sdr-a-" if abrege else "sdr-",
-        "TITRE_ONGLET": html.escape(titre) + (" · abrégé" if abrege else ""),
-        "PAGE": sortie,
+        "STORE": "sdr-",
+        "TITRE_ONGLET": html.escape(titre),
+        "PAGE": "index.html",
         "A_PROPOS": "".join("<p>%s</p>" % x for x in a_propos),
         "CARTES": "\n".join(cartes),
         "TOC": "\n".join(toc),
         "CORPS": corps_html,
-        "SOURCES": sources_html or '<p>Les éditions consultées et les sources secondaires sont détaillées dans la <a href="index.html#sources">version intégrale</a>.</p>',
+        "SOURCES": sources_html,
         "CREDITS": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>",
         "NB_PARTIES": NOMBRES.get(nb_parties, str(nb_parties)),
-        "RESUME_BTN": ('<a class="btn" href="#%s" data-target="%s">%s</a>' % (resume_id, resume_id, RESUME)) if resume_id else "",
         "BASE_URL": BASE_URL,
         "OG_IMAGE": BASE_URL + (cover[0]["file"] if cover else ""),
         "OG_W": str(dimensions(cover[0]["file"])[0]) if cover else "",
@@ -617,22 +592,14 @@ def construire(chemin, sortie="index.html", integral=None, version=None):
     tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace('src="js/app.js"', 'src="js/app.js?v=%s"' % version)
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
-    open(os.path.join(RACINE, sortie), "w", encoding="utf-8").write(tpl)
-    print("%s : %d mots, %d parties, %s de lecture" % (sortie, total_mots, len(corps), duree))
+    open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)
+    print("index.html : %d mots, %d parties, %s de lecture" % (total_mots, len(corps), duree))
     return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"], "duree": duree}
-
-
-ABREGE_DUREE = [""]
 
 
 def tout_construire(article=ARTICLE):
     version = str(int(time.time()))
-    if os.path.exists(ABREGE):
-        # premiere passe pour connaitre la duree de l'abrege, affichee sur l'essai complet
-        ABREGE_DUREE[0] = construire(ABREGE, "abrege.html", integral=set(), version=version)["duree"]
-    r = construire(article, "index.html", version=version)
-    if os.path.exists(ABREGE):
-        construire(ABREGE, "abrege.html", integral=r["ids"], version=version)
+    r = construire(article, version=version)
     pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"])
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
     open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw.replace("{{VERSION}}", version))

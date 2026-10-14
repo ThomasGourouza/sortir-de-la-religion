@@ -213,6 +213,20 @@
   try { (JSON.parse(store.get(P + "lus") || "[]")).forEach(function (id) { lus[id] = true; }); } catch (e) {}
   var sections = $$("details.section");
   var clearBtn = $("#clear-read");
+  /* Bouton lu / non lu dans l'en-tête de chaque section, à côté du bouton de lien */
+  sections.forEach(function (d) {
+    var side = d.querySelector("summary .sec-side");
+    if (!side) return;
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "lu-btn"; b.setAttribute("data-lu", d.id);
+    b.innerHTML = '<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12.5l2.5 2.5L16 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    var box = document.createElement("span");
+    box.className = "sec-btns";
+    var lien = side.querySelector(".lien-btn");
+    if (lien) box.appendChild(lien);
+    box.appendChild(b);
+    side.appendChild(box);
+  });
   function paintRead() {
     var n = 0;
     sections.forEach(function (d) {
@@ -220,6 +234,12 @@
       if (r) n++;
       d.classList.toggle("lu", r);
       if (tocLinks[d.id]) tocLinks[d.id].classList.toggle("lu", r);
+      var b = d.querySelector(".lu-btn");
+      if (b) {
+        b.setAttribute("aria-pressed", r ? "true" : "false");
+        b.setAttribute("aria-label", r ? "Marquer comme non lu" : "Marquer comme lu");
+        b.title = r ? "Marquer comme non lu" : "Marquer comme lu";
+      }
     });
     $$(".toc-count").forEach(function (c) {
       var pid = c.getAttribute("data-count");
@@ -257,6 +277,17 @@
     store.set(P + "lus", "[]");
     paintRead();
   });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".lu-btn");
+    if (!b) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var id = b.getAttribute("data-lu");
+    if (lus[id]) { delete lus[id]; delete vues[id]; } else { lus[id] = true; }
+    store.set(P + "lus", JSON.stringify(Object.keys(lus)));
+    paintRead();
+    showToast(lus[id] ? "Marquée comme lue" : "Marquée comme non lue");
+  }, true);
   paintRead();
 
   /* Lecture hors connexion */

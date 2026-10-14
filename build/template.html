@@ -79,7 +79,7 @@
     <button class="chip" id="collapse-all">Tout replier</button>
     <button class="chip" id="clear-read" hidden>Effacer les marques de lecture</button>
   </div>
-  <div class="drawer-outils"><a class="chip" href="index.html">Version intégrale</a><a class="chip" href="abrege.html">Abrégé</a><a class="chip" href="frise.html">Frise</a><a class="chip" href="reponses.html">Qui répond à qui</a><a class="chip" href="lexique.html">Lexique</a></div>
+  <div class="drawer-outils"><a class="chip" href="frise.html">Frise</a><a class="chip" href="reponses.html">Qui répond à qui</a><a class="chip" href="lexique.html">Lexique</a></div>
   <div class="drawer-offline" id="offline-box" hidden>
     <button class="chip" id="offline-btn">Lire hors connexion (environ 10 Mo)</button>
     <span id="offline-status" class="offline-status" aria-live="polite"></span>
@@ -98,9 +98,6 @@
     <p class="subtitle">{{SOUS_TITRE}}</p>
     <p class="hero-meta">{{MOTS}} mots · environ {{DUREE}} de lecture</p>
     <div class="hero-actions">
-      {{RESUME_BTN}}
-      {{AUTRE_VERSION}}
-      <a class="btn primary" href="#prologue" data-target="prologue">Commencer la lecture</a>
       <button class="btn" id="resume-btn" hidden>Reprendre où j'en étais</button>
     </div>
     <p class="hero-outils"><a href="frise.html">Frise chronologique</a> · <a href="reponses.html">Qui répond à qui</a> · <a href="lexique.html">Lexique</a></p>
