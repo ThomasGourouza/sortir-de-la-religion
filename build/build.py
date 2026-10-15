@@ -438,7 +438,7 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=()):
     filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" '
                'aria-label="Chercher un auteur"><select data-filtre-partie aria-label="Filtrer par partie">%s</select></div>' % opts)
     page_outil("frise.html", "Frise chronologique",
-               "Les %d auteurs de l'essai, du plus ancien au plus récent. Un toucher sur un nom ouvre sa section." % len(uniques),
+               "Les %d auteurs de l'essai, du plus ancien au plus récent. Un click sur un nom ouvre sa section." % len(uniques),
                "Frise chronologique des auteurs de l'essai.", filtres + "".join(h) + '<p id="aucun" hidden>Aucun auteur ne correspond.</p>',
                titre, og_image, version)
 
@@ -543,14 +543,6 @@ def construire(chemin, version=None):
         ids_vus.add(i)
         return i
 
-    # Note d'introduction : on garde la convention de debat, pas celle des citations.
-    a_propos = []
-    for kind, ls in blocs(intro):
-        if kind == "quote":
-            txt = " ".join(re.sub(r"^>\s?", "", x) for x in ls)
-            m = re.search(r"\*\*Convention de débat\.\*\*(.*)", txt)
-            if m:
-                a_propos.append(en_ligne(masquer_statuts(m.group(1)).strip()))
 
     sources_html, toc, corps, cartes = "", [], [], []
     total_mots, nb_parties = 0, 0
@@ -649,15 +641,6 @@ def construire(chemin, version=None):
     tpl = open(os.path.join(ICI, "template.html"), encoding="utf-8").read()
     version = version or str(int(time.time()))
     duree = "%d h %02d" % divmod(round(heures * 60), 60)
-    comment = ("<p>L'essai se compose d'un prologue, de %s parties et d'une conclusion. "
-               "Chaque partie se déplie d'un toucher ; à l'intérieur, chaque auteur a sa section, elle aussi repliable. "
-               "Le bouton en haut à gauche ouvre le sommaire, où l'on peut chercher un auteur par son nom, et la loupe cherche dans tout le texte. "
-               "La page retient où vous en êtes, et le sommaire coche les sections déjà lues. Le petit bouton en forme de chaîne, "
-               "à côté de chaque titre, copie le lien direct vers la section. Depuis le sommaire, on peut aussi rendre tout l'essai, "
-               "images comprises, lisible hors connexion. Les encadrés « En littérature », repliés, proposent dans chaque section "
-               "une ou plusieurs œuvres littéraires qui illustrent le propos ; on peut les ouvrir ou les ignorer. "
-               "Une frise, une carte des réponses, un lexique et une bibliothèque des œuvres citées "
-               "complètent la lecture.</p>") % NOMBRES.get(nb_parties, str(nb_parties))
     rempl = {
         "TITRE": en_ligne(titre),
         "TITRE_BRUT": html.escape(titre),
@@ -665,11 +648,9 @@ def construire(chemin, version=None):
         "COUVERTURE": figure(cover[0], "cover") if cover else "",
         "MOTS": "{:,}".format(total_mots).replace(",", " "),
         "DUREE": duree,
-        "COMMENT_LIRE": comment,
         "STORE": "sdr-",
         "TITRE_ONGLET": html.escape(titre),
         "PAGE": "index.html",
-        "A_PROPOS": "".join("<p>%s</p>" % x for x in a_propos),
         "CARTES": "\n".join(cartes),
         "TOC": "\n".join(toc),
         "CORPS": corps_html,
