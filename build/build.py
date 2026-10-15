@@ -67,6 +67,8 @@ def en_ligne(t):
 
 
 def mots(t):
+    """Compte les mots hors balises ; les encadres litteraires n'entrent pas dans les temps de lecture."""
+    t = re.sub(r'<aside class="lettres">.*?</aside>', " ", t, flags=re.S)
     return len(re.sub(r"<[^>]+>", " ", t).split())
 
 
@@ -111,6 +113,44 @@ def rendre_table(rows):
     return "".join(h)
 
 
+LETTRES_MARQUE = re.compile(r"^>\s*\*\*En littérature\.\*\*\s*")
+LETTRES_OEUVRE = re.compile(r"^(.+?), (?:\*(.+?)\*|« (.+?) »)(.*?)\s*(?:\((\d[^)]*)\))?\s*$")
+LETTRES_BUF = []  # oeuvres des encadres de la section en cours (auteur, titre, date)
+
+
+def encadre_lettres(ls):
+    """Rend un bloc « > **En littérature.** ... » en encadre repliable.
+
+    Premiere ligne : les oeuvres, « Auteur, *Titre* (date) » separees par « ; ».
+    Paragraphes separes par une ligne « > » vide ; le dernier commence par « Source ».
+    """
+    paras, cur = [], []
+    for x in ls:
+        x = re.sub(r"^>\s?", "", x)
+        if not x.strip():
+            if cur:
+                paras.append(" ".join(cur))
+            cur = []
+        else:
+            cur.append(x)
+    if cur:
+        paras.append(" ".join(cur))
+    titre = LETTRES_MARQUE.sub("", "> " + paras[0]) if paras else ""
+    for elt in [e.strip() for e in titre.split(" ; ") if e.strip()]:
+        m = LETTRES_OEUVRE.match(elt)
+        if not m:
+            print("  encadré littéraire : ligne de titre inanalysable :", elt)
+            continue
+        LETTRES_BUF.append((m.group(1).strip(), m.group(2) or m.group(3), m.group(4).strip(), m.group(5) or ""))
+    corps = []
+    for p in paras[1:]:
+        classe = ' class="lettres-source"' if re.match(r"Sources?\s*:", p) else ""
+        corps.append("<p%s>%s</p>" % (classe, en_ligne(masquer_statuts(p).strip())))
+    return ('<aside class="lettres"><details><summary><span class="lettres-label">En littérature</span> '
+            '<span class="lettres-titre">%s</span></summary><div class="lettres-corps">%s</div></details></aside>' % (
+                en_ligne(masquer_statuts(titre).strip()), "".join(corps)))
+
+
 def rendre_blocs(lignes):
     h = []
     for kind, ls in blocs(lignes):
@@ -120,6 +160,8 @@ def rendre_blocs(lignes):
             items = [re.sub(r"^\s*[-*] ", "", x) for x in ls]
             h.append("<ul>" + "".join("<li>%s</li>" % en_ligne(masquer_statuts(i))
                                       for i in items) + "</ul>")
+        elif kind == "quote" and LETTRES_MARQUE.match(ls[0]):
+            h.append(encadre_lettres(ls))
         elif kind == "quote":
             txt = " ".join(re.sub(r"^>\s?", "", x) for x in ls)
             parts = [p for p in re.split(r"\s{2,}|(?<=\.)\s(?=\*\*)", txt) if p.strip()]
@@ -247,7 +289,7 @@ def inserer_figures(blocs_html, figs):
     if not figs:
         return blocs_html
     out = list(blocs_html)
-    n = len(out)
+    n = sum(1 for b in out if not b.startswith("<aside"))  # les encadres ne deplacent pas les figures
     pos = [min(n, 1 + i * max(2, n // (len(figs) + 1))) for i in range(len(figs))]
     for k, (p, f) in enumerate(sorted(zip(pos, figs), key=lambda x: -x[0])):
         out.insert(p, figure(f))
@@ -278,7 +320,7 @@ def lier_lexique(h):
     for i, m in enumerate(morceaux):
         if m.startswith("<"):
             nom = re.match(r"</?\s*([a-zA-Z0-9]+)", m)
-            if nom and nom.group(1).lower() in ("a", "summary", "figcaption", "h1", "h2", "h3", "h4", "th", "button"):
+            if nom and nom.group(1).lower() in ("a", "summary", "figcaption", "h1", "h2", "h3", "h4", "th", "button", "aside"):
                 bloque += -1 if m.startswith("</") else (0 if m.endswith("/>") else 1)
             continue
         if bloque > 0 or not m.strip():
@@ -327,7 +369,8 @@ def personnes(titre):
 def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, version):
     tpl = open(os.path.join(ICI, "page.template.html"), encoding="utf-8").read()
     nav = " ".join('<a class="chip%s" href="%s">%s</a>' % (" actif" if f == nom else "", f, l)
-                   for f, l in (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique")))
+                   for f, l in (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique"),
+                                ("bibliotheque.html", "Bibliothèque")))
     rempl = {"TITRE_PAGE": titre_page, "TITRE_BRUT": html.escape(titre), "DESCRIPTION": description,
              "OG_IMAGE": og_image, "NAV": nav, "INTRO": intro, "CONTENU": contenu}
     for k, v in rempl.items():
@@ -337,7 +380,24 @@ def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, ve
     open(os.path.join(RACINE, nom), "w", encoding="utf-8").write(tpl)
 
 
-def pages_outils(titre, infos, version, og_image, ids):
+PARTICULES = ("La", "Le", "Les", "Du", "Des", "De", "Saint", "Sainte", "Van", "Von", "Di", "Da", "Del", "Della", "Mac", "Mc")
+CLES_AUTEURS = {"Jean de la Croix": "jean de la croix", "Dante": "dante", "Jean Paul": "jean paul", "Angelus Silesius": "silesius",
+                "Al-Maʿarrī": "maarri", "Abû l-ʿAlâʾ al-Maʿarrî": "maarri", "Lucien de Samosate": "lucien", "Rûmî": "rumi",
+                "Omar Khayyâm": "khayyam", "Mme de Staël": "stael"}
+
+
+def cle_auteur(nom):
+    """Cle de tri d'un nom d'ecrivain : nom de famille (avec sa particule capitalisee), puis nom complet."""
+    if nom in CLES_AUTEURS:
+        return CLES_AUTEURS[nom]
+    ws = nom.split()
+    last = ws[-1]
+    if len(ws) >= 2 and ws[-2] in PARTICULES:
+        last = ws[-2] + " " + last
+    return slug_terme(last) + " " + slug_terme(nom)
+
+
+def pages_outils(titre, infos, version, og_image, ids, lettres=()):
     # ---------------------------------------------------------------- frise
     dates_sup = charger("auteurs.json", {})
     gens = []
@@ -435,6 +495,32 @@ def pages_outils(titre, infos, version, og_image, ids):
                '<dl class="lexique">%s</dl><p id="aucun" hidden>Aucune notion ne correspond.</p>' % "".join(items),
                titre, og_image, version)
 
+    # ---------------------------------------------------------------- bibliotheque
+    auteurs = {}
+    for l in lettres:
+        for aut, tit, reste, date in l["oeuvres"]:
+            o = auteurs.setdefault(aut, {}).setdefault((tit, date), {"reste": reste, "sections": []})
+            if (l["id"], l["nom"]) not in o["sections"]:
+                o["sections"].append((l["id"], l["nom"]))
+    cartes = []
+    for aut in sorted(auteurs, key=cle_auteur):
+        lis = []
+        for (tit, date), o in sorted(auteurs[aut].items(), key=lambda kv: (kv[0][1], slug_terme(kv[0][0]))):
+            liens = " · ".join('<a href="index.html#%s">%s</a>' % (sid, html.escape(nom)) for sid, nom in o["sections"])
+            lis.append('<li data-item><em>%s</em>%s%s <span class="bib-liens">%s</span></li>' % (
+                html.escape(tit), " " + html.escape(o["reste"]) if o["reste"] else "",
+                " (%s)" % html.escape(date) if date else "", liens))
+        cartes.append('<section class="rep-carte" data-groupe id="%s"><h2>%s</h2><ul class="bib-oeuvres">%s</ul></section>' % (
+            slug_terme(aut), html.escape(aut), "".join(lis)))
+    nb_oeuvres = sum(len(v) for v in auteurs.values())
+    page_outil("bibliotheque.html", "Bibliothèque",
+               "Les %d œuvres de %d écrivains convoquées dans les encadrés « En littérature » de l'essai, classées par auteur. "
+               "Chaque œuvre renvoie à la section qui la cite." % (nb_oeuvres, len(auteurs)),
+               "Bibliothèque des œuvres littéraires citées dans l'essai.",
+               '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur ou une œuvre…" '
+               'aria-label="Chercher un auteur ou une œuvre"></div>' + "".join(cartes) + '<p id="aucun" hidden>Aucune œuvre ne correspond.</p>',
+               titre, og_image, version)
+
 
 def construire(chemin, version=None):
     """Rend l'essai (index.html)."""
@@ -469,6 +555,7 @@ def construire(chemin, version=None):
     sources_html, toc, corps, cartes = "", [], [], []
     total_mots, nb_parties = 0, 0
     infos = []  # sections, pour la frise
+    lettres = []  # encadres litteraires, pour la bibliotheque
     for part in parties:
         pid = uid(slug(part["titre"]), "p")
         ptitre = part["titre"]
@@ -494,7 +581,10 @@ def construire(chemin, version=None):
             sid = uid(base, pid)
             nom, dates, formule = analyser_titre(sec["titre"])
             infos.append({"id": sid, "titre": sec["titre"], "partie": pid, "partie_titre": ptitre})
+            del LETTRES_BUF[:]
             corps_sec = rendre_blocs(sec["lignes"])
+            if LETTRES_BUF:
+                lettres.append({"id": sid, "nom": nom if dates else sec["titre"], "oeuvres": list(LETTRES_BUF)})
             smots = sum(mots(x) for x in corps_sec)
             pmots += smots
             portraits = par_section.get((base, "portrait"), [])
@@ -564,7 +654,9 @@ def construire(chemin, version=None):
                "Le bouton en haut à gauche ouvre le sommaire, où l'on peut chercher un auteur par son nom, et la loupe cherche dans tout le texte. "
                "La page retient où vous en êtes, et le sommaire coche les sections déjà lues. Le petit bouton en forme de chaîne, "
                "à côté de chaque titre, copie le lien direct vers la section. Depuis le sommaire, on peut aussi rendre tout l'essai, "
-               "images comprises, lisible hors connexion. Une frise, une carte des réponses et un lexique "
+               "images comprises, lisible hors connexion. Les encadrés « En littérature », repliés, proposent dans chaque section "
+               "une ou plusieurs œuvres littéraires qui illustrent le propos ; on peut les ouvrir ou les ignorer. "
+               "Une frise, une carte des réponses, un lexique et une bibliothèque des œuvres citées "
                "complètent la lecture.</p>") % NOMBRES.get(nb_parties, str(nb_parties))
     rempl = {
         "TITRE": en_ligne(titre),
@@ -594,13 +686,14 @@ def construire(chemin, version=None):
         tpl = tpl.replace("{{%s}}" % k, v)
     open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)
     print("index.html : %d mots, %d parties, %s de lecture" % (total_mots, len(corps), duree))
-    return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"], "duree": duree}
+    return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"], "duree": duree,
+            "lettres": lettres}
 
 
 def tout_construire(article=ARTICLE):
     version = str(int(time.time()))
     r = construire(article, version=version)
-    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"])
+    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"])
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
     open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw.replace("{{VERSION}}", version))
 

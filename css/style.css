@@ -159,6 +159,22 @@ figcaption .credit { display: block; font-size: 11.5px; opacity: .8; margin-top:
 @media (max-width: 480px) { .lecture p { text-align: left; } }
 blockquote { margin: 1.2em 0; padding: .4em 1em; border-left: 3px solid var(--accent); background: var(--bg-soft); border-radius: 0 10px 10px 0; }
 
+/* Encadrés « En littérature » : repliés par défaut, ignorables, distincts du texte de fond. */
+.lettres { margin: 1.3em 0; font-size: .94em; }
+.lettres > details { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; background: var(--bg-soft); }
+.lettres > details > summary { padding: 9px 36px 9px 12px; position: relative; font: 600 14px/1.45 var(--sans); }
+.lettres > details > summary::after { content: ""; position: absolute; right: 14px; top: 50%; width: 8px; height: 8px; border-right: 2px solid var(--ink-soft); border-bottom: 2px solid var(--ink-soft); transform: translateY(-70%) rotate(45deg); transition: transform .15s; }
+.lettres > details[open] > summary::after { transform: translateY(-30%) rotate(-135deg); }
+.lettres-label { color: var(--accent); text-transform: uppercase; letter-spacing: .05em; font-size: 11.5px; margin-right: 6px; white-space: nowrap; }
+.lettres-titre { font-weight: 600; }
+.lettres-corps { padding: 2px 14px 10px; border-top: 1px solid var(--line); }
+.lettres-corps p { margin: .7em 0; }
+.lettres-source { font: 12.5px/1.5 var(--sans); color: var(--ink-soft); }
+.bib-oeuvres { list-style: none; padding: 0; margin: 0; }
+.bib-oeuvres li { padding: 6px 0; border-top: 1px solid var(--line); }
+.bib-oeuvres li:first-child { border-top: 0; }
+.bib-liens { font: 13px var(--sans); color: var(--ink-soft); }
+
 details > summary { list-style: none; cursor: pointer; }
 details > summary::-webkit-details-marker { display: none; }
 

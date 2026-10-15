@@ -6,7 +6,7 @@ Le sommaire coche les sections lues (une section n'est marquée que si l'on a vu
 
 La loupe de la barre supérieure (raccourci « / ») cherche dans tout le texte de la page, hors connexion compris.
 
-Trois pages complètent l'essai, générées par `build/build.py` : `frise.html` (frise chronologique des auteurs, d'après les titres de sections et `build/auteurs.json`), `reponses.html` (qui répond à qui, d'après `build/reponses.json`, avec la distinction entre réponses attestées et confrontations construites) et `lexique.html` (d'après `build/lexique.json` ; la première occurrence de chaque notion dans l'essai renvoie au lexique).
+Quatre pages complètent l'essai, générées par `build/build.py` : `frise.html` (frise chronologique des auteurs, d'après les titres de sections et `build/auteurs.json`), `reponses.html` (qui répond à qui, d'après `build/reponses.json`, avec la distinction entre réponses attestées et confrontations construites), `lexique.html` (d'après `build/lexique.json` ; la première occurrence de chaque notion dans l'essai renvoie au lexique) et `bibliotheque.html` (les œuvres littéraires citées dans les encadrés « En littérature », classées par auteur, avec un lien vers la section qui les cite).
 
 En ligne : https://thomasgourouza.github.io/sortir-de-la-religion/
 
@@ -34,7 +34,7 @@ L'essai source est dans le dépôt `litterature` :
 python3 build/build.py ~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md
 ```
 
-Sans argument, le script prend ce chemin par défaut. Les statuts de vérification des citations sont retirés de la version web ; ils restent dans le Markdown source.
+Sans argument, le script prend ce chemin par défaut. Les statuts de vérification des citations sont retirés de la version web ; ils restent dans le Markdown source. Les encadrés « En littérature » sont écrits dans le Markdown comme des blocs de citation dont la première ligne est `> **En littérature.** Auteur, *Titre* (date) ; …` et le dernier paragraphe commence par `Source :` ; le script les rend en encadrés repliables (`<aside class="lettres">`), ne les compte pas dans les temps de lecture et en tire la page Bibliothèque.
 
 Pour récupérer à nouveau les images :
 

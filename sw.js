@@ -1,5 +1,5 @@
 /* Service worker : lecture hors connexion. Fichier généré par build/build.py. */
-var VERSION = "1791984289";
+var VERSION = "1792031527";
 var SHELL_CACHE = "sdr-shell-" + VERSION;
 var IMG_CACHE = "sdr-images";
 var FONT_CACHE = "sdr-fonts";
@@ -12,6 +12,7 @@ var SHELL = [
   "frise.html",
   "reponses.html",
   "lexique.html",
+  "bibliotheque.html",
   "js/pages.js?v=" + VERSION
 ];
 
