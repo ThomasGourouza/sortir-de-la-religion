@@ -36,22 +36,7 @@
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeDrawer(); });
 
   /* Ouvrir une cible : déplie les details parents puis fait défiler */
-  function reveal(id, smooth) {
-    var el = document.getElementById(id);
-    if (!el) return;
-    var p = el;
-    while (p) {
-      if (p.tagName === "DETAILS") p.open = true;
-      p = p.parentElement;
-    }
-    var go = function () {
-      var y = el.getBoundingClientRect().top + window.pageYOffset - 60;
-      window.scrollTo(0, Math.max(0, y));
-    };
-    /* Les images ont leurs dimensions : un défilement suffit ; le rattrapage couvre le chargement des polices. */
-    setTimeout(go, 0);
-    setTimeout(go, 300);
-  }
+  var reveal = sauts.reveal; /* js/sauts.js : ouvre et fait défiler jusqu'à une section */
   /* Copier le lien d'une section */
   var toast = $("#toast"), toastTimer = null;
   function showToast(msg) {
@@ -190,18 +175,18 @@
     }, 60);
   }
   window.addEventListener("scroll", onScroll, { passive: true });
-  toTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+  toTop.addEventListener("click", function () { sauts.newJump(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 
   var resume = $("#resume-btn"), pos = store.get(P + "pos");
   if (resume && pos && document.getElementById(pos)) {
     resume.hidden = false;
-    resume.addEventListener("click", function () { reveal(pos); });
+    resume.addEventListener("click", function () { sauts.newJump(); reveal(pos); });
   }
 
-  /* Lien profond à l'ouverture */
-  if (location.hash.length > 1) {
+  /* Lien profond à l'ouverture, sauf si l'historique des sauts a déjà replacé la page */
+  if (location.hash.length > 1 && !sauts.restored) {
     var id = decodeURIComponent(location.hash.slice(1));
-    if (document.getElementById(id)) setTimeout(function () { reveal(id, false); }, 50);
+    if (document.getElementById(id)) setTimeout(function () { reveal(id); }, 50);
   }
   window.addEventListener("hashchange", function () {
     var id = decodeURIComponent(location.hash.slice(1));

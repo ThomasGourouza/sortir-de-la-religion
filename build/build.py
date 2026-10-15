@@ -370,7 +370,7 @@ def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, ve
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
     tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace(
-        'src="js/pages.js"', 'src="js/pages.js?v=%s"' % version)
+        'src="js/pages.js"', 'src="js/pages.js?v=%s"' % version).replace('src="js/sauts.js"', 'src="js/sauts.js?v=%s"' % version)
     open(os.path.join(RACINE, nom), "w", encoding="utf-8").write(tpl)
 
 
@@ -647,7 +647,7 @@ def construire(chemin, version=None):
         "OG_W": str(dimensions(cover[0]["file"])[0]) if cover else "",
         "OG_H": str(dimensions(cover[0]["file"])[1]) if cover else "",
     }
-    tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace('src="js/app.js"', 'src="js/app.js?v=%s"' % version)
+    tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace('src="js/app.js"', 'src="js/app.js?v=%s"' % version).replace('src="js/sauts.js"', 'src="js/sauts.js?v=%s"' % version)
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
     open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)

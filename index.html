@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Inter:wght@400;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=1792070640">
+<link rel="stylesheet" href="css/style.css?v=1792073094">
 <script>
   try {
     var t = localStorage.getItem("sdr-theme");
@@ -1168,10 +1168,20 @@
 
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
+<div class="jump-nav" id="jump-nav" hidden>
+  <button id="jump-prev" type="button" aria-label="Revenir à la position précédente" title="Position précédente" disabled>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button id="jump-next" type="button" aria-label="Aller à la position suivante" title="Position suivante" disabled>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
 <button class="to-top" id="to-top" aria-label="Revenir en haut" hidden>
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 14l6-6 6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
-<script src="js/app.js?v=1792070640"></script>
+<script src="js/sauts.js?v=1792073094"></script>
+<script src="js/app.js?v=1792073094"></script>
 </body>
 </html>

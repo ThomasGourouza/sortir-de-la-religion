@@ -19,6 +19,7 @@ Site statique : HTML, CSS et JavaScript sans dépendance, à part la police Lite
 | `index.html` | la page, générée ; ne pas l'éditer à la main |
 | `css/style.css` | mise en page et thèmes |
 | `js/app.js` | sommaire, sections repliables, thème, taille du texte, mémoire de lecture, sections lues, copie de lien, hors connexion |
+| `js/sauts.js` | historique des sauts commun à toutes les pages : boutons position précédente et suivante après avoir suivi un lien interne |
 | `sw.js` | service worker, généré depuis `build/sw.template.js` |
 | `favicon.svg`, `apple-touch-icon.png` | icônes |
 | `images/` | portraits (`auteurs/`), pages de titre (`oeuvres/`), tableaux et photographies (`art/`) |

@@ -251,11 +251,14 @@ th { background: var(--bg-soft); }
 
 .footer { text-align: center; font: 13px var(--sans); color: var(--ink-soft); padding: 32px 16px 80px; }
 
-.to-top {
-  position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 40;
+.to-top, .jump-nav button {
   width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--ink);
   box-shadow: var(--shadow); cursor: pointer; display: flex; align-items: center; justify-content: center;
 }
+.to-top { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 40; }
+/* Position précédente et suivante, au-dessus du retour en haut */
+.jump-nav { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: calc(max(16px, env(safe-area-inset-bottom)) + 60px); z-index: 40; display: flex; gap: 8px; }
+.jump-nav button:disabled { opacity: .35; cursor: default; }
 
 /* Grand écran : sommaire fixe à gauche */
 @media (min-width: 1100px) {
@@ -273,7 +276,7 @@ th { background: var(--bg-soft); }
 }
 
 @media print {
-  .topbar, .drawer, .drawer-backdrop, .progress, .to-top, .cards-grid, .hero-actions, .lien-btn, .lu-btn, .toast { display: none !important; }
+  .topbar, .drawer, .drawer-backdrop, .progress, .to-top, .jump-nav, .cards-grid, .hero-actions, .lien-btn, .lu-btn, .toast { display: none !important; }
   body { padding: 0; background: #fff; color: #000; font-size: 11pt; }
   details { display: block; }
   details > summary::after { display: none; }
@@ -326,6 +329,7 @@ a.lex:hover { color: var(--accent); }
 .lex-voir { font: 13px var(--sans); white-space: nowrap; }
 .lex-entree.cible { background: var(--accent-soft); border-radius: 10px; padding: 10px; }
 body.page-outil { padding-left: 0 !important; }
+body.page-outil .jump-nav { bottom: max(16px, env(safe-area-inset-bottom)); } /* pas de retour en haut sur ces pages */
 
 /* Recherche plein texte */
 .search-panel {

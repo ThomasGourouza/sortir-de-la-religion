@@ -126,10 +126,20 @@
 
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
+<div class="jump-nav" id="jump-nav" hidden>
+  <button id="jump-prev" type="button" aria-label="Revenir à la position précédente" title="Position précédente" disabled>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button id="jump-next" type="button" aria-label="Aller à la position suivante" title="Position suivante" disabled>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
 <button class="to-top" id="to-top" aria-label="Revenir en haut" hidden>
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 14l6-6 6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
+<script src="js/sauts.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

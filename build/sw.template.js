@@ -8,6 +8,7 @@ var SHELL = [
   "index.html",
   "css/style.css?v=" + VERSION,
   "js/app.js?v=" + VERSION,
+  "js/sauts.js?v=" + VERSION,
   "favicon.svg",
   "frise.html",
   "reponses.html",
