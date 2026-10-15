@@ -21,7 +21,6 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
 ARTICLE = os.path.expanduser(
     "~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md")
-MOTS_MINUTE = 230
 BASE_URL = "https://thomasgourouza.github.io/sortir-de-la-religion/"
 RESUME = "L'essai en dix minutes"
 NOMBRES = {1: "une", 2: "deux", 3: "trois", 4: "quatre", 5: "cinq", 6: "six", 7: "sept",
@@ -65,11 +64,6 @@ def en_ligne(t):
     t = re.sub(r"\[([^\[\]]+)\]\(#([A-Za-z0-9-]+)\)", r'<a href="#\2" data-target="\2">\1</a>', t)
     return t
 
-
-def mots(t):
-    """Compte les mots hors balises ; les encadres litteraires n'entrent pas dans les temps de lecture."""
-    t = re.sub(r'<aside class="lettres">.*?</aside>', " ", t, flags=re.S)
-    return len(re.sub(r"<[^>]+>", " ", t).split())
 
 
 def blocs(lignes):
@@ -545,7 +539,7 @@ def construire(chemin, version=None):
 
 
     sources_html, toc, corps, cartes = "", [], [], []
-    total_mots, nb_parties = 0, 0
+    nb_parties = 0
     infos = []  # sections, pour la frise
     lettres = []  # encadres litteraires, pour la bibliotheque
     for part in parties:
@@ -564,7 +558,6 @@ def construire(chemin, version=None):
         if "partie" in label.lower():
             nb_parties += 1
         intro_p = rendre_blocs(part["lignes"])
-        pmots = sum(mots(x) for x in intro_p)
         secs_html, toc_secs, nb_auteurs = [], [], 0
         for f in par_section.get((pid, "figure"), []):
             intro_p.insert(min(1, len(intro_p)), figure(f))
@@ -577,8 +570,6 @@ def construire(chemin, version=None):
             corps_sec = rendre_blocs(sec["lignes"])
             if LETTRES_BUF:
                 lettres.append({"id": sid, "nom": nom if dates else sec["titre"], "oeuvres": list(LETTRES_BUF)})
-            smots = sum(mots(x) for x in corps_sec)
-            pmots += smots
             portraits = par_section.get((base, "portrait"), [])
             est_auteur = bool(dates) or bool(portraits)
             nb_auteurs += 1 if est_auteur else 0
@@ -601,21 +592,19 @@ def construire(chemin, version=None):
                 credits = ""
             secs_html.append(
                 '<details class="section%s" id="%s" data-partie="%s" open><summary>%s'
-                '<span class="sec-side"><span class="sec-time">%d min</span>%s</span></summary>'
+                '<span class="sec-side">%s</span></summary>'
                 '<div class="sec-body">%s%s</div></details>' % (
                     " auteur" if est_auteur else "", sid, pid, head,
-                    max(1, round(smots / MOTS_MINUTE)), lien_btn(sid), "\n".join(corps_sec), credits))
+                    lien_btn(sid), "\n".join(corps_sec), credits))
             toc_secs.append('<li><a href="#%s" data-target="%s">%s%s</a></li>' % (
                 sid, sid, en_ligne(nom if est_auteur else sec["titre"]),
                 ' <small>%s</small>' % html.escape(dates) if dates else ""))
-        total_mots += pmots
-        minutes = max(1, round(pmots / MOTS_MINUTE))
-        meta = "%s%d min de lecture" % ("%d auteurs · " % nb_auteurs if nb_auteurs else "", minutes)
+        meta = "%d auteurs" % nb_auteurs if nb_auteurs else ""
         corps.append(
             '<details class="partie" id="%s"><summary><span class="part-label">%s</span>'
-            '<span class="part-sub">%s</span><span class="part-meta">%s</span>%s</summary>'
+            '<span class="part-sub">%s</span>%s%s</summary>'
             '<div class="part-body">%s%s<p class="part-end"><a href="#%s" data-target="%s">Haut de la partie</a></p></div></details>' % (
-                pid, en_ligne(label), en_ligne(sous), meta, lien_btn(pid),
+                pid, en_ligne(label), en_ligne(sous), '<span class="part-meta">%s</span>' % meta if meta else "", lien_btn(pid),
                 "\n".join(intro_p), "\n".join(secs_html), pid, pid))
         toc.append('<li class="toc-part"><a href="#%s" data-target="%s">%s%s</a>%s</li>' % (
             pid, pid, en_ligne(ptitre),
@@ -625,10 +614,10 @@ def construire(chemin, version=None):
         cartes.append(
             '<a class="card" href="#%s" data-target="%s">%s<span class="card-text">'
             '<span class="card-label">%s</span><span class="card-sub">%s</span>'
-            '<span class="card-meta">%s</span></span></a>' % (
+            '%s</span></a>' % (
                 pid, pid,
                 '<img src="%s" alt=""%s loading="lazy">' % (html.escape(card_img[0]["file"]), attr_dims(card_img[0]["file"])) if card_img else "",
-                en_ligne(label), en_ligne(sous), meta))
+                en_ligne(label), en_ligne(sous), '<span class="card-meta">%s</span>' % meta if meta else ""))
 
     credits_imgs = "".join(
         '<li><a href="%s" rel="noopener">%s</a> : %s</li>' % (
@@ -636,18 +625,14 @@ def construire(chemin, version=None):
             html.escape(i.get("credit", "")))
         for i in images)
     cover = par_section.get(("cover", "cover"), [])
-    heures = total_mots / MOTS_MINUTE / 60
     corps_html = lier_lexique("\n".join(corps))
     tpl = open(os.path.join(ICI, "template.html"), encoding="utf-8").read()
     version = version or str(int(time.time()))
-    duree = "%d h %02d" % divmod(round(heures * 60), 60)
     rempl = {
         "TITRE": en_ligne(titre),
         "TITRE_BRUT": html.escape(titre),
         "SOUS_TITRE": en_ligne(sous_titre),
         "COUVERTURE": figure(cover[0], "cover") if cover else "",
-        "MOTS": "{:,}".format(total_mots).replace(",", " "),
-        "DUREE": duree,
         "STORE": "sdr-",
         "TITRE_ONGLET": html.escape(titre),
         "PAGE": "index.html",
@@ -666,8 +651,8 @@ def construire(chemin, version=None):
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
     open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)
-    print("index.html : %d mots, %d parties, %s de lecture" % (total_mots, len(corps), duree))
-    return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"], "duree": duree,
+    print("index.html : %d parties" % len(corps))
+    return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"],
             "lettres": lettres}
 
 

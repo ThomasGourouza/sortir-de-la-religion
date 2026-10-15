@@ -34,7 +34,7 @@ L'essai source est dans le dépôt `litterature` :
 python3 build/build.py ~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md
 ```
 
-Sans argument, le script prend ce chemin par défaut. Les statuts de vérification des citations sont retirés de la version web ; ils restent dans le Markdown source. Les encadrés « En littérature » sont écrits dans le Markdown comme des blocs de citation dont la première ligne est `> **En littérature.** Auteur, *Titre* (date) ; …` et le dernier paragraphe commence par `Source :` ; le script les rend en encadrés repliables (`<aside class="lettres">`), ne les compte pas dans les temps de lecture et en tire la page Bibliothèque.
+Sans argument, le script prend ce chemin par défaut. Les statuts de vérification des citations sont retirés de la version web ; ils restent dans le Markdown source. Les encadrés « En littérature » sont écrits dans le Markdown comme des blocs de citation dont la première ligne est `> **En littérature.** Auteur, *Titre* (date) ; …` et le dernier paragraphe commence par `Source :` ; le script les rend en encadrés repliables (`<aside class="lettres">`) et en tire la page Bibliothèque.
 
 Pour récupérer à nouveau les images :
 

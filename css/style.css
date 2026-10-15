@@ -124,7 +124,6 @@ main { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
 .hero { max-width: var(--measure); margin: 0 auto; padding: 20px 0 8px; text-align: center; }
 .hero h1 { font-size: clamp(1.7rem, 6.5vw, 2.6rem); line-height: 1.15; margin: 18px 0 8px; letter-spacing: -.01em; }
 .subtitle { color: var(--ink-soft); font-style: italic; margin: 0 0 10px; }
-.hero-meta { font: 14px var(--sans); color: var(--ink-soft); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 16px 0; }
 .btn {
   display: inline-flex; align-items: center; min-height: 46px; padding: 0 18px; border-radius: 12px;
@@ -220,8 +219,7 @@ details > summary::-webkit-details-marker { display: none; }
 .sec-dates { font: 12.5px var(--sans); color: var(--ink-soft); }
 .sec-formule { font-style: italic; font-size: .9em; color: var(--ink-soft); line-height: 1.3; }
 .sec-side { margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex: none; }
-.sec-time { font: 11px var(--sans); color: var(--ink-soft); white-space: nowrap; }
-.section.lu > summary .sec-time::before { content: "✓ lu · "; color: var(--accent); }
+.section.lu > summary .sec-side::before { content: "✓ lu"; font: 11px var(--sans); color: var(--accent); }
 .sec-body { padding: 4px 16px 8px; }
 .avatars { display: flex; flex: none; }
 .avatar {
