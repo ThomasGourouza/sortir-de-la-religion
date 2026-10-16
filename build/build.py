@@ -485,7 +485,7 @@ def personnes(titre):
 
 
 PAGES_SITE = (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique"),
-              ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"))
+              ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"), ("sources.html", "Sources"))
 
 
 def onglets(actif):
@@ -522,7 +522,7 @@ def cle_auteur(nom):
     return slug_terme(last) + " " + slug_terme(nom)
 
 
-def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None):
+def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None, sources="", credits=""):
     libelles = libelles or {}
     # ---------------------------------------------------------------- frise
     dates_sup = charger("auteurs.json", {})
@@ -668,6 +668,15 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                'aria-label="Chercher un auteur ou une œuvre"></div>' + "".join(cartes) + '<p id="aucun" hidden>Aucune œuvre ne correspond.</p>',
                titre, og_image, version)
 
+    # ---------------------------------------------------------------- sources et crédits
+    page_outil("sources.html", "Sources et crédits",
+               "Les éditions consultées, les sources secondaires, les réserves que l'auteur formule sur ses citations, "
+               "et les crédits des images.",
+               "Sources, éditions consultées et crédits des images de l'essai.",
+               '<div class="sources">%s<h3>Crédits des images</h3>'
+               '<p>Images issues de Wikimedia Commons, sous licence libre ou dans le domaine public.</p>%s</div>' % (sources, credits),
+               titre, og_image, version)
+
 
 def construire(chemin, version=None):
     """Rend l'essai (index.html)."""
@@ -808,8 +817,6 @@ def construire(chemin, version=None):
         "CARTES": "\n".join(cartes),
         "TOC": "\n".join(toc),
         "CORPS": corps_html,
-        "SOURCES": sources_html,
-        "CREDITS": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>",
         "NB_PARTIES": NOMBRES.get(nb_parties, str(nb_parties)),
         "BASE_URL": BASE_URL,
         "OG_IMAGE": BASE_URL + (cover[0]["file"] if cover else ""),
@@ -822,13 +829,14 @@ def construire(chemin, version=None):
     open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)
     print("index.html : %d parties" % len(corps))
     return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"],
-            "lettres": lettres, "annexes": annexes, "libelles": libelles}
+            "lettres": lettres, "annexes": annexes, "libelles": libelles, "sources": sources_html,
+            "credits": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>"}
 
 
 def tout_construire(article=ARTICLE):
     version = str(int(time.time()))
     r = construire(article, version=version)
-    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"])
+    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"], r["sources"], r["credits"])
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
     open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw.replace("{{VERSION}}", version))
 

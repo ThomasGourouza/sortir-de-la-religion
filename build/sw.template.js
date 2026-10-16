@@ -15,6 +15,7 @@ var SHELL = [
   "lexique.html",
   "annexes.html",
   "bibliotheque.html",
+  "sources.html",
   "js/pages.js?v=" + VERSION
 ];
 

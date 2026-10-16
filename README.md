@@ -6,7 +6,7 @@ Le sommaire coche les sections lues (une section n'est marquée que si l'on a vu
 
 La loupe de la barre supérieure (raccourci « / ») cherche dans tout le texte de la page, hors connexion compris.
 
-Cinq pages complètent l'essai, générées par `build/build.py` : `frise.html` (frise chronologique des auteurs, d'après les titres de sections et `build/auteurs.json`), `reponses.html` (qui répond à qui, d'après `build/reponses.json`, avec la distinction entre réponses attestées et confrontations construites), `lexique.html` (d'après `build/lexique.json` ; dans chaque section, la première occurrence de chaque notion renvoie au lexique), `annexes.html` (d'après `build/annexes/*.md` : des articles de repères, théories des auteurs, histoire du christianisme et de l'Europe, disciplines, courants ; chaque section concernée s'ouvre sur une ligne « Pour comprendre », et les motifs de chaque article sont reliés dans le texte comme ceux du lexique) et `bibliotheque.html` (les œuvres littéraires citées dans les encadrés « En littérature », classées par auteur, avec un lien vers la section qui les cite).
+Six pages complètent l'essai, générées par `build/build.py` : `frise.html` (frise chronologique des auteurs, d'après les titres de sections et `build/auteurs.json`), `reponses.html` (qui répond à qui, d'après `build/reponses.json`, avec la distinction entre réponses attestées et confrontations construites), `lexique.html` (d'après `build/lexique.json` ; dans chaque section, la première occurrence de chaque notion renvoie au lexique), `annexes.html` (d'après `build/annexes/*.md` : des articles de repères, théories des auteurs, histoire du christianisme et de l'Europe, disciplines, courants ; chaque section concernée s'ouvre sur une ligne « Pour comprendre », et les motifs de chaque article sont reliés dans le texte comme ceux du lexique), `bibliotheque.html` (les œuvres littéraires citées dans les encadrés « En littérature », classées par auteur, avec un lien vers la section qui les cite) et `sources.html` (éditions consultées, sources secondaires, réserves de l'auteur et crédits des images, tirés de la dernière partie du Markdown). Les six pages, plus l'essai, sont les onglets du bandeau fixe de chaque page.
 
 En ligne : https://thomasgourouza.github.io/sortir-de-la-religion/
 
@@ -68,4 +68,4 @@ Puis, sur GitHub : Settings, Pages, Source « Deploy from a branch », branche `
 
 ## Crédits
 
-Les images viennent de Wikimedia Commons et sont dans le domaine public ou sous licence libre (CC0, CC BY, CC BY-SA). Auteur, licence et lien de chaque image figurent dans `build/images.json` et en fin de page, section « Sources et crédits ».
+Les images viennent de Wikimedia Commons et sont dans le domaine public ou sous licence libre (CC0, CC BY, CC BY-SA). Auteur, licence et lien de chaque image figurent dans `build/images.json` et dans la page `sources.html`.
