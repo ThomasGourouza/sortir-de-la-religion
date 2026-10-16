@@ -273,9 +273,10 @@ def charger_images():
 
 def figure(img, classe="figure"):
     charge = 'loading="eager" fetchpriority="high"' if classe == "cover" else 'loading="lazy" decoding="async"'
-    return ('<figure class="%s"><img src="%s" alt="%s"%s %s>'
+    position = ' style="object-position:%s"' % html.escape(img["position"]) if img.get("position") else ""  # point de cadrage
+    return ('<figure class="%s"><img src="%s" alt="%s"%s %s%s>'
             '<figcaption>%s<span class="credit">%s</span></figcaption></figure>') % (
-        classe, html.escape(img["file"]), html.escape(img.get("alt", "")), attr_dims(img["file"]), charge,
+        classe, html.escape(img["file"]), html.escape(img.get("alt", "")), attr_dims(img["file"]), charge, position,
         en_ligne(img.get("caption", "")), html.escape(img.get("credit", "")))
 
 
@@ -773,12 +774,13 @@ def construire(chemin, version=None):
                 ' <small>%s</small>' % html.escape(dates) if dates else ""))
         meta = "%d auteurs" % nb_auteurs if nb_auteurs else ""
         card_img = par_section.get((pid, "partcard"), [])
+        part_img = par_section.get((pid, "partimage"), []) or card_img  # grande version si elle existe
         corps.append(
             '<details class="partie" id="%s"><summary><span class="part-label">%s</span>'
             '<span class="part-sub">%s</span>%s%s</summary>'
             '<div class="part-body">%s%s%s%s<p class="part-end"><a href="#%s" data-target="%s">Haut de la partie</a></p></div></details>' % (
                 pid, en_ligne(label), en_ligne(sous), '<span class="part-meta">%s</span>' % meta if meta else "", lien_btn(pid),
-                figure(card_img[0], "part-image") if card_img else "",
+                figure(part_img[0], "part-image") if part_img else "",
                 ligne_annexes(par_cible.get(pid)), "\n".join(intro_p), "\n".join(secs_html), pid, pid))
         toc.append('<li class="toc-part"><a href="#%s" data-target="%s">%s%s</a>%s</li>' % (
             pid, pid, en_ligne(ptitre),
@@ -796,7 +798,7 @@ def construire(chemin, version=None):
         '<li><a href="%s" rel="noopener">%s</a> : %s</li>' % (
             html.escape(i.get("source", "")), html.escape(i.get("alt", "") or i["file"]),
             html.escape(i.get("credit", "")))
-        for i in images)
+        for i in images if i.get("role") != "partimage")  # même source que la carte : un seul crédit
     cover = par_section.get(("cover", "cover"), [])
     for a in annexes:
         for s in a["sections"]:

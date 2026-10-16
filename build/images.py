@@ -50,13 +50,15 @@ def P(section, slug, qid, name, caption=None, p18=0, artist=None, commons=None):
     return t
 
 
-def F(section, folder, slug, commons, alt, caption, width=480, page=None, artist=None, role="figure"):
+def F(section, folder, slug, commons, alt, caption, width=480, page=None, artist=None, role="figure", position=None):
     t = {"section": section, "role": role, "file": f"images/{folder}/{slug}",
          "commons": commons, "alt": alt, "caption": caption, "width": width}
     if page:
         t["page"] = page
     if artist:
         t["artist"] = artist
+    if position:
+        t["position"] = position  # point de cadrage CSS (object-position) quand l'image est recadrée en bandeau
     return t
 
 
@@ -505,7 +507,7 @@ TARGETS = [
       "Isaias predicts the birth of the Messiah from the Virgin, from the from the book Die Malereien der Katakomben Roms, plate 22.jpg",
       "Peinture murale : une femme assise tenant un enfant, et un homme debout qui désigne une étoile",
       "La Vierge à l'Enfant et un prophète désignant une étoile, catacombe de Priscille (Rome, IIIe siècle ap. J.-C.), planche de Joseph Wilpert, Die Malereien der Katakomben Roms (1903).",
-      artist="Peintre romain anonyme, planche de Joseph Wilpert", role="partcard"),
+      artist="Peintre romain anonyme, planche de Joseph Wilpert", role="partcard", position="50% 20%"),
     F("neuvieme-partie", "art", "partie-pourquoi-croit-on", "Paul Gauguin - D'ou venons-nous.jpg",
       "Grande frise de figures tahitiennes, de l'enfant au vieillard, autour d'une idole bleue",
       "Paul Gauguin, D'où venons-nous ? Que sommes-nous ? Où allons-nous ? (1897-1898, Boston, Museum of Fine Arts).",
@@ -521,7 +523,7 @@ TARGETS = [
     F("cinquieme-partie", "art", "partie-troisieme", "Caspar David Friedrich - Wanderer above the sea of fog.jpg",
       "Un homme de dos sur un rocher contemple une mer de nuages",
       "Caspar David Friedrich, Le Voyageur contemplant une mer de nuages (v. 1818, Hambourg, Kunsthalle).",
-      role="partcard"),
+      role="partcard", position="50% 36%"),
     F("sixieme-partie", "art", "partie-quatrieme", "Die Freien by Friedrich Engels.jpg",
       "Caricature à la plume d'un groupe d'hommes attablés qui se disputent",
       "Friedrich Engels, les Freien (dessin, v. 1842) : le cercle berlinois de Bruno Bauer et de Max Stirner.",
@@ -546,7 +548,7 @@ TARGETS = [
     F("douzieme-partie", "art", "partie-neuvieme", "Marcus Aurelius Capitoline Hill September 2015-1.jpg",
       "Statue équestre en bronze de Marc Aurèle, le bras tendu",
       "Statue équestre de Marc Aurèle sur la place du Capitole à Rome (réplique ; l'original en bronze est aux musées du Capitole).",
-      role="partcard"),
+      role="partcard", position="50% 22%"),
     F("conclusion", "art", "partie-conclusion",
       "Caspar David Friedrich - Woman before the Rising Sun (Woman before the Setting Sun) - WGA08253.jpg",
       "Une femme de dos, les bras ouverts, face au soleil bas",
@@ -561,8 +563,12 @@ TARGETS = [
       "Frans Hals - Portret van René Descartes.jpg",
       "Portrait de Descartes en habit noir et col blanc",
       "René Descartes, d'après Frans Hals (Paris, musée du Louvre).",
-      artist="D'après Frans Hals", role="partcard"),
+      artist="D'après Frans Hals", role="partcard", position="50% 30%"),
 ]
+
+# Sous chaque titre de partie de l'essai, la même image que la carte, mais en grand (1600 px) : role "partimage"
+TARGETS += [dict(t, role="partimage", file=t["file"] + "-grand", width=1600) for t in TARGETS if t["role"] == "partcard"]
+
 
 # ---------------------------------------------------------------------------
 
@@ -688,6 +694,8 @@ def main():
                 "license": lic,
                 "source": source,
             }
+            if t.get("position"):
+                entry["position"] = t["position"]
             out.append(entry)
             print("   ok", rel, "|", entry["credit"], flush=True)
         except Exception as e:  # noqa: BLE001
