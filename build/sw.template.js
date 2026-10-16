@@ -13,6 +13,7 @@ var SHELL = [
   "frise.html",
   "reponses.html",
   "lexique.html",
+  "annexes.html",
   "bibliotheque.html",
   "js/pages.js?v=" + VERSION
 ];

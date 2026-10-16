@@ -283,14 +283,18 @@ th { background: var(--bg-soft); }
   .section { border: 0; background: none; }
 }
 
-/* Liens du lexique dans l'essai */
-a.lex { color: inherit; text-decoration: underline dotted var(--accent); text-underline-offset: 3px; }
-a.lex:hover { color: var(--accent); }
+/* Liens du lexique et des annexes dans l'essai */
+a.lex, a.ann { color: inherit; text-decoration: underline dotted var(--accent); text-underline-offset: 3px; }
+a.lex:hover, a.ann:hover { color: var(--accent); }
+/* Ligne « Pour comprendre » en tête d'une section ou d'une partie */
+.annexes-ligne { font: 13px/1.5 var(--sans); color: var(--ink-soft); margin: 0 0 1em; text-align: left !important; hyphens: none !important; }
+.annexes-ligne a { color: var(--accent); text-decoration: none; }
+.annexes-ligne a:hover { text-decoration: underline; }
 .hero-outils { font: 14px var(--sans); color: var(--ink-soft); margin: 0 0 12px; }
 .drawer-outils { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 12px 8px; }
 .drawer-outils .chip { text-decoration: none; }
 
-/* Pages outils : frise, réponses, lexique */
+/* Pages outils : frise, réponses, lexique, annexes, bibliothèque */
 .outil { max-width: var(--measure); margin: 0 auto; padding: 0 16px 24px; }
 .outil h1 { font-size: clamp(1.5rem, 6vw, 2.1rem); margin: 16px 0 6px; }
 .outil-intro { color: var(--ink-soft); font-size: .95em; }
@@ -328,6 +332,22 @@ a.lex:hover { color: var(--accent); }
 .lex-entree dd { margin: 4px 0 0; }
 .lex-voir { font: 13px var(--sans); white-space: nowrap; }
 .lex-entree.cible { background: var(--accent-soft); border-radius: 10px; padding: 10px; }
+/* Annexes : articles repliés, dans des cartes par catégorie */
+.annexe { border-top: 1px solid var(--line); scroll-margin-top: calc(var(--topbar) + 70px); }
+.annexe:first-of-type { border-top: 0; }
+.annexe > summary { position: relative; padding: 10px 28px 10px 0; display: flex; gap: 10px; align-items: baseline; }
+.annexe > summary::after { content: ""; position: absolute; right: 8px; top: 50%; width: 8px; height: 8px; margin-top: -6px; border-right: 2px solid var(--ink-soft); border-bottom: 2px solid var(--ink-soft); transform: rotate(45deg); transition: transform .15s; }
+.annexe[open] > summary::after { transform: rotate(-135deg); margin-top: -2px; }
+.annexe-titre { font-weight: 600; }
+.annexe-cat { font: 11.5px var(--sans); color: var(--accent); text-transform: uppercase; letter-spacing: .04em; margin-left: auto; white-space: nowrap; }
+.annexe-corps { padding: 0 0 12px; }
+.annexe-corps p { margin: 0 0 .9em; }
+.annexe-corps h3 { font: 600 1.05em/1.3 var(--serif); text-transform: none; letter-spacing: 0; color: var(--ink); margin: 1em 0 .3em; }
+.annexe-corps ul { list-style: disc; margin: 0 0 .9em; padding-left: 1.3em; }
+.annexe-corps li { padding: 2px 0; border-top: 0; }
+.annexe-essai, .annexe-refs { font: 13px/1.5 var(--sans); color: var(--ink-soft); }
+.annexe.cible { background: var(--accent-soft); border-radius: 10px; padding: 0 10px; }
+.annexe.cible > summary::after { right: 2px; }
 body.page-outil { padding-left: 0 !important; }
 body.page-outil .jump-nav { bottom: max(16px, env(safe-area-inset-bottom)); } /* pas de retour en haut sur ces pages */
 

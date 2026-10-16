@@ -321,7 +321,7 @@
     index = [];
     var n = 0;
     $$("#lecture p, #lecture li, #lecture td, #lecture figcaption").forEach(function (el) {
-      if (el.closest("summary") || el.closest(".part-end") || el.closest(".vers-integral")) return;
+      if (el.closest("summary") || el.closest(".part-end") || el.closest(".vers-integral") || el.classList.contains("annexes-ligne")) return;
       if (el.tagName === "P" && el.closest("li, td")) return;
       var txt = el.textContent.replace(/\s+/g, " ").trim();
       if (txt.length < 3) return;

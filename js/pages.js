@@ -1,4 +1,4 @@
-/* Pages outils (frise, réponses, lexique) : thème, taille du texte, filtres */
+/* Pages outils (frise, réponses, lexique, annexes, bibliothèque) : thème, taille du texte, filtres */
 (function () {
   "use strict";
 
@@ -44,7 +44,7 @@
       if (ok && part && el.hasAttribute("data-partie")) ok = el.getAttribute("data-partie") === part;
       el.hidden = !ok;
     });
-    $$(".rep-carte ul").forEach(function (ul) {
+    $$(".rep-carte > ul").forEach(function (ul) {
       var h = ul.previousElementSibling;
       var vide = !$$("[data-item]", ul).some(function (el) { return !el.hidden; });
       ul.hidden = vide;
@@ -66,10 +66,10 @@
     });
   });
 
-  /* Lien profond vers un terme du lexique : le mettre en évidence */
+  /* Lien profond vers un terme du lexique ou un article des annexes : le mettre en évidence, et l'ouvrir s'il est replié */
   if (location.hash.length > 1) {
     var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (el) el.classList.add("cible");
+    if (el) { el.classList.add("cible"); if (el.tagName === "DETAILS") el.open = true; }
   }
 
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {

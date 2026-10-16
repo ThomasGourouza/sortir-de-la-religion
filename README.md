@@ -6,7 +6,7 @@ Le sommaire coche les sections lues (une section n'est marquée que si l'on a vu
 
 La loupe de la barre supérieure (raccourci « / ») cherche dans tout le texte de la page, hors connexion compris.
 
-Quatre pages complètent l'essai, générées par `build/build.py` : `frise.html` (frise chronologique des auteurs, d'après les titres de sections et `build/auteurs.json`), `reponses.html` (qui répond à qui, d'après `build/reponses.json`, avec la distinction entre réponses attestées et confrontations construites), `lexique.html` (d'après `build/lexique.json` ; la première occurrence de chaque notion dans l'essai renvoie au lexique) et `bibliotheque.html` (les œuvres littéraires citées dans les encadrés « En littérature », classées par auteur, avec un lien vers la section qui les cite).
+Cinq pages complètent l'essai, générées par `build/build.py` : `frise.html` (frise chronologique des auteurs, d'après les titres de sections et `build/auteurs.json`), `reponses.html` (qui répond à qui, d'après `build/reponses.json`, avec la distinction entre réponses attestées et confrontations construites), `lexique.html` (d'après `build/lexique.json` ; dans chaque section, la première occurrence de chaque notion renvoie au lexique), `annexes.html` (d'après `build/annexes/*.md` : des articles de repères, théories des auteurs, histoire du christianisme et de l'Europe, disciplines, courants ; chaque section concernée s'ouvre sur une ligne « Pour comprendre », et les motifs de chaque article sont reliés dans le texte comme ceux du lexique) et `bibliotheque.html` (les œuvres littéraires citées dans les encadrés « En littérature », classées par auteur, avec un lien vers la section qui les cite).
 
 En ligne : https://thomasgourouza.github.io/sortir-de-la-religion/
 
@@ -23,8 +23,10 @@ Site statique : HTML, CSS et JavaScript sans dépendance, à part la police Lite
 | `sw.js` | service worker, généré depuis `build/sw.template.js` |
 | `favicon.svg`, `apple-touch-icon.png` | icônes |
 | `images/` | portraits (`auteurs/`), pages de titre (`oeuvres/`), tableaux et photographies (`art/`) |
-| `build/build.py` | convertit l'essai Markdown en `index.html` |
-| `build/template.html` | gabarit de la page |
+| `build/build.py` | convertit l'essai Markdown en `index.html` et génère les pages outils |
+| `build/template.html`, `build/page.template.html` | gabarits de la page et des pages outils |
+| `build/lexique.json`, `build/reponses.json`, `build/auteurs.json` | notions du lexique, échanges entre auteurs, dates des auteurs |
+| `build/annexes/` | un article d'annexe par fichier Markdown (en-tête `titre`, `categorie`, `ordre`, `sections`, `motifs`, `references`, puis le corps) ; `PLAN-annexes.md` donne le format et les règles d'écriture |
 | `build/images.py`, `build/images.json` | récupération des images libres sur Wikimedia Commons et leur description (légende, auteur, licence, source) |
 
 ## Reconstruire la page
@@ -35,7 +37,7 @@ L'essai source est dans le dépôt `litterature` :
 python3 build/build.py ~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md
 ```
 
-Sans argument, le script prend ce chemin par défaut. Les statuts de vérification des citations sont retirés de la version web ; ils restent dans le Markdown source. Les encadrés « En littérature » sont écrits dans le Markdown comme des blocs de citation dont la première ligne est `> **En littérature.** Auteur, *Titre* (date) ; …` et le dernier paragraphe commence par `Source :` ; le script les rend en encadrés repliables (`<aside class="lettres">`) et en tire la page Bibliothèque.
+Sans argument, le script prend ce chemin par défaut. Les statuts de vérification des citations sont retirés de la version web ; ils restent dans le Markdown source. Les encadrés « En littérature » sont écrits dans le Markdown comme des blocs de citation dont la première ligne est `> **En littérature.** Auteur, *Titre* (date) ; …` et le dernier paragraphe commence par `Source :` ; le script les rend en encadrés repliables (`<aside class="lettres">`) et en tire la page Bibliothèque. Les articles d'annexes se rédigent dans `build/annexes/<id>.md` (voir `PLAN-annexes.md`) ; le script signale les en-têtes incomplets, les catégories ou sections inconnues et les articles hors de 400 à 700 mots.
 
 Pour récupérer à nouveau les images :
 

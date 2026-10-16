@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Construit index.html a partir de l'essai en Markdown.
+"""Construit index.html et les pages outils a partir de l'essai en Markdown.
 
 Usage : python3 build/build.py [chemin/vers/article.md]
 
 Sans dependance. Convertit le sous-ensemble de Markdown employe par l'essai
 (titres, paragraphes, italique, gras, citations, listes, tableaux), masque les
 statuts de citation entre crochets, et insere les images decrites dans
-build/images.json.
+build/images.json. Les annexes (build/annexes/*.md) donnent la page annexes.html.
 """
 import html
 import json
@@ -300,37 +300,145 @@ def slug_terme(t):
     return re.sub(r"[^a-zA-Z0-9]+", "-", t.lower()).strip("-")
 
 
-def lier_lexique(h):
-    """Relie la premiere occurrence de chaque terme du lexique, hors liens, titres et legendes."""
-    termes = charger("lexique.json", [])
+CATEGORIES = (("theories", "Théories des auteurs"), ("histoire", "Histoire"),
+              ("disciplines", "Disciplines et méthodes"), ("courants", "Courants et doctrines"))
+CHAMPS_LISTE = ("sections", "motifs", "references")
+
+
+def charger_annexes():
+    """Lit build/annexes/*.md : un article par fichier, en-tete entre deux lignes ---, puis le corps en Markdown.
+
+    Champs de l'en-tete : titre et categorie (obligatoires), ordre (entier), sections (ids de sections ou de
+    parties de l'essai), motifs (chaines a relier dans le texte), references ; les listes sont separees par « ; ».
+    """
+    dossier = os.path.join(ICI, "annexes")
+    out = []
+    if not os.path.isdir(dossier):
+        return out
+    for f in sorted(os.listdir(dossier)):
+        if not f.endswith(".md"):
+            continue
+        lignes = open(os.path.join(dossier, f), encoding="utf-8").read().split("\n")
+        fin = next((i for i, l in enumerate(lignes) if i > 0 and l.strip() == "---"), None)
+        if not lignes or lignes[0].strip() != "---" or fin is None:
+            print("  annexes/%s : en-tête manquant" % f)
+            continue
+        a = {"id": f[:-3], "titre": "", "categorie": "", "ordre": 0, "sections": [], "motifs": [], "references": [],
+             "lignes": lignes[fin + 1:]}
+        for l in lignes[1:fin]:
+            m = re.match(r"^([a-z]+):\s*(.*)$", l)
+            if not m:
+                continue
+            k, v = m.group(1), m.group(2).strip()
+            if k in CHAMPS_LISTE:
+                a[k] = [x.strip() for x in v.split(" ; ") if x.strip()]
+            elif k == "ordre":
+                a[k] = int(v) if v.isdigit() else 0
+            elif k in ("titre", "categorie"):
+                a[k] = v
+        for k in ("titre", "categorie"):
+            if not a[k]:
+                print("  annexes/%s : champ « %s » manquant" % (f, k))
+        if a["categorie"] not in dict(CATEGORIES):
+            print("  annexes/%s : catégorie inconnue « %s »" % (f, a["categorie"]))
+        n = len(" ".join(a["lignes"]).split())
+        if not 400 <= n <= 700:
+            print("  annexes/%s : %d mots (attendu : 400 à 700)" % (f, n))
+        out.append(a)
+    out.sort(key=lambda a: (a["ordre"], slug_terme(a["titre"])))
+    return out
+
+
+def cibles_liaison(annexes=(), lexique=True):
+    """Cibles de la liaison automatique : (slug, page, motifs, classe), le lexique d'abord, puis les annexes."""
+    c = []
+    if lexique:
+        for e in charger("lexique.json", []):
+            c.append((slug_terme(e["terme"]), "lexique.html", e.get("motifs", []), "lex"))
+    for a in annexes:
+        c.append((a["id"], "annexes.html", a["motifs"], "ann"))
+    return c
+
+
+SCOPE_RX = re.compile(r'<details class="(?:section|partie)[^"]*" id="([^"]+)"')
+BLOQUANTES = ("a", "summary", "figcaption", "h1", "h2", "h3", "h4", "th", "button", "aside")
+TITRES_LIENS = {"lexique.html": "Voir le lexique", "annexes.html": "Voir les annexes"}
+
+
+def lier(h, cibles, scope_self=None):
+    """Relie la premiere occurrence de chaque cible dans chaque section (ou partie), hors liens, titres et legendes.
+
+    Le scope change a chaque balise <details class="section"> ou <details class="partie"> rencontree ; un texte
+    sans ces balises (definition du lexique, article d'annexe) forme un seul scope. scope_self = (page, slug)
+    exclut la cible qu'on est en train de rendre.
+    """
     motifs = []
-    for e in termes:
-        for m in e.get("motifs", []):
+    for sl, page, ms, classe in cibles:
+        if scope_self == (page, sl):
+            continue
+        for m in ms:
             fl = 0 if m[:1].isupper() and not m.isupper() and m not in ("Logos",) else re.I
-            motifs.append((slug_terme(e["terme"]), re.compile(r"(?<![\w-])(%s)(?![\w-])" % re.escape(html.escape(m, quote=False)), fl)))
+            motifs.append(((page, sl), classe, re.compile(r"(?<![\w-])(%s)(?![\w-])" % re.escape(html.escape(m, quote=False)), fl)))
     faits = set()
+    scope = ""
     morceaux = re.split(r"(<[^>]+>)", h)
     bloque = 0
     for i, m in enumerate(morceaux):
         if m.startswith("<"):
+            s = SCOPE_RX.match(m)
+            if s:
+                scope = s.group(1)
             nom = re.match(r"</?\s*([a-zA-Z0-9]+)", m)
-            if nom and nom.group(1).lower() in ("a", "summary", "figcaption", "h1", "h2", "h3", "h4", "th", "button", "aside"):
+            if nom and nom.group(1).lower() in BLOQUANTES:
                 bloque += -1 if m.startswith("</") else (0 if m.endswith("/>") else 1)
             continue
         if bloque > 0 or not m.strip():
             continue
         poses = []
-        for sl, rx in motifs:
-            if sl in faits:
+        for cle, classe, rx in motifs:
+            if (scope, cle) in faits:
                 continue
             r = rx.search(m)
-            if r and not any(a < r.end() and r.start() < b for a, b, _ in poses):
-                poses.append((r.start(), r.end(), sl))
-                faits.add(sl)
-        for a, b, sl in sorted(poses, reverse=True):
-            m = m[:a] + '<a class="lex" href="lexique.html#%s" title="Voir le lexique">%s</a>' % (sl, m[a:b]) + m[b:]
+            if r and not any(a < r.end() and r.start() < b for a, b, _, _ in poses):
+                poses.append((r.start(), r.end(), cle, classe))
+                faits.add((scope, cle))
+        for a, b, (page, sl), classe in sorted(poses, reverse=True):
+            m = m[:a] + '<a class="%s" href="%s#%s" title="%s">%s</a>' % (classe, page, sl, TITRES_LIENS[page], m[a:b]) + m[b:]
         morceaux[i] = m
     return "".join(morceaux)
+
+
+def ligne_annexes(annexes):
+    """Ligne « Pour comprendre » placee en tete d'une section ou d'une partie."""
+    if not annexes:
+        return ""
+    return '<p class="annexes-ligne">Pour comprendre : %s</p>\n' % " · ".join(
+        '<a href="annexes.html#%s">%s</a>' % (a["id"], en_ligne(a["titre"].split(" : ")[0])) for a in annexes)
+
+
+def rendre_annexe(a, libelles, cibles):
+    """Rend un article d'annexe en <details> replie ; les sous-titres « #### » deviennent des <h3>."""
+    morceaux, cur, sous = [], [], None
+    for l in a["lignes"]:
+        if l.startswith("#### "):
+            morceaux.append((sous, cur))
+            cur, sous = [], l[5:].strip()
+        else:
+            cur.append(l)
+    morceaux.append((sous, cur))
+    corps = []
+    for t, ls in morceaux:
+        if t:
+            corps.append("<h3>%s</h3>" % en_ligne(t))
+        corps += rendre_blocs(ls)
+    corps_html = lier("\n".join(corps), cibles, scope_self=("annexes.html", a["id"]))
+    essai = " · ".join('<a href="index.html#%s">%s</a>' % (s, html.escape(libelles[s])) for s in a["sections"] if s in libelles)
+    refs = " ; ".join(en_ligne(r) for r in a["references"])
+    return ('<details class="annexe" data-item data-type="%s" id="%s"><summary><span class="annexe-titre">%s</span>'
+            '<span class="annexe-cat">%s</span></summary><div class="annexe-corps">%s%s%s</div></details>') % (
+        a["categorie"], a["id"], en_ligne(a["titre"]), dict(CATEGORIES).get(a["categorie"], a["categorie"]), corps_html,
+        '<p class="annexe-essai">Dans l\'essai : %s</p>' % essai if essai else "",
+        '<p class="annexe-refs">Pour aller plus loin : %s</p>' % refs if refs else "")
 
 
 ROMAINS = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV",
@@ -364,7 +472,7 @@ def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, ve
     tpl = open(os.path.join(ICI, "page.template.html"), encoding="utf-8").read()
     nav = " ".join('<a class="chip%s" href="%s">%s</a>' % (" actif" if f == nom else "", f, l)
                    for f, l in (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique"),
-                                ("bibliotheque.html", "Bibliothèque")))
+                                ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque")))
     rempl = {"TITRE_PAGE": titre_page, "TITRE_BRUT": html.escape(titre), "DESCRIPTION": description,
              "OG_IMAGE": og_image, "NAV": nav, "INTRO": intro, "CONTENU": contenu}
     for k, v in rempl.items():
@@ -391,7 +499,8 @@ def cle_auteur(nom):
     return slug_terme(last) + " " + slug_terme(nom)
 
 
-def pages_outils(titre, infos, version, og_image, ids, lettres=()):
+def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None):
+    libelles = libelles or {}
     # ---------------------------------------------------------------- frise
     dates_sup = charger("auteurs.json", {})
     gens = []
@@ -474,19 +583,40 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=()):
 
     # ---------------------------------------------------------------- lexique
     lex = sorted(charger("lexique.json", []), key=lambda e: slug_terme(e["terme"]))
+    cibles_ann = cibles_liaison(annexes, lexique=False)
     items = []
     for e in lex:
         if e["section"] not in ids:
             print("  lexique.json : section inconnue", e["section"])
+        sl = slug_terme(e["terme"])
         items.append('<div class="lex-entree" data-item id="%s"><dt>%s%s</dt><dd>%s <a class="lex-voir" href="index.html#%s">Lire dans l\'essai</a></dd></div>' % (
-            slug_terme(e["terme"]), html.escape(e["terme"]),
+            sl, html.escape(e["terme"]),
             ' <span class="lex-langue">%s</span>' % en_ligne(e["langue"]) if e.get("langue") else "",
-            en_ligne(e["definition"]), e["section"]))
+            lier(en_ligne(e["definition"]), cibles_ann, scope_self=("lexique.html", sl)), e["section"]))
     page_outil("lexique.html", "Lexique",
-               "%d notions de l'essai, définies brièvement. Dans le texte, la première occurrence de chacune renvoie ici." % len(lex),
+               "%d notions de l'essai. Dans le texte, la première occurrence de chacune dans chaque section renvoie ici." % len(lex),
                "Lexique des notions de l'essai.",
                '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher une notion…" aria-label="Chercher une notion"></div>'
                '<dl class="lexique">%s</dl><p id="aucun" hidden>Aucune notion ne correspond.</p>' % "".join(items),
+               titre, og_image, version)
+
+    # ---------------------------------------------------------------- annexes
+    cibles = cibles_liaison(annexes)
+    groupes = []
+    for cat, lab in CATEGORIES:
+        arts = [a for a in annexes if a["categorie"] == cat]
+        if arts:
+            groupes.append('<section class="rep-carte annexes-groupe" data-groupe id="annexes-%s"><h2>%s</h2>%s</section>' % (
+                cat, lab, "".join(rendre_annexe(a, libelles, cibles) for a in arts)))
+    chips = "".join('<button class="chip" data-filtre-type="%s" aria-pressed="%s">%s</button>' % (c, str(c == "tous").lower(), l)
+                    for c, l in (("tous", "Tous"),) + tuple((c, l.split(" ")[0]) for c, l in CATEGORIES))
+    filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un article…" aria-label="Chercher">'
+               '<div class="chips">%s</div></div>' % chips)
+    page_outil("annexes.html", "Annexes",
+               "%d articles pour lire l'essai : les théories de ses auteurs, l'histoire du christianisme et de l'Europe, "
+               "les disciplines qu'il convoque. Ce sont des synthèses de lecture, écrites sans citation ; elles ne remplacent pas "
+               "les sources. Dans le texte, les termes soulignés en pointillé y renvoient." % len(annexes),
+               "Repères pour lire l'essai.", filtres + "".join(groupes) + '<p id="aucun" hidden>Aucun article ne correspond.</p>',
                titre, og_image, version)
 
     # ---------------------------------------------------------------- bibliotheque
@@ -538,6 +668,13 @@ def construire(chemin, version=None):
         return i
 
 
+    annexes = charger_annexes()
+    par_cible = {}  # id de section ou de partie -> annexes qui l'eclairent (ordre du fichier)
+    for a in annexes:
+        for s in a["sections"]:
+            par_cible.setdefault(s, []).append(a)
+    libelles = {}  # id de section ou de partie -> libelle des liens « Dans l'essai »
+
     sources_html, toc, corps, cartes = "", [], [], []
     nb_parties = 0
     infos = []  # sections, pour la frise
@@ -555,6 +692,7 @@ def construire(chemin, version=None):
             sources_html = "\n".join(rendre_blocs(part["lignes"]) + secs)
             continue
         label, _, sous = ptitre.partition(" : ")
+        libelles[pid] = label
         if "partie" in label.lower():
             nb_parties += 1
         intro_p = rendre_blocs(part["lignes"])
@@ -590,12 +728,14 @@ def construire(chemin, version=None):
             else:
                 head = '<span class="sec-titles"><span class="sec-nom">%s</span></span>' % en_ligne(sec["titre"])
                 credits = ""
+            lib = nom if est_auteur else sec["titre"].split(" : ")[0]
+            libelles[sid] = "%s (%s)" % (lib, label.lower()) if lib == "Passage" else lib
             secs_html.append(
                 '<details class="section%s" id="%s" data-partie="%s" open><summary>%s'
                 '<span class="sec-side">%s</span></summary>'
-                '<div class="sec-body">%s%s</div></details>' % (
+                '<div class="sec-body">%s%s%s</div></details>' % (
                     " auteur" if est_auteur else "", sid, pid, head,
-                    lien_btn(sid), "\n".join(corps_sec), credits))
+                    lien_btn(sid), ligne_annexes(par_cible.get(sid)), "\n".join(corps_sec), credits))
             toc_secs.append('<li><a href="#%s" data-target="%s">%s%s</a></li>' % (
                 sid, sid, en_ligne(nom if est_auteur else sec["titre"]),
                 ' <small>%s</small>' % html.escape(dates) if dates else ""))
@@ -603,9 +743,9 @@ def construire(chemin, version=None):
         corps.append(
             '<details class="partie" id="%s"><summary><span class="part-label">%s</span>'
             '<span class="part-sub">%s</span>%s%s</summary>'
-            '<div class="part-body">%s%s<p class="part-end"><a href="#%s" data-target="%s">Haut de la partie</a></p></div></details>' % (
+            '<div class="part-body">%s%s%s<p class="part-end"><a href="#%s" data-target="%s">Haut de la partie</a></p></div></details>' % (
                 pid, en_ligne(label), en_ligne(sous), '<span class="part-meta">%s</span>' % meta if meta else "", lien_btn(pid),
-                "\n".join(intro_p), "\n".join(secs_html), pid, pid))
+                ligne_annexes(par_cible.get(pid)), "\n".join(intro_p), "\n".join(secs_html), pid, pid))
         toc.append('<li class="toc-part"><a href="#%s" data-target="%s">%s%s</a>%s</li>' % (
             pid, pid, en_ligne(ptitre),
             '<span class="toc-count" data-count="%s"></span>' % pid if toc_secs else "",
@@ -625,7 +765,11 @@ def construire(chemin, version=None):
             html.escape(i.get("credit", "")))
         for i in images)
     cover = par_section.get(("cover", "cover"), [])
-    corps_html = lier_lexique("\n".join(corps))
+    for a in annexes:
+        for s in a["sections"]:
+            if s not in ids_vus:
+                print("  annexes/%s.md : section inconnue %s" % (a["id"], s))
+    corps_html = lier("\n".join(corps), cibles_liaison(annexes))
     tpl = open(os.path.join(ICI, "template.html"), encoding="utf-8").read()
     version = version or str(int(time.time()))
     rempl = {
@@ -653,13 +797,13 @@ def construire(chemin, version=None):
     open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)
     print("index.html : %d parties" % len(corps))
     return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"],
-            "lettres": lettres}
+            "lettres": lettres, "annexes": annexes, "libelles": libelles}
 
 
 def tout_construire(article=ARTICLE):
     version = str(int(time.time()))
     r = construire(article, version=version)
-    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"])
+    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"])
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
     open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw.replace("{{VERSION}}", version))
 
