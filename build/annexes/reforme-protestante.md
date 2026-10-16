@@ -3,14 +3,14 @@ titre: La Réforme protestante : Luther, Calvin et la rupture de la chrétienté
 categorie: histoire
 ordre: 80
 sections: weber ; soren-kierkegaard ; barth ; bonhoeffer ; troisieme-partie
-motifs: Réforme ; Luther ; Calvin ; protestant ; luthérien
+motifs: Réforme ; Luther ; Calvin ; luthérien
 references: Lucien Febvre, *Un destin : Martin Luther* (1928) ; Jean Delumeau, *Naissance et affirmation de la Réforme* (1965) ; Diarmaid MacCulloch, *Reformation : Europe's House Divided* (2003) ; Pierre Chaunu, *Le Temps des Réformes* (1975)
 ---
 La Réforme est la rupture qui, au XVIe siècle, divise la chrétienté latine en Églises rivales. Elle naît d'une question de salut, posée par un moine allemand, et devient en une génération une affaire de princes, de villes et de guerres. Presque tous les auteurs allemands, danois et suisses de l'essai, de Kant à Bonhoeffer, sont des héritiers de cette rupture.
 
 #### Luther
 
-Martin Luther (1483-1546), moine augustin et professeur d'Écriture à Wittenberg, affiche ou envoie le 31 octobre 1517 quatre-vingt-quinze thèses contre le commerce des indulgences. Sa doctrine tient en quelques formules : l'homme est justifié par la foi seule, non par ses œuvres ; par la grâce seule ; l'Écriture seule fait autorité, non la tradition ni le pape ; tout baptisé est prêtre. Excommunié en 1521, mis au ban de l'Empire à la diète de Worms, il traduit le Nouveau Testament (1522) puis la Bible (1534) en allemand, et l'imprimerie, inventée soixante-dix ans plus tôt, diffuse ses écrits à des dizaines de milliers d'exemplaires : la Réforme est le premier mouvement de masse de l'âge de l'imprimé. Luther condamne la révolte des paysans (1525) et confie aux princes l'organisation des Églises territoriales ; la confession d'Augsbourg (1530) fixe la doctrine luthérienne.
+Martin Luther (1483-1546), moine augustin et professeur d'Écriture à Wittenberg, affiche ou envoie le 31 octobre 1517 quatre-vingt-quinze thèses contre le commerce des indulgences. Sa doctrine tient en quelques formules : l'homme est justifié par la foi seule, non par ses œuvres ; par la grâce seule ; l'Écriture seule fait autorité, non la tradition ni le pape ; tout baptisé est prêtre. Excommunié en 1521, mis au ban de l'Empire à la diète de Worms, il traduit le Nouveau Testament (1522) puis la Bible (1534) en allemand, et l'imprimerie, inventée une soixantaine d'années plus tôt, diffuse ses écrits à des dizaines de milliers d'exemplaires : la Réforme est le premier mouvement de masse de l'âge de l'imprimé. Luther condamne la révolte des paysans (1525) et confie aux princes l'organisation des Églises territoriales ; la confession d'Augsbourg (1530) fixe la doctrine luthérienne.
 
 #### Calvin et la Réforme réformée
 

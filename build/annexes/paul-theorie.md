@@ -3,7 +3,7 @@ titre: Paul de Tarse : les lettres, la justification, la Loi et la nouvelle pers
 categorie: theories
 ordre: 22
 sections: paul-de-tarse ; nietzsche
-motifs: lettres authentiques ; justification ; nouvelle perspective ; Aréopage ; Damas ; Galates ; Corinthiens
+motifs: lettres authentiques ; justification par la foi ; nouvelle perspective sur Paul ; Aréopage ; Damas ; Galates ; Corinthiens
 references: E. P. Sanders, *Paul and Palestinian Judaism* (1977) ; Albert Schweitzer, *Die Mystik des Apostels Paulus* (1930) ; Simon Légasse, *Paul apôtre* (1991) ; James D. G. Dunn, *The Theology of Paul the Apostle* (1998) ; Daniel Marguerat, *Paul de Tarse. L'enfant terrible du christianisme* (2023)
 ---
 Paul (vers 5-vers 64), juif de Tarse en Cilicie, pharisien formé à la Loi, citoyen romain selon les Actes, persécuteur des premiers disciples de Jésus, se convertit vers 33 sur le chemin de Damas et devient l'apôtre des nations. Ses lettres, écrites entre 50 et 60 environ, sont les plus anciens textes chrétiens, antérieurs aux évangiles, et sa théologie a façonné le christianisme.

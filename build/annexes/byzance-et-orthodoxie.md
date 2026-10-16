@@ -22,16 +22,16 @@ Après 1453, la Russie se tient pour l'héritière de Byzance : un moine de Psko
 
 #### Les startsy et Dostoïevski
 
-Le XIXe siècle russe connaît un renouveau spirituel venu des monastères. Païssi Velitchkovski a traduit la *Philocalie* (1793), recueil des Pères hésychastes ; Séraphin de Sarov (1759-1833) incarne la sainteté populaire ; le monastère d'Optina, près de Kozelsk, abrite une lignée de startsy (singulier starets), moines anciens qui reçoivent les visiteurs, écoutent les confessions et conseillent. Gogol, Tolstoï, Soloviev et Dostoïevski s'y rendent. Dostoïevski y passe deux jours en juin 1878, après la mort de son fils Aliocha, et rencontre le starets Amvrossi ; le starets Zossima des *Frères Karamazov* lui doit ses traits. L'opposition des slavophiles, pour qui l'orthodoxie et la commune paysanne portent une vérité que l'Occident a perdue, et des occidentalistes, nourrit son idée russe ; sa méfiance envers le catholicisme romain, qu'il accuse d'avoir troqué le Christ contre le pouvoir, explique que le Grand Inquisiteur soit un cardinal de Séville.
+Le XIXe siècle russe connaît un renouveau spirituel venu des monastères. Païssi Velitchkovski a traduit la *Philocalie* (1793), recueil des Pères hésychastes ; Séraphin de Sarov (1754-1833) incarne la sainteté populaire ; le monastère d'Optina, près de Kozelsk, abrite une lignée de startsy (singulier starets), moines anciens qui reçoivent les visiteurs, écoutent les confessions et conseillent. Gogol, Tolstoï, Soloviev et Dostoïevski s'y rendent. Dostoïevski y passe deux jours en juin 1878, après la mort de son fils Aliocha, et rencontre le starets Amvrossi ; le starets Zossima des *Frères Karamazov* lui doit ses traits. L'opposition des slavophiles, pour qui l'orthodoxie et la commune paysanne portent une vérité que l'Occident a perdue, et des occidentalistes, nourrit son idée russe ; sa méfiance envers le catholicisme romain, qu'il accuse d'avoir troqué le Christ contre le pouvoir, explique que le Grand Inquisiteur soit un cardinal de Séville.
 
 #### Ce que l'essai suppose
 
-L'essai nomme Zossima, Markel et le starets, et lit le Grand Inquisiteur comme une parabole du pouvoir religieux sans la situer dans l'anticatholicisme de Dostoïevski. Il suppose connue la différence entre une Église d'État sans scolastique, dont la théologie est négative et monastique, et l'Église romaine à laquelle s'adressent presque tous ses auteurs.
+L'essai nomme Zossima, Markel et le starets, et lit le Grand Inquisiteur comme une parabole du pouvoir religieux ; l'anticatholicisme de Dostoïevski en est le contexte. Il suppose connue la différence entre une Église d'État sans scolastique, dont la théologie est négative et monastique, et l'Église romaine à laquelle s'adressent presque tous ses auteurs.
 
 #### Dates clés
 
 - 330 : fondation de Constantinople ; 843 : fin de l'iconoclasme.
 - 863 : mission de Cyrille et Méthode ; 988 : baptême de Vladimir.
 - 1054 : excommunications réciproques ; 1204 : sac de Constantinople ; 1453 : chute de la ville.
-- 1589 : patriarcat de Moscou ; 1666-1667 : Raskol ; 1721 : Saint-Synode.
+- 1589 : patriarcat de Moscou ; 1653-1667 : réformes de Nikon et Raskol ; 1721 : Saint-Synode.
 - 1878 : Dostoïevski à Optina.

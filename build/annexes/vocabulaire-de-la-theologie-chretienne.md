@@ -3,10 +3,10 @@ titre: Vocabulaire de la théologie chrétienne : révélation, grâce, salut, p
 categorie: disciplines
 ordre: 90
 sections: deuxieme-partie ; porphyre-et-augustin ; pascal ; dixieme-partie
-motifs: révélation ; péché originel ; théologie naturelle ; théologie révélée ; surnaturel ; prédestination
+motifs: péché originel ; théologie naturelle ; théologie révélée ; prédestination ; justification par la foi
 references: Augustin, *De civitate Dei* (413-426) ; Thomas d'Aquin, *Summa theologiae* (1266-1273) ; Jean Calvin, *Institution de la religion chrétienne* (1536-1560) ; Henri de Lubac, *Surnaturel* (1946) ; Bernard Sesboüé (dir.), *Histoire des dogmes* (1994-1996) ; Jean-Yves Lacoste (dir.), *Dictionnaire critique de théologie* (1998)
 ---
-L'essai emploie sans les définir les termes de la théologie chrétienne que ses auteurs critiquent, défendent ou retournent. Ce vocabulaire s'est fixé entre Augustin et la Réforme, et chaque mot y porte un débat. Voici les principaux, dans leur sens le plus courant chez les théologiens.
+L'essai emploie sans les définir les termes de la théologie chrétienne que ses auteurs critiquent, défendent ou retournent. Ce vocabulaire s'est fixé entre Augustin et la Réforme, et chaque mot y porte un débat. Les principaux sont présentés ici, dans leur sens le plus courant chez les théologiens.
 
 #### Révélation, foi, raison
 
@@ -14,7 +14,7 @@ La révélation est l'acte par lequel Dieu se fait connaître aux hommes, par l'
 
 #### Péché, grâce, salut
 
-Le péché originel est la doctrine, formulée par Augustin contre Pélage au début du Ve siècle à partir de Paul (Rm 5, 12), selon laquelle la faute d'Adam a corrompu la nature humaine et se transmet à toute sa descendance, qui ne peut se sauver par ses forces. La grâce est le don gratuit par lequel Dieu sauve ; sa relation à la liberté humaine divise Augustin et Pélage, Luther et Érasme, les jansénistes et les jésuites, Pascal écrivant les Provinciales dans cette dernière querelle. La prédestination est la doctrine selon laquelle Dieu a choisi de toute éternité ceux qui seront sauvés ; Augustin l'enseigne, Calvin la pousse jusqu'à la double prédestination, au salut et à la damnation, et Weber en fait le ressort psychologique de l'ascèse puritaine. Le salut est la délivrance du péché et de la mort, par la rédemption accomplie dans la mort et la résurrection du Christ ; la justification, au centre de la Réforme, est l'acte par lequel Dieu déclare ou rend juste le pécheur, par la foi seule selon Luther, par la foi et les œuvres selon le concile de Trente. L'eschatologie traite des fins dernières, jugement, résurrection, royaume de Dieu, et l'apocalyptique de leur imminence.
+Le péché originel est la doctrine, formulée par Augustin contre Pélage au début du Ve siècle à partir de Paul (Rm 5, 12), selon laquelle la faute d'Adam a corrompu la nature humaine et se transmet à toute sa descendance, qui ne peut se sauver par ses forces. La grâce est le don gratuit par lequel Dieu sauve ; sa relation à la liberté humaine divise Augustin et Pélage, Luther et Érasme, les jansénistes et les jésuites, Pascal écrivant les *Provinciales* dans cette dernière querelle. La prédestination est la doctrine selon laquelle Dieu a choisi de toute éternité ceux qui seront sauvés ; Augustin l'enseigne, Calvin la pousse jusqu'à la double prédestination, au salut et à la damnation, et Weber en fait le ressort psychologique de l'ascèse puritaine. Le salut est la délivrance du péché et de la mort, par la rédemption accomplie dans la mort et la résurrection du Christ ; la justification, au centre de la Réforme, est l'acte par lequel Dieu déclare ou rend juste le pécheur, par la foi seule selon Luther, par la foi vivifiée par la charité et les œuvres selon le concile de Trente. L'eschatologie traite des fins dernières, jugement, résurrection, royaume de Dieu, et l'apocalyptique de leur imminence.
 
 #### Dieu, Christ, Église
 
@@ -22,4 +22,4 @@ La Trinité, fixée aux conciles du IVe siècle, confesse un seul Dieu en trois 
 
 #### Ce que l'essai suppose
 
-L'essai suppose ce vocabulaire acquis quand il oppose le Dieu de la révélation à celui de la raison, quand il lit la critique de la religion de Barth comme une théologie de la révélation seule, quand il suit Pascal dans la querelle de la grâce, ou quand il distingue, chez Bonhoeffer et Weil, une foi sans religion. Il rappelle lui-même que la religion au sens fort comporte dogmes, communauté et absolu extérieur, trois traits que ce vocabulaire définit.
+L'essai suppose ce vocabulaire acquis quand il oppose le Dieu de la révélation à celui de la raison, quand il lit la critique de la religion de Barth comme une théologie de la révélation seule, quand il lit chez Pascal le Dieu caché et le pari, ou quand il distingue, chez Bonhoeffer et Weil, une foi sans religion. Il rappelle lui-même que la religion au sens fort comporte dogmes, communauté et absolu extérieur, traits que ce vocabulaire aide à reconnaître.

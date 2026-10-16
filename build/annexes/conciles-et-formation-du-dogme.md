@@ -4,7 +4,7 @@ categorie: histoire
 ordre: 40
 sections: celse-et-origene ; porphyre-et-augustin ; philon-d-alexandrie ; deuxieme-partie-passage ; jaspers
 motifs: Trinité ; Incarnation ; hérésie ; hérétique
-references: Jaroslav Pelikan, *The Emergence of the Catholic Tradition* (1971) ; Richard Hanson, *The Search for the Christian Doctrine of God* (1988) ; Bernard Sesboüé et Joseph Wolinski, *Le Dieu du salut* (1994) ; Walter Bauer, *Rechtgläubigkeit und Ketzerei im ältesten Christentum* (1934)
+references: Jaroslav Pelikan, *The Emergence of the Catholic Tradition* (1971) ; R. P. C. Hanson, *The Search for the Christian Doctrine of God* (1988) ; Bernard Sesboüé et Joseph Wolinski, *Le Dieu du salut* (1994) ; Walter Bauer, *Rechtgläubigkeit und Ketzerei im ältesten Christentum* (1934)
 ---
 Le christianisme des origines n'avait ni credo fixé ni Écriture close. Entre le IIe et le Ve siècle, il s'est donné un canon, une règle de foi et des définitions dogmatiques, dans des conciles réunis par les empereurs, au terme de querelles qui ont duré des générations. Ce travail a été accompli avec le vocabulaire de la philosophie grecque.
 
@@ -18,7 +18,7 @@ La question centrale est celle du Christ : comment Jésus peut-il être Dieu si 
 
 #### L'Incarnation : Éphèse et Chalcédoine
 
-Reste à dire comment le divin et l'humain s'unissent dans le Christ. Nestorius, patriarche de Constantinople, refuse d'appeler Marie mère de Dieu et distingue fortement les deux natures ; Cyrille d'Alexandrie le fait condamner à Éphèse (431). Eutychès tombe dans l'excès inverse, une seule nature après l'union. Le concile de Chalcédoine (451) définit une seule personne en deux natures, sans confusion ni séparation ; les Églises d'Égypte, de Syrie et d'Arménie, qui refusent cette formule, se séparent pour toujours. Origène lui-même, un siècle après sa mort, est condamné pour certaines de ses thèses (553).
+Reste à dire comment le divin et l'humain s'unissent dans le Christ. Nestorius, patriarche de Constantinople, refuse d'appeler Marie mère de Dieu et distingue fortement les deux natures ; Cyrille d'Alexandrie le fait condamner à Éphèse (431). Eutychès tombe dans l'excès inverse, une seule nature après l'union. Le concile de Chalcédoine (451) définit une seule personne en deux natures, sans confusion ni séparation ; les Églises d'Égypte, de Syrie et d'Arménie, qui refusent cette formule, se séparent durablement. Origène lui-même, trois siècles après sa mort, est condamné pour certaines de ses thèses (553).
 
 #### Philosophie grecque et dogme
 

@@ -3,7 +3,7 @@ titre: Guerres de religion et naissance de la tolérance : de la Saint-Barthéle
 categorie: histoire
 ordre: 90
 sections: bayle ; spinoza ; troisieme-partie ; montaigne
-motifs: guerres de religion ; libertins ; tolérance ; Rotterdam
+motifs: guerres de religion ; libertins ; édit de Nantes ; Rotterdam
 references: Denis Crouzet, *Les Guerriers de Dieu* (1990) ; Elisabeth Labrousse, *Pierre Bayle* (1963-1964) ; Jonathan Israel, *Radical Enlightenment* (2001) ; Steven Nadler, *Spinoza, a Life* (1999) ; René Pintard, *Le Libertinage érudit* (1943)
 ---
 Entre 1560 et 1690, l'Europe apprend à ses dépens qu'une société divisée en confessions ne peut pas être gouvernée par une seule vérité. De cette expérience sortent les deux idées que l'essai suit chez Montaigne, Spinoza et Bayle : que la religion n'est pas le fondement nécessaire de l'ordre politique, et que la conscience ne se contraint pas.
@@ -14,7 +14,7 @@ De 1562 à 1598, catholiques et huguenots se livrent huit guerres entrecoupées 
 
 #### L'Empire et les Provinces-Unies
 
-La guerre de Trente Ans (1618-1648) dévaste l'Allemagne ; les traités de Westphalie (1648) consacrent la parité des confessions dans l'Empire, et transfèrent aux princes des biens d'Église : c'est de là que vient le sens juridique du mot sécularisation. Aux Pays-Bas, les provinces révoltées contre l'Espagne proclament dès 1579 que nul ne sera inquiété pour sa religion. Amsterdam accueille les juifs chassés de la péninsule ibérique, dont la famille de Spinoza, les dissidents protestants, les imprimeurs de toute l'Europe. La tolérance y a des limites : Spinoza est frappé en 1656 du *herem* de sa communauté, son ami Koerbagh meurt en prison en 1669, le *Traité théologico-politique*, paru sans nom d'auteur en 1670, est interdit en 1674.
+La guerre de Trente Ans (1618-1648) dévaste l'Allemagne ; les traités de Westphalie (1648) consacrent la parité des confessions dans l'Empire, et transfèrent aux princes des biens d'Église : c'est là qu'apparaît l'usage juridique du mot sécularisation, que les confiscations de l'époque napoléonienne généraliseront. Aux Pays-Bas, les provinces révoltées contre l'Espagne proclament dès 1579 que nul ne sera inquiété pour sa religion. Amsterdam accueille les juifs chassés de la péninsule ibérique, dont la famille de Spinoza, les dissidents protestants, les imprimeurs de toute l'Europe. La tolérance y a des limites : Spinoza est frappé en 1656 du *herem* de sa communauté, son ami Koerbagh meurt en prison en 1669, le *Traité théologico-politique*, paru sans nom d'auteur en 1670, est interdit en 1674.
 
 #### La révocation et le Refuge
 

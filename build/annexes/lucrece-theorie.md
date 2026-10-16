@@ -6,7 +6,7 @@ sections: epicure-et-lucrece ; hume ; norris-et-inglehart ; montaigne
 motifs: De rerum natura ; Iphigénie ; Vénus ; clinamen ; Memmius
 references: Lucrèce, *De rerum natura* (vers 55 av. J.-C.), trad. Alfred Ernout (1920) et José Kany-Turpin (1993) ; Pierre Boyancé, *Lucrèce et l'épicurisme* (1963) ; Stephen Greenblatt, *Quattrocento* (*The Swerve*, 2011) ; Alain Gigandet, *Lucrèce. Atomes, mouvement* (2001)
 ---
-Titus Lucretius Carus (vers 98-55 avant notre ère) est l'auteur d'un seul livre, le De rerum natura, De la nature des choses, poème en six chants et plus de sept mille hexamètres qui expose la physique et l'éthique d'Épicure à un Romain, Memmius. On ne sait presque rien de sa vie ; la légende d'un philtre d'amour et d'un suicide vient de Jérôme, quatre siècles plus tard. Cicéron aurait revu le poème après sa mort.
+Titus Lucretius Carus (vers 98-55 avant notre ère) est l'auteur d'un seul livre, le *De rerum natura*, *De la nature des choses*, poème en six chants et plus de sept mille hexamètres qui expose la physique et l'éthique d'Épicure à un Romain, Memmius. On ne sait presque rien de sa vie ; la légende d'un philtre d'amour et d'un suicide vient de Jérôme, quatre siècles plus tard. Cicéron aurait revu le poème après sa mort.
 
 #### Le poème
 
@@ -14,7 +14,7 @@ Le chant I invoque Vénus, puissance génératrice de la nature, puis expose les
 
 #### La critique de la religion
 
-Le De rerum natura est, de toute l'Antiquité, le texte le plus violent contre la religion. Dès le chant I, Lucrèce célèbre Épicure comme le Grec qui, le premier, osa lever les yeux contre la religion qui écrasait les hommes, la foula aux pieds et nous égala au ciel par sa victoire ; puis il raconte le sacrifice d'Iphigénie par Agamemnon à Aulis, pour conclure que la religion a pu conseiller tant de maux. Le chant V explique la naissance de la croyance aux dieux par les visions du rêve, par l'ignorance des causes des phénomènes célestes et par la peur, et montre les hommes se prosternant devant les autels sans y trouver la paix. Lucrèce ne nie pas les dieux, bienheureux et lointains ; il nie qu'ils gouvernent le monde et qu'il faille les craindre. La vraie piété est de tout contempler d'un esprit apaisé.
+Le *De rerum natura* est l'un des textes antiques les plus violents contre la religion. Dès le chant I, Lucrèce célèbre Épicure comme le Grec qui, le premier, osa lever les yeux contre la religion qui écrasait les hommes, la foula aux pieds et nous égala au ciel par sa victoire ; puis il raconte le sacrifice d'Iphigénie par Agamemnon à Aulis, pour conclure que la religion a pu conseiller tant de maux. Le chant V explique la naissance de la croyance aux dieux par les visions du rêve, par l'ignorance des causes des phénomènes célestes et par la peur, et montre les hommes se prosternant devant les autels sans y trouver la paix. Lucrèce ne nie pas les dieux, bienheureux et lointains ; il nie qu'ils gouvernent le monde et qu'il faille les craindre. La vraie piété est de tout contempler d'un esprit apaisé.
 
 #### Postérité
 

@@ -6,7 +6,7 @@ sections: girard ; neuvieme-partie ; le-bilan-des-refondations ; ce-que-les-exce
 motifs: théorie mimétique ; bouc émissaire ; boucs émissaires ; rivalité mimétique ; crise mimétique ; lynchage
 references: René Girard, *Mensonge romantique et vérité romanesque* (1961) ; *La Violence et le sacré* (1972) ; *Des choses cachées depuis la fondation du monde* (1978) ; *Le Bouc émissaire* (1982) ; *Achever Clausewitz* (2007) ; Jean-Pierre Dupuy, *La Marque du sacré* (2008)
 ---
-La théorie mimétique est l'hypothèse d'ensemble que René Girard (1923-2015) a développée en un demi-siècle, de la critique littéraire à l'anthropologie, puis à la lecture de la Bible et à la théorie de l'histoire. Elle part d'une observation sur le désir et prétend expliquer l'origine de la culture, de la religion et des institutions. L'essai n'en retient que l'étage anthropologique ; voici l'édifice entier.
+La théorie mimétique est l'hypothèse d'ensemble que René Girard (1923-2015) a développée en un demi-siècle, de la critique littéraire à l'anthropologie, puis à la lecture de la Bible et à la théorie de l'histoire. Elle part d'une observation sur le désir et prétend expliquer l'origine de la culture, de la religion et des institutions. L'essai n'en retient que l'étage anthropologique ; cet article présente l'édifice entier.
 
 #### Le désir mimétique
 

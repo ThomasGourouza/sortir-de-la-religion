@@ -6,7 +6,7 @@ sections: rudolf-otto ; levinas ; jung
 motifs: Das Heilige ; Kreaturgefühl ; schématisation ; mystique comparée ; Fries
 references: Rudolf Otto, *Das Heilige* (1917), trad. André Jundt, *Le Sacré* (1929) ; *West-östliche Mystik* (1926) ; *Die Gnadenreligion Indiens und das Christentum* (1930) ; *Reich Gottes und Menschensohn* (1934) ; Philip C. Almond, *Rudolf Otto. An Introduction to His Philosophical Theology* (1984) ; Todd A. Gooch, *The Numinous and Modernity* (2000)
 ---
-Rudolf Otto (1869-1937), théologien luthérien, professeur à Göttingen, Breslau puis Marbourg, voyageur en Afrique du Nord, en Inde, en Chine et au Japon, député libéral au parlement prussien, a écrit en 1917 l'un des livres les plus lus de la théologie du XXe siècle, Das Heilige, qui a donné à la phénoménologie de la religion son concept central, le numineux.
+Rudolf Otto (1869-1937), théologien luthérien, professeur à Göttingen, Breslau puis Marbourg, voyageur en Afrique du Nord, en Inde, en Chine et au Japon, député libéral au parlement prussien, a écrit en 1917 l'un des livres les plus lus de la théologie du XXe siècle, *Das Heilige*, qui a donné à la phénoménologie de la religion son concept central, le numineux.
 
 #### Le Sacré
 
@@ -14,7 +14,7 @@ Le livre part d'un constat : la théologie et la philosophie de la religion ont 
 
 #### La mystique comparée et l'Inde
 
-Otto fonde à Marbourg une collection de religions du monde et une Ligue religieuse de l'humanité. Mystique d'Orient et mystique d'Occident (1926) compare Eckhart et Shankara, le maître du Vedânta non dualiste, pour montrer des structures communes et des différences de fond ; La Religion de grâce de l'Inde et le christianisme (1930) rapproche la bhakti vishnouite du luthéranisme. Ces travaux font de lui, avec Söderblom et Heiler, un fondateur de l'histoire comparée des religions à base phénoménologique, que Van der Leeuw et Eliade poursuivront.
+Otto fonde à Marbourg une collection de religions du monde et une Ligue religieuse de l'humanité. *Mystique d'Orient et mystique d'Occident* (1926) compare Eckhart et Shankara, le maître du Vedânta non dualiste, pour montrer des structures communes et des différences de fond ; *La Religion de grâce de l'Inde et le christianisme* (1930) rapproche la bhakti vishnouite du luthéranisme. Ces travaux font de lui, avec Söderblom et Heiler, un fondateur de l'histoire comparée des religions à base phénoménologique, que Van der Leeuw et Eliade poursuivront.
 
 #### Postérité
 

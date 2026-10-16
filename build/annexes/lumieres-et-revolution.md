@@ -4,7 +4,7 @@ categorie: histoire
 ordre: 100
 sections: rousseau ; voltaire ; durkheim ; quatrieme-partie ; auguste-comte
 motifs: Être suprême ; Révolution française ; Robespierre ; culte de la Raison ; théophilanthropie
-references: Michel Vovelle, *La Révolution contre l'Église* (1988) ; Bernard Plongeron, *Théologie et politique au siècle des Lumières* (1973) ; Mona Ozouf, *La Fête révolutionnaire* (1976) ; Jean-Marie Mayeur et alii, *Histoire du christianisme*, tome X (1997)
+references: Michel Vovelle, *La Révolution contre l'Église* (1988) ; Bernard Plongeron, *Théologie et politique au siècle des Lumières* (1973) ; Mona Ozouf, *La Fête révolutionnaire* (1976) ; Jean-Marie Mayeur (dir.), *Histoire du christianisme*, tome X (1997)
 ---
 La France de l'Ancien Régime est une monarchie de droit divin où l'Église catholique est premier ordre du royaume ; la Révolution, en dix ans, lui retire ses biens, son clergé, son calendrier, puis tente de la remplacer. Les cultes révolutionnaires de 1793 et 1794 sont, pour Durkheim comme pour Comte, l'expérience qui montre ce que devient la religion quand on veut s'en passer.
 

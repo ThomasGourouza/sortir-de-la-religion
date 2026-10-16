@@ -365,6 +365,24 @@ BLOQUANTES = ("a", "summary", "figcaption", "h1", "h2", "h3", "h4", "th", "butto
 TITRES_LIENS = {"lexique.html": "Voir le lexique", "annexes.html": "Voir les annexes"}
 
 
+_MOTIFS_COMPILES = {}
+
+
+def motifs_compiles(cibles):
+    """Compile une fois les motifs d'une liste de cibles (la compilation dominait le temps de build)."""
+    cle = tuple((sl, page, tuple(ms), classe) for sl, page, ms, classe in cibles)
+    if cle not in _MOTIFS_COMPILES:
+        motifs = []
+        for sl, page, ms, classe in cibles:
+            for m in ms:
+                fl = 0 if m[:1].isupper() and not m.isupper() and m not in ("Logos",) else re.I
+                lit = html.escape(m, quote=False)
+                # (cible, classe, regex, littéral de préfiltrage, insensible à la casse)
+                motifs.append(((page, sl), classe, re.compile(r"(?<![\w-])(%s)(?![\w-])" % re.escape(lit), fl), lit.lower() if fl else lit, bool(fl)))
+        _MOTIFS_COMPILES[cle] = motifs
+    return _MOTIFS_COMPILES[cle]
+
+
 def lier(h, cibles, scope_self=None):
     """Relie la premiere occurrence de chaque cible dans chaque section (ou partie), hors liens, titres et legendes.
 
@@ -372,13 +390,7 @@ def lier(h, cibles, scope_self=None):
     sans ces balises (definition du lexique, article d'annexe) forme un seul scope. scope_self = (page, slug)
     exclut la cible qu'on est en train de rendre.
     """
-    motifs = []
-    for sl, page, ms, classe in cibles:
-        if scope_self == (page, sl):
-            continue
-        for m in ms:
-            fl = 0 if m[:1].isupper() and not m.isupper() and m not in ("Logos",) else re.I
-            motifs.append(((page, sl), classe, re.compile(r"(?<![\w-])(%s)(?![\w-])" % re.escape(html.escape(m, quote=False)), fl)))
+    motifs = motifs_compiles(cibles)
     faits = set()
     scope = ""
     morceaux = re.split(r"(<[^>]+>)", h)
@@ -395,8 +407,11 @@ def lier(h, cibles, scope_self=None):
         if bloque > 0 or not m.strip():
             continue
         poses = []
-        for cle, classe, rx in motifs:
-            if (scope, cle) in faits:
+        m_bas = m.lower()
+        for cle, classe, rx, lit, ci in motifs:
+            if cle == scope_self or (scope, cle) in faits:
+                continue
+            if lit not in (m_bas if ci else m):  # préfiltrage : évite la regex quand le motif est absent
                 continue
             r = rx.search(m)
             if r and not any(a < r.end() and r.start() < b for a, b, _, _ in poses):

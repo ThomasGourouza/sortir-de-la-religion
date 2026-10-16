@@ -3,7 +3,7 @@ titre: Scolastique et condamnations : foi et raison dans l'université médiéva
 categorie: histoire
 ordre: 70
 sections: averroes ; maimonide ; hans-blumenberg ; passage ; descartes
-motifs: scolastique ; Tempier ; averroïsme ; Ockham ; nominalisme ; Thomas d'Aquin ; cinq voies
+motifs: Tempier ; Ockham ; nominalisme ; Thomas d'Aquin ; cinq voies
 references: Étienne Gilson, *La Philosophie au Moyen Âge* (1922) ; Alain de Libera, *La Philosophie médiévale* (1993) ; Luca Bianchi, *Censure et liberté intellectuelle à l'université de Paris* (1999) ; Kurt Flasch, *Introduction à la philosophie médiévale* (1987)
 ---
 La scolastique est la philosophie et la théologie enseignées dans les écoles puis les universités de l'Occident latin, du XIe au XIVe siècle, selon une méthode faite de lecture des autorités, de questions disputées et de sommes. Elle a réglé pour des siècles le rapport entre la foi et la raison, puis l'a défait elle-même ; les auteurs arabes et juifs y ont joué un rôle que l'essai rappelle à propos d'Averroès et de Maïmonide.

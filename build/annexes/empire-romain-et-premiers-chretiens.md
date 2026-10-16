@@ -18,11 +18,11 @@ Les premiers épisodes sont locaux. En 64, après l'incendie de Rome, Néron rej
 
 Le tournant a lieu au milieu du IIIe siècle. En 250, Dèce ordonne à tous les habitants de l'Empire de sacrifier aux dieux et de s'en faire délivrer un certificat ; c'est la première persécution générale, qui produit plus d'apostats que de martyrs. Valérien, en 257-258, vise le clergé ; Cyprien de Carthage est exécuté. Gallien, en 260, restitue les lieux de culte : quarante ans de paix suivent. La Grande Persécution de Dioclétien, lancée en 303 par une série d'édits (destruction des églises et des livres, arrestation du clergé, obligation de sacrifier), est la plus dure, surtout en Orient ; l'édit de tolérance de Galère (311) y met fin.
 
-Le mot martyr, en grec le témoin, désigne d'abord celui qui atteste sa foi devant le tribunal ; le culte de leurs tombes en fait les premiers saints. Les apologistes, Justin, Athénagore, Tertullien, écrivent à l'empereur pour réclamer le droit commun et présenter le christianisme comme la vraie philosophie.
+Le mot martyr, en grec le témoin, désigne d'abord celui qui atteste sa foi devant le tribunal ; le culte de leurs tombes en fait les premiers saints. Les apologistes, Justin, Athénagore, Tertullien, s'adressent aux autorités pour réclamer le droit commun et présenter le christianisme comme la vraie philosophie.
 
 #### Une diffusion lente et urbaine
 
-Le christianisme se répand par les villes, le long des routes et des réseaux de la diaspora juive : Antioche, Alexandrie, l'Asie Mineure, Rome, puis l'Afrique du Nord et la Gaule. Ses adeptes sont d'abord des artisans, des femmes, des esclaves et des affranchis, puis des lettrés et des notables. Vers 300, ils restent une minorité, un dixième de la population au plus, mais organisée, avec des évêques, des biens et des écoles. Celse écrit vers 178, quand cette minorité commence à inquiéter ; Origène lui répond vers 248, à la veille de l'édit de Dèce.
+Le christianisme se répand par les villes, le long des routes et des réseaux de la diaspora juive : Antioche, Alexandrie, l'Asie Mineure, Rome, puis l'Afrique du Nord et la Gaule. Ses adeptes sont d'abord des artisans, des femmes, des esclaves et des affranchis, puis des lettrés et des notables. Vers 300, ils restent une minorité, un dixième de la population, mais organisée, avec des évêques, des biens et des écoles. Celse écrit vers 178, quand cette minorité commence à inquiéter ; Origène lui répond vers 248, à la veille de l'édit de Dèce.
 
 #### Ce que l'essai suppose
 

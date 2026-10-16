@@ -3,7 +3,7 @@ titre: La chrétienté médiévale : de la chute de Rome aux bûchers
 categorie: histoire
 ordre: 50
 sections: maitre-eckhart ; dostoievski ; premiere-partie ; passage
-motifs: chrétienté ; Moyen Âge ; Inquisition ; bûchers
+motifs: chrétienté médiévale ; Moyen Âge ; Inquisition ; bûchers
 references: Jacques Le Goff, *La Civilisation de l'Occident médiéval* (1964) ; Jean Delumeau, *Le Péché et la peur* (1983) ; Robert Ian Moore, *The Formation of a Persecuting Society* (1987) ; André Vauchez, *La Spiritualité du Moyen Âge occidental* (1975)
 ---
 Le mot chrétienté (*christianitas*) désigne, à partir du IXe siècle, l'ensemble des peuples d'Occident unis par la même foi, le même clergé et la même autorité romaine : une société où l'Église est partout, dans le droit, le calendrier, l'école, la naissance et la mort. Il désigne aussi, chez Kierkegaard, cette religion devenue coutume que le christianisme doit combattre. L'histoire de la chrétienté médiévale est celle de la construction de cet ensemble, puis de la police de ses frontières.
