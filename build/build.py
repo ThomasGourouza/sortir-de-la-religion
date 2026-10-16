@@ -39,7 +39,8 @@ STATUT = re.compile(r"vérifi|cité|mémoire|paraphras|selon|d'après|\blues?\b|
 
 
 def masquer_statuts(t):
-    """Retire les crochets de statut, garde les ellipses et les courtes insertions."""
+    """Retire les commentaires HTML et les crochets de statut, garde les ellipses et les courtes insertions."""
+    t = re.sub(r"<!--.*?-->", "", t, flags=re.S)
     def remplace(m):
         c = m.group(1).strip()
         if c in ("...", "…"):
@@ -483,13 +484,20 @@ def personnes(titre):
             for n, d in re.findall(r"([^()]+?)\s*\(([^)]*\d[^)]*)\)", tete)]
 
 
+PAGES_SITE = (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique"),
+              ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"))
+
+
+def onglets(actif):
+    """Onglets de navigation entre les pages du site, places dans le bandeau fixe de chaque page."""
+    return '<nav class="onglets" aria-label="Pages du site">%s</nav>' % "".join(
+        '<a class="onglet" href="%s"%s>%s</a>' % (f, ' aria-current="page"' if f == actif else "", l) for f, l in PAGES_SITE)
+
+
 def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, version):
     tpl = open(os.path.join(ICI, "page.template.html"), encoding="utf-8").read()
-    nav = " ".join('<a class="chip%s" href="%s">%s</a>' % (" actif" if f == nom else "", f, l)
-                   for f, l in (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique"),
-                                ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque")))
     rempl = {"TITRE_PAGE": titre_page, "TITRE_BRUT": html.escape(titre), "DESCRIPTION": description,
-             "OG_IMAGE": og_image, "NAV": nav, "INTRO": intro, "CONTENU": contenu}
+             "OG_IMAGE": og_image, "ONGLETS": onglets(nom), "INTRO": intro, "CONTENU": contenu}
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
     tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace(
@@ -755,17 +763,18 @@ def construire(chemin, version=None):
                 sid, sid, en_ligne(nom if est_auteur else sec["titre"]),
                 ' <small>%s</small>' % html.escape(dates) if dates else ""))
         meta = "%d auteurs" % nb_auteurs if nb_auteurs else ""
+        card_img = par_section.get((pid, "partcard"), [])
         corps.append(
             '<details class="partie" id="%s"><summary><span class="part-label">%s</span>'
             '<span class="part-sub">%s</span>%s%s</summary>'
-            '<div class="part-body">%s%s%s<p class="part-end"><a href="#%s" data-target="%s">Haut de la partie</a></p></div></details>' % (
+            '<div class="part-body">%s%s%s%s<p class="part-end"><a href="#%s" data-target="%s">Haut de la partie</a></p></div></details>' % (
                 pid, en_ligne(label), en_ligne(sous), '<span class="part-meta">%s</span>' % meta if meta else "", lien_btn(pid),
+                figure(card_img[0], "part-image") if card_img else "",
                 ligne_annexes(par_cible.get(pid)), "\n".join(intro_p), "\n".join(secs_html), pid, pid))
         toc.append('<li class="toc-part"><a href="#%s" data-target="%s">%s%s</a>%s</li>' % (
             pid, pid, en_ligne(ptitre),
             '<span class="toc-count" data-count="%s"></span>' % pid if toc_secs else "",
             "<ul>%s</ul>" % "".join(toc_secs) if toc_secs else ""))
-        card_img = par_section.get((pid, "partcard"), [])
         cartes.append(
             '<a class="card" href="#%s" data-target="%s">%s<span class="card-text">'
             '<span class="card-label">%s</span><span class="card-sub">%s</span>'
@@ -794,6 +803,7 @@ def construire(chemin, version=None):
         "COUVERTURE": figure(cover[0], "cover") if cover else "",
         "STORE": "sdr-",
         "TITRE_ONGLET": html.escape(titre),
+        "ONGLETS": onglets("index.html"),
         "PAGE": "index.html",
         "CARTES": "\n".join(cartes),
         "TOC": "\n".join(toc),

@@ -102,6 +102,15 @@
   /* Tout déplier, tout replier */
   $("#expand-all").addEventListener("click", function () { $$("details.partie, details.section").forEach(function (d) { d.open = true; }); saveOpen(); });
   $("#collapse-all").addEventListener("click", function () { parties.forEach(function (d) { d.open = false; }); saveOpen(); });
+  /* Menu « Actions » : se referme après un choix (sauf l'enregistrement hors connexion, qui affiche sa progression) et au clic ailleurs */
+  var actions = $("#actions");
+  if (actions) {
+    actions.addEventListener("click", function (e) {
+      var b = e.target.closest("button");
+      if (b && b.id !== "offline-btn") actions.open = false;
+    });
+    document.addEventListener("click", function (e) { if (actions.open && !actions.contains(e.target)) actions.open = false; });
+  }
 
   /* Mémoire des parties ouvertes */
   function saveOpen() {
