@@ -57,6 +57,8 @@ Choix et écarts du lot 2 :
 
 **Finitions du 16 octobre 2026, après la revue** : titres d'œuvres mis en italique dans le corps des cent vingt-six articles (943 italiques, par sept passes vérifiées : seuls des astérisques ajoutés, en-têtes et sous-titres intacts) ; les titres d'articles courts restent en romain, faute de guillemets autorisés ; `reponses.json` complété des deux réponses d'Otto, à Schleiermacher et à James, que l'essai donne pour attestées (74 échanges, 60 attestés, 14 construits, compte mis à jour dans CLAUDE.md) ; `build.py` : la compilation des motifs est mise en cache entre les appels de `lier`, ce qui ramène le build de plus d'une minute à trois secondes sans changer la sortie.
 
+**Correctif du 16 octobre 2026** : les liens d'un article vers un autre article de la même page (annexes.html#…) ne faisaient que changer l'ancre, sans ouvrir l'article cible ; `js/pages.js` écoute désormais `hashchange`, ouvre et met en évidence la cible, lève le filtre qui la masquerait et la fait défiler en vue. Vérifié dans le navigateur (Herméneutique vers Chrétienté médiévale), ainsi que l'arrivée sur l'essai depuis « Dans l'essai ».
+
 **Le plan est exécuté en entier.** Restent, à la charge de l'auteur : la relecture des articles, le commit, et deux contrôles que la session n'a pas pu faire, l'affichage à 390 px et la page Annexes hors connexion après rechargement.
 
 ## Principe technique

@@ -66,11 +66,25 @@
     });
   });
 
-  /* Lien profond vers un terme du lexique ou un article des annexes : le mettre en évidence, et l'ouvrir s'il est replié */
-  if (location.hash.length > 1) {
+  /* Lien profond vers un terme du lexique ou un article des annexes : le mettre en évidence, et l'ouvrir s'il est replié.
+     Vaut à l'arrivée sur la page et à chaque changement d'ancre (lien d'un article vers un autre de la même page). */
+  function cible(defiler) {
+    if (location.hash.length < 2) return;
     var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (el) { el.classList.add("cible"); if (el.tagName === "DETAILS") el.open = true; }
+    if (!el) return;
+    $$(".cible").forEach(function (x) { if (x !== el) x.classList.remove("cible"); });
+    el.classList.add("cible");
+    if (el.tagName === "DETAILS") el.open = true;
+    if (el.hidden) { /* masqué par un filtre : on le rétablit */
+      if (input) input.value = "";
+      type = "tous";
+      typeBtns.forEach(function (x) { x.setAttribute("aria-pressed", String(x.getAttribute("data-filtre-type") === "tous")); });
+      apply();
+    }
+    if (defiler) el.scrollIntoView();
   }
+  cible(false);
+  window.addEventListener("hashchange", function () { cible(true); });
 
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
     navigator.serviceWorker.register("sw.js").catch(function () {});
