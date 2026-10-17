@@ -10,7 +10,7 @@ Le plus court des quatre évangiles est aussi, selon la quasi-totalité des exé
 
 #### Un texte anonyme, autour de 70
 
-Le livre ne nomme pas son auteur. La tradition qui l'attribue à Marc remonte à Papias, évêque d'Hiérapolis au début du IIe siècle, cité par Eusèbe : Marc aurait été l'interprète de Pierre et aurait mis par écrit ses souvenirs, sans ordre. Les historiens tiennent cette notice pour incertaine et parlent d'un auteur anonyme, chrétien de langue grecque, écrivant pour des lecteurs non juifs auxquels il explique les coutumes et traduit les mots araméens. La datation la plus courante le place vers 70, juste avant ou juste après la prise de Jérusalem par Titus, car le discours du chapitre 13 annonce la ruine du Temple. Le lieu, Rome selon la tradition ou la Syrie, reste discuté.
+La tradition qui l'attribue à Marc remonte à Papias, évêque d'Hiérapolis au début du IIe siècle, cité par Eusèbe : Marc aurait été l'interprète de Pierre et aurait mis par écrit ses souvenirs, sans ordre. Les historiens tiennent cette notice pour incertaine et parlent d'un auteur anonyme de langue grecque, écrivant pour des lecteurs non juifs auxquels il explique les coutumes et traduit les mots araméens. La datation la plus courante le place vers 70, juste avant ou juste après la prise de Jérusalem par Titus, car le discours du chapitre 13 annonce la ruine du Temple. Le lieu, Rome selon la tradition ou la Syrie, reste discuté.
 
 #### Le plan
 
@@ -22,7 +22,7 @@ Le Jésus de Marc agit plus qu'il ne parle ; l'adverbe aussitôt revient des diz
 
 #### Composition et lecture
 
-Marc assemble des unités d'abord transmises oralement, qu'il relie par des sommaires et des notations de lieu. La théorie des deux sources, dominante depuis le XIXe siècle, fait de lui la source commune de Matthieu et de Luc, qui reprennent la plus grande partie de son texte en le corrigeant. Longtemps tenu pour un abrégé de Matthieu, ce qu'affirmait Augustin, il a été réhabilité par la critique allemande, qui a vu dans son antériorité la voie d'accès au Jésus de l'histoire, avant que Wrede ne montre qu'il est lui aussi une œuvre de foi.
+Marc assemble des unités d'abord transmises oralement, qu'il relie par des sommaires et des notations de lieu. La théorie des deux sources, dominante depuis le XIXe siècle, fait de lui la source commune de Matthieu et de Luc, qui reprennent la plus grande partie de son texte en le corrigeant. Longtemps tenu pour un abrégé de Matthieu, ce qu'affirmait Augustin, il a été réhabilité par la critique allemande, qui a vu dans son antériorité la voie d'accès au Jésus de l'histoire, avant que Wrede ne montre qu'il est lui aussi une œuvre de foi et que Schweitzer, en 1906, ne tire de son eschatologie un Jésus prophète de la fin.
 
 #### Ce que l'essai suppose
 

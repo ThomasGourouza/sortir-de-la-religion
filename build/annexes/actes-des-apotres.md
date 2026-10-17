@@ -4,6 +4,7 @@ categorie: bible
 ordre: 160
 sections: paul-de-tarse ; justin-martyr ; karl-marx-et-friedrich-engels ; auguste-comte
 motifs: Actes des Apôtres ; Pentecôte ; concile de Jérusalem ; communauté de Jérusalem ; mise en commun des biens
+oeuvres: images/art/caravage-conversion-saint-paul.jpg
 references: Daniel Marguerat, *La Première Histoire du christianisme. Les Actes des apôtres* (1999) ; Jacques Dupont, *Études sur les Actes des Apôtres* (1967) ; Ernst Haenchen, *Die Apostelgeschichte* (1956) ; Richard I. Pervo, *Acts. A Commentary* (2009)
 ---
 Les Actes des Apôtres sont le seul livre du Nouveau Testament qui raconte ce qui suit la mort de Jésus : la naissance d'une communauté à Jérusalem, puis la diffusion du message jusqu'à Rome. Second volume de l'Évangile de Luc, il est composé vers 80 à 90 par un auteur anonyme que la tradition identifie au médecin compagnon de Paul.

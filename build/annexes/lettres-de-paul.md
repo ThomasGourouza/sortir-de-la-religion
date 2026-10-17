@@ -4,6 +4,7 @@ categorie: bible
 ordre: 170
 sections: paul-de-tarse ; barth ; nietzsche ; simone-weil
 motifs: Épître aux Romains ; épître aux Romains ; lettre aux Romains ; lettre aux Philippiens ; folie de la croix ; kénose ; épîtres pastorales
+oeuvres: images/art/rembrandt-apotre-paul.jpg
 references: E. P. Sanders, *Paul and Palestinian Judaism* (1977) ; Simon Légasse, *Paul apôtre* (1991) ; Jacob Taubes, *La Théologie politique de Paul* (1993) ; Daniel Marguerat (dir.), *Introduction au Nouveau Testament* (2000)
 ---
 Les lettres de Paul, rédigées vers 50 à 60, sont les plus anciens écrits chrétiens conservés. Adressées à des communautés précises, elles sont devenues le socle de la théologie chrétienne et l'objet de ses plus grandes querelles.

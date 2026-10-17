@@ -4,6 +4,7 @@ categorie: bible
 ordre: 120
 sections: dostoievski ; soren-kierkegaard ; karl-marx-et-friedrich-engels ; simone-weil
 motifs: Évangile de Luc ; évangile de Luc ; Évangile de Matthieu ; évangile de Matthieu ; Sermon sur la montagne ; Béatitudes ; tentations au désert ; bon Samaritain ; fils prodigue ; Notre Père
+oeuvres: images/art/duccio-tentation.jpg ; images/art/partie-cinquieme.jpg
 references: Raymond E. Brown, *The Birth of the Messiah* (1977) ; Pierre Bonnard, *L'Évangile selon saint Matthieu* (1963) ; François Bovon, *L'Évangile selon saint Luc* (1991-2009) ; Daniel Marguerat (dir.), *Introduction au Nouveau Testament* (2000)
 ---
 Matthieu et Luc, écrits une génération après Marc, reprennent l'essentiel de son récit et l'enrichissent de paroles de Jésus, de récits d'enfance et de paraboles devenus les pages les plus connues des évangiles. Ils en donnent deux portraits distincts, l'un tourné vers Israël, l'autre vers le monde grec.

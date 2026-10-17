@@ -4,6 +4,7 @@ categorie: bible
 ordre: 50
 sections: maimonide ; ludwig-feuerbach ; freud ; premiere-partie
 motifs: Exode ; Décalogue ; veau d'or ; buisson ardent ; sortie d'Égypte ; tables de la Loi ; Sinaï
+oeuvres: images/art/rembrandt-moise-tables.jpg ; images/art/poussin-veau-d-or.jpg
 references: Thomas Römer, *Moïse : lui que Yahvé a connu face à face* (2002) ; Israel Finkelstein et Neil Asher Silberman, *La Bible dévoilée* (2001) ; Jan Assmann, *Moïse l'Égyptien* (1997) ; Sigmund Freud, *L'Homme Moïse et la religion monothéiste* (1939)
 ---
 L'Exode, deuxième livre du Pentateuque, raconte la libération des Hébreux hors d'Égypte et le don de la Loi au Sinaï ; les livres suivants le prolongent jusqu'à la mort de Moïse. C'est le récit fondateur d'Israël, que la Pâque juive commémore chaque année.

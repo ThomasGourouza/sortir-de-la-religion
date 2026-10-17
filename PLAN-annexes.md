@@ -247,3 +247,7 @@ Onzième et douzième partie (lot 7) : `schmitt-theorie` (décisionnisme, ami et
 ## Annexes bibliques (17 octobre 2026)
 
 Vingt-deux articles de catégorie `bible` ajoutés (inventaire en annexe A), tous entre 400 et 700 mots, relus : faits, dates, neutralité, absence de citation, conformité de « Ce que l'essai suppose » au texte de l'essai. Les cibles `sections` ont été élaguées pour qu'aucune ligne « Pour comprendre » ne dépasse neuf renvois. La passe de liaison résout désormais les chevauchements en faveur du motif le plus long, et prend pour chaque cible sa vraie première occurrence. Liens vers les annexes dans l'essai : 408 avant, 463 après.
+
+## Annexes bibliques, seconde passe (17 octobre 2026)
+
+Six articles ajoutés à la catégorie `bible` : `chronologie-biblique` (tableau des temps du récit et des temps de l'écriture), `livres-brefs-de-l-ancien-testament` (Ruth, Jonas, Esther, Tobie, Judith, Lamentations, Esdras et Néhémie), `sacrifice-dans-la-bible`, `dieu-de-la-bible-noms-et-monotheisme`, `mal-satan-et-au-dela`, `messie-fils-de-l-homme-fils-de-dieu`. Cinq notions au lexique : Alliance, Messie, Canon biblique, Apocryphe, Torah (les motifs Torah et Thora quittent l'annexe sur le judaïsme). Mécanique : champ `oeuvres` des annexes (vignettes vers la Galerie, liens retour depuis la Galerie, 23 œuvres reliées) ; index des passages bibliques cités, généré par `index_passages()` dans `build.py` à partir des références de l'essai (25 passages), placé en tête du groupe Bible. Liens dans l'essai : lexique 625 puis 630, annexes 463 puis 473.

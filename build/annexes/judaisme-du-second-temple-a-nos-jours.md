@@ -3,7 +3,7 @@ titre: Le judaïsme : du second Temple à l'émancipation
 categorie: histoire
 ordre: 12
 sections: philon-d-alexandrie ; paul-de-tarse ; maimonide ; levinas
-motifs: pharisiens ; rabbinique ; Thora ; Torah ; Talmud
+motifs: pharisiens ; rabbinique ; Talmud
 references: Mireille Hadas-Lebel, *Jérusalem contre Rome* (1990) ; Gershom Scholem, *Les Grands Courants de la mystique juive* (1941) ; Maurice-Ruben Hayoun, *Maïmonide* (1987) ; Michael A. Meyer, *Response to Modernity* (1988) ; Shmuel Trigano (dir.), *La Société juive à travers l'histoire* (1992)
 ---
 Le christianisme naît dans le judaïsme, et plusieurs auteurs de l'essai, Philon, Paul, Maïmonide, Spinoza, Levinas, Buber, en viennent. Le judaïsme n'est pourtant pas resté celui du temps de Jésus : il s'est reconstruit après la destruction du Temple, a produit le Talmud, une philosophie et une mystique, puis a traversé l'émancipation moderne. Ces repères sont supposés connus par l'essai.

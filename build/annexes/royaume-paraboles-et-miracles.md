@@ -4,6 +4,7 @@ categorie: bible
 ordre: 150
 sections: kant ; ernest-renan ; nietzsche ; jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste ; simone-weil
 motifs: Royaume de Dieu ; paraboles ; Fils de l'homme ; miracles de Jésus ; amour des ennemis
+oeuvres: images/art/bon-pasteur-crypte-lucine.jpg
 references: E. P. Sanders, *Jesus and Judaism* (1985) ; John P. Meier, *A Marginal Jew* (1991-2016) ; Joachim Jeremias, *Les Paraboles de Jésus* (1947) ; C. H. Dodd, *The Parables of the Kingdom* (1935)
 ---
 Avant d'être le Christ des credos, Jésus est, dans les évangiles, un prédicateur itinérant de Galilée qui annonce le Royaume de Dieu, parle en paraboles, guérit et mange avec les exclus. Ces repères résument ce que les trois premiers évangiles rapportent de son enseignement et la manière dont les historiens le lisent.

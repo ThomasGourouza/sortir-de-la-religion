@@ -4,6 +4,7 @@ categorie: bible
 ordre: 40
 sections: pascal ; soren-kierkegaard ; girard ; troisieme-partie ; maimonide
 motifs: Abraham ; sacrifice d'Isaac ; ligature d'Isaac ; lutte de Jacob avec l'ange ; patriarches
+oeuvres: images/art/rembrandt-sacrifice-isaac.jpg ; images/art/caravage-sacrifice-isaac.jpg ; images/art/delacroix-jacob-ange.jpg
 references: Søren Kierkegaard, *Crainte et tremblement* (1843) ; Shalom Spiegel, *The Last Trial* (1967) ; Thomas Römer, *L'Invention de Dieu* (2014) ; Jean-Louis Ska, *Introduction à la lecture du Pentateuque* (2000)
 ---
 Gn 12 à 50 raconte l'histoire d'une famille, Abraham, Isaac, Jacob et ses douze fils, que la tradition appelle les patriarches. C'est à leur Dieu que Pascal en appelle dans le Mémorial, et le sacrifice d'Isaac a fourni à Kierkegaard et à Girard leur scène décisive.

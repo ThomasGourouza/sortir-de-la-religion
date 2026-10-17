@@ -4,6 +4,7 @@ categorie: bible
 ordre: 70
 sections: porphyre-et-augustin ; pascal
 motifs: Isaïe ; livre de Daniel ; prophètes d'Israël ; exil à Babylone ; serviteur souffrant ; messianisme ; Antiochus Épiphane
+oeuvres: images/art/michel-ange-isaie.jpg ; images/art/partie-naissance-christianisme.jpg
 references: Joseph Blenkinsopp, *Une histoire de la prophétie en Israël* (1983) ; André Neher, *L'Essence du prophétisme* (1955) ; John J. Collins, *The Apocalyptic Imagination* (1984) ; Thomas Römer, Jean-Daniel Macchi et Christophe Nihan (dir.), *Introduction à l'Ancien Testament* (2004)
 ---
 Les prophètes occupent dans la Bible hébraïque une section entière, et leurs livres sont parmi les plus cités par le Nouveau Testament. Isaïe, Jérémie, Ézéchiel et les douze petits prophètes, auxquels la Bible chrétienne joint Daniel, ont façonné les idées d'alliance, de jugement et de messie.

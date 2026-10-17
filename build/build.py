@@ -318,7 +318,7 @@ def slug_terme(t):
 
 CATEGORIES = (("theories", "Théories des auteurs"), ("bible", "Bible : les textes"), ("histoire", "Histoire"),
               ("disciplines", "Disciplines et méthodes"), ("courants", "Courants et doctrines"))
-CHAMPS_LISTE = ("sections", "motifs", "references")
+CHAMPS_LISTE = ("sections", "motifs", "references", "oeuvres")
 
 
 def charger_annexes():
@@ -339,7 +339,7 @@ def charger_annexes():
         if not lignes or lignes[0].strip() != "---" or fin is None:
             print("  annexes/%s : en-tête manquant" % f)
             continue
-        a = {"id": f[:-3], "titre": "", "categorie": "", "ordre": 0, "sections": [], "motifs": [], "references": [],
+        a = {"id": f[:-3], "titre": "", "categorie": "", "ordre": 0, "sections": [], "motifs": [], "references": [], "oeuvres": [],
              "lignes": lignes[fin + 1:]}
         for l in lignes[1:fin]:
             m = re.match(r"^([a-z]+):\s*(.*)$", l)
@@ -454,7 +454,7 @@ def ligne_annexes(annexes):
         '<a href="annexes.html#%s">%s</a>' % (a["id"], en_ligne(a["titre"].split(" : ")[0])) for a in annexes)
 
 
-def rendre_annexe(a, libelles, cibles):
+def rendre_annexe(a, libelles, cibles, vignette=None):
     """Rend un article d'annexe en <details> replie ; les sous-titres « #### » deviennent des <h3>."""
     morceaux, cur, sous = [], [], None
     for l in a["lignes"]:
@@ -472,9 +472,11 @@ def rendre_annexe(a, libelles, cibles):
     corps_html = lier("\n".join(corps), cibles, scope_self=("annexes.html", a["id"]))
     essai = " · ".join('<a href="index.html#%s">%s</a>' % (s, html.escape(libelles[s])) for s in a["sections"] if s in libelles)
     refs = " ; ".join(en_ligne(r) for r in a["references"])
+    galerie = "".join(vignette(f) for f in a.get("oeuvres", [])) if vignette else ""
     return ('<details class="annexe" data-item data-type="%s" id="%s"><summary><span class="annexe-titre">%s</span>'
-            '<span class="annexe-cat">%s</span></summary><div class="annexe-corps">%s%s%s</div></details>') % (
+            '<span class="annexe-cat">%s</span></summary><div class="annexe-corps">%s%s%s%s</div></details>') % (
         a["categorie"], a["id"], en_ligne(a["titre"]), dict(CATEGORIES).get(a["categorie"], a["categorie"]), corps_html,
+        '<div class="annexe-oeuvres"><span>Dans la Galerie :</span>%s</div>' % galerie if galerie else "",
         '<p class="annexe-essai">Dans l\'essai : %s</p>' % essai if essai else "",
         '<p class="annexe-refs">Pour aller plus loin : %s</p>' % refs if refs else "")
 
@@ -576,6 +578,72 @@ def portrait_de(nom, candidats):
     return min(trouves, key=lambda x: x[0])[1] if trouves else None
 
 
+def titre_oeuvre(legende, alias):
+    """Titre d'une œuvre tiré de sa légende : avant le premier « : », sans le nom de l'artiste en tête."""
+    t = legende.split(" : ")[0].rstrip(".")
+    for a in sorted(alias, key=len, reverse=True):
+        if t.startswith(a + ", "):
+            return t[len(a) + 2:]
+    return t
+
+
+LIVRES_BIBLE = ("Gn", "Ex", "Lv", "Nb", "Dt", "Jos", "Jg", "Rt", "1 S", "2 S", "1 R", "2 R", "1 Ch", "2 Ch", "Esd", "Ne", "Est",
+                "Tb", "Jdt", "1 M", "2 M", "Jb", "Ps", "Pr", "Qo", "Ct", "Sg", "Si", "Is", "Jr", "Lm", "Ba", "Ez", "Dn", "Os",
+                "Jl", "Am", "Jon", "Mi", "Za", "Ml", "Mt", "Mc", "Lc", "Jn", "Ac", "Rm", "1 Co", "2 Co", "Ga", "Ep", "Ph", "Col",
+                "1 Th", "2 Th", "1 Tm", "2 Tm", "Tt", "Phm", "He", "Jc", "1 P", "2 P", "1 Jn", "Jude", "Ap")
+REF_BIBLE = re.compile(r"(?<![\w])(%s) (\d+)(?:, (\d+)(?:-\d+)?)?(?![\w-])" % "|".join(
+    re.escape(l) for l in sorted(LIVRES_BIBLE, key=len, reverse=True)))
+
+
+def annexe_du_passage(livre, ch):
+    """L'annexe biblique qui explique un passage : par livre, et pour la Genèse et 1 Co 15 par chapitre."""
+    if livre == "Gn":
+        return "genese-creation-et-chute" if ch <= 3 else ("cain-deluge-et-babel" if ch <= 11 else "abraham-isaac-jacob")
+    if livre == "1 Co" and ch == 15:
+        return "passion-et-resurrection"
+    table = {"Ex": "exode-moise-et-la-loi", "Lv": "sacrifice-dans-la-bible", "Nb": "exode-moise-et-la-loi", "Dt": "exode-moise-et-la-loi",
+             "Jos": "juges-rois-david-salomon", "Jg": "juges-rois-david-salomon", "1 S": "juges-rois-david-salomon",
+             "2 S": "juges-rois-david-salomon", "1 R": "juges-rois-david-salomon", "2 R": "juges-rois-david-salomon",
+             "Rt": "livres-brefs-de-l-ancien-testament", "Est": "livres-brefs-de-l-ancien-testament", "Jon": "livres-brefs-de-l-ancien-testament",
+             "Esd": "livres-brefs-de-l-ancien-testament", "Ne": "livres-brefs-de-l-ancien-testament", "Lm": "livres-brefs-de-l-ancien-testament",
+             "Tb": "livres-brefs-de-l-ancien-testament", "Jdt": "livres-brefs-de-l-ancien-testament",
+             "Jb": "psaumes-job-et-sagesse", "Ps": "psaumes-job-et-sagesse", "Pr": "psaumes-job-et-sagesse", "Qo": "psaumes-job-et-sagesse",
+             "Ct": "psaumes-job-et-sagesse", "Sg": "intertestamentaire-et-qumran", "Si": "intertestamentaire-et-qumran",
+             "1 M": "intertestamentaire-et-qumran", "2 M": "intertestamentaire-et-qumran", "Dn": "prophetes-et-daniel",
+             "Mt": "evangiles-de-matthieu-et-de-luc", "Lc": "evangiles-de-matthieu-et-de-luc", "Mc": "evangile-de-marc", "Jn": "evangile-de-jean",
+             "Ac": "actes-des-apotres", "He": "epitres-catholiques-et-hebreux", "Jc": "epitres-catholiques-et-hebreux",
+             "1 P": "epitres-catholiques-et-hebreux", "2 P": "epitres-catholiques-et-hebreux", "1 Jn": "epitres-catholiques-et-hebreux",
+             "Jude": "epitres-catholiques-et-hebreux", "Ap": "apocalypse-de-jean"}
+    if livre in table:
+        return table[livre]
+    if livre in ("Rm", "1 Co", "2 Co", "Ga", "Ep", "Ph", "Col", "1 Th", "2 Th", "1 Tm", "2 Tm", "Tt", "Phm"):
+        return "lettres-de-paul"
+    return "prophetes-et-daniel"  # Is, Jr, Ez, Os, Am, Mi et les autres prophètes
+
+
+def index_passages(textes, libelles, ids_annexes):
+    """Tableau des passages bibliques cités par l'essai, dans l'ordre des livres : référence, section, annexe."""
+    vus = {}
+    for sid, texte in textes:
+        for m in REF_BIBLE.finditer(texte):
+            ref = m.group(0)
+            cle = (LIVRES_BIBLE.index(m.group(1)), int(m.group(2)), int(m.group(3) or 0), ref)
+            vus.setdefault(cle, [])
+            if sid not in vus[cle]:
+                vus[cle].append(sid)
+    lignes = []
+    for cle in sorted(vus):
+        livre, ch = LIVRES_BIBLE[cle[0]], cle[1]
+        aid = annexe_du_passage(livre, ch)
+        if aid not in ids_annexes:
+            print("  index des passages : pas d'annexe pour", cle[3])
+            continue
+        sections = " · ".join('<a href="index.html#%s">%s</a>' % (s, html.escape(libelles.get(s, s))) for s in vus[cle])
+        lignes.append('<tr><td>%s</td><td>%s</td><td><a href="#%s">%s</a></td></tr>' % (
+            html.escape(cle[3]), sections, aid, html.escape(ids_annexes[aid])))
+    return lignes
+
+
 def cle_auteur(nom):
     """Cle de tri d'un nom d'ecrivain : nom de famille (avec sa particule capitalisee), puis nom complet."""
     if nom in CLES_AUTEURS:
@@ -588,7 +656,7 @@ def cle_auteur(nom):
 
 
 def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None, sources="", credits="",
-                 tableau="", portraits=None, ecrivains=None, artistes=None, oeuvres=None):
+                 tableau="", portraits=None, ecrivains=None, artistes=None, oeuvres=None, textes=()):
     libelles = libelles or {}
     artistes = artistes or {}
     oeuvres = oeuvres or {}
@@ -773,12 +841,36 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
 
     # ---------------------------------------------------------------- annexes
     cibles = cibles_liaison(annexes)
+    liste_artistes = charger("artistes.json", [])
+    images_par_fichier = {im["file"]: im for im in charger_images()}
+    artiste_de = {f: a for a in liste_artistes for f in a["oeuvres"]}
+
+    def vignette(f):
+        """Une œuvre de la Galerie dans une annexe : vignette agrandie au survol, titre lié à la fiche de l'artiste."""
+        im, a = images_par_fichier.get(f), artiste_de.get(f)
+        if not im or not a:
+            print("  annexes : œuvre inconnue de la galerie", f)
+            return ""
+        grand = oeuvres[f][2] if f in oeuvres and len(oeuvres[f]) > 2 else f
+        return ('<a class="annexe-oeuvre" href="galerie.html#%s"><img class="vignette" src="%s" alt="%s"%s data-legende="%s"%s loading="lazy">'
+                '<span>%s</span></a>') % (
+                    slug_terme(a["nom"]), src_img(f), html.escape(im.get("alt", "")), attr_dims(f), html.escape(im.get("caption", "")),
+                    ' data-grand="%s"' % src_img(grand) if grand != f else "",
+                    html.escape(titre_oeuvre(im.get("caption", ""), a.get("alias", []))))
+    titres_annexes = {a["id"]: a["titre"].split(" : ")[0] for a in annexes}
+    lignes_passages = index_passages(textes, libelles, titres_annexes)
+    passages = ('<details class="annexe" data-item data-type="bible" id="passages-cites"><summary>'
+                '<span class="annexe-titre">Les passages bibliques cités par l\'essai</span><span class="annexe-cat">Index</span></summary>'
+                '<div class="annexe-corps"><p>Les %d passages de la Bible que l\'essai cite ou désigne par leur référence, dans l\'ordre des livres, '
+                'avec la section où ils apparaissent et l\'annexe qui les explique.</p><div class="table-wrap"><table class="passages">'
+                '<thead><tr><th>Passage</th><th>Dans l\'essai</th><th>Annexe</th></tr></thead><tbody>%s</tbody></table></div></div></details>') % (
+                    len(lignes_passages), "".join(lignes_passages)) if lignes_passages else ""
     groupes = []
     for cat, lab in CATEGORIES:
         arts = [a for a in annexes if a["categorie"] == cat]
         if arts:
-            groupes.append('<section class="rep-carte annexes-groupe" data-groupe id="annexes-%s"><h2>%s</h2>%s</section>' % (
-                cat, lab, "".join(rendre_annexe(a, libelles, cibles) for a in arts)))
+            groupes.append('<section class="rep-carte annexes-groupe" data-groupe id="annexes-%s"><h2>%s</h2>%s%s</section>' % (
+                cat, lab, passages if cat == "bible" else "", "".join(rendre_annexe(a, libelles, cibles, vignette) for a in arts)))
     chips = "".join('<button class="chip" data-filtre-type="%s" aria-pressed="%s">%s</button>' % (c, str(c == "tous").lower(), l)
                     for c, l in (("tous", "Tous"),) + tuple((c, l.split(" ")[0]) for c, l in CATEGORIES))
     filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un article…" aria-label="Chercher">'
@@ -856,8 +948,6 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
     # Même forme que la Bibliothèque : une fiche repliable par artiste (build/artistes.json : identifiant Wikidata,
     # dates, fichiers de ses œuvres), et dans la fiche chaque œuvre avec sa vignette, agrandie au survol, et le lien
     # vers l'endroit de l'essai où elle figure (section, partie ou couverture).
-    liste_artistes = charger("artistes.json", [])
-    images_par_fichier = {im["file"]: im for im in charger_images()}
     listes = {f for a in liste_artistes for f in a["oeuvres"]}
     for f in sorted(oeuvres):
         if f.startswith("images/art/") and f not in listes:  # les pages de titre et les portraits ne sont pas des œuvres de la galerie
@@ -866,13 +956,10 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
         for f in a["oeuvres"]:
             if f not in oeuvres:
                 print("  artistes.json : fichier inconnu ou non affiché dans l'essai", f)
-
-    def titre_oeuvre(legende, alias):
-        t = legende.split(" : ")[0].rstrip(".")
-        for a in sorted(alias, key=len, reverse=True):
-            if t.startswith(a + ", "):
-                return t[len(a) + 2:]
-        return t
+    annexes_de = {}  # œuvre -> annexes qui la commentent (champ « oeuvres » des annexes)
+    for an in annexes:
+        for f in an.get("oeuvres", []):
+            annexes_de.setdefault(f, []).append(an)
 
     def rendre_artiste(a, siecle_id):
         lis, parties_f = [], []
@@ -887,10 +974,12 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                 parties_f.append(pid)
             lien = "Voir la couverture" if ancre == "top" else ("Voir la partie" if ancre in libelles and ancre not in infos_par_id else "Lire la section")
             lis.append('<li><img class="vignette" src="%s" alt="%s"%s data-legende="%s"%s loading="lazy"><span class="gal-texte"><em>%s</em>'
-                       ' <span class="bib-liens">%s · <a class="r-section" href="index.html#%s">%s</a></span></span></li>' % (
+                       ' <span class="bib-liens">%s · <a class="r-section" href="index.html#%s">%s</a>%s</span></span></li>' % (
                            src_img(f), html.escape(im.get("alt", "")), attr_dims(f), html.escape(im.get("caption", "")),
                            ' data-grand="%s"' % src_img(grand) if grand != f else "",
-                           html.escape(titre_oeuvre(im.get("caption", ""), a.get("alias", []))), html.escape(lib), ancre, lien))
+                           html.escape(titre_oeuvre(im.get("caption", ""), a.get("alias", []))), html.escape(lib), ancre, lien,
+                           "".join(' · <a class="r-section" href="annexes.html#%s">Annexe : %s</a>' % (an["id"], html.escape(an["titre"].split(" : ")[0]))
+                                   for an in annexes_de.get(f, []))))
         sl = slug_terme(a["nom"])
         return ('<details class="rep-carte fiche" data-item data-partie="%s" data-siecle="%s" id="%s" open>'
                 '<summary><h2>%s<span class="f-nom">%s</span>%s</h2></summary>'
@@ -968,6 +1057,7 @@ def construire(chemin, version=None):
 
     sources_html, tableau_html, toc, corps, cartes = "", "", [], [], []
     portraits_par_id = {}  # id de section -> portraits (pour les pages outils)
+    textes = []  # (id, texte brut) des parties et sections, pour l'index des passages bibliques
     oeuvres = {}  # fichier d'une image d'art -> (ancre dans l'essai, libellé), pour la galerie
     nb_parties = 0
     infos = []  # sections, pour la frise
@@ -993,6 +1083,7 @@ def construire(chemin, version=None):
         for f in par_section.get((pid, "figure"), []):
             intro_p.insert(min(1, len(intro_p)), figure(f))
             oeuvres[f["file"]] = (pid, label)
+        textes.append((pid, html.unescape(re.sub(r"<[^>]+>", " ", "\n".join(intro_p)))))
         for sec in part["sections"]:
             base = slug(sec["titre"])
             sid = uid(base, pid)
@@ -1012,6 +1103,7 @@ def construire(chemin, version=None):
             corps_sec = inserer_figures(corps_sec, par_section.get((base, "figure"), []))
             for f in par_section.get((base, "figure"), []):
                 oeuvres[f["file"]] = (sid, nom if dates else sec["titre"])
+            textes.append((sid, html.unescape(re.sub(r"<[^>]+>", " ", "\n".join(corps_sec)))))
             if est_auteur:
                 if portraits:
                     av = "".join('<img class="avatar" src="%s" alt="%s"%s data-legende="%s" loading="lazy">' % (
@@ -1107,14 +1199,14 @@ def construire(chemin, version=None):
             "credits": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>",
             "tableau": tableau_html, "portraits": portraits_par_id,
             "ecrivains": {im["section"]: im for im in images if im["role"] == "ecrivain"},
-            "artistes": {im["section"]: im for im in images if im["role"] == "artiste"}, "oeuvres": oeuvres}
+            "artistes": {im["section"]: im for im in images if im["role"] == "artiste"}, "oeuvres": oeuvres, "textes": textes}
 
 
 def tout_construire(article=ARTICLE):
     version = str(int(time.time()))
     r = construire(article, version=version)
     pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"], r["sources"], r["credits"],
-                 r["tableau"], r["portraits"], r["ecrivains"], r["artistes"], r["oeuvres"])
+                 r["tableau"], r["portraits"], r["ecrivains"], r["artistes"], r["oeuvres"], r["textes"])
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
     open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw.replace("{{VERSION}}", version))
 

@@ -2,7 +2,7 @@
 titre: Les évangiles apocryphes : Thomas, Pierre, Marie, Judas et les autres
 categorie: bible
 ordre: 200
-sections: jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste ; celse-et-origene ; david-friedrich-strauss-et-bruno-bauer
+sections: celse-et-origene ; david-friedrich-strauss-et-bruno-bauer
 motifs: évangile de Thomas ; Évangile de Thomas ; évangiles apocryphes ; évangile de Judas ; apocryphes ; protévangile de Jacques
 references: François Bovon et Pierre Geoltrain (dir.), *Écrits apocryphes chrétiens* (1997-2005) ; Bart D. Ehrman, *Lost Christianities* (2003) ; Elaine Pagels, *The Gnostic Gospels* (1979) ; Jean-Daniel Kaestli et Daniel Marguerat (dir.), *Le Mystère apocryphe* (1995)
 ---

@@ -2,7 +2,7 @@
 titre: Hébreux, Jacques, Pierre, Jean, Jude : les autres lettres
 categorie: bible
 ordre: 180
-sections: paul-de-tarse ; weber ; barth
+sections: weber ; barth
 motifs: épître aux Hébreux ; épître de Jacques ; foi et œuvres ; épîtres catholiques ; sacrifice unique ; Christ grand prêtre
 references: Albert Vanhoye, *Prêtres anciens, prêtre nouveau selon le Nouveau Testament* (1980) ; Raymond E. Brown, *Que sait-on du Nouveau Testament ?* (1997) ; Bart D. Ehrman, *Forgery and Counterforgery* (2013) ; Ceslas Spicq, *L'Épître aux Hébreux* (1952)
 ---

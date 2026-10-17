@@ -4,6 +4,7 @@ categorie: bible
 ordre: 130
 sections: philon-d-alexandrie ; hume ; dixieme-partie ; heidegger
 motifs: Évangile de Jean ; évangile de Jean ; prologue de Jean ; quatrième évangile ; résurrection de Lazare ; incrédulité de Thomas
+oeuvres: images/art/caravage-incredulite-thomas.jpg
 references: Raymond E. Brown, *The Gospel According to John* (1966-1970) ; Rudolf Bultmann, *Das Evangelium des Johannes* (1941) ; Xavier Léon-Dufour, *Lecture de l'Évangile selon Jean* (1988-1996) ; Jean Zumstein, *L'Évangile selon saint Jean* (2007-2014)
 ---
 Le quatrième évangile se distingue des trois autres par sa langue, son plan et sa théologie : il commence avant la création, avec le Verbe auprès de Dieu, et présente un Jésus qui dit ouvertement qui il est. C'est par lui que le vocabulaire grec du Logos est entré dans la foi chrétienne.
@@ -18,7 +19,7 @@ Dix-huit versets ouvrent le livre comme un hymne. Au commencement était le Verb
 
 #### Signes et discours
 
-Jean ne rapporte ni paraboles ni exorcismes, mais sept signes choisis pour leur sens : l'eau changée en vin à Cana, la multiplication des pains, l'aveugle-né, la résurrection de Lazare (Jn 11), qui décide les autorités à le faire mourir. Les signes s'accompagnent de longs discours, à Nicodème sur la naissance d'en haut, à la Samaritaine sur l'eau vive, à la foule sur le pain de vie, aux pharisiens sur le bon pasteur. Jésus s'y déclare le pain de vie, la lumière du monde, la résurrection et la vie, et s'attribue le nom divin. Le discours d'adieu (Jn 13 à 17) promet l'Esprit.
+Jean ne rapporte ni paraboles ni exorcismes, mais sept signes choisis pour leur sens : l'eau changée en vin à Cana, la multiplication des pains, l'aveugle-né, la résurrection de Lazare (Jn 11), qui décide les autorités à le faire mourir. Les signes s'accompagnent de longs discours, à Nicodème sur la naissance d'en haut, à la Samaritaine sur l'eau vive, à la foule sur le pain de vie, aux pharisiens sur le bon pasteur. Par des formules en Je suis, Jésus s'y déclare le pain de vie, la lumière du monde, la résurrection et la vie. Le discours d'adieu (Jn 13 à 17) promet l'Esprit.
 
 #### La Passion et les apparitions
 

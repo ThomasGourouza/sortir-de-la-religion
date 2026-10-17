@@ -4,6 +4,7 @@ categorie: bible
 ordre: 20
 sections: jurgen-habermas ; porphyre-et-augustin ; pourquoi-y-a-t-il-quelque-chose-plutot-que-rien-un-debat-construit ; onzieme-partie ; philon-d-alexandrie
 motifs: Genèse ; Gn 1, 27 ; Adam et Ève ; récit de la création ; image de Dieu ; jardin d'Éden
+oeuvres: images/art/michel-ange-creation-adam.jpg
 references: Gerhard von Rad, *Das erste Buch Mose, Genesis* (1949) ; Paul Ricœur, *La Symbolique du mal* (1960) ; Jean Delumeau, *Une histoire du paradis* (1992) ; Thomas Römer, Jean-Daniel Macchi et Christophe Nihan (dir.), *Introduction à l'Ancien Testament* (2004)
 ---
 Les trois premiers chapitres de la Genèse ouvrent la Bible et racontent la création du monde, la formation du premier couple et sa désobéissance. Peu de pages ont été autant commentées, du péché originel d'Augustin à la dignité humaine chez Habermas.

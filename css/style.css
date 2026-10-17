@@ -284,6 +284,13 @@ img.avatar { cursor: zoom-in; }
 }
 .portrait-popup.visible { opacity: 1; }
 .portrait-popup.large { width: min(720px, calc(100vw - 32px)); }
+/* Annexes : les œuvres de la Galerie qui illustrent l'article, et l'index des passages bibliques */
+.annexe-oeuvres { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 14px 0 6px; font: 13px var(--sans); color: var(--ink-soft); }
+.annexe-oeuvre { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); text-decoration: none; max-width: 100%; }
+.annexe-oeuvre:hover span { text-decoration: underline; }
+.annexe-oeuvre .vignette { width: 56px; height: 42px; }
+table.passages { font-size: .92em; }
+table.passages td:first-child { white-space: nowrap; font-weight: 600; }
 .portrait-popup img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; border-radius: 8px; background: var(--bg-soft); }
 .portrait-popup figcaption { margin: 8px 4px 2px; font: 12.5px/1.4 var(--sans); color: var(--ink-soft); }
 .avatar-init { display: inline-flex; align-items: center; justify-content: center; font: 600 20px var(--sans); color: var(--accent); background: var(--accent-soft); }

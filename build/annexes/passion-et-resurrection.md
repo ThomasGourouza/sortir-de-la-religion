@@ -4,6 +4,7 @@ categorie: bible
 ordre: 140
 sections: jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste ; georg-wilhelm-friedrich-hegel ; dostoievski ; girard ; nietzsche
 motifs: Passion ; Ponce Pilate ; Pilate ; Cène ; Gethsémani ; Golgotha ; tombeau vide
+oeuvres: images/art/leonard-cene.jpg ; images/art/velazquez-christ-crucifie.jpg ; images/art/holbein-christ-mort.jpg ; images/art/grunewald-crucifixion-issenheim.jpg ; images/art/piero-resurrection.jpg ; images/art/la-tour-madeleine-veilleuse.jpg
 references: Raymond E. Brown, *The Death of the Messiah* (1994) ; Simon Légasse, *Le Procès de Jésus* (1994-1995) ; Paula Fredriksen, *Jesus of Nazareth, King of the Jews* (1999) ; Dale C. Allison, *Resurrecting Jesus* (2005)
 ---
 Les quatre évangiles convergent dans leur dernière partie : une semaine à Jérusalem, une arrestation de nuit, un procès, une crucifixion, un tombeau trouvé vide. C'est le noyau le plus ancien de la tradition chrétienne et le point où l'histoire et la foi se séparent le plus nettement.

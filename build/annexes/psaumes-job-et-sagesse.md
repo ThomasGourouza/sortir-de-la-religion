@@ -2,7 +2,7 @@
 titre: Psaumes, Job, Qohélet et les livres de sagesse
 categorie: bible
 ordre: 80
-sections: jung ; leibniz ; dostoievski ; pourquoi-y-a-t-il-quelque-chose-plutot-que-rien-un-debat-construit ; girard
+sections: jung ; leibniz ; dostoievski ; pourquoi-y-a-t-il-quelque-chose-plutot-que-rien-un-debat-construit
 motifs: Psaumes ; livre de Job ; Job ; Qohélet ; Ecclésiaste ; Cantique des cantiques ; Proverbes
 references: Jean Lévêque, *Job et son Dieu* (1970) ; Gerhard von Rad, *Israël et la Sagesse* (1970) ; Hermann Gunkel, *Introduction aux Psaumes* (1933) ; Jean Bottéro, *Naissance de Dieu* (1986)
 ---

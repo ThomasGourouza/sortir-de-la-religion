@@ -4,6 +4,7 @@ categorie: bible
 ordre: 30
 sections: girard ; voegelin-et-aron ; onzieme-partie
 motifs: Déluge ; Noé ; tour de Babel ; Caïn et Abel ; arche de Noé ; Babel
+oeuvres: images/art/bruegel-tour-babel.jpg
 references: Jean Bottéro, *Naissance de Dieu : la Bible et l'historien* (1986) ; Jean Bottéro et Samuel Noah Kramer, *Lorsque les dieux faisaient l'homme* (1989) ; René Girard, *Des choses cachées depuis la fondation du monde* (1978) ; Augustin, *La Cité de Dieu* (413-426)
 ---
 Entre l'expulsion du jardin et la vocation d'Abraham, Gn 4 à 11 raconte les premiers temps de l'humanité : un meurtre, une inondation universelle, une tour inachevée. Ces chapitres, l'histoire des origines, posent en récits la question de la violence et de la démesure humaines, et les modernes y puisent encore leurs figures.
