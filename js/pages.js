@@ -41,12 +41,12 @@
     $$("[data-item]").forEach(function (el) {
       var carte = el.closest(".rep-carte");
       var texte = el.textContent + (carte ? " " + carte.querySelector("h2").textContent : "");
-      if (el.classList.contains("fiche")) { /* une fiche d'auteur : son nom, son tableau et les noms de ses interlocuteurs, pas les notes */
-        texte = $$("h2, .fiche-tab, li[data-type] > a:not(.r-section)", el).map(function (x) { return x.textContent; }).join(" ");
+      if (el.classList.contains("fiche")) { /* une fiche d'auteur ou d'écrivain : nom, tableau, interlocuteurs, œuvres, mais pas les notes */
+        texte = $$("h2, .fiche-tab, li[data-type] > a:not(.r-section), .bib-oeuvres li", el).map(function (x) { return x.textContent; }).join(" ");
       }
       var ok = !q || norm(texte).indexOf(q) >= 0;
       if (ok && type !== "tous" && el.hasAttribute("data-type")) ok = el.getAttribute("data-type") === type;
-      if (ok && part && el.hasAttribute("data-partie")) ok = el.getAttribute("data-partie") === part;
+      if (ok && part && el.hasAttribute("data-partie")) ok = (" " + el.getAttribute("data-partie") + " ").indexOf(" " + part + " ") >= 0;
       if (ok && sie && el.hasAttribute("data-siecle")) ok = el.getAttribute("data-siecle") === sie;
       el.hidden = !ok;
     });

@@ -663,7 +663,7 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
         if s["partie"] not in [p[0] for p in parties]:
             parties.append((s["partie"], s["partie_titre"]))
     opts = '<option value="">Toutes les parties</option>' + "".join(
-        '<option value="%s">%s</option>' % (pid, html.escape(pt.split(" : ")[0])) for pid, pt in parties
+        '<option value="%s">%s</option>' % (pid, html.escape(pt)) for pid, pt in parties  # « Première partie : les Anciens… »
         if "partie" in pt.lower())
 
     datees = sorted([f for f in fiches if f["annee"] is not None], key=lambda f: (f["annee"], f["nom"]))
@@ -781,31 +781,68 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                "Repères pour lire l'essai.", filtres + "".join(groupes) + '<p id="aucun" hidden>Aucun article ne correspond.</p>',
                titre, og_image, version)
 
-    # ---------------------------------------------------------------- bibliotheque
+    # ---------------------------------------------------------------- bibliotheque : les écrivains, par siècle
+    # Même forme que la page Les auteurs : une fiche repliable par écrivain, dates tirées de build/ecrivains.json
+    # (Wikidata), filtres par texte, partie et période ; le corps de la fiche liste ses œuvres citées.
+    dates_ecr = charger("ecrivains.json", {})
     auteurs = {}
     for l in lettres:
         for aut, tit, reste, date in l["oeuvres"]:
             o = auteurs.setdefault(aut, {}).setdefault((tit, date), {"reste": reste, "sections": []})
             if (l["id"], l["nom"]) not in o["sections"]:
                 o["sections"].append((l["id"], l["nom"]))
-    cartes = []
-    for aut in sorted(auteurs, key=cle_auteur):
-        lis = []
-        for (tit, date), o in sorted(auteurs[aut].items(), key=lambda kv: (kv[0][1], slug_terme(kv[0][0]))):
+    for aut in auteurs:
+        if aut not in dates_ecr:
+            print("  ecrivains.json : écrivain sans dates", aut)
+    ecr = [{"nom": aut, "dates": dates_ecr.get(aut, {}).get("dates", ""), "annee": dates_ecr.get(aut, {}).get("annee"), "oeuvres": auteurs[aut]}
+           for aut in auteurs]
+    datees_ecr = sorted([f for f in ecr if f["annee"] is not None], key=lambda f: (f["annee"], cle_auteur(f["nom"])))
+    sans_dates = sorted([f for f in ecr if f["annee"] is None], key=lambda f: cle_auteur(f["nom"]))
+
+    def rendre_ecrivain(f, siecle_id):
+        lis, parties_f = [], []
+        for (tit, date), o in sorted(f["oeuvres"].items(), key=lambda kv: (kv[0][1], slug_terme(kv[0][0]))):
             liens = " · ".join('<a href="index.html#%s">%s</a>' % (sid, html.escape(nom)) for sid, nom in o["sections"])
-            lis.append('<li data-item><em>%s</em>%s%s <span class="bib-liens">%s</span></li>' % (
+            for sid, _ in o["sections"]:
+                pid = infos_par_id.get(sid, {}).get("partie")
+                if pid and pid not in parties_f:
+                    parties_f.append(pid)
+            lis.append('<li><em>%s</em>%s%s <span class="bib-liens">%s</span></li>' % (
                 html.escape(tit), " " + html.escape(o["reste"]) if o["reste"] else "",
                 " (%s)" % html.escape(date) if date else "", liens))
-        cartes.append('<section class="rep-carte" data-groupe id="%s"><h2>%s%s</h2><ul class="bib-oeuvres">%s</ul></section>' % (
-            slug_terme(aut), avatar_html(ecrivains.get(slug_terme(aut)), aut), html.escape(aut), "".join(lis)))
+        return ('<details class="rep-carte fiche" data-item data-partie="%s" data-siecle="%s" id="%s" open>'
+                '<summary><h2>%s<span class="f-nom">%s</span>%s</h2></summary>'
+                '<div class="fiche-corps"><ul class="bib-oeuvres">%s</ul></div></details>') % (
+                    " ".join(parties_f), siecle_id, slug_terme(f["nom"]),
+                    avatar_html(ecrivains.get(slug_terme(f["nom"])), f["nom"]), html.escape(f["nom"]),
+                    '<span class="f-dates">%s</span>' % html.escape(f["dates"]) if f["dates"] else "", "".join(lis))
+    h, cur, siecles = [], None, []
+    for f in datees_ecr:
+        sc = siecle(f["annee"])
+        if sc != cur:
+            if cur:
+                h.append("</section>")
+            siecles.append((slug(sc), sc))
+            h.append('<section class="siecle" data-groupe><h2>%s</h2>' % sc)
+            cur = sc
+        h.append(rendre_ecrivain(f, slug(sc)))
+    if cur:
+        h.append("</section>")
+    if sans_dates:
+        siecles.append(("sans-dates", "Sans dates"))
+        h.append('<section class="siecle" data-groupe><h2>Sans dates</h2>%s</section>' % "".join(rendre_ecrivain(f, "sans-dates") for f in sans_dates))
+    opts_siecles = '<option value="">Toutes les périodes</option>' + "".join(
+        '<option value="%s">%s</option>' % (sid, html.escape(lab)) for sid, lab in siecles)
+    filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un écrivain ou une œuvre…" '
+               'aria-label="Chercher un écrivain ou une œuvre"><select data-filtre-partie aria-label="Filtrer par partie">%s</select>'
+               '<select data-filtre-siecle aria-label="Filtrer par période">%s</select>'
+               '<button class="chip plier" type="button" id="plier-tout" aria-pressed="false">Tout replier</button></div>' % (opts, opts_siecles))
     nb_oeuvres = sum(len(v) for v in auteurs.values())
     page_outil("bibliotheque.html", "Bibliothèque",
-               "Les %d œuvres de %d écrivains convoquées dans les encadrés « En littérature » de l'essai, classées par auteur. "
-               "Chaque œuvre renvoie à la section qui la cite." % (nb_oeuvres, len(auteurs)),
-               "Bibliothèque des œuvres littéraires citées dans l'essai.",
-               '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur ou une œuvre…" '
-               'aria-label="Chercher un auteur ou une œuvre"></div>' + "".join(cartes) + '<p id="aucun" hidden>Aucune œuvre ne correspond.</p>',
-               titre, og_image, version)
+               "Les %d œuvres de %d écrivains convoquées dans les encadrés « En littérature » de l'essai, du plus ancien au plus récent. "
+               "Chaque œuvre renvoie à la section qui la cite ; le filtre par partie retient les écrivains cités dans cette partie." % (nb_oeuvres, len(auteurs)),
+               "Bibliothèque des œuvres littéraires citées dans l'essai, par écrivain et par siècle.",
+               filtres + "".join(h) + '<p id="aucun" hidden>Aucune œuvre ne correspond.</p>', titre, og_image, version)
 
     # ---------------------------------------------------------------- sources et crédits
     page_outil("sources.html", "Sources et crédits",

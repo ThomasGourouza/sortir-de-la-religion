@@ -1,0 +1,632 @@
+{
+ "Hans Christian Andersen": {
+  "qid": "Q5673",
+  "dates": "1805-1875",
+  "annee": 1805
+ },
+ "Aristophane": {
+  "qid": "Q43353",
+  "dates": "445-385 av. J.-C.",
+  "annee": -445
+ },
+ "Matthew Arnold": {
+  "qid": "Q271032",
+  "dates": "1822-1888",
+  "annee": 1822
+ },
+ "Charles Baudelaire": {
+  "qid": "Q501",
+  "dates": "1821-1867",
+  "annee": 1821
+ },
+ "Samuel Beckett": {
+  "qid": "Q37327",
+  "dates": "1906-1989",
+  "annee": 1906
+ },
+ "Georges Bernanos": {
+  "qid": "Q315072",
+  "dates": "1888-1948",
+  "annee": 1888
+ },
+ "William Blake": {
+  "qid": "Q41513",
+  "dates": "1757-1827",
+  "annee": 1757
+ },
+ "Boccace": {
+  "qid": "Q1402",
+  "dates": "1313-1375",
+  "annee": 1313
+ },
+ "Jorge Luis Borges": {
+  "qid": "Q909",
+  "dates": "1899-1986",
+  "annee": 1899
+ },
+ "Mikhaïl Boulgakov": {
+  "qid": "Q835",
+  "dates": "1891-1940",
+  "annee": 1891
+ },
+ "Bertolt Brecht": {
+  "qid": "Q38757",
+  "dates": "1898-1956",
+  "annee": 1898
+ },
+ "Georg Büchner": {
+  "qid": "Q154014",
+  "dates": "1813-1837",
+  "annee": 1813
+ },
+ "George Gordon Byron": {
+  "qid": "Q5679",
+  "dates": "1788-1824",
+  "annee": 1788
+ },
+ "Albert Camus": {
+  "qid": "Q34670",
+  "dates": "1913-1960",
+  "annee": 1913
+ },
+ "Lewis Carroll": {
+  "qid": "Q38082",
+  "dates": "1832-1898",
+  "annee": 1832
+ },
+ "Paul Celan": {
+  "qid": "Q153905",
+  "dates": "1920-1970",
+  "annee": 1920
+ },
+ "Louis-Ferdinand Céline": {
+  "qid": "Q151820",
+  "dates": "1894-1961",
+  "annee": 1894
+ },
+ "Miguel de Cervantès": {
+  "qid": "Q5682",
+  "dates": "1547-1616",
+  "annee": 1547
+ },
+ "René Char": {
+  "qid": "Q315015",
+  "dates": "1907-1988",
+  "annee": 1907
+ },
+ "François-René de Chateaubriand": {
+  "qid": "Q49767",
+  "dates": "1768-1848",
+  "annee": 1768
+ },
+ "Joseph Conrad": {
+  "qid": "Q82925",
+  "dates": "1857-1924",
+  "annee": 1857
+ },
+ "Pierre Corneille": {
+  "qid": "Q747",
+  "dates": "1606-1684",
+  "annee": 1606
+ },
+ "Dante": {
+  "qid": "Q1067",
+  "dates": "1265-1321",
+  "annee": 1265
+ },
+ "Daniel Defoe": {
+  "qid": "Q40946",
+  "dates": "1660-1731",
+  "annee": 1660
+ },
+ "Charles Dickens": {
+  "qid": "Q5686",
+  "dates": "1812-1870",
+  "annee": 1812
+ },
+ "Denis Diderot": {
+  "qid": "Q448",
+  "dates": "1713-1784",
+  "annee": 1713
+ },
+ "Fiodor Dostoïevski": {
+  "qid": "Q991",
+  "dates": "1821-1881",
+  "annee": 1821
+ },
+ "Umberto Eco": {
+  "qid": "Q12807",
+  "dates": "1932-2016",
+  "annee": 1932
+ },
+ "George Eliot": {
+  "qid": "Q131333",
+  "dates": "1819-1880",
+  "annee": 1819
+ },
+ "T. S. Eliot": {
+  "qid": "Q37767",
+  "dates": "1888-1965",
+  "annee": 1888
+ },
+ "Euripide": {
+  "qid": "Q48305",
+  "dates": "v. 480-v. 406 av. J.-C.",
+  "annee": -480
+ },
+ "Gustave Flaubert": {
+  "qid": "Q43444",
+  "dates": "1821-1880",
+  "annee": 1821
+ },
+ "Anatole France": {
+  "qid": "Q42443",
+  "dates": "1844-1924",
+  "annee": 1844
+ },
+ "André Gide": {
+  "qid": "Q47484",
+  "dates": "1869-1951",
+  "annee": 1869
+ },
+ "Jean Giono": {
+  "qid": "Q177411",
+  "dates": "1895-1970",
+  "annee": 1895
+ },
+ "Johann Wolfgang von Goethe": {
+  "qid": "Q5879",
+  "dates": "1749-1832",
+  "annee": 1749
+ },
+ "Nicolas Gogol": {
+  "qid": "Q43718",
+  "dates": "1809-1852",
+  "annee": 1809
+ },
+ "Graham Greene": {
+  "qid": "Q128560",
+  "dates": "1904-1991",
+  "annee": 1904
+ },
+ "Jacob et Wilhelm Grimm": {
+  "qid": "Q2793",
+  "dates": "1785-1863",
+  "annee": 1785
+ },
+ "Vassili Grossman": {
+  "qid": "Q313767",
+  "dates": "1905-1964",
+  "annee": 1905
+ },
+ "Knut Hamsun": {
+  "qid": "Q40826",
+  "dates": "1859-1952",
+  "annee": 1859
+ },
+ "Heinrich Heine": {
+  "qid": "Q44403",
+  "dates": "1797-1856",
+  "annee": 1797
+ },
+ "Ernest Hemingway": {
+  "qid": "Q23434",
+  "dates": "1899-1961",
+  "annee": 1899
+ },
+ "Hermann Hesse": {
+  "qid": "Q25973",
+  "dates": "1877-1962",
+  "annee": 1877
+ },
+ "Friedrich Hölderlin": {
+  "qid": "Q75889",
+  "dates": "1770-1843",
+  "annee": 1770
+ },
+ "Homère": {
+  "qid": "Q6691",
+  "dates": "IXe siècle-VIIIe siècle av. J.-C.",
+  "annee": -900
+ },
+ "Horace": {
+  "qid": "Q6197",
+  "dates": "65-8 av. J.-C.",
+  "annee": -65
+ },
+ "Victor Hugo": {
+  "qid": "Q535",
+  "dates": "1802-1885",
+  "annee": 1802
+ },
+ "Joris-Karl Huysmans": {
+  "qid": "Q210798",
+  "dates": "1848-1907",
+  "annee": 1848
+ },
+ "Henrik Ibsen": {
+  "qid": "Q36661",
+  "dates": "1828-1906",
+  "annee": 1828
+ },
+ "Shirley Jackson": {
+  "qid": "Q239910",
+  "dates": "1916-1965",
+  "annee": 1916
+ },
+ "Jean de la Croix": {
+  "qid": "Q190388",
+  "dates": "1542-1591",
+  "annee": 1542
+ },
+ "Jean Paul": {
+  "qid": "Q77079",
+  "dates": "1763-1825",
+  "annee": 1763
+ },
+ "Franz Kafka": {
+  "qid": "Q905",
+  "dates": "1883-1924",
+  "annee": 1883
+ },
+ "Níkos Kazantzákis": {
+  "qid": "Q214622",
+  "dates": "1883-1957",
+  "annee": 1883
+ },
+ "Jack Kerouac": {
+  "qid": "Q160534",
+  "dates": "1922-1969",
+  "annee": 1922
+ },
+ "Omar Khayyâm": {
+  "qid": "Q35900",
+  "dates": "1048-1131",
+  "annee": 1048
+ },
+ "Rudyard Kipling": {
+  "qid": "Q34743",
+  "dates": "1865-1936",
+  "annee": 1865
+ },
+ "Heinrich von Kleist": {
+  "qid": "Q28494",
+  "dates": "1777-1811",
+  "annee": 1777
+ },
+ "Arthur Koestler": {
+  "qid": "Q78494",
+  "dates": "1905-1983",
+  "annee": 1905
+ },
+ "Jean de La Fontaine": {
+  "qid": "Q49496",
+  "dates": "1621-1695",
+  "annee": 1621
+ },
+ "Alphonse de Lamartine": {
+  "qid": "Q188697",
+  "dates": "1790-1869",
+  "annee": 1790
+ },
+ "Giuseppe Tomasi di Lampedusa": {
+  "qid": "Q213482",
+  "dates": "1896-1957",
+  "annee": 1896
+ },
+ "Giacomo Leopardi": {
+  "qid": "Q172599",
+  "dates": "1798-1837",
+  "annee": 1798
+ },
+ "Gotthold Ephraim Lessing": {
+  "qid": "Q34628",
+  "dates": "1729-1781",
+  "annee": 1729
+ },
+ "Primo Levi": {
+  "qid": "Q153670",
+  "dates": "1919-1987",
+  "annee": 1919
+ },
+ "Lucien de Samosate": {
+  "qid": "Q177847",
+  "dates": "120-180",
+  "annee": 120
+ },
+ "Abû l-ʿAlâʾ al-Maʿarrî": {
+  "qid": "Q277073",
+  "dates": "973-1057",
+  "annee": 973
+ },
+ "Naguib Mahfouz": {
+  "qid": "Q7176",
+  "dates": "1911-2006",
+  "annee": 1911
+ },
+ "André Malraux": {
+  "qid": "Q151164",
+  "dates": "1901-1976",
+  "annee": 1901
+ },
+ "Thomas Mann": {
+  "qid": "Q37030",
+  "dates": "1875-1955",
+  "annee": 1875
+ },
+ "Guy de Maupassant": {
+  "qid": "Q9327",
+  "dates": "1850-1893",
+  "annee": 1850
+ },
+ "Herman Melville": {
+  "qid": "Q4985",
+  "dates": "1819-1891",
+  "annee": 1819
+ },
+ "Montesquieu": {
+  "qid": "Q15975",
+  "dates": "1689-1755",
+  "annee": 1689
+ },
+ "Iris Murdoch": {
+  "qid": "Q217495",
+  "dates": "1919-1999",
+  "annee": 1919
+ },
+ "Robert Musil": {
+  "qid": "Q78487",
+  "dates": "1880-1942",
+  "annee": 1880
+ },
+ "Gérard de Nerval": {
+  "qid": "Q191305",
+  "dates": "1808-1855",
+  "annee": 1808
+ },
+ "Flannery O'Connor": {
+  "qid": "Q234579",
+  "dates": "1925-1964",
+  "annee": 1925
+ },
+ "George Orwell": {
+  "qid": "Q3335",
+  "dates": "1903-1950",
+  "annee": 1903
+ },
+ "Ovide": {
+  "qid": "Q7198",
+  "dates": "43 av. J.-C.-17",
+  "annee": -43
+ },
+ "Charles Péguy": {
+  "qid": "Q334965",
+  "dates": "1873-1914",
+  "annee": 1873
+ },
+ "Fernando Pessoa": {
+  "qid": "Q173481",
+  "dates": "1888-1935",
+  "annee": 1888
+ },
+ "Pétrarque": {
+  "qid": "Q1401",
+  "dates": "1304-1374",
+  "annee": 1304
+ },
+ "Luigi Pirandello": {
+  "qid": "Q1403",
+  "dates": "1867-1936",
+  "annee": 1867
+ },
+ "Alexander Pope": {
+  "qid": "Q164047",
+  "dates": "1688-1744",
+  "annee": 1688
+ },
+ "Marcel Proust": {
+  "qid": "Q7199",
+  "dates": "1871-1922",
+  "annee": 1871
+ },
+ "Jean Racine": {
+  "qid": "Q742",
+  "dates": "1639-1699",
+  "annee": 1639
+ },
+ "Rainer Maria Rilke": {
+  "qid": "Q76483",
+  "dates": "1875-1926",
+  "annee": 1875
+ },
+ "Arthur Rimbaud": {
+  "qid": "Q493",
+  "dates": "1854-1891",
+  "annee": 1854
+ },
+ "Rûmî": {
+  "qid": "Q43347",
+  "dates": "1207-1273",
+  "annee": 1207
+ },
+ "D. A. F. de Sade": {
+  "qid": "Q123867",
+  "dates": "1740-1814",
+  "annee": 1740
+ },
+ "Sade": {
+  "qid": "Q123867",
+  "dates": "1740-1814",
+  "annee": 1740
+ },
+ "Antoine de Saint-Exupéry": {
+  "qid": "Q2908",
+  "dates": "1900-1944",
+  "annee": 1900
+ },
+ "Jean-Paul Sartre": {
+  "qid": "Q9364",
+  "dates": "1905-1980",
+  "annee": 1905
+ },
+ "Friedrich Schiller": {
+  "qid": "Q22670",
+  "dates": "1759-1805",
+  "annee": 1759
+ },
+ "William Shakespeare": {
+  "qid": "Q692",
+  "dates": "1564-1616",
+  "annee": 1564
+ },
+ "Mary Shelley": {
+  "qid": "Q47152",
+  "dates": "1797-1851",
+  "annee": 1797
+ },
+ "Percy Bysshe Shelley": {
+  "qid": "Q93343",
+  "dates": "1792-1822",
+  "annee": 1792
+ },
+ "Henryk Sienkiewicz": {
+  "qid": "Q41502",
+  "dates": "1846-1916",
+  "annee": 1846
+ },
+ "Angelus Silesius": {
+  "qid": "Q60469",
+  "dates": "1624-1677",
+  "annee": 1624
+ },
+ "Ignazio Silone": {
+  "qid": "Q168431",
+  "dates": "1900-1978",
+  "annee": 1900
+ },
+ "Isaac Bashevis Singer": {
+  "qid": "Q75612",
+  "dates": "1904-1991",
+  "annee": 1904
+ },
+ "Sophocle": {
+  "qid": "Q7235",
+  "dates": "496-406 av. J.-C.",
+  "annee": -496
+ },
+ "Germaine de Staël": {
+  "qid": "Q123041",
+  "dates": "1766-1817",
+  "annee": 1766
+ },
+ "John Steinbeck": {
+  "qid": "Q39212",
+  "dates": "1902-1968",
+  "annee": 1902
+ },
+ "Stendhal": {
+  "qid": "Q502",
+  "dates": "1783-1842",
+  "annee": 1783
+ },
+ "Laurence Sterne": {
+  "qid": "Q218960",
+  "dates": "1713-1768",
+  "annee": 1713
+ },
+ "Jonathan Swift": {
+  "qid": "Q41166",
+  "dates": "1667-1745",
+  "annee": 1667
+ },
+ "Algernon Charles Swinburne": {
+  "qid": "Q315511",
+  "dates": "1837-1909",
+  "annee": 1837
+ },
+ "Rabindranath Tagore": {
+  "qid": "Q7241",
+  "dates": "1861-1941",
+  "annee": 1861
+ },
+ "Alfred Tennyson": {
+  "qid": "Q173869",
+  "dates": "1809-1892",
+  "annee": 1809
+ },
+ "Henry David Thoreau": {
+  "qid": "Q131149",
+  "dates": "1817-1862",
+  "annee": 1817
+ },
+ "Léon Tolstoï": {
+  "qid": "Q7243",
+  "dates": "1828-1910",
+  "annee": 1828
+ },
+ "Ivan Tourgueniev": {
+  "qid": "Q42831",
+  "dates": "1818-1883",
+  "annee": 1818
+ },
+ "Georg Trakl": {
+  "qid": "Q78476",
+  "dates": "1887-1914",
+  "annee": 1887
+ },
+ "Miguel de Unamuno": {
+  "qid": "Q185085",
+  "dates": "1864-1936",
+  "annee": 1864
+ },
+ "Paul Valéry": {
+  "qid": "Q200639",
+  "dates": "1871-1945",
+  "annee": 1871
+ },
+ "Alfred de Vigny": {
+  "qid": "Q309702",
+  "dates": "1797-1863",
+  "annee": 1797
+ },
+ "Voltaire": {
+  "qid": "Q9068",
+  "dates": "1694-1778",
+  "annee": 1694
+ },
+ "Evelyn Waugh": {
+  "qid": "Q107002",
+  "dates": "1903-1966",
+  "annee": 1903
+ },
+ "Walt Whitman": {
+  "qid": "Q81438",
+  "dates": "1819-1892",
+  "annee": 1819
+ },
+ "Oscar Wilde": {
+  "qid": "Q30875",
+  "dates": "1854-1900",
+  "annee": 1854
+ },
+ "William Wordsworth": {
+  "qid": "Q45546",
+  "dates": "1770-1850",
+  "annee": 1770
+ },
+ "Xénophon": {
+  "qid": "Q129772",
+  "dates": "430-354 av. J.-C.",
+  "annee": -430
+ },
+ "Marguerite Yourcenar": {
+  "qid": "Q163118",
+  "dates": "1903-1987",
+  "annee": 1903
+ },
+ "Émile Zola": {
+  "qid": "Q504",
+  "dates": "1840-1902",
+  "annee": 1840
+ }
+}
