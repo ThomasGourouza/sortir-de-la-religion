@@ -69,3 +69,7 @@ Puis, sur GitHub : Settings, Pages, Source « Deploy from a branch », branche `
 ## Crédits
 
 Les images viennent de Wikimedia Commons et sont dans le domaine public ou sous licence libre (CC0, CC BY, CC BY-SA). Auteur, licence et lien de chaque image figurent dans `build/images.json` et dans la page `sources.html`.
+
+## Langues
+
+Le site est construit en français à la racine et dans chaque langue traduite dans son dossier (`en/` pour l'anglais), avec un menu des langues dans le bandeau. Les traductions vivent dans `i18n/<langue>/` ; le français reste la source : la traduction est alignée sur sa structure, et `python3 build/i18n_verif.py <langue>` en contrôle la fidélité (structure, citations originales, chiffres, résidus). Procédure détaillée dans `CLAUDE.md`.

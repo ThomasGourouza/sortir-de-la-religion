@@ -17,6 +17,7 @@ var SHELL = [
   "galerie.html",
   "sources.html",
   "js/pages.js?v=" + VERSION,
+  /* {{AUTRES_LANGUES}} */
   "js/portrait.js?v=" + VERSION
 ];
 
@@ -45,7 +46,9 @@ function cacheFirst(req, name) {
 }
 
 function networkFirst(req) {
-  var page = (new URL(req.url).pathname.match(/([a-z]+\.html)$/) || [null, "index.html"])[1];
+  /* clé de cache relative à la portée du service worker : en/index.html et index.html sont deux pages */
+  var rel = new URL(req.url).pathname.slice(new URL(self.registration.scope).pathname.length);
+  var page = /(^|\/)$/.test(rel) ? rel + "index.html" : rel;
   return fetch(req).then(function (res) {
     if (res && res.ok) {
       var copy = res.clone();

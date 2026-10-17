@@ -1,3 +1,28 @@
+/* Traduction de l'interface : window.SDR_UI est injecté par le build (vide en français). */
+window.SDR_T = function (s) { var u = window.SDR_UI || {}; return u[s] || s; };
+
+/* Menu des langues : la même page dans une autre langue, avec l'ancre courante. */
+(function () {
+  "use strict";
+  var btn = document.querySelector(".langue-btn"), menu = document.querySelector(".langues-menu");
+  if (!btn || !menu) return;
+  btn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var ouvrir = menu.hidden;
+    menu.hidden = !ouvrir;
+    btn.setAttribute("aria-expanded", String(ouvrir));
+  });
+  document.addEventListener("click", function (e) {
+    if (!menu.hidden && !menu.contains(e.target)) { menu.hidden = true; btn.setAttribute("aria-expanded", "false"); }
+  });
+  Array.prototype.forEach.call(menu.querySelectorAll("a[data-langue]"), function (a) {
+    a.addEventListener("click", function () {
+      try { localStorage.setItem("sdr-lang", a.getAttribute("data-langue")); } catch (err) {}
+      if (location.hash) a.href = a.href.split("#")[0] + location.hash;
+    });
+  });
+})();
+
 /* Sortir de la religion sans en fonder une autre ? : historique des sauts, commun à toutes les pages du site */
 window.sauts = (function () {
   var K = "sdr-jumps";

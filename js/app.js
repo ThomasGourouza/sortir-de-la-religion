@@ -69,7 +69,7 @@
       navigator.share({ title: (nom ? nom.textContent + " · " : "") + document.title, url: url }).catch(function () {});
       return;
     }
-    copyText(url).then(function () { showToast("Lien copié"); }, function () { showToast("Copiez ce lien : " + url); });
+    copyText(url).then(function () { showToast(window.SDR_T("Lien copié")); }, function () { showToast(window.SDR_T("Copiez ce lien : ") + url); });
   }, true);
 
   document.addEventListener("click", function (e) {
@@ -130,7 +130,7 @@
     if (next === "auto") delete document.documentElement.dataset.theme;
     else document.documentElement.dataset.theme = next;
     store.set("sdr-theme", next === "auto" ? "" : next);
-    this.setAttribute("aria-label", "Thème : " + ({ auto: "automatique", light: "clair", sepia: "sépia", dark: "sombre" })[next]);
+    this.setAttribute("aria-label", window.SDR_T("Thème : ") + window.SDR_T(({ auto: "automatique", light: "clair", sepia: "sépia", dark: "sombre" })[next]));
   });
   function fontStep(d) {
     var cur = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--fs")) || 18;
@@ -231,8 +231,8 @@
       var b = d.querySelector(".lu-btn");
       if (b) {
         b.setAttribute("aria-pressed", r ? "true" : "false");
-        b.setAttribute("aria-label", r ? "Marquer comme non lu" : "Marquer comme lu");
-        b.title = r ? "Marquer comme non lu" : "Marquer comme lu";
+        b.setAttribute("aria-label", window.SDR_T(r ? "Marquer comme non lu" : "Marquer comme lu"));
+        b.title = window.SDR_T(r ? "Marquer comme non lu" : "Marquer comme lu");
       }
     });
     $$(".toc-count").forEach(function (c) {
@@ -289,30 +289,30 @@
   var swOk = "serviceWorker" in navigator && "caches" in window &&
     (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1");
   if (swOk) {
-    navigator.serviceWorker.register("sw.js").catch(function () {});
+    navigator.serviceWorker.register((document.documentElement.getAttribute("data-racine") || "") + "sw.js").catch(function () {});
     offBox.hidden = false;
-    if (store.get(P + "offline")) offStatus.textContent = "Déjà enregistré sur cet appareil.";
+    if (store.get(P + "offline")) offStatus.textContent = window.SDR_T("Déjà enregistré sur cet appareil.");
     offBtn.addEventListener("click", function () {
       var srcs = {};
       $$("img[src]").forEach(function (i) { srcs[i.getAttribute("src")] = true; });
       var list = Object.keys(srcs), done = 0, failed = 0;
       offBtn.disabled = true;
-      offStatus.textContent = "Enregistrement : 0/" + list.length;
+      offStatus.textContent = window.SDR_T("Enregistrement : ") + "0/" + list.length;
       caches.open("sdr-images").then(function (c) {
         return Promise.all(list.map(function (u) {
           return c.match(u).then(function (hit) {
             return hit || fetch(u).then(function (res) { if (res.ok) return c.put(u, res); failed++; });
           }).catch(function () { failed++; }).then(function () {
             done++;
-            offStatus.textContent = "Enregistrement : " + done + "/" + list.length;
+            offStatus.textContent = window.SDR_T("Enregistrement : ") + done + "/" + list.length;
           });
         }));
       }).then(function () {
         offBtn.disabled = false;
         if (failed) {
-          offStatus.textContent = failed + " images non enregistrées ; réessayez avec une meilleure connexion.";
+          offStatus.textContent = failed + window.SDR_T(" images non enregistrées ; réessayez avec une meilleure connexion.");
         } else {
-          offStatus.textContent = "Tout l'essai est disponible hors connexion.";
+          offStatus.textContent = window.SDR_T("Tout l'essai est disponible hors connexion.");
           store.set(P + "offline", "1");
         }
       });
@@ -373,7 +373,7 @@
     if (!index) construireIndex();
     var ts = termes(q);
     var res = index.filter(function (r) { return ts.every(function (t) { return r.f.indexOf(t) >= 0; }); });
-    sStatus.textContent = res.length ? (res.length + (res.length > 1 ? " passages" : " passage") + (res.length > 50 ? ", les 50 premiers :" : "")) : "Aucun passage ne correspond.";
+    sStatus.textContent = res.length ? (res.length + window.SDR_T(res.length > 1 ? " passages" : " passage") + (res.length > 50 ? window.SDR_T(", les 50 premiers :") : "")) : window.SDR_T("Aucun passage ne correspond.");
     res.slice(0, 50).forEach(function (r) {
       var li = document.createElement("li");
       li.innerHTML = '<a href="#' + r.el.id + '" data-res="' + r.el.id + '"><span class="res-titre">' + esc(r.titre) + '</span><span class="res-extrait">' + extrait(r, ts) + "</span></a>";

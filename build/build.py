@@ -24,6 +24,166 @@ ARTICLE = os.path.expanduser(
     "~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md")
 BASE_URL = "https://thomasgourouza.github.io/sortir-de-la-religion/"
 RESUME = "L'essai en dix minutes"
+
+# ---------------------------------------------------------------- langues
+# Le français est la source et l'identité du site : ids, portraits, dates de tri, écrivains, artistes se résolvent
+# toujours par la structure française. Une traduction (i18n/<langue>/) ne fournit que l'affichage ; le build
+# l'aligne par position sur la source française et la publie dans le dossier <langue>/ avec les mêmes fichiers.
+LANGUES = (("fr", "Français", "fr_FR"), ("en", "English", "en_GB"), ("ru", "Русский", "ru_RU"),
+           ("de", "Deutsch", "de_DE"), ("es", "Español", "es_ES"))
+LANG = "fr"
+LANGUES_CONSTRUITES = ["fr"]
+I18N = {}
+
+
+def dossier_langue(l):
+    return os.path.join(RACINE, "i18n", l)
+
+
+def langue_disponible(l):
+    return l == "fr" or os.path.exists(os.path.join(dossier_langue(l), "article.md"))
+
+
+def charger_langue(l):
+    """Rend la langue l courante : tables de l'interface, des noms, des dates, des légendes, des notes, du lexique."""
+    global LANG, I18N
+    LANG, I18N = l, {}
+    _MOTIFS_COMPILES.clear()
+    if l == "fr":
+        return
+    d = dossier_langue(l)
+
+    def j(nom, defaut):
+        p = os.path.join(d, nom)
+        return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else defaut
+    I18N["ui"] = j("ui.json", {})
+    donnees = j("donnees-noms.json", {})
+    I18N["noms"] = donnees.get("noms", {})
+    I18N["dates"] = donnees.get("dates", {})
+    I18N["reponses"] = donnees.get("reponses", [])
+    I18N["images"] = j("donnees-images.json", {})
+    lex = []
+    dl = os.path.join(d, "lexique")
+    for f in sorted(os.listdir(dl)) if os.path.isdir(dl) else []:
+        if f.endswith(".json"):
+            lex += json.load(open(os.path.join(dl, f), encoding="utf-8"))
+    I18N["lexique"] = {e["fr"]: e for e in lex}
+    exacts, motifs = {}, []
+    for k, v in I18N["ui"].items():
+        if "{n}" in k or "{s}" in k:
+            rx = re.escape(k).replace(re.escape("{n}"), r"(\d+)").replace(re.escape("{s}"), r"(.+?)")
+            motifs.append((re.compile("^" + rx + "$", re.S), v))
+        else:
+            exacts[k] = v
+    table = dict(I18N["noms"])
+    table.update(I18N["dates"])
+    table.update(exacts)
+    I18N["table"], I18N["motifs_ui"] = table, motifs
+
+
+def T(s):
+    """Une chaîne de l'interface dans la langue courante (le français si elle n'est pas traduite)."""
+    return I18N.get("ui", {}).get(s, s) if LANG != "fr" else s
+
+
+def N(nom):
+    """Un nom propre dans la langue courante."""
+    return I18N.get("noms", {}).get(nom, nom) if LANG != "fr" else nom
+
+
+def _traduire_texte(s):
+    t = I18N["table"]
+    if s in t:
+        return t[s]
+    u = html.unescape(s)
+    if u in t:
+        return html.escape(t[u], quote=False)
+    for rx, v in I18N["motifs_ui"]:
+        m = rx.match(u)
+        if m:
+            out, i = v, 0
+            for g in m.groups():
+                out = re.sub(r"\{[ns]\}", lambda _: g, out, count=1)
+            return html.escape(out, quote=False)
+    return None
+
+
+ATTRS_TRADUITS = re.compile(r'\b(aria-label|placeholder|title|content|data-label)="([^"]*)"')
+
+
+def localiser(h):
+    """Traduit l'interface d'une page déjà rendue (nœuds de texte et attributs entiers) et pointe ses ressources
+    vers la racine du site. Le contenu traduit vient d'ailleurs : ici, seules les chaînes exactes changent."""
+    if LANG == "fr":
+        return h
+    h = re.sub(r'((?:src|href|data-grand)=")(?=(?:css|js|images)/|favicon\.svg|apple-touch-icon\.png)', r"\1../", h)
+    code = next(c for c, _, _ in LANGUES if c == LANG)
+    h = h.replace('<html lang="fr">', '<html lang="%s" data-racine="../">' % code, 1)
+    h = h.replace('content="fr_FR"', 'content="%s"' % next(loc for c, _, loc in LANGUES if c == LANG))
+    morceaux = re.split(r"(<[^>]+>)", h)
+    dans_script = False
+    for i, m in enumerate(morceaux):
+        if m.startswith("<"):
+            low = m[:8].lower()
+            if low.startswith("<script") or low.startswith("<style"):
+                dans_script = True
+            elif low.startswith("</scrip") or low.startswith("</style"):
+                dans_script = False
+            elif "=" in m:
+                def attr(a):
+                    v = _traduire_texte(a.group(2).strip())
+                    return '%s="%s"' % (a.group(1), html.escape(html.unescape(v), quote=True)) if v is not None else a.group(0)
+                morceaux[i] = ATTRS_TRADUITS.sub(attr, m)
+            continue
+        if dans_script or not m.strip():
+            continue
+        s = m.strip()
+        v = _traduire_texte(s)
+        if v is not None:
+            morceaux[i] = m.replace(s, v, 1)
+    return "".join(morceaux)
+
+
+def sortie(nom):
+    """Chemin d'écriture d'une page dans la langue courante."""
+    d = RACINE if LANG == "fr" else os.path.join(RACINE, LANG)
+    os.makedirs(d, exist_ok=True)
+    return os.path.join(d, nom)
+
+
+def ecrire_page(nom, contenu):
+    open(sortie(nom), "w", encoding="utf-8").write(localiser(contenu))
+
+
+def selecteur_langues(page):
+    """Menu des langues construites, chacune liée à la même page (l'ancre est ajoutée au clic par sauts.js)."""
+    if len(LANGUES_CONSTRUITES) < 2:
+        return ""
+    liens = []
+    for code, nom, _ in LANGUES:
+        if code in LANGUES_CONSTRUITES:
+            href = ("" if LANG == "fr" else "../") + ("" if code == "fr" else code + "/") + page
+            liens.append('<a class="langue" href="%s" hreflang="%s" lang="%s" data-langue="%s"%s>%s</a>' % (
+                href, code, code, code, ' aria-current="true"' if code == LANG else "", nom))
+    return ('<div class="langues"><button class="icon-btn langue-btn" type="button" aria-haspopup="true" aria-expanded="false" '
+            'aria-label="Changer de langue">%s</button><div class="langues-menu" hidden>%s</div></div>') % (LANG.upper(), "".join(liens))
+
+
+def hreflangs(page):
+    """Balises <link rel="alternate" hreflang> de la page dans toutes les langues construites."""
+    out = []
+    for code, _, _ in LANGUES:
+        if code in LANGUES_CONSTRUITES and len(LANGUES_CONSTRUITES) > 1:
+            out.append('<link rel="alternate" hreflang="%s" href="%s%s%s">' % (code, BASE_URL, "" if code == "fr" else code + "/", page))
+    if out:
+        out.append('<link rel="alternate" hreflang="x-default" href="%s%s">' % (BASE_URL, page))
+    return "\n".join(out)
+
+
+def ui_js():
+    """Table des chaînes de l'interface pour les scripts (window.SDR_UI)."""
+    return json.dumps(I18N.get("ui", {}), ensure_ascii=False).replace("</", "<\\/") if LANG != "fr" else "{}"
+
 NOMBRES = {1: "une", 2: "deux", 3: "trois", 4: "quatre", 5: "cinq", 6: "six", 7: "sept",
            8: "huit", 9: "neuf", 10: "dix", 11: "onze", 12: "douze"}
 
@@ -110,7 +270,7 @@ def rendre_table(rows):
 
 
 LETTRES_MARQUE = re.compile(r"^>\s*\*\*En littérature\.\*\*\s*")
-LETTRES_OEUVRE = re.compile(r"^(.+?), (?:\*(.+?)\*|« (.+?) »)(.*?)\s*(?:\((\d[^)]*)\))?\s*$")
+LETTRES_OEUVRE = re.compile(r"^(.+?), (?:\*(.+?)\*|« (.+?) »|“(.+?)”|„(.+?)“)(.*?)\s*(?:\((\d[^)]*)\))?\s*$")
 LETTRES_BUF = []  # oeuvres des encadres de la section en cours (auteur, titre, date)
 
 
@@ -137,7 +297,7 @@ def encadre_lettres(ls):
         if not m:
             print("  encadré littéraire : ligne de titre inanalysable :", elt)
             continue
-        LETTRES_BUF.append((m.group(1).strip(), m.group(2) or m.group(3), m.group(4).strip(), m.group(5) or ""))
+        LETTRES_BUF.append((m.group(1).strip(), m.group(2) or m.group(3) or m.group(4) or m.group(5), m.group(6).strip(), m.group(7) or ""))
     corps = []
     for p in paras[1:]:
         classe = ' class="lettres-source"' if re.match(r"Sources?\s*:", p) else ""
@@ -206,9 +366,17 @@ def structurer(lignes):
     return titre, sous_titre, intro, parties
 
 
+def partition_titre(t):
+    """Coupe un titre à son premier deux-points : « Nom : formule » en français, « Name: formula » ailleurs."""
+    if " : " in t:
+        return t.partition(" : ")
+    a, s, c = t.partition(": ")
+    return (a, " : ", c) if s else (t, "", "")
+
+
 def analyser_titre(t):
     """'Hegel (1770-1831) : formule' -> (nom, dates, formule)."""
-    nom, _, formule = t.partition(" : ")
+    nom, _, formule = partition_titre(t)
     dates = "; ".join(re.findall(r"\(([^)]*\d[^)]*)\)", nom))
     nom = re.sub(r"\s*\([^)]*\)", "", nom).strip()
     return nom, dates, formule.strip()
@@ -281,8 +449,13 @@ def charger_images():
     p = os.path.join(ICI, "images.json")
     if not os.path.exists(p):
         return []
-    imgs = json.load(open(p, encoding="utf-8"))
-    return [i for i in imgs if os.path.exists(os.path.join(RACINE, i["file"]))]
+    imgs = [i for i in json.load(open(p, encoding="utf-8")) if os.path.exists(os.path.join(RACINE, i["file"]))]
+    for i in imgs:
+        i["alt_fr"] = i.get("alt", "")
+        tr = I18N.get("images", {}).get(i["file"]) or I18N.get("images", {}).get(i["file"].replace("-grand.", "."))
+        if LANG != "fr" and tr:
+            i["caption"], i["alt"] = tr.get("caption", i.get("caption", "")), tr.get("alt", i.get("alt", ""))
+    return imgs
 
 
 def figure(img, classe="figure"):
@@ -321,6 +494,28 @@ CATEGORIES = (("theories", "Théories des auteurs"), ("bible", "Bible : les text
 CHAMPS_LISTE = ("sections", "motifs", "references", "oeuvres")
 
 
+def lexique_courant():
+    """Le lexique dans la langue courante : entrées françaises (section d'ancrage, ordre), texte traduit s'il existe."""
+    lex = charger("lexique.json", [])
+    if LANG == "fr":
+        return lex
+    out = []
+    for e in lex:
+        tr = I18N.get("lexique", {}).get(e["terme"])
+        if not tr:
+            print("  lexique %s : notion non traduite, gardée en français : %s" % (LANG, e["terme"]))
+            out.append(e)
+            continue
+        n = dict(e)
+        for k in ("terme", "motifs", "definition"):
+            n[k] = tr.get(k, e[k])
+        if tr.get("langue") or e.get("langue"):
+            n["langue"] = tr.get("langue", e.get("langue", ""))
+        n["slug"] = slug_terme(e["terme"])  # ancre identique dans toutes les langues
+        out.append(n)
+    return out
+
+
 def charger_annexes():
     """Lit build/annexes/*.md : un article par fichier, en-tete entre deux lignes ---, puis le corps en Markdown.
 
@@ -334,11 +529,33 @@ def charger_annexes():
     for f in sorted(os.listdir(dossier)):
         if not f.endswith(".md"):
             continue
-        lignes = open(os.path.join(dossier, f), encoding="utf-8").read().split("\n")
+        source = os.path.join(dossier, f)
+        if LANG != "fr":
+            tr = os.path.join(dossier_langue(LANG), "annexes", f)
+            if os.path.exists(tr):
+                a_fr = lire_annexe(source, f, verifier=False)
+                a = lire_annexe(tr, f, verifier=False)
+                if a and a_fr:
+                    for k in ("categorie", "ordre", "sections", "oeuvres"):
+                        a[k] = a_fr[k]
+                    out.append(a)
+                    continue
+            print("  annexes %s : article non traduit, gardé en français : %s" % (LANG, f))
+        a = lire_annexe(source, f, verifier=LANG == "fr")
+        if a:
+            out.append(a)
+    out.sort(key=lambda a: (a["ordre"], slug_terme(a["titre"])))
+    return out
+
+
+def lire_annexe(chemin, f, verifier=True):
+    """Un article d'annexe : en-tête entre deux lignes ---, puis le corps en Markdown."""
+    if True:
+        lignes = open(chemin, encoding="utf-8").read().split("\n")
         fin = next((i for i, l in enumerate(lignes) if i > 0 and l.strip() == "---"), None)
         if not lignes or lignes[0].strip() != "---" or fin is None:
             print("  annexes/%s : en-tête manquant" % f)
-            continue
+            return None
         a = {"id": f[:-3], "titre": "", "categorie": "", "ordre": 0, "sections": [], "motifs": [], "references": [], "oeuvres": [],
              "lignes": lignes[fin + 1:]}
         for l in lignes[1:fin]:
@@ -352,25 +569,24 @@ def charger_annexes():
                 a[k] = int(v) if v.isdigit() else 0
             elif k in ("titre", "categorie"):
                 a[k] = v
-        for k in ("titre", "categorie"):
-            if not a[k]:
-                print("  annexes/%s : champ « %s » manquant" % (f, k))
-        if a["categorie"] not in dict(CATEGORIES):
-            print("  annexes/%s : catégorie inconnue « %s »" % (f, a["categorie"]))
-        n = len(" ".join(a["lignes"]).split())
-        if not 400 <= n <= 700:
-            print("  annexes/%s : %d mots (attendu : 400 à 700)" % (f, n))
-        out.append(a)
-    out.sort(key=lambda a: (a["ordre"], slug_terme(a["titre"])))
-    return out
+        if verifier:
+            for k in ("titre", "categorie"):
+                if not a[k]:
+                    print("  annexes/%s : champ « %s » manquant" % (f, k))
+            if a["categorie"] not in dict(CATEGORIES):
+                print("  annexes/%s : catégorie inconnue « %s »" % (f, a["categorie"]))
+            n = len(" ".join(a["lignes"]).split())
+            if not 400 <= n <= 700:
+                print("  annexes/%s : %d mots (attendu : 400 à 700)" % (f, n))
+        return a
 
 
 def cibles_liaison(annexes=(), lexique=True):
     """Cibles de la liaison automatique : (slug, page, motifs, classe), le lexique d'abord, puis les annexes."""
     c = []
     if lexique:
-        for e in charger("lexique.json", []):
-            c.append((slug_terme(e["terme"]), "lexique.html", e.get("motifs", []), "lex"))
+        for e in lexique_courant():
+            c.append((e.get("slug", slug_terme(e["terme"])), "lexique.html", e.get("motifs", []), "lex"))
     for a in annexes:
         c.append((a["id"], "annexes.html", a["motifs"], "ann"))
     return c
@@ -476,9 +692,9 @@ def rendre_annexe(a, libelles, cibles, vignette=None):
     return ('<details class="annexe" data-item data-type="%s" id="%s"><summary><span class="annexe-titre">%s</span>'
             '<span class="annexe-cat">%s</span></summary><div class="annexe-corps">%s%s%s%s</div></details>') % (
         a["categorie"], a["id"], en_ligne(a["titre"]), dict(CATEGORIES).get(a["categorie"], a["categorie"]), corps_html,
-        '<div class="annexe-oeuvres"><span>Dans la Galerie :</span>%s</div>' % galerie if galerie else "",
-        '<p class="annexe-essai">Dans l\'essai : %s</p>' % essai if essai else "",
-        '<p class="annexe-refs">Pour aller plus loin : %s</p>' % refs if refs else "")
+        '<div class="annexe-oeuvres"><span>%s</span>%s</div>' % (T("Dans la Galerie :"), galerie) if galerie else "",
+        '<p class="annexe-essai">%s %s</p>' % (T("Dans l'essai :"), essai) if essai else "",
+        '<p class="annexe-refs">%s %s</p>' % (T("Pour aller plus loin :"), refs) if refs else "")
 
 
 ROMAINS = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV",
@@ -487,6 +703,9 @@ ROMAINS = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI"
 
 def siecle(y):
     n = (-y - 1) // 100 + 1 if y < 0 else (y - 1) // 100 + 1
+    if LANG == "en":
+        suf = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+        return "%d%s century%s" % (n, suf, " BCE" if y < 0 else "")
     nom = "Ier" if n == 1 else ROMAINS[n] + "e"
     return "%s siècle%s" % (nom, " av. J.-C." if y < 0 else "")
 
@@ -513,21 +732,23 @@ PAGES_SITE = (("index.html", "L'essai"), ("auteurs.html", "Les auteurs"), ("lexi
 
 
 def onglets(actif):
-    """Onglets de navigation entre les pages du site, places dans le bandeau fixe de chaque page."""
-    return '<nav class="onglets" aria-label="Pages du site">%s</nav>' % "".join(
-        '<a class="onglet" href="%s"%s>%s</a>' % (f, ' aria-current="page"' if f == actif else "", l) for f, l in PAGES_SITE)
+    """Onglets de navigation entre les pages du site, places dans le bandeau fixe de chaque page, puis le menu des langues."""
+    return '<nav class="onglets" aria-label="Pages du site">%s</nav>%s' % ("".join(
+        '<a class="onglet" href="%s"%s>%s</a>' % (f, ' aria-current="page"' if f == actif else "", l) for f, l in PAGES_SITE),
+        selecteur_langues(actif))
 
 
 def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, version):
     tpl = open(os.path.join(ICI, "page.template.html"), encoding="utf-8").read()
-    rempl = {"TITRE_PAGE": titre_page, "TITRE_BRUT": html.escape(titre), "DESCRIPTION": description,
-             "OG_IMAGE": og_image, "ONGLETS": onglets(nom), "INTRO": intro, "CONTENU": contenu}
+    rempl = {"TITRE_PAGE": T(titre_page), "TITRE_BRUT": html.escape(titre), "DESCRIPTION": T(description),
+             "OG_IMAGE": og_image, "ONGLETS": onglets(nom), "INTRO": intro, "CONTENU": contenu,
+             "HREFLANG": hreflangs(nom), "UI": ui_js()}
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
     tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace(
         'src="js/pages.js"', 'src="js/pages.js?v=%s"' % version).replace('src="js/sauts.js"', 'src="js/sauts.js?v=%s"' % version).replace(
         'src="js/portrait.js"', 'src="js/portrait.js?v=%s"' % version)
-    open(os.path.join(RACINE, nom), "w", encoding="utf-8").write(tpl)
+    ecrire_page(nom, tpl)
 
 
 PARTICULES = ("La", "Le", "Les", "Du", "Des", "De", "Saint", "Sainte", "Van", "Von", "Di", "Da", "Del", "Della", "Mac", "Mc")
@@ -559,7 +780,7 @@ def meme_personne(a, b):
 
 def redirection(nom, cible):
     """Page minimale qui renvoie vers une autre : garde vivants les anciens liens vers frise.html et reponses.html."""
-    open(os.path.join(RACINE, nom), "w", encoding="utf-8").write(
+    ecrire_page(nom,
         '<!doctype html>\n<html lang="fr"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=%s">'
         '<link rel="canonical" href="%s%s"><title>Redirection</title></head>'
         '<body><p>Cette page a été réunie à <a href="%s">Les auteurs</a>.</p></body></html>\n' % (cible, BASE_URL, cible, cible))
@@ -572,10 +793,16 @@ def portrait_de(nom, candidats):
         return None
     trouves = []
     for p in candidats:
-        alt = [w for w in slug(p.get("alt", "")).split("-") if w and w not in MOTS_VIDES + ("portrait",)]
+        alt = [w for w in slug(p.get("alt_fr", p.get("alt", ""))).split("-") if w and w not in MOTS_VIDES + ("portrait",)]
         if alt and (all(w in alt for w in mots) or all(w in mots for w in alt)):
             trouves.append((0 if alt[-1] == mots[-1] else 1, p))
     return min(trouves, key=lambda x: x[0])[1] if trouves else None
+
+
+def alias_de(a):
+    """Noms d'un artiste qui peuvent ouvrir une légende : ses alias français et leur forme dans la langue courante."""
+    al = list(a.get("alias", []))
+    return al + [N(x) for x in al + [a["nom"]] if N(x) not in al]
 
 
 def titre_oeuvre(legende, alias):
@@ -656,7 +883,8 @@ def cle_auteur(nom):
 
 
 def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None, sources="", credits="",
-                 tableau="", portraits=None, ecrivains=None, artistes=None, oeuvres=None, textes=()):
+                 tableau="", portraits=None, ecrivains=None, artistes=None, oeuvres=None, textes=(),
+                 lettres_fr=None, tableau_fr=None):
     libelles = libelles or {}
     artistes = artistes or {}
     oeuvres = oeuvres or {}
@@ -701,16 +929,22 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
 
     # le tableau du prologue : une ligne peut réunir plusieurs auteurs (« Celse (IIe s.) et Origène (…) »,
     # « Schweitzer, Drews, Couchoud, Ehrman ») ; une ligne sans fiche devient une fiche, datée si elle porte des dates
-    m = re.match(r"\s*<p>(.*?)</p>\s*", tableau, re.S)
-    if m:
-        tableau = tableau[m.end():]
-    entetes = [re.sub(r"<[^>]+>", "", x) for x in re.findall(r"<th>(.*?)</th>", tableau, re.S)]
+    def lignes_tableau(t):
+        m = re.match(r"\s*<p>(.*?)</p>\s*", t, re.S)
+        if m:
+            t = t[m.end():]
+        return ([re.sub(r"<[^>]+>", "", x) for x in re.findall(r"<th>(.*?)</th>", t, re.S)],
+                [re.findall(r'<td data-label="[^"]*">(.*?)</td>', l, re.S) for l in re.findall(r"<tr>(.*?)</tr>", t, re.S)])
+    entetes, rangs = lignes_tableau(tableau)
+    rangs_fr = lignes_tableau(tableau_fr)[1] if tableau_fr else rangs
+    if len(rangs_fr) != len(rangs):
+        print("  traduction %s : le tableau des auteurs n'a pas le même nombre de lignes" % LANG)
+        rangs_fr = rangs
     sans_fiche = []
-    for ligne in re.findall(r"<tr>(.*?)</tr>", tableau, re.S):
-        cellules = re.findall(r'<td data-label="[^"]*">(.*?)</td>', ligne, re.S)
+    for cellules, cellules_fr in zip(rangs, rangs_fr):
         if len(cellules) < 2:
             continue
-        texte_nu = html.unescape(re.sub(r"<[^>]+>", "", cellules[0]))
+        texte_nu = html.unescape(re.sub(r"<[^>]+>", "", cellules_fr[0]))
         pers = personnes(texte_nu)
         noms = [n for n, d in pers] or [n.strip() for n in re.split(r",| et ", re.sub(r"\([^)]*\)", "", texte_nu)) if n.strip()]
         trouvees = [f for f in (fiche_pour(n) for n in noms) if f]
@@ -727,6 +961,9 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
 
     # les dialogues
     rel = charger("reponses.json", [])
+    if LANG != "fr":
+        notes = I18N.get("reponses", [])
+        rel = [dict(r, note=notes[i]) if i < len(notes) else r for i, r in enumerate(rel)]
     for r in rel:
         if r["section"] not in ids:
             print("  reponses.json : section inconnue", r["section"])
@@ -821,13 +1058,13 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
         print("  tableau des auteurs : lignes sans auteur de la frise, devenues fiches :", "; ".join(sans_fiche))
 
     # ---------------------------------------------------------------- lexique
-    lex = sorted(charger("lexique.json", []), key=lambda e: slug_terme(e["terme"]))
+    lex = sorted(lexique_courant(), key=lambda e: slug_terme(e["terme"]))
     cibles_ann = cibles_liaison(annexes, lexique=False)
     items = []
     for e in lex:
         if e["section"] not in ids:
             print("  lexique.json : section inconnue", e["section"])
-        sl = slug_terme(e["terme"])
+        sl = e.get("slug", slug_terme(e["terme"]))
         items.append('<div class="lex-entree" data-item id="%s"><dt>%s%s</dt><dd>%s <a class="lex-voir" href="index.html#%s">Lire dans l\'essai</a></dd></div>' % (
             sl, html.escape(e["terme"]),
             ' <span class="lex-langue">%s</span>' % en_ligne(e["langue"]) if e.get("langue") else "",
@@ -856,7 +1093,7 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                 '<span>%s</span></a>') % (
                     slug_terme(a["nom"]), src_img(f), html.escape(im.get("alt", "")), attr_dims(f), html.escape(im.get("caption", "")),
                     ' data-grand="%s"' % src_img(grand) if grand != f else "",
-                    html.escape(titre_oeuvre(im.get("caption", ""), a.get("alias", []))))
+                    html.escape(titre_oeuvre(im.get("caption", ""), alias_de(a))))
     titres_annexes = {a["id"]: a["titre"].split(" : ")[0] for a in annexes}
     lignes_passages = index_passages(textes, libelles, titres_annexes)
     passages = ('<details class="annexe" data-item data-type="bible" id="passages-cites"><summary>'
@@ -886,17 +1123,24 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
     # Même forme que la page Les auteurs : une fiche repliable par écrivain, dates tirées de build/ecrivains.json
     # (Wikidata), filtres par texte, partie et période ; le corps de la fiche liste ses œuvres citées.
     dates_ecr = charger("ecrivains.json", {})
-    auteurs = {}
+    auteurs, nom_aff = {}, {}
+    fr_par_id = {l["id"]: l["oeuvres"] for l in (lettres_fr or [])}
     for l in lettres:
-        for aut, tit, reste, date in l["oeuvres"]:
-            o = auteurs.setdefault(aut, {}).setdefault((tit, date), {"reste": reste, "sections": []})
+        oeuvres_fr = fr_par_id.get(l["id"]) if lettres_fr is not None else l["oeuvres"]
+        if oeuvres_fr is None or len(oeuvres_fr) != len(l["oeuvres"]):
+            print("  traduction %s, %s : encadré littéraire non aligné sur le français" % (LANG, l["id"]))
+            oeuvres_fr = l["oeuvres"]
+        for (aut, tit, reste, date), o_fr in zip(l["oeuvres"], oeuvres_fr):
+            cle = o_fr[0]  # l'écrivain est identifié par son nom français (dates, portrait, ancre)
+            nom_aff.setdefault(cle, aut)
+            o = auteurs.setdefault(cle, {}).setdefault((tit, date), {"reste": reste, "sections": []})
             if (l["id"], l["nom"]) not in o["sections"]:
                 o["sections"].append((l["id"], l["nom"]))
     for aut in auteurs:
         if aut not in dates_ecr:
             print("  ecrivains.json : écrivain sans dates", aut)
-    ecr = [{"nom": aut, "dates": dates_ecr.get(aut, {}).get("dates", ""), "annee": dates_ecr.get(aut, {}).get("annee"), "oeuvres": auteurs[aut]}
-           for aut in auteurs]
+    ecr = [{"nom": nom_aff[aut], "fr": aut, "dates": dates_ecr.get(aut, {}).get("dates", ""), "annee": dates_ecr.get(aut, {}).get("annee"),
+            "oeuvres": auteurs[aut]} for aut in auteurs]
     datees_ecr = sorted([f for f in ecr if f["annee"] is not None], key=lambda f: (f["annee"], cle_auteur(f["nom"])))
     sans_dates = sorted([f for f in ecr if f["annee"] is None], key=lambda f: cle_auteur(f["nom"]))
 
@@ -914,8 +1158,8 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
         return ('<details class="rep-carte fiche" data-item data-partie="%s" data-siecle="%s" id="%s" open>'
                 '<summary><h2>%s<span class="f-nom">%s</span>%s</h2></summary>'
                 '<div class="fiche-corps"><ul class="bib-oeuvres">%s</ul></div></details>') % (
-                    " ".join(parties_f), siecle_id, slug_terme(f["nom"]),
-                    avatar_html(ecrivains.get(slug_terme(f["nom"])), f["nom"]), html.escape(f["nom"]),
+                    " ".join(parties_f), siecle_id, slug_terme(f["fr"]),
+                    avatar_html(ecrivains.get(slug_terme(f["fr"])), f["nom"]), html.escape(f["nom"]),
                     '<span class="f-dates">%s</span>' % html.escape(f["dates"]) if f["dates"] else "", "".join(lis))
     h, cur, siecles = [], None, []
     for f in datees_ecr:
@@ -977,7 +1221,7 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                        ' <span class="bib-liens">%s · <a class="r-section" href="index.html#%s">%s</a>%s</span></span></li>' % (
                            src_img(f), html.escape(im.get("alt", "")), attr_dims(f), html.escape(im.get("caption", "")),
                            ' data-grand="%s"' % src_img(grand) if grand != f else "",
-                           html.escape(titre_oeuvre(im.get("caption", ""), a.get("alias", []))), html.escape(lib), ancre, lien,
+                           html.escape(titre_oeuvre(im.get("caption", ""), alias_de(a))), html.escape(lib), ancre, lien,
                            "".join(' · <a class="r-section" href="annexes.html#%s">Annexe : %s</a>' % (an["id"], html.escape(an["titre"].split(" : ")[0]))
                                    for an in annexes_de.get(f, []))))
         sl = slug_terme(a["nom"])
@@ -1026,9 +1270,15 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                titre, og_image, version)
 
 
-def construire(chemin, version=None):
-    """Rend l'essai (index.html)."""
+def construire(chemin, version=None, fr_parties=None):
+    """Rend l'essai (index.html). Pour une traduction, fr_parties est la structure française : ids, portraits,
+    figures et dates de tri en viennent, alignés par position ; le texte affiché vient de la traduction."""
     titre, sous_titre, intro, parties = structurer(lire_article(chemin))
+    parties = [p for p in parties if not p["titre"].startswith(RESUME)]
+    if fr_parties is None:
+        fr_parties = parties
+    elif len(fr_parties) != len(parties):
+        raise SystemExit("traduction %s : %d parties au lieu de %d" % (LANG, len(parties), len(fr_parties)))
     images = charger_images()
     par_section = {}
     for im in images:
@@ -1062,11 +1312,11 @@ def construire(chemin, version=None):
     nb_parties = 0
     infos = []  # sections, pour la frise
     lettres = []  # encadres litteraires, pour la bibliotheque
-    for part in parties:
-        pid = uid(slug(part["titre"]), "p")
+    for part, part_fr in zip(parties, fr_parties):
+        pid = uid(slug(part_fr["titre"]), "p")
         ptitre = part["titre"]
-        if ptitre.startswith(RESUME):
-            continue  # le resume de dix minutes n'est pas publie : seule la version integrale l'est
+        if len(part["sections"]) != len(part_fr["sections"]):
+            raise SystemExit("traduction %s, %s : %d sections au lieu de %d" % (LANG, pid, len(part["sections"]), len(part_fr["sections"])))
         if pid == "sources":
             secs = []
             for sec in part["sections"]:
@@ -1074,9 +1324,9 @@ def construire(chemin, version=None):
                 secs += rendre_blocs(sec["lignes"])
             sources_html = "\n".join(rendre_blocs(part["lignes"]) + secs)
             continue
-        label, _, sous = ptitre.partition(" : ")
+        label, _, sous = partition_titre(ptitre)
         libelles[pid] = label
-        if "partie" in label.lower():
+        if "partie" in partition_titre(part_fr["titre"])[0].lower():
             nb_parties += 1
         intro_p = rendre_blocs(part["lignes"])
         secs_html, toc_secs, nb_auteurs = [], [], 0
@@ -1084,21 +1334,26 @@ def construire(chemin, version=None):
             intro_p.insert(min(1, len(intro_p)), figure(f))
             oeuvres[f["file"]] = (pid, label)
         textes.append((pid, html.unescape(re.sub(r"<[^>]+>", " ", "\n".join(intro_p)))))
-        for sec in part["sections"]:
-            base = slug(sec["titre"])
+        for sec, sec_fr in zip(part["sections"], part_fr["sections"]):
+            base = slug(sec_fr["titre"])
             sid = uid(base, pid)
             nom, dates, formule = analyser_titre(sec["titre"])
+            dates_fr = analyser_titre(sec_fr["titre"])[1]
             if base == "tableau-des-auteurs":
                 tableau_html = "\n".join(rendre_blocs(sec["lignes"]))  # publié à part, dans la page auteurs.html
                 continue
-            infos.append({"id": sid, "titre": sec["titre"], "partie": pid, "partie_titre": ptitre})
+            infos.append({"id": sid, "titre": sec_fr["titre"], "partie": pid, "partie_titre": ptitre})
             del LETTRES_BUF[:]
             corps_sec = rendre_blocs(sec["lignes"])
-            if LETTRES_BUF:
-                lettres.append({"id": sid, "nom": nom if dates else sec["titre"], "oeuvres": list(LETTRES_BUF)})
+            buf = list(LETTRES_BUF)
+            if fr_parties is not parties and len(corps_sec) != len(rendre_blocs(sec_fr["lignes"])):
+                print("  traduction %s, %s : nombre de blocs différent du français" % (LANG, sid))
+            if buf:
+                lettres.append({"id": sid, "nom": nom if dates else sec["titre"], "oeuvres": buf})
+            del LETTRES_BUF[:]
             portraits = par_section.get((base, "portrait"), [])
             portraits_par_id[sid] = portraits
-            est_auteur = bool(dates) or bool(portraits)
+            est_auteur = bool(dates_fr) or bool(portraits)
             nb_auteurs += 1 if est_auteur else 0
             corps_sec = inserer_figures(corps_sec, par_section.get((base, "figure"), []))
             for f in par_section.get((base, "figure"), []):
@@ -1121,8 +1376,8 @@ def construire(chemin, version=None):
             else:
                 head = '<span class="sec-titles"><span class="sec-nom">%s</span></span>' % en_ligne(sec["titre"])
                 credits = ""
-            lib = nom if est_auteur else sec["titre"].split(" : ")[0]
-            libelles[sid] = "%s (%s)" % (lib, label.lower()) if lib == "Passage" else lib
+            lib = nom if est_auteur else partition_titre(sec["titre"])[0]
+            libelles[sid] = "%s (%s)" % (lib, label.lower()) if partition_titre(sec_fr["titre"])[0] == "Passage" else lib
             secs_html.append(
                 '<details class="section%s" id="%s" data-partie="%s" open><summary>%s'
                 '<span class="sec-side">%s</span></summary>'
@@ -1132,7 +1387,7 @@ def construire(chemin, version=None):
             toc_secs.append('<li><a href="#%s" data-target="%s">%s%s</a></li>' % (
                 sid, sid, en_ligne(nom if est_auteur else sec["titre"]),
                 ' <small>%s</small>' % html.escape(dates) if dates else ""))
-        meta = "%d auteurs" % nb_auteurs if nb_auteurs else ""
+        meta = T("{n} auteurs").replace("{n}", str(nb_auteurs)) if nb_auteurs else ""
         card_img = par_section.get((pid, "partcard"), [])
         part_img = par_section.get((pid, "partimage"), []) or card_img  # grande version si elle existe
         if card_img:
@@ -1179,6 +1434,8 @@ def construire(chemin, version=None):
         "STORE": "sdr-",
         "TITRE_ONGLET": html.escape(titre),
         "ONGLETS": onglets("index.html"),
+        "HREFLANG": hreflangs("index.html"),
+        "UI": ui_js(),
         "PAGE": "index.html",
         "CARTES": "\n".join(cartes),
         "TOC": "\n".join(toc),
@@ -1192,23 +1449,37 @@ def construire(chemin, version=None):
     tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace('src="js/app.js"', 'src="js/app.js?v=%s"' % version).replace('src="js/sauts.js"', 'src="js/sauts.js?v=%s"' % version).replace('src="js/portrait.js"', 'src="js/portrait.js?v=%s"' % version)
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
-    open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)
-    print("index.html : %d parties" % len(corps))
+    ecrire_page("index.html", tpl)
+    print("%sindex.html : %d parties" % ("" if LANG == "fr" else LANG + "/", len(corps)))
     return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"],
             "lettres": lettres, "annexes": annexes, "libelles": libelles, "sources": sources_html,
             "credits": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>",
             "tableau": tableau_html, "portraits": portraits_par_id,
             "ecrivains": {im["section"]: im for im in images if im["role"] == "ecrivain"},
-            "artistes": {im["section"]: im for im in images if im["role"] == "artiste"}, "oeuvres": oeuvres, "textes": textes}
+            "artistes": {im["section"]: im for im in images if im["role"] == "artiste"}, "oeuvres": oeuvres, "textes": textes,
+            "parties": parties}
 
 
 def tout_construire(article=ARTICLE):
+    global LANGUES_CONSTRUITES
     version = str(int(time.time()))
-    r = construire(article, version=version)
-    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"], r["sources"], r["credits"],
-                 r["tableau"], r["portraits"], r["ecrivains"], r["artistes"], r["oeuvres"], r["textes"])
+    LANGUES_CONSTRUITES = [c for c, _, _ in LANGUES if langue_disponible(c)]
+    r_fr = None
+    for code in LANGUES_CONSTRUITES:
+        charger_langue(code)
+        chemin = article if code == "fr" else os.path.join(dossier_langue(code), "article.md")
+        r = construire(chemin, version=version, fr_parties=r_fr["parties"] if r_fr else None)
+        pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"], r["sources"], r["credits"],
+                     r["tableau"], r["portraits"], r["ecrivains"], r["artistes"], r["oeuvres"], r["textes"],
+                     lettres_fr=r_fr["lettres"] if r_fr else None, tableau_fr=r_fr["tableau"] if r_fr else None)
+        if code == "fr":
+            r_fr = r
+    charger_langue("fr")
+    autres = "".join('  "%s/%s",\n' % (c, p) for c in LANGUES_CONSTRUITES if c != "fr"
+                     for p in [f for f, _ in PAGES_SITE])
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
-    open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw.replace("{{VERSION}}", version))
+    open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(
+        sw.replace("{{VERSION}}", version).replace("  /* {{AUTRES_LANGUES}} */\n", autres))
 
 
 if __name__ == "__main__":

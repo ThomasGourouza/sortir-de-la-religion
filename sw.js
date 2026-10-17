@@ -1,5 +1,5 @@
 /* Service worker : lecture hors connexion. Fichier généré par build/build.py. */
-var VERSION = "1792238263";
+var VERSION = "1792241559";
 var SHELL_CACHE = "sdr-shell-" + VERSION;
 var IMG_CACHE = "sdr-images";
 var FONT_CACHE = "sdr-fonts";
@@ -17,6 +17,13 @@ var SHELL = [
   "galerie.html",
   "sources.html",
   "js/pages.js?v=" + VERSION,
+  "en/index.html",
+  "en/auteurs.html",
+  "en/lexique.html",
+  "en/annexes.html",
+  "en/bibliotheque.html",
+  "en/galerie.html",
+  "en/sources.html",
   "js/portrait.js?v=" + VERSION
 ];
 
@@ -45,7 +52,9 @@ function cacheFirst(req, name) {
 }
 
 function networkFirst(req) {
-  var page = (new URL(req.url).pathname.match(/([a-z]+\.html)$/) || [null, "index.html"])[1];
+  /* clé de cache relative à la portée du service worker : en/index.html et index.html sont deux pages */
+  var rel = new URL(req.url).pathname.slice(new URL(self.registration.scope).pathname.length);
+  var page = /(^|\/)$/.test(rel) ? rel + "index.html" : rel;
   return fetch(req).then(function (res) {
     if (res && res.ok) {
       var copy = res.clone();

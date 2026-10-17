@@ -81,7 +81,7 @@
       var fiches = $$(".fiche");
       var ouvrir = !fiches.some(function (f) { return f.open; });
       fiches.forEach(function (f) { f.open = ouvrir; });
-      plier.textContent = ouvrir ? "Tout replier" : "Tout déplier";
+      plier.textContent = window.SDR_T(ouvrir ? "Tout replier" : "Tout déplier");
       plier.setAttribute("aria-pressed", String(!ouvrir));
     });
   }
@@ -114,6 +114,6 @@
   window.addEventListener("hashchange", function () { cible(true); });
 
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
-    navigator.serviceWorker.register("sw.js").catch(function () {});
+    navigator.serviceWorker.register((document.documentElement.getAttribute("data-racine") || "") + "sw.js").catch(function () {});
   }
 })();
