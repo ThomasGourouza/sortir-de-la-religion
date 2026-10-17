@@ -1,4 +1,4 @@
-/* Pages outils (frise, réponses, lexique, annexes, bibliothèque) : thème, taille du texte, filtres */
+/* Pages outils (auteurs, lexique, annexes, bibliothèque, sources) : thème, taille du texte, filtres */
 (function () {
   "use strict";
 
@@ -31,22 +31,36 @@
   var input = $("[data-filtre-texte]");
   var typeBtns = $$("[data-filtre-type]");
   var partSel = $("[data-filtre-partie]");
+  var sieSel = $("[data-filtre-siecle]");
   var type = "tous";
 
   function apply() {
     var q = input ? norm(input.value.trim()) : "";
     var part = partSel ? partSel.value : "";
+    var sie = sieSel ? sieSel.value : "";
     $$("[data-item]").forEach(function (el) {
       var carte = el.closest(".rep-carte");
       var texte = el.textContent + (carte ? " " + carte.querySelector("h2").textContent : "");
+      if (el.classList.contains("fiche")) { /* une fiche d'auteur : son nom, son tableau et les noms de ses interlocuteurs, pas les notes */
+        texte = $$("h2, .fiche-tab, li[data-type] > a:not(.r-section)", el).map(function (x) { return x.textContent; }).join(" ");
+      }
       var ok = !q || norm(texte).indexOf(q) >= 0;
       if (ok && type !== "tous" && el.hasAttribute("data-type")) ok = el.getAttribute("data-type") === type;
       if (ok && part && el.hasAttribute("data-partie")) ok = el.getAttribute("data-partie") === part;
+      if (ok && sie && el.hasAttribute("data-siecle")) ok = el.getAttribute("data-siecle") === sie;
       el.hidden = !ok;
+    });
+    /* Le type d'échange filtre aussi les lignes de dialogue des fiches d'auteurs, et masque une fiche qui n'en garde aucune */
+    $$("[data-type]:not([data-item])").forEach(function (el) {
+      el.hidden = type !== "tous" && el.getAttribute("data-type") !== type;
+    });
+    $$(".fiche").forEach(function (f) {
+      var dial = $$("[data-type]", f);
+      if (!f.hidden && type !== "tous" && !dial.some(function (el) { return !el.hidden; })) f.hidden = true;
     });
     $$(".rep-carte > ul").forEach(function (ul) {
       var h = ul.previousElementSibling;
-      var vide = !$$("[data-item]", ul).some(function (el) { return !el.hidden; });
+      var vide = !$$("[data-item], [data-type]", ul).some(function (el) { return !el.hidden; });
       ul.hidden = vide;
       if (h && h.tagName === "H3") h.hidden = vide;
     });
@@ -58,6 +72,19 @@
   }
   if (input) input.addEventListener("input", apply);
   if (partSel) partSel.addEventListener("change", apply);
+  if (sieSel) sieSel.addEventListener("change", apply);
+
+  /* Page Les auteurs : replier ou déplier toutes les fiches (elles sont ouvertes par défaut) */
+  var plier = $("#plier-tout");
+  if (plier) {
+    plier.addEventListener("click", function () {
+      var fiches = $$(".fiche");
+      var ouvrir = !fiches.some(function (f) { return f.open; });
+      fiches.forEach(function (f) { f.open = ouvrir; });
+      plier.textContent = ouvrir ? "Tout replier" : "Tout déplier";
+      plier.setAttribute("aria-pressed", String(!ouvrir));
+    });
+  }
   typeBtns.forEach(function (b) {
     b.addEventListener("click", function () {
       type = b.getAttribute("data-filtre-type");

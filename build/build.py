@@ -499,8 +499,8 @@ def personnes(titre):
             for n, d in re.findall(r"([^()]+?)\s*\(([^)]*\d[^)]*)\)", tete)]
 
 
-PAGES_SITE = (("index.html", "L'essai"), ("auteurs.html", "Les auteurs"), ("frise.html", "Frise"), ("reponses.html", "Dialogues"),
-              ("lexique.html", "Lexique"), ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"), ("sources.html", "Sources"))
+PAGES_SITE = (("index.html", "L'essai"), ("auteurs.html", "Les auteurs"), ("lexique.html", "Lexique"),
+              ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"), ("sources.html", "Sources"))
 
 
 def onglets(actif):
@@ -543,6 +543,19 @@ def mots_nom(nom):
     return [w for w in slug(nom.split(" et ")[0]).split("-") if w and w not in MOTS_VIDES]
 
 
+def meme_personne(a, b):
+    """Deux noms désignent la même personne : même dernier mot (nom de famille) et les mots de l'un sont dans l'autre."""
+    return bool(a) and bool(b) and a[-1] == b[-1] and (all(w in b for w in a) or all(w in a for w in b))
+
+
+def redirection(nom, cible):
+    """Page minimale qui renvoie vers une autre : garde vivants les anciens liens vers frise.html et reponses.html."""
+    open(os.path.join(RACINE, nom), "w", encoding="utf-8").write(
+        '<!doctype html>\n<html lang="fr"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=%s">'
+        '<link rel="canonical" href="%s%s"><title>Redirection</title></head>'
+        '<body><p>Cette page a été réunie à <a href="%s">Les auteurs</a>.</p></body></html>\n' % (cible, BASE_URL, cible, cible))
+
+
 def portrait_de(nom, candidats):
     """Le portrait dont l'alt porte le nom : tous les mots du nom s'y retrouvent, de préférence avec le nom de famille en dernier."""
     mots = mots_nom(nom)
@@ -573,63 +586,78 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
     portraits = portraits or {}
     ecrivains = ecrivains or {}
     tous_portraits = [p for s in infos for p in portraits.get(s["id"], [])]
-    # ---------------------------------------------------------------- frise
+    # ---------------------------------------------------------------- les auteurs : annuaire chronologique
+    # Une fiche par auteur, dans l'ordre de la frise ; chaque fiche réunit sa ligne du tableau du prologue (régime,
+    # texte pivot, débat avec), le lien vers sa section et ses dialogues (reponses.json, sous les deux participants).
     dates_sup = charger("auteurs.json", {})
+    infos_par_id = {s["id"]: s for s in infos}
     gens = []
-    section_de = {}  # mots du nom d'un auteur -> id de sa section (pour le tableau des auteurs)
     for s in infos:
         if s["id"] in dates_sup:
             for nom, d, y in dates_sup[s["id"]]:
                 gens.append((y, nom, d, s))
-                section_de.setdefault(tuple(mots_nom(nom)), s["id"])
             continue
         for nom, d in personnes(s["titre"]):
-            section_de.setdefault(tuple(mots_nom(nom)), s["id"])
             y = annee(d)
             if y is not None:
                 gens.append((y, nom, d, s))
+    fiches, par_mots, vus = [], {}, set()
 
-    # ---------------------------------------------------------------- les auteurs (tableau du prologue)
-    intro_tab = ""
+    def nouvelle_fiche(nom, dates="", y=None, sid=None, partie=None, partie_titre=""):
+        f = {"nom": nom, "mots": tuple(mots_nom(nom)), "dates": dates, "annee": y, "sid": sid, "partie": partie or "",
+             "partie_titre": partie_titre, "tableau": None, "sort": [], "entre": []}
+        fiches.append(f)
+        par_mots.setdefault(f["mots"], f)
+        return f
+
+    def fiche_pour(nom):
+        """La fiche d'un nom : mêmes mots d'abord, sinon même personne (nom de famille commun, prénom compatible)."""
+        mots = tuple(mots_nom(nom))
+        if mots in par_mots:
+            return par_mots[mots]
+        return next((f for f in fiches if meme_personne(mots, f["mots"])), None)
+    for y, nom, d, s in sorted(gens, key=lambda g: (g[0], g[1])):
+        if nom in vus:
+            continue
+        vus.add(nom)
+        nouvelle_fiche(nom, d, y, s["id"], s["partie"], s["partie_titre"])
+
+    # le tableau du prologue : une ligne peut réunir plusieurs auteurs (« Celse (IIe s.) et Origène (…) »,
+    # « Schweitzer, Drews, Couchoud, Ehrman ») ; une ligne sans fiche devient une fiche, datée si elle porte des dates
     m = re.match(r"\s*<p>(.*?)</p>\s*", tableau, re.S)
     if m:
-        intro_tab, tableau = m.group(1), tableau[m.end():]
-
-    def section_pour(nom):
-        """La section d'un auteur du tableau : mêmes mots que son titre, ou un nom de famille commun en dernier mot."""
-        mots = tuple(mots_nom(nom))
-        if mots in section_de:
-            return section_de[mots]
-        for cle, sid in section_de.items():
-            if mots and cle and cle[-1] == mots[-1] and (all(w in cle for w in mots) or all(w in mots for w in cle)):
-                return sid
-        return None
-
-    def cellule_auteur(m):
-        brut = m.group(1)
-        texte_nu = re.sub(r"<[^>]+>", "", brut)
-        # une ligne peut réunir plusieurs auteurs : « Celse (IIe s.) et Origène (…) », « Schweitzer, Drews, Couchoud, Ehrman »
-        noms = [n for n, d in personnes(texte_nu)] or [n.strip() for n in re.split(r",| et ", re.sub(r"\([^)]*\)", "", texte_nu)) if n.strip()]
-        sid = next((s for s in (section_pour(n) for n in noms) if s), None)
-        if not sid and slug(texte_nu) in ids:
-            sid = slug(texte_nu)  # une ligne qui n'est pas un auteur mais une section (le bouddhisme des philosophes)
-        img = next((p for p in (portrait_de(n, tous_portraits) for n in noms) if p), None)
-        texte = '<a href="index.html#%s">%s</a>' % (sid, brut) if sid else brut
-        return '<td data-label="Auteur"><span class="aut-cell">%s<span>%s</span></span></td>' % (avatar_html(img, noms[0]), texte)
-    tableau = re.sub(r'<td data-label="Auteur">(.*?)</td>', cellule_auteur, tableau)
-    tableau = tableau.replace("<tbody><tr>", "<tbody><tr data-item>").replace("</tr><tr>", "</tr><tr data-item>")
-    nb_lignes = tableau.count("<tr data-item>")
-    page_outil("auteurs.html", "Les auteurs", intro_tab or "Les auteurs de l'essai, dans l'ordre où ils interviennent.",
-               "Les %d auteurs de l'essai : régime de critique, texte pivot, interlocuteurs." % nb_lignes,
-               '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" '
-               'aria-label="Chercher un auteur"></div><div class="auteurs">%s</div><p id="aucun" hidden>Aucun auteur ne correspond.</p>' % tableau,
-               titre, og_image, version)
-    vus, uniques = set(), []
-    for g in sorted(gens, key=lambda g: (g[0], g[1])):
-        if g[1] in vus:
+        tableau = tableau[m.end():]
+    entetes = [re.sub(r"<[^>]+>", "", x) for x in re.findall(r"<th>(.*?)</th>", tableau, re.S)]
+    sans_fiche = []
+    for ligne in re.findall(r"<tr>(.*?)</tr>", tableau, re.S):
+        cellules = re.findall(r'<td data-label="[^"]*">(.*?)</td>', ligne, re.S)
+        if len(cellules) < 2:
             continue
-        vus.add(g[1])
-        uniques.append(g)
+        texte_nu = html.unescape(re.sub(r"<[^>]+>", "", cellules[0]))
+        pers = personnes(texte_nu)
+        noms = [n for n, d in pers] or [n.strip() for n in re.split(r",| et ", re.sub(r"\([^)]*\)", "", texte_nu)) if n.strip()]
+        trouvees = [f for f in (fiche_pour(n) for n in noms) if f]
+        if not trouvees:
+            nom, d = (pers[0] if pers else (noms[0], ""))
+            y = annee(d) if d else None
+            sid = slug(texte_nu) if slug(texte_nu) in ids else None
+            s = infos_par_id.get(sid)
+            trouvees = [nouvelle_fiche(nom, d, y, sid, s["partie"] if s else None, s["partie_titre"] if s else "")]
+            sans_fiche.append(texte_nu)
+        for f in trouvees:
+            if f["tableau"] is None:
+                f["tableau"] = list(zip(entetes[1:], cellules[1:]))
+
+    # les dialogues
+    rel = charger("reponses.json", [])
+    for r in rel:
+        if r["section"] not in ids:
+            print("  reponses.json : section inconnue", r["section"])
+        s = infos_par_id.get(r["section"])
+        for cle, nom in (("sort", r["de"]), ("entre", r["a"])):
+            f = fiche_pour(nom) or nouvelle_fiche(nom, partie=s["partie"] if s else None, partie_titre=s["partie_titre"] if s else "")
+            f[cle].append(r)
+
     parties = []
     for s in infos:
         if s["partie"] not in [p[0] for p in parties]:
@@ -637,62 +665,83 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
     opts = '<option value="">Toutes les parties</option>' + "".join(
         '<option value="%s">%s</option>' % (pid, html.escape(pt.split(" : ")[0])) for pid, pt in parties
         if "partie" in pt.lower())
-    h, cur = [], None
-    for y, nom, d, s in uniques:
-        sc = siecle(y)
+
+    datees = sorted([f for f in fiches if f["annee"] is not None], key=lambda f: (f["annee"], f["nom"]))
+    autres = sorted([f for f in fiches if f["annee"] is None], key=lambda f: slug_terme(f["nom"]))
+    ids_fiches = set()
+    for f in datees + autres:  # identifiant de chaque fiche, ancre des liens entre fiches
+        fid = slug_terme(f["nom"]) or "fiche"
+        n = 2
+        while fid in ids_fiches:
+            fid = "%s-%d" % (slug_terme(f["nom"]), n)
+            n += 1
+        ids_fiches.add(fid)
+        f["id"] = fid
+
+    def li(r, autre):
+        """Une ligne de dialogue : le nom renvoie à la fiche de l'interlocuteur, « Lire la section » à l'essai."""
+        lab = "réponse attestée" if r["type"] == "attestee" else "confrontation construite"
+        f = fiche_pour(autre)
+        nom = '<a href="#%s">%s</a>' % (f["id"], html.escape(autre)) if f else html.escape(autre)
+        return ('<li data-type="%s"><span class="r-type %s">%s</span> %s <a class="r-section" href="index.html#%s">Lire la section</a>'
+                '<span class="r-note">%s</span></li>') % (r["type"], r["type"], lab, nom, r["section"], en_ligne(r["note"]))
+
+    def rendre_fiche(f, siecle_id):
+        fid = f["id"]
+        img = portrait_de(f["nom"], portraits.get(f["sid"], [])) or portrait_de(f["nom"], tous_portraits)
+        meta = []
+        if f["partie_titre"]:
+            meta.append(html.escape(f["partie_titre"]))
+        if f["sid"]:
+            meta.append('<a href="index.html#%s">Lire la section</a>' % f["sid"])
+        h = ['<details class="rep-carte fiche" data-item data-partie="%s" data-siecle="%s" id="%s" open>'
+             '<summary><h2>%s<span class="f-nom">%s</span>%s</h2></summary><div class="fiche-corps">' % (
+                 f["partie"], siecle_id, fid, avatar_html(img, f["nom"]), html.escape(f["nom"]),
+                 '<span class="f-dates">%s</span>' % html.escape(f["dates"]) if f["dates"] else "")]
+        if meta:
+            h.append('<p class="fiche-meta">%s</p>' % " · ".join(meta))
+        if f["tableau"]:
+            h.append('<dl class="fiche-tab">%s</dl>' % "".join("<dt>%s</dt><dd>%s</dd>" % (html.escape(k), v) for k, v in f["tableau"] if v.strip()))
+        if f["sort"]:
+            h.append("<h3>répond à</h3><ul>%s</ul>" % "".join(li(r, r["a"]) for r in f["sort"]))
+        if f["entre"]:
+            h.append("<h3>reçoit une réponse de</h3><ul>%s</ul>" % "".join(li(r, r["de"]) for r in f["entre"]))
+        h.append("</div></details>")
+        return "".join(h)
+    h, cur, siecles = [], None, []
+    for f in datees:
+        sc = siecle(f["annee"])
         if sc != cur:
             if cur:
-                h.append("</ol></section>")
-            h.append('<section class="siecle" data-groupe><h2>%s</h2><ol class="frise">' % sc)
+                h.append("</section>")
+            siecles.append((slug(sc), sc))
+            h.append('<section class="siecle" data-groupe><h2>%s</h2>' % sc)
             cur = sc
-        h.append('<li data-item data-partie="%s"><a href="index.html#%s">%s<span class="f-texte"><span class="f-nom">%s</span>'
-                 '<span class="f-dates">%s</span><span class="f-partie">%s</span></span></a></li>' % (
-                     s["partie"], s["id"], avatar_html(portrait_de(nom, portraits.get(s["id"], [])), nom),
-                     html.escape(nom), html.escape(d), html.escape(s["partie_titre"])))
-    h.append("</ol></section>")
-    filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" '
-               'aria-label="Chercher un auteur"><select data-filtre-partie aria-label="Filtrer par partie">%s</select></div>' % opts)
-    page_outil("frise.html", "Frise chronologique",
-               "Les %d auteurs de l'essai, du plus ancien au plus récent. Un click sur un nom ouvre sa section." % len(uniques),
-               "Frise chronologique des auteurs de l'essai.", filtres + "".join(h) + '<p id="aucun" hidden>Aucun auteur ne correspond.</p>',
-               titre, og_image, version)
-
-    # ---------------------------------------------------------------- reponses
-    rel = charger("reponses.json", [])
-    for r in rel:
-        if r["section"] not in ids:
-            print("  reponses.json : section inconnue", r["section"])
-    noms = []
-    for r in rel:
-        for n in (r["de"], r["a"]):
-            if n not in noms:
-                noms.append(n)
-    noms.sort(key=lambda n: slug_terme(n))
-    cartes = []
-    for n in noms:
-        sort = [r for r in rel if r["de"] == n]
-        entre = [r for r in rel if r["a"] == n]
-
-        def li(r, autre):
-            lab = "réponse attestée" if r["type"] == "attestee" else "confrontation construite"
-            return ('<li data-item data-type="%s"><span class="r-type %s">%s</span> <a href="index.html#%s">%s</a>'
-                    '<span class="r-note">%s</span></li>') % (r["type"], r["type"], lab, r["section"], html.escape(autre), en_ligne(r["note"]))
-        blocs_html = ""
-        if sort:
-            blocs_html += "<h3>répond à</h3><ul>%s</ul>" % "".join(li(r, r["a"]) for r in sort)
-        if entre:
-            blocs_html += "<h3>reçoit une réponse de</h3><ul>%s</ul>" % "".join(li(r, r["de"]) for r in entre)
-        cartes.append('<section class="rep-carte" data-groupe id="%s"><h2>%s%s</h2>%s</section>' % (
-            slug_terme(n), avatar_html(portrait_de(n, tous_portraits), n), html.escape(n), blocs_html))
+        h.append(rendre_fiche(f, slug(sc)))
+    if cur:
+        h.append("</section>")
+    if autres:
+        siecles.append(("autres", "Autres figures et interlocuteurs"))
+        h.append('<section class="siecle" data-groupe><h2>Autres figures et interlocuteurs</h2>%s</section>' % "".join(
+            rendre_fiche(f, "autres") for f in autres))
     att = sum(1 for r in rel if r["type"] == "attestee")
-    filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" aria-label="Chercher">'
-               '<div class="chips"><button class="chip" data-filtre-type="tous" aria-pressed="true">Toutes</button>'
-               '<button class="chip" data-filtre-type="attestee" aria-pressed="false">Attestées</button>'
-               '<button class="chip" data-filtre-type="construite" aria-pressed="false">Construites</button></div></div>')
-    page_outil("reponses.html", "Dialogues",
-               "Les %d échanges que l'essai met en scène : %d réponses attestées, quand un auteur a réellement lu un autre et lui a répondu, et %d confrontations construites, quand l'essai fait se rencontrer deux pensées que l'histoire n'a pas mises face à face." % (len(rel), att, len(rel) - att),
-               "Dialogues : qui répond à qui parmi les auteurs de l'essai.", filtres + "".join(cartes) + '<p id="aucun" hidden>Aucun échange ne correspond.</p>',
-               titre, og_image, version)
+    opts_siecles = '<option value="">Toutes les périodes</option>' + "".join(
+        '<option value="%s">%s</option>' % (sid, html.escape(lab)) for sid, lab in siecles)
+    filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" '
+               'aria-label="Chercher un auteur"><select data-filtre-partie aria-label="Filtrer par partie">%s</select>'
+               '<select data-filtre-siecle aria-label="Filtrer par période">%s</select>'
+               '<button class="chip plier" type="button" id="plier-tout" aria-pressed="false">Tout replier</button></div>' % (opts, opts_siecles))
+    page_outil("auteurs.html", "Les auteurs",
+               "Les %d auteurs de l'essai, du plus ancien au plus récent : pour chacun, son régime de critique, son texte pivot, "
+               "ses interlocuteurs, et les %d échanges que l'essai met en scène, %d réponses attestées, quand un auteur a réellement "
+               "lu un autre et lui a répondu, et %d confrontations construites, quand l'essai fait se rencontrer deux pensées que "
+               "l'histoire n'a pas mises face à face." % (len(datees), len(rel), att, len(rel) - att),
+               "Les auteurs de l'essai : chronologie, régime de critique, texte pivot, dialogues.",
+               filtres + "".join(h) + '<p id="aucun" hidden>Aucun auteur ne correspond.</p>', titre, og_image, version)
+    redirection("frise.html", "auteurs.html")
+    redirection("reponses.html", "auteurs.html")
+    if sans_fiche:
+        print("  tableau des auteurs : lignes sans auteur de la frise, devenues fiches :", "; ".join(sans_fiche))
 
     # ---------------------------------------------------------------- lexique
     lex = sorted(charger("lexique.json", []), key=lambda e: slug_terme(e["terme"]))

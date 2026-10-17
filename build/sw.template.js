@@ -11,8 +11,6 @@ var SHELL = [
   "js/sauts.js?v=" + VERSION,
   "favicon.svg",
   "auteurs.html",
-  "frise.html",
-  "reponses.html",
   "lexique.html",
   "annexes.html",
   "bibliotheque.html",
