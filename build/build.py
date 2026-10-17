@@ -316,7 +316,7 @@ def slug_terme(t):
     return re.sub(r"[^a-zA-Z0-9]+", "-", t.lower()).strip("-")
 
 
-CATEGORIES = (("theories", "Théories des auteurs"), ("histoire", "Histoire"),
+CATEGORIES = (("theories", "Théories des auteurs"), ("bible", "Bible : les textes"), ("histoire", "Histoire"),
               ("disciplines", "Disciplines et méthodes"), ("courants", "Courants et doctrines"))
 CHAMPS_LISTE = ("sections", "motifs", "references")
 
@@ -422,16 +422,23 @@ def lier(h, cibles, scope_self=None):
             continue
         if bloque > 0 or not m.strip():
             continue
-        poses = []
         m_bas = m.lower()
-        for cle, classe, rx, lit, ci in motifs:
+        # pour chaque cible, sa première occurrence dans ce morceau (ordre des motifs en cas d'égalité)
+        cands = {}
+        for rang, (cle, classe, rx, lit, ci) in enumerate(motifs):
             if cle == scope_self or (scope, cle) in faits:
                 continue
             if lit not in (m_bas if ci else m):  # préfiltrage : évite la regex quand le motif est absent
                 continue
             r = rx.search(m)
-            if r and not any(a < r.end() and r.start() < b for a, b, _, _ in poses):
-                poses.append((r.start(), r.end(), cle, classe))
+            if r and (cle not in cands or r.start() < cands[cle][0]):
+                cands[cle] = (r.start(), r.end(), cle, classe, rang)
+        # chevauchements : le lexique d'abord, puis le motif le plus long (« Évangile de Jean » plutôt
+        # que « Évangile »), puis l'ordre des motifs ; une cible écartée reste libre pour la suite de la section
+        poses = []
+        for a0, b0, cle, classe, rang in sorted(cands.values(), key=lambda c: (c[3] != "lex", -(c[1] - c[0]), c[4])):
+            if not any(a < b0 and a0 < b for a, b, _, _ in poses):
+                poses.append((a0, b0, cle, classe))
                 faits.add((scope, cle))
         for a, b, (page, sl), classe in sorted(poses, reverse=True):
             m = m[:a] + '<a class="%s" href="%s#%s" title="%s">%s</a>' % (classe, page, sl, TITRES_LIENS[page], m[a:b]) + m[b:]
