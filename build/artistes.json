@@ -1,0 +1,407 @@
+[
+ {
+  "nom": "Rembrandt",
+  "alias": [
+   "Rembrandt (et atelier ?)",
+   "Rembrandt"
+  ],
+  "qid": "Q5598",
+  "dates": "1606-1669",
+  "annee": 1606,
+  "oeuvres": [
+   "images/art/couverture.jpg",
+   "images/art/rembrandt-sacrifice-isaac.jpg",
+   "images/art/rembrandt-moise-tables.jpg",
+   "images/art/rembrandt-apotre-paul.jpg"
+  ]
+ },
+ {
+  "nom": "Michel-Ange",
+  "alias": [
+   "Michel-Ange"
+  ],
+  "qid": "Q5592",
+  "dates": "1475-1564",
+  "annee": 1475,
+  "oeuvres": [
+   "images/art/michel-ange-isaie.jpg",
+   "images/art/michel-ange-creation-adam.jpg"
+  ]
+ },
+ {
+  "nom": "Diego Velázquez",
+  "alias": [
+   "Velázquez"
+  ],
+  "qid": "Q297",
+  "dates": "1599-1660",
+  "annee": 1599,
+  "oeuvres": [
+   "images/art/velazquez-christ-crucifie.jpg"
+  ]
+ },
+ {
+  "nom": "Duccio di Buoninsegna",
+  "alias": [
+   "Duccio"
+  ],
+  "qid": "Q15792",
+  "dates": "1255-1319",
+  "annee": 1255,
+  "oeuvres": [
+   "images/art/duccio-tentation.jpg"
+  ]
+ },
+ {
+  "nom": "Pedro Berruguete",
+  "alias": [
+   "Pedro Berruguete"
+  ],
+  "qid": "Q561783",
+  "dates": "1450-1504",
+  "annee": 1450,
+  "oeuvres": [
+   "images/art/berruguete-autodafe.jpg"
+  ]
+ },
+ {
+  "nom": "Le Caravage",
+  "alias": [
+   "Le Caravage",
+   "Caravage"
+  ],
+  "qid": "Q42207",
+  "dates": "1571-1610",
+  "annee": 1571,
+  "oeuvres": [
+   "images/art/caravage-conversion-saint-paul.jpg",
+   "images/art/caravage-incredulite-thomas.jpg",
+   "images/art/caravage-sacrifice-isaac.jpg"
+  ]
+ },
+ {
+  "nom": "Jean-Léon Gérôme",
+  "alias": [
+   "Jean-Léon Gérôme"
+  ],
+  "qid": "Q212499",
+  "dates": "1824-1904",
+  "annee": 1824,
+  "oeuvres": [
+   "images/art/gerome-diogene.jpg"
+  ]
+ },
+ {
+  "nom": "Titien",
+  "alias": [
+   "Titien"
+  ],
+  "qid": "Q47551",
+  "dates": "1490-1576",
+  "annee": 1490,
+  "oeuvres": [
+   "images/art/titien-sisyphe.jpg"
+  ]
+ },
+ {
+  "nom": "Raphaël",
+  "alias": [
+   "Raphaël"
+  ],
+  "qid": "Q5597",
+  "dates": "1483-1520",
+  "annee": 1483,
+  "oeuvres": [
+   "images/art/raphael-ecole-athenes.jpg"
+  ]
+ },
+ {
+  "nom": "Caspar David Friedrich",
+  "alias": [
+   "Caspar David Friedrich"
+  ],
+  "qid": "Q104884",
+  "dates": "1774-1840",
+  "annee": 1774,
+  "oeuvres": [
+   "images/art/friedrich-moine-bord-de-mer.jpg",
+   "images/art/partie-troisieme.jpg",
+   "images/art/partie-septieme.jpg",
+   "images/art/partie-conclusion.jpg"
+  ]
+ },
+ {
+  "nom": "Jacques-Louis David",
+  "alias": [
+   "Jacques-Louis David"
+  ],
+  "qid": "Q83155",
+  "dates": "1748-1825",
+  "annee": 1748,
+  "oeuvres": [
+   "images/art/david-mort-de-socrate.jpg"
+  ]
+ },
+ {
+  "nom": "Nicolas Poussin",
+  "alias": [
+   "Nicolas Poussin"
+  ],
+  "qid": "Q41554",
+  "dates": "1594-1665",
+  "annee": 1594,
+  "oeuvres": [
+   "images/art/poussin-veau-d-or.jpg"
+  ]
+ },
+ {
+  "nom": "Léonard de Vinci",
+  "alias": [
+   "Léonard de Vinci"
+  ],
+  "qid": "Q762",
+  "dates": "1452-1519",
+  "annee": 1452,
+  "oeuvres": [
+   "images/art/leonard-cene.jpg"
+  ]
+ },
+ {
+  "nom": "Hans Holbein le Jeune",
+  "alias": [
+   "Hans Holbein le Jeune"
+  ],
+  "qid": "Q48319",
+  "dates": "1497-1543",
+  "annee": 1497,
+  "oeuvres": [
+   "images/art/holbein-christ-mort.jpg",
+   "images/art/holbein-ambassadeurs.jpg"
+  ]
+ },
+ {
+  "nom": "Pierre-Antoine Demachy",
+  "alias": [
+   "Pierre-Antoine Demachy"
+  ],
+  "qid": "Q3382841",
+  "dates": "1723-1807",
+  "annee": 1723,
+  "oeuvres": [
+   "images/art/demachy-fete-etre-supreme.jpg"
+  ]
+ },
+ {
+  "nom": "Georges de La Tour",
+  "alias": [
+   "Georges de La Tour"
+  ],
+  "qid": "Q203371",
+  "dates": "1593-1652",
+  "annee": 1593,
+  "oeuvres": [
+   "images/art/la-tour-madeleine-veilleuse.jpg"
+  ]
+ },
+ {
+  "nom": "Eugène Delacroix",
+  "alias": [
+   "Eugène Delacroix"
+  ],
+  "qid": "Q33477",
+  "dates": "1798-1863",
+  "annee": 1798,
+  "oeuvres": [
+   "images/art/delacroix-jacob-ange.jpg"
+  ]
+ },
+ {
+  "nom": "Matthias Grünewald",
+  "alias": [
+   "Matthias Grünewald"
+  ],
+  "qid": "Q154338",
+  "dates": "1480-1528",
+  "annee": 1480,
+  "oeuvres": [
+   "images/art/grunewald-crucifixion-issenheim.jpg"
+  ]
+ },
+ {
+  "nom": "Francisco de Zurbarán",
+  "alias": [
+   "Francisco de Zurbarán"
+  ],
+  "qid": "Q209615",
+  "dates": "1598-1664",
+  "annee": 1598,
+  "oeuvres": [
+   "images/art/zurbaran-agnus-dei.jpg"
+  ]
+ },
+ {
+  "nom": "Paul Gauguin",
+  "alias": [
+   "Paul Gauguin"
+  ],
+  "qid": "Q37693",
+  "dates": "1848-1903",
+  "annee": 1848,
+  "oeuvres": [
+   "images/art/gauguin-d-ou-venons-nous.jpg"
+  ]
+ },
+ {
+  "nom": "Sandro Botticelli",
+  "alias": [
+   "Sandro Botticelli"
+  ],
+  "qid": "Q5669",
+  "dates": "1445-1510",
+  "annee": 1445,
+  "oeuvres": [
+   "images/art/botticelli-saint-augustin.jpg"
+  ]
+ },
+ {
+  "nom": "Piero della Francesca",
+  "alias": [
+   "Piero della Francesca"
+  ],
+  "qid": "Q5822",
+  "dates": "1415-1492",
+  "annee": 1415,
+  "oeuvres": [
+   "images/art/piero-resurrection.jpg"
+  ]
+ },
+ {
+  "nom": "Pieter Bruegel l'Ancien",
+  "alias": [
+   "Pieter Bruegel l'Ancien"
+  ],
+  "qid": "Q43270",
+  "dates": "1525-1569",
+  "annee": 1525,
+  "oeuvres": [
+   "images/art/bruegel-tour-babel.jpg"
+  ]
+ },
+ {
+  "nom": "Jan Saenredam",
+  "alias": [
+   "Jan Saenredam d'après Cornelis van Haarlem",
+   "Jan Saenredam"
+  ],
+  "qid": "Q711775",
+  "dates": "1565-1607",
+  "annee": 1565,
+  "oeuvres": [
+   "images/art/saenredam-caverne-platon.jpg"
+  ]
+ },
+ {
+  "nom": "Gustave Courbet",
+  "alias": [
+   "Gustave Courbet"
+  ],
+  "qid": "Q34618",
+  "dates": "1819-1877",
+  "annee": 1819,
+  "oeuvres": [
+   "images/art/partie-pourquoi-croit-on.jpg"
+  ]
+ },
+ {
+  "nom": "Francisco de Goya",
+  "alias": [
+   "Francisco de Goya"
+  ],
+  "qid": "Q5432",
+  "dates": "1746-1828",
+  "annee": 1746,
+  "oeuvres": [
+   "images/art/partie-prologue.jpg"
+  ]
+ },
+ {
+  "nom": "Joseph Wright of Derby",
+  "alias": [
+   "Joseph Wright of Derby"
+  ],
+  "qid": "Q214062",
+  "dates": "1734-1797",
+  "annee": 1734,
+  "oeuvres": [
+   "images/art/partie-deuxieme.jpg"
+  ]
+ },
+ {
+  "nom": "Adolph Menzel",
+  "alias": [
+   "Adolph Menzel"
+  ],
+  "qid": "Q164961",
+  "dates": "1815-1905",
+  "annee": 1815,
+  "oeuvres": [
+   "images/art/partie-quatrieme.jpg"
+  ]
+ },
+ {
+  "nom": "Ivan Kramskoï",
+  "alias": [
+   "Ivan Kramskoï"
+  ],
+  "qid": "Q207758",
+  "dates": "1837-1887",
+  "annee": 1837,
+  "oeuvres": [
+   "images/art/partie-cinquieme.jpg"
+  ]
+ },
+ {
+  "nom": "Jules Breton",
+  "alias": [
+   "Jules Breton"
+  ],
+  "qid": "Q282043",
+  "dates": "1827-1906",
+  "annee": 1827,
+  "oeuvres": [
+   "images/art/partie-sixieme.jpg"
+  ]
+ },
+ {
+  "nom": "Johannes Vermeer",
+  "alias": [
+   "Johannes Vermeer"
+  ],
+  "qid": "Q41264",
+  "dates": "1632-1675",
+  "annee": 1632,
+  "oeuvres": [
+   "images/art/partie-age-classique.jpg"
+  ]
+ },
+ {
+  "nom": "Œuvres anonymes et monuments",
+  "alias": [],
+  "qid": null,
+  "dates": "",
+  "annee": null,
+  "oeuvres": [
+   "images/art/temple-humanite-paris.jpg",
+   "images/art/temple-positiviste-porto-alegre.jpg",
+   "images/art/sarcophage-junius-bassus.jpg",
+   "images/art/pantocrator-deesis-sainte-sophie.jpg",
+   "images/art/christ-helios-mausolee-julii.jpg",
+   "images/art/bon-pasteur-crypte-lucine.jpg",
+   "images/art/bouddha-gandhara.jpg",
+   "images/art/partie-naissance-christianisme.jpg",
+   "images/art/partie-huitieme.jpg",
+   "images/art/partie-neuvieme.jpg",
+   "images/art/partie-anciens-monotheismes.jpg"
+  ]
+ }
+]

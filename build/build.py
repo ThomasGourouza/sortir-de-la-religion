@@ -500,7 +500,7 @@ def personnes(titre):
 
 
 PAGES_SITE = (("index.html", "L'essai"), ("auteurs.html", "Les auteurs"), ("lexique.html", "Lexique"),
-              ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"), ("sources.html", "Sources"))
+              ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"), ("galerie.html", "Galerie"), ("sources.html", "Sources"))
 
 
 def onglets(actif):
@@ -581,8 +581,10 @@ def cle_auteur(nom):
 
 
 def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None, sources="", credits="",
-                 tableau="", portraits=None, ecrivains=None):
+                 tableau="", portraits=None, ecrivains=None, artistes=None, oeuvres=None):
     libelles = libelles or {}
+    artistes = artistes or {}
+    oeuvres = oeuvres or {}
     portraits = portraits or {}
     ecrivains = ecrivains or {}
     tous_portraits = [p for s in infos for p in portraits.get(s["id"], [])]
@@ -756,7 +758,7 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
             ' <span class="lex-langue">%s</span>' % en_ligne(e["langue"]) if e.get("langue") else "",
             lier(en_ligne(e["definition"]), cibles_ann, scope_self=("lexique.html", sl)), e["section"]))
     page_outil("lexique.html", "Lexique",
-               "%d notions de l'essai. Dans le texte, la première occurrence de chacune dans chaque section renvoie ici." % len(lex),
+               "%d notions de l'essai." % len(lex),
                "Lexique des notions de l'essai.",
                '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher une notion…" aria-label="Chercher une notion"></div>'
                '<dl class="lexique">%s</dl><p id="aucun" hidden>Aucune notion ne correspond.</p>' % "".join(items),
@@ -839,9 +841,83 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                '<button class="chip plier" type="button" id="plier-tout" aria-pressed="false">Tout replier</button></div>' % (opts, opts_siecles))
     nb_oeuvres = sum(len(v) for v in auteurs.values())
     page_outil("bibliotheque.html", "Bibliothèque",
-               "Les %d œuvres de %d écrivains convoquées dans les encadrés « En littérature » de l'essai, du plus ancien au plus récent. "
-               "Chaque œuvre renvoie à la section qui la cite ; le filtre par partie retient les écrivains cités dans cette partie." % (nb_oeuvres, len(auteurs)),
+               "Les %d œuvres de %d écrivains convoquées dans les encadrés « En littérature » de l'essai, du plus ancien au plus récent. " % (nb_oeuvres, len(auteurs)),
                "Bibliothèque des œuvres littéraires citées dans l'essai, par écrivain et par siècle.",
+               filtres + "".join(h) + '<p id="aucun" hidden>Aucune œuvre ne correspond.</p>', titre, og_image, version)
+
+    # ---------------------------------------------------------------- galerie : les artistes et leurs œuvres
+    # Même forme que la Bibliothèque : une fiche repliable par artiste (build/artistes.json : identifiant Wikidata,
+    # dates, fichiers de ses œuvres), et dans la fiche chaque œuvre avec sa vignette, agrandie au survol, et le lien
+    # vers l'endroit de l'essai où elle figure (section, partie ou couverture).
+    liste_artistes = charger("artistes.json", [])
+    images_par_fichier = {im["file"]: im for im in charger_images()}
+    listes = {f for a in liste_artistes for f in a["oeuvres"]}
+    for f in sorted(oeuvres):
+        if f.startswith("images/art/") and f not in listes:  # les pages de titre et les portraits ne sont pas des œuvres de la galerie
+            print("  artistes.json : image d'art absente de la galerie", f)
+    for a in liste_artistes:
+        for f in a["oeuvres"]:
+            if f not in oeuvres:
+                print("  artistes.json : fichier inconnu ou non affiché dans l'essai", f)
+
+    def titre_oeuvre(legende, alias):
+        t = legende.split(" : ")[0].rstrip(".")
+        for a in sorted(alias, key=len, reverse=True):
+            if t.startswith(a + ", "):
+                return t[len(a) + 2:]
+        return t
+
+    def rendre_artiste(a, siecle_id):
+        lis, parties_f = [], []
+        for f in a["oeuvres"]:
+            im = images_par_fichier.get(f)
+            if not im or f not in oeuvres:
+                continue
+            ancre, lib = oeuvres[f][0], oeuvres[f][1]
+            grand = oeuvres[f][2] if len(oeuvres[f]) > 2 else f
+            pid = ancre if ancre in libelles and ancre not in infos_par_id else infos_par_id.get(ancre, {}).get("partie")
+            if pid and pid not in parties_f:
+                parties_f.append(pid)
+            lien = "Voir la couverture" if ancre == "top" else ("Voir la partie" if ancre in libelles and ancre not in infos_par_id else "Lire la section")
+            lis.append('<li><img class="vignette" src="%s" alt="%s"%s data-legende="%s"%s loading="lazy"><span class="gal-texte"><em>%s</em>'
+                       ' <span class="bib-liens">%s · <a class="r-section" href="index.html#%s">%s</a></span></span></li>' % (
+                           src_img(f), html.escape(im.get("alt", "")), attr_dims(f), html.escape(im.get("caption", "")),
+                           ' data-grand="%s"' % src_img(grand) if grand != f else "",
+                           html.escape(titre_oeuvre(im.get("caption", ""), a.get("alias", []))), html.escape(lib), ancre, lien))
+        sl = slug_terme(a["nom"])
+        return ('<details class="rep-carte fiche" data-item data-partie="%s" data-siecle="%s" id="%s" open>'
+                '<summary><h2>%s<span class="f-nom">%s</span>%s</h2></summary>'
+                '<div class="fiche-corps"><ul class="bib-oeuvres gal-oeuvres">%s</ul></div></details>') % (
+                    " ".join(parties_f), siecle_id, sl, avatar_html(artistes.get(sl), a["nom"]), html.escape(a["nom"]),
+                    '<span class="f-dates">%s</span>' % html.escape(a["dates"]) if a.get("dates") else "", "".join(lis))
+    datees_art = sorted([a for a in liste_artistes if a.get("annee") is not None], key=lambda a: (a["annee"], slug_terme(a["nom"])))
+    sans_art = [a for a in liste_artistes if a.get("annee") is None]
+    h, cur, siecles = [], None, []
+    for a in datees_art:
+        sc = siecle(a["annee"])
+        if sc != cur:
+            if cur:
+                h.append("</section>")
+            siecles.append((slug(sc), sc))
+            h.append('<section class="siecle" data-groupe><h2>%s</h2>' % sc)
+            cur = sc
+        h.append(rendre_artiste(a, slug(sc)))
+    if cur:
+        h.append("</section>")
+    for a in sans_art:
+        siecles.append((slug_terme(a["nom"]), a["nom"]))
+        h.append('<section class="siecle" data-groupe><h2>%s</h2>%s</section>' % (html.escape(a["nom"]), rendre_artiste(a, slug_terme(a["nom"]))))
+    opts_siecles = '<option value="">Toutes les périodes</option>' + "".join(
+        '<option value="%s">%s</option>' % (sid, html.escape(lab)) for sid, lab in siecles)
+    filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un artiste ou une œuvre…" '
+               'aria-label="Chercher un artiste ou une œuvre"><select data-filtre-partie aria-label="Filtrer par partie">%s</select>'
+               '<select data-filtre-siecle aria-label="Filtrer par période">%s</select>'
+               '<button class="chip plier" type="button" id="plier-tout" aria-pressed="false">Tout replier</button></div>' % (opts, opts_siecles))
+    nb_oeuvres_art = sum(1 for a in liste_artistes for f in a["oeuvres"] if f in oeuvres)
+    page_outil("galerie.html", "Galerie",
+               "Les %d œuvres de %d artistes reproduites dans l'essai, du plus ancien au plus récent : pour chacune, une vignette, "
+               "son agrandissement au survol, et le lien vers l'endroit où elle figure." % (nb_oeuvres_art, len(datees_art)),
+               "Galerie des œuvres d'art reproduites dans l'essai, par artiste et par siècle.",
                filtres + "".join(h) + '<p id="aucun" hidden>Aucune œuvre ne correspond.</p>', titre, og_image, version)
 
     # ---------------------------------------------------------------- sources et crédits
@@ -885,6 +961,7 @@ def construire(chemin, version=None):
 
     sources_html, tableau_html, toc, corps, cartes = "", "", [], [], []
     portraits_par_id = {}  # id de section -> portraits (pour les pages outils)
+    oeuvres = {}  # fichier d'une image d'art -> (ancre dans l'essai, libellé), pour la galerie
     nb_parties = 0
     infos = []  # sections, pour la frise
     lettres = []  # encadres litteraires, pour la bibliotheque
@@ -908,6 +985,7 @@ def construire(chemin, version=None):
         secs_html, toc_secs, nb_auteurs = [], [], 0
         for f in par_section.get((pid, "figure"), []):
             intro_p.insert(min(1, len(intro_p)), figure(f))
+            oeuvres[f["file"]] = (pid, label)
         for sec in part["sections"]:
             base = slug(sec["titre"])
             sid = uid(base, pid)
@@ -925,6 +1003,8 @@ def construire(chemin, version=None):
             est_auteur = bool(dates) or bool(portraits)
             nb_auteurs += 1 if est_auteur else 0
             corps_sec = inserer_figures(corps_sec, par_section.get((base, "figure"), []))
+            for f in par_section.get((base, "figure"), []):
+                oeuvres[f["file"]] = (sid, nom if dates else sec["titre"])
             if est_auteur:
                 if portraits:
                     av = "".join('<img class="avatar" src="%s" alt="%s"%s data-legende="%s" loading="lazy">' % (
@@ -956,6 +1036,8 @@ def construire(chemin, version=None):
         meta = "%d auteurs" % nb_auteurs if nb_auteurs else ""
         card_img = par_section.get((pid, "partcard"), [])
         part_img = par_section.get((pid, "partimage"), []) or card_img  # grande version si elle existe
+        if card_img:
+            oeuvres[card_img[0]["file"]] = (pid, label, part_img[0]["file"])
         corps.append(
             '<details class="partie" id="%s"><summary><span class="part-label">%s</span>'
             '<span class="part-sub">%s</span>%s%s</summary>'
@@ -981,6 +1063,8 @@ def construire(chemin, version=None):
             html.escape(i.get("credit", "")))
         for i in images if i.get("role") != "partimage")  # même source que la carte : un seul crédit
     cover = par_section.get(("cover", "cover"), [])
+    if cover:
+        oeuvres[cover[0]["file"]] = ("top", "Couverture")
     for a in annexes:
         for s in a["sections"]:
             if s not in ids_vus:
@@ -1015,14 +1099,15 @@ def construire(chemin, version=None):
             "lettres": lettres, "annexes": annexes, "libelles": libelles, "sources": sources_html,
             "credits": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>",
             "tableau": tableau_html, "portraits": portraits_par_id,
-            "ecrivains": {im["section"]: im for im in images if im["role"] == "ecrivain"}}
+            "ecrivains": {im["section"]: im for im in images if im["role"] == "ecrivain"},
+            "artistes": {im["section"]: im for im in images if im["role"] == "artiste"}, "oeuvres": oeuvres}
 
 
 def tout_construire(article=ARTICLE):
     version = str(int(time.time()))
     r = construire(article, version=version)
     pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"], r["sources"], r["credits"],
-                 r["tableau"], r["portraits"], r["ecrivains"])
+                 r["tableau"], r["portraits"], r["ecrivains"], r["artistes"], r["oeuvres"])
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
     open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw.replace("{{VERSION}}", version))
 

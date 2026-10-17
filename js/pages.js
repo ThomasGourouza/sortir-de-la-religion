@@ -1,4 +1,4 @@
-/* Pages outils (auteurs, lexique, annexes, bibliothèque, sources) : thème, taille du texte, filtres */
+/* Pages outils (auteurs, lexique, annexes, bibliothèque, galerie, sources) : thème, taille du texte, filtres */
 (function () {
   "use strict";
 
@@ -42,7 +42,7 @@
       var carte = el.closest(".rep-carte");
       var texte = el.textContent + (carte ? " " + carte.querySelector("h2").textContent : "");
       if (el.classList.contains("fiche")) { /* une fiche d'auteur ou d'écrivain : nom, tableau, interlocuteurs, œuvres, mais pas les notes */
-        texte = $$("h2, .fiche-tab, li[data-type] > a:not(.r-section), .bib-oeuvres li", el).map(function (x) { return x.textContent; }).join(" ");
+        texte = $$("h2, .fiche-tab, li[data-type] > a:not(.r-section), .bib-oeuvres li, .gal-oeuvres li", el).map(function (x) { return x.textContent; }).join(" ");
       }
       var ok = !q || norm(texte).indexOf(q) >= 0;
       if (ok && type !== "tous" && el.hasAttribute("data-type")) ok = el.getAttribute("data-type") === type;

@@ -2962,5 +2962,305 @@
     "credit": "Heinrich Pfenninger (1749-c.1815), Public domain",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Jeanpaul.jpg"
+  },
+  {
+    "section": "adolph-menzel",
+    "role": "artiste",
+    "file": "images/artistes/adolph-menzel.jpg",
+    "alt": "Portrait de Adolph Menzel",
+    "caption": "Adolph Menzel",
+    "credit": "Friedrich Eduard Meyerheim, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:1839_Meyerheim_Portrait_Adolph_Menzel_anagoria.JPG"
+  },
+  {
+    "section": "caspar-david-friedrich",
+    "role": "artiste",
+    "file": "images/artistes/caspar-david-friedrich.jpg",
+    "alt": "Portrait de Caspar David Friedrich",
+    "caption": "Caspar David Friedrich",
+    "credit": "Johann Karl Bähr, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Carl_Johann_Baehr_-_Bildnis_des_Malers_Caspar_David_Friedrich.jpg"
+  },
+  {
+    "section": "diego-velazquez",
+    "role": "artiste",
+    "file": "images/artistes/diego-velazquez.jpg",
+    "alt": "Portrait de Diego Velázquez",
+    "caption": "Diego Velázquez",
+    "credit": "Diego Velázquez, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_Autorretrato_45_x_38_cm_-_Colecci%C3%B3n_Real_Academia_de_Bellas_Artes_de_San_Carlos_-_Museo_de_Bellas_Artes_de_Valencia.jpg"
+  },
+  {
+    "section": "duccio-di-buoninsegna",
+    "role": "artiste",
+    "file": "images/artistes/duccio-di-buoninsegna.jpg",
+    "alt": "Portrait de Duccio di Buoninsegna",
+    "caption": "Duccio di Buoninsegna",
+    "credit": "Giorgio Vasari, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vite_de_pi%C3%B9_eccellenti_pittori_scultori_ed_architetti_(1767)_(14781159891).jpg"
+  },
+  {
+    "section": "eugene-delacroix",
+    "role": "artiste",
+    "file": "images/artistes/eugene-delacroix.jpg",
+    "alt": "Portrait de Eugène Delacroix",
+    "caption": "Eugène Delacroix",
+    "credit": "Eugène Delacroix, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg"
+  },
+  {
+    "section": "francisco-de-goya",
+    "role": "artiste",
+    "file": "images/artistes/francisco-de-goya.jpg",
+    "alt": "Portrait de Francisco de Goya",
+    "caption": "Francisco de Goya",
+    "credit": "Vicente López Portaña, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg"
+  },
+  {
+    "section": "francisco-de-zurbaran",
+    "role": "artiste",
+    "file": "images/artistes/francisco-de-zurbaran.jpg",
+    "alt": "Portrait de Francisco de Zurbarán",
+    "caption": "Francisco de Zurbarán",
+    "credit": "Francisco de Zurbarán, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_autoportrait.jpg"
+  },
+  {
+    "section": "georges-de-la-tour",
+    "role": "artiste",
+    "file": "images/artistes/georges-de-la-tour.jpg",
+    "alt": "Portrait de Georges de La Tour",
+    "caption": "Georges de La Tour",
+    "credit": "Georges de La Tour, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:La_Tour.jpg"
+  },
+  {
+    "section": "gustave-courbet",
+    "role": "artiste",
+    "file": "images/artistes/gustave-courbet.jpg",
+    "alt": "Portrait de Gustave Courbet",
+    "caption": "Gustave Courbet",
+    "credit": "Nadar, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet,_photograph_Atelier_Nadar,_c._1860s.jpg"
+  },
+  {
+    "section": "hans-holbein-le-jeune",
+    "role": "artiste",
+    "file": "images/artistes/hans-holbein-le-jeune.jpg",
+    "alt": "Portrait de Hans Holbein le Jeune",
+    "caption": "Hans Holbein le Jeune",
+    "credit": "Hans Holbein the Younger, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_the_Younger,_self-portrait.jpg"
+  },
+  {
+    "section": "ivan-kramskoi",
+    "role": "artiste",
+    "file": "images/artistes/ivan-kramskoi.jpg",
+    "alt": "Portrait de Ivan Kramskoï",
+    "caption": "Ivan Kramskoï",
+    "credit": "Ivan Kramskoi, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ivan_Nikolayevich_Kramskoi_-_Self-portrait,_1867.jpg"
+  },
+  {
+    "section": "jacques-louis-david",
+    "role": "artiste",
+    "file": "images/artistes/jacques-louis-david.jpg",
+    "alt": "Portrait de Jacques-Louis David",
+    "caption": "Jacques-Louis David",
+    "credit": "Jacques-Louis David, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:David_Self_Portrait.jpg"
+  },
+  {
+    "section": "jan-saenredam",
+    "role": "artiste",
+    "file": "images/artistes/jan-saenredam.jpg",
+    "alt": "Portrait de Jan Saenredam",
+    "caption": "Jan Saenredam",
+    "credit": "Holsteyn, Pieter (II) (1613/1615-1673), Schrevelius, Theodor (1572-1653), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portret_van_Jan_Saenredam_op_37-jarige_leeftijd._NL-HlmNHA_1477_53008700.JPG"
+  },
+  {
+    "section": "jean-leon-gerome",
+    "role": "artiste",
+    "file": "images/artistes/jean-leon-gerome.jpg",
+    "alt": "Portrait de Jean-Léon Gérôme",
+    "caption": "Jean-Léon Gérôme",
+    "credit": "Nadar, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Leon_Gerome.jpg"
+  },
+  {
+    "section": "johannes-vermeer",
+    "role": "artiste",
+    "file": "images/artistes/johannes-vermeer.jpg",
+    "alt": "Portrait de Johannes Vermeer",
+    "caption": "Johannes Vermeer",
+    "credit": "Johannes Vermeer, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg"
+  },
+  {
+    "section": "joseph-wright-of-derby",
+    "role": "artiste",
+    "file": "images/artistes/joseph-wright-of-derby.jpg",
+    "alt": "Portrait de Joseph Wright of Derby",
+    "caption": "Joseph Wright of Derby",
+    "credit": "Joseph Wright of Derby, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Joseph_Wright_of_Derby_-_self-portrait_1765-1768_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "jules-breton",
+    "role": "artiste",
+    "file": "images/artistes/jules-breton.jpg",
+    "alt": "Portrait de Jules Breton",
+    "caption": "Jules Breton",
+    "credit": "Jules Breton, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jules_Breton_(cropped).jpg"
+  },
+  {
+    "section": "le-caravage",
+    "role": "artiste",
+    "file": "images/artistes/le-caravage.jpg",
+    "alt": "Portrait de Le Caravage",
+    "caption": "Le Caravage",
+    "credit": "Ottavio Leoni, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Bild-Ottavio_Leoni,_Caravaggio.jpg"
+  },
+  {
+    "section": "leonard-de-vinci",
+    "role": "artiste",
+    "file": "images/artistes/leonard-de-vinci.png",
+    "alt": "Portrait de Léonard de Vinci",
+    "caption": "Léonard de Vinci",
+    "credit": "Attributed to Francesco Melzi, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo.png"
+  },
+  {
+    "section": "matthias-grunewald",
+    "role": "artiste",
+    "file": "images/artistes/matthias-grunewald.jpg",
+    "alt": "Portrait de Matthias Grünewald",
+    "caption": "Matthias Grünewald",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Joachim_von_Sandrart-Teutsche_Academie_der_Edlen_Bau_Bild_und_Mahlerey-Kuenste-Matthias_Gruenewald-1679.jpg"
+  },
+  {
+    "section": "michel-ange",
+    "role": "artiste",
+    "file": "images/artistes/michel-ange.jpg",
+    "alt": "Portrait de Michel-Ange",
+    "caption": "Michel-Ange",
+    "credit": "Attributed to Daniele da Volterra, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Michelangelo_Daniele_da_Volterra_(dettaglio).jpg"
+  },
+  {
+    "section": "nicolas-poussin",
+    "role": "artiste",
+    "file": "images/artistes/nicolas-poussin.jpg",
+    "alt": "Portrait de Nicolas Poussin",
+    "caption": "Nicolas Poussin",
+    "credit": "Nicolas Poussin, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_078.jpg"
+  },
+  {
+    "section": "paul-gauguin",
+    "role": "artiste",
+    "file": "images/artistes/paul-gauguin.png",
+    "alt": "Portrait de Paul Gauguin",
+    "caption": "Paul Gauguin",
+    "credit": "Louis-Maurice Boutet de Monvel, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_1891.png"
+  },
+  {
+    "section": "pedro-berruguete",
+    "role": "artiste",
+    "file": "images/artistes/pedro-berruguete.jpg",
+    "alt": "Portrait de Pedro Berruguete",
+    "caption": "Pedro Berruguete",
+    "credit": "Attributed to Pedro Berruguete, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Berruguete-Pedro-selfportrait.jpg"
+  },
+  {
+    "section": "piero-della-francesca",
+    "role": "artiste",
+    "file": "images/artistes/piero-della-francesca.jpg",
+    "alt": "Portrait de Piero della Francesca",
+    "caption": "Piero della Francesca",
+    "credit": "Giorgio Vasari, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Delle_vite_de%27_pi%C3%B9_eccellenti_pittori,_scultori,_et_architetti_(1648)_(14799608033).jpg"
+  },
+  {
+    "section": "pieter-bruegel-l-ancien",
+    "role": "artiste",
+    "file": "images/artistes/pieter-bruegel-l-ancien.jpg",
+    "alt": "Portrait de Pieter Bruegel l'Ancien",
+    "caption": "Pieter Bruegel l'Ancien",
+    "credit": "Pieter Brueghel the Elder, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Painter_and_the_Buyer,_ca._1566_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "raphael",
+    "role": "artiste",
+    "file": "images/artistes/raphael.jpg",
+    "alt": "Portrait de Raphaël",
+    "caption": "Raphaël",
+    "credit": "Raphael, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Raffaello_Sanzio.jpg"
+  },
+  {
+    "section": "rembrandt",
+    "role": "artiste",
+    "file": "images/artistes/rembrandt.jpg",
+    "alt": "Portrait de Rembrandt",
+    "caption": "Rembrandt",
+    "credit": "Rembrandt, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "sandro-botticelli",
+    "role": "artiste",
+    "file": "images/artistes/sandro-botticelli.jpg",
+    "alt": "Portrait de Sandro Botticelli",
+    "caption": "Sandro Botticelli",
+    "credit": "Sandro Botticelli, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_Self-portrait_ca_1475.jpg"
+  },
+  {
+    "section": "titien",
+    "role": "artiste",
+    "file": "images/artistes/titien.jpg",
+    "alt": "Portrait de Titien",
+    "caption": "Titien",
+    "credit": "Titian, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vecellio_di_Gregorio_Tiziano_-_autoritratto.jpg"
   }
 ]

@@ -206,6 +206,10 @@ blockquote { margin: 1.2em 0; padding: .4em 1em; border-left: 3px solid var(--ac
 .bib-oeuvres { list-style: none; padding: 0; margin: 0; }
 .bib-oeuvres li { padding: 6px 0; border-top: 1px solid var(--line); }
 .bib-oeuvres li:first-child { border-top: 0; }
+/* Galerie : une vignette par œuvre, agrandie au survol */
+.gal-oeuvres li { display: flex; align-items: center; gap: 12px; }
+.gal-texte { display: flex; flex-direction: column; min-width: 0; }
+.vignette { width: 72px; height: 54px; object-fit: cover; border-radius: 6px; cursor: zoom-in; flex: none; background: var(--bg-soft); }
 .bib-liens { font: 13px var(--sans); color: var(--ink-soft); }
 
 details > summary { list-style: none; cursor: pointer; }
@@ -279,6 +283,7 @@ img.avatar { cursor: zoom-in; }
   pointer-events: none; opacity: 0; transition: opacity .15s ease;
 }
 .portrait-popup.visible { opacity: 1; }
+.portrait-popup.large { width: min(720px, calc(100vw - 32px)); }
 .portrait-popup img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; border-radius: 8px; background: var(--bg-soft); }
 .portrait-popup figcaption { margin: 8px 4px 2px; font: 12.5px/1.4 var(--sans); color: var(--ink-soft); }
 .avatar-init { display: inline-flex; align-items: center; justify-content: center; font: 600 20px var(--sans); color: var(--accent); background: var(--accent-soft); }

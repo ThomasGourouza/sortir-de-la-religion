@@ -1,4 +1,4 @@
-/* Fenêtre du portrait en grand au survol d'un avatar (img.avatar). Chargé par toutes les pages du site. */
+/* Fenêtre en grand au survol d'un avatar (img.avatar) ou d'une vignette d'œuvre (img.vignette). Chargée par toutes les pages du site. */
 (function () {
   "use strict";
   /* Portrait en grand au survol de l'avatar (au toucher : une pression ouvre, une autre ferme) */
@@ -18,7 +18,8 @@
   }
   function montrerPopup(av) {
     popupPour = av;
-    popupImg.src = av.currentSrc || av.src;
+    popup.classList.toggle("large", av.classList.contains("vignette"));  /* une œuvre s'agrandit plus qu'un portrait */
+    popupImg.src = av.getAttribute("data-grand") || av.currentSrc || av.src;
     popupImg.alt = av.alt;
     popupCap.textContent = av.getAttribute("data-legende") || av.alt;
     popup.hidden = false;
@@ -32,16 +33,16 @@
   }
   var tactile = window.matchMedia("(hover: none)").matches;
   document.addEventListener("mouseover", function (e) {
-    var av = e.target.closest && e.target.closest("img.avatar");
+    var av = e.target.closest && e.target.closest("img.avatar, img.vignette");
     if (av && !tactile) montrerPopup(av);
   });
   document.addEventListener("mouseout", function (e) {
-    var av = e.target.closest && e.target.closest("img.avatar");
+    var av = e.target.closest && e.target.closest("img.avatar, img.vignette");
     if (av && !tactile) cacherPopup();
   });
   if (tactile) {
     document.addEventListener("click", function (e) {
-      var av = e.target.closest && e.target.closest("img.avatar");
+      var av = e.target.closest && e.target.closest("img.avatar, img.vignette");
       if (av) {
         e.preventDefault();
         if (popupPour === av) cacherPopup(); else montrerPopup(av);
