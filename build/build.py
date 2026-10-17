@@ -499,8 +499,8 @@ def personnes(titre):
             for n, d in re.findall(r"([^()]+?)\s*\(([^)]*\d[^)]*)\)", tete)]
 
 
-PAGES_SITE = (("index.html", "L'essai"), ("frise.html", "Frise"), ("reponses.html", "Réponses"), ("lexique.html", "Lexique"),
-              ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"), ("sources.html", "Sources"))
+PAGES_SITE = (("index.html", "L'essai"), ("auteurs.html", "Les auteurs"), ("frise.html", "Frise"), ("reponses.html", "Dialogues"),
+              ("lexique.html", "Lexique"), ("annexes.html", "Annexes"), ("bibliotheque.html", "Bibliothèque"), ("sources.html", "Sources"))
 
 
 def onglets(actif):
@@ -516,7 +516,8 @@ def page_outil(nom, titre_page, intro, description, contenu, titre, og_image, ve
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
     tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace(
-        'src="js/pages.js"', 'src="js/pages.js?v=%s"' % version).replace('src="js/sauts.js"', 'src="js/sauts.js?v=%s"' % version)
+        'src="js/pages.js"', 'src="js/pages.js?v=%s"' % version).replace('src="js/sauts.js"', 'src="js/sauts.js?v=%s"' % version).replace(
+        'src="js/portrait.js"', 'src="js/portrait.js?v=%s"' % version)
     open(os.path.join(RACINE, nom), "w", encoding="utf-8").write(tpl)
 
 
@@ -524,6 +525,35 @@ PARTICULES = ("La", "Le", "Les", "Du", "Des", "De", "Saint", "Sainte", "Van", "V
 CLES_AUTEURS = {"Jean de la Croix": "jean de la croix", "Dante": "dante", "Jean Paul": "jean paul", "Angelus Silesius": "silesius",
                 "Al-Maʿarrī": "maarri", "Abû l-ʿAlâʾ al-Maʿarrî": "maarri", "Lucien de Samosate": "lucien", "Rûmî": "rumi",
                 "Omar Khayyâm": "khayyam", "Mme de Staël": "stael"}
+
+
+MOTS_VIDES = ("le", "la", "les", "de", "d", "du", "et")
+
+
+def avatar_html(img, nom, petit=True):
+    """Avatar rond : le portrait s'il existe, avec sa légende pour la fenêtre au survol, sinon les initiales."""
+    cls = "avatar avatar-sm" if petit else "avatar"
+    if img:
+        return '<img class="%s" src="%s" alt="%s"%s data-legende="%s" loading="lazy">' % (
+            cls, src_img(img["file"]), html.escape(img.get("alt", nom)), attr_dims(img["file"]), html.escape(img.get("caption", "")))
+    return '<span class="%s avatar-init" aria-hidden="true">%s</span>' % (cls, html.escape(initiales(nom)))
+
+
+def mots_nom(nom):
+    return [w for w in slug(nom.split(" et ")[0]).split("-") if w and w not in MOTS_VIDES]
+
+
+def portrait_de(nom, candidats):
+    """Le portrait dont l'alt porte le nom : tous les mots du nom s'y retrouvent, de préférence avec le nom de famille en dernier."""
+    mots = mots_nom(nom)
+    if not mots:
+        return None
+    trouves = []
+    for p in candidats:
+        alt = [w for w in slug(p.get("alt", "")).split("-") if w and w not in MOTS_VIDES + ("portrait",)]
+        if alt and (all(w in alt for w in mots) or all(w in mots for w in alt)):
+            trouves.append((0 if alt[-1] == mots[-1] else 1, p))
+    return min(trouves, key=lambda x: x[0])[1] if trouves else None
 
 
 def cle_auteur(nom):
@@ -537,20 +567,63 @@ def cle_auteur(nom):
     return slug_terme(last) + " " + slug_terme(nom)
 
 
-def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None, sources="", credits=""):
+def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None, sources="", credits="",
+                 tableau="", portraits=None, ecrivains=None):
     libelles = libelles or {}
+    portraits = portraits or {}
+    ecrivains = ecrivains or {}
+    tous_portraits = [p for s in infos for p in portraits.get(s["id"], [])]
     # ---------------------------------------------------------------- frise
     dates_sup = charger("auteurs.json", {})
     gens = []
+    section_de = {}  # mots du nom d'un auteur -> id de sa section (pour le tableau des auteurs)
     for s in infos:
         if s["id"] in dates_sup:
             for nom, d, y in dates_sup[s["id"]]:
                 gens.append((y, nom, d, s))
+                section_de.setdefault(tuple(mots_nom(nom)), s["id"])
             continue
         for nom, d in personnes(s["titre"]):
+            section_de.setdefault(tuple(mots_nom(nom)), s["id"])
             y = annee(d)
             if y is not None:
                 gens.append((y, nom, d, s))
+
+    # ---------------------------------------------------------------- les auteurs (tableau du prologue)
+    intro_tab = ""
+    m = re.match(r"\s*<p>(.*?)</p>\s*", tableau, re.S)
+    if m:
+        intro_tab, tableau = m.group(1), tableau[m.end():]
+
+    def section_pour(nom):
+        """La section d'un auteur du tableau : mêmes mots que son titre, ou un nom de famille commun en dernier mot."""
+        mots = tuple(mots_nom(nom))
+        if mots in section_de:
+            return section_de[mots]
+        for cle, sid in section_de.items():
+            if mots and cle and cle[-1] == mots[-1] and (all(w in cle for w in mots) or all(w in mots for w in cle)):
+                return sid
+        return None
+
+    def cellule_auteur(m):
+        brut = m.group(1)
+        texte_nu = re.sub(r"<[^>]+>", "", brut)
+        # une ligne peut réunir plusieurs auteurs : « Celse (IIe s.) et Origène (…) », « Schweitzer, Drews, Couchoud, Ehrman »
+        noms = [n for n, d in personnes(texte_nu)] or [n.strip() for n in re.split(r",| et ", re.sub(r"\([^)]*\)", "", texte_nu)) if n.strip()]
+        sid = next((s for s in (section_pour(n) for n in noms) if s), None)
+        if not sid and slug(texte_nu) in ids:
+            sid = slug(texte_nu)  # une ligne qui n'est pas un auteur mais une section (le bouddhisme des philosophes)
+        img = next((p for p in (portrait_de(n, tous_portraits) for n in noms) if p), None)
+        texte = '<a href="index.html#%s">%s</a>' % (sid, brut) if sid else brut
+        return '<td data-label="Auteur"><span class="aut-cell">%s<span>%s</span></span></td>' % (avatar_html(img, noms[0]), texte)
+    tableau = re.sub(r'<td data-label="Auteur">(.*?)</td>', cellule_auteur, tableau)
+    tableau = tableau.replace("<tbody><tr>", "<tbody><tr data-item>").replace("</tr><tr>", "</tr><tr data-item>")
+    nb_lignes = tableau.count("<tr data-item>")
+    page_outil("auteurs.html", "Les auteurs", intro_tab or "Les auteurs de l'essai, dans l'ordre où ils interviennent.",
+               "Les %d auteurs de l'essai : régime de critique, texte pivot, interlocuteurs." % nb_lignes,
+               '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" '
+               'aria-label="Chercher un auteur"></div><div class="auteurs">%s</div><p id="aucun" hidden>Aucun auteur ne correspond.</p>' % tableau,
+               titre, og_image, version)
     vus, uniques = set(), []
     for g in sorted(gens, key=lambda g: (g[0], g[1])):
         if g[1] in vus:
@@ -572,9 +645,10 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                 h.append("</ol></section>")
             h.append('<section class="siecle" data-groupe><h2>%s</h2><ol class="frise">' % sc)
             cur = sc
-        h.append('<li data-item data-partie="%s"><a href="index.html#%s"><span class="f-nom">%s</span>'
-                 '<span class="f-dates">%s</span><span class="f-partie">%s</span></a></li>' % (
-                     s["partie"], s["id"], html.escape(nom), html.escape(d), html.escape(s["partie_titre"])))
+        h.append('<li data-item data-partie="%s"><a href="index.html#%s">%s<span class="f-texte"><span class="f-nom">%s</span>'
+                 '<span class="f-dates">%s</span><span class="f-partie">%s</span></span></a></li>' % (
+                     s["partie"], s["id"], avatar_html(portrait_de(nom, portraits.get(s["id"], [])), nom),
+                     html.escape(nom), html.escape(d), html.escape(s["partie_titre"])))
     h.append("</ol></section>")
     filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" '
                'aria-label="Chercher un auteur"><select data-filtre-partie aria-label="Filtrer par partie">%s</select></div>' % opts)
@@ -608,15 +682,16 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
             blocs_html += "<h3>répond à</h3><ul>%s</ul>" % "".join(li(r, r["a"]) for r in sort)
         if entre:
             blocs_html += "<h3>reçoit une réponse de</h3><ul>%s</ul>" % "".join(li(r, r["de"]) for r in entre)
-        cartes.append('<section class="rep-carte" data-groupe id="%s"><h2>%s</h2>%s</section>' % (slug_terme(n), html.escape(n), blocs_html))
+        cartes.append('<section class="rep-carte" data-groupe id="%s"><h2>%s%s</h2>%s</section>' % (
+            slug_terme(n), avatar_html(portrait_de(n, tous_portraits), n), html.escape(n), blocs_html))
     att = sum(1 for r in rel if r["type"] == "attestee")
     filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un auteur…" aria-label="Chercher">'
                '<div class="chips"><button class="chip" data-filtre-type="tous" aria-pressed="true">Toutes</button>'
                '<button class="chip" data-filtre-type="attestee" aria-pressed="false">Attestées</button>'
                '<button class="chip" data-filtre-type="construite" aria-pressed="false">Construites</button></div></div>')
-    page_outil("reponses.html", "Qui répond à qui",
+    page_outil("reponses.html", "Dialogues",
                "Les %d échanges que l'essai met en scène : %d réponses attestées, quand un auteur a réellement lu un autre et lui a répondu, et %d confrontations construites, quand l'essai fait se rencontrer deux pensées que l'histoire n'a pas mises face à face." % (len(rel), att, len(rel) - att),
-               "Carte des réponses entre les auteurs de l'essai.", filtres + "".join(cartes) + '<p id="aucun" hidden>Aucun échange ne correspond.</p>',
+               "Dialogues : qui répond à qui parmi les auteurs de l'essai.", filtres + "".join(cartes) + '<p id="aucun" hidden>Aucun échange ne correspond.</p>',
                titre, og_image, version)
 
     # ---------------------------------------------------------------- lexique
@@ -672,8 +747,8 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
             lis.append('<li data-item><em>%s</em>%s%s <span class="bib-liens">%s</span></li>' % (
                 html.escape(tit), " " + html.escape(o["reste"]) if o["reste"] else "",
                 " (%s)" % html.escape(date) if date else "", liens))
-        cartes.append('<section class="rep-carte" data-groupe id="%s"><h2>%s</h2><ul class="bib-oeuvres">%s</ul></section>' % (
-            slug_terme(aut), html.escape(aut), "".join(lis)))
+        cartes.append('<section class="rep-carte" data-groupe id="%s"><h2>%s%s</h2><ul class="bib-oeuvres">%s</ul></section>' % (
+            slug_terme(aut), avatar_html(ecrivains.get(slug_terme(aut)), aut), html.escape(aut), "".join(lis)))
     nb_oeuvres = sum(len(v) for v in auteurs.values())
     page_outil("bibliotheque.html", "Bibliothèque",
                "Les %d œuvres de %d écrivains convoquées dans les encadrés « En littérature » de l'essai, classées par auteur. "
@@ -722,7 +797,8 @@ def construire(chemin, version=None):
             par_cible.setdefault(s, []).append(a)
     libelles = {}  # id de section ou de partie -> libelle des liens « Dans l'essai »
 
-    sources_html, toc, corps, cartes = "", [], [], []
+    sources_html, tableau_html, toc, corps, cartes = "", "", [], [], []
+    portraits_par_id = {}  # id de section -> portraits (pour les pages outils)
     nb_parties = 0
     infos = []  # sections, pour la frise
     lettres = []  # encadres litteraires, pour la bibliotheque
@@ -750,12 +826,16 @@ def construire(chemin, version=None):
             base = slug(sec["titre"])
             sid = uid(base, pid)
             nom, dates, formule = analyser_titre(sec["titre"])
+            if base == "tableau-des-auteurs":
+                tableau_html = "\n".join(rendre_blocs(sec["lignes"]))  # publié à part, dans la page auteurs.html
+                continue
             infos.append({"id": sid, "titre": sec["titre"], "partie": pid, "partie_titre": ptitre})
             del LETTRES_BUF[:]
             corps_sec = rendre_blocs(sec["lignes"])
             if LETTRES_BUF:
                 lettres.append({"id": sid, "nom": nom if dates else sec["titre"], "oeuvres": list(LETTRES_BUF)})
             portraits = par_section.get((base, "portrait"), [])
+            portraits_par_id[sid] = portraits
             est_auteur = bool(dates) or bool(portraits)
             nb_auteurs += 1 if est_auteur else 0
             corps_sec = inserer_figures(corps_sec, par_section.get((base, "figure"), []))
@@ -840,20 +920,23 @@ def construire(chemin, version=None):
         "OG_W": str(dimensions(cover[0]["file"])[0]) if cover else "",
         "OG_H": str(dimensions(cover[0]["file"])[1]) if cover else "",
     }
-    tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace('src="js/app.js"', 'src="js/app.js?v=%s"' % version).replace('src="js/sauts.js"', 'src="js/sauts.js?v=%s"' % version)
+    tpl = tpl.replace('href="css/style.css"', 'href="css/style.css?v=%s"' % version).replace('src="js/app.js"', 'src="js/app.js?v=%s"' % version).replace('src="js/sauts.js"', 'src="js/sauts.js?v=%s"' % version).replace('src="js/portrait.js"', 'src="js/portrait.js?v=%s"' % version)
     for k, v in rempl.items():
         tpl = tpl.replace("{{%s}}" % k, v)
     open(os.path.join(RACINE, "index.html"), "w", encoding="utf-8").write(tpl)
     print("index.html : %d parties" % len(corps))
     return {"titre": titre, "infos": infos, "ids": ids_vus, "version": version, "og": rempl["OG_IMAGE"],
             "lettres": lettres, "annexes": annexes, "libelles": libelles, "sources": sources_html,
-            "credits": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>"}
+            "credits": "<ul>%s</ul>" % credits_imgs if credits_imgs else "<p>Aucune image.</p>",
+            "tableau": tableau_html, "portraits": portraits_par_id,
+            "ecrivains": {im["section"]: im for im in images if im["role"] == "ecrivain"}}
 
 
 def tout_construire(article=ARTICLE):
     version = str(int(time.time()))
     r = construire(article, version=version)
-    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"], r["sources"], r["credits"])
+    pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"], r["sources"], r["credits"],
+                 r["tableau"], r["portraits"], r["ecrivains"])
     sw = open(os.path.join(ICI, "sw.template.js"), encoding="utf-8").read()
     open(os.path.join(RACINE, "sw.js"), "w", encoding="utf-8").write(sw.replace("{{VERSION}}", version))
 

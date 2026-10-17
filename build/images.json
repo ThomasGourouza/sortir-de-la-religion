@@ -1722,5 +1722,1225 @@
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_The_Astronomer_-_WGA24685FXD.jpg",
     "position": "50% 40%"
+  },
+  {
+    "section": "albert-camus",
+    "role": "ecrivain",
+    "file": "images/ecrivains/albert-camus.jpg",
+    "alt": "Portrait de Albert Camus",
+    "caption": "Albert Camus",
+    "credit": "Photograph by United Press International, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Albert_Camus,_gagnant_de_prix_Nobel,_portrait_en_buste,_pos%C3%A9_au_bureau,_faisant_face_%C3%A0_gauche,_cigarette_de_tabagisme.jpg"
+  },
+  {
+    "section": "alexander-pope",
+    "role": "ecrivain",
+    "file": "images/ecrivains/alexander-pope.jpg",
+    "alt": "Portrait de Alexander Pope",
+    "caption": "Alexander Pope",
+    "credit": "Michael Dahl, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Alexander_Pope_by_Michael_Dahl.jpg"
+  },
+  {
+    "section": "alfred-tennyson",
+    "role": "ecrivain",
+    "file": "images/ecrivains/alfred-tennyson.jpg",
+    "alt": "Portrait de Alfred Tennyson",
+    "caption": "Alfred Tennyson",
+    "credit": "Julia Margaret Cameron / Adam Cuerden, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Alfred,_Lord_Tennyson_by_Julia_Margaret_Cameron.jpg"
+  },
+  {
+    "section": "alfred-de-vigny",
+    "role": "ecrivain",
+    "file": "images/ecrivains/alfred-de-vigny.jpg",
+    "alt": "Portrait de Alfred de Vigny",
+    "caption": "Alfred de Vigny",
+    "credit": "Nadar, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_Alfred_de_Vigny.jpg"
+  },
+  {
+    "section": "algernon-charles-swinburne",
+    "role": "ecrivain",
+    "file": "images/ecrivains/algernon-charles-swinburne.jpg",
+    "alt": "Portrait de Algernon Charles Swinburne",
+    "caption": "Algernon Charles Swinburne",
+    "credit": "Elliott & Fry, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Picture_of_Algernon_C._Swinburne.jpg"
+  },
+  {
+    "section": "alphonse-de-lamartine",
+    "role": "ecrivain",
+    "file": "images/ecrivains/alphonse-de-lamartine.jpg",
+    "alt": "Portrait de Alphonse de Lamartine",
+    "caption": "Alphonse de Lamartine",
+    "credit": "Adrien Tournachon, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Alphonse_de_Lamartine_1.jpg"
+  },
+  {
+    "section": "anatole-france",
+    "role": "ecrivain",
+    "file": "images/ecrivains/anatole-france.jpg",
+    "alt": "Portrait de Anatole France",
+    "caption": "Anatole France",
+    "credit": "Nobel Foundation, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Anatole_France_1921.png"
+  },
+  {
+    "section": "andre-gide",
+    "role": "ecrivain",
+    "file": "images/ecrivains/andre-gide.jpg",
+    "alt": "Portrait de André Gide",
+    "caption": "André Gide",
+    "credit": "Ottoline Morrell (1873-1938), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gide_1920_cropped.jpg"
+  },
+  {
+    "section": "andre-malraux",
+    "role": "ecrivain",
+    "file": "images/ecrivains/andre-malraux.jpg",
+    "alt": "Portrait de André Malraux",
+    "caption": "André Malraux",
+    "credit": "Roger Pic, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Malraux,_Pic,_22.jpg"
+  },
+  {
+    "section": "antoine-de-saint-exupery",
+    "role": "ecrivain",
+    "file": "images/ecrivains/antoine-de-saint-exupery.jpg",
+    "alt": "Portrait de Antoine de Saint-Exupéry",
+    "caption": "Antoine de Saint-Exupéry",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Antoine_de_Saint-Euxpery_(1920).jpg"
+  },
+  {
+    "section": "aristophane",
+    "role": "ecrivain",
+    "file": "images/ecrivains/aristophane.jpg",
+    "alt": "Portrait de Aristophane",
+    "caption": "Aristophane",
+    "credit": "Original uploader was Torquemada at es.wikisource, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Aristofanes.jpg"
+  },
+  {
+    "section": "arthur-koestler",
+    "role": "ecrivain",
+    "file": "images/ecrivains/arthur-koestler.jpg",
+    "alt": "Portrait de Arthur Koestler",
+    "caption": "Arthur Koestler",
+    "credit": "Eric Koch for Anefo, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Arthur_Koestler_(1969).jpg"
+  },
+  {
+    "section": "arthur-rimbaud",
+    "role": "ecrivain",
+    "file": "images/ecrivains/arthur-rimbaud.png",
+    "alt": "Portrait de Arthur Rimbaud",
+    "caption": "Arthur Rimbaud",
+    "credit": "Étienne Carjat, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rimbaud.PNG"
+  },
+  {
+    "section": "bertolt-brecht",
+    "role": "ecrivain",
+    "file": "images/ecrivains/bertolt-brecht.jpg",
+    "alt": "Portrait de Bertolt Brecht",
+    "caption": "Bertolt Brecht",
+    "credit": "Kolbe, Jörg, CC BY-SA 3.0 de",
+    "license": "CC BY-SA 3.0 de",
+    "source": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-W0409-300,_Bertolt_Brecht.jpg"
+  },
+  {
+    "section": "boccace",
+    "role": "ecrivain",
+    "file": "images/ecrivains/boccace.jpg",
+    "alt": "Portrait de Boccace",
+    "caption": "Boccace",
+    "credit": "Raffaello Sanzio Morghen / After Vincenzo Gozzini, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Boccaccio_by_Morghen.jpg"
+  },
+  {
+    "section": "charles-baudelaire",
+    "role": "ecrivain",
+    "file": "images/ecrivains/charles-baudelaire.jpg",
+    "alt": "Portrait de Charles Baudelaire",
+    "caption": "Charles Baudelaire",
+    "credit": "Notwist, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Baudelaire_crop.jpg"
+  },
+  {
+    "section": "charles-dickens",
+    "role": "ecrivain",
+    "file": "images/ecrivains/charles-dickens.jpg",
+    "alt": "Portrait de Charles Dickens",
+    "caption": "Charles Dickens",
+    "credit": "Jeremiah Gurney, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Dickens_Gurney_head.jpg"
+  },
+  {
+    "section": "charles-peguy",
+    "role": "ecrivain",
+    "file": "images/ecrivains/charles-peguy.jpg",
+    "alt": "Portrait de Charles Péguy",
+    "caption": "Charles Péguy",
+    "credit": "Jean-Pierre Laurens, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Pierre_Laurens-P%C3%A9guy.jpg"
+  },
+  {
+    "section": "d-a-f-de-sade",
+    "role": "ecrivain",
+    "file": "images/ecrivains/d-a-f-de-sade.jpg",
+    "alt": "Portrait de D. A. F. de Sade",
+    "caption": "D. A. F. de Sade",
+    "credit": "Burkhard Mücke, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_Portrait_4.jpg"
+  },
+  {
+    "section": "daniel-defoe",
+    "role": "ecrivain",
+    "file": "images/ecrivains/daniel-defoe.jpg",
+    "alt": "Portrait de Daniel Defoe",
+    "caption": "Daniel Defoe",
+    "credit": "UnknownUnknown, style of Sir Godfrey Kneller, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Daniel_Defoe_Kneller_Style.jpg"
+  },
+  {
+    "section": "dante",
+    "role": "ecrivain",
+    "file": "images/ecrivains/dante.jpg",
+    "alt": "Portrait de Dante",
+    "caption": "Dante",
+    "credit": "Sandro Botticelli, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_de_Dante.jpg"
+  },
+  {
+    "section": "denis-diderot",
+    "role": "ecrivain",
+    "file": "images/ecrivains/denis-diderot.jpg",
+    "alt": "Portrait de Denis Diderot",
+    "caption": "Denis Diderot",
+    "credit": "Pierre-Michel Alix, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Denis_Diderot_-_Alix_-_Vanloo.png"
+  },
+  {
+    "section": "ernest-hemingway",
+    "role": "ecrivain",
+    "file": "images/ecrivains/ernest-hemingway.jpg",
+    "alt": "Portrait de Ernest Hemingway",
+    "caption": "Ernest Hemingway",
+    "credit": "Lloyd Arnold, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:ErnestHemingway.jpg"
+  },
+  {
+    "section": "euripide",
+    "role": "ecrivain",
+    "file": "images/ecrivains/euripide.jpg",
+    "alt": "Portrait de Euripide",
+    "caption": "Euripide",
+    "credit": "Marie-Lan Nguyen, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Euripides_Pio-Clementino_Inv302.jpg"
+  },
+  {
+    "section": "evelyn-waugh",
+    "role": "ecrivain",
+    "file": "images/ecrivains/evelyn-waugh.jpg",
+    "alt": "Portrait de Evelyn Waugh",
+    "caption": "Evelyn Waugh",
+    "credit": "Carl Van Vechten (1880-1964), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Evelynwaugh.jpeg"
+  },
+  {
+    "section": "fernando-pessoa",
+    "role": "ecrivain",
+    "file": "images/ecrivains/fernando-pessoa.jpg",
+    "alt": "Portrait de Fernando Pessoa",
+    "caption": "Fernando Pessoa",
+    "credit": "S.A. e Maria José de Lencastre, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:216_2310-Fernando-Pessoa.jpg"
+  },
+  {
+    "section": "fiodor-dostoievski",
+    "role": "ecrivain",
+    "file": "images/ecrivains/fiodor-dostoievski.jpg",
+    "alt": "Portrait de Fiodor Dostoïevski",
+    "caption": "Fiodor Dostoïevski",
+    "credit": "Vasily Perov, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "flannery-o-connor",
+    "role": "ecrivain",
+    "file": "images/ecrivains/flannery-o-connor.jpg",
+    "alt": "Portrait de Flannery O'Connor",
+    "caption": "Flannery O'Connor",
+    "credit": "Charles Cameron Macauley, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Robie_with_Flannery_1947.jpg"
+  },
+  {
+    "section": "franz-kafka",
+    "role": "ecrivain",
+    "file": "images/ecrivains/franz-kafka.jpg",
+    "alt": "Portrait de Franz Kafka",
+    "caption": "Franz Kafka",
+    "credit": "Atelier Jacobi: Sigismund Jacobi (1860-1935), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Kafka1906_cropped.jpg"
+  },
+  {
+    "section": "francois-rene-de-chateaubriand",
+    "role": "ecrivain",
+    "file": "images/ecrivains/francois-rene-de-chateaubriand.jpg",
+    "alt": "Portrait de François-René de Chateaubriand",
+    "caption": "François-René de Chateaubriand",
+    "credit": "Anne-Louis Girodet, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois-Ren%C3%A9_de_Chateaubriand_by_Anne-Louis_Girodet_de_Roucy_Trioson.jpg"
+  },
+  {
+    "section": "friedrich-holderlin",
+    "role": "ecrivain",
+    "file": "images/ecrivains/friedrich-holderlin.jpg",
+    "alt": "Portrait de Friedrich Hölderlin",
+    "caption": "Friedrich Hölderlin",
+    "credit": "Franz Carl Hiemer, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:FK_Hiemer_-_Friedrich_H%C3%B6lderlin_(Pastell_1792).jpg"
+  },
+  {
+    "section": "friedrich-schiller",
+    "role": "ecrivain",
+    "file": "images/ecrivains/friedrich-schiller.jpg",
+    "alt": "Portrait de Friedrich Schiller",
+    "caption": "Friedrich Schiller",
+    "credit": "Ludovike Simanowiz, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Friedrich_Schiller_by_Ludovike_Simanowiz.jpg"
+  },
+  {
+    "section": "georg-buchner",
+    "role": "ecrivain",
+    "file": "images/ecrivains/georg-buchner.png",
+    "alt": "Portrait de Georg Büchner",
+    "caption": "Georg Büchner",
+    "credit": "Philipp August Joseph Hoffmann (1807 bis 1883), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Georg_B%C3%BCchner.png"
+  },
+  {
+    "section": "georg-trakl",
+    "role": "ecrivain",
+    "file": "images/ecrivains/georg-trakl.jpg",
+    "alt": "Portrait de Georg Trakl",
+    "caption": "Georg Trakl",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Georg_Trakl.jpg"
+  },
+  {
+    "section": "george-eliot",
+    "role": "ecrivain",
+    "file": "images/ecrivains/george-eliot.jpg",
+    "alt": "Portrait de George Eliot",
+    "caption": "George Eliot",
+    "credit": "replica by François D’Albert Durade (1804-1886), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:George_Eliot,_por_Fran%C3%A7ois_D%27Albert_Durade.jpg"
+  },
+  {
+    "section": "george-gordon-byron",
+    "role": "ecrivain",
+    "file": "images/ecrivains/george-gordon-byron.jpg",
+    "alt": "Portrait de George Gordon Byron",
+    "caption": "George Gordon Byron",
+    "credit": "Thomas Phillips, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Byron_1813_by_Phillips.jpg"
+  },
+  {
+    "section": "george-orwell",
+    "role": "ecrivain",
+    "file": "images/ecrivains/george-orwell.jpg",
+    "alt": "Portrait de George Orwell",
+    "caption": "George Orwell",
+    "credit": "Cassowary Colorizations, CC BY 2.0",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:George_Orwell,_c._1940_(41928180381).jpg"
+  },
+  {
+    "section": "georges-bernanos",
+    "role": "ecrivain",
+    "file": "images/ecrivains/georges-bernanos.jpg",
+    "alt": "Portrait de Georges Bernanos",
+    "caption": "Georges Bernanos",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Georges-Bernanos.jpg"
+  },
+  {
+    "section": "germaine-de-stael",
+    "role": "ecrivain",
+    "file": "images/ecrivains/germaine-de-stael.jpg",
+    "alt": "Portrait de Germaine de Staël",
+    "caption": "Germaine de Staël",
+    "credit": "After François Gérard / Marie-Éléonore Godefroid, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Marie_El%C3%A9onore_Godefroid_-_Portrait_of_Mme_de_Sta%C3%ABl.jpg"
+  },
+  {
+    "section": "giacomo-leopardi",
+    "role": "ecrivain",
+    "file": "images/ecrivains/giacomo-leopardi.jpg",
+    "alt": "Portrait de Giacomo Leopardi",
+    "caption": "Giacomo Leopardi",
+    "credit": "Domenico Morelli, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Giacomo_Leopardi_Morelli.jpg"
+  },
+  {
+    "section": "giuseppe-tomasi-di-lampedusa",
+    "role": "ecrivain",
+    "file": "images/ecrivains/giuseppe-tomasi-di-lampedusa.jpg",
+    "alt": "Portrait de Giuseppe Tomasi di Lampedusa",
+    "caption": "Giuseppe Tomasi di Lampedusa",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Tomasi_di_Lampedusa.jpg"
+  },
+  {
+    "section": "gotthold-ephraim-lessing",
+    "role": "ecrivain",
+    "file": "images/ecrivains/gotthold-ephraim-lessing.jpg",
+    "alt": "Portrait de Gotthold Ephraim Lessing",
+    "caption": "Gotthold Ephraim Lessing",
+    "credit": "Anton Graff, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gotthold_Ephraim_Lessing_Kunstsammlung_Uni_Leipzig.jpg"
+  },
+  {
+    "section": "graham-greene",
+    "role": "ecrivain",
+    "file": "images/ecrivains/graham-greene.jpg",
+    "alt": "Portrait de Graham Greene",
+    "caption": "Graham Greene",
+    "credit": "FOTO:Fortepan, ID 84697: Adományozó/Donor: Magyar Hírek folyóirat. archive copy, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Graham_Greene_angol_%C3%ADr%C3%B3,_1975_Fortepan_84697.jpg"
+  },
+  {
+    "section": "gustave-flaubert",
+    "role": "ecrivain",
+    "file": "images/ecrivains/gustave-flaubert.jpg",
+    "alt": "Portrait de Gustave Flaubert",
+    "caption": "Gustave Flaubert",
+    "credit": "Nadar, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gustave_Flaubert.jpg"
+  },
+  {
+    "section": "guy-de-maupassant",
+    "role": "ecrivain",
+    "file": "images/ecrivains/guy-de-maupassant.jpg",
+    "alt": "Portrait de Guy de Maupassant",
+    "caption": "Guy de Maupassant",
+    "credit": "Nadar, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Maupassant_par_Nadar.jpg"
+  },
+  {
+    "section": "gerard-de-nerval",
+    "role": "ecrivain",
+    "file": "images/ecrivains/gerard-de-nerval.jpg",
+    "alt": "Portrait de Gérard de Nerval",
+    "caption": "Gérard de Nerval",
+    "credit": "Nadar / Adrien Alban Tournachon, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_G%C3%A9rard_de_Nerval.jpg"
+  },
+  {
+    "section": "hans-christian-andersen",
+    "role": "ecrivain",
+    "file": "images/ecrivains/hans-christian-andersen.jpg",
+    "alt": "Portrait de Hans Christian Andersen",
+    "caption": "Hans Christian Andersen",
+    "credit": "Thora Hallager, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg"
+  },
+  {
+    "section": "heinrich-heine",
+    "role": "ecrivain",
+    "file": "images/ecrivains/heinrich-heine.jpg",
+    "alt": "Portrait de Heinrich Heine",
+    "caption": "Heinrich Heine",
+    "credit": "Moritz Daniel Oppenheim, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Heinrich_Heine.PNG"
+  },
+  {
+    "section": "heinrich-von-kleist",
+    "role": "ecrivain",
+    "file": "images/ecrivains/heinrich-von-kleist.jpg",
+    "alt": "Portrait de Heinrich von Kleist",
+    "caption": "Heinrich von Kleist",
+    "credit": "Anton Graff, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Anton_Graff_Heinrich_von_Kleist_(1).jpg"
+  },
+  {
+    "section": "henrik-ibsen",
+    "role": "ecrivain",
+    "file": "images/ecrivains/henrik-ibsen.jpg",
+    "alt": "Portrait de Henrik Ibsen",
+    "caption": "Henrik Ibsen",
+    "credit": "Henrik Olrik, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ibsen_by_Olrik.jpg"
+  },
+  {
+    "section": "henry-david-thoreau",
+    "role": "ecrivain",
+    "file": "images/ecrivains/henry-david-thoreau.jpg",
+    "alt": "Portrait de Henry David Thoreau",
+    "caption": "Henry David Thoreau",
+    "credit": "B. D. Maxham, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Benjamin_D._Maxham_-_Henry_David_Thoreau_-_Restored_-_greyscale_-_straightened.jpg"
+  },
+  {
+    "section": "henryk-sienkiewicz",
+    "role": "ecrivain",
+    "file": "images/ecrivains/henryk-sienkiewicz.jpg",
+    "alt": "Portrait de Henryk Sienkiewicz",
+    "caption": "Henryk Sienkiewicz",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Henryk_Sienkiewicz_ca_1885_(45871548)_(cropped).jpg"
+  },
+  {
+    "section": "herman-melville",
+    "role": "ecrivain",
+    "file": "images/ecrivains/herman-melville.jpg",
+    "alt": "Portrait de Herman Melville",
+    "caption": "Herman Melville",
+    "credit": "Joseph Oriel Eaton, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Herman_Melville_by_Joseph_O_Eaton.jpg"
+  },
+  {
+    "section": "hermann-hesse",
+    "role": "ecrivain",
+    "file": "images/ecrivains/hermann-hesse.jpg",
+    "alt": "Portrait de Hermann Hesse",
+    "caption": "Hermann Hesse",
+    "credit": "Auteur inconnu, CC BY-SA 3.0 nl",
+    "license": "CC BY-SA 3.0 nl",
+    "source": "https://commons.wikimedia.org/wiki/File:Hermann_Hesse_2.jpg"
+  },
+  {
+    "section": "homere",
+    "role": "ecrivain",
+    "file": "images/ecrivains/homere.jpg",
+    "alt": "Portrait de Homère",
+    "caption": "Homère",
+    "credit": "NikonZ7II, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Homer_bust,_Farnese_collection_(Naples).jpg"
+  },
+  {
+    "section": "horace",
+    "role": "ecrivain",
+    "file": "images/ecrivains/horace.jpg",
+    "alt": "Portrait de Horace",
+    "caption": "Horace",
+    "credit": "Anton von Werner, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Quintus_Horatius_Flaccus.jpg"
+  },
+  {
+    "section": "ignazio-silone",
+    "role": "ecrivain",
+    "file": "images/ecrivains/ignazio-silone.jpg",
+    "alt": "Portrait de Ignazio Silone",
+    "caption": "Ignazio Silone",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ignazio_Silone,_1940s_(2).jpg"
+  },
+  {
+    "section": "isaac-bashevis-singer",
+    "role": "ecrivain",
+    "file": "images/ecrivains/isaac-bashevis-singer.jpg",
+    "alt": "Portrait de Isaac Bashevis Singer",
+    "caption": "Isaac Bashevis Singer",
+    "credit": "Israel Press and Photo Agency (I.P.P.A.) photographer, CC BY 4.0",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dan_Hadani_collection_(990044399930205171)_(cropped).jpg"
+  },
+  {
+    "section": "ivan-tourgueniev",
+    "role": "ecrivain",
+    "file": "images/ecrivains/ivan-tourgueniev.jpg",
+    "alt": "Portrait de Ivan Tourgueniev",
+    "caption": "Ivan Tourgueniev",
+    "credit": "Ilya Repin, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Turgenev_by_Repin.jpg"
+  },
+  {
+    "section": "jack-kerouac",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jack-kerouac.jpg",
+    "alt": "Portrait de Jack Kerouac",
+    "caption": "Jack Kerouac",
+    "credit": "Tom Palumbo from New York, NY, USA, CC BY-SA 2.0",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kerouac_by_Palumbo.jpg"
+  },
+  {
+    "section": "jacob-et-wilhelm-grimm",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jacob-et-wilhelm-grimm.jpg",
+    "alt": "Portrait de Jacob et Wilhelm Grimm",
+    "caption": "Jacob et Wilhelm Grimm",
+    "credit": "La Biblioteca Real de Dinamarca, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:S%C3%B8ren_Kierkegaard_(1813-1855)_-_(cropped).jpg"
+  },
+  {
+    "section": "jean-giono",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jean-giono.png",
+    "alt": "Portrait de Jean Giono",
+    "caption": "Jean Giono",
+    "credit": "Inconnu. Collection AAJG., Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Giono-1932.png"
+  },
+  {
+    "section": "jean-paul",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jean-paul.jpg",
+    "alt": "Portrait de Jean Paul",
+    "caption": "Jean Paul",
+    "credit": "Martin Kraft, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:MK35043_Volker_Schl%C3%B6ndorff.jpg"
+  },
+  {
+    "section": "jean-racine",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jean-racine.jpg",
+    "alt": "Portrait de Jean Racine",
+    "caption": "Jean Racine",
+    "credit": "After Jean-Baptiste Santerre, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_de_Jean_Racine_d%27apr%C3%A8s_Jean-Baptiste_Santerre.jpg"
+  },
+  {
+    "section": "jean-de-la-fontaine",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jean-de-la-fontaine.jpg",
+    "alt": "Portrait de Jean de La Fontaine",
+    "caption": "Jean de La Fontaine",
+    "credit": "Henri Millot, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Henri_Millot_-_Jean_de_La_Fontaine_-_A_II_792_-_Finnish_National_Gallery.jpg"
+  },
+  {
+    "section": "jean-de-la-croix",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jean-de-la-croix.jpg",
+    "alt": "Portrait de Jean de la Croix",
+    "caption": "Jean de la Croix",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Teodato_Ipato_(151537852).jpg"
+  },
+  {
+    "section": "jean-paul-sartre",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jean-paul-sartre.jpg",
+    "alt": "Portrait de Jean-Paul Sartre",
+    "caption": "Jean-Paul Sartre",
+    "credit": "User:T1980, CC BY 3.0",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean_Paul_Sartre_1967.jpg"
+  },
+  {
+    "section": "johann-wolfgang-von-goethe",
+    "role": "ecrivain",
+    "file": "images/ecrivains/johann-wolfgang-von-goethe.jpg",
+    "alt": "Portrait de Johann Wolfgang von Goethe",
+    "caption": "Johann Wolfgang von Goethe",
+    "credit": "Joseph Karl Stieler, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Goethe_(Stieler_1828).jpg"
+  },
+  {
+    "section": "john-steinbeck",
+    "role": "ecrivain",
+    "file": "images/ecrivains/john-steinbeck.jpg",
+    "alt": "Portrait de John Steinbeck",
+    "caption": "John Steinbeck",
+    "credit": "McFadden Publications, Inc.; no photographer credited; photo likely the work of, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:John_Steinbeck_1939_(cropped).jpg"
+  },
+  {
+    "section": "jonathan-swift",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jonathan-swift.jpg",
+    "alt": "Portrait de Jonathan Swift",
+    "caption": "Jonathan Swift",
+    "credit": "Charles Jervas, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jonathan_Swift_by_Charles_Jervas_detail.jpg"
+  },
+  {
+    "section": "jorge-luis-borges",
+    "role": "ecrivain",
+    "file": "images/ecrivains/jorge-luis-borges.jpg",
+    "alt": "Portrait de Jorge Luis Borges",
+    "caption": "Jorge Luis Borges",
+    "credit": "Grete Stern, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jorge_Luis_Borges_1951,_by_Grete_Stern_(full).jpg"
+  },
+  {
+    "section": "joris-karl-huysmans",
+    "role": "ecrivain",
+    "file": "images/ecrivains/joris-karl-huysmans.jpg",
+    "alt": "Portrait de Joris-Karl Huysmans",
+    "caption": "Joris-Karl Huysmans",
+    "credit": "Frédéric Boissonnas / André Taponier, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Huysmans_-_photo_Andr%C3%A9_Taponier.jpg"
+  },
+  {
+    "section": "joseph-conrad",
+    "role": "ecrivain",
+    "file": "images/ecrivains/joseph-conrad.png",
+    "alt": "Portrait de Joseph Conrad",
+    "caption": "Joseph Conrad",
+    "credit": "George Charles Beresford, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Joseph_Conrad-remastered_to_black_and_white.png"
+  },
+  {
+    "section": "knut-hamsun",
+    "role": "ecrivain",
+    "file": "images/ecrivains/knut-hamsun.jpg",
+    "alt": "Portrait de Knut Hamsun",
+    "caption": "Knut Hamsun",
+    "credit": "Nasjonalbiblioteket from Norway, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrett_av_Knut_Hamsun_(1859-1952)_(cropped).jpg"
+  },
+  {
+    "section": "laurence-sterne",
+    "role": "ecrivain",
+    "file": "images/ecrivains/laurence-sterne.jpg",
+    "alt": "Portrait de Laurence Sterne",
+    "caption": "Laurence Sterne",
+    "credit": "Laurence_Sterne_by_Sir_Joshua_Reynolds.jpg: Joshua Reynolds (died 1792) derivati, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sterne-Reynolds-detail.jpg"
+  },
+  {
+    "section": "lewis-carroll",
+    "role": "ecrivain",
+    "file": "images/ecrivains/lewis-carroll.jpg",
+    "alt": "Portrait de Lewis Carroll",
+    "caption": "Lewis Carroll",
+    "credit": "Lewis Carroll, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:LewisCarrollSelfPhoto.jpg"
+  },
+  {
+    "section": "louis-ferdinand-celine",
+    "role": "ecrivain",
+    "file": "images/ecrivains/louis-ferdinand-celine.jpg",
+    "alt": "Portrait de Louis-Ferdinand Céline",
+    "caption": "Louis-Ferdinand Céline",
+    "credit": "Agence Meurisse, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:L.-F._C%C3%A9line.jpg"
+  },
+  {
+    "section": "lucien-de-samosate",
+    "role": "ecrivain",
+    "file": "images/ecrivains/lucien-de-samosate.png",
+    "alt": "Portrait de Lucien de Samosate",
+    "caption": "Lucien de Samosate",
+    "credit": "Original: Thompsma Vector: Pixelsquid, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:FoodWeb.svg"
+  },
+  {
+    "section": "luigi-pirandello",
+    "role": "ecrivain",
+    "file": "images/ecrivains/luigi-pirandello.jpg",
+    "alt": "Portrait de Luigi Pirandello",
+    "caption": "Luigi Pirandello",
+    "credit": "Agence de presse Meurisse, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Luigi_Pirandello_1932.jpg"
+  },
+  {
+    "section": "leon-tolstoi",
+    "role": "ecrivain",
+    "file": "images/ecrivains/leon-tolstoi.jpg",
+    "alt": "Portrait de Léon Tolstoï",
+    "caption": "Léon Tolstoï",
+    "credit": "Sergei Prokudin-Gorskii, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg"
+  },
+  {
+    "section": "marcel-proust",
+    "role": "ecrivain",
+    "file": "images/ecrivains/marcel-proust.jpg",
+    "alt": "Portrait de Marcel Proust",
+    "caption": "Marcel Proust",
+    "credit": "Otto Wegener, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Marcel_Proust_1895.jpg"
+  },
+  {
+    "section": "marguerite-yourcenar",
+    "role": "ecrivain",
+    "file": "images/ecrivains/marguerite-yourcenar.jpg",
+    "alt": "Portrait de Marguerite Yourcenar",
+    "caption": "Marguerite Yourcenar",
+    "credit": "Winoksbergen Bernhard De Grendel, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Marguerite_Yourcenar-Bailleul-1982.10.04.Bernhard_De_Grendel_(10).jpg"
+  },
+  {
+    "section": "mary-shelley",
+    "role": "ecrivain",
+    "file": "images/ecrivains/mary-shelley.jpg",
+    "alt": "Portrait de Mary Shelley",
+    "caption": "Mary Shelley",
+    "credit": "Richard Rothwell, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Richard_Rothwell_(1800-1868)_-_Mary_Wollstonecraft_Shelley_-_NPG_1235_-_National_Portrait_Gallery.jpg"
+  },
+  {
+    "section": "matthew-arnold",
+    "role": "ecrivain",
+    "file": "images/ecrivains/matthew-arnold.jpg",
+    "alt": "Portrait de Matthew Arnold",
+    "caption": "Matthew Arnold",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Matthew_Arnold_-_Project_Gutenberg_eText_16745.jpg"
+  },
+  {
+    "section": "miguel-de-cervantes",
+    "role": "ecrivain",
+    "file": "images/ecrivains/miguel-de-cervantes.jpg",
+    "alt": "Portrait de Miguel de Cervantès",
+    "caption": "Miguel de Cervantès",
+    "credit": "Attributed to Juan de Jáuregui, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cervantes_J%C3%A1uregui.jpg"
+  },
+  {
+    "section": "miguel-de-unamuno",
+    "role": "ecrivain",
+    "file": "images/ecrivains/miguel-de-unamuno.jpg",
+    "alt": "Portrait de Miguel de Unamuno",
+    "caption": "Miguel de Unamuno",
+    "credit": "Agence de presse Meurisse, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Miguel_de_Unamuno_Meurisse_1925.jpg"
+  },
+  {
+    "section": "mikhail-boulgakov",
+    "role": "ecrivain",
+    "file": "images/ecrivains/mikhail-boulgakov.jpg",
+    "alt": "Portrait de Mikhaïl Boulgakov",
+    "caption": "Mikhaïl Boulgakov",
+    "credit": "Moisej Nappelbaum, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%91%D1%83%D0%BB%D0%B3%D0%B0%D0%BA%D0%BE%D0%B2.jpg"
+  },
+  {
+    "section": "montesquieu",
+    "role": "ecrivain",
+    "file": "images/ecrivains/montesquieu.png",
+    "alt": "Portrait de Montesquieu",
+    "caption": "Montesquieu",
+    "credit": "Kneiphof (original) and Finn Bjørklid (color, text), CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Belgische_provincies.png"
+  },
+  {
+    "section": "naguib-mahfouz",
+    "role": "ecrivain",
+    "file": "images/ecrivains/naguib-mahfouz.jpg",
+    "alt": "Portrait de Naguib Mahfouz",
+    "caption": "Naguib Mahfouz",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Naguib_Mahfouz_HR.jpg"
+  },
+  {
+    "section": "nicolas-gogol",
+    "role": "ecrivain",
+    "file": "images/ecrivains/nicolas-gogol.jpg",
+    "alt": "Portrait de Nicolas Gogol",
+    "caption": "Nicolas Gogol",
+    "credit": "Otto Friedrich Theodor von Möller, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:N.Gogol_by_F.Moller_(1840,_Tretyakov_gallery).jpg"
+  },
+  {
+    "section": "omar-khayyam",
+    "role": "ecrivain",
+    "file": "images/ecrivains/omar-khayyam.jpg",
+    "alt": "Portrait de Omar Khayyâm",
+    "caption": "Omar Khayyâm",
+    "credit": "The original uploader was Atilin at French Wikipedia., CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Omar_Khayyam2.JPG"
+  },
+  {
+    "section": "oscar-wilde",
+    "role": "ecrivain",
+    "file": "images/ecrivains/oscar-wilde.jpg",
+    "alt": "Portrait de Oscar Wilde",
+    "caption": "Oscar Wilde",
+    "credit": "Napoleon Sarony / Adam Cuerden, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Oscar_Wilde_by_Napoleon_Sarony._Three-quarter-length_photograph,_seated.jpg"
+  },
+  {
+    "section": "ovide",
+    "role": "ecrivain",
+    "file": "images/ecrivains/ovide.jpg",
+    "alt": "Portrait de Ovide",
+    "caption": "Ovide",
+    "credit": "Lucasaw, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ovid_by_an_anonymous_sculptor.jpg"
+  },
+  {
+    "section": "paul-celan",
+    "role": "ecrivain",
+    "file": "images/ecrivains/paul-celan.jpg",
+    "alt": "Portrait de Paul Celan",
+    "caption": "Paul Celan",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Paul_Celan_(1938).jpg"
+  },
+  {
+    "section": "paul-valery",
+    "role": "ecrivain",
+    "file": "images/ecrivains/paul-valery.jpg",
+    "alt": "Portrait de Paul Valéry",
+    "caption": "Paul Valéry",
+    "credit": "Henri Manuel, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Paul_Val%C3%A9ry_-_photo_Henri_Manuel.jpg"
+  },
+  {
+    "section": "percy-bysshe-shelley",
+    "role": "ecrivain",
+    "file": "images/ecrivains/percy-bysshe-shelley.jpg",
+    "alt": "Portrait de Percy Bysshe Shelley",
+    "caption": "Percy Bysshe Shelley",
+    "credit": "After Amelia Curran, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Percy_Bysshe_Shelley_by_Alfred_Clint.jpg"
+  },
+  {
+    "section": "pierre-corneille",
+    "role": "ecrivain",
+    "file": "images/ecrivains/pierre-corneille.jpg",
+    "alt": "Portrait de Pierre Corneille",
+    "caption": "Pierre Corneille",
+    "credit": "After Charles Le Brun, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pierre_Corneille_2.jpg"
+  },
+  {
+    "section": "primo-levi",
+    "role": "ecrivain",
+    "file": "images/ecrivains/primo-levi.jpg",
+    "alt": "Portrait de Primo Levi",
+    "caption": "Primo Levi",
+    "credit": "Unknown (Mondadori Publishers), Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Primo_Levi.jpg"
+  },
+  {
+    "section": "petrarque",
+    "role": "ecrivain",
+    "file": "images/ecrivains/petrarque.jpg",
+    "alt": "Portrait de Pétrarque",
+    "caption": "Pétrarque",
+    "credit": "Altichiero, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Altichiero,_ritratto_di_Francesco_Petrarca.jpg"
+  },
+  {
+    "section": "rabindranath-tagore",
+    "role": "ecrivain",
+    "file": "images/ecrivains/rabindranath-tagore.jpg",
+    "alt": "Portrait de Rabindranath Tagore",
+    "caption": "Rabindranath Tagore",
+    "credit": "Generalstabens litografiska anstalt, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_in_1909.jpg"
+  },
+  {
+    "section": "rainer-maria-rilke",
+    "role": "ecrivain",
+    "file": "images/ecrivains/rainer-maria-rilke.jpg",
+    "alt": "Portrait de Rainer Maria Rilke",
+    "caption": "Rainer Maria Rilke",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rainer_Maria_Rilke_1900.jpg"
+  },
+  {
+    "section": "rene-char",
+    "role": "ecrivain",
+    "file": "images/ecrivains/rene-char.jpg",
+    "alt": "Portrait de René Char",
+    "caption": "René Char",
+    "credit": "Habitant de Céreste anonyme 1941, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:C%C3%A9reste_R._C._et_son_chat_1941.jpg"
+  },
+  {
+    "section": "robert-musil",
+    "role": "ecrivain",
+    "file": "images/ecrivains/robert-musil.jpg",
+    "alt": "Portrait de Robert Musil",
+    "caption": "Robert Musil",
+    "credit": "не указан в источнике, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Musil.jpg"
+  },
+  {
+    "section": "rudyard-kipling",
+    "role": "ecrivain",
+    "file": "images/ecrivains/rudyard-kipling.jpg",
+    "alt": "Portrait de Rudyard Kipling",
+    "caption": "Rudyard Kipling",
+    "credit": "Bain News Service, publisher, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Kipling_nd.jpg"
+  },
+  {
+    "section": "rumi",
+    "role": "ecrivain",
+    "file": "images/ecrivains/rumi.jpg",
+    "alt": "Portrait de Rûmî",
+    "caption": "Rûmî",
+    "credit": "Hossein Behzad, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%85%D9%88%D9%84%D8%A7%D9%86%D8%A7_%D8%A7%D8%AB%D8%B1_%D8%AD%D8%B3%DB%8C%D9%86_%D8%A8%D9%87%D8%B2%D8%A7%D8%AF_(cropped).jpg"
+  },
+  {
+    "section": "sade",
+    "role": "ecrivain",
+    "file": "images/ecrivains/sade.jpg",
+    "alt": "Portrait de Sade",
+    "caption": "Sade",
+    "credit": "Burkhard Mücke, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_Portrait_4.jpg"
+  },
+  {
+    "section": "samuel-beckett",
+    "role": "ecrivain",
+    "file": "images/ecrivains/samuel-beckett.jpg",
+    "alt": "Portrait de Samuel Beckett",
+    "caption": "Samuel Beckett",
+    "credit": "Roger Pic, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Samuel_Beckett,_Pic,_1_(cropped).jpg"
+  },
+  {
+    "section": "shirley-jackson",
+    "role": "ecrivain",
+    "file": "images/ecrivains/shirley-jackson.png",
+    "alt": "Portrait de Shirley Jackson",
+    "caption": "Shirley Jackson",
+    "credit": "Eric Hartmann, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Shirley_Jackson_1940s.png"
+  },
+  {
+    "section": "sophocle",
+    "role": "ecrivain",
+    "file": "images/ecrivains/sophocle.jpg",
+    "alt": "Portrait de Sophocle",
+    "caption": "Sophocle",
+    "credit": "Wolfgang Sauber, CC BY-SA 3.0",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ny_Carlsberg_Glyptothek_-_Sophokles.jpg"
+  },
+  {
+    "section": "stendhal",
+    "role": "ecrivain",
+    "file": "images/ecrivains/stendhal.jpg",
+    "alt": "Portrait de Stendhal",
+    "caption": "Stendhal",
+    "credit": "Olof Johan Södermark, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Stendhal.jpg"
+  },
+  {
+    "section": "t-s-eliot",
+    "role": "ecrivain",
+    "file": "images/ecrivains/t-s-eliot.jpg",
+    "alt": "Portrait de T. S. Eliot",
+    "caption": "T. S. Eliot",
+    "credit": "Thomas Stearns Eliot with his sister and his cousin by Lady Ottoline Morrell.jpg, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Thomas_Stearns_Eliot_by_Lady_Ottoline_Morrell_(1934).jpg"
+  },
+  {
+    "section": "thomas-mann",
+    "role": "ecrivain",
+    "file": "images/ecrivains/thomas-mann.jpg",
+    "alt": "Portrait de Thomas Mann",
+    "caption": "Thomas Mann",
+    "credit": "Nobel Foundation, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Thomas_Mann_1929.jpg"
+  },
+  {
+    "section": "umberto-eco",
+    "role": "ecrivain",
+    "file": "images/ecrivains/umberto-eco.jpg",
+    "alt": "Portrait de Umberto Eco",
+    "caption": "Umberto Eco",
+    "credit": "Rob Bogaerts for Anefo, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Italiaanse_schrijver_Umberto_Eco_,_kop,_Bestanddeelnr_932-9758.jpg"
+  },
+  {
+    "section": "vassili-grossman",
+    "role": "ecrivain",
+    "file": "images/ecrivains/vassili-grossman.jpg",
+    "alt": "Portrait de Vassili Grossman",
+    "caption": "Vassili Grossman",
+    "credit": "Auteur inconnu, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Grossman_V.S.jpg"
+  },
+  {
+    "section": "victor-hugo",
+    "role": "ecrivain",
+    "file": "images/ecrivains/victor-hugo.jpg",
+    "alt": "Portrait de Victor Hugo",
+    "caption": "Victor Hugo",
+    "credit": "Étienne Carjat, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg"
+  },
+  {
+    "section": "voltaire",
+    "role": "ecrivain",
+    "file": "images/ecrivains/voltaire.jpg",
+    "alt": "Portrait de Voltaire",
+    "caption": "Voltaire",
+    "credit": "Nicolas de Largillière, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_(1694-1778)_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_(cropped).jpg"
+  },
+  {
+    "section": "walt-whitman",
+    "role": "ecrivain",
+    "file": "images/ecrivains/walt-whitman.jpg",
+    "alt": "Portrait de Walt Whitman",
+    "caption": "Walt Whitman",
+    "credit": "George Collins Cox / Adam Cuerden, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Walt_Whitman_-_George_Collins_Cox.jpg"
+  },
+  {
+    "section": "william-blake",
+    "role": "ecrivain",
+    "file": "images/ecrivains/william-blake.jpg",
+    "alt": "Portrait de William Blake",
+    "caption": "William Blake",
+    "credit": "Thomas Phillips, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:William_Blake_by_Thomas_Phillips.jpg"
+  },
+  {
+    "section": "william-shakespeare",
+    "role": "ecrivain",
+    "file": "images/ecrivains/william-shakespeare.jpg",
+    "alt": "Portrait de William Shakespeare",
+    "caption": "William Shakespeare",
+    "credit": "Attributed to John Taylor, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Shakespeare.jpg"
+  },
+  {
+    "section": "william-wordsworth",
+    "role": "ecrivain",
+    "file": "images/ecrivains/william-wordsworth.jpg",
+    "alt": "Portrait de William Wordsworth",
+    "caption": "William Wordsworth",
+    "credit": "Benjamin Haydon, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg"
+  },
+  {
+    "section": "xenophon",
+    "role": "ecrivain",
+    "file": "images/ecrivains/xenophon.jpg",
+    "alt": "Portrait de Xénophon",
+    "caption": "Xénophon",
+    "credit": "Carole Raddato, CC BY-SA 2.0",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bust_of_Xenophon.jpg"
+  },
+  {
+    "section": "emile-zola",
+    "role": "ecrivain",
+    "file": "images/ecrivains/emile-zola.jpg",
+    "alt": "Portrait de Émile Zola",
+    "caption": "Émile Zola",
+    "credit": "Émile Zola, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Emile_Zola_1902.jpg"
   }
 ]

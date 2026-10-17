@@ -1,5 +1,5 @@
 /* Service worker : lecture hors connexion. Fichier généré par build/build.py. */
-var VERSION = "1792219616";
+var VERSION = "1792221754";
 var SHELL_CACHE = "sdr-shell-" + VERSION;
 var IMG_CACHE = "sdr-images";
 var FONT_CACHE = "sdr-fonts";
@@ -10,13 +10,15 @@ var SHELL = [
   "js/app.js?v=" + VERSION,
   "js/sauts.js?v=" + VERSION,
   "favicon.svg",
+  "auteurs.html",
   "frise.html",
   "reponses.html",
   "lexique.html",
   "annexes.html",
   "bibliotheque.html",
   "sources.html",
-  "js/pages.js?v=" + VERSION
+  "js/pages.js?v=" + VERSION,
+  "js/portrait.js?v=" + VERSION
 ];
 
 self.addEventListener("install", function (e) {
