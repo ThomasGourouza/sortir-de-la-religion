@@ -270,7 +270,7 @@ def rendre_table(rows):
 
 
 LETTRES_MARQUE = re.compile(r"^>\s*\*\*En littérature\.\*\*\s*")
-LETTRES_OEUVRE = re.compile(r"^(.+?), (?:\*(.+?)\*|« (.+?) »|“(.+?)”|„(.+?)“)(.*?)\s*(?:\((\d[^)]*)\))?\s*$")
+LETTRES_OEUVRE = re.compile(r"^(.+?), (?:\*(.+?)\*|«\s?(.+?)\s?»|“(.+?)”|„(.+?)“)(.*?)\s*(?:\((\d[^)]*)\))?\s*$")
 LETTRES_BUF = []  # oeuvres des encadres de la section en cours (auteur, titre, date)
 
 
@@ -300,7 +300,7 @@ def encadre_lettres(ls):
         LETTRES_BUF.append((m.group(1).strip(), m.group(2) or m.group(3) or m.group(4) or m.group(5), m.group(6).strip(), m.group(7) or ""))
     corps = []
     for p in paras[1:]:
-        classe = ' class="lettres-source"' if re.match(r"Sources?\s*:", p) else ""
+        classe = ' class="lettres-source"' if re.match(r"(?:Sources?|Источник(?:и)?|Quellen?|Fuentes?)\s*:", p) else ""
         corps.append("<p%s>%s</p>" % (classe, en_ligne(masquer_statuts(p).strip())))
     return ('<aside class="lettres"><details><summary><span class="lettres-label">En littérature</span> '
             '<span class="lettres-titre">%s</span></summary><div class="lettres-corps">%s</div></details></aside>' % (
@@ -706,6 +706,8 @@ def siecle(y):
     if LANG == "en":
         suf = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
         return "%d%s century%s" % (n, suf, " BCE" if y < 0 else "")
+    if LANG == "ru":
+        return "%s век%s" % (ROMAINS[n], " до н. э." if y < 0 else "")
     nom = "Ier" if n == 1 else ROMAINS[n] + "e"
     return "%s siècle%s" % (nom, " av. J.-C." if y < 0 else "")
 

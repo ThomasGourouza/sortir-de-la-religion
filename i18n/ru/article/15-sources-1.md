@@ -1,0 +1,244 @@
+## Источники
+
+### Проверенные исходные тексты
+
+Помеченные цитаты были найдены полнотекстовым поиском в следующих файлах. Их точное происхождение (сайт, идентификатор, издание, дата получения, качество оптического распознавания) зафиксировано в.
+
+- Ницше, Фридрих Вильгельм, Jenseits von Gut und Böse (немецкий текст, получен из HTML-файлов Projekt Gutenberg-DE (исходное издание не указано)):
+- Ницше, Фридрих Вильгельм, Götzen-Dämmerung (немецкий текст, получен из Projekt Gutenberg-DE (исходное издание не указано); окончания строк CRLF):
+- Фейербах, Людвиг, Das Wesen des Christenthums (1-е изд., Leipzig, Otto Wigand, 1841; длинное s заменено на s, переносы в концах строк восстановлены, пагинация [NNNN] сохранена):
+- Штирнер, Макс, Der Einzige und sein Eigenthum (1-е изд., Leipzig, Otto Wigand, 1845; длинное s заменено на s, переносы в концах строк восстановлены, пагинация [NNNN] сохранена):
+- Маркс, Карл, Das Kapital. Kritik der politischen Oekonomie, Bd. 1 (1-е изд., Hamburg, Otto Meissner, 1867; длинное s заменено на s, переносы в концах строк восстановлены, пагинация [NNNN] сохранена):
+- Спиноза, Ethica ordine geometrico demonstrata (латинский текст, Opera posthuma 1677 (издание Wikisource la, требует проверки)):
+- Маркс, Карл, Zur Kritik der Hegelschen Rechtsphilosophie. Einleitung (MEW 1, Dietz, S. 378-391 (текст Deutsch-Franzoesische Jahrbuecher, 1844), через mlwerke.de в архиве web.archive.org):
+- Маркс, Карл, Thesen über Feuerbach (оригинальная версия 1845 года и версия Энгельса 1888 года) (MEW 3 через Marxists Internet Archive; две версии подряд: оригинальная (1845), затем версия Энгельса (1888)):
+- Энгельс, Фридрих, Ludwig Feuerbach und der Ausgang der klassischen deutschen Philosophie (MEW 21 (Die Neue Zeit 1886, отдельным томом 1888), через mlwerke.de в архиве web.archive.org):
+- Энгельс, Фридрих, Bruno Bauer und das Urchristentum (MEW 19 (Der Sozialdemokrat, май 1882), через mlwerke.de в архиве web.archive.org):
+- Энгельс, Фридрих, Zur Geschichte des Urchristentums (MEW 22 (Die Neue Zeit 1894-1895), через mlwerke.de в архиве web.archive.org):
+- Спиноза, Traité théologico-politique (французский перевод Wikisource (переводчика см. в заголовке, вероятно, Сессе)):
+- Ницше, Le Gai Savoir (пер. Henri Albert, Mercure de France):
+- Ницше, La Généalogie de la morale (пер. Henri Albert, Mercure de France):
+- Ницше, L'Antéchrist (пер. Henri Albert, Mercure de France):
+- Ницше, Der Antichrist (изд. Schlechta, Werke in drei Baenden (Hanser 1954-1956), через zeno.org; пагинация [S. n]):
+- Ницше, Zur Genealogie der Moral (изд. Schlechta, Werke in drei Baenden (Hanser 1954-1956), через zeno.org; пагинация [S. n]):
+- Достоевский, Братья Карамазовы (русский текст, Wikisource ru (эталонное издание см. в заголовке)):
+- Достоевский, Les Frères Karamazov (пер. Henri Mongault):
+- Ницше, Die fröhliche Wissenschaft (изд. Schlechta, Werke in drei Baenden (Hanser 1954-1956), через zeno.org; пагинация [S. n]):
+- Юм, Дэвид, Dialogues concerning Natural Religion (английский текст (посмертно, 1779), издание Gutenberg, источник не указан):
+- Ренан, Эрнест, Vie de Jésus (9-е изд., Paris, Michel Levy freres, 1863):
+- Джеймс, Уильям, The Varieties of Religious Experience (Longmans, Green and Co, New York, 1917 (Гиффордовские лекции 1901-1902)):
+- Фейербах, Людвиг (пер. Marian Evans [George Eliot]), The Essence of Christianity (перевод со 2-го немецкого издания, выполненный Marian Evans (1854); переизд. 2-го изд., London, Kegan Paul, Trench, Truebner, 1890):
+- Кант, Иммануил, Die Religion innerhalb der Grenzen der bloßen Vernunft (изд. Karl Kehrbach, Leipzig, Reclam: текст A (1793) с вариантами B (1794); пагинация [N]):
+- Фрейд, Зигмунд (пер. W. D. Robson-Scott), The Future of an Illusion (английский перевод W. D. Robson-Scott, London, Hogarth/Institute of Psycho-Analysis, New York, Liveright, 1928):
+- Фрейд, Зигмунд (пер. Joan Riviere), Civilization and its Discontents (авторизованный английский перевод Joan Riviere, New York, Cape and Smith, 1930):
+- Шлейермахер, Фридрих, Über die Religion. Reden an die Gebildeten unter ihren Verächtern (текст 1-го изд. (Berlin, Unger, 1799, анонимно) по изд. Hamburg, Meiner, 1958 (PhB), через zeno.org; пагинация [S. n]):
+- Гегель, Георг Вильгельм Фридрих, Glauben und Wissen oder die Reflexionsphilosophie der Subjektivität (Kritisches Journal der Philosophie II, 1 (1802), через zeno.org: Werke in 20 Baenden (Moldenhauer и Michel), т. 2, Frankfurt a. M., Suhrkamp, 1979; пагинация [S. n]):
+- Штраус, Давид Фридрих, Das Leben Jesu, kritisch bearbeitet (Bd. 1 и 2) (1-е изд., Tuebingen, Osiander, 1835-1836, два тома подряд; длинное s заменено на s, переносы в концах строк восстановлены, пагинация [NNNN] сохранена):
+- Вебер, Макс, Wissenschaft als Beruf (1-е изд., Muenchen und Leipzig, Duncker und Humblot, 1919 (Geistige Arbeit als Beruf, 1. Vortrag); длинное s заменено на s, переносы в концах строк восстановлены, пагинация [NNNN] сохранена):
+- Шопенгауэр, Артур, Die Welt als Wille und Vorstellung, Erster Band (через zeno.org: Zuercher Ausgabe, Werke in zehn Baenden, Zuerich, Diogenes, 1977, начиная с т. 1 (текст Huebscher); 4 книги и приложение Kritik der Kantischen Philosophie; пагинация [S. n]):
+- Лукреций (Titus Lucretius Carus), De rerum natura (латинский текст, Wikisource la (исходное издание см. в заголовке, не указано)):
+- Цицерон (M. Tullius Cicero), De natura deorum (латинский текст, Wikisource la (исходное издание не указано); этимология religio/relegere находится в II, 72):
+- Лактанций (L. Caecilius Firmianus Lactantius), Divinae institutiones, liber IV (латинский текст, Wikisource la (исходное издание не указано); religio/religare в IV, 28):
+- Эпикур, Lettre à Ménécée (Диоген Лаэртский X, 122-135) (два перевода: J. G. Chauffepie, in Diogene Laerce, Vies, Paris, Lefevre, 1840, с. 487-493; затем O. Hamelin, Revue de metaphysique et de morale 18, 1910 (текст Usener с. 59-66)):
+- Вольтер, Épître CIV. À l'auteur du livre des Trois imposteurs (1769) (Oeuvres completes, изд. Moland, Paris, Garnier, 1877, т. 10, с. 402-405 (с примечаниями издателя)):
+- Паскаль, Блез, Pensées (изд. Brunschvicg) и Mémorial (изд. Leon Brunschvicg (Hachette, малое изд.), Wikisource fr; нумерация Брюнсвика; Mémorial в конце файла):
+- Вебер, Макс, Die protestantische Ethik und der Geist des Kapitalismus (версия GARS 1920 года, с Vorbemerkung) (переработанная версия Gesammelte Aufsaetze zur Religionssoziologie, т. 1, Tuebingen, Mohr, 1920 (1-я версия: Archiv fuer Sozialwissenschaft 20-21, 1904-1905), через zeno.org: GARS т. 1, Tuebingen, Mohr, 8-е изд. 1986; пагинация [S. n] этого издания):
+- Гольбах, Поль Анри Тири д' (под именем Mirabaud), Système de la nature ou des loix du monde physique et du monde moral (оригинальное изд. «Londres», 1770, 2 т., Wikisource fr (факсимиле)):
+- Фрейд, Зигмунд, Die Zukunft einer Illusion (текст 1927 года по изданию S. Fischer 1974 (по-видимому, Studienausgabe, т. IX); номера страниц отдельно в начале глав):
+- Фрейд, Зигмунд, Das Unbehagen in der Kultur (текст 1930 года (с примечаниями, добавленными позже, в том числе с тем, где назван Ромен Роллан) по изданию S. Fischer 1974 (по-видимому, Studienausgabe, т. IX); номера страниц отдельно в начале глав):
+- Шопенгауэр, Артур (пер. T. Bailey Saunders), Religion: a Dialogue, etc. (Parerga und Paralipomena II, гл. 15 «Ueber Religion», извлечения) (английский перевод T. Bailey Saunders (исходное издание Gutenberg не указывает); запасной вариант за отсутствием свободного немецкого текста; соответствие полному тексту гл. 15 не проверено):
+- Бергсон, Анри, Les Deux Sources de la morale et de la religion (20-е изд., Paris, Felix Alcan, 1937 (1-е изд. 1932), Wikisource fr):
+- Юм, Дэвид, The Natural History of Religion (текст, изданный Hume Texts Online (1757, с правкой до 1777), редакция без вариантов; ориентиры; примечания Юма помечены [note]):
+- Вейль, Симона, La Pesanteur et la Grâce (Paris, Plon, 1948 (1-е изд. 1947, отбор и расположение Gustave Thibon); введение Тибона не воспроизведено (права)):
+- Кьеркегор, Сёрен (пер. Lee M. Hollander), Selections from the Writings of Kierkegaard (в том числе The Present Moment, извлечения из Øieblikket, 1855) (английский перевод L. M. Hollander, University of Texas Bulletin 2326, Austin, 1923: Diapsalmata, In vino veritas, Fear and Trembling, Preparation for a Christian Life, The Present Moment (выборка)):
+- Кьеркегор, Сёрен, Øieblikket, Nr. 1-10 (SKS т. 13, изд. Cappeloern, Garff, Kondrup, Olesen, Tullberg, Soeren Kierkegaard Forskningscenteret, 2009; nr 1-9 вышли в мае-сентябре 1855, nr 10 посмертно; критический аппарат и отсылки к комментарию удалены, пагинация SKS в [SKS n]):
+- Кьеркегор, Сёрен, Afsluttende uvidenskabelig Efterskrift til de philosophiske Smuler (Johannes Climacus) (SKS т. 7, изд. Cappeloern, Garff, Knudsen, Kondrup, McKinnon, Soeren Kierkegaard Forskningscenteret, 2002 (1-е изд. Копенгаген, Reitzel, 1846); критический аппарат и отсылки к комментарию удалены, пагинация SKS в [SKS n]):
+- Дюркгейм, Эмиль, Les Formes élémentaires de la vie religieuse. Le système totémique en Australie (1-е изд., Paris, Felix Alcan, 1912, Wikisource fr):
+- Гегель, Георг Вильгельм Фридрих, Vorlesungen über die Philosophie der Religion, nebst einer Schrift über die Beweise vom Daseyn Gottes (Werke, Bd. 11-12, изд. Ph. Marheineke, 2-е испр. изд., Berlin, Duncker und Humblot, 1840 (1-е изд. 1832); необработанное OCR издания, набранного фрактурой, много ошибок (B/V, f/s, ck прочитано как >): искать по коротким фрагментам; переносы восстановлены):
+- Экхарт, Майстер (пер. Gustav Landauer), Meister Eckharts mystische Schriften (перевод на современный немецкий) (пер. Gustav Landauer, Berlin, Karl Schnabel (Axel Juncker), 1903; OCR archive.org (Univ. of Toronto), пробелы нормализованы и переносы восстановлены; проповедь Beati pauperes spiritu (Quint 52) помещена там как Predigt 16 «Von der Armut», с. 102 и сл.):
+- Бейль, Пьер, Pensées diverses sur la comète, tome I (критическое изд. A. Prat, Paris, Societe des textes francais modernes, Cornely, 1911, только т. I (примерно § I-CXXXII; основной текст и варианты: см. введение Прата); OCR archive.org (Univ. of Toronto), пробелы нормализованы и переносы восстановлены; т. II не найден (единица хранения pensesdiverses02bayluoft на деле содержит Ch. Adam, Vie et oeuvres de Descartes)):
+- Конт, Огюст, Catéchisme positiviste, ou Sommaire exposition de la religion universelle, en onze entretiens systématiques entre une Femme et un Prêtre de l'Humanité (1-е изд., Paris, у автора, у Carilian-Goeury и у V. Dalmont, октябрь 1852; OCR archive.org (Univ. of Toronto) посредственного качества (заголовки и имена собственные часто искажены), пробелы нормализованы и переносы восстановлены):
+- Гегель, Георг Вильгельм Фридрих, Vorrede zu Hinrichs' Religionsphilosophie (1822) (Werke, Bd. 17 = Vermischte Schriften II, изд. F. Foerster и L. Boumann, Berlin, Duncker und Humblot, 1835, с. 280 и сл. согласно оглавлению (Vorrede датировано Пасхой 1822); КРАЙНЕ ошибочное OCR издания, набранного фрактурой (напр., ber Hunb записано как ^unb, Christ записано как (Ehrifl, Abhaengigkeit записано как älbhängigf eit): искать по коротким словам и перечитывать контекст):
+- Отто, Рудольф, Das Heilige. Über das Irrationale in der Idee des Göttlichen und sein Verhältnis zum Rationalen (13-е изд., Gotha/Stuttgart, F. A. Perthes, 1925 (1-е изд. Breslau, Trewendt und Granier, 1917); OCR archive.org (Univ. of Illinois), пробелы нормализованы и переносы восстановлены):
+- Экхарт, Майстер (пер. Herman Buettner), Meister Eckeharts Schriften und Predigten, Bd. 1 (перевод на современный немецкий) (пер. Herman Buettner, Leipzig, Eugen Diederichs, 1903, т. 1; OCR archive.org (Univ. of Toronto) издания, набранного фрактурой, частые ошибки (f вместо s, D вместо V); длинное s нормализовано, переносы восстановлены; Beati pauperes spiritu (Quint 52) = № 16 «Von der Armut am Geiste», с. 169 и сл.):
+- Бейль, Пьер, Pensées diverses écrites à un docteur de Sorbonne à l'occasion de la comète qui parut au mois de décembre 1680 (т. I и II) (6-е изд., Amsterdam, Meinard Uytwerf, 1749, т. I и II подряд, то есть Pensées diverses целиком (по меньшей мере до § CCLXII; т. III это Continuation, не получен) (то же издание, что и факсимиле Wikisource fr); OCR archive.org (Univ. of Ottawa) старинного набора, длинное s часто прочитано как f; пробелы нормализованы, переносы восстановлены; дополняет т. I изд. Прата):
+- Платон, Νόμοι («Законы»), книга X (греческий текст, Platonis Opera т. V, изд. J. Burnet, Oxford, Clarendon Press (оттиск 1914 года, по данным Perseus); Stephanus 884a-910d в квадратных скобках, обозначения собеседников (ΑΘ., ΚΛ., ΜΕ.) сохранены; без аппарата):
+- Платон (пер. Victor Cousin), Les Lois, livre dixième (пер. V. Cousin, Oeuvres de Platon, т. VII-VIII (Paris, 1831-1832; заголовок Wikisource «Tome septieme & huitieme»); без пагинации Стефана):
+- Аристотель, τὰ μετὰ τὰ φυσικά («Метафизика»), книга Λ (XII) (греческий текст, Aristotle's Metaphysics, изд. W. D. Ross, Oxford, Clarendon Press, 1924; главы 1-10 размечены, пагинация Беккера и строки [l.N]; без аппарата):
+- Аристотель (пер. Alexis Pierron и Charles Zévort), La Métaphysique, livre XII (Λ) (пер. Pierron и Zevort, La Metaphysique d'Aristote, Paris, 1840, 2 т., с их примечаниями в конце книги; двуязычная страница (греческий текст напротив, греческое издание сайтом не указано), Беккер в квадратных скобках; перевод Кузена книги XII (1835, 2-е изд. 1838) в сети не найден):
+- Плотин (пер. Marie-Nicolas Bouillet), Les Ennéades (54 трактата, от I 1 до VI 9) (пер. M.-N. Bouillet, Les Enneades de Plotin, Paris, Hachette, 1857-1861, 3 т.; примечания и разъяснения Буйе НЕ включены (отдельные страницы /Notes в Wikisource); I 6 Du beau, V 1, VI 9 Du bien ou de l'un находятся по метке «=====»):
+- Аверроэс (Ибн Рушд) (пер. Léon Gauthier), Accord de la religion et de la philosophie (Fasl al-maqal, «Решающее рассуждение») (пер. и примечания L. Gauthier, Alger, P. Fontana, 1905; посредственное OCR (титульный лист и отдельные слова искажены, отметки *p.N арабской пагинации), предупреждение Google удалено, пробелы нормализованы и переносы восстановлены):
+- Аверроэс (Ибн Рушд) (пер. Mohammad Jamil-ur-Rehman), The Philosophy and Theology of Averroes (I: A Decisive Discourse; Ia: приложение о вечном знании [Damima]; II: An Exposition of the Methods of Argument) (английский перевод M. Jamil-ur-Rehman, Baroda, A. G. Widgery (Gaekwad Studies in Religion and Philosophy XI), 1921, по арабскому тексту M. J. Mueller (Мюнхен, 1859); удобочитаемое дополнение к OCR Готье):
+- Маймонид (пер. Salomon Munk), Le Guide des égarés (Dalalat al-ha'irin), части I-III (пер. и примечания S. Munk, Paris, A. Franck, т. I 1856, т. II 1861, т. III 1866, подряд; OCR archive.org (Univ. of Toronto), пробелы нормализованы и переносы восстановлены; арабский текст еврейскими буквами и еврейские слова в примечаниях нечитаемы; атрибуты (I, 50-60) в т. I):
+- Маймонид (пер. Michael Friedländer), The Guide for the Perplexed (английский перевод M. Friedlaender, 2-е испр. изд. в одном томе (предисловие июль 1904), London, Routledge, и New York, Dutton, переизд. 1910; без примечаний 1-го изд. (1881-1885); загружено через зеркало gutenberg.pglaf.org):
+- Монтень, Мишель де, Essais, livre II, chapitre 12: Apologie de Raimond Sebond (текст издания Wikisource, так называемого бордоского экземпляра (заголовок «Essais, exemplaire de Bordeaux (1595)», Livre II, f. 183v-258: неоднозначное указание между аннотированным EB 1588 года и посмертным изданием 1595 года, проверить, прежде чем цитировать слой A/B/C); старая орфография):
+- Декарт, Рене (пер. duc de Luynes), Méditations métaphysiques (Épître, Préface, Abrégé, Méditations I-VI) (Oeuvres de Descartes, изд. V. Cousin, Paris, Levrault, 1824, т. I, с. 213 и сл.: французский перевод герцога де Люина (1647, пересмотренный Декартом), НО Кузен заявляет, что воспроизводит 3-е изд. (Paris, 1673, изд. R. Fede) без его резюме; следовательно, это не буквальный текст 1647 года; возражения и ответы не включены):
+- Лейбниц, Готфрид Вильгельм, La Monadologie (1714) (Oeuvres philosophiques de Leibniz, изд. P. Janet, Paris, Felix Alcan, 1900, т. I, с. 707-722, с примечаниями Жане; французские заглавие и текст Лейбница (опубликовано посмертно, по-немецки в 1720, по-латыни в 1721)):
+- Лейбниц, Готфрид Вильгельм, Essais de Théodicée sur la bonté de Dieu, la liberté de l'homme et l'origine du mal (1710) (Oeuvres philosophiques de Leibniz, изд. P. Janet, Paris, Felix Alcan, 1900, т. II, с. 1-418: предисловие, Discours de la conformite de la foi avec la raison, части I-III, Abrege, замечания о Гоббсе и Кинге):
+- Плотин, Ἐννεάδες (54 трактата, греческий текст) (греческий текст R. Volkmann, Leipzig, Teubner, 1883-1884, 2 т. (заголовок Wikisource); греческая нумерация трактатов: I 6 Περὶ τοῦ καλοῦ = «Εννεάδες/Α/στ» (а не ζ), V 1 = «Ε/α», VI 9 = «Στ/θ»; главы [N]; без аппарата; получено через index.php?action=render (API перегружен)):
+- Декарт, Рене, Meditationes de prima philosophia (Epistola, Praefatio, Synopsis, Meditationes I-VI) (латинский текст изд. Adam и Tannery, Oeuvres de Descartes, т. VII, Paris, Cerf, 1904 (1-е изд. Paris, M. Soly, 1641; 2-е изд. Amsterdam, Elzevier, 1642; основной текст, принятый AT, не проверен); пагинация AT в квадратных скобках [N] в тексте; нумерация абзацев принадлежит Wikisource; возражения и ответы не включены):
+- Лейбниц, Готфрид Вильгельм, Principes de la nature et de la grâce fondés en raison (1714) (Oeuvres philosophiques de Leibniz, изд. P. Janet, Paris, Felix Alcan, 1900, т. I, с. 723-731 (текст L'Europe savante, ноябрь 1718, ст. VI)):
+- Руссо, Жан-Жак, Émile, ou De l'éducation, livre IV (в том числе Profession de foi du vicaire savoyard) (Collection complete des oeuvres de J. J. Rousseau, [Geneve], 1782, т. IV, с. 357-458 и далее (1-е изд. «Эмиля»: 1762); орфография эпохи):
+- Руссо, Жан-Жак, Du contrat social, ou Principes du droit politique (полный текст; IV, 8 «De la Religion civile») (оригинальное изд., Amsterdam, Marc Michel Rey, 1762; орфография эпохи):
+- Руссо, Жан-Жак, Lettre à M. de Voltaire, 18 août 1756 (Collection complete des oeuvres de J. J. Rousseau, 1782, т. XII, с. 91-114):
+- Витгенштейн, Людвиг (пер. C. K. Ogden), Tractatus logico-philosophicus / Logisch-philosophische Abhandlung (двуязычное) (двуязычное изд., London, Kegan Paul, Trench, Trubner, 1922 (пер. Огдена при участии F. P. Ramsey, введение B. Russell); немецкий текст, выверенный автором по тексту Annalen der Naturphilosophie, 1921; в файле сначала английский, затем немецкий; формулы и таблицы истинности преобразованы приблизительно (столбцы разделены)):
+- Бергсон, Анри, L'Évolution créatrice (Paris, Felix Alcan, 1908 (1-е изд. 1907); идея небытия в главе IV):
+- Шеллинг, Фридрих Вильгельм Йозеф, Philosophie der Offenbarung, Erster Theil (SW XIII) (Saemmtliche Werke, изд. K. F. A. Schelling, II. Abt., Bd. 3, Stuttgart und Augsburg, Cotta, 1858 (посмертно); OCR издания, набранного фрактурой, длинное s нормализовано, переносы восстановлены, пагинация [S. n] = SW XIII; «warum ist ueberhaupt etwas? warum ist nicht nichts?» в (проверено через grep) и):
+- Фейербах, Людвиг, Todesgedanken. 1830, с Der Schriftsteller und der Mensch и Die Unsterblichkeitsfrage vom Standpunkt der Anthropologie (Saemmtliche Werke, Bd. 3, 3-е изд., Leipzig, Wigand, 1876 (1-е изд. Bd. 3: 1847): версия, переработанная для SW, а НЕ буквальный анонимный текст 1830 года (Nuernberg, Stein), который я не нашёл в сети; фрактура, длинное s нормализовано, переносы восстановлены, [S. n]):
+- Фейербах, Людвиг, Vorläufige Thesen zur Reform der Philosophie (1842, Anekdota 1843) (через zeno.org: Kleine philosophische Schriften (1842-1845), изд. M. G. Lange, Leipzig, Meiner, 1950 (PhB 227), S. 55-79; пагинация [S. n]):
+- Фейербах, Людвиг, Grundsätze der Philosophie der Zukunft (1843) (через zeno.org: Kleine philosophische Schriften (1842-1845), изд. M. G. Lange, Leipzig, Meiner, 1950, S. 87-171; §§ 1-65; пагинация [S. n]):
+- Фейербах, Людвиг, Über das «Wesen des Christentums» in Beziehung auf den «Einzigen und sein Eigentum» (1845) (через zeno.org: Kleine philosophische Schriften (1842-1845), изд. M. G. Lange, Leipzig, Meiner, 1950, S. 171-197 (текст, вышедший в Wigands Vierteljahrsschrift, 1845); пагинация [S. n]):
+- Фейербах, Людвиг, Das Wesen der Religion (§§ 1-55) (Saemmtliche Werke, Bd. 1 (Erlaeuterungen und Ergaenzungen zum Wesen des Christenthums), Leipzig, Wigand, 1846, S. 410-486 (в начале стоит дата 1845; вышло также в Die Epigonen I, 1846); фрактура, длинное s нормализовано, переносы восстановлены, [S. n]; версия Projekt Gutenberg-DE (модернизированная, разделённая издателем на 4 озаглавленные главы) отклонена):
+- Фейербах, Людвиг, Vorlesungen über das Wesen der Religion. Nebst Zusätzen und Anmerkungen (30 лекций, Гейдельберг 1848-1849) (1-е изд. = Saemmtliche Werke, Bd. 8, Leipzig, Wigand, 1851; фрактура, длинное s нормализовано, переносы восстановлены, [S. n]; в качестве запасного варианта существует изд. Bolin-Jodl, набранное антиквой (Stuttgart, Frommann, 1908, archive.org 10931540bsb)):
+- Филон Александрийский (пер. C. D. Yonge), On the Creation (De opificio mundi) (английский перевод C. D. Yonge, The Works of Philo Judaeus, London, H. G. Bohn, 1854-1855, т. I, с. 1-52; текст, набранный ECW с нумерацией параграфов от (1) до (172) по исправленному изданию Hendrickson (1993), формулировки совпадают с Bohn 1854 в сверенных местах (скан archive.org worksphilojudaeu01philuoft)):
+- Филон Александрийский (пер. F. H. Colson и G. H. Whitaker), Περὶ τῆς κατὰ Μωυσέα κοσμοποιίας / On the Account of the World's Creation given by Moses (De opificio mundi), греческий и английский (Philo, т. I, Loeb Classical Library, London, Heinemann, и New York, Putnam, 1929, примерно с. 2-137, с аналитическим введением; греческий текст (Cohn-Wendland) и перевод на чередующихся страницах; OCR греческого корректно в основном тексте, но с паразитными строками диакритики, колонтитулы и номера страниц сохранены; общественное достояние в США с 2025 года):
+- Юстин Мученик (пер. Marcus Dods и George Reith), The First Apology; The Second Apology (Ante-Nicene Fathers, т. I, изд. A. Roberts, J. Donaldson и A. C. Coxe, Buffalo, Christian Literature Publishing Co., 1885, текст «revised and edited for New Advent by Kevin Knight» (современная правка не отмечена); заголовки глав ANF; греческий текст не получен):
+- Ориген (пер. Frederick Crombie; книги VII-VIII: W. H. Cairns), Against Celsus (Contra Celsum), книги I-VIII (Ante-Nicene Christian Library, т. X (1869, книга I вслед за De principiis) и т. XXIII (1872), Edinburgh, T. & T. Clark; фрагменты Цельса в кавычках внутри ответа Оригена; примечания после каждой главы; анализ содержания и указатель т. XXIII включены):
+- Августин (Augustinus), Confessiones, liber VII (латинский текст J. J. O'Donnell, Augustine: Confessions, Oxford, Clarendon Press, 1992 (сайт О'Доннелла), нумерация книга.глава.параграф; «platonicorum libros ex graeca lingua in latinam versos» в 7.9.13, «lectis platonicorum illis libris» в 7.20.26 (проверено через grep)):
+- Августин (Augustinus), De civitate Dei, liber VIII (латинский текст, исходное издание сайтом не указано; главы от [I] до [XXVII]):
+- Порфирий (пер. Marie-Nicolas Bouillet), Vie de Plotin et ordre de ses livres (пер. M.-N. Bouillet, Les Enneades de Plotin, т. I, Paris, Hachette, 1857, с примечаниями Буйе в конце текста; главы I-XXIV (нумерация Буйе); отсутствует в (который начинается с I 1); получено через index.php?action=render):
+- Швейцер, Альберт, Von Reimarus zu Wrede. Eine Geschichte der Leben-Jesu-Forschung (1-е изд., Tuebingen, J. C. B. Mohr (Paul Siebeck), 1906; OCR издания, набранного фрактурой, длинное s нормализовано, переносы восстановлены; частые смешения f/s и другие ошибки OCR («fonfequente» вместо «konsequente»), сверять перед любым цитированием):
+- Швейцер, Альберт (пер. W. Montgomery), The Quest of the Historical Jesus. A Critical Study of its Progress from Reimarus to Wrede (английский перевод W. Montgomery, предисловие F. C. Burkitt, 2-е английское изд., London, A. & C. Black, 1911 (1-е изд. 1910); перевод немецкого издания 1906 года):
+- Древс, Артур, Die Christusmythe (Jena, Eugen Diederichs, 1909 (дата по карточке archive.org; предисловие датировано «Karlsruhe im Maerz 1909», титульный лист нечитаем): вероятно, 1-е изд.; OCR антиквы хорошего качества):
+- Древс, Артур, Die Christusmythe, verbesserte und erweiterte Ausgabe (Jena, Eugen Diederichs, 1910, «verbesserte und erweiterte Ausgabe, 3. bis 5. Tausend» (экземпляр Duke University); OCR корректное, титульный лист и экслибрис с помехами):
+- Древс, Артур (пер. C. Delisle Burns), The Christ Myth (английский перевод C. Delisle Burns по 3-му исправленному и дополненному немецкому изд., London, T. Fisher Unwin, без даты на титульном листе (предисловия датированы январём и мартом 1910)):
+- Буссе, Вильгельм, Kyrios Christos. Geschichte des Christusglaubens von den Anfängen des Christentums bis Irenaeus (1-е изд., Goettingen, Vandenhoeck & Ruprecht, 1913 (FRLANT, N. F. 4); OCR издания, набранного фрактурой, длинное s нормализовано, переносы восстановлены; частые ошибки OCR (f/s, j/s, D/V), греческий текст часто нечитаем; два других скана (kyrioschristosge00bous, kyrioschristosg00bousgoog) отклонены, OCR непригодно):
+- Тайлор, Эдуард Б., Primitive Culture. Researches into the Development of Mythology, Philosophy, Religion, Language, Art, and Custom, т. I и II (London, John Murray, 6-е изд., 1920, 2 т. подряд (1-е изд. 1871; текст исправленных изданий); анимизм: от гл. XI (конец т. I) до XVII (т. II)):
+- Фрэзер, Джеймс Джордж, The Golden Bough. A Study in Magic and Religion (сокращённое издание) (сокращённое издание в одном томе, London, Macmillan, 1922 (предисловие датировано июнем 1922); без примечаний издания в 12 т.; 69 глав):
+- Малиновский, Бронислав, Magic, Science and Religion (in J. Needham (ed.), Science, Religion and Reality, New York, Macmillan, copyright 1925, переизд. 1928, с. 19-84, с библиографией автора; из тома извлечён только этот очерк; OCR чистое, пробелы нормализованы и переносы восстановлены; общественное достояние в США (1925) и в ЕС (автор умер в 1942)):
+- Ренан, Эрнест, Les Apôtres (Histoire des origines du christianisme, II) (Paris, Michel Levy freres, 1866 (1-е изд.), примечания в конце текста):
+- Ренан, Эрнест, Saint Paul (Histoire des origines du christianisme, III) (факсимиле 14-го изд., Paris, Calmann Levy, 1899 (а не 1-го изд., Michel Levy, 1869, которое указывает заголовок Wikisource), примечания в конце текста):
+
+
+
+Во врезках «В литературе» цитируются, кроме того, следующие тексты, полученные и проиндексированные тем же способом (названные папки и взяты с zeno.org и Projekt Gutenberg-DE, остальные из Project Gutenberg и Wikisource):
+
+- Элиот, Джордж, Adam Bede (не указано):
+- Поуп, Александр, An Essay on Man; Moral Essays and Satires (не указано):
+- Флобер, Гюстав, Antigonè (см. заголовок текста):
+- Флобер, Гюстав, Archaïscher Torso Apollos (см. заголовок текста):
+- Мелвилл, Герман, Billy Budd : $b and other prose pieces (не указано):
+- Флобер, Гюстав, Bouvard et Pécuchet (не указано):
+- Флобер, Гюстав, Brief an den Vater (см. заголовок текста):
+- Манн, Томас, Buddenbrooks: Verfall einer Familie (не указано):
+- Флобер, Гюстав, Canti (Leopardi - Donati)/XXIII. Canto notturno di un pastore errante dell'Asia (см. заголовок текста):
+- Флобер, Гюстав, Canti (Leopardi - Donati)/XXXIV. La ginestra (см. заголовок текста):
+- Флобер, Гюстав, Carmina (Horatius)/Liber I/Carmen XI (см. заголовок текста):
+- Флобер, Гюстав, Carmina (Horatius)/Liber I/Carmen XXXIV (см. заголовок текста):
+- Флобер, Гюстав, Così è (se vi pare)/Atto Terzo (см. заголовок текста):
+- Бюхнер, Георг, Dantons Tod (не указано):
+- Флобер, Гюстав, Das Göttliche (см. заголовок текста):
+- Рильке, Райнер Мария, Das Stunden-Buch (не указано):
+- Флобер, Гюстав, De l’Allemagne/Seconde partie/XXVIII (см. заголовок текста):
+- Уайльд, Оскар, De Profundis (не указано):
+- Флобер, Гюстав, Der Gevatter Tod (1857) (см. заголовок текста):
+- Кафка, Франц, Der Prozess: Roman (не указано):
+- Манн, Томас, Der Zauberberg. Erster Band (не указано):
+- Манн, Томас, Der Zauberberg. Zweiter Band (не указано):
+- Гейне, Генрих, Deutschland. Ein Wintermärchen (не указано):
+- Флобер, Гюстав, Dialogue entre un prêtre et un moribond (см. заголовок текста):
+- Лессинг, Готхольд Эфраим, Die Erziehung des Menschengeschlechts (не указано):
+- Флобер, Гюстав, Divina Commedia/Inferno/Canto IV (см. заголовок текста):
+- Флобер, Гюстав, Divina Commedia/Paradiso/Canto XXXIII (см. заголовок текста):
+- Пруст, Марсель, Du côté de chez Swann (французский текст, издание Gutenberg):
+- Кафка, Франц, Ein Landarzt: Kleine Erzählungen (не указано):
+- Флобер, Гюстав, Entretien d’un philosophe avec la maréchale de *** (см. заголовок текста):
+- Флобер, Гюстав, Fables de La Fontaine (éd. Barbin)/2/Le Chartier embourbé (см. заголовок текста):
+- Тургенев, Иван Сергеевич, Fathers and Children (не указано):
+- Гёте, Иоганн Вольфганг фон, Faust: Der Tragödie erster Teil (не указано):
+- Шелли, Мэри Уолстонкрафт, Frankenstein; or, the modern prometheus (не указано):
+- Золя, Эмиль, Germinal (не указано):
+- Гёте, Иоганн Вольфганг фон, Aus meinem Leben. Dichtung und Wahrheit, Dritter Teil, Vierzehntes Buch (через zeno.org (Berliner Ausgabe, Aufbau, 1960 и сл., по заголовку сайта, требует проверки); пагинация [S. n]):
+- Флобер, Гюстав, Gränzen der Menschheit (1789) (см. заголовок текста):
+- Свифт, Джонатан, Gulliver's Travels into Several Remote Nations of the World (не указано):
+- неизвестен, gutenberg-24850 (не указано):
+- Флобер, Гюстав, Hälfte des Lebens (см. заголовок текста):
+- Шекспир, Уильям, Hamlet (не указано):
+- Диккенс, Чарльз, Hard Times (не указано):
+- Конрад, Джозеф, Heart of Darkness (не указано):
+- Гёльдерлин, Фридрих, Hyperion oder der Eremit in Griechenland, Erster Band, Erstes Buch (через zeno.org (исходное издание см. в заголовке сайта)):
+- Гамсун, Кнут, Hunger (не указано):
+- Флобер, Гюстав, Iliade/Rhapsodie XXIV (см. заголовок текста):
+- Теннисон, Альфред Теннисон, барон, In memoriam (не указано):
+- Джеймс, Уильям, The Varieties of Religious Experience (Longmans, Green and Co, New York, 1917 (Гиффордовские лекции 1901-1902)):
+- Жан-Поль, Siebenkäs (в том числе «Erstes Blumenstück: Rede des toten Christus vom Weltgebäude herab, daß kein Gott sei») (текст 1796-1797 годов по онлайн-изданию (исходное издание см. в заголовке); страницы глав подряд):
+- Флобер, Гюстав, Journal d’un curé de campagne/3 (см. заголовок текста):
+- Кафка, Франц, Das Schloß (онлайн-издание (источник см. в заголовке); страницы глав подряд, с повторами):
+- Кафка, Франц, In der Strafkolonie (онлайн-издание (источник см. в заголовке); страницы глав подряд, с повторами):
+- Киплинг, Редьярд, Kim (не указано):
+- Шекспир, Уильям, King Lear (не указано):
+- Шекспир, Уильям, King Richard II (не указано):
+- Клейст, Генрих фон, Michael Kohlhaas (текст 1810 года по онлайн-изданию (исходное издание см. в заголовке); страницы глав подряд, некоторые дважды):
+- Флобер, Гюстав, La Légende des siècles/La Conscience (см. заголовок текста):
+- Флобер, Гюстав, La Légende des siècles/Le Satyre (см. заголовок текста):
+- Флобер, Гюстав, La Mort d’Ivan Ilitch/12 (см. заголовок текста):
+- Пруст, Марсель, La Prisonnière (Sodome et Gomorrhe III) (оригинальное изд. NRF):
+- Флобер, Гюстав, La Soirée avec monsieur Teste (см. заголовок текста):
+- Флобер, Гюстав, La Tentation de saint Antoine - Éd. L. Conard (1910)/La Tentation de saint Antoine/IV (см. заголовок текста):
+- Флобер, Гюстав, Le Colporteur (recueil)/Auprès d’un mort (см. заголовок текста):
+- Флобер, Гюстав, Le Porche du mystère de la deuxième vertu (см. заголовок текста):
+- Флобер, Гюстав, Le Rouge et le Noir/Texte entier (см. заголовок текста):
+- Пруст, Марсель, Le temps retrouvé Tome 2 (de 2) : $b À la recherche du temps perdu vol.VII (оригинальное изд. NRF, copyright Gallimard 1927):
+- Уитмен, Уолт, Leaves of Grass (не указано):
+- Флобер, Гюстав, Les Animaux malades de la peste (см. заголовок текста):
+- Флобер, Гюстав, Les Bakkhantes (Euripide, Leconte de Lisle) (см. заголовок текста):
+- Флобер, Гюстав, Les Chimères/Le Christ aux Oliviers (см. заголовок текста):
+- Флобер, Гюстав, Les Contemplations/Ce que dit la bouche d’ombre (см. заголовок текста):
+- Флобер, Гюстав, Les Destinées (recueil)/Le Mont des Oliviers (см. заголовок текста):
+- Франс, Анатоль, Les Dieux ont soif (не указано):
+- Флобер, Гюстав, Les Fleurs du mal (1861)/Correspondances (см. заголовок текста):
+- Флобер, Гюстав, Les Fleurs du mal (1861)/Les Litanies de Satan (см. заголовок текста):
+- Флобер, Гюстав, Les Fleurs du mal (1868)/Le Gouffre (см. заголовок текста):
+- Гюго, Виктор, Les misérables Tome I: Fantine (не указано):
+- Гюго, Виктор, Les misérables Tome V: Jean Valjean (не указано):
+- Флобер, Гюстав, Les Nuées (trad. Eugène Talbot) (см. заголовок текста):
+- Флобер, Гюстав, Lettre sur les aveugles à l’usage de ceux qui voient (см. заголовок текста):
+- Флобер, Гюстав, Lettres persanes/Lettre 12 (см. заголовок текста):
+- Флобер, Гюстав, L’Étui de nacre/Le Procurateur de Judée (см. заголовок текста):
+- Флобер, Гюстав, L’Idiot/II/Chapitre 4 (см. заголовок текста):
+- Флобер, Гюстав, L’Idiot/III/Chapitre 6 (см. заголовок текста):
+- Флобер, Гюстав, L’Immoraliste/Texte entier (см. заголовок текста):
+- Флобер, Гюстав, L’Ingénieux Hidalgo Don Quichotte de la Manche/Deuxième partie/Chapitre LXXIV (см. заголовок текста):
+- Конрад, Джозеф, Lord Jim (не указано):
+- Флобер, Гюстав, Lyrical Ballads (1798)/Lines written a few miles above Tintern Abbey (см. заголовок текста):
+- Флобер, Гюстав, Madame Bovary (не указано):
+- Флобер, Гюстав, Maître et serviteur (см. заголовок текста):
+- Флобер, Гюстав, Manfred, a dramatic poem/Act 3 Scene 4 (см. заголовок текста):
+- Флобер, Гюстав, Metamorphoses (Ovidius)/Liber I (см. заголовок текста):
+- Элиот, Джордж, Middlemarch (не указано):
+- Мелвилл, Герман, Moby Dick; Or, The Whale (не указано):
+- Лессинг, Готхольд Эфраим, Nathan der Weise: Ein Dramatisches Gedicht, in fünf Aufzügen (не указано):
+- Флобер, Гюстав, Noche oscura (см. заголовок текста):
+- Флобер, Гюстав, Nouvelles (1836-1842)/Le Portrait/I (см. заголовок текста):
+- Флобер, Гюстав, Pastiches et Mélanges/Texte entier (см. заголовок текста):
+- Пессоа, Фернандо (Алберту Каэйру), O Guardador de Rebanhos, V («Há metafísica bastante em não pensar em nada») (португальский текст, Wikisource pt (исходное издание не указано)):
+- Флобер, Гюстав, Phèdre (Racine), Didot, 1854/Acte I (см. заголовок текста):
+- Флобер, Гюстав, Poems and Ballads (Swinburne)/Hymn to Proserpine (см. заголовок текста):
+- Флобер, Гюстав, Polyeucte/Édition Masson, 1887 (см. заголовок текста):
+- Флобер, Гюстав, Prometheus (Gedicht, späte Fassung) (см. заголовок текста):
+- Флобер, Гюстав, Prometheus (Kafka) (см. заголовок текста):
+- Гюго, Виктор, Quatrevingt-Treize (не указано):
+- Флобер, Гюстав, Queen Mab/Canto VII (см. заголовок текста):
+- Флобер, Гюстав, Queen Mab/Notes (см. заголовок текста):
+- Флобер, Гюстав, Religions et Religion/Conclusion (см. заголовок текста):
+- Флобер, Гюстав, René (см. заголовок текста):
+- Рильке, Райнер Мария, Duineser Elegien, Die erste Elegie (через zeno.org (исходное издание см. в заголовке сайта)):
+- Ангелус Силезиус, Cherubinischer Wandersmann, I, 8 и I, 289 (изд. zeno.org (Sämtliche poetische Werke, Munich, Hanser, 1952?); только два двустишия):
+- Блейк, Уильям, Songs of Innocence and of Experience (не указано):
+- Франс, Анатоль, Sur la pierre blanche (не указано):
+- Флобер, Гюстав, The Collected Works of Henrik Ibsen/Volume 3/Brand/Act 5 (см. заголовок текста):
+- Тагор, Рабиндранат, The King of the Dark Chamber (не указано):
+- Дефо, Даниель, The Life and Adventures of Robinson Crusoe (не указано):
+- Стерн, Лоренс, The life and opinions of Tristram Shandy, gentleman (не указано):
+- Уайльд, Оскар, The Picture of Dorian Gray (не указано):
+- Флобер, Гюстав, The poems of George Eliot (Crowell, 1884)/Oh, may I join the Choir invisible (см. заголовок текста):
+- Флобер, Гюстав, The poetical works of Matthew Arnold/Dover Beach (см. заголовок текста):
+- Омар Хайям, The Rubaiyat of Omar Khayyam (не указано):
+- Шекспир, Уильям, The Tempest (не указано):
+- Байрон, Джордж Гордон Байрон, барон, The Works of Lord Byron. Vol. 5: Poetry (не указано):
+- Кэрролл, Льюис, Through the Looking-Glass (не указано):
+- Флобер, Гюстав, Trois Contes (Flaubert)/Un Cœur simple (см. заголовок текста):
+- Флобер, Гюстав, Œuvres (Rimbaud)/Derniers vers/Fêtes de la patience/L’Éternité (см. заголовок текста):
+- Торо, Генри Дэвид, Walden, and On The Duty Of Civil Disobedience (не указано):
+- Толстой, Лев, граф, War and Peace (не указано):
+- Флобер, Гюстав, Zadig/Texte entier (см. заголовок текста):

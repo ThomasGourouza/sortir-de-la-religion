@@ -42,7 +42,8 @@ def residus_fr(texte):
     sans = CITATION.sub(" ", texte)
     sans = re.sub(r"“[^”]*”|„[^“]*“|\*[^*]+\*", " ", sans)
     mots = re.findall(r"[a-zàâçéèêëîïôûùüÿœ']+", sans.lower())
-    return sum(1 for m in mots if m in MOTS_FR and m not in ("on", "plus", "ne", "se", "il", "pas")), len(mots)
+    tous = re.findall(r"\w+", sans)  # tous les mots, tous alphabets : le rapport vaut pour le cyrillique aussi
+    return sum(1 for m in mots if m in MOTS_FR and m not in ("on", "plus", "ne", "se", "il", "pas")), len(tous)
 
 
 def verif_morceau(src, tr):
@@ -82,7 +83,8 @@ def main(langue="en"):
             print("  MANQUANT", nom); total += 1; continue
         pb, mt, ms = verif_morceau(src, tr)
         ratio = mt / ms if ms else 0
-        if not 0.8 <= ratio <= 1.25:
+        bornes = {"ru": (0.65, 1.2)}.get(langue, (0.8, 1.25))  # le russe, sans articles, compte moins de mots
+        if not bornes[0] <= ratio <= bornes[1]:
             pb.append("longueur %.2f de l'original" % ratio)
         if pb:
             total += 1
@@ -102,8 +104,9 @@ def main(langue="en"):
                 pb.append("sous-titres différents")
             if len(blocs("\n".join(a["lignes"]))) != len(blocs("\n".join(b["lignes"]))):
                 pb.append("blocs différents")
-            if re.search("[–—«»]", open(tr, encoding="utf-8").read()):
-                pb.append("tiret ou guillemets français")
+            interdits = "[\u2013\u2014«»]" if langue == "en" else "[\u2013\u2014]"
+            if re.search(interdits, open(tr, encoding="utf-8").read()):
+                pb.append("tiret interdit" + (" ou guillemets français" if langue == "en" else ""))
         if pb:
             total += 1
             print("  %s : %s" % (nom, " ; ".join(pb)))
