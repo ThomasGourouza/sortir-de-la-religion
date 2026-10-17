@@ -26,7 +26,7 @@ Site statique : HTML, CSS et JavaScript sans dépendance, à part la police Lite
 | `build/build.py` | convertit l'essai Markdown en `index.html` et génère les pages outils |
 | `build/template.html`, `build/page.template.html` | gabarits de la page et des pages outils |
 | `build/lexique.json`, `build/reponses.json`, `build/auteurs.json` | notions du lexique, échanges entre auteurs, dates des auteurs |
-| `build/annexes/` | un article d'annexe par fichier Markdown (en-tête `titre`, `categorie`, `ordre`, `sections`, `motifs`, `references`, puis le corps) ; `PLAN-annexes.md` donne le format et les règles d'écriture |
+| `build/annexes/` | un article d'annexe par fichier Markdown (en-tête `titre`, `categorie`, `ordre`, `sections`, `motifs`, `references`, puis le corps) ; `GUIDE-annexes.md` donne le format et les règles d'écriture |
 | `build/images.py`, `build/images.json` | récupération des images libres sur Wikimedia Commons et leur description (légende, auteur, licence, source) |
 
 ## Reconstruire la page
@@ -72,4 +72,4 @@ Les images viennent de Wikimedia Commons et sont dans le domaine public ou sous 
 
 ## Langues
 
-Le site est construit en français à la racine et dans chaque langue traduite dans son dossier (`en/` pour l'anglais), avec un menu des langues dans le bandeau. Les traductions vivent dans `i18n/<langue>/` ; le français reste la source : la traduction est alignée sur sa structure, et `python3 build/i18n_verif.py <langue>` en contrôle la fidélité (structure, citations originales, chiffres, résidus). Procédure détaillée dans `CLAUDE.md`.
+Le site est construit en français à la racine et dans chaque langue traduite dans son dossier (`en/` pour l'anglais), avec un menu des langues dans le bandeau. Les traductions vivent dans `i18n/<langue>/` ; le français reste la source : la traduction est alignée sur sa structure, et `python3 build/i18n_verif.py <langue>` en contrôle la fidélité (structure, citations originales, chiffres, résidus). Après un ajout ou un retrait de section, `python3 build/i18n_export.py` redécoupe la source française et `python3 build/i18n_redecouper.py <langue>` recale sur elle le découpage de chaque traduction. Procédure détaillée dans `CLAUDE.md`.

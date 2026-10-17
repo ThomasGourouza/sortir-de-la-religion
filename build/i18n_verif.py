@@ -14,6 +14,8 @@ import build as B
 MOTS_FR = set("le la les des du une est et que qui dans pour pas sur avec ce cette sont mais aussi comme plus ne se il elle ils lui leur leurs on nous vous où".split())
 NON_LATIN = re.compile(r"[Ͱ-Ͽἀ-῿Ѐ-ӿ֐-׿؀-ۿ]")
 CITATION = re.compile(r"«\s*(.+?)\s*»", re.S)
+# gloses françaises entre guillemets que l'heuristique prend pour des citations originales : elles se traduisent
+GLOSES = {"Effondrement de l'Effondrement", "interprétation non religieuse"}
 
 
 def blocs(texte):
@@ -29,7 +31,7 @@ def citations_originales(texte):
     for c in CITATION.findall(texte):
         mots = re.findall(r"[a-zàâçéèêëîïôûùüÿœ']+", c.lower())
         francais = sum(1 for m in mots if m in MOTS_FR)
-        if NON_LATIN.search(c) or (len(c) > 25 and francais == 0):
+        if c not in GLOSES and (NON_LATIN.search(c) or (len(c) > 25 and francais == 0)):
             out.append(re.sub(r"\s+", " ", c).strip())
     return out
 
@@ -40,6 +42,7 @@ def nombres(texte):
 
 def residus_fr(texte):
     sans = CITATION.sub(" ", texte)
+    sans = re.sub(r"\*\*[^*]+\*\*", " ", sans)  # le gras d'abord, sinon il fausse l'appariement des italiques
     sans = re.sub(r"“[^”]*”|„[^“]*“|\*[^*]+\*", " ", sans)
     mots = re.findall(r"[a-zàâçéèêëîïôûùüÿœ']+", sans.lower())
     tous = re.findall(r"\w+", sans)  # tous les mots, tous alphabets : le rapport vaut pour le cyrillique aussi
@@ -67,7 +70,7 @@ def verif_morceau(src, tr):
     if re.search("[–—]", t):
         pb.append("tiret cadratin ou demi-cadratin")
     fr, tot = residus_fr(t)
-    if tot and fr / tot > 0.02:
+    if tot and fr / tot > 0.02 and not os.path.basename(tr).startswith("15-sources"):  # la bibliographie garde ses titres français
         pb.append("mots français hors citations : %d sur %d" % (fr, tot))
     return pb, len(t.split()), len(s.split())
 

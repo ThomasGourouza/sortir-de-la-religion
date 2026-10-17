@@ -1055,8 +1055,9 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                filtres + "".join(h) + '<p id="aucun" hidden>Aucun auteur ne correspond.</p>', titre, og_image, version)
     redirection("frise.html", "auteurs.html")
     redirection("reponses.html", "auteurs.html")
-    if sans_fiche:
-        print("  tableau des auteurs : lignes sans auteur de la frise, devenues fiches :", "; ".join(sans_fiche))
+    imprevues = [t for t in sans_fiche if t not in dates_sup.get("_tableau_seul", [])]
+    if imprevues:
+        print("  tableau des auteurs : lignes sans auteur de la frise, devenues fiches :", "; ".join(imprevues))
 
     # ---------------------------------------------------------------- lexique
     lex = sorted(lexique_courant(), key=lambda e: slug_terme(e["terme"]))
