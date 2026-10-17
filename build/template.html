@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{{TITRE_ONGLET}}</title>
 <meta name="description" content="Un débat de Platon à nos contemporains : critiques de la religion, sciences du religieux et spiritualités sans Dieu.">
-<meta name="theme-color" content="#f7f3ea">
+<meta name="theme-color" content="#f4ead5">
 <link rel="canonical" href="{{BASE_URL}}{{PAGE}}">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -30,7 +30,7 @@
   try {
     var t = localStorage.getItem("sdr-theme");
     var f = localStorage.getItem("sdr-font");
-    if (t) document.documentElement.dataset.theme = t;
+    if (t === "sepia" || t === "dark") document.documentElement.dataset.theme = t; /* l'ancien thème blanc revient au sépia */
     if (f) document.documentElement.style.setProperty("--fs", f + "px");
   } catch (e) {}
 </script>

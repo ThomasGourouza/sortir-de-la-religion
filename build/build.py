@@ -1067,15 +1067,17 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
         if e["section"] not in ids:
             print("  lexique.json : section inconnue", e["section"])
         sl = e.get("slug", slug_terme(e["terme"]))
-        items.append('<div class="lex-entree" data-item id="%s"><dt>%s%s</dt><dd>%s <a class="lex-voir" href="index.html#%s">Lire dans l\'essai</a></dd></div>' % (
+        items.append('<details class="lex-entree" data-item id="%s" open><summary><span class="lex-terme">%s</span>%s</summary>'
+                     '<div class="lex-def">%s <a class="lex-voir" href="index.html#%s">Lire dans l\'essai</a></div></details>' % (
             sl, html.escape(e["terme"]),
             ' <span class="lex-langue">%s</span>' % en_ligne(e["langue"]) if e.get("langue") else "",
             lier(en_ligne(e["definition"]), cibles_ann, scope_self=("lexique.html", sl)), e["section"]))
     page_outil("lexique.html", "Lexique",
                "%d notions de l'essai." % len(lex),
                "Lexique des notions de l'essai.",
-               '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher une notion…" aria-label="Chercher une notion"></div>'
-               '<dl class="lexique">%s</dl><p id="aucun" hidden>Aucune notion ne correspond.</p>' % "".join(items),
+               '<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher une notion…" aria-label="Chercher une notion">'
+               '<button class="chip plier" type="button" id="plier-tout" aria-pressed="false">Tout replier</button></div>'
+               '<div class="lexique">%s</div><p id="aucun" hidden>Aucune notion ne correspond.</p>' % "".join(items),
                titre, og_image, version)
 
     # ---------------------------------------------------------------- annexes

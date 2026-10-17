@@ -123,14 +123,14 @@
   } catch (e) {}
 
   /* Thème et taille du texte */
-  var themes = ["auto", "light", "sepia", "dark"];
+  /* Deux thèmes, sépia et sombre ; sans choix enregistré, celui du système */
   $("#theme-btn").addEventListener("click", function () {
-    var cur = document.documentElement.dataset.theme || "auto";
-    var next = themes[(themes.indexOf(cur) + 1) % themes.length];
-    if (next === "auto") delete document.documentElement.dataset.theme;
-    else document.documentElement.dataset.theme = next;
-    store.set("sdr-theme", next === "auto" ? "" : next);
-    this.setAttribute("aria-label", window.SDR_T("Thème : ") + window.SDR_T(({ auto: "automatique", light: "clair", sepia: "sépia", dark: "sombre" })[next]));
+    var cur = document.documentElement.dataset.theme ||
+      (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "sepia");
+    var next = cur === "dark" ? "sepia" : "dark";
+    document.documentElement.dataset.theme = next;
+    store.set("sdr-theme", next);
+    this.setAttribute("aria-label", window.SDR_T("Thème : ") + window.SDR_T(next === "dark" ? "sombre" : "sépia"));
   });
   function fontStep(d) {
     var cur = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--fs")) || 18;

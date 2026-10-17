@@ -10,13 +10,13 @@
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var norm = function (s) { return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); };
 
-  var themes = ["auto", "light", "sepia", "dark"];
+  /* Deux thèmes, sépia et sombre ; sans choix enregistré, celui du système */
   $("#theme-btn").addEventListener("click", function () {
-    var cur = document.documentElement.dataset.theme || "auto";
-    var next = themes[(themes.indexOf(cur) + 1) % themes.length];
-    if (next === "auto") delete document.documentElement.dataset.theme;
-    else document.documentElement.dataset.theme = next;
-    store.set("sdr-theme", next === "auto" ? "" : next);
+    var cur = document.documentElement.dataset.theme ||
+      (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "sepia");
+    var next = cur === "dark" ? "sepia" : "dark";
+    document.documentElement.dataset.theme = next;
+    store.set("sdr-theme", next);
   });
   function fontStep(d) {
     var cur = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--fs")) || 18;
@@ -74,11 +74,11 @@
   if (partSel) partSel.addEventListener("change", apply);
   if (sieSel) sieSel.addEventListener("change", apply);
 
-  /* Page Les auteurs : replier ou déplier toutes les fiches (elles sont ouvertes par défaut) */
+  /* Pages Les auteurs, Bibliothèque et Lexique : replier ou déplier toutes les fiches ou notions (ouvertes par défaut) */
   var plier = $("#plier-tout");
   if (plier) {
     plier.addEventListener("click", function () {
-      var fiches = $$(".fiche");
+      var fiches = $$(".fiche, .lex-entree");
       var ouvrir = !fiches.some(function (f) { return f.open; });
       fiches.forEach(function (f) { f.open = ouvrir; });
       plier.textContent = window.SDR_T(ouvrir ? "Tout replier" : "Tout déplier");

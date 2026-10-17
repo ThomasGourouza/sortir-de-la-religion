@@ -2,14 +2,15 @@
 
 :root {
   --fs: 18px;
-  --bg: #f7f3ea;
-  --bg-soft: #efe8da;
-  --card: #fffdf8;
-  --ink: #23201b;
-  --ink-soft: #5f574b;
+  /* deux thèmes : sépia (par défaut sur un système clair) et sombre (par défaut sur un système sombre) */
+  --bg: #f4ead5;
+  --bg-soft: #eadcc0;
+  --card: #fbf3e1;
+  --ink: #3a2e1f;
+  --ink-soft: #6d5c45;
   --accent: #8a3b12;
   --accent-soft: #f2dccb;
-  --line: #ddd2bf;
+  --line: #d8c7a5;
   --shadow: 0 1px 2px rgba(40, 30, 10, .08), 0 4px 16px rgba(40, 30, 10, .06);
   --topbar: 90px; /* bandeau fixe : ligne de titre plus ligne d'onglets */
   --measure: 38rem;
@@ -19,7 +20,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]):not([data-theme="sepia"]) {
+  :root:not([data-theme="sepia"]) {
     --bg: #15140f; --bg-soft: #1f1d17; --card: #1c1a15; --ink: #e9e3d6; --ink-soft: #a89f8e;
     --accent: #e39a62; --accent-soft: #3a2a1c; --line: #34302a; --shadow: none;
     color-scheme: dark;
@@ -29,14 +30,6 @@
   --bg: #15140f; --bg-soft: #1f1d17; --card: #1c1a15; --ink: #e9e3d6; --ink-soft: #a89f8e;
   --accent: #e39a62; --accent-soft: #3a2a1c; --line: #34302a; --shadow: none;
   color-scheme: dark;
-}
-:root[data-theme="light"] {
-  --bg: #ffffff; --bg-soft: #f3f3f1; --card: #ffffff; --ink: #1b1b1b; --ink-soft: #5b5b5b;
-  --accent: #9b3412; --accent-soft: #f6e1d6; --line: #e2e2e0;
-}
-:root[data-theme="sepia"] {
-  --bg: #f4ead5; --bg-soft: #eadcc0; --card: #fbf3e1; --ink: #3a2e1f; --ink-soft: #6d5c45;
-  --accent: #8a3b12; --line: #d8c7a5;
 }
 
 * { box-sizing: border-box; }
@@ -416,9 +409,16 @@ a.lex:hover, a.ann:hover { color: var(--accent); }
 .r-note { display: block; font-size: .9em; color: var(--ink-soft); }
 .lexique { margin: 0; }
 .lex-entree { padding: 10px 0; border-top: 1px solid var(--line); scroll-margin-top: calc(var(--topbar) + 70px); }
-.lex-entree dt { font-weight: 600; font-size: 1.05em; }
+.lex-entree > summary { list-style: none; cursor: pointer; position: relative; padding-right: 28px; }
+.lex-entree > summary::-webkit-details-marker { display: none; }
+.lex-entree > summary::after {
+  content: ""; position: absolute; right: 8px; top: 50%; width: 8px; height: 8px; margin-top: -6px;
+  border-right: 2px solid var(--ink-soft); border-bottom: 2px solid var(--ink-soft); transform: rotate(45deg); transition: transform .15s;
+}
+.lex-entree[open] > summary::after { transform: rotate(-135deg); margin-top: -2px; }
+.lex-terme { font-weight: 600; font-size: 1.05em; }
 .lex-langue { font: 12.5px var(--sans); color: var(--ink-soft); font-weight: 400; }
-.lex-entree dd { margin: 4px 0 0; }
+.lex-def { margin: 4px 0 0; }
 .lex-voir { font: 13px var(--sans); white-space: nowrap; }
 .lex-entree.cible { background: var(--accent-soft); border-radius: 10px; padding: 10px; }
 /* Annexes : articles repliés, dans des cartes par catégorie */
