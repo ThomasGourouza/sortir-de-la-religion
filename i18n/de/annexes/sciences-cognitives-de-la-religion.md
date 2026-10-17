@@ -1,0 +1,21 @@
+---
+titre: Die Kognitionswissenschaften der Religion: warum Götter leicht zu denken sind
+categorie: disciplines
+ordre: 40
+sections: boyer ; pourquoi-croit-on-un-debat-construit ; neuvieme-partie ; tylor-et-frazer
+motifs: Kognitionswissenschaften ; Barrett ; Guthrie ; Dennett
+references: Stewart Guthrie, *Faces in the Clouds* (1993) ; Pascal Boyer, *Religion Explained* (2001) ; Scott Atran, *In Gods We Trust* (2002) ; Justin L. Barrett, *Why Would Anyone Believe in God?* (2004) ; Daniel Dennett, *Breaking the Spell* (2006) ; Ara Norenzayan, *Big Gods* (2013)
+---
+Die Kognitionswissenschaften der Religion sind ein in den 1990er Jahren entstandenes Forschungsprogramm, das die Wiederkehr religiöser Glaubensvorstellungen aus der gewöhnlichen Arbeitsweise des menschlichen Geistes erklärt, wie die kognitive Psychologie, die Anthropologie und die Evolutionspsychologie sie untersuchen. Boyer, den der Essay in seinem neunten Teil liest, ist einer ihrer Begründer.
+
+#### Das Programm
+
+Der leitende Gedanke ist, dass die Religion keiner besonderen Erklärung bedarf, weder durch ein Bedürfnis noch durch eine Funktion noch durch ein eigenes Vermögen: Sie ist ein Nebenprodukt geistiger Systeme, die sich für andere Aufgaben entwickelt haben. Der menschliche Geist besteht aus spezialisierten, intuitiven und schnellen Inferenzsystemen, die physische Gegenstände, Lebewesen, Personen und soziale Beziehungen verarbeiten. Religiöse Begriffe nutzen diese Systeme: Sie erfüllen fast alle ihre Erwartungen und verletzen eine oder zwei, was sie zugleich einprägsam und brauchbar macht. Stewart Guthrie geht in *Faces in the Clouds* (1993) vom Anthropomorphismus aus: Wir sehen Gesichter in den Wolken und Absichten im Wind, weil es weniger kostet, einen Felsen für einen Bären zu halten als umgekehrt; die Götter sind das Ergebnis dieser systematischen Verzerrung, die Hume 1757 beschrieben hatte. Justin Barrett nennt das entsprechende Vermögen die hypersensible Vorrichtung zur Erkennung von Akteuren. Pascal Boyer in *Religion Explained* (2001) und Scott Atran in *In Gods We Trust* (2002) entwickeln die Theorie der minimal kontraintuitiven Begriffe und der übernatürlichen Akteure, die über strategische Information zu dem verfügen, was den Menschen wichtig ist, was sie für Moral und Kooperation bedeutsam macht. Robert McCauley und Thomas Lawson untersuchen Rituale als Handlungen, deren Form durch die Kognition bedingt ist.
+
+#### Interne Debatten
+
+Über die Funktion stehen sich zwei Positionen gegenüber. Für die Theorie des Nebenprodukts ist die Religion für nichts selektiert worden; für die adaptationistischen Theorien, David Sloan Wilson oder Ara Norenzayan, haben die großen moralisierenden und überwachenden Götter die Kooperation in großen Gesellschaften begünstigt, und religiöse Gruppen haben so besser überlebt. Die Entwicklungspsychologie untersucht mit Barrett und Deborah Kelemen die Neigung von Kindern zum Finalismus und zur Zuschreibung von Absichten. Daniel Dennett macht das Programm in *Breaking the Spell* (2006) allgemein bekannt und leitet daraus ein Plädoyer für die naturalistische Erforschung der Religion ab, wobei er sorgfältig die Erklärung der Ursachen von der Frage der Wahrheit unterscheidet, dem genetischen Fehlschluss. Die Disziplin ist kritisiert worden wegen ihres Universalismus, wegen ihrer dünnen Datenlage außerhalb des Westens und wegen der Replikationskrise, die die experimentelle Psychologie getroffen hat.
+
+#### Was der Essay voraussetzt
+
+Der Essay behält von Boyer, dass die Götter leicht zu denken sind, dass die Wissenschaft ebenso widernatürlich ist, wie die Religion natürlich ist, und dass es im Menschen keinen leeren Platz von der genauen Form Gottes gibt; er schließt daraus, dass Boyer der Kritik kein Regime hinzufügt, sondern die religiöse Disposition erklärt. Er erinnert nach Dennett an die Gefahr des genetischen Fehlschlusses und wirft ihm vor, die Glaubensvorstellungen zu erklären, nicht die Übungen: Eine Spiritualität ohne Glaubensvorstellungen entgeht seinem Modell. Er setzt das Vokabular der Inferenzsysteme und des Nebenprodukts als bekannt voraus, ebenso die Stellung Humes als Vorläufer und die Zugehörigkeit Dennetts zu beiden Lagern, Kognitionswissenschaften und neuer Atheismus.

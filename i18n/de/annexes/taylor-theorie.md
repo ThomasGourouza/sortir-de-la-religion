@@ -1,0 +1,21 @@
+---
+titre: Das Denken Charles Taylors: die Quellen des Selbst, das säkulare Zeitalter, die Anerkennung
+categorie: theories
+ordre: 118
+sections: charles-taylor ; jurgen-habermas
+motifs: A Secular Age ; säkulares Zeitalter ; Sources of the Self ; Subtraktionsgeschichten ; Nova-Effekt ; Politik der Anerkennung
+references: Charles Taylor, *Hegel* (1975) ; *Sources of the Self* (1989) ; *The Malaise of Modernity* (1991) ; *Multiculturalism and the Politics of Recognition* (1992) ; *Varieties of Religion Today* (2002) ; *A Secular Age* (2007), übers. *L'Âge séculier* (2011) ; Ruth Abbey, *Charles Taylor* (2000) ; Michael Warner u. a. (Hrsg.), *Varieties of Secularism in a Secular Age* (2010)
+---
+Charles Taylor (geb. 1931), kanadischer Philosoph aus Québec, Katholik, in Oxford ausgebildet, Professor an der McGill-Universität und in Oxford, in den 1960er Jahren sozialdemokratischer Kandidat bei den Bundeswahlen, 2007 Kovorsitzender einer Kommission über die vernünftigen Anpassungen in Québec, Träger des Templeton- und des Kyoto-Preises, hat eine Philosophie der modernen Identität, der Anerkennung und der Säkularisierung entwickelt, die mit Hegel, Heidegger, Wittgenstein und den Sozialwissenschaften im Gespräch steht.
+
+#### Die moderne Identität
+
+Nach einer Dissertation gegen den Behaviorismus und einem großen Buch über Hegel (1975) veröffentlicht Taylor *Sources of the Self* (*Quellen des Selbst*, 1989), eine Genealogie der modernen Identität: das innere Selbst, von Platon über Augustinus bis zu Descartes, die Bejahung des gewöhnlichen Lebens, der Arbeit und der Familie, die aus der Reformation stammt, und die Stimme der Natur, aus der Romantik; hinter jeder Identität stehen konstitutive Güter, moralische Quellen, die die naturalistische Moderne nicht artikulieren kann, ohne beim Theismus oder bei der Romantik zu borgen, die sie überwunden zu haben glaubt. *The Malaise of Modernity* (1991) verteidigt das Ideal der Authentizität gegen seine individualistischen Verfallsformen, und *Die Politik der Anerkennung* (1992) begründet den Multikulturalismus mit dem Bedürfnis der Identitäten, anerkannt zu werden, in der Nachfolge Hegels und Herders. Taylor gehört zu der sogenannten kommunitaristischen Strömung, mit Sandel, MacIntyre und Walzer, auch wenn er das Etikett zurückweist.
+
+#### Das säkulare Zeitalter
+
+*A Secular Age* (2007), achthundert Seiten, hervorgegangen aus den Gifford Lectures von 1999, fragt, wie man von einer Gesellschaft, in der es 1500 praktisch unmöglich war, nicht an Gott zu glauben, zu einer Gesellschaft gelangt ist, in der der Glaube eine Option unter anderen ist, oft die schwierigste. Taylor unterscheidet drei Bedeutungen des Säkularen: den Rückzug der Religion aus den Institutionen, den Rückgang der Praxis und den Wandel der Bedingungen des Glaubens, der ihn allein interessiert. Gegen die Subtraktionsgeschichten, subtraction stories, die in der Säkularisierung die Freilegung einer von der Illusion befreiten menschlichen Natur sehen, erzählt er den Aufbau eines exklusiven Humanismus, zuerst durch die Reformation und die Disziplinierung der Sitten, dann durch den providentiellen Deismus, schließlich durch einen immanenten Rahmen, in dem sich die Welt ohne Transzendenz versteht; das poröse Selbst der verzauberten Gesellschaften ist zu einem abgepufferten Selbst geworden, und der Nova-Effekt hat die spirituellen Positionen vervielfacht. Der Glaube besteht fort, geschwächt und verwandelt, und Taylor plädiert als Gläubiger für eine Fülle, die der exklusive Humanismus ebenfalls sucht, ohne sie zu nennen. *Varieties of Religion Today* (2002) liest James neu; es folgten die Debatten mit Habermas über die Religion im öffentlichen Raum und mit den Soziologen über die empirische Grundlage der These.
+
+#### Was der Essay voraussetzt
+
+Der Essay setzt als bekannt voraus die drei Bedeutungen des Säkularen, den zur Option gewordenen Glauben, die Subtraktionsgeschichten, den immanenten Rahmen, den exklusiven Humanismus und den Nova-Effekt, die er paraphrasiert. Er teilt die Ablehnung der Subtraktionsgeschichten, die mit seiner eigenen Ablehnung eines vollständigen Ausgangs zusammentrifft, nicht aber den gläubigen Schluss Taylors, und hält ihn für einen loyalen gläubigen Gegner: Stirner umgekehrt, ihr habt etwas anderes gebaut, steht dafür ein.

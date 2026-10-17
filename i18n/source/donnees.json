@@ -211,6 +211,7 @@
   "Paul Gauguin",
   "Paul Valéry",
   "Paul de Tarse",
+  "Paulo Coelho",
   "Pedro Berruguete",
   "Percy Bysshe Shelley",
   "Philon d'Alexandrie",
@@ -279,8 +280,7 @@
   "les nouveaux athées",
   "Émile Zola",
   "Épicure",
-  "Œuvres anonymes et monuments",
-  "Paulo Coelho"
+  "Œuvres anonymes et monuments"
  ],
  "dates": [
   "1048-1131",
@@ -510,6 +510,7 @@
   "mort v. 64/67",
   "né en 1931",
   "né en 1946",
+  "né en 1947",
   "né en 1951",
   "né en 1952",
   "né en 1959",
@@ -522,8 +523,7 @@
   "v. 20 av. J.-C.-v. 45/50 ap. J.-C.",
   "v. 234-v. 305",
   "v. 480-v. 406 av. J.-C.",
-  "v. 98-v. 55 av. J.-C.",
-  "né en 1947"
+  "v. 98-v. 55 av. J.-C."
  ],
  "reponses": [
   "Le Logos semé : Platon aurait emprunté à Moïse, et Socrate fut chrétien avant le Christ.",
@@ -1714,6 +1714,10 @@
    "caption": "Jean Paul",
    "alt": "Portrait de Jean Paul"
   },
+  "images/ecrivains/paulo-coelho.jpg": {
+   "caption": "Paulo Coelho",
+   "alt": "Portrait de Paulo Coelho"
+  },
   "images/artistes/adolph-menzel.jpg": {
    "caption": "Adolph Menzel",
    "alt": "Portrait de Adolph Menzel"
@@ -1833,10 +1837,6 @@
   "images/artistes/titien.jpg": {
    "caption": "Titien",
    "alt": "Portrait de Titien"
-  },
-  "images/ecrivains/paulo-coelho.jpg": {
-   "caption": "Paulo Coelho",
-   "alt": "Portrait de Paulo Coelho"
   }
  }
 }

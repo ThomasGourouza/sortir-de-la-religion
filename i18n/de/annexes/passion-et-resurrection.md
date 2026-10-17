@@ -1,0 +1,26 @@
+---
+titre: Passion und Auferstehung: die vier Berichte und was die Geschichtswissenschaft davon festhält
+categorie: bible
+ordre: 140
+sections: jesus-a-t-il-existe-le-jesus-de-l-histoire-et-la-these-mythiste ; georg-wilhelm-friedrich-hegel ; dostoievski ; girard ; nietzsche
+motifs: Passionsgeschichte ; Passion Christi ; Pontius Pilatus ; Abendmahl ; Gethsemane ; Golgatha ; leere Grab
+oeuvres: images/art/leonard-cene.jpg ; images/art/velazquez-christ-crucifie.jpg ; images/art/holbein-christ-mort.jpg ; images/art/grunewald-crucifixion-issenheim.jpg ; images/art/piero-resurrection.jpg ; images/art/la-tour-madeleine-veilleuse.jpg
+references: Raymond E. Brown, *The Death of the Messiah* (1994) ; Simon Légasse, *Le Procès de Jésus* (1994-1995) ; Paula Fredriksen, *Jesus of Nazareth, King of the Jews* (1999) ; Dale C. Allison, *Resurrecting Jesus* (2005)
+---
+Die vier Evangelien laufen in ihrem letzten Teil zusammen: eine Woche in Jerusalem, eine nächtliche Verhaftung, ein Prozess, eine Kreuzigung, ein leer aufgefundenes Grab. Es ist der älteste Kern der christlichen Überlieferung und der Punkt, an dem Geschichte und Glaube sich am deutlichsten trennen.
+
+#### Die Woche
+
+Jesus zieht vor dem Pessachfest auf einem Esel in Jerusalem ein, von Pilgern bejubelt. Er vertreibt die Händler aus dem Tempel. Am Donnerstagabend nimmt er mit den Zwölf ein letztes Mahl ein, das Abendmahl: Bei den Synoptikern bricht er das Brot und reicht den Kelch und deutet sie als seinen Leib und sein Blut, eine Geste, die Paulus schon um 55 überliefert (1 Co 11, 23-25); Johannes setzt an ihre Stelle die Fußwaschung. Im Garten Gethsemane betet er in Todesangst, während die Jünger schlafen; Judas kommt mit einer Schar und bezeichnet ihn mit einem Kuss. Die Jünger fliehen; Petrus leugnet dreimal, ihn zu kennen. Vor dem Hohen Rat wird Jesus über den Tempel und seinen messianischen Anspruch verhört und am Morgen zu Pontius Pilatus gebracht, dem Präfekten von Judäa. Pilatus bietet an, einen Gefangenen freizulassen, die Menge verlangt Barabbas. Jesus wird gegeißelt und dann auf Golgatha zwischen zwei Räubern gekreuzigt, unter einer Tafel, die ihn als König der Juden bezeichnet. Die Worte am Kreuz unterscheiden sich: Markus und Matthäus bewahren nur den Schrei aus Psalm 22 über die Gottverlassenheit, Lukas die Vergebung für die Henker, Johannes die Vollendung. Josef von Arimathäa legt den Leichnam in ein Grab, das mit einem Stein verschlossen wird.
+
+#### Die Osterberichte
+
+Am Sonntag im Morgengrauen finden Frauen, an ihrer Spitze Maria aus Magdala, den Stein weggewälzt und das Grab leer; ein oder zwei Boten verkünden ihnen, Jesus sei auferstanden. Markus endet hier, mit ihrer Flucht und ihrem Schweigen. Matthäus verlegt die Erscheinungen nach Galiläa, Lukas nach Jerusalem, mit den Jüngern von Emmaus, Johannes in den Garten und dann vor Thomas. Zeugen, Orte und Dauer stimmen nicht überein; die vier Berichte stimmen überein im leeren Grab, in den Frauen als ersten Zeuginnen und in einer Gegenwart, die die Jünger zunächst nicht erkennen.
+
+#### Was die Geschichtswissenschaft festhält
+
+Die Historiker halten, welcher Überzeugung sie auch sind, für gesichert, dass Jesus um 30 während eines Pessachfestes in Jerusalem auf Befehl des Pontius Pilatus gekreuzigt wurde. Tacitus berichtet es um 116, Josephus um 93, und die Kreuzigung, eine Strafe für Sklaven und eine Schande, gehört nicht zu den Tatsachen, die eine Gemeinde für ihren Messias erfindet. Das Kreuz ist eine römische Strafe; die Evangelien, nach dem Bruch mit der Synagoge geschrieben, verschieben die Verantwortung auf die jüdischen Autoritäten und die Menge. Die Auferstehung gehört einer anderen Ordnung an: Die historische Methode stellt ein leer aufgefundenes Grab fest, Erscheinungserfahrungen und die Entstehung eines Glaubens, ohne über deren Ursache urteilen zu können. Das älteste Zeugnis ist kein Evangelium, sondern eine Formel, die Paulus empfangen zu haben sagt und um 55 weitergibt: Christus ist für unsere Sünden gestorben gemäß den Schriften, er ist begraben worden, er ist am dritten Tag auferweckt worden, er ist Kephas erschienen, dann den Zwölf (1 Co 15, 3-5).
+
+#### Was der Essay voraussetzt
+
+Der Essay hält im Abschnitt über die Existenz Jesu die Kreuzigung unter Pontius Pilatus als Konsens der Historiker fest, bezeugt durch Tacitus, der Pilatus einen ungenauen Titel gibt, und durch Josephus, und er hält die Formel aus 1 Co 15 für das älteste Zeugnis über den Inhalt des Glaubens. Bei Hegel liest er in *Glauben und Wissen* (1802) den Satz vom Tod Gottes selbst, den Hegel erst in seinen Vorlesungen mit dem lutherischen Kirchenlied in Verbindung bringt, und den spekulativen Karfreitag als einen Tod Gottes, dem eine Auferstehung im Begriff folgt. Im Abschnitt über Dostojewski ist Holbeins toter Christus (1521-1522), von dem eine Kopie bei Rogoschin hängt, das Bild, vor dem Fürst Myschkin im *Idioten* sagt, man könne den Glauben verlieren. Bei Girard ist die Passion eine einmütige Lynchjustiz, bei der selbst die Jünger versagen, die aber von denen erzählt wird, die das Opfer für unschuldig wissen. Bei Nietzsche zitiert der Essay den Satz aus dem *Antichrist* über den einzigen Christen, der am Kreuz starb.

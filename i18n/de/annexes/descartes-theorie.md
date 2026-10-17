@@ -1,0 +1,25 @@
+---
+titre: Die Philosophie Descartes': der Zweifel, das Cogito, Gott als Bürge der Wissenschaft
+categorie: theories
+ordre: 32
+sections: descartes ; pascal ; michel-foucault ; leibniz
+motifs: Cogito ; Meditationes de prima philosophia ; Meditationen ; Idee des Unendlichen ; Erschaffung der ewigen Wahrheiten ; böser Geist ; Discours de la méthode
+references: René Descartes, *Discours de la méthode* (1637) ; *Meditationes de prima philosophia* (1641) ; *Principia philosophiae* (1644) ; Martial Gueroult, *Descartes selon l'ordre des raisons* (1953) ; Ferdinand Alquié, *La Découverte métaphysique de l'homme chez Descartes* (1950) ; Jean-Luc Marion, *Sur la théologie blanche de Descartes* (1981)
+---
+René Descartes (1596-1650), am Jesuitenkolleg von La Flèche ausgebildet, Soldat, Reisender, von 1628 bis 1649 in den Vereinigten Provinzen ansässig, in Stockholm bei Königin Christina gestorben, gilt als Begründer der neuzeitlichen Philosophie. Als Mathematiker, Erfinder der analytischen Geometrie und Physiker wollte er die gesamte Erkenntnis auf ein sicheres Fundament neu gründen.
+
+#### Die Methode und der Zweifel
+
+Der *Discours de la méthode* (1637), Vorrede zu drei wissenschaftlichen Abhandlungen, erzählt in der ersten Person die Bildung eines Geistes, der, von der Buchgelehrsamkeit und den Schulen enttäuscht, beschließt, nur das für wahr zu halten, was er evident erkennt, und vier Regeln aufstellt: Evidenz, Zerlegung, Ordnung, Aufzählung. Die *Meditationen über die erste Philosophie* (1641, lateinisch), gefolgt von den Einwänden von Hobbes, Arnauld und Gassendi und den Erwiderungen Descartes', setzen die Methode ins Werk. Die erste Meditation treibt den Zweifel bis zum Äußersten: Die Sinne täuschen, der Traum ist vom Wachen nicht zu unterscheiden, und ein böser Geist könnte das Subjekt bis in die Mathematik hinein täuschen. Die zweite entdeckt den festen Punkt: Wer zweifelt, denkt, und wer denkt, ist, er ist ein denkendes Ding; das Cogito, im *Discours* als ich denke, also bin ich formuliert, ist die erste Gewissheit, vom Geist allein erfasst und nicht von den Sinnen. Die Analyse des Wachsstücks zeigt, dass die Körper durch den Verstand erkannt werden und nicht durch die Einbildungskraft.
+
+#### Gott, die Welt, der Mensch
+
+Die dritte Meditation beweist Gott aus der Idee des Unendlichen: Das Subjekt findet in sich die Idee eines vollkommenen und unendlichen Wesens, die nicht von ihm selbst, einem endlichen und zweifelnden Wesen, stammen kann und deren Ursache so viel Realität haben muss, wie die Idee enthält; also existiert Gott, und er ist kein Betrüger. Die fünfte fügt den ontologischen Beweis hinzu: Die Existenz gehört zum Wesen des vollkommenen Seienden wie die Winkelsumme zum Dreieck. Gott verbürgt dann die Wahrheit dessen, was der Geist klar und deutlich erfasst, und die Wissenschaft wird möglich; der Irrtum kommt aus dem schlechten Gebrauch des Willens, der unendlich ist und über das hinaus urteilt, was der Verstand erfasst. Die sechste Meditation begründet die Existenz der Körper und die reale Unterscheidung der Seele, deren Wesen das Denken ist, vom Körper, dessen Wesen die Ausdehnung ist: der Dualismus, mit dem Problem ihrer Vereinigung, die Descartes in der Zirbeldrüse ansiedelt und in den *Passions de l'âme* (1649) behandelt. Die Briefe an Mersenne von 1630 fügen eine eigentümliche These hinzu: Die ewigen Wahrheiten, die mathematischen eingeschlossen, sind von Gott frei geschaffen worden, der sie auch anders hätte machen können. Die kartesische Physik ist mechanistisch: Die Materie ist Ausdehnung, die Tiere sind Maschinen, und die Welt erklärt sich durch Gestalten und Bewegungen.
+
+#### Die Rezeption
+
+Die *Meditationen* wurden 1663 auf den Index gesetzt; der Cartesianismus hat sich seit dem Ende des 17. Jahrhunderts an den Universitäten durchgesetzt, und der Streit über das Cogito, Zirkel oder Intuition, über den Beweis aus der Idee des Unendlichen und über die Erschaffung der ewigen Wahrheiten hat nie aufgehört. Pascal wirft Descartes einen nutzlosen und ungewissen Gott vor, auf einen Nasenstüber verkürzt; Spinoza geht von ihm aus; Leibniz hält ihm entgegen, man müsse zuerst die Möglichkeit Gottes beweisen; Kant zerlegt seine Beweise; Husserl beruft sich auf ihn; Heidegger sieht im kartesischen Subjekt den Beginn der neuzeitlichen Metaphysik; Foucault verortet dort den kartesischen Moment, in dem die Wahrheit aufhört, eine Verwandlung des Subjekts zu verlangen.
+
+#### Was der Essay voraussetzt
+
+Der Essay setzt als bekannt voraus: die Ordnung der *Meditationen*, das Cogito, die beiden Gottesbeweise, die Funktion Gottes als Bürge der Wissenschaft, die Erschaffung der ewigen Wahrheiten und den Dualismus. Er hält die Widmung an die Sorbonne fest, die mit dem gesellschaftlichen Nutzen des Glaubens argumentiert, die Antwort Pascals, die bezeugte Antwort von Leibniz und die Schwierigkeit, die Descartes dem kartesischen Moment Foucaults bereitet, da seine Betrachtung Gottes eine Übung bleibt. Descartes macht Gott zu einem Bauteil der Vernunft, das Kant zerlegen wird.

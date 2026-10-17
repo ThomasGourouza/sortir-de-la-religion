@@ -705,6 +705,8 @@ def siecle(y):
     if LANG == "en":
         suf = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
         return "%d%s century%s" % (n, suf, " BCE" if y < 0 else "")
+    if LANG == "de":
+        return "%d. Jahrhundert%s" % (n, " v. Chr." if y < 0 else "")
     if LANG == "ru":
         return "%s век%s" % (ROMAINS[n], " до н. э." if y < 0 else "")
     nom = "Ier" if n == 1 else ROMAINS[n] + "e"

@@ -1,0 +1,25 @@
+---
+titre: Vokabular der christlichen Theologie: Offenbarung, Gnade, Heil, Erbsünde
+categorie: disciplines
+ordre: 90
+sections: deuxieme-partie ; porphyre-et-augustin ; pascal ; dixieme-partie
+motifs: Erbsünde ; natürliche Theologie ; natürlichen Theologie ; geoffenbarte Theologie ; Prädestination ; Rechtfertigung durch den Glauben
+references: Augustinus, *De civitate Dei* (413-426) ; Thomas von Aquin, *Summa theologiae* (1266-1273) ; Johannes Calvin, *Institution de la religion chrétienne* (1536-1560) ; Henri de Lubac, *Surnaturel* (1946) ; Bernard Sesboüé (Hrsg.), *Histoire des dogmes* (1994-1996) ; Jean-Yves Lacoste (Hrsg.), *Dictionnaire critique de théologie* (1998)
+---
+Der Essay verwendet ohne Definition die Begriffe der christlichen Theologie, die seine Autoren kritisieren, verteidigen oder umkehren. Dieses Vokabular hat sich zwischen Augustinus und der Reformation gefestigt, und jedes Wort trägt darin eine Debatte. Die wichtigsten werden hier vorgestellt, in ihrer bei den Theologen gängigsten Bedeutung.
+
+#### Offenbarung, Glaube, Vernunft
+
+Die Offenbarung ist der Akt, durch den Gott sich den Menschen zu erkennen gibt, durch die Geschichte Israels, durch Christus und durch die Schrift, die davon zeugt; sie steht dem gegenüber, was die Vernunft aus sich selbst erreichen kann. Daher die von der Scholastik festgelegte Unterscheidung zwischen natürlicher Theologie, der Erkenntnis Gottes durch die Vernunft ausgehend von der Welt, und geoffenbarter Theologie, die ihre Prinzipien aus der Schrift und der Tradition empfängt. Der Glaube ist die Zustimmung zur Offenbarung; Augustinus und Anselm lassen ihn dem Verstehen vorausgehen, Thomas von Aquin unterscheidet ihn vom Wissen und hält beide doch für vereinbar, Luther bestimmt ihn als Vertrauen, Barth lehnt jede natürliche Theologie ab. Das Dogma ist eine von der Kirche definierte Glaubenswahrheit, deren Leugnung Häresie ist; das Mysterium eine geoffenbarte Wahrheit, die die Vernunft weder beweisen noch ganz begreifen kann, wie die Dreifaltigkeit oder die Menschwerdung. Das Übernatürliche bezeichnet, was die Kräfte und Ansprüche der geschaffenen Natur übersteigt, die Gnade und die Schau Gottes; der Streit um sein Verhältnis zur Natur, 1946 von Henri de Lubac neu entfacht, durchzieht die katholische Theologie des 20. Jahrhunderts.
+
+#### Sünde, Gnade, Heil
+
+Die Erbsünde ist die von Augustinus zu Beginn des 5. Jahrhunderts gegen Pelagius im Anschluss an Paulus (Rm 5, 12) formulierte Lehre, nach der die Schuld Adams die menschliche Natur verdorben hat und sich auf seine ganze Nachkommenschaft vererbt, die sich nicht aus eigener Kraft retten kann. Die Gnade ist die unverdiente Gabe, durch die Gott rettet; ihr Verhältnis zur menschlichen Freiheit entzweit Augustinus und Pelagius, Luther und Erasmus, die Jansenisten und die Jesuiten, wobei Pascal in diesem letzten Streit die *Provinciales* schreibt. Die Prädestination ist die Lehre, nach der Gott von Ewigkeit her diejenigen erwählt hat, die gerettet werden; Augustinus lehrt sie, Calvin treibt sie bis zur doppelten Prädestination, zum Heil und zur Verdammnis, und Weber macht daraus die psychologische Triebfeder der puritanischen Askese. Das Heil ist die Befreiung von Sünde und Tod durch die in Tod und Auferstehung Christi vollbrachte Erlösung; die Rechtfertigung, im Zentrum der Reformation, ist der Akt, durch den Gott den Sünder für gerecht erklärt oder gerecht macht, durch den Glauben allein nach Luther, durch den von der Liebe und den Werken belebten Glauben nach dem Konzil von Trient. Die Eschatologie handelt von den letzten Dingen, Gericht, Auferstehung, Reich Gottes, die Apokalyptik von ihrem nahen Bevorstehen.
+
+#### Gott, Christus, Kirche
+
+Die Dreifaltigkeit, auf den Konzilien des 4. Jahrhunderts festgelegt, bekennt einen einzigen Gott in drei Personen; die Menschwerdung das Fleisch gewordene Wort, und Chalcedon bestimmt 451 Christus als eine Person in zwei Naturen. Die negative oder apophatische Theologie sagt, was Gott nicht ist; die affirmative oder kataphatische Theologie verfährt durch Analogie. Die Kirche ist das Volk der Getauften und die Institution, die es leitet; die Sakramente, sieben bei den Katholiken, zwei bei den Protestanten, sind die wirksamen Zeichen der Gnade. Die Theodizee, ein Wort von Leibniz, ist die Rechtfertigung Gottes angesichts des Übels; die Apologetik die rationale Verteidigung des Glaubens; die Kenosis die Selbsterniedrigung Gottes in der Menschwerdung, über die Bonhoeffer und Weil unter dem Namen der Schwäche Gottes nachdenken.
+
+#### Was der Essay voraussetzt
+
+Der Essay setzt dieses Vokabular als erworben voraus, wenn er den Gott der Offenbarung dem der Vernunft gegenüberstellt, wenn er Barths Religionskritik als eine Theologie der Offenbarung allein liest, wenn er bei Pascal den verborgenen Gott und die Wette liest oder wenn er bei Bonhoeffer und Weil einen Glauben ohne Religion unterscheidet. Er erinnert selbst daran, dass die Religion im starken Sinn Dogmen, Gemeinschaft und ein äußeres Absolutes umfasst, Züge, die dieses Vokabular erkennen hilft.

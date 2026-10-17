@@ -60,8 +60,10 @@ def verif_morceau(src, tr):
     ns, nt = s.count("> **En littérature.**"), t.count("> **En littérature.**")
     if ns != nt:
         pb.append("%d encadrés au lieu de %d" % (nt, ns))
-    plat = re.sub(r"\s+", " ", t)
-    manquantes = [c for c in citations_originales(s) if c not in plat]
+    # les guillemets intérieurs d'une citation suivent la typographie de la langue
+    guill = lambda x: re.sub("[\"„“”‚‘’›‹»«']", '"', x)
+    plat = guill(re.sub(r"\s+", " ", t))
+    manquantes = [c for c in citations_originales(s) if guill(c) not in plat]
     if manquantes:
         pb.append("%d citations originales absentes, dont : %s" % (len(manquantes), " | ".join(c[:70] for c in manquantes[:3])))
     perdus = nombres(s) - nombres(t)
@@ -86,7 +88,7 @@ def main(langue="en"):
             print("  MANQUANT", nom); total += 1; continue
         pb, mt, ms = verif_morceau(src, tr)
         ratio = mt / ms if ms else 0
-        bornes = {"ru": (0.65, 1.2)}.get(langue, (0.8, 1.25))  # le russe, sans articles, compte moins de mots
+        bornes = {"ru": (0.65, 1.2), "de": (0.7, 1.2)}.get(langue, (0.8, 1.25))  # le russe, sans articles, compte moins de mots
         if not bornes[0] <= ratio <= bornes[1]:
             pb.append("longueur %.2f de l'original" % ratio)
         if pb:
