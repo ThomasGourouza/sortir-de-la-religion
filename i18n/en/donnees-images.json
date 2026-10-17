@@ -1230,5 +1230,9 @@
  "images/artistes/titien.jpg": {
   "caption": "Titian",
   "alt": "Portrait of Titian"
+ },
+ "images/ecrivains/paulo-coelho.jpg": {
+  "caption": "Paulo Coelho",
+  "alt": "Portrait of Paulo Coelho"
  }
 }

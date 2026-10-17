@@ -31,13 +31,13 @@ Site statique : HTML, CSS et JavaScript sans dépendance, à part la police Lite
 
 ## Reconstruire la page
 
-L'essai source est dans le dépôt `litterature` :
+L'essai source est dans ce dépôt, `texte/sortir-de-la-religion.md` :
 
 ```sh
-python3 build/build.py ~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md
+python3 build/build.py
 ```
 
-Sans argument, le script prend ce chemin par défaut. Les statuts de vérification des citations sont retirés de la version web ; ils restent dans le Markdown source. Les encadrés « En littérature » sont écrits dans le Markdown comme des blocs de citation dont la première ligne est `> **En littérature.** Auteur, *Titre* (date) ; …` et le dernier paragraphe commence par `Source :` ; le script les rend en encadrés repliables (`<aside class="lettres">`) et en tire la page Bibliothèque. Les articles d'annexes se rédigent dans `build/annexes/<id>.md` (voir `PLAN-annexes.md`) ; le script signale les en-têtes incomplets, les catégories ou sections inconnues et les articles hors de 400 à 700 mots.
+Sans argument, le script prend ce chemin par défaut ; on peut lui en passer un autre. Les statuts de vérification des citations sont retirés de la version web ; ils restent dans le Markdown source. Les encadrés « En littérature » sont écrits dans le Markdown comme des blocs de citation dont la première ligne est `> **En littérature.** Auteur, *Titre* (date) ; …` et le dernier paragraphe commence par `Source :` ; le script les rend en encadrés repliables (`<aside class="lettres">`) et en tire la page Bibliothèque. Les articles d'annexes se rédigent dans `build/annexes/<id>.md` (voir `PLAN-annexes.md`) ; le script signale les en-têtes incomplets, les catégories ou sections inconnues et les articles hors de 400 à 700 mots.
 
 Pour récupérer à nouveau les images :
 

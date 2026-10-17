@@ -279,7 +279,8 @@
   "les nouveaux athées",
   "Émile Zola",
   "Épicure",
-  "Œuvres anonymes et monuments"
+  "Œuvres anonymes et monuments",
+  "Paulo Coelho"
  ],
  "dates": [
   "1048-1131",
@@ -521,7 +522,8 @@
   "v. 20 av. J.-C.-v. 45/50 ap. J.-C.",
   "v. 234-v. 305",
   "v. 480-v. 406 av. J.-C.",
-  "v. 98-v. 55 av. J.-C."
+  "v. 98-v. 55 av. J.-C.",
+  "né en 1947"
  ],
  "reponses": [
   "Le Logos semé : Platon aurait emprunté à Moïse, et Socrate fut chrétien avant le Christ.",
@@ -1831,6 +1833,10 @@
   "images/artistes/titien.jpg": {
    "caption": "Titien",
    "alt": "Portrait de Titien"
+  },
+  "images/ecrivains/paulo-coelho.jpg": {
+   "caption": "Paulo Coelho",
+   "alt": "Portrait de Paulo Coelho"
   }
  }
 }

@@ -598,6 +598,7 @@ ECRIVAINS = {
     "Albert Camus": "Q34670",
     "Lewis Carroll": "Q38082",
     "Paul Celan": "Q153905",
+    "Paulo Coelho": "Q12881",
     "Louis-Ferdinand Céline": "Q151820",
     "Miguel de Cervantès": "Q5682",
     "René Char": "Q315015",

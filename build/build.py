@@ -20,8 +20,7 @@ import unicodedata
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
-ARTICLE = os.path.expanduser(
-    "~/Documents/litterature/articles/2026-10-11-sortir-de-la-religion.md")
+ARTICLE = os.path.join(RACINE, "texte", "sortir-de-la-religion.md")
 BASE_URL = "https://thomasgourouza.github.io/sortir-de-la-religion/"
 RESUME = "L'essai en dix minutes"
 

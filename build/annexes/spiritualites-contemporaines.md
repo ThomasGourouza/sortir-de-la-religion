@@ -2,7 +2,7 @@
 titre: Les spiritualités contemporaines : New Age, méditation, spirituel mais pas religieux
 categorie: courants
 ordre: 140
-sections: douzieme-partie ; le-bouddhisme-des-philosophes ; hervieu-leger ; andre-comte-sponville
+sections: douzieme-partie ; le-bouddhisme-des-philosophes ; les-spiritualites-de-l-univers ; hervieu-leger ; andre-comte-sponville
 motifs: New Age ; méditation d'entreprise ; pleine conscience ; mindfulness ; spirituel mais pas religieux ; développement personnel ; Lenoir ; yoga
 references: Paul Heelas, *The New Age Movement* (1996) ; Paul Heelas et Linda Woodhead, *The Spiritual Revolution* (2005) ; Françoise Champion et Danièle Hervieu-Léger (dir.), *De l'émotion en religion* (1990) ; Frédéric Lenoir, *Les Métamorphoses de Dieu* (2003) ; Jon Kabat-Zinn, *Full Catastrophe Living* (1990) ; Robert Fuller, *Spiritual, but not Religious* (2001) ; Nathalie Luca, *Individus et pouvoirs face aux sectes* (2008)
 ---

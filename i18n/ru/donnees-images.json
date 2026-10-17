@@ -1230,5 +1230,9 @@
  "images/artistes/titien.jpg": {
   "caption": "Тициан",
   "alt": "Портрет Тициана"
+ },
+ "images/ecrivains/paulo-coelho.jpg": {
+  "caption": "Пауло Коэльо",
+  "alt": "Портрет Пауло Коэльо"
  }
 }
