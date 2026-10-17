@@ -268,6 +268,16 @@ details > summary::-webkit-details-marker { display: none; }
   border: 2px solid var(--card); box-shadow: 0 0 0 1px var(--line); background: var(--bg-soft);
 }
 .avatars .avatar + .avatar { margin-left: -16px; }
+img.avatar { cursor: zoom-in; }
+/* Fenêtre du portrait au survol de l'avatar */
+.portrait-popup {
+  position: fixed; z-index: 70; width: 320px; max-width: calc(100vw - 32px); margin: 0; padding: 8px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 8px 32px rgba(0, 0, 0, .28);
+  pointer-events: none; opacity: 0; transition: opacity .15s ease;
+}
+.portrait-popup.visible { opacity: 1; }
+.portrait-popup img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; border-radius: 8px; background: var(--bg-soft); }
+.portrait-popup figcaption { margin: 8px 4px 2px; font: 12.5px/1.4 var(--sans); color: var(--ink-soft); }
 .avatar-init { display: inline-flex; align-items: center; justify-content: center; font: 600 20px var(--sans); color: var(--accent); background: var(--accent-soft); }
 .portrait-credit { font: 11px var(--sans) !important; color: var(--ink-soft); text-align: left !important; opacity: .8; }
 

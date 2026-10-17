@@ -761,8 +761,9 @@ def construire(chemin, version=None):
             corps_sec = inserer_figures(corps_sec, par_section.get((base, "figure"), []))
             if est_auteur:
                 if portraits:
-                    av = "".join('<img class="avatar" src="%s" alt="%s"%s loading="lazy">' % (
-                        src_img(p["file"]), html.escape(p.get("alt", nom)), attr_dims(p["file"])) for p in portraits)
+                    av = "".join('<img class="avatar" src="%s" alt="%s"%s data-legende="%s" loading="lazy">' % (
+                        src_img(p["file"]), html.escape(p.get("alt", nom)), attr_dims(p["file"]),
+                        html.escape(p.get("caption", ""))) for p in portraits)
                 else:
                     av = '<span class="avatar avatar-init" aria-hidden="true">%s</span>' % html.escape(initiales(nom))
                 head = ('<span class="avatars">%s</span><span class="sec-titles">'
