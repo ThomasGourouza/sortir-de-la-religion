@@ -154,6 +154,33 @@ def ecrire_page(nom, contenu):
     open(sortie(nom), "w", encoding="utf-8").write(localiser(contenu))
 
 
+def bandes(couleurs, verticales=False, poids=None):
+    """Drapeau à bandes égales (ou pondérées), en SVG 3:2."""
+    poids = poids or [1] * len(couleurs)
+    total, pos, out = sum(poids), 0, []
+    for c, p in zip(couleurs, poids):
+        t = 30 * p / total if verticales else 20 * p / total
+        out.append('<rect %s fill="%s"/>' % (('x="%g" width="%g" height="20"' if verticales else 'y="%g" width="30" height="%g"') % (pos, t), c))
+        pos += t
+    return "".join(out)
+
+
+DRAPEAUX = {
+    "fr": bandes(["#002654", "#fff", "#ce1126"], verticales=True),
+    "ru": bandes(["#fff", "#0039a6", "#d52b1e"]),
+    "de": bandes(["#000", "#dd0000", "#ffce00"]),
+    "es": bandes(["#aa151b", "#f1bf00", "#aa151b"], poids=[1, 2, 1]),
+    "en": ('<rect width="30" height="20" fill="#012169"/><path d="M0,0L30,20M30,0L0,20" stroke="#fff" stroke-width="4"/>'
+           '<path d="M0,0L30,20M30,0L0,20" stroke="#c8102e" stroke-width="1.6"/>'
+           '<path d="M15,0V20M0,10H30" stroke="#fff" stroke-width="6"/><path d="M15,0V20M0,10H30" stroke="#c8102e" stroke-width="3.6"/>'),
+}
+
+
+def drapeau(code):
+    """Petit drapeau de la langue, décoratif : le nom de la langue ou l'aria-label du bouton le double."""
+    return '<svg class="drapeau" viewBox="0 0 30 20" aria-hidden="true" focusable="false">%s</svg>' % DRAPEAUX.get(code, "")
+
+
 def selecteur_langues(page):
     """Menu des langues construites, chacune liée à la même page (l'ancre est ajoutée au clic par sauts.js)."""
     if len(LANGUES_CONSTRUITES) < 2:
@@ -162,10 +189,10 @@ def selecteur_langues(page):
     for code, nom, _ in LANGUES:
         if code in LANGUES_CONSTRUITES:
             href = ("" if LANG == "fr" else "../") + ("" if code == "fr" else code + "/") + page
-            liens.append('<a class="langue" href="%s" hreflang="%s" lang="%s" data-langue="%s"%s>%s</a>' % (
-                href, code, code, code, ' aria-current="true"' if code == LANG else "", nom))
+            liens.append('<a class="langue" href="%s" hreflang="%s" lang="%s" data-langue="%s"%s>%s<span>%s</span></a>' % (
+                href, code, code, code, ' aria-current="true"' if code == LANG else "", drapeau(code), nom))
     return ('<div class="langues"><button class="icon-btn langue-btn" type="button" aria-haspopup="true" aria-expanded="false" '
-            'aria-label="Changer de langue">%s</button><div class="langues-menu" hidden>%s</div></div>') % (LANG.upper(), "".join(liens))
+            'aria-label="Changer de langue">%s</button><div class="langues-menu" hidden>%s</div></div>') % (drapeau(LANG), "".join(liens))
 
 
 def hreflangs(page):
