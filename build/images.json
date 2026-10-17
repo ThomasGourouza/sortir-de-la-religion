@@ -1438,27 +1438,28 @@
     "credit": "Peintre romain anonyme, planche de Joseph Wilpert, Public domain",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Isaias_predicts_the_birth_of_the_Messiah_from_the_Virgin,_from_the_from_the_book_Die_Malereien_der_Katakomben_Roms,_plate_22.jpg",
-    "position": "50% 20%"
+    "position": "50% 38%"
   },
   {
     "section": "neuvieme-partie",
     "role": "partcard",
     "file": "images/art/partie-pourquoi-croit-on.jpg",
-    "alt": "Grande frise de figures tahitiennes, de l'enfant au vieillard, autour d'une idole bleue",
-    "caption": "Paul Gauguin, D'où venons-nous ? Que sommes-nous ? Où allons-nous ? (1897-1898, Boston, Museum of Fine Arts).",
-    "credit": "Paul Gauguin, Public domain",
+    "alt": "Un cortège de villageois en noir autour d'une fosse ouverte, sous un ciel bas",
+    "caption": "Gustave Courbet, Un enterrement à Ornans (1849-1850, Paris, musée d'Orsay).",
+    "credit": "Gustave Courbet, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_D%27ou_venons-nous.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg"
   },
   {
     "section": "prologue",
     "role": "partcard",
     "file": "images/art/partie-prologue.jpg",
-    "alt": "Philosophes grecs réunis sous des voûtes antiques autour de Platon et d'Aristote",
-    "caption": "Raphaël, L'École d'Athènes (1509-1511, Vatican, chambre de la Signature).",
-    "credit": "Raphael, Public domain",
+    "alt": "Un homme endormi sur sa table de travail, assailli de chauves-souris et de hiboux",
+    "caption": "Francisco de Goya, Le Sommeil de la raison engendre des monstres, Caprice n° 43 (1797-1799).",
+    "credit": "Francisco Goya, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_sleep_of_reason_produces_monsters_(No._43),_from_Los_Caprichos_-_Google_Art_Project.jpg",
+    "position": "50% 72%"
   },
   {
     "section": "quatrieme-partie",
@@ -1485,21 +1486,22 @@
     "section": "sixieme-partie",
     "role": "partcard",
     "file": "images/art/partie-quatrieme.jpg",
-    "alt": "Caricature à la plume d'un groupe d'hommes attablés qui se disputent",
-    "caption": "Friedrich Engels, les Freien (dessin, v. 1842) : le cercle berlinois de Bruno Bauer et de Max Stirner.",
-    "credit": "Friedrich Engels, Public domain",
+    "alt": "Des ouvriers en sueur manœuvrent une barre de fer rougie devant les machines d'un laminoir",
+    "caption": "Adolph Menzel, Le Laminoir (Cyclopes modernes) (1872-1875, Berlin, Alte Nationalgalerie).",
+    "credit": "Adolph von Menzel, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Die_Freien_by_Friedrich_Engels.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Adolph_Menzel_-_Eisenwalzwerk_-_Google_Art_Project.jpg"
   },
   {
     "section": "septieme-partie",
     "role": "partcard",
     "file": "images/art/partie-cinquieme.jpg",
-    "alt": "Le corps du Christ mort allongé dans un tombeau étroit, et un détail du visage",
-    "caption": "Hans Holbein le Jeune, Le Christ mort au tombeau (1521-1522, Bâle, Kunstmuseum) : tableau qui bouleversa Dostoïevski à Bâle en 1867, et qu'il met en scène dans L'Idiot.",
-    "credit": "Hans Holbein the Younger, Public domain",
+    "alt": "Un homme assis seul sur des rochers, les mains jointes, dans la lumière de l'aube",
+    "caption": "Ivan Kramskoï, Le Christ au désert (1872, Moscou, galerie Tretiakov).",
+    "credit": "Ivan Kramskoi, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:The_Body_of_the_Dead_Christ_in_the_Tomb,_and_a_detail,_by_Hans_Holbein_the_Younger.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Christ_in_the_Wilderness_-_Ivan_Kramskoy_-_Google_Cultural_Institute.jpg",
+    "position": "50% 25%"
   },
   {
     "section": "huitieme-partie",
@@ -1540,7 +1542,7 @@
     "credit": "Alvesgaspar, Public domain",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Marcus_Aurelius_Capitoline_Hill_September_2015-1.jpg",
-    "position": "50% 22%"
+    "position": "50% 33%"
   },
   {
     "section": "conclusion",
@@ -1556,22 +1558,23 @@
     "section": "premiere-partie",
     "role": "partcard",
     "file": "images/art/partie-anciens-monotheismes.jpg",
-    "alt": "Philosophes grecs réunis sous des voûtes antiques autour de Platon et d'Aristote",
-    "caption": "Raphaël, L'École d'Athènes (1509-1511, Vatican, chambre de la Signature) : Platon et Aristote au centre ; à gauche, la figure au turban traditionnellement identifiée comme Averroès.",
-    "credit": "Raphael, Public domain",
+    "alt": "Sept philosophes assis en demi-cercle sous un arbre, devant les murs d'une cité",
+    "caption": "L'Académie de Platon, mosaïque de la villa de T. Siminius Stephanus à Pompéi (Ier siècle av. J.-C., Naples, Museo Archeologico Nazionale).",
+    "credit": "Mosaïste romain anonyme, photo Jebulon, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:MANNapoli_124545_plato%27s_academy_mosaic.jpg",
+    "position": "50% 45%"
   },
   {
     "section": "troisieme-partie",
     "role": "partcard",
     "file": "images/art/partie-age-classique.jpg",
-    "alt": "Portrait de Descartes en habit noir et col blanc",
-    "caption": "René Descartes, d'après Frans Hals (Paris, musée du Louvre).",
-    "credit": "D'après Frans Hals, Public domain",
+    "alt": "Un savant en robe tend la main vers un globe céleste posé près d'une fenêtre",
+    "caption": "Johannes Vermeer, L'Astronome (1668, Paris, musée du Louvre).",
+    "credit": "Johannes Vermeer, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
-    "position": "50% 30%"
+    "source": "https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_The_Astronomer_-_WGA24685FXD.jpg",
+    "position": "50% 40%"
   },
   {
     "section": "deuxieme-partie",
@@ -1582,27 +1585,28 @@
     "credit": "Peintre romain anonyme, planche de Joseph Wilpert, Public domain",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Isaias_predicts_the_birth_of_the_Messiah_from_the_Virgin,_from_the_from_the_book_Die_Malereien_der_Katakomben_Roms,_plate_22.jpg",
-    "position": "50% 20%"
+    "position": "50% 38%"
   },
   {
     "section": "neuvieme-partie",
     "role": "partimage",
     "file": "images/art/partie-pourquoi-croit-on-grand.jpg",
-    "alt": "Grande frise de figures tahitiennes, de l'enfant au vieillard, autour d'une idole bleue",
-    "caption": "Paul Gauguin, D'où venons-nous ? Que sommes-nous ? Où allons-nous ? (1897-1898, Boston, Museum of Fine Arts).",
-    "credit": "Paul Gauguin, Public domain",
+    "alt": "Un cortège de villageois en noir autour d'une fosse ouverte, sous un ciel bas",
+    "caption": "Gustave Courbet, Un enterrement à Ornans (1849-1850, Paris, musée d'Orsay).",
+    "credit": "Gustave Courbet, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_D%27ou_venons-nous.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg"
   },
   {
     "section": "prologue",
     "role": "partimage",
     "file": "images/art/partie-prologue-grand.jpg",
-    "alt": "Philosophes grecs réunis sous des voûtes antiques autour de Platon et d'Aristote",
-    "caption": "Raphaël, L'École d'Athènes (1509-1511, Vatican, chambre de la Signature).",
-    "credit": "Raphael, Public domain",
+    "alt": "Un homme endormi sur sa table de travail, assailli de chauves-souris et de hiboux",
+    "caption": "Francisco de Goya, Le Sommeil de la raison engendre des monstres, Caprice n° 43 (1797-1799).",
+    "credit": "Francisco Goya, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_sleep_of_reason_produces_monsters_(No._43),_from_Los_Caprichos_-_Google_Art_Project.jpg",
+    "position": "50% 72%"
   },
   {
     "section": "quatrieme-partie",
@@ -1629,21 +1633,22 @@
     "section": "sixieme-partie",
     "role": "partimage",
     "file": "images/art/partie-quatrieme-grand.jpg",
-    "alt": "Caricature à la plume d'un groupe d'hommes attablés qui se disputent",
-    "caption": "Friedrich Engels, les Freien (dessin, v. 1842) : le cercle berlinois de Bruno Bauer et de Max Stirner.",
-    "credit": "Friedrich Engels, Public domain",
+    "alt": "Des ouvriers en sueur manœuvrent une barre de fer rougie devant les machines d'un laminoir",
+    "caption": "Adolph Menzel, Le Laminoir (Cyclopes modernes) (1872-1875, Berlin, Alte Nationalgalerie).",
+    "credit": "Adolph von Menzel, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Die_Freien_by_Friedrich_Engels.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Adolph_Menzel_-_Eisenwalzwerk_-_Google_Art_Project.jpg"
   },
   {
     "section": "septieme-partie",
     "role": "partimage",
     "file": "images/art/partie-cinquieme-grand.jpg",
-    "alt": "Le corps du Christ mort allongé dans un tombeau étroit, et un détail du visage",
-    "caption": "Hans Holbein le Jeune, Le Christ mort au tombeau (1521-1522, Bâle, Kunstmuseum) : tableau qui bouleversa Dostoïevski à Bâle en 1867, et qu'il met en scène dans L'Idiot.",
-    "credit": "Hans Holbein the Younger, Public domain",
+    "alt": "Un homme assis seul sur des rochers, les mains jointes, dans la lumière de l'aube",
+    "caption": "Ivan Kramskoï, Le Christ au désert (1872, Moscou, galerie Tretiakov).",
+    "credit": "Ivan Kramskoi, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:The_Body_of_the_Dead_Christ_in_the_Tomb,_and_a_detail,_by_Hans_Holbein_the_Younger.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Christ_in_the_Wilderness_-_Ivan_Kramskoy_-_Google_Cultural_Institute.jpg",
+    "position": "50% 25%"
   },
   {
     "section": "huitieme-partie",
@@ -1684,7 +1689,7 @@
     "credit": "Alvesgaspar, Public domain",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Marcus_Aurelius_Capitoline_Hill_September_2015-1.jpg",
-    "position": "50% 22%"
+    "position": "50% 33%"
   },
   {
     "section": "conclusion",
@@ -1700,21 +1705,22 @@
     "section": "premiere-partie",
     "role": "partimage",
     "file": "images/art/partie-anciens-monotheismes-grand.jpg",
-    "alt": "Philosophes grecs réunis sous des voûtes antiques autour de Platon et d'Aristote",
-    "caption": "Raphaël, L'École d'Athènes (1509-1511, Vatican, chambre de la Signature) : Platon et Aristote au centre ; à gauche, la figure au turban traditionnellement identifiée comme Averroès.",
-    "credit": "Raphael, Public domain",
+    "alt": "Sept philosophes assis en demi-cercle sous un arbre, devant les murs d'une cité",
+    "caption": "L'Académie de Platon, mosaïque de la villa de T. Siminius Stephanus à Pompéi (Ier siècle av. J.-C., Naples, Museo Archeologico Nazionale).",
+    "credit": "Mosaïste romain anonyme, photo Jebulon, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:MANNapoli_124545_plato%27s_academy_mosaic.jpg",
+    "position": "50% 45%"
   },
   {
     "section": "troisieme-partie",
     "role": "partimage",
     "file": "images/art/partie-age-classique-grand.jpg",
-    "alt": "Portrait de Descartes en habit noir et col blanc",
-    "caption": "René Descartes, d'après Frans Hals (Paris, musée du Louvre).",
-    "credit": "D'après Frans Hals, Public domain",
+    "alt": "Un savant en robe tend la main vers un globe céleste posé près d'une fenêtre",
+    "caption": "Johannes Vermeer, L'Astronome (1668, Paris, musée du Louvre).",
+    "credit": "Johannes Vermeer, Public domain",
     "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
-    "position": "50% 30%"
+    "source": "https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_The_Astronomer_-_WGA24685FXD.jpg",
+    "position": "50% 40%"
   }
 ]

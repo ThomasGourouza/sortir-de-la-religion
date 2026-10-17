@@ -8,6 +8,7 @@ Sans dependance. Convertit le sous-ensemble de Markdown employe par l'essai
 statuts de citation entre crochets, et insere les images decrites dans
 build/images.json. Les annexes (build/annexes/*.md) donnent la page annexes.html.
 """
+import hashlib
 import html
 import json
 import os
@@ -257,6 +258,19 @@ def attr_dims(chemin):
     return ' width="%d" height="%d"' % (w, h) if w and h else ""
 
 
+_EMPREINTES = {}
+
+
+def src_img(chemin):
+    """URL d'une image avec une empreinte de son contenu : le service worker garde les images en cache
+    tant que l'URL ne change pas, l'empreinte force le rechargement d'un fichier remplacé sous le même nom."""
+    if chemin not in _EMPREINTES:
+        p = os.path.join(RACINE, chemin)
+        _EMPREINTES[chemin] = hashlib.sha1(open(p, "rb").read()).hexdigest()[:8] if os.path.exists(p) else ""
+    e = _EMPREINTES[chemin]
+    return html.escape(chemin) + ("?h=" + e if e else "")
+
+
 def lien_btn(cible):
     return ('<button class="lien-btn" type="button" data-lien="%s" aria-label="Copier le lien de cette section">'
             '<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1" '
@@ -276,7 +290,7 @@ def figure(img, classe="figure"):
     position = ' style="object-position:%s"' % html.escape(img["position"]) if img.get("position") else ""  # point de cadrage
     return ('<figure class="%s"><img src="%s" alt="%s"%s %s%s>'
             '<figcaption>%s<span class="credit">%s</span></figcaption></figure>') % (
-        classe, html.escape(img["file"]), html.escape(img.get("alt", "")), attr_dims(img["file"]), charge, position,
+        classe, src_img(img["file"]), html.escape(img.get("alt", "")), attr_dims(img["file"]), charge, position,
         en_ligne(img.get("caption", "")), html.escape(img.get("credit", "")))
 
 
@@ -748,7 +762,7 @@ def construire(chemin, version=None):
             if est_auteur:
                 if portraits:
                     av = "".join('<img class="avatar" src="%s" alt="%s"%s loading="lazy">' % (
-                        html.escape(p["file"]), html.escape(p.get("alt", nom)), attr_dims(p["file"])) for p in portraits)
+                        src_img(p["file"]), html.escape(p.get("alt", nom)), attr_dims(p["file"])) for p in portraits)
                 else:
                     av = '<span class="avatar avatar-init" aria-hidden="true">%s</span>' % html.escape(initiales(nom))
                 head = ('<span class="avatars">%s</span><span class="sec-titles">'
@@ -791,7 +805,7 @@ def construire(chemin, version=None):
             '<span class="card-label">%s</span><span class="card-sub">%s</span>'
             '%s</span></a>' % (
                 pid, pid,
-                '<img src="%s" alt=""%s loading="lazy">' % (html.escape(card_img[0]["file"]), attr_dims(card_img[0]["file"])) if card_img else "",
+                '<img src="%s" alt=""%s loading="lazy">' % (src_img(card_img[0]["file"]), attr_dims(card_img[0]["file"])) if card_img else "",
                 en_ligne(label), en_ligne(sous), '<span class="card-meta">%s</span>' % meta if meta else ""))
 
     credits_imgs = "".join(
