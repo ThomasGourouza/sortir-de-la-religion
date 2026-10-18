@@ -3,7 +3,7 @@ titre: El pensamiento de Montaigne: los Ensayos, el escepticismo, la costumbre, 
 categorie: theories
 ordre: 31
 sections: montaigne ; pascal ; hume
-motifs: Sebond ; Que sçay-je ; pirrónico ; pirronismo ; La Boétie
+motifs: Sabunde ; Que sçay-je ; pirrónico ; pirronismo ; La Boétie
 references: Montaigne, *Essais* (1580, 1588, 1595), ed. Pierre Villey (1924) ; Hugo Friedrich, *Montaigne* (1949) ; Jean Starobinski, *Montaigne en mouvement* (1982) ; Richard Popkin, *The History of Scepticism from Erasmus to Descartes* (1960, ed. aumentada hasta Spinoza 1979) ; Bernard Sève, *Montaigne. Des règles pour l'esprit* (2007)
 ---
 Michel Eyquem de Montaigne (1533-1592), magistrado en Burdeos, retirado luego en su biblioteca a partir de 1571, alcalde de Burdeos de 1581 a 1585, mediador entre Enrique de Navarra y Enrique III durante las guerras de religión, escribió un solo libro, los *Ensayos*, publicado en 1580, aumentado en 1588 y, tras su muerte, en 1595, y reescrito sin cesar en los márgenes. Católico practicante, es el primero en hacer de sí mismo la materia de su libro.

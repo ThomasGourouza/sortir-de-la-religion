@@ -10,7 +10,7 @@ Mohammed Arkoun (1928-2010), cabileño de Taourirt-Mimoun, alumno del liceo de O
 
 #### El humanismo árabe y la clausura
 
-La tesis de Arkoun, *L'Humanisme arabe au IVe/Xe siècle* (1970), estudia a Miskawayh y su entorno, el siglo de Bagdad en el que filósofos, teólogos, letrados y juristas debatían libremente, mutazilíes incluidos: existió un humanismo árabe, antes de ser reprimido. *La Pensée arabe* (1975) y *Lectures du Coran* (1982) reconstruyen la formación de lo que él llama la razón islámica, el sistema de pensamiento constituido entre los siglos VIII y XI, que fijó el Corán como corpus oficial cerrado, las ciencias religiosas como ortodoxia, y excluyó lo que no se ajustaba a ellas. Esta clausura dogmática, de la que la profesión de fe de al-Qádir es un hito, produjo una esfera de lo impensado y de lo impensable: lo impensado es lo que la tradición aún no ha pensado, lo impensable lo que se ha prohibido pensar, los debates perdidos, los posibles abandonados, la cuestión de la historicidad del texto sagrado.
+La tesis de Arkoun, *L'Humanisme arabe au IVe/Xe siècle* (1970), estudia a Miskawayh y su entorno, el siglo de Bagdad en el que filósofos, teólogos, letrados y juristas debatían libremente, mutazilíes incluidos: existió un humanismo árabe, antes de ser reprimido. *La Pensée arabe* (1975) y *Lectures du Coran* (1982) reconstruyen la formación de lo que él llama la razón islámica, el sistema de pensamiento constituido entre los siglos VIII y XI, que fijó el Corán como corpus oficial cerrado, las ciencias religiosas como ortodoxia, y excluyó lo que no se ajustaba a ellas. Esta clausura dogmática, de la que la profesión de fe de al-Qadir es un hito, produjo una esfera de lo impensado y de lo impensable: lo impensado es lo que la tradición aún no ha pensado, lo impensable lo que se ha prohibido pensar, los debates perdidos, los posibles abandonados, la cuestión de la historicidad del texto sagrado.
 
 #### La crítica de la razón islámica
 
@@ -22,4 +22,4 @@ Poco leído en el mundo árabe en vida, donde su obra, escrita en francés, se t
 
 #### Lo que el ensayo supone
 
-El ensayo da por conocidos la razón islámica, la clausura dogmática, lo impensado y lo impensable, los mutazilíes como posibilidad perdida y el vocabulario tomado del pensamiento francés, precisando que no ha leído ningún libro de Arkoun. Concluye que Arkoun sale de la clausura, no de la religión, del lado de Spinoza y de Ricœur, y sitúa la clausura de al-Qádir entre las refundaciones estrictas.
+El ensayo da por conocidos la razón islámica, la clausura dogmática, lo impensado y lo impensable, los mutazilíes como posibilidad perdida y el vocabulario tomado del pensamiento francés, precisando que no ha leído ningún libro de Arkoun. Concluye que Arkoun sale de la clausura, no de la religión, del lado de Spinoza y de Ricœur, y sitúa la clausura de al-Qadir entre las refundaciones estrictas.
