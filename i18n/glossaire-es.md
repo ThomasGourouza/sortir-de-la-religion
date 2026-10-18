@@ -6,7 +6,7 @@ This guide binds every translator and reviewer. Write the translation in Spanish
 
 ## 1. Register and voice
 
-- Scholarly Spanish of a serious essay in the history of ideas (the register of a good Trotta, Tecnos or Akal translation of French philosophy), clear and readable, neutral between Spain and Latin America (no regional idioms; *vosotros* never needed). Keep the author's first person (yo, mi criterio) exactly where the French has it.
+- Scholarly Spanish of a serious essay in the history of ideas (the register of a good Trotta, Tecnos or Akal translation of French philosophy), clear and readable, neutral between Spain and Latin America (no regional idioms). The second person plural is always *ustedes* (decided by the author on 18 October 2026), never *vosotros*, also in renderings of quotations: «lo hemos matado, ustedes y yo»; a French *vous* addressed to one person becomes *usted*. Original Spanish quotations keep their own forms. Keep the author's first person (yo, mi criterio) exactly where the French has it.
 - Translate meaning, rhythm and argument. Long French sentences may be split, but never drop a clause, a qualification or a hedge (peut-être = quizá, tal vez ; sans doute = sin duda, probablemente). Never add explanations.
 - **Never use the em dash (—) or the en dash (–), anywhere.** This is a strict rule of the site, also in Spanish, where dialogue and incisos often use the raya: rephrase, or use commas, a colon, a semicolon or parentheses. Date ranges use a plain hyphen (1804-1872).
 - Spanish punctuation: opening ¿ and ¡ are required.

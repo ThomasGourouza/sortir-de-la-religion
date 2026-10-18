@@ -18,4 +18,4 @@ Después de una tesis contra el conductismo y un gran libro sobre Hegel (1975), 
 
 #### Lo que el ensayo supone
 
-El ensayo supone conocidos los tres sentidos de lo secular, la creencia convertida en opción, los relatos de sustracción, el marco inmanente, el humanismo exclusivo y el efecto nova, que parafrasea. Comparte el rechazo de los relatos de sustracción, que coincide con su rechazo de una salida total, no la conclusión creyente de Taylor, y lo considera un adversario creyente leal: Stirner al revés, habéis construido otra cosa, responded de ella.
+El ensayo supone conocidos los tres sentidos de lo secular, la creencia convertida en opción, los relatos de sustracción, el marco inmanente, el humanismo exclusivo y el efecto nova, que parafrasea. Comparte el rechazo de los relatos de sustracción, que coincide con su rechazo de una salida total, no la conclusión creyente de Taylor, y lo considera un adversario creyente leal: Stirner al revés, han construido otra cosa, respondan de ella.

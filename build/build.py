@@ -515,8 +515,8 @@ def slug_terme(t):
     return re.sub(r"[^a-zA-Z0-9]+", "-", t.lower()).strip("-")
 
 
-CATEGORIES = (("theories", "Théories des auteurs"), ("bible", "Bible : les textes"), ("histoire", "Histoire"),
-              ("disciplines", "Disciplines et méthodes"), ("courants", "Courants et doctrines"), ("mythes", "Mythes grecs"))
+CATEGORIES = (("theories", "Théories des auteurs"), ("bible", "Bible : les textes"), ("mythes", "Mythes grecs"),
+              ("histoire", "Histoire"), ("disciplines", "Disciplines et méthodes"), ("courants", "Courants et doctrines"))
 CHAMPS_LISTE = ("sections", "motifs", "references", "oeuvres")
 
 

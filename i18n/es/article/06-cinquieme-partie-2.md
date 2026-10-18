@@ -24,7 +24,7 @@ La historia de Strauss tiene un epílogo, que suscita una respuesta atestiguada 
 >
 > Por qué aquí: Casaubon busca bajo los mitos una revelación, Strauss encuentra en ellos una comunidad que cree; la novela hace de la erudición precrítica una tragedia doméstica, y de la crítica alemana un rumor que llega del extranjero. Dorothea, que se casa con Casaubon para servir a esa Clave, es la lectora de Strauss que George Eliot había sido, y la novela la conduce a lo que el ensayo llama la religión de la humanidad, sin Dios y sin Clave.
 >
-> Tennyson, en *In Memoriam*, dio a la Inglaterra victoriana la fórmula de su crisis, en el momento en que Strauss llegaba allí en inglés: «There lives more faith in honest doubt, / Believe me, than in half the creeds» (XCVI), hay más fe en una duda honesta, creedme, que en la mitad de los credos. El verso es exactamente contemporáneo de la transferencia que opera Strauss: la fe abandona los dogmas, y es preciso que vaya a alguna parte; en Tennyson, a la duda misma; en Strauss, a la humanidad; el lugar, en ambos casos, no queda vacío.
+> Tennyson, en *In Memoriam*, dio a la Inglaterra victoriana la fórmula de su crisis, en el momento en que Strauss llegaba allí en inglés: «There lives more faith in honest doubt, / Believe me, than in half the creeds» (XCVI), hay más fe en una duda honesta, créanme, que en la mitad de los credos. El verso es exactamente contemporáneo de la transferencia que opera Strauss: la fe abandona los dogmas, y es preciso que vaya a alguna parte; en Tennyson, a la duda misma; en Strauss, a la humanidad; el lugar, en ambos casos, no queda vacío.
 >
 > Fuentes: George Eliot, *Middlemarch* (1871-1872) ; Alfred Tennyson, *In Memoriam A. H. H.*, XCVI (1850).
 
