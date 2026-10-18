@@ -3,7 +3,7 @@ titre: Voltaire: deism, the Infamous, tolerance, Candide
 categorie: theories
 ordre: 42
 sections: voltaire ; leibniz ; un-debat-construit
-motifs: Candide ; the Infamous ; Philosophical Dictionary ; Treatise on Tolerance ; Ferney ; Calas
+motifs: Candide ; the Infamous ; Philosophical Dictionary ; Treatise on Tolerance ; Ferney ; Calas ; a single alexandrine
 references: Voltaire, *Lettres philosophiques* (1734) ; *Candide ou l'Optimisme* (1759) ; *Traité sur la tolérance* (1763) ; *Dictionnaire philosophique* (1764) ; René Pomeau, *La Religion de Voltaire* (1956) ; René Pomeau (ed.), *Voltaire en son temps* (1985-1994)
 ---
 François-Marie Arouet (1694-1778), known as Voltaire, poet, playwright, historian, storyteller and polemicist, imprisoned in the Bastille, exiled to England, courtier at Versailles and at Potsdam, then patriarch of Ferney on the Swiss border, was for half a century the most widely read writer in Europe and the symbol of the French Enlightenment. His religious thought is a combative deism.
@@ -19,6 +19,14 @@ From the 1760s onwards, Voltaire campaigns against what he calls the Infâme, th
 #### History and posterity
 
 The *Essai sur les mœurs* (1756) writes the first universal history that does not start from the Bible and grants China, India and Islam their place; *The Age of Louis XIV* founds the history of civilization. Placed in the Panthéon in 1791, Voltaire became for the Republic the symbol of the struggle against clericalism, and for its adversaries the father of the Revolution, of which he saw nothing. Historians distinguish the sincere deist from the tactician, and debate how much social fear there is in his religion for the people.
+
+#### The alexandrine of 1769
+
+The line comes from the *Épître à l'auteur du livre des Trois imposteurs* (1769), in which Voltaire answers the *Traité des trois imposteurs*, a clandestine pamphlet that took Moses, Jesus and Muhammad for three frauds. He gives it after presenting belief in God as the bond of society and the curb on the wicked:
+
+“Si Dieu n'existait pas, il faudrait l'inventer.” (If God did not exist, it would be necessary to invent him.)
+
+It is a regular alexandrine of twelve syllables, with its caesura after “pas”. The line that follows fixes its scope: “Que le sage l'annonce, et que les rois le craignent.” (Let the wise man proclaim him, and let kings fear him.) The first has become a proverb and almost always circulates alone; the second recalls that this God must restrain the powerful as much as the people, and the rest of the epistle threatens with his judgement the kings who oppress the innocent. Voltaire was attached to the phrase, which he says in his correspondence he loves as a father loves his child.
 
 #### What the essay assumes
 

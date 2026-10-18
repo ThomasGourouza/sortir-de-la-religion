@@ -3,7 +3,7 @@ titre: Voltaire : le déisme, l'Infâme, la tolérance, Candide
 categorie: theories
 ordre: 42
 sections: voltaire ; leibniz ; un-debat-construit
-motifs: Candide ; Infâme ; Dictionnaire philosophique ; Traité sur la tolérance ; Ferney ; Calas
+motifs: Candide ; Infâme ; Dictionnaire philosophique ; Traité sur la tolérance ; Ferney ; Calas ; un alexandrin
 references: Voltaire, *Lettres philosophiques* (1734) ; *Candide ou l'Optimisme* (1759) ; *Traité sur la tolérance* (1763) ; *Dictionnaire philosophique* (1764) ; René Pomeau, *La Religion de Voltaire* (1956) ; René Pomeau (dir.), *Voltaire en son temps* (1985-1994)
 ---
 François-Marie Arouet (1694-1778), dit Voltaire, poète, dramaturge, historien, conteur et polémiste, embastillé, exilé en Angleterre, courtisan à Versailles et à Potsdam, puis patriarche de Ferney à la frontière suisse, a été pendant un demi-siècle l'écrivain le plus lu d'Europe et le symbole des Lumières françaises. Sa pensée religieuse est un déisme combatif.
@@ -19,6 +19,14 @@ Voltaire croit en un Dieu créateur et ordonnateur, que prouve l'ordre du monde,
 #### L'histoire et la postérité
 
 L'*Essai sur les mœurs* (1756) écrit la première histoire universelle qui ne parte pas de la Bible et accorde à la Chine, à l'Inde et à l'islam leur place ; *Le Siècle de Louis XIV* fonde l'histoire de la civilisation. Panthéonisé en 1791, Voltaire est devenu pour la République le symbole de la lutte contre le cléricalisme, et pour ses adversaires le père de la Révolution, dont il n'a rien vu. Les historiens distinguent le déiste sincère du tacticien, et débattent de la part de peur sociale dans sa religion pour le peuple.
+
+#### L'alexandrin de 1769
+
+Le vers figure dans l'*Épître à l'auteur du livre des Trois imposteurs* (1769), où Voltaire répond au *Traité des trois imposteurs*, pamphlet clandestin qui tenait Moïse, Jésus et Mahomet pour trois fourbes. Il le donne après avoir présenté la croyance en Dieu comme le lien de la société et le frein du scélérat :
+
+« Si Dieu n'existait pas, il faudrait l'inventer. »
+
+C'est un alexandrin régulier de douze syllabes, coupé à l'hémistiche après « pas ». Le vers qui le suit en fixe la portée : « Que le sage l'annonce, et que les rois le craignent. » Le premier est devenu proverbe et circule presque toujours seul ; le second rappelle que ce Dieu doit retenir les puissants autant que le peuple, et la suite de l'épître menace de son jugement les rois qui oppriment l'innocent. Voltaire tenait à cette formule, qu'il dit dans sa correspondance aimer comme un père aime son enfant.
 
 #### Ce que l'essai suppose
 

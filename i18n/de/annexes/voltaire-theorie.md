@@ -3,7 +3,7 @@ titre: Voltaire: der Deismus, die Infâme, die Toleranz, Candide
 categorie: theories
 ordre: 42
 sections: voltaire ; leibniz ; un-debat-construit
-motifs: Candide ; Infâme ; Dictionnaire philosophique ; Traité sur la tolérance ; Ferney ; Calas
+motifs: Candide ; Infâme ; Dictionnaire philosophique ; Traité sur la tolérance ; Ferney ; Calas ; einem Alexandriner
 references: Voltaire, *Lettres philosophiques* (1734) ; *Candide ou l'Optimisme* (1759) ; *Traité sur la tolérance* (1763) ; *Dictionnaire philosophique* (1764) ; René Pomeau, *La Religion de Voltaire* (1956) ; René Pomeau (Hrsg.), *Voltaire en son temps* (1985-1994)
 ---
 François-Marie Arouet (1694-1778), genannt Voltaire, Dichter, Dramatiker, Historiker, Erzähler und Polemiker, in die Bastille gesperrt, nach England verbannt, Höfling in Versailles und Potsdam, dann Patriarch von Ferney an der Schweizer Grenze, war ein halbes Jahrhundert lang der meistgelesene Schriftsteller Europas und das Sinnbild der französischen Aufklärung. Sein religiöses Denken ist ein kämpferischer Deismus.
@@ -19,6 +19,14 @@ Ab den 1760er Jahren führt Voltaire einen Feldzug gegen das, was er die Infâme
 #### Die Geschichte und die Nachwelt
 
 Der *Essai sur les mœurs* (1756) schreibt die erste Universalgeschichte, die nicht von der Bibel ausgeht und China, Indien und dem Islam ihren Platz einräumt; *Le Siècle de Louis XIV* begründet die Kulturgeschichte. 1791 ins Panthéon überführt, ist Voltaire für die Republik zum Sinnbild des Kampfes gegen den Klerikalismus geworden und für seine Gegner zum Vater der Revolution, von der er nichts gesehen hat. Die Historiker unterscheiden den aufrichtigen Deisten vom Taktiker und streiten darüber, welchen Anteil die soziale Angst an seiner Religion für das Volk hat.
+
+#### Der Alexandriner von 1769
+
+Der Vers steht in der *Épître à l'auteur du livre des Trois imposteurs* (1769), in der Voltaire dem *Traité des trois imposteurs* antwortet, einer heimlich verbreiteten Schmähschrift, die Moses, Jesus und Mohammed für drei Betrüger hielt. Er bringt ihn, nachdem er den Glauben an Gott als das Band der Gesellschaft und den Zügel des Bösewichts dargestellt hat:
+
+„Si Dieu n'existait pas, il faudrait l'inventer.“ (Wenn es Gott nicht gäbe, müsste man ihn erfinden.)
+
+Es ist ein regelmäßiger Alexandriner von zwölf Silben, mit der Zäsur nach „pas“. Der folgende Vers bestimmt seine Tragweite: „Que le sage l'annonce, et que les rois le craignent.“ (Der Weise soll ihn verkünden, und die Könige sollen ihn fürchten.) Der erste ist zum Sprichwort geworden und wird fast immer allein angeführt; der zweite erinnert daran, dass dieser Gott die Mächtigen ebenso zügeln soll wie das Volk, und der weitere Verlauf der Epistel droht den Königen, die den Unschuldigen unterdrücken, mit seinem Gericht. Voltaire hing an dieser Formel, die er, wie er in seinen Briefen sagt, liebt wie ein Vater sein Kind.
 
 #### Was der Essay voraussetzt
 

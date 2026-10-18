@@ -3,7 +3,7 @@ titre: Voltaire: el deísmo, la Infame, la tolerancia, Cándido
 categorie: theories
 ordre: 42
 sections: voltaire ; leibniz ; un-debat-construit
-motifs: Cándido ; la Infame ; Diccionario filosófico ; Tratado sobre la tolerancia ; Ferney ; Calas
+motifs: Cándido ; la Infame ; Diccionario filosófico ; Tratado sobre la tolerancia ; Ferney ; Calas ; un alejandrino
 references: Voltaire, *Lettres philosophiques* (1734) ; *Candide ou l'Optimisme* (1759) ; *Traité sur la tolérance* (1763) ; *Dictionnaire philosophique* (1764) ; René Pomeau, *La Religion de Voltaire* (1956) ; René Pomeau (dir.), *Voltaire en son temps* (1985-1994)
 ---
 François-Marie Arouet (1694-1778), llamado Voltaire, poeta, dramaturgo, historiador, cuentista y polemista, encerrado en la Bastilla, exiliado en Inglaterra, cortesano en Versalles y en Potsdam, y luego patriarca de Ferney en la frontera suiza, fue durante medio siglo el escritor más leído de Europa y el símbolo de la Ilustración francesa. Su pensamiento religioso es un deísmo combativo.
@@ -19,6 +19,14 @@ A partir de los años 1760, Voltaire hace campaña contra lo que llama la Infame
 #### La historia y la posteridad
 
 El *Ensayo sobre las costumbres* (1756) escribe la primera historia universal que no parte de la Biblia y concede a China, a la India y al islam su lugar; *El siglo de Luis XIV* funda la historia de la civilización. Llevado al Panteón en 1791, Voltaire se ha convertido para la República en el símbolo de la lucha contra el clericalismo, y para sus adversarios en el padre de la Revolución, de la que no vio nada. Los historiadores distinguen al deísta sincero del táctico, y debaten la parte de miedo social en su religión para el pueblo.
+
+#### El alejandrino de 1769
+
+El verso figura en la *Épître à l'auteur du livre des Trois imposteurs* (1769), donde Voltaire responde al *Tratado de los tres impostores*, panfleto clandestino que tenía a Moisés, Jesús y Mahoma por tres embaucadores. Lo da después de presentar la creencia en Dios como el vínculo de la sociedad y el freno del malvado:
+
+«Si Dieu n'existait pas, il faudrait l'inventer.» (Si Dios no existiera, habría que inventarlo.)
+
+Es un alejandrino regular de doce sílabas, con la cesura después de «pas». El verso que lo sigue fija su alcance: «Que le sage l'annonce, et que les rois le craignent.» (Que el sabio lo anuncie, y que los reyes lo teman.) El primero se ha vuelto proverbio y circula casi siempre solo; el segundo recuerda que ese Dios debe contener a los poderosos tanto como al pueblo, y el resto de la epístola amenaza con su juicio a los reyes que oprimen al inocente. Voltaire tenía apego a esa fórmula, que en su correspondencia dice amar como un padre ama a su hijo.
 
 #### Lo que el ensayo supone
 
