@@ -3272,5 +3272,175 @@
     "credit": "Titian, Public domain",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Vecellio_di_Gregorio_Tiziano_-_autoritratto.jpg"
+  },
+  {
+    "section": "jean-auguste-dominique-ingres",
+    "role": "artiste",
+    "file": "images/artistes/jean-auguste-dominique-ingres.jpg",
+    "alt": "Portrait de Jean-Auguste-Dominique Ingres",
+    "caption": "Jean-Auguste-Dominique Ingres",
+    "credit": "Jean-Auguste-Dominique Ingres, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ingres,_Self-portrait.jpg"
+  },
+  {
+    "section": "pierre-paul-rubens",
+    "role": "artiste",
+    "file": "images/artistes/pierre-paul-rubens.jpg",
+    "alt": "Portrait de Pierre Paul Rubens",
+    "caption": "Pierre Paul Rubens",
+    "credit": "Peter Paul Rubens, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "william-adolphe-bouguereau",
+    "role": "artiste",
+    "file": "images/artistes/william-adolphe-bouguereau.jpg",
+    "alt": "Portrait de William-Adolphe Bouguereau",
+    "caption": "William-Adolphe Bouguereau",
+    "credit": "P. Petit, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_William-Adolphe_Bouguereau.jpg"
+  },
+  {
+    "section": "antonio-canova",
+    "role": "artiste",
+    "file": "images/artistes/antonio-canova.jpg",
+    "alt": "Portrait de Antonio Canova",
+    "caption": "Antonio Canova",
+    "credit": "Antonio Canova, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Antonio_Canova_Selfportrait_1792.jpg"
+  },
+  {
+    "section": "nikiphoros-lytras",
+    "role": "artiste",
+    "file": "images/artistes/nikiphoros-lytras.png",
+    "alt": "Portrait de Nikiphoros Lytras",
+    "caption": "Nikiphoros Lytras",
+    "credit": "Nikiforos Lytras, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Selfportrait,_Nikiforos_Lytras.png"
+  },
+  {
+    "section": "frederic-leighton",
+    "role": "artiste",
+    "file": "images/artistes/frederic-leighton.jpg",
+    "alt": "Portrait de Frederic Leighton",
+    "caption": "Frederic Leighton",
+    "credit": "Frederic Leighton, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:1880_Frederic_Leighton_-_Self_portrait.jpg"
+  },
+  {
+    "section": "mythes-grecs-sources-et-dieux",
+    "role": "oeuvre",
+    "file": "images/art/ingres-jupiter-thetis.jpg",
+    "alt": "Zeus trônant sur les nuées, impassible, et la nymphe Thétis agenouillée qui lui caresse le menton",
+    "caption": "Jean-Auguste-Dominique Ingres, Jupiter et Thétis (1811, Aix-en-Provence, musée Granet) : Thétis supplie Zeus en faveur de son fils Achille, au premier chant de l'Iliade.",
+    "credit": "Jean Auguste Dominique Ingres, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jupiter_and_Thetis_(Ingres).jpg"
+  },
+  {
+    "section": "dionysos-et-les-bacchantes",
+    "role": "oeuvre",
+    "file": "images/art/exekias-dionysos-navire.jpg",
+    "alt": "Intérieur d'une coupe à figures noires : Dionysos couché dans un navire dont le mât se couvre de vigne, entouré de dauphins",
+    "caption": "Exékias, Dionysos dans son navire, coupe attique à figures noires (v. 530 av. J.-C., Munich, Staatliche Antikensammlungen) : les pirates qui avaient capturé le dieu sont changés en dauphins.",
+    "credit": "Exékias, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Exekias_Dionysos_Staatliche_Antikensammlungen_2044_n2.jpg"
+  },
+  {
+    "section": "oedipe",
+    "role": "oeuvre",
+    "file": "images/art/ingres-oedipe-sphinx.jpg",
+    "alt": "Œdipe nu, un pied sur un rocher, interroge le Sphinx tapi dans l'ombre d'une grotte",
+    "caption": "Jean-Auguste-Dominique Ingres, Œdipe explique l'énigme du Sphinx (1808, Paris, musée du Louvre).",
+    "credit": "Jean-Auguste-Dominique Ingres, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean_Auguste_Dominique_Ingres_-_Oedipus_and_the_Sphynx_-_WGA11843.jpg"
+  },
+  {
+    "section": "promethee-et-pandore",
+    "role": "oeuvre",
+    "file": "images/art/rubens-promethee.jpg",
+    "alt": "Prométhée enchaîné à un rocher, renversé, tandis qu'un aigle lui déchire le flanc",
+    "caption": "Pierre Paul Rubens et Frans Snyders, Prométhée enchaîné (1611-1618, Philadelphie, Philadelphia Museum of Art).",
+    "credit": "Pierre Paul Rubens et Frans Snyders, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens,_Flemish_(active_Italy,_Antwerp,_and_England)_-_Prometheus_Bound_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "troie-l-iliade-et-iphigenie",
+    "role": "oeuvre",
+    "file": "images/art/pompei-sacrifice-iphigenie.jpg",
+    "alt": "Fresque : Iphigénie, soulevée par deux hommes, est portée vers l'autel ; Agamemnon se voile le visage ; Artémis apparaît dans les airs",
+    "caption": "Le Sacrifice d'Iphigénie, fresque de la maison du Poète tragique à Pompéi (Ier siècle ap. J.-C., Naples, musée archéologique national) : Agamemnon détourne la tête, Artémis envoie la biche qui remplacera la jeune fille.",
+    "credit": "Peintre romain anonyme, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:MANNapoli_9112_Sacrifice_Iphigenia_painting.jpg"
+  },
+  {
+    "section": "les-atrides-oreste-et-les-erinyes",
+    "role": "oeuvre",
+    "file": "images/art/bouguereau-remords-oreste.jpg",
+    "alt": "Oreste se bouche les oreilles, poursuivi par les Érinyes qui lui montrent le corps de sa mère poignardée",
+    "caption": "William-Adolphe Bouguereau, Les Remords d'Oreste (1862, Norfolk, Chrysler Museum of Art).",
+    "credit": "William-Adolphe Bouguereau, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Orestes_Pursued_by_the_Furies_by_William-Adolphe_Bouguereau_(1862)_-_Google_Art_Project.jpg"
+  },
+  {
+    "section": "mysteres-et-orphisme",
+    "role": "oeuvre",
+    "file": "images/art/leighton-retour-persephone.jpg",
+    "alt": "Hermès soulève Perséphone hors d'une grotte vers Déméter qui lui tend les bras dans la lumière",
+    "caption": "Frederic Leighton, Le Retour de Perséphone (1891, Leeds Art Gallery) : Hermès ramène Perséphone des Enfers vers sa mère Déméter.",
+    "credit": "Frederic Leighton, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Frederic_Leighton_-_The_Return_of_Persephone_(1891).jpg"
+  },
+  {
+    "section": "heracles",
+    "role": "oeuvre",
+    "file": "images/art/zurbaran-hercule-lion.jpg",
+    "alt": "Héraclès, de dos, étouffe le lion de Némée dans ses bras",
+    "caption": "Francisco de Zurbarán, Hercule et le lion de Némée (1634, Madrid, Prado), de la série des travaux d'Hercule peinte pour le palais du Buen Retiro.",
+    "credit": "Francisco de Zurbarán, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:H%C3%A9rcules_lucha_con_el_le%C3%B3n_de_Nemea,_por_Zurbar%C3%A1n.jpg"
+  },
+  {
+    "section": "narcisse-et-echo",
+    "role": "oeuvre",
+    "file": "images/art/caravage-narcisse.jpg",
+    "alt": "Un jeune homme penché sur l'eau sombre contemple son reflet, les mains posées sur la rive",
+    "caption": "Le Caravage, Narcisse (v. 1597-1599, Rome, Galleria Nazionale d'Arte Antica).",
+    "credit": "Caravaggio, Public domain",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Narcissus-Caravaggio_(1594-96)_edited.jpg"
+  },
+  {
+    "section": "eros-et-psyche",
+    "role": "oeuvre",
+    "file": "images/art/canova-psyche.jpg",
+    "alt": "Sculpture de marbre : Éros ailé se penche sur Psyché étendue et la soulève dans ses bras",
+    "caption": "Antonio Canova, Psyché ranimée par le baiser de l'Amour (1787-1793, Paris, musée du Louvre).",
+    "credit": "Joe deSousa, CC0",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Psyche_Revived_by_Cupid%27s_Kiss,_Louvre_22_July_2017.jpg"
+  },
+  {
+    "section": "antigone",
+    "role": "oeuvre",
+    "file": "images/art/lytras-antigone-polynice.jpg",
+    "alt": "Antigone, voilée de sombre, se penche sur le corps de son frère Polynice étendu sur le sol",
+    "caption": "Nikiphoros Lytras, Antigone devant le corps de Polynice (1865, Athènes, Pinacothèque nationale).",
+    "credit": "Francesco Bini, CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nikephoros_lytras,_antigone_e_polynice,_1865.jpg"
   }
 ]

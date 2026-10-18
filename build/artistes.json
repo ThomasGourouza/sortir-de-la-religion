@@ -76,7 +76,8 @@
   "oeuvres": [
    "images/art/caravage-conversion-saint-paul.jpg",
    "images/art/caravage-incredulite-thomas.jpg",
-   "images/art/caravage-sacrifice-isaac.jpg"
+   "images/art/caravage-sacrifice-isaac.jpg",
+   "images/art/caravage-narcisse.jpg"
   ]
  },
  {
@@ -236,7 +237,8 @@
   "dates": "1598-1664",
   "annee": 1598,
   "oeuvres": [
-   "images/art/zurbaran-agnus-dei.jpg"
+   "images/art/zurbaran-agnus-dei.jpg",
+   "images/art/zurbaran-hercule-lion.jpg"
   ]
  },
  {
@@ -385,6 +387,92 @@
   ]
  },
  {
+  "nom": "Exékias",
+  "alias": [
+   "Exékias"
+  ],
+  "qid": "Q358541",
+  "dates": "VIe siècle av. J.-C.",
+  "annee": -545,
+  "oeuvres": [
+   "images/art/exekias-dionysos-navire.jpg"
+  ]
+ },
+ {
+  "nom": "Pierre Paul Rubens",
+  "alias": [
+   "Pierre Paul Rubens et Frans Snyders",
+   "Pierre Paul Rubens"
+  ],
+  "qid": "Q5599",
+  "dates": "1577-1640",
+  "annee": 1577,
+  "oeuvres": [
+   "images/art/rubens-promethee.jpg"
+  ]
+ },
+ {
+  "nom": "Antonio Canova",
+  "alias": [
+   "Antonio Canova"
+  ],
+  "qid": "Q5547",
+  "dates": "1757-1822",
+  "annee": 1757,
+  "oeuvres": [
+   "images/art/canova-psyche.jpg"
+  ]
+ },
+ {
+  "nom": "Jean-Auguste-Dominique Ingres",
+  "alias": [
+   "Jean-Auguste-Dominique Ingres"
+  ],
+  "qid": "Q23380",
+  "dates": "1780-1867",
+  "annee": 1780,
+  "oeuvres": [
+   "images/art/ingres-oedipe-sphinx.jpg",
+   "images/art/ingres-jupiter-thetis.jpg"
+  ]
+ },
+ {
+  "nom": "William-Adolphe Bouguereau",
+  "alias": [
+   "William-Adolphe Bouguereau"
+  ],
+  "qid": "Q483992",
+  "dates": "1825-1905",
+  "annee": 1825,
+  "oeuvres": [
+   "images/art/bouguereau-remords-oreste.jpg"
+  ]
+ },
+ {
+  "nom": "Frederic Leighton",
+  "alias": [
+   "Frederic Leighton"
+  ],
+  "qid": "Q160252",
+  "dates": "1830-1896",
+  "annee": 1830,
+  "oeuvres": [
+   "images/art/leighton-retour-persephone.jpg"
+  ]
+ },
+ {
+  "nom": "Nikiphoros Lytras",
+  "alias": [
+   "Nikiphoros Lytras"
+  ],
+  "qid": "Q1383454",
+  "dates": "1832-1904",
+  "annee": 1832,
+  "oeuvres": [
+   "images/art/lytras-antigone-polynice.jpg"
+  ]
+ },
+ {
   "nom": "Œuvres anonymes et monuments",
   "alias": [],
   "qid": null,
@@ -401,7 +489,8 @@
    "images/art/partie-naissance-christianisme.jpg",
    "images/art/partie-huitieme.jpg",
    "images/art/partie-neuvieme.jpg",
-   "images/art/partie-anciens-monotheismes.jpg"
+   "images/art/partie-anciens-monotheismes.jpg",
+   "images/art/pompei-sacrifice-iphigenie.jpg"
   ]
  }
 ]

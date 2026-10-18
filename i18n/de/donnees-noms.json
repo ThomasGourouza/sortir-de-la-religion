@@ -280,7 +280,14 @@
     "les nouveaux athées": "die neuen Atheisten",
     "Émile Zola": "Émile Zola",
     "Épicure": "Epikur",
-    "Œuvres anonymes et monuments": "Anonyme Werke und Denkmäler"
+    "Œuvres anonymes et monuments": "Anonyme Werke und Denkmäler",
+    "Exékias": "Exekias",
+    "Pierre Paul Rubens": "Peter Paul Rubens",
+    "Antonio Canova": "Antonio Canova",
+    "Jean-Auguste-Dominique Ingres": "Jean-Auguste-Dominique Ingres",
+    "William-Adolphe Bouguereau": "William-Adolphe Bouguereau",
+    "Frederic Leighton": "Frederic Leighton",
+    "Nikiphoros Lytras": "Nikiphoros Lytras"
   },
   "dates": {
     "1048-1131": "1048-1131",
@@ -523,7 +530,14 @@
     "v. 20 av. J.-C.-v. 45/50 ap. J.-C.": "um 20 v. Chr.-um 45/50 n. Chr.",
     "v. 234-v. 305": "um 234-um 305",
     "v. 480-v. 406 av. J.-C.": "um 480-um 406 v. Chr.",
-    "v. 98-v. 55 av. J.-C.": "um 98-um 55 v. Chr."
+    "v. 98-v. 55 av. J.-C.": "um 98-um 55 v. Chr.",
+    "VIe siècle av. J.-C.": "6. Jahrhundert v. Chr.",
+    "1577-1640": "1577-1640",
+    "1757-1822": "1757-1822",
+    "1780-1867": "1780-1867",
+    "1825-1905": "1825-1905",
+    "1830-1896": "1830-1896",
+    "1832-1904": "1832-1904"
   },
   "reponses": [
     "Der gesäte Logos: Platon habe von Moses entlehnt, und Sokrates sei ein Christ vor Christus gewesen.",

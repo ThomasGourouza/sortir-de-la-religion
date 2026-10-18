@@ -2,6 +2,7 @@
 """Constitue les images du site depuis Wikimedia Commons et Wikidata.
 
 Usage : python3 build/images.py   (depuis la racine du site)
+        python3 build/images.py images/art/x images/artistes/y   (seulement ces cibles)
 
 Pour chaque cible : resolution du fichier Commons (directement, ou via la
 propriete P18 de Wikidata pour les portraits), lecture de la licence et des
@@ -500,6 +501,53 @@ TARGETS = [
       "Bouddha debout, art du Gandhara, région de Peshawar (Pakistan), époque kouchane, IIe-IIIe siècle ap. J.-C., schiste (Tokyo, Musée national) : le Bouddha drapé comme un orateur hellénistique, rencontre ancienne de l'Inde et de la Grèce bien avant que les philosophes européens ne découvrent le bouddhisme.",
       width=800, artist="Sculpteur du Gandhara, photo Daderot"),
 
+    # ----------------------------------------------------------- oeuvres des annexes « Mythes grecs »
+    # role "oeuvre" : jamais placees dans l'essai, montrees en vignettes dans leur annexe et dans la Galerie
+    F("mythes-grecs-sources-et-dieux", "art", "ingres-jupiter-thetis", "Jupiter and Thetis (Ingres).jpg",
+      "Zeus trônant sur les nuées, impassible, et la nymphe Thétis agenouillée qui lui caresse le menton",
+      "Jean-Auguste-Dominique Ingres, Jupiter et Thétis (1811, Aix-en-Provence, musée Granet) : Thétis supplie Zeus en faveur de son fils Achille, au premier chant de l'Iliade.",
+      width=800, role="oeuvre"),
+    F("dionysos-et-les-bacchantes", "art", "exekias-dionysos-navire", "Exekias Dionysos Staatliche Antikensammlungen 2044 n2.jpg",
+      "Intérieur d'une coupe à figures noires : Dionysos couché dans un navire dont le mât se couvre de vigne, entouré de dauphins",
+      "Exékias, Dionysos dans son navire, coupe attique à figures noires (v. 530 av. J.-C., Munich, Staatliche Antikensammlungen) : les pirates qui avaient capturé le dieu sont changés en dauphins.",
+      width=800, role="oeuvre", artist="Exékias"),
+    F("oedipe", "art", "ingres-oedipe-sphinx", "Jean Auguste Dominique Ingres - Oedipus and the Sphynx - WGA11843.jpg",
+      "Œdipe nu, un pied sur un rocher, interroge le Sphinx tapi dans l'ombre d'une grotte",
+      "Jean-Auguste-Dominique Ingres, Œdipe explique l'énigme du Sphinx (1808, Paris, musée du Louvre).",
+      width=800, role="oeuvre"),
+    F("antigone", "art", "lytras-antigone-polynice", "Nikephoros lytras, antigone e polynice, 1865.jpg",
+      "Antigone, voilée de sombre, se penche sur le corps de son frère Polynice étendu sur le sol",
+      "Nikiphoros Lytras, Antigone devant le corps de Polynice (1865, Athènes, Pinacothèque nationale).",
+      width=800, role="oeuvre"),
+    F("promethee-et-pandore", "art", "rubens-promethee", "Peter Paul Rubens, Flemish (active Italy, Antwerp, and England) - Prometheus Bound - Google Art Project.jpg",
+      "Prométhée enchaîné à un rocher, renversé, tandis qu'un aigle lui déchire le flanc",
+      "Pierre Paul Rubens et Frans Snyders, Prométhée enchaîné (1611-1618, Philadelphie, Philadelphia Museum of Art).",
+      width=800, role="oeuvre", artist="Pierre Paul Rubens et Frans Snyders"),
+    F("troie-l-iliade-et-iphigenie", "art", "pompei-sacrifice-iphigenie", "MANNapoli 9112 Sacrifice Iphigenia painting.jpg",
+      "Fresque : Iphigénie, soulevée par deux hommes, est portée vers l'autel ; Agamemnon se voile le visage ; Artémis apparaît dans les airs",
+      "Le Sacrifice d'Iphigénie, fresque de la maison du Poète tragique à Pompéi (Ier siècle ap. J.-C., Naples, musée archéologique national) : Agamemnon détourne la tête, Artémis envoie la biche qui remplacera la jeune fille.",
+      width=800, role="oeuvre", artist="Peintre romain anonyme"),
+    F("les-atrides-oreste-et-les-erinyes", "art", "bouguereau-remords-oreste", "Orestes Pursued by the Furies by William-Adolphe Bouguereau (1862) - Google Art Project.jpg",
+      "Oreste se bouche les oreilles, poursuivi par les Érinyes qui lui montrent le corps de sa mère poignardée",
+      "William-Adolphe Bouguereau, Les Remords d'Oreste (1862, Norfolk, Chrysler Museum of Art).",
+      width=800, role="oeuvre"),
+    F("mysteres-et-orphisme", "art", "leighton-retour-persephone", "Frederic Leighton - The Return of Persephone (1891).jpg",
+      "Hermès soulève Perséphone hors d'une grotte vers Déméter qui lui tend les bras dans la lumière",
+      "Frederic Leighton, Le Retour de Perséphone (1891, Leeds Art Gallery) : Hermès ramène Perséphone des Enfers vers sa mère Déméter.",
+      width=800, role="oeuvre"),
+    F("heracles", "art", "zurbaran-hercule-lion", "Hércules lucha con el león de Nemea, por Zurbarán.jpg",
+      "Héraclès, de dos, étouffe le lion de Némée dans ses bras",
+      "Francisco de Zurbarán, Hercule et le lion de Némée (1634, Madrid, Prado), de la série des travaux d'Hercule peinte pour le palais du Buen Retiro.",
+      width=800, role="oeuvre"),
+    F("narcisse-et-echo", "art", "caravage-narcisse", "Narcissus-Caravaggio (1594-96) edited.jpg",
+      "Un jeune homme penché sur l'eau sombre contemple son reflet, les mains posées sur la rive",
+      "Le Caravage, Narcisse (v. 1597-1599, Rome, Galleria Nazionale d'Arte Antica).",
+      width=800, role="oeuvre"),
+    F("eros-et-psyche", "art", "canova-psyche", "Psyche Revived by Cupid's Kiss, Louvre 22 July 2017.jpg",
+      "Sculpture de marbre : Éros ailé se penche sur Psyché étendue et la soulève dans ses bras",
+      "Antonio Canova, Psyché ranimée par le baiser de l'Amour (1787-1793, Paris, musée du Louvre).",
+      width=800, role="oeuvre"),
+
     # ----------------------------------------------------------- cartes des parties
     # Les deux cartes suivantes precedent les anciennes cartes des memes sections :
     # build.py prend la premiere carte trouvee pour une partie.
@@ -745,6 +793,12 @@ ARTISTES = {
     "Ivan Kramskoï": "Q207758",
     "Jules Breton": "Q282043",
     "Johannes Vermeer": "Q41264",
+    "Jean-Auguste-Dominique Ingres": "Q23380",
+    "Pierre Paul Rubens": "Q5599",
+    "William-Adolphe Bouguereau": "Q483992",
+    "Frederic Leighton": "Q160252",
+    "Antonio Canova": "Q5547",
+    "Nikiphoros Lytras": "Q1383454",
 }
 TARGETS += [
     {"section": slug_ecrivain(n), "role": "artiste", "file": "images/artistes/" + slug_ecrivain(n), "alt": "Portrait de " + n, "caption": n, "qid": q, "p18": 0}
@@ -822,66 +876,90 @@ def commons_info(name, width, page=None):
     return pg["title"], pg["imageinfo"][0]
 
 
-def main():
-    out, skipped = [], []
-    for t in TARGETS:
-        label = f"{t['section']} / {t['role']} / {t['file']}"
-        print("->", label, flush=True)
-        try:
-            name = t.get("commons") or wikidata_p18(t["qid"], t.get("p18", 0))
-            if not name:
-                skipped.append((label, "pas d'image P18 sur Wikidata"))
+def traiter(t, skipped):
+    """Une cible : fichier Commons, licence, vignette telechargee ; renvoie l'entree de images.json, ou None."""
+    label = f"{t['section']} / {t['role']} / {t['file']}"
+    print("->", label, flush=True)
+    try:
+        name = t.get("commons") or wikidata_p18(t["qid"], t.get("p18", 0))
+        if not name:
+            skipped.append((label, "pas d'image P18 sur Wikidata"))
+            return None
+        width = t.get("width", 480)
+        res = commons_info(name, width, t.get("page"))
+        if not res:
+            skipped.append((label, "fichier introuvable sur Commons : " + name))
+            return None
+        title, ii = res
+        meta = ii.get("extmetadata", {})
+        lic = strip_html(meta.get("LicenseShortName", {}).get("value", ""))
+        if not is_free(lic):
+            skipped.append((label, f"licence non libre ou inconnue ({lic or 'vide'})"))
+            return None
+        thumb = ii.get("thumburl") or ii["url"]
+        path_part = urllib.parse.urlparse(thumb).path.lower()
+        ext = ".png" if path_part.endswith(".png") else ".jpg"
+        rel = t["file"] + ext
+        dest = os.path.join(ROOT, rel)
+        os.makedirs(os.path.dirname(dest), exist_ok=True)
+        if not (os.path.exists(dest) and os.path.getsize(dest) > MIN_BYTES):
+            data = http_get(thumb, binary=True)
+            if len(data) <= MIN_BYTES:
+                skipped.append((label, f"image telechargee trop petite ({len(data)} octets)"))
+                return None
+            with open(dest, "wb") as f:
+                f.write(data)
+        artist = t.get("artist") or clean_artist(meta.get("Artist", {}).get("value", "")) \
+            or clean_artist(meta.get("Credit", {}).get("value", "")) or "Auteur inconnu"
+        source = ii.get("descriptionurl") or \
+            "https://commons.wikimedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
+        entry = {
+            "section": t["section"],
+            "role": t["role"],
+            "file": rel,
+            "alt": no_dashes(t["alt"]),
+            "caption": no_dashes(t["caption"]),
+            "credit": no_dashes(f"{artist}, {lic}"),
+            "license": lic,
+            "source": source,
+        }
+        if t.get("position"):
+            entry["position"] = t["position"]
+        print("   ok", rel, "|", entry["credit"], flush=True)
+        return entry
+    except Exception as e:  # noqa: BLE001
+        skipped.append((label, f"erreur : {e}"))
+        print("   ERREUR", e, flush=True)
+        return None
+
+
+def main(fichiers=()):
+    """Sans argument : toutes les cibles, images.json reecrit. Avec des fichiers (images/art/x, avec ou sans
+    extension) : seulement ces cibles, fusionnees dans images.json sans toucher aux autres entrees."""
+    skipped = []
+    if fichiers:
+        voulus = {os.path.splitext(f)[0] for f in fichiers}
+        cibles = [t for t in TARGETS if t["file"] in voulus]
+        for f in sorted(voulus - {t["file"] for t in cibles}):
+            print("cible inconnue dans images.py :", f)
+        out = json.load(open(OUT_JSON, encoding="utf-8"))
+        for t in cibles:
+            e = traiter(t, skipped)
+            if not e:
                 continue
-            width = t.get("width", 480)
-            res = commons_info(name, width, t.get("page"))
-            if not res:
-                skipped.append((label, "fichier introuvable sur Commons : " + name))
-                continue
-            title, ii = res
-            meta = ii.get("extmetadata", {})
-            lic = strip_html(meta.get("LicenseShortName", {}).get("value", ""))
-            if not is_free(lic):
-                skipped.append((label, f"licence non libre ou inconnue ({lic or 'vide'})"))
-                continue
-            thumb = ii.get("thumburl") or ii["url"]
-            path_part = urllib.parse.urlparse(thumb).path.lower()
-            ext = ".png" if path_part.endswith(".png") else ".jpg"
-            rel = t["file"] + ext
-            dest = os.path.join(ROOT, rel)
-            os.makedirs(os.path.dirname(dest), exist_ok=True)
-            if not (os.path.exists(dest) and os.path.getsize(dest) > MIN_BYTES):
-                data = http_get(thumb, binary=True)
-                if len(data) <= MIN_BYTES:
-                    skipped.append((label, f"image telechargee trop petite ({len(data)} octets)"))
-                    continue
-                with open(dest, "wb") as f:
-                    f.write(data)
-            artist = t.get("artist") or clean_artist(meta.get("Artist", {}).get("value", "")) \
-                or clean_artist(meta.get("Credit", {}).get("value", "")) or "Auteur inconnu"
-            source = ii.get("descriptionurl") or \
-                "https://commons.wikimedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
-            entry = {
-                "section": t["section"],
-                "role": t["role"],
-                "file": rel,
-                "alt": no_dashes(t["alt"]),
-                "caption": no_dashes(t["caption"]),
-                "credit": no_dashes(f"{artist}, {lic}"),
-                "license": lic,
-                "source": source,
-            }
-            if t.get("position"):
-                entry["position"] = t["position"]
-            out.append(entry)
-            print("   ok", rel, "|", entry["credit"], flush=True)
-        except Exception as e:  # noqa: BLE001
-            skipped.append((label, f"erreur : {e}"))
-            print("   ERREUR", e, flush=True)
+            anciens = [i for i, x in enumerate(out) if os.path.splitext(x["file"])[0] == t["file"]]
+            if anciens:
+                out[anciens[0]] = e
+            else:
+                meme_role = [i for i, x in enumerate(out) if x["role"] == e["role"]]
+                out.insert(meme_role[-1] + 1 if meme_role else len(out), e)
+    else:
+        out = [e for e in (traiter(t, skipped) for t in TARGETS) if e]
 
     with open(OUT_JSON, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print(f"\n{len(out)} images ecrites dans {os.path.relpath(OUT_JSON, ROOT)}")
+    print(f"\n{len(out)} images dans {os.path.relpath(OUT_JSON, ROOT)}")
     if skipped:
         print("Cibles sautees :")
         for label, why in skipped:
@@ -890,4 +968,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(sys.argv[1:]))

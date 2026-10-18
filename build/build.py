@@ -516,7 +516,7 @@ def slug_terme(t):
 
 
 CATEGORIES = (("theories", "Théories des auteurs"), ("bible", "Bible : les textes"), ("histoire", "Histoire"),
-              ("disciplines", "Disciplines et méthodes"), ("courants", "Courants et doctrines"))
+              ("disciplines", "Disciplines et méthodes"), ("courants", "Courants et doctrines"), ("mythes", "Mythes grecs"))
 CHAMPS_LISTE = ("sections", "motifs", "references", "oeuvres")
 
 
@@ -912,9 +912,28 @@ def cle_auteur(nom):
     return slug_terme(last) + " " + slug_terme(nom)
 
 
+def index_mythes(textes, libelles, ids_annexes):
+    """Tableau des figures mythiques citées par l'essai (build/mythes.json) : figure, sections, annexe.
+    La détection se fait sur le texte français, dont les sections ont les mêmes identifiants dans toutes les langues."""
+    lignes = []
+    for m in charger("mythes.json", []):
+        rx = re.compile(r"(?<!\w)(?:%s)(?!\w)" % "|".join(re.escape(x) for x in m["motifs"]))
+        sections = [sid for sid, texte in textes if rx.search(texte)]
+        if not sections:
+            continue
+        if m["annexe"] not in ids_annexes:
+            print("  index des mythes : pas d'annexe pour", m["figure"])
+            continue
+        nom = m.get("noms", {}).get(LANG, m["figure"]) if LANG != "fr" else m["figure"]
+        liens = " · ".join('<a href="index.html#%s">%s</a>' % (s, html.escape(libelles.get(s, s))) for s in sections)
+        lignes.append(("".join(c for c in unicodedata.normalize("NFKD", nom.replace("Œ", "Oe")) if not unicodedata.combining(c)).lower(), '<tr><td>%s</td><td>%s</td><td><a href="#%s">%s</a></td></tr>' % (
+            html.escape(nom), liens, m["annexe"], html.escape(ids_annexes[m["annexe"]]))))
+    return [l for _, l in sorted(lignes)]
+
+
 def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), libelles=None, sources="", credits="",
                  tableau="", portraits=None, ecrivains=None, artistes=None, oeuvres=None, textes=(),
-                 lettres_fr=None, tableau_fr=None):
+                 lettres_fr=None, tableau_fr=None, textes_fr=None):
     libelles = libelles or {}
     artistes = artistes or {}
     oeuvres = oeuvres or {}
@@ -1135,19 +1154,26 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                 'avec la section où ils apparaissent et l\'annexe qui les explique.</p><div class="table-wrap"><table class="passages">'
                 '<thead><tr><th>Passage</th><th>Dans l\'essai</th><th>Annexe</th></tr></thead><tbody>%s</tbody></table></div></div></details>') % (
                     len(lignes_passages), "".join(lignes_passages)) if lignes_passages else ""
+    lignes_mythes = index_mythes(textes_fr or textes, libelles, titres_annexes)
+    mythes_cites = ('<details class="annexe" data-item data-type="mythes" id="mythes-cites"><summary>'
+                    '<span class="annexe-titre">Les mythes cités par l\'essai</span><span class="annexe-cat">Index</span></summary>'
+                    '<div class="annexe-corps"><p>Les %d figures de la mythologie grecque que l\'essai nomme, dans son texte ou dans ses '
+                    'encadrés, avec les sections où elles apparaissent et l\'annexe qui raconte leur mythe.</p><div class="table-wrap">'
+                    '<table class="passages"><thead><tr><th>Figure</th><th>Dans l\'essai</th><th>Annexe</th></tr></thead><tbody>%s</tbody>'
+                    '</table></div></div></details>') % (len(lignes_mythes), "".join(lignes_mythes)) if lignes_mythes else ""
     groupes = []
     for cat, lab in CATEGORIES:
         arts = [a for a in annexes if a["categorie"] == cat]
         if arts:
             groupes.append('<section class="rep-carte annexes-groupe" data-groupe id="annexes-%s"><h2>%s</h2>%s%s</section>' % (
-                cat, lab, passages if cat == "bible" else "", "".join(rendre_annexe(a, libelles, cibles, vignette) for a in arts)))
+                cat, lab, {"bible": passages, "mythes": mythes_cites}.get(cat, ""), "".join(rendre_annexe(a, libelles, cibles, vignette) for a in arts)))
     chips = "".join('<button class="chip" data-filtre-type="%s" aria-pressed="%s">%s</button>' % (c, str(c == "tous").lower(), l)
                     for c, l in (("tous", "Tous"),) + tuple((c, l.split(" ")[0]) for c, l in CATEGORIES))
     filtres = ('<div class="outil-filtres"><input type="search" data-filtre-texte placeholder="Chercher un article…" aria-label="Chercher">'
                '<div class="chips">%s</div></div>' % chips)
     page_outil("annexes.html", "Annexes",
                "%d articles pour lire l'essai : les théories de ses auteurs, l'histoire du christianisme et de l'Europe, "
-               "les disciplines qu'il convoque. Ce sont des synthèses de lecture, écrites sans citation ; elles ne remplacent pas "
+               "les disciplines qu'il convoque, les mythes grecs qu'il suppose connus. Ce sont des synthèses de lecture, écrites sans citation ; elles ne remplacent pas "
                "les sources. Dans le texte, les termes soulignés en pointillé y renvoient." % len(annexes),
                "Repères pour lire l'essai.", filtres + "".join(groupes) + '<p id="aucun" hidden>Aucun article ne correspond.</p>',
                titre, og_image, version)
@@ -1229,20 +1255,28 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
     for f in sorted(oeuvres):
         if f.startswith("images/art/") and f not in listes:  # les pages de titre et les portraits ne sont pas des œuvres de la galerie
             print("  artistes.json : image d'art absente de la galerie", f)
-    for a in liste_artistes:
-        for f in a["oeuvres"]:
-            if f not in oeuvres:
-                print("  artistes.json : fichier inconnu ou non affiché dans l'essai", f)
     annexes_de = {}  # œuvre -> annexes qui la commentent (champ « oeuvres » des annexes)
     for an in annexes:
         for f in an.get("oeuvres", []):
             annexes_de.setdefault(f, []).append(an)
+    for a in liste_artistes:
+        for f in a["oeuvres"]:
+            if f not in oeuvres and f not in annexes_de:
+                print("  artistes.json : fichier inconnu, ni dans l'essai ni dans une annexe", f)
 
     def rendre_artiste(a, siecle_id):
         lis, parties_f = [], []
         for f in a["oeuvres"]:
             im = images_par_fichier.get(f)
-            if not im or f not in oeuvres:
+            if not im or (f not in oeuvres and f not in annexes_de):
+                continue
+            liens_annexes = "".join(' · <a class="r-section" href="annexes.html#%s">Annexe : %s</a>' % (an["id"], html.escape(an["titre"].split(" : ")[0]))
+                                    for an in annexes_de.get(f, []))
+            if f not in oeuvres:  # œuvre reproduite seulement dans les annexes (les mythes grecs, par exemple)
+                lis.append('<li><img class="vignette" src="%s" alt="%s"%s data-legende="%s" loading="lazy"><span class="gal-texte"><em>%s</em>'
+                           ' <span class="bib-liens">%s</span></span></li>' % (
+                               src_img(f), html.escape(im.get("alt", "")), attr_dims(f), html.escape(im.get("caption", "")),
+                               html.escape(titre_oeuvre(im.get("caption", ""), alias_de(a))), liens_annexes[3:]))
                 continue
             ancre, lib = oeuvres[f][0], oeuvres[f][1]
             grand = oeuvres[f][2] if len(oeuvres[f]) > 2 else f
@@ -1254,9 +1288,7 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                        ' <span class="bib-liens">%s · <a class="r-section" href="index.html#%s">%s</a>%s</span></span></li>' % (
                            src_img(f), html.escape(im.get("alt", "")), attr_dims(f), html.escape(im.get("caption", "")),
                            ' data-grand="%s"' % src_img(grand) if grand != f else "",
-                           html.escape(titre_oeuvre(im.get("caption", ""), alias_de(a))), html.escape(lib), ancre, lien,
-                           "".join(' · <a class="r-section" href="annexes.html#%s">Annexe : %s</a>' % (an["id"], html.escape(an["titre"].split(" : ")[0]))
-                                   for an in annexes_de.get(f, []))))
+                           html.escape(titre_oeuvre(im.get("caption", ""), alias_de(a))), html.escape(lib), ancre, lien, liens_annexes))
         sl = slug_terme(a["nom"])
         return ('<details class="rep-carte fiche" data-item data-partie="%s" data-siecle="%s" id="%s" open>'
                 '<summary><h2>%s<span class="f-nom">%s</span>%s</h2></summary>'
@@ -1286,10 +1318,10 @@ def pages_outils(titre, infos, version, og_image, ids, lettres=(), annexes=(), l
                'aria-label="Chercher un artiste ou une œuvre"><select data-filtre-partie aria-label="Filtrer par partie">%s</select>'
                '<select data-filtre-siecle aria-label="Filtrer par période">%s</select>'
                '<button class="chip plier" type="button" id="plier-tout" aria-pressed="false">Tout replier</button></div>' % (opts, opts_siecles))
-    nb_oeuvres_art = sum(1 for a in liste_artistes for f in a["oeuvres"] if f in oeuvres)
+    nb_oeuvres_art = sum(1 for a in liste_artistes for f in a["oeuvres"] if f in oeuvres or f in annexes_de)
     page_outil("galerie.html", "Galerie",
-               "Les %d œuvres de %d artistes reproduites dans l'essai, du plus ancien au plus récent : pour chacune, une vignette, "
-               "son agrandissement au survol, et le lien vers l'endroit où elle figure." % (nb_oeuvres_art, len(datees_art)),
+               "Les %d œuvres de %d artistes reproduites dans l'essai et ses annexes, du plus ancien au plus récent : pour chacune, "
+               "une vignette, son agrandissement au survol, et le lien vers l'endroit où elle figure." % (nb_oeuvres_art, len(datees_art)),
                "Galerie des œuvres d'art reproduites dans l'essai, par artiste et par siècle.",
                filtres + "".join(h) + '<p id="aucun" hidden>Aucune œuvre ne correspond.</p>', titre, og_image, version)
 
@@ -1504,7 +1536,8 @@ def tout_construire(article=ARTICLE):
         r = construire(chemin, version=version, fr_parties=r_fr["parties"] if r_fr else None)
         pages_outils(r["titre"], r["infos"], version, r["og"], r["ids"], r["lettres"], r["annexes"], r["libelles"], r["sources"], r["credits"],
                      r["tableau"], r["portraits"], r["ecrivains"], r["artistes"], r["oeuvres"], r["textes"],
-                     lettres_fr=r_fr["lettres"] if r_fr else None, tableau_fr=r_fr["tableau"] if r_fr else None)
+                     lettres_fr=r_fr["lettres"] if r_fr else None, tableau_fr=r_fr["tableau"] if r_fr else None,
+                     textes_fr=r_fr["textes"] if r_fr else None)
         if code == "fr":
             r_fr = r
     charger_langue("fr")

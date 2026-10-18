@@ -21,12 +21,14 @@ En 312, Constantin ... (400 à 700 mots : chapeau de deux phrases, contexte, tro
 - 313 : ...
 ```
 
-- `titre` (obligatoire), `categorie` (obligatoire : `theories`, `bible`, `histoire`, `disciplines`, `courants`), `ordre` (facultatif, entier ; tri dans la catégorie, puis par titre), `sections` (ids de sections **ou de parties** d'`index.html`, séparés par ` ; ` ; c'est ce qui produit la ligne « Pour comprendre » et la ligne « Dans l'essai »), `motifs` (chaînes exactes à relier dans le texte, séparées par ` ; `, mêmes règles que le lexique : correspondance exacte, accents inclus, casse sensible si le motif commence par une majuscule ; un pluriel est un motif de plus), `references` (facultatif, séparées par ` ; `, rendues par `en_ligne`, donc `*italique*` accepté).
+- `titre` (obligatoire), `categorie` (obligatoire : `theories`, `bible`, `histoire`, `disciplines`, `courants`, `mythes`), `ordre` (facultatif, entier ; tri dans la catégorie, puis par titre), `sections` (ids de sections **ou de parties** d'`index.html`, séparés par ` ; ` ; c'est ce qui produit la ligne « Pour comprendre » et la ligne « Dans l'essai »), `motifs` (chaînes exactes à relier dans le texte, séparées par ` ; `, mêmes règles que le lexique : correspondance exacte, accents inclus, casse sensible si le motif commence par une majuscule ; un pluriel est un motif de plus), `references` (facultatif, séparées par ` ; `, rendues par `en_ligne`, donc `*italique*` accepté).
 - Corps : paragraphes, listes `- `, tableaux `|`, citations `>`, `**gras**`, `*italique*`, et des sous-titres `#### `. Pas de backticks ni de crochets longs : `masquer_statuts` les retire.
 - Liens vers l'essai, le lexique ou une autre annexe : inutiles à la main, le build les pose (lexique d'abord, puis motif le plus long) ; `[texte](#id)` reste possible pour une ancre interne à la page.
 
 - Champ facultatif `oeuvres` : images de `images/art/`, rendues en vignettes « Dans la Galerie » et en lien « Annexe » sous l'œuvre dans `galerie.html`.
-- Catégories : `bible` (ordre = rang × 10), `histoire`, `disciplines`, `courants`, `theories` (un article par auteur, deux pour les sections doubles).
+- Catégories : `bible` (ordre = rang × 10), `histoire`, `disciplines`, `courants`, `theories` (un article par auteur, deux pour les sections doubles), `mythes` (mythologie grecque, depuis le 18 octobre 2026 : quinze articles, ordre = rang × 10 ; les mythes que l'essai évoque et quelques autres qui éclairent la question).
+- Œuvres d'art propres aux annexes : une cible `F(<id de l'annexe>, "art", <slug>, <fichier Commons>, alt, légende, width=800, role="oeuvre")` dans `build/images.py`, récupérée seule par `python3 build/images.py images/art/<slug>` ; l'œuvre est ajoutée à son artiste dans `build/artistes.json` (et, pour un nouvel artiste, son QID dans `ARTISTES` puis `python3 build/images.py images/artistes/<slug>`), sa légende dans `i18n/source/donnees.json` et `i18n/<langue>/donnees-images.json`. La Galerie la montre avec un lien vers l'annexe.
+- Index des mythes cités : `build/mythes.json` (figure, motifs cherchés dans le texte français, annexe, noms traduits) ; une figure nouvelle dans l'essai s'y ajoute.
 
 ## Règles d'écriture des annexes
 

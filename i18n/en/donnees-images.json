@@ -1234,5 +1234,73 @@
  "images/ecrivains/paulo-coelho.jpg": {
   "caption": "Paulo Coelho",
   "alt": "Portrait of Paulo Coelho"
+ },
+ "images/artistes/jean-auguste-dominique-ingres.jpg": {
+  "caption": "Jean-Auguste-Dominique Ingres",
+  "alt": "Portrait of Jean-Auguste-Dominique Ingres"
+ },
+ "images/artistes/pierre-paul-rubens.jpg": {
+  "caption": "Peter Paul Rubens",
+  "alt": "Portrait of Peter Paul Rubens"
+ },
+ "images/artistes/william-adolphe-bouguereau.jpg": {
+  "caption": "William-Adolphe Bouguereau",
+  "alt": "Portrait of William-Adolphe Bouguereau"
+ },
+ "images/artistes/antonio-canova.jpg": {
+  "caption": "Antonio Canova",
+  "alt": "Portrait of Antonio Canova"
+ },
+ "images/artistes/nikiphoros-lytras.png": {
+  "caption": "Nikiphoros Lytras",
+  "alt": "Portrait of Nikiphoros Lytras"
+ },
+ "images/artistes/frederic-leighton.jpg": {
+  "caption": "Frederic Leighton",
+  "alt": "Portrait of Frederic Leighton"
+ },
+ "images/art/ingres-jupiter-thetis.jpg": {
+  "caption": "Jean-Auguste-Dominique Ingres, Jupiter and Thetis (1811, Aix-en-Provence, Musée Granet): Thetis entreats Zeus on behalf of her son Achilles, in the first book of the Iliad.",
+  "alt": "Zeus enthroned on the clouds, impassive, and the nymph Thetis kneeling and stroking his chin"
+ },
+ "images/art/exekias-dionysos-navire.jpg": {
+  "caption": "Exekias, Dionysus in His Ship, Attic black-figure cup (c. 530 BCE, Munich, Staatliche Antikensammlungen): the pirates who had captured the god are turned into dolphins.",
+  "alt": "Interior of a black-figure cup: Dionysus reclining in a ship whose mast is covered with vines, surrounded by dolphins"
+ },
+ "images/art/ingres-oedipe-sphinx.jpg": {
+  "caption": "Jean-Auguste-Dominique Ingres, Oedipus Explains the Riddle of the Sphinx (1808, Paris, Musée du Louvre).",
+  "alt": "Oedipus, naked, one foot on a rock, questions the Sphinx crouching in the shadow of a cave"
+ },
+ "images/art/rubens-promethee.jpg": {
+  "caption": "Peter Paul Rubens and Frans Snyders, Prometheus Bound (1611-1618, Philadelphia, Philadelphia Museum of Art).",
+  "alt": "Prometheus chained to a rock, thrown on his back, while an eagle tears at his side"
+ },
+ "images/art/pompei-sacrifice-iphigenie.jpg": {
+  "caption": "The Sacrifice of Iphigenia, fresco from the House of the Tragic Poet in Pompeii (1st century CE, Naples, Museo Archeologico Nazionale): Agamemnon turns his head away, Artemis sends the hind that will take the girl's place.",
+  "alt": "Fresco: Iphigenia, lifted by two men, is carried towards the altar; Agamemnon veils his face; Artemis appears in the air"
+ },
+ "images/art/bouguereau-remords-oreste.jpg": {
+  "caption": "William-Adolphe Bouguereau, The Remorse of Orestes (1862, Norfolk, Chrysler Museum of Art).",
+  "alt": "Orestes stops his ears, pursued by the Erinyes, who show him the body of his stabbed mother"
+ },
+ "images/art/leighton-retour-persephone.jpg": {
+  "caption": "Frederic Leighton, The Return of Persephone (1891, Leeds Art Gallery): Hermes brings Persephone back from the underworld to her mother Demeter.",
+  "alt": "Hermes lifts Persephone out of a cave towards Demeter, who holds out her arms to her in the light"
+ },
+ "images/art/zurbaran-hercule-lion.jpg": {
+  "caption": "Francisco de Zurbarán, Hercules and the Nemean Lion (1634, Madrid, Prado), from the series of the labours of Hercules painted for the Buen Retiro palace.",
+  "alt": "Heracles, seen from behind, strangles the Nemean lion in his arms"
+ },
+ "images/art/caravage-narcisse.jpg": {
+  "caption": "Caravaggio, Narcissus (c. 1597-1599, Rome, Galleria Nazionale d'Arte Antica).",
+  "alt": "A young man leaning over dark water contemplates his reflection, his hands resting on the bank"
+ },
+ "images/art/canova-psyche.jpg": {
+  "caption": "Antonio Canova, Psyche Revived by Cupid's Kiss (1787-1793, Paris, Musée du Louvre).",
+  "alt": "Marble sculpture: winged Eros bends over Psyche, lying outstretched, and lifts her in his arms"
+ },
+ "images/art/lytras-antigone-polynice.jpg": {
+  "caption": "Nikiphoros Lytras, Antigone before the Body of Polynices (1865, Athens, National Gallery).",
+  "alt": "Antigone, veiled in dark cloth, bends over the body of her brother Polynices lying on the ground"
  }
 }

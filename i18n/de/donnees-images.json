@@ -1234,5 +1234,73 @@
   "images/artistes/titien.jpg": {
     "caption": "Tizian",
     "alt": "Porträt von Tizian"
+  },
+  "images/artistes/jean-auguste-dominique-ingres.jpg": {
+    "caption": "Jean-Auguste-Dominique Ingres",
+    "alt": "Porträt von Jean-Auguste-Dominique Ingres"
+  },
+  "images/artistes/pierre-paul-rubens.jpg": {
+    "caption": "Peter Paul Rubens",
+    "alt": "Porträt von Peter Paul Rubens"
+  },
+  "images/artistes/william-adolphe-bouguereau.jpg": {
+    "caption": "William-Adolphe Bouguereau",
+    "alt": "Porträt von William-Adolphe Bouguereau"
+  },
+  "images/artistes/antonio-canova.jpg": {
+    "caption": "Antonio Canova",
+    "alt": "Porträt von Antonio Canova"
+  },
+  "images/artistes/nikiphoros-lytras.png": {
+    "caption": "Nikiphoros Lytras",
+    "alt": "Porträt von Nikiphoros Lytras"
+  },
+  "images/artistes/frederic-leighton.jpg": {
+    "caption": "Frederic Leighton",
+    "alt": "Porträt von Frederic Leighton"
+  },
+  "images/art/ingres-jupiter-thetis.jpg": {
+    "caption": "Jean-Auguste-Dominique Ingres, Jupiter und Thetis (1811, Aix-en-Provence, Musée Granet): Thetis fleht Zeus im ersten Gesang der Ilias für ihren Sohn Achill an.",
+    "alt": "Zeus thront unbewegt auf den Wolken, und die kniende Nymphe Thetis streichelt ihm das Kinn"
+  },
+  "images/art/exekias-dionysos-navire.jpg": {
+    "caption": "Exekias, Dionysos in seinem Schiff, attische schwarzfigurige Schale (um 530 v. Chr., München, Staatliche Antikensammlungen): Die Piraten, die den Gott gefangen hatten, werden in Delphine verwandelt.",
+    "alt": "Innenbild einer schwarzfigurigen Schale: Dionysos liegt in einem Schiff, dessen Mast sich mit Reben bedeckt, umgeben von Delphinen"
+  },
+  "images/art/ingres-oedipe-sphinx.jpg": {
+    "caption": "Jean-Auguste-Dominique Ingres, Ödipus erklärt das Rätsel der Sphinx (1808, Paris, Louvre).",
+    "alt": "Der nackte Ödipus, einen Fuß auf einem Felsen, befragt die Sphinx, die im Schatten einer Grotte kauert"
+  },
+  "images/art/rubens-promethee.jpg": {
+    "caption": "Peter Paul Rubens und Frans Snyders, Der gefesselte Prometheus (1611-1618, Philadelphia, Philadelphia Museum of Art).",
+    "alt": "Prometheus, kopfüber an einen Felsen gekettet, während ein Adler ihm die Seite aufreißt"
+  },
+  "images/art/pompei-sacrifice-iphigenie.jpg": {
+    "caption": "Die Opferung Iphigenies, Fresko aus dem Haus des Tragischen Dichters in Pompeji (1. Jahrhundert n. Chr., Neapel, Archäologisches Nationalmuseum): Agamemnon wendet den Kopf ab, Artemis sendet die Hirschkuh, die das Mädchen ersetzen wird.",
+    "alt": "Fresko: Iphigenie, von zwei Männern hochgehoben, wird zum Altar getragen; Agamemnon verhüllt sein Gesicht; Artemis erscheint in den Lüften"
+  },
+  "images/art/bouguereau-remords-oreste.jpg": {
+    "caption": "William-Adolphe Bouguereau, Die Reue des Orest (1862, Norfolk, Chrysler Museum of Art).",
+    "alt": "Orest hält sich die Ohren zu, verfolgt von den Erinnyen, die ihm den Leichnam seiner erstochenen Mutter zeigen"
+  },
+  "images/art/leighton-retour-persephone.jpg": {
+    "caption": "Frederic Leighton, Die Rückkehr der Persephone (1891, Leeds Art Gallery): Hermes bringt Persephone aus der Unterwelt zu ihrer Mutter Demeter zurück.",
+    "alt": "Hermes hebt Persephone aus einer Grotte zu Demeter empor, die ihr im Licht die Arme entgegenstreckt"
+  },
+  "images/art/zurbaran-hercule-lion.jpg": {
+    "caption": "Francisco de Zurbarán, Herkules und der Nemeische Löwe (1634, Madrid, Prado), aus der Serie der Arbeiten des Herkules, gemalt für den Palast Buen Retiro.",
+    "alt": "Herakles, von hinten gesehen, erwürgt den Nemeischen Löwen in seinen Armen"
+  },
+  "images/art/caravage-narcisse.jpg": {
+    "caption": "Caravaggio, Narziss (um 1597-1599, Rom, Galleria Nazionale d'Arte Antica).",
+    "alt": "Ein junger Mann, über das dunkle Wasser gebeugt, betrachtet sein Spiegelbild, die Hände auf das Ufer gestützt"
+  },
+  "images/art/canova-psyche.jpg": {
+    "caption": "Antonio Canova, Amor und Psyche (Psyche, durch den Kuss Amors wiederbelebt) (1787-1793, Paris, Louvre).",
+    "alt": "Marmorskulptur: Der geflügelte Eros beugt sich über die liegende Psyche und hebt sie in seinen Armen empor"
+  },
+  "images/art/lytras-antigone-polynice.jpg": {
+    "caption": "Nikiphoros Lytras, Antigone vor dem Leichnam des Polyneikes (1865, Athen, Nationalgalerie).",
+    "alt": "Antigone, dunkel verschleiert, beugt sich über den auf dem Boden liegenden Leichnam ihres Bruders Polyneikes"
   }
 }

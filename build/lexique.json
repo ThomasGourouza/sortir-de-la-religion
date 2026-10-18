@@ -1386,5 +1386,46 @@
   ],
   "section": "maimonide",
   "definition": "L'enseignement ou la Loi : au sens étroit, les cinq premiers livres de la Bible, de la Genèse au Deutéronome, que les Grecs ont appelés Pentateuque et que la tradition attribue à Moïse ; au sens large, l'ensemble de l'enseignement révélé, écrit et oral. Le judaïsme rabbinique tient que la Torah orale, mise par écrit dans la Mishna puis le Talmud, a été donnée au Sinaï avec la Torah écrite. Elle contient récits et commandements, six cent treize selon le décompte rabbinique, dont les règles du sabbat, de la pureté et des sacrifices. La traduction grecque par nomos, loi, a orienté la lecture chrétienne, chez Paul surtout, vers une opposition de la Loi et de la grâce que la recherche récente nuance. L'essai suit chez Maïmonide, auteur de la Mishneh Torah, l'effort pour donner une raison aux commandements, et chez Levinas la formule aimer la Thora plus que Dieu. Voir aussi Alliance."
+ },
+ {
+  "terme": "Mythe",
+  "motifs": [
+   "mythe",
+   "mythes"
+  ],
+  "section": "aristote",
+  "langue": "grec *muthos*",
+  "definition": "Le récit traditionnel qui raconte l'origine du monde, des dieux, des rites ou des cités, transmis sans auteur assignable et réinventé à chaque reprise. En grec, *muthos* désigne d'abord la parole et le récit ; il ne s'oppose au *logos*, le discours argumenté, qu'à partir des philosophes et des historiens, qui rangent sous ce nom ce qu'ils veulent tenir à distance. Xénophane reproche aux poètes d'avoir prêté aux dieux les vices des hommes ; Platon chasse Homère de sa cité mais invente ses propres mythes ; Aristote distingue dans la tradition un noyau vrai et des ajouts mythiques destinés à persuader la multitude, première lecture politique du mythe, que l'essai suit d'Averroès au Grand Inquisiteur. Au XXe siècle, Bultmann veut démythologiser le Nouveau Testament, Lévi-Strauss lit les mythes comme des systèmes d'oppositions, Girard comme le récit du lynchage vu par les lyncheurs, et Blumenberg décrit le travail sur le mythe comme une manière de tenir à distance l'absolutisme de la réalité. Voir aussi Allégorie, Démythologisation, Thèse mythiste."
+ },
+ {
+  "terme": "Impiété",
+  "motifs": [
+   "impiété",
+   "impiétés",
+   "asebeia"
+  ],
+  "section": "platon",
+  "langue": "grec *asébeia*",
+  "definition": "Dans la cité grecque, l'offense faite aux dieux de la communauté : profaner un sanctuaire, parodier des mystères, mutiler des statues, enseigner des doctrines qui détournent du culte. Comme la religion grecque n'a ni dogme ni Église, l'impiété n'est pas une hérésie, une erreur de croyance, mais une atteinte à l'ordre civique, jugée par les tribunaux ordinaires. Anaxagore dut quitter Athènes, Protagoras aurait été poursuivi, et Socrate fut condamné à mort en 399 avant notre ère pour ne pas reconnaître les dieux de la cité et pour corrompre la jeunesse. Dans le livre X des *Lois*, Platon en fait une doctrine : trois impiétés, nier les dieux, les croire indifférents, croire qu'on peut les acheter par des sacrifices, et un châtiment gradué, de la maison de correction à la mort pour le récidiviste. L'essai y voit le cas pur de son critère, la première loi qui fait de la critique un crime au nom d'un absolu. Les chrétiens seront à leur tour accusés d'athéisme pour avoir refusé les sacrifices. Voir aussi Critère du sacrifice."
+ },
+ {
+  "terme": "Cultes à mystères",
+  "motifs": [
+   "cultes à mystères",
+   "mystères d'Éleusis",
+   "mystères"
+  ],
+  "section": "plotin",
+  "definition": "Les rites d'initiation secrets du monde grec et romain, ouverts aux individus qui les choisissaient, à côté des cultes publics de la cité : les mystères d'Éleusis, consacrés à Déméter et à Perséphone, l'orphisme, puis à l'époque hellénistique et romaine les cultes de Cybèle et d'Attis, d'Isis et d'Osiris, de Mithra. L'initié y nouait une relation personnelle avec une divinité et recevait souvent l'espoir d'un sort meilleur après la mort ; le secret en a été si bien gardé que l'on connaît mal ce qui y était montré. L'école de l'histoire des religions, avec Bousset, a expliqué par ces cultes une part du christianisme paulinien, le titre de Seigneur, le baptême et le repas comme initiations, et les mythistes y ont vu le modèle d'un Christ dieu mourant et ressuscitant ; les historiens ont depuis fortement nuancé ces parallèles. L'essai les rencontre chez Plotin, qui compare l'union avec l'Un à un mystère indivulgable, et dans la section sur l'existence de Jésus. Voir aussi Thèse mythiste."
+ },
+ {
+  "terme": "Tragédie grecque",
+  "motifs": [
+   "tragédie grecque",
+   "tragédie de Sophocle",
+   "tragiques grecs"
+  ],
+  "section": "girard",
+  "definition": "Le genre théâtral né à Athènes au VIe siècle avant notre ère dans le culte de Dionysos, joué lors des fêtes civiques des Dionysies devant toute la cité. Ses trois grands auteurs, Eschyle, Sophocle et Euripide, reprennent les mythes héroïques, les Atrides, Œdipe, Antigone, les Bacchantes, pour mettre en scène des conflits sans issue entre les dieux, la cité, la famille et l'individu. Aristote la définit par l'imitation d'une action qui, par la pitié et la crainte, opère la purification de ces émotions. Hegel y voit la collision de deux droits également légitimes, Nietzsche l'union de l'apollinien et du dionysiaque que Socrate aurait tuée, Vernant le moment où la cité interroge ses propres valeurs. Pour Girard, la tragédie est à demi lucide : elle montre la symétrie des adversaires que le mythe cache, et laisse parfois entendre la plainte de la victime, mais elle finit par ratifier l'expulsion. L'essai la rencontre dans la section Girard et dans les encadrés consacrés à Weil, à Sartre et aux Bacchantes. Voir aussi Mythe, Mécanisme victimaire."
  }
 ]

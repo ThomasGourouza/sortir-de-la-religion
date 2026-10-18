@@ -280,7 +280,14 @@
   "Émile Zola": "Émile Zola",
   "Épicure": "Epicurus",
   "Œuvres anonymes et monuments": "Anonymous works and monuments",
-  "Paulo Coelho": "Paulo Coelho"
+  "Paulo Coelho": "Paulo Coelho",
+  "Exékias": "Exekias",
+  "Pierre Paul Rubens": "Peter Paul Rubens",
+  "Antonio Canova": "Antonio Canova",
+  "Jean-Auguste-Dominique Ingres": "Jean-Auguste-Dominique Ingres",
+  "William-Adolphe Bouguereau": "William-Adolphe Bouguereau",
+  "Frederic Leighton": "Frederic Leighton",
+  "Nikiphoros Lytras": "Nikiphoros Lytras"
  },
  "dates": {
   "1048-1131": "1048-1131",
@@ -523,7 +530,14 @@
   "v. 234-v. 305": "c. 234-c. 305",
   "v. 480-v. 406 av. J.-C.": "c. 480-c. 406 BCE",
   "v. 98-v. 55 av. J.-C.": "c. 98-c. 55 BCE",
-  "né en 1947": "b. 1947"
+  "né en 1947": "b. 1947",
+  "VIe siècle av. J.-C.": "6th century BCE",
+  "1577-1640": "1577-1640",
+  "1757-1822": "1757-1822",
+  "1780-1867": "1780-1867",
+  "1825-1905": "1825-1905",
+  "1830-1896": "1830-1896",
+  "1832-1904": "1832-1904"
  },
  "reponses": [
   "The seminal Logos: Plato supposedly borrowed from Moses, and Socrates was a Christian before Christ.",

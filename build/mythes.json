@@ -1,0 +1,22 @@
+[
+ {"figure": "Achille", "motifs": ["Achille", "Akhilleus"], "annexe": "troie-l-iliade-et-iphigenie", "noms": {"en": "Achilles", "ru": "Ахилл", "de": "Achill"}},
+ {"figure": "Antigone", "motifs": ["Antigone"], "annexe": "antigone", "noms": {"en": "Antigone", "ru": "Антигона", "de": "Antigone"}},
+ {"figure": "Clytemnestre", "motifs": ["Clytemnestre"], "annexe": "les-atrides-oreste-et-les-erinyes", "noms": {"en": "Clytemnestra", "ru": "Клитемнестра", "de": "Klytämnestra"}},
+ {"figure": "Créon", "motifs": ["Créon"], "annexe": "antigone", "noms": {"en": "Creon", "ru": "Креонт", "de": "Kreon"}},
+ {"figure": "Cybèle", "motifs": ["Cybèle"], "annexe": "mysteres-et-orphisme", "noms": {"en": "Cybele", "ru": "Кибела", "de": "Kybele"}},
+ {"figure": "Dionysos", "motifs": ["Dionysos", "dionysiaque"], "annexe": "dionysos-et-les-bacchantes", "noms": {"en": "Dionysus", "ru": "Дионис", "de": "Dionysos"}},
+ {"figure": "Égisthe", "motifs": ["Égisthe"], "annexe": "les-atrides-oreste-et-les-erinyes", "noms": {"en": "Aegisthus", "ru": "Эгисф", "de": "Ägisth"}},
+ {"figure": "Érinyes", "motifs": ["Érinyes"], "annexe": "les-atrides-oreste-et-les-erinyes", "noms": {"en": "Erinyes", "ru": "Эринии", "de": "Erinnyen"}},
+ {"figure": "Hercule (Héraclès)", "motifs": ["Hercule", "Héraclès"], "annexe": "heracles", "noms": {"en": "Hercules (Heracles)", "ru": "Геркулес (Геракл)", "de": "Herkules (Herakles)"}},
+ {"figure": "Hermès", "motifs": ["Hermès"], "annexe": "troie-l-iliade-et-iphigenie", "noms": {"en": "Hermes", "ru": "Гермес", "de": "Hermes"}},
+ {"figure": "Iphigénie", "motifs": ["Iphigénie"], "annexe": "troie-l-iliade-et-iphigenie", "noms": {"en": "Iphigenia", "ru": "Ифигения", "de": "Iphigenie"}},
+ {"figure": "Œdipe", "motifs": ["Œdipe"], "annexe": "oedipe", "noms": {"en": "Oedipus", "ru": "Эдип", "de": "Ödipus"}},
+ {"figure": "Olympe", "motifs": ["Olympe", "Olympiens"], "annexe": "mythes-grecs-sources-et-dieux", "noms": {"en": "Olympus", "ru": "Олимп", "de": "Olymp"}},
+ {"figure": "Oreste", "motifs": ["Oreste"], "annexe": "les-atrides-oreste-et-les-erinyes", "noms": {"en": "Orestes", "ru": "Орест", "de": "Orestes"}},
+ {"figure": "Penthée", "motifs": ["Penthée"], "annexe": "dionysos-et-les-bacchantes", "noms": {"en": "Pentheus", "ru": "Пенфей", "de": "Pentheus"}},
+ {"figure": "Priam", "motifs": ["Priam"], "annexe": "troie-l-iliade-et-iphigenie", "noms": {"en": "Priam", "ru": "Приам", "de": "Priamos"}},
+ {"figure": "Prométhée", "motifs": ["Prométhée"], "annexe": "promethee-et-pandore", "noms": {"en": "Prometheus", "ru": "Прометей", "de": "Prometheus"}},
+ {"figure": "Sisyphe", "motifs": ["Sisyphe"], "annexe": "sisyphe-et-les-enfers", "noms": {"en": "Sisyphus", "ru": "Сизиф", "de": "Sisyphos"}},
+ {"figure": "Tirésias", "motifs": ["Tirésias"], "annexe": "oedipe", "noms": {"en": "Tiresias", "ru": "Тиресий", "de": "Teiresias"}},
+ {"figure": "Zeus (Jupiter)", "motifs": ["Zeus", "Jupiter"], "annexe": "mythes-grecs-sources-et-dieux", "noms": {"en": "Zeus (Jupiter)", "ru": "Зевс (Юпитер)", "de": "Zeus (Jupiter)"}}
+]

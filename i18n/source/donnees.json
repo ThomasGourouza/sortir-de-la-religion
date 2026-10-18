@@ -280,7 +280,14 @@
   "les nouveaux athées",
   "Émile Zola",
   "Épicure",
-  "Œuvres anonymes et monuments"
+  "Œuvres anonymes et monuments",
+  "Exékias",
+  "Pierre Paul Rubens",
+  "Antonio Canova",
+  "Jean-Auguste-Dominique Ingres",
+  "William-Adolphe Bouguereau",
+  "Frederic Leighton",
+  "Nikiphoros Lytras"
  ],
  "dates": [
   "1048-1131",
@@ -523,7 +530,14 @@
   "v. 20 av. J.-C.-v. 45/50 ap. J.-C.",
   "v. 234-v. 305",
   "v. 480-v. 406 av. J.-C.",
-  "v. 98-v. 55 av. J.-C."
+  "v. 98-v. 55 av. J.-C.",
+  "VIe siècle av. J.-C.",
+  "1577-1640",
+  "1757-1822",
+  "1780-1867",
+  "1825-1905",
+  "1830-1896",
+  "1832-1904"
  ],
  "reponses": [
   "Le Logos semé : Platon aurait emprunté à Moïse, et Socrate fut chrétien avant le Christ.",
@@ -1837,6 +1851,74 @@
   "images/artistes/titien.jpg": {
    "caption": "Titien",
    "alt": "Portrait de Titien"
+  },
+  "images/artistes/jean-auguste-dominique-ingres.jpg": {
+   "caption": "Jean-Auguste-Dominique Ingres",
+   "alt": "Portrait de Jean-Auguste-Dominique Ingres"
+  },
+  "images/artistes/pierre-paul-rubens.jpg": {
+   "caption": "Pierre Paul Rubens",
+   "alt": "Portrait de Pierre Paul Rubens"
+  },
+  "images/artistes/william-adolphe-bouguereau.jpg": {
+   "caption": "William-Adolphe Bouguereau",
+   "alt": "Portrait de William-Adolphe Bouguereau"
+  },
+  "images/artistes/antonio-canova.jpg": {
+   "caption": "Antonio Canova",
+   "alt": "Portrait de Antonio Canova"
+  },
+  "images/artistes/nikiphoros-lytras.png": {
+   "caption": "Nikiphoros Lytras",
+   "alt": "Portrait de Nikiphoros Lytras"
+  },
+  "images/artistes/frederic-leighton.jpg": {
+   "caption": "Frederic Leighton",
+   "alt": "Portrait de Frederic Leighton"
+  },
+  "images/art/ingres-jupiter-thetis.jpg": {
+   "caption": "Jean-Auguste-Dominique Ingres, Jupiter et Thétis (1811, Aix-en-Provence, musée Granet) : Thétis supplie Zeus en faveur de son fils Achille, au premier chant de l'Iliade.",
+   "alt": "Zeus trônant sur les nuées, impassible, et la nymphe Thétis agenouillée qui lui caresse le menton"
+  },
+  "images/art/exekias-dionysos-navire.jpg": {
+   "caption": "Exékias, Dionysos dans son navire, coupe attique à figures noires (v. 530 av. J.-C., Munich, Staatliche Antikensammlungen) : les pirates qui avaient capturé le dieu sont changés en dauphins.",
+   "alt": "Intérieur d'une coupe à figures noires : Dionysos couché dans un navire dont le mât se couvre de vigne, entouré de dauphins"
+  },
+  "images/art/ingres-oedipe-sphinx.jpg": {
+   "caption": "Jean-Auguste-Dominique Ingres, Œdipe explique l'énigme du Sphinx (1808, Paris, musée du Louvre).",
+   "alt": "Œdipe nu, un pied sur un rocher, interroge le Sphinx tapi dans l'ombre d'une grotte"
+  },
+  "images/art/rubens-promethee.jpg": {
+   "caption": "Pierre Paul Rubens et Frans Snyders, Prométhée enchaîné (1611-1618, Philadelphie, Philadelphia Museum of Art).",
+   "alt": "Prométhée enchaîné à un rocher, renversé, tandis qu'un aigle lui déchire le flanc"
+  },
+  "images/art/pompei-sacrifice-iphigenie.jpg": {
+   "caption": "Le Sacrifice d'Iphigénie, fresque de la maison du Poète tragique à Pompéi (Ier siècle ap. J.-C., Naples, musée archéologique national) : Agamemnon détourne la tête, Artémis envoie la biche qui remplacera la jeune fille.",
+   "alt": "Fresque : Iphigénie, soulevée par deux hommes, est portée vers l'autel ; Agamemnon se voile le visage ; Artémis apparaît dans les airs"
+  },
+  "images/art/bouguereau-remords-oreste.jpg": {
+   "caption": "William-Adolphe Bouguereau, Les Remords d'Oreste (1862, Norfolk, Chrysler Museum of Art).",
+   "alt": "Oreste se bouche les oreilles, poursuivi par les Érinyes qui lui montrent le corps de sa mère poignardée"
+  },
+  "images/art/leighton-retour-persephone.jpg": {
+   "caption": "Frederic Leighton, Le Retour de Perséphone (1891, Leeds Art Gallery) : Hermès ramène Perséphone des Enfers vers sa mère Déméter.",
+   "alt": "Hermès soulève Perséphone hors d'une grotte vers Déméter qui lui tend les bras dans la lumière"
+  },
+  "images/art/zurbaran-hercule-lion.jpg": {
+   "caption": "Francisco de Zurbarán, Hercule et le lion de Némée (1634, Madrid, Prado), de la série des travaux d'Hercule peinte pour le palais du Buen Retiro.",
+   "alt": "Héraclès, de dos, étouffe le lion de Némée dans ses bras"
+  },
+  "images/art/caravage-narcisse.jpg": {
+   "caption": "Le Caravage, Narcisse (v. 1597-1599, Rome, Galleria Nazionale d'Arte Antica).",
+   "alt": "Un jeune homme penché sur l'eau sombre contemple son reflet, les mains posées sur la rive"
+  },
+  "images/art/canova-psyche.jpg": {
+   "caption": "Antonio Canova, Psyché ranimée par le baiser de l'Amour (1787-1793, Paris, musée du Louvre).",
+   "alt": "Sculpture de marbre : Éros ailé se penche sur Psyché étendue et la soulève dans ses bras"
+  },
+  "images/art/lytras-antigone-polynice.jpg": {
+   "caption": "Nikiphoros Lytras, Antigone devant le corps de Polynice (1865, Athènes, Pinacothèque nationale).",
+   "alt": "Antigone, voilée de sombre, se penche sur le corps de son frère Polynice étendu sur le sol"
   }
  }
 }
