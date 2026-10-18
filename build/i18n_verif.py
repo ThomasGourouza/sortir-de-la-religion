@@ -40,16 +40,21 @@ def nombres(texte):
     return collections.Counter(re.findall(r"(?<![\d.,])\d{3,4}(?![\d])", texte))
 
 
-def residus_fr(texte):
+# mots courts communs au français et à une langue cible, qui ne trahissent pas un résidu français
+COMMUNS = {"es": {"la", "le", "les", "que", "se", "son", "con"}}
+
+
+def residus_fr(texte, langue=None):
     sans = CITATION.sub(" ", texte)
     sans = re.sub(r"\*\*[^*]+\*\*", " ", sans)  # le gras d'abord, sinon il fausse l'appariement des italiques
     sans = re.sub(r"“[^”]*”|„[^“]*“|\*[^*]+\*", " ", sans)
-    mots = re.findall(r"[a-zàâçéèêëîïôûùüÿœ']+", sans.lower())
+    mots = re.findall(r"[a-zàâçéèêëîïôûùüÿœáíóúñ']+", sans.lower())  # lettres espagnoles incluses, sinon « está » donne « est »
     tous = re.findall(r"\w+", sans)  # tous les mots, tous alphabets : le rapport vaut pour le cyrillique aussi
-    return sum(1 for m in mots if m in MOTS_FR and m not in ("on", "plus", "ne", "se", "il", "pas")), len(tous)
+    ignores = {"on", "plus", "ne", "se", "il", "pas"} | COMMUNS.get(langue, set())
+    return sum(1 for m in mots if m in MOTS_FR and m not in ignores), len(tous)
 
 
-def verif_morceau(src, tr):
+def verif_morceau(src, tr, langue=None):
     s, t = open(src, encoding="utf-8").read(), open(tr, encoding="utf-8").read()
     pb = []
     if titres(s) != titres(t):
@@ -71,7 +76,7 @@ def verif_morceau(src, tr):
         pb.append("nombres perdus : %s" % ", ".join(sorted(perdus)[:12]))
     if re.search("[–—]", t):
         pb.append("tiret cadratin ou demi-cadratin")
-    fr, tot = residus_fr(t)
+    fr, tot = residus_fr(t, langue)
     if tot and fr / tot > 0.02 and not os.path.basename(tr).startswith("15-sources"):  # la bibliographie garde ses titres français
         pb.append("mots français hors citations : %d sur %d" % (fr, tot))
     return pb, len(t.split()), len(s.split())
@@ -86,7 +91,7 @@ def main(langue="en"):
         tr = os.path.join(racine, "i18n", langue, "article", nom)
         if not os.path.exists(tr):
             print("  MANQUANT", nom); total += 1; continue
-        pb, mt, ms = verif_morceau(src, tr)
+        pb, mt, ms = verif_morceau(src, tr, langue)
         ratio = mt / ms if ms else 0
         bornes = {"ru": (0.65, 1.2), "de": (0.7, 1.2)}.get(langue, (0.8, 1.25))  # le russe, sans articles, compte moins de mots
         if not bornes[0] <= ratio <= bornes[1]:

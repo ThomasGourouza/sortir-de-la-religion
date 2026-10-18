@@ -1,0 +1,1306 @@
+{
+ "images/art/couverture.jpg": {
+  "caption": "Rembrandt, Filósofo en meditación (1632, París, Museo del Louvre).",
+  "alt": "Un anciano sentado junto a una ventana, al lado de una escalera de caracol sumida en la sombra"
+ },
+ "images/auteurs/epicure.jpg": {
+  "caption": "Epicuro, retrato en mármol, copia romana de un original griego (Roma, Museo Nazionale Romano, Palazzo Massimo).",
+  "alt": "Retrato de Epicuro"
+ },
+ "images/auteurs/lucrece.png": {
+  "caption": "Lucrecio: no se conoce ningún retrato auténtico; esta efigie es convencional.",
+  "alt": "Retrato de Lucrecio"
+ },
+ "images/auteurs/eckhart.jpg": {
+  "caption": "Figura tradicionalmente identificada como el Maestro Eckhart, detalle del fresco de Andrea di Bonaiuto, capilla de los Españoles, Santa Maria Novella, Florencia (h. 1365-1367); no existe ningún retrato auténtico.",
+  "alt": "Retrato de Maestro Eckhart"
+ },
+ "images/auteurs/pascal.jpg": {
+  "caption": "Blaise Pascal, grabado de Gérard Edelinck.",
+  "alt": "Retrato de Blaise Pascal"
+ },
+ "images/auteurs/spinoza.jpg": {
+  "caption": "Baruch Spinoza",
+  "alt": "Retrato de Baruch Spinoza"
+ },
+ "images/auteurs/bayle.jpg": {
+  "caption": "Pierre Bayle",
+  "alt": "Retrato de Pierre Bayle"
+ },
+ "images/auteurs/hume.jpg": {
+  "caption": "David Hume, retrato de Allan Ramsay.",
+  "alt": "Retrato de David Hume"
+ },
+ "images/auteurs/voltaire.jpg": {
+  "caption": "Voltaire, retrato de Nicolas de Largillière (París, Museo Carnavalet).",
+  "alt": "Retrato de Voltaire"
+ },
+ "images/auteurs/holbach.jpg": {
+  "caption": "Paul Henri Thiry d'Holbach, retrato de Alexander Roslin.",
+  "alt": "Retrato del barón d'Holbach"
+ },
+ "images/auteurs/kant.jpg": {
+  "caption": "Immanuel Kant",
+  "alt": "Retrato de Immanuel Kant"
+ },
+ "images/auteurs/schleiermacher.jpg": {
+  "caption": "Friedrich Schleiermacher",
+  "alt": "Retrato de Friedrich Schleiermacher"
+ },
+ "images/auteurs/hegel.jpg": {
+  "caption": "Hegel, retrato de Jakob Schlesinger (1831).",
+  "alt": "Retrato de Hegel"
+ },
+ "images/auteurs/strauss.jpg": {
+  "caption": "David Friedrich Strauss",
+  "alt": "Retrato de David Friedrich Strauss"
+ },
+ "images/auteurs/bauer.jpg": {
+  "caption": "Bruno Bauer",
+  "alt": "Retrato de Bruno Bauer"
+ },
+ "images/auteurs/renan.jpg": {
+  "caption": "Ernest Renan",
+  "alt": "Retrato de Ernest Renan"
+ },
+ "images/auteurs/feuerbach.jpg": {
+  "caption": "Ludwig Feuerbach",
+  "alt": "Retrato de Ludwig Feuerbach"
+ },
+ "images/auteurs/stirner.jpg": {
+  "caption": "Max Stirner, detalle del dibujo de Engels que representa a los Freien (1842); de él solo se conocen bocetos de Engels.",
+  "alt": "Retrato de Max Stirner"
+ },
+ "images/auteurs/marx.jpg": {
+  "caption": "Karl Marx",
+  "alt": "Retrato de Karl Marx"
+ },
+ "images/auteurs/engels.jpg": {
+  "caption": "Friedrich Engels",
+  "alt": "Retrato de Friedrich Engels"
+ },
+ "images/auteurs/kierkegaard.jpg": {
+  "caption": "Søren Kierkegaard",
+  "alt": "Retrato de Søren Kierkegaard"
+ },
+ "images/auteurs/comte.jpg": {
+  "caption": "Auguste Comte, retrato conservado en la Maison d'Auguste Comte, París.",
+  "alt": "Retrato de Auguste Comte"
+ },
+ "images/auteurs/schopenhauer.jpg": {
+  "caption": "Arthur Schopenhauer, fotografía de J. Schäfer (1859).",
+  "alt": "Retrato de Arthur Schopenhauer"
+ },
+ "images/auteurs/dostoievski.jpg": {
+  "caption": "Dostoievski, retrato de Vasili Perov (1872, Moscú, Galería Tretiakov).",
+  "alt": "Retrato de Fiódor Dostoievski"
+ },
+ "images/auteurs/nietzsche.jpg": {
+  "caption": "Friedrich Nietzsche",
+  "alt": "Retrato de Friedrich Nietzsche"
+ },
+ "images/auteurs/durkheim.jpg": {
+  "caption": "Émile Durkheim",
+  "alt": "Retrato de Émile Durkheim"
+ },
+ "images/auteurs/weber.png": {
+  "caption": "Max Weber en 1918.",
+  "alt": "Retrato de Max Weber"
+ },
+ "images/auteurs/william-james.jpg": {
+  "caption": "William James, fotografía de Alice Boughton (h. 1907): «The Will to Believe» (1896) responde directamente a Clifford.",
+  "alt": "Retrato de William James"
+ },
+ "images/auteurs/otto.jpg": {
+  "caption": "Rudolf Otto",
+  "alt": "Retrato de Rudolf Otto"
+ },
+ "images/auteurs/freud.jpg": {
+  "caption": "Sigmund Freud, fotografía de Max Halberstadt.",
+  "alt": "Retrato de Sigmund Freud"
+ },
+ "images/auteurs/bergson.jpg": {
+  "caption": "Henri Bergson",
+  "alt": "Retrato de Henri Bergson"
+ },
+ "images/auteurs/heidegger.jpg": {
+  "caption": "Martin Heidegger en 1960.",
+  "alt": "Retrato de Martin Heidegger"
+ },
+ "images/auteurs/barth.png": {
+  "caption": "Karl Barth",
+  "alt": "Retrato de Karl Barth"
+ },
+ "images/auteurs/bonhoeffer.jpg": {
+  "caption": "Dietrich Bonhoeffer",
+  "alt": "Retrato de Dietrich Bonhoeffer"
+ },
+ "images/auteurs/simone-weil.jpg": {
+  "caption": "Simone Weil",
+  "alt": "Retrato de Simone Weil"
+ },
+ "images/auteurs/bataille.jpg": {
+  "caption": "Georges Bataille hacia 1943.",
+  "alt": "Retrato de Georges Bataille"
+ },
+ "images/auteurs/sartre.jpg": {
+  "caption": "Jean-Paul Sartre en 1967.",
+  "alt": "Retrato de Jean-Paul Sartre"
+ },
+ "images/auteurs/camus.jpg": {
+  "caption": "Albert Camus",
+  "alt": "Retrato de Albert Camus"
+ },
+ "images/auteurs/marion.png": {
+  "caption": "Jean-Luc Marion",
+  "alt": "Retrato de Jean-Luc Marion"
+ },
+ "images/auteurs/schmitt.jpg": {
+  "caption": "Carl Schmitt en 1904, detalle de una fotografía de clase.",
+  "alt": "Retrato de Carl Schmitt"
+ },
+ "images/auteurs/gauchet.jpg": {
+  "caption": "Marcel Gauchet en 2017.",
+  "alt": "Retrato de Marcel Gauchet"
+ },
+ "images/auteurs/taylor.jpg": {
+  "caption": "Charles Taylor en 2019.",
+  "alt": "Retrato de Charles Taylor"
+ },
+ "images/auteurs/habermas.jpg": {
+  "caption": "Jürgen Habermas",
+  "alt": "Retrato de Jürgen Habermas"
+ },
+ "images/auteurs/foucault.jpg": {
+  "caption": "Michel Foucault en 1974.",
+  "alt": "Retrato de Michel Foucault"
+ },
+ "images/auteurs/comte-sponville.jpg": {
+  "caption": "André Comte-Sponville en el Salon du livre de París, 2014.",
+  "alt": "Retrato de André Comte-Sponville"
+ },
+ "images/auteurs/ferry.jpg": {
+  "caption": "Luc Ferry en el Salon du livre de París, 2017.",
+  "alt": "Retrato de Luc Ferry"
+ },
+ "images/auteurs/bidar.jpg": {
+  "caption": "Abdennour Bidar",
+  "alt": "Retrato de Abdennour Bidar"
+ },
+ "images/auteurs/onfray.jpg": {
+  "caption": "Michel Onfray en 2012.",
+  "alt": "Retrato de Michel Onfray"
+ },
+ "images/oeuvres/pascal-memorial.jpg": {
+  "caption": "El Memorial de Pascal (noche del 23 de noviembre de 1654), facsímil del autógrafo en la edición Brunschvicg: la hoja del «Dieu d'Abraham, Dieu d'Isaac, Dieu de Jacob, non des philosophes et des savants» (Dios de Abraham, Dios de Isaac, Dios de Jacob, no de los filósofos y de los sabios).",
+  "alt": "Hoja manuscrita cubierta de una escritura apretada, con una cruz en la parte superior"
+ },
+ "images/art/rembrandt-sacrifice-isaac.jpg": {
+  "caption": "Rembrandt, El sacrificio de Isaac (1635, San Petersburgo, Ermitage): el Dios de Abraham y de Isaac, que el Memorial opone al Dios de los filósofos.",
+  "alt": "Un ángel detiene el brazo de Abraham en el momento en que va a degollar a Isaac; el cuchillo cae"
+ },
+ "images/art/michel-ange-isaie.jpg": {
+  "caption": "Miguel Ángel, el profeta Isaías, bóveda de la Capilla Sixtina (1508-1512): Isaías es el profeta del Dios oculto, Deus absconditus (Is 45, 15), en el centro de los Pensamientos.",
+  "alt": "El profeta Isaías sentado, con un libro cerrado bajo la mano, volviéndose hacia un niño"
+ },
+ "images/oeuvres/spinoza-tractatus-1670.jpg": {
+  "caption": "Portada del Tractatus theologico-politicus (1670), publicado sin nombre de autor y con un falso pie de imprenta en Hamburgo: el libro en que Spinoza somete la Escritura a la crítica histórica.",
+  "alt": "Portada impresa en latín del Tractatus theologico-politicus"
+ },
+ "images/oeuvres/bayle-pensees-comete.jpg": {
+  "caption": "Portada de los Pensées diverses écrites à un docteur de Sorbonne à l'occasion de la comète (sexta edición, 1749): el libro de la hipótesis de una sociedad de ateos, nacido del cometa de diciembre de 1680.",
+  "alt": "Portada de los Pensées diverses sur la comète, edición de 1749"
+ },
+ "images/oeuvres/hume-dialogues-1779.jpg": {
+  "caption": "Portada de los Dialogues concerning Natural Religion (1779), publicados tres años después de la muerte de Hume, que los había mantenido inéditos en vida.",
+  "alt": "Portada de los Dialogues concerning Natural Religion, 1779"
+ },
+ "images/oeuvres/holbach-systeme-nature-1770.jpg": {
+  "caption": "Portada del Système de la nature (1770), publicado con el nombre de Mirabaud, muerto diez años antes, y con el pie de imprenta ficticio de Londres.",
+  "alt": "Portada del Système de la nature, atribuido a M. Mirabaud, Londres, 1770"
+ },
+ "images/oeuvres/kant-religion-1793.jpg": {
+  "caption": "Portada de Die Religion innerhalb der Grenzen der bloßen Vernunft (1793), el libro que le valió a Kant la reprimenda real de 1794.",
+  "alt": "Portada de Die Religion innerhalb der Grenzen der bloßen Vernunft, 1793"
+ },
+ "images/oeuvres/schleiermacher-uber-die-religion-1799.jpg": {
+  "caption": "Portada de Über die Religion. Reden an die Gebildeten unter ihren Verächtern (1799), publicado sin nombre de autor.",
+  "alt": "Portada de Über die Religion, 1799"
+ },
+ "images/oeuvres/strauss-leben-jesu-1835.jpg": {
+  "caption": "Portada del primer volumen de Das Leben Jesu, kritisch bearbeitet (1835), que hace del mito la categoría central de la crítica de los Evangelios.",
+  "alt": "Portada del primer volumen de Das Leben Jesu de Strauss"
+ },
+ "images/oeuvres/renan-vie-de-jesus-1863.jpg": {
+  "caption": "Portada de la Vie de Jésus (Vida de Jesús, 1863), primer volumen de la Histoire des origines du christianisme.",
+  "alt": "Portada de la Vie de Jésus de Ernest Renan, 1863"
+ },
+ "images/oeuvres/feuerbach-wesen-des-christenthums-1841.jpg": {
+  "caption": "Portada de Das Wesen des Christenthums (Leipzig, Otto Wigand, 1841).",
+  "alt": "Portada en caracteres góticos de Das Wesen des Christenthums, Leipzig, 1841"
+ },
+ "images/oeuvres/stirner-der-einzige.png": {
+  "caption": "Portada de Der Einzige und sein Eigenthum (Leipzig, Otto Wigand), publicado en octubre de 1844 con fecha de 1845.",
+  "alt": "Portada de Der Einzige und sein Eigenthum"
+ },
+ "images/oeuvres/marx-kapital-1867.png": {
+  "caption": "Portada del primer libro de Das Kapital (Hamburgo, Otto Meissner, 1867), en facsímil.",
+  "alt": "Portada del primer libro de Das Kapital, Hamburgo, 1867"
+ },
+ "images/oeuvres/comte-catechisme-positiviste-1852.jpg": {
+  "caption": "Portada del Catéchisme positiviste (Catecismo positivista, 1852), «sommaire exposition de la religion universelle» (exposición sumaria de la religión universal) en conversaciones entre una mujer y un sacerdote de la Humanidad.",
+  "alt": "Portada del Catéchisme positiviste, París, 1852"
+ },
+ "images/oeuvres/schopenhauer-welt-1819.jpg": {
+  "caption": "Edición original de Die Welt als Wille und Vorstellung (Leipzig, Brockhaus, con fecha de 1819, aparecida a finales de 1818).",
+  "alt": "Ejemplar abierto de la edición original de Die Welt als Wille und Vorstellung"
+ },
+ "images/oeuvres/dostoievski-karamazov.jpg": {
+  "caption": "Los hermanos Karamázov en el Russki Véstnik, donde la novela apareció por entregas (1879-1880).",
+  "alt": "Página impresa en ruso con el título Los hermanos Karamázov"
+ },
+ "images/oeuvres/nietzsche-frohliche-wissenschaft-1882.jpg": {
+  "caption": "Portada de la primera edición de Die fröhliche Wissenschaft (1882), donde aparece, en el § 125, el loco que anuncia la muerte de Dios.",
+  "alt": "Portada de la primera edición de Die fröhliche Wissenschaft, 1882"
+ },
+ "images/oeuvres/durkheim-formes-elementaires-1912.jpg": {
+  "caption": "Les Formes élémentaires de la vie religieuse (Las formas elementales de la vida religiosa, 1912), donde Durkheim hace de lo sagrado la matriz de la sociedad.",
+  "alt": "Portada de Les Formes élémentaires de la vie religieuse, 1912"
+ },
+ "images/oeuvres/james-varieties-1902.jpg": {
+  "caption": "Cubierta de The Varieties of Religious Experience (1902), surgido de las Gifford Lectures pronunciadas en Edimburgo en 1901-1902.",
+  "alt": "Cubierta de The Varieties of Religious Experience, 1902"
+ },
+ "images/oeuvres/freud-zukunft-einer-illusion-1927.jpg": {
+  "caption": "Cubierta de la primera edición de Die Zukunft einer Illusion (1927).",
+  "alt": "Cubierta de la primera edición de Die Zukunft einer Illusion, 1927"
+ },
+ "images/auteurs/george-eliot.jpg": {
+  "caption": "George Eliot, retrato de François D'Albert Durade: traductora de Feuerbach, publica The Essence of Christianity en 1854 con su nombre de Marian Evans.",
+  "alt": "Retrato de George Eliot joven, sentada"
+ },
+ "images/auteurs/romain-rolland.jpg": {
+  "caption": "Romain Rolland en 1915: es a su carta sobre el «sentimiento oceánico» a la que responde Freud al comienzo de Das Unbehagen in der Kultur (1930).",
+  "alt": "Fotografía de Romain Rolland en 1915"
+ },
+ "images/art/velazquez-christ-crucifie.jpg": {
+  "caption": "Velázquez, Cristo crucificado (h. 1632, Madrid, Prado): el Viernes Santo especulativo, en el que Hegel retoma el «Gott selbst ist tot» del cántico luterano.",
+  "alt": "Cristo en la cruz sobre fondo negro, con la cabeza inclinada"
+ },
+ "images/art/duccio-tentation.jpg": {
+  "caption": "Duccio, La tentación de Cristo en la montaña (1308-1311, Nueva York, Frick Collection), tabla de la Maestà de Siena: las tentaciones que retoma el Gran Inquisidor.",
+  "alt": "Cristo sobre una montaña rechaza al diablo; a sus pies, ciudades en miniatura"
+ },
+ "images/art/berruguete-autodafe.jpg": {
+  "caption": "Pedro Berruguete, Santo Domingo presidiendo un auto de fe (h. 1493-1499, Madrid, Prado): la Inquisición, que el Gran Inquisidor traslada a Sevilla.",
+  "alt": "Santo Domingo, sobre un estrado, preside un auto de fe; abajo, condenados a la hoguera"
+ },
+ "images/art/caravage-conversion-saint-paul.jpg": {
+  "caption": "Caravaggio, La conversión de san Pablo (1600-1601, Roma, Santa Maria del Popolo, capilla Cerasi): Pablo, el «Dysangelist» de Der Antichrist.",
+  "alt": "Saulo derribado de su caballo, con los brazos abiertos hacia la luz"
+ },
+ "images/art/gerome-diogene.jpg": {
+  "caption": "Jean-Léon Gérôme, Diógenes (1860, Baltimore, Walters Art Museum): la linterna a plena luz del día, modelo del loco que busca a Dios en el § 125 de La gaya ciencia.",
+  "alt": "Diógenes, sentado en su tinaja, enciende una linterna, rodeado de perros"
+ },
+ "images/art/titien-sisyphe.jpg": {
+  "caption": "Tiziano, Sísifo (1548-1549, Madrid, Prado): la figura que Camus convierte en el héroe del absurdo.",
+  "alt": "Sísifo cargando una enorme roca sobre los hombros"
+ },
+ "images/art/michel-ange-creation-adam.jpg": {
+  "caption": "Miguel Ángel, La creación de Adán, bóveda de la Sixtina (h. 1511): el hombre creado a imagen de Dios (Gn 1, 27), que Habermas quiere traducir al lenguaje secular de la dignidad.",
+  "alt": "Dios tiende el dedo hacia el de Adán, recostado"
+ },
+ "images/art/temple-humanite-paris.jpg": {
+  "caption": "Fachada del templo de la Humanidad, 5 rue Payenne en París: la religión positivista tuvo sus lugares de culto.",
+  "alt": "Fachada del templo de la Humanidad, rue Payenne, con un busto y una inscripción"
+ },
+ "images/art/temple-positiviste-porto-alegre.jpg": {
+  "caption": "El templo positivista de Porto Alegre (Brasil): el culto de la Humanidad arraigó en Brasil, cuya bandera lleva la divisa comtiana Ordem e Progresso.",
+  "alt": "Fachada con columnas del templo positivista de Porto Alegre"
+ },
+ "images/art/raphael-ecole-athenes.jpg": {
+  "caption": "Rafael, La escuela de Atenas (1509-1511, Vaticano, Estancia de la Signatura): en el centro, Platón señalando el cielo y Aristóteles tendiendo la mano hacia la tierra; a la izquierda, la figura con turbante tradicionalmente identificada como Averroes.",
+  "alt": "Filósofos griegos reunidos bajo bóvedas antiguas en torno a Platón y Aristóteles"
+ },
+ "images/auteurs/platon.jpg": {
+  "caption": "Platón, copia romana del retrato realizado por Silanión hacia 370 a. C. para la Academia (Roma, Musei Capitolini).",
+  "alt": "Retrato de Platón"
+ },
+ "images/auteurs/aristote.jpg": {
+  "caption": "Aristóteles, copia romana en mármol de un bronce de Lisipo (h. 330 a. C.); el manto de alabastro es moderno (Roma, Museo Nazionale Romano, Palazzo Altemps).",
+  "alt": "Retrato de Aristóteles"
+ },
+ "images/auteurs/plotin.jpg": {
+  "caption": "Cabeza de mármol hallada en Ostia (siglo III d. C., Ostia, Museo Ostiense), una de las cuatro réplicas de un mismo retrato; la identificación con Plotino es tradicional y discutida.",
+  "alt": "Retrato de Plotino"
+ },
+ "images/auteurs/averroes.jpg": {
+  "caption": "Averroes, detalle del Triunfo de santo Tomás de Aquino de Andrea di Bonaiuto, capilla de los Españoles, Santa Maria Novella, Florencia (h. 1365-1367); no existe ningún retrato auténtico, la efigie es convencional.",
+  "alt": "Retrato de Averroes"
+ },
+ "images/auteurs/maimonide.jpg": {
+  "caption": "Maimónides, retrato imaginario publicado en el Thesaurus antiquitatum sacrarum de Blasio Ugolini (1744), del que derivan las efigies modernas; no existe ningún retrato auténtico.",
+  "alt": "Retrato de Maimónides"
+ },
+ "images/oeuvres/maimonide-moreh-nevukhim-copenhague.jpg": {
+  "caption": "Moreh Nevukhim (Guía de perplejos) en la traducción hebrea, manuscrito iluminado fechado en 1347-1348 (Copenhague, Biblioteca Real, Cod. Heb. 37): un maestro enseña ante la bóveda celeste.",
+  "alt": "Página iluminada de un manuscrito hebreo: un maestro sentado bajo un cielo estrellado enseña a un grupo de hombres de pie"
+ },
+ "images/auteurs/montaigne.jpg": {
+  "caption": "Michel de Montaigne, retrato anónimo a veces atribuido a Daniel Dumonstier (Chantilly, Museo Condé).",
+  "alt": "Retrato de Michel de Montaigne"
+ },
+ "images/oeuvres/montaigne-exemplaire-bordeaux.jpg": {
+  "caption": "Portada grabada de los Essais (París, Abel L'Angelier, 1588), en el Ejemplar de Burdeos, que Montaigne cubrió de correcciones y añadidos hasta su muerte (Burdeos, Biblioteca Municipal).",
+  "alt": "Frontispicio grabado de los Essais, edición de 1588, con correcciones manuscritas en la cartela central"
+ },
+ "images/auteurs/descartes.jpg": {
+  "caption": "René Descartes, según Frans Hals (París, Museo del Louvre).",
+  "alt": "Retrato de René Descartes"
+ },
+ "images/oeuvres/descartes-meditationes-1641.jpg": {
+  "caption": "Portada de la primera edición de las Meditationes de prima philosophia (París, Michel Soly, 1641), «in qua Dei existentia et animae immortalitas demonstratur».",
+  "alt": "Portada en latín de las Meditationes de prima philosophia, París, 1641"
+ },
+ "images/auteurs/leibniz.jpg": {
+  "caption": "Leibniz, retrato de Christoph Bernhard Francke (h. 1695, Brunswick, Herzog Anton Ulrich-Museum).",
+  "alt": "Retrato de Gottfried Wilhelm Leibniz"
+ },
+ "images/oeuvres/leibniz-theodicee-1734.jpg": {
+  "caption": "Portada de los Essais de théodicée sur la bonté de Dieu, la liberté de l'homme et l'origine du mal, en la nueva edición de Ámsterdam (1734); la primera edición apareció en 1710.",
+  "alt": "Portada de los Essais de théodicée, Ámsterdam, 1734"
+ },
+ "images/auteurs/rousseau.jpg": {
+  "caption": "Jean-Jacques Rousseau, pastel de Maurice Quentin de La Tour, réplica del retrato expuesto en el Salón de 1753 (Saint-Quentin, Museo Antoine-Lécuyer).",
+  "alt": "Retrato de Jean-Jacques Rousseau"
+ },
+ "images/oeuvres/rousseau-emile-1762.jpg": {
+  "caption": "Portada de la primera edición de Émile, ou De l'éducation (1762), cuyo libro IV contiene la Profesión de fe del vicario saboyano; el libro fue condenado en París y en Ginebra.",
+  "alt": "Portada de Émile, ou De l'éducation, 1762"
+ },
+ "images/auteurs/ricoeur.jpg": {
+  "caption": "Paul Ricœur (a la derecha) con Maarten van Buuren en el coloquio de Cerisy-la-Salle, agosto de 1988.",
+  "alt": "Retrato de Paul Ricœur"
+ },
+ "images/auteurs/levinas.jpg": {
+  "caption": "Emmanuel Levinas en 1991.",
+  "alt": "Retrato de Emmanuel Levinas"
+ },
+ "images/auteurs/wittgenstein.jpg": {
+  "caption": "Ludwig Wittgenstein, fotografía de Moritz Nähr (1930).",
+  "alt": "Retrato de Ludwig Wittgenstein"
+ },
+ "images/oeuvres/wittgenstein-tractatus-1922.png": {
+  "caption": "Portada de la primera edición inglesa del Tractatus Logico-Philosophicus (1922), aparecida simultáneamente en Londres en Kegan Paul y en Nueva York en Harcourt, Brace, con la introducción de Bertrand Russell.",
+  "alt": "Portada del Tractatus Logico-Philosophicus, 1922"
+ },
+ "images/auteurs/jaspers.jpg": {
+  "caption": "Karl Jaspers en 1946.",
+  "alt": "Retrato de Karl Jaspers"
+ },
+ "images/art/friedrich-moine-bord-de-mer.jpg": {
+  "caption": "Caspar David Friedrich, El monje a la orilla del mar (1808-1810, Berlín, Alte Nationalgalerie): el hombre solo ante la inmensidad, figura del asombro de que haya un mundo en lugar de nada.",
+  "alt": "Una diminuta silueta de monje en una playa, frente a un mar oscuro bajo un cielo inmenso"
+ },
+ "images/art/david-mort-de-socrate.jpg": {
+  "caption": "Jacques-Louis David, La muerte de Sócrates (1787, Nueva York, Metropolitan Museum of Art): condenado en 399 a. C. por impiedad (ἀσέβεια, asebeia) y corrupción de la juventud, Sócrates bebe la cicuta; David coloca al pie del lecho a un Platón anciano, que el Fedón (59b) dice ausente aquel día.",
+  "alt": "Sócrates, sentado en su lecho, tiende la mano hacia la copa de cicuta, rodeado de discípulos abatidos"
+ },
+ "images/art/rembrandt-moise-tables.jpg": {
+  "caption": "Rembrandt, Moisés rompiendo las tablas de la Ley (1659, Berlín, Gemäldegalerie): se discute si las rompe (Ex 32, 19) o las presenta al pueblo; Moisés es el profeta a quien Dios solo muestra la espalda (Ex 33, 23), es decir, según la Guía de perplejos (I, 54), solo sus atributos de acción.",
+  "alt": "Moisés alza con ambas manos por encima de la cabeza las tablas de la Ley"
+ },
+ "images/art/poussin-veau-d-or.jpg": {
+  "caption": "Nicolas Poussin, La adoración del becerro de oro (h. 1633-1634, Londres, National Gallery): el dios fabricado por mano humana (Ex 32), figura antigua de lo que Feuerbach generaliza: el hombre adora en Dios lo que él mismo ha proyectado.",
+  "alt": "Los hebreos bailan en corro alrededor del becerro de oro erigido sobre un altar; a lo lejos, Moisés desciende del Sinaí"
+ },
+ "images/art/leonard-cene.jpg": {
+  "caption": "Leonardo da Vinci, La última cena (1495-1498, Milán, refectorio de Santa Maria delle Grazie): el pan y el vino, que las últimas páginas de Das Wesen des Christenthums devuelven a su sentido natural y humano.",
+  "alt": "Cristo en el centro de una larga mesa, rodeado de los doce apóstoles agitados"
+ },
+ "images/art/holbein-christ-mort.jpg": {
+  "caption": "Hans Holbein el Joven, Cristo muerto en la tumba (1521-1522, Basilea, Kunstmuseum): ante una copia de este cuadro en casa de Rogozhin, el príncipe Mishkin dice, en El idiota (1868-1869), que con él se puede perder la fe.",
+  "alt": "El cuerpo descarnado de Cristo muerto, tendido de perfil en un nicho estrecho"
+ },
+ "images/art/caravage-incredulite-thomas.jpg": {
+  "caption": "Caravaggio, La incredulidad de santo Tomás (h. 1601-1602, Potsdam, Sanssouci, Bildergalerie): la fe que reclama la prueba (Jn 20, 24-29), frente a la cuestión humeana del testimonio sobre los milagros.",
+  "alt": "Tomás hunde el dedo en la llaga del costado de Cristo, mientras dos apóstoles inclinados observan"
+ },
+ "images/art/demachy-fete-etre-supreme.jpg": {
+  "caption": "Pierre-Antoine Demachy, La fiesta del Ser Supremo en el Campo de Marte, 8 de junio de 1794 (20 de pradial del año II) (París, Museo Carnavalet): el culto cívico de Robespierre, lector de la religión civil del Contrato social (IV, 8).",
+  "alt": "Una montaña artificial coronada por un árbol y una columna en medio del Campo de Marte, rodeada de una multitud"
+ },
+ "images/art/la-tour-madeleine-veilleuse.jpg": {
+  "caption": "Georges de La Tour, La Magdalena de la lamparilla, llamada Magdalena Terff (h. 1640-1645, París, Museo del Louvre): la calavera, los libros y la llama, meditación de la muerte que se une al ejercicio espiritual antiguo en el sentido de Hadot.",
+  "alt": "Una mujer sentada en la oscuridad, con la mano posada sobre una calavera, mira la llama de una lámpara"
+ },
+ "images/art/delacroix-jacob-ange.jpg": {
+  "caption": "Eugène Delacroix, La lucha de Jacob con el ángel (1854-1861, París, iglesia de Saint-Sulpice, capilla de los Santos Ángeles): el combate nocturno de Gn 32, 25-33, imagen de la fe como prueba singular ante Dios.",
+  "alt": "Bajo grandes árboles, Jacob lucha cuerpo a cuerpo con un ángel que lo contiene sin esfuerzo"
+ },
+ "images/art/grunewald-crucifixion-issenheim.jpg": {
+  "caption": "Matthias Grünewald, la Crucifixión del retablo de Isenheim (1512-1516, Colmar, Museo Unterlinden): Karl Barth tenía una reproducción de esta tabla sobre su mesa de trabajo, y el índice extendido de Juan el Bautista le servía de figura del testimonio.",
+  "alt": "Cristo crucificado, con el cuerpo martirizado, entre la Virgen sostenida por Juan, María Magdalena y Juan el Bautista que señala la cruz"
+ },
+ "images/art/zurbaran-agnus-dei.jpg": {
+  "caption": "Francisco de Zurbarán, Agnus Dei (h. 1635-1640, Madrid, Prado): el cordero maniatado de la víctima sacrificial (Jn 1, 29), en el que Girard lee la revelación cristiana de la inocencia de la víctima expiatoria.",
+  "alt": "Un cordero con las patas atadas, tendido sobre una mesa ante un fondo negro"
+ },
+ "images/art/caravage-sacrifice-isaac.jpg": {
+  "caption": "Caravaggio, El sacrificio de Isaac (h. 1603, Florencia, Galería de los Uffizi): el sacrificio humano suspendido y sustituido por el carnero (Gn 22), momento clave en la lectura girardiana de la Biblia.",
+  "alt": "Un ángel detiene la mano de Abraham, que sujeta a Isaac gritando bajo el cuchillo; un carnero se acerca"
+ },
+ "images/art/holbein-ambassadeurs.jpg": {
+  "caption": "Hans Holbein el Joven, Los embajadores (1533, Londres, National Gallery): en primer plano, una calavera en anamorfosis, legible solo de soslayo, en medio de los emblemas del saber y del poder: la muerte mantenida fuera de la mirada, que Becker sitúa en el centro de The Denial of Death (1973).",
+  "alt": "Dos hombres de pie a ambos lados de un estante cargado de instrumentos; en el suelo, una forma oblicua deformada"
+ },
+ "images/art/gauguin-d-ou-venons-nous.jpg": {
+  "caption": "Paul Gauguin, ¿De dónde venimos? ¿Qué somos? ¿Adónde vamos? (1897-1898, Boston, Museum of Fine Arts): las tres preguntas inscritas en el lienzo son aquellas a las que se espera que responda la religión.",
+  "alt": "Gran friso de figuras tahitianas, del niño al anciano, en torno a un ídolo azul"
+ },
+ "images/art/sarcophage-junius-bassus.jpg": {
+  "caption": "Sarcófago de Junio Basso (359 d. C., Ciudad del Vaticano, Tesoro de San Pedro): prefecto de Roma muerto neófito, fue sepultado bajo el primer gran programa esculpido de escenas del Antiguo y del Nuevo Testamento; en el centro del registro superior, Cristo entronizado entre Pedro y Pablo.",
+  "alt": "Sarcófago de mármol esculpido en dos registros de escenas bíblicas separadas por columnillas"
+ },
+ "images/art/pantocrator-deesis-sainte-sophie.jpg": {
+  "caption": "El Cristo Pantocrátor del mosaico de la Déesis (siglo XIII, Estambul, Santa Sofía): el Cristo-Logos de la teología bizantina, heredera lejana de la doctrina del Logos mediador que Filón elabora en Alejandría.",
+  "alt": "Rostro de Cristo en mosaico sobre fondo de oro, con la mano derecha alzada para bendecir"
+ },
+ "images/art/christ-helios-mausolee-julii.jpg": {
+  "caption": "Mosaico de la bóveda del mausoleo de los Julii (mausoleo M) en la necrópolis bajo San Pedro del Vaticano (siglo III d. C.): el Sol en su carro, interpretado como Cristo-Helios, en la época en que los apologistas reivindican para Cristo el lenguaje de los filósofos y de los cultos paganos.",
+  "alt": "Mosaico de bóveda: un auriga con la cabeza radiante sobre un fondo de roleos de vid"
+ },
+ "images/art/botticelli-saint-augustin.jpg": {
+  "caption": "Sandro Botticelli, San Agustín en su estudio (1480, Florencia, iglesia de Ognissanti), fresco pintado como pareja del San Jerónimo de Ghirlandaio.",
+  "alt": "San Agustín con hábito de obispo, la mano en el corazón, levanta la vista de su atril"
+ },
+ "images/art/rembrandt-apotre-paul.jpg": {
+  "caption": "Rembrandt (¿y taller?), El apóstol Pablo (h. 1657, Washington, National Gallery of Art): el apóstol meditando ante sus cartas, con la espada de su martirio en la mano.",
+  "alt": "Un anciano barbudo sentado a una mesa ante unas hojas, con la mano sobre la empuñadura de una espada"
+ },
+ "images/art/piero-resurrection.jpg": {
+  "caption": "Piero della Francesca, La Resurrección (h. 1463-1465, Sansepolcro, Museo Civico): el Cristo de la fe pascual, que la investigación histórica distingue del Jesús de la historia.",
+  "alt": "Cristo de pie, con un pie en el borde del sepulcro, sosteniendo un estandarte, por encima de soldados dormidos"
+ },
+ "images/art/bon-pasteur-crypte-lucine.jpg": {
+  "caption": "El Buen Pastor, pintura de la cripta de Lucina, catacumba de Calixto (Roma, siglo III d. C.), lámina de Joseph Wilpert, Die Malereien der Katakomben Roms (1903): la imaginería de la Iglesia que Celso ataca y que Orígenes defiende en el Contra Celso (h. 248).",
+  "alt": "Pintura mural: un pastor que lleva una oveja sobre los hombros, entre otras dos ovejas"
+ },
+ "images/auteurs/philon.jpg": {
+  "caption": "Filón de Alejandría, retrato imaginario publicado en Les Vrais Pourtraits et vies des hommes illustres de André Thevet (1584); no existe ningún retrato auténtico, la efigie es convencional.",
+  "alt": "Retrato de Filón de Alejandría"
+ },
+ "images/auteurs/justin.jpg": {
+  "caption": "Justino Mártir, retrato imaginario publicado en Les Vrais Pourtraits et vies des hommes illustres de André Thevet (1584); no existe ningún retrato auténtico, la efigie es convencional.",
+  "alt": "Retrato de Justino Mártir"
+ },
+ "images/auteurs/origene.jpg": {
+  "caption": "Orígenes, detalle de un retrato imaginario publicado en Les Vrais Pourtraits et vies des hommes illustres de André Thevet (1584); no existe ningún retrato auténtico, la efigie es convencional.",
+  "alt": "Retrato de Orígenes"
+ },
+ "images/auteurs/augustin.jpg": {
+  "caption": "San Agustín, por Philippe de Champaigne (h. 1645-1650, Los Angeles County Museum of Art); retrato imaginario, no existe ningún retrato auténtico.",
+  "alt": "Retrato de Agustín de Hipona"
+ },
+ "images/auteurs/tylor.png": {
+  "caption": "Edward Burnett Tylor, fotografía del estudio Elliot & Fry, publicada en Folk-Lore, vol. 28 (1917).",
+  "alt": "Retrato de Edward Burnett Tylor"
+ },
+ "images/auteurs/frazer.jpg": {
+  "caption": "James George Frazer, busto en bronce de Antoine Bourdelle (1922, Montauban, Museo Ingres-Bourdelle).",
+  "alt": "Retrato de James George Frazer"
+ },
+ "images/auteurs/malinowski.jpg": {
+  "caption": "Bronisław Malinowski, profesor de antropología en la London School of Economics, hacia 1930 (LSE Library).",
+  "alt": "Retrato de Bronisław Malinowski"
+ },
+ "images/auteurs/jung.jpg": {
+  "caption": "Carl Gustav Jung hacia 1935 (Zúrich, ETH-Bibliothek).",
+  "alt": "Retrato de Carl Gustav Jung"
+ },
+ "images/auteurs/girard.jpg": {
+  "caption": "René Girard en París en 2007.",
+  "alt": "Retrato de René Girard"
+ },
+ "images/auteurs/norris.jpg": {
+  "caption": "Pippa Norris en 2022.",
+  "alt": "Retrato de Pippa Norris"
+ },
+ "images/auteurs/clifford.jpg": {
+  "caption": "William Kingdon Clifford, retrato publicado en The Popular Science Monthly (1879), el año de su muerte: el autor de «The Ethics of Belief» (1877).",
+  "alt": "Retrato de William Kingdon Clifford"
+ },
+ "images/auteurs/russell.jpg": {
+  "caption": "Bertrand Russell en 1907.",
+  "alt": "Retrato de Bertrand Russell"
+ },
+ "images/auteurs/aron.png": {
+  "caption": "Raymond Aron en 1956, fotografía del Studio Harcourt: el autor de «L'avenir des religions séculières» (1944) y de L'Opium des intellectuels (1955).",
+  "alt": "Retrato de Raymond Aron"
+ },
+ "images/art/bruegel-tour-babel.jpg": {
+  "caption": "Pieter Bruegel el Viejo, La torre de Babel (1563, Viena, Kunsthistorisches Museum): la obra humana que pretende alcanzar el cielo, figura de lo que Voegelin llama la inmanentización del eschaton, la salvación trasladada del cielo a la historia y confiada a las manos de los hombres.",
+  "alt": "Una torre colosal en espiral, inacabada, se alza sobre una ciudad portuaria; en primer plano, un rey visita la obra"
+ },
+ "images/oeuvres/maimonide-dux-1520.jpg": {
+  "caption": "Portada del Dux seu director dubitantium aut perplexorum (París, Josse Bade, 1520), la traducción latina medieval de la Guía de perplejos de Maimónides, revisada por Agostino Giustiniani (Múnich, Bayerische Staatsbibliothek): el libro del que Leo Strauss hace el modelo de la escritura esotérica, que habla a los pocos bajo el velo de la enseñanza común.",
+  "alt": "Portada grabada, enmarcada por una decoración renacentista, con una prensa de imprenta en el centro"
+ },
+ "images/art/saenredam-caverne-platon.jpg": {
+  "caption": "Jan Saenredam según Cornelis van Haarlem, La caverna de Platón (grabado, 1604, Washington, National Gallery of Art): los prisioneros de la caverna (República, libro VII); Murdoch hace de este mito el esquema de la vida moral, conversión de la atención que se aparta del yo hacia el Bien.",
+  "alt": "Grabado: hombres encadenados en una gruta miran sombras proyectadas por un fuego, mientras al fondo se abre la luz del día"
+ },
+ "images/oeuvres/coran-birmingham.jpg": {
+  "caption": "Folio del manuscrito coránico de Birmingham (Cadbury Research Library, colección Mingana), en escritura hiyazí; el pergamino fue datado por carbono 14 entre 568 y 645: uno de los testimonios más antiguos del texto coránico, en el centro de la lectura histórica del Corán que reclamaba Mohammed Arkoun.",
+  "alt": "Folio de pergamino cubierto de una escritura árabe antigua, inclinada, sin puntos diacríticos sistemáticos"
+ },
+ "images/art/bouddha-gandhara.jpg": {
+  "caption": "Buda de pie, arte de Gandhara, región de Peshawar (Pakistán), época kushán, siglos II-III d. C., esquisto (Tokio, Museo Nacional): el Buda drapeado como un orador helenístico, encuentro antiguo de la India y de Grecia mucho antes de que los filósofos europeos descubrieran el budismo.",
+  "alt": "Estatua de esquisto de un Buda de pie, vestido con un manto de pliegues profundos, a la manera de una estatua griega"
+ },
+ "images/art/partie-naissance-christianisme.jpg": {
+  "caption": "La Virgen con el Niño y un profeta que señala una estrella, catacumba de Priscila (Roma, siglo III d. C.), lámina de Joseph Wilpert, Die Malereien der Katakomben Roms (1903).",
+  "alt": "Pintura mural: una mujer sentada que sostiene a un niño, y un hombre de pie que señala una estrella"
+ },
+ "images/art/partie-pourquoi-croit-on.jpg": {
+  "caption": "Gustave Courbet, Un entierro en Ornans (1849-1850, París, Museo de Orsay).",
+  "alt": "Un cortejo de aldeanos vestidos de negro en torno a una fosa abierta, bajo un cielo bajo"
+ },
+ "images/art/partie-prologue.jpg": {
+  "caption": "Francisco de Goya, El sueño de la razón produce monstruos, Capricho n.º 43 (1797-1799).",
+  "alt": "Un hombre dormido sobre su mesa de trabajo, asediado por murciélagos y búhos"
+ },
+ "images/art/partie-deuxieme.jpg": {
+  "caption": "Joseph Wright of Derby, Un filósofo dando una conferencia sobre el planetario (h. 1766, Derby Museum).",
+  "alt": "Rostros iluminados por la lámpara central de un planetario mecánico"
+ },
+ "images/art/partie-troisieme.jpg": {
+  "caption": "Caspar David Friedrich, El caminante sobre el mar de nubes (h. 1818, Hamburgo, Kunsthalle).",
+  "alt": "Un hombre de espaldas sobre una roca contempla un mar de nubes"
+ },
+ "images/art/partie-quatrieme.jpg": {
+  "caption": "Adolph Menzel, La forja (Cíclopes modernos) (1872-1875, Berlín, Alte Nationalgalerie).",
+  "alt": "Obreros sudorosos maniobran una barra de hierro al rojo ante las máquinas de un laminador"
+ },
+ "images/art/partie-cinquieme.jpg": {
+  "caption": "Iván Kramskói, Cristo en el desierto (1872, Moscú, Galería Tretiakov).",
+  "alt": "Un hombre sentado solo sobre unas rocas, con las manos entrelazadas, a la luz del alba"
+ },
+ "images/art/partie-sixieme.jpg": {
+  "caption": "Jules Breton, La bendición de los trigos en Artois (1857): la religión vivida, objeto de las ciencias de la religión.",
+  "alt": "Procesión aldeana con palio y estandartes que atraviesa un campo de trigo"
+ },
+ "images/art/partie-septieme.jpg": {
+  "caption": "Caspar David Friedrich, La abadía en el robledal (1809-1810, Berlín, Alte Nationalgalerie).",
+  "alt": "Ruina de una abadía gótica rodeada de robles desnudos en la bruma"
+ },
+ "images/art/partie-huitieme.jpg": {
+  "caption": "Notre-Dame de París hacia 1890-1900 (Library of Congress).",
+  "alt": "Fachada de Notre-Dame de París en fotocromía"
+ },
+ "images/art/partie-neuvieme.jpg": {
+  "caption": "Estatua ecuestre de Marco Aurelio en la plaza del Capitolio de Roma (réplica; el original en bronce está en los Museos Capitolinos).",
+  "alt": "Estatua ecuestre en bronce de Marco Aurelio, con el brazo extendido"
+ },
+ "images/art/partie-conclusion.jpg": {
+  "caption": "Caspar David Friedrich, Mujer ante el sol poniente (h. 1818, Essen, Museum Folkwang).",
+  "alt": "Una mujer de espaldas, con los brazos abiertos, frente al sol bajo"
+ },
+ "images/art/partie-anciens-monotheismes.jpg": {
+  "caption": "La Academia de Platón, mosaico de la villa de T. Siminius Stephanus en Pompeya (siglo I a. C., Nápoles, Museo Archeologico Nazionale).",
+  "alt": "Siete filósofos sentados en semicírculo bajo un árbol, ante las murallas de una ciudad"
+ },
+ "images/art/partie-age-classique.jpg": {
+  "caption": "Johannes Vermeer, El astrónomo (1668, París, Museo del Louvre).",
+  "alt": "Un sabio con túnica tiende la mano hacia un globo celeste colocado junto a una ventana"
+ },
+ "images/ecrivains/albert-camus.jpg": {
+  "caption": "Albert Camus",
+  "alt": "Retrato de Albert Camus"
+ },
+ "images/ecrivains/alexander-pope.jpg": {
+  "caption": "Alexander Pope",
+  "alt": "Retrato de Alexander Pope"
+ },
+ "images/ecrivains/alfred-tennyson.jpg": {
+  "caption": "Alfred Tennyson",
+  "alt": "Retrato de Alfred Tennyson"
+ },
+ "images/ecrivains/alfred-de-vigny.jpg": {
+  "caption": "Alfred de Vigny",
+  "alt": "Retrato de Alfred de Vigny"
+ },
+ "images/ecrivains/algernon-charles-swinburne.jpg": {
+  "caption": "Algernon Charles Swinburne",
+  "alt": "Retrato de Algernon Charles Swinburne"
+ },
+ "images/ecrivains/alphonse-de-lamartine.jpg": {
+  "caption": "Alphonse de Lamartine",
+  "alt": "Retrato de Alphonse de Lamartine"
+ },
+ "images/ecrivains/anatole-france.jpg": {
+  "caption": "Anatole France",
+  "alt": "Retrato de Anatole France"
+ },
+ "images/ecrivains/andre-gide.jpg": {
+  "caption": "André Gide",
+  "alt": "Retrato de André Gide"
+ },
+ "images/ecrivains/andre-malraux.jpg": {
+  "caption": "André Malraux",
+  "alt": "Retrato de André Malraux"
+ },
+ "images/ecrivains/antoine-de-saint-exupery.jpg": {
+  "caption": "Antoine de Saint-Exupéry",
+  "alt": "Retrato de Antoine de Saint-Exupéry"
+ },
+ "images/ecrivains/aristophane.jpg": {
+  "caption": "Aristófanes",
+  "alt": "Retrato de Aristófanes"
+ },
+ "images/ecrivains/arthur-koestler.jpg": {
+  "caption": "Arthur Koestler",
+  "alt": "Retrato de Arthur Koestler"
+ },
+ "images/ecrivains/arthur-rimbaud.png": {
+  "caption": "Arthur Rimbaud",
+  "alt": "Retrato de Arthur Rimbaud"
+ },
+ "images/ecrivains/bertolt-brecht.jpg": {
+  "caption": "Bertolt Brecht",
+  "alt": "Retrato de Bertolt Brecht"
+ },
+ "images/ecrivains/boccace.jpg": {
+  "caption": "Boccaccio",
+  "alt": "Retrato de Boccaccio"
+ },
+ "images/ecrivains/charles-baudelaire.jpg": {
+  "caption": "Charles Baudelaire",
+  "alt": "Retrato de Charles Baudelaire"
+ },
+ "images/ecrivains/charles-dickens.jpg": {
+  "caption": "Charles Dickens",
+  "alt": "Retrato de Charles Dickens"
+ },
+ "images/ecrivains/charles-peguy.jpg": {
+  "caption": "Charles Péguy",
+  "alt": "Retrato de Charles Péguy"
+ },
+ "images/ecrivains/daniel-defoe.jpg": {
+  "caption": "Daniel Defoe",
+  "alt": "Retrato de Daniel Defoe"
+ },
+ "images/ecrivains/dante.jpg": {
+  "caption": "Dante",
+  "alt": "Retrato de Dante"
+ },
+ "images/ecrivains/denis-diderot.jpg": {
+  "caption": "Denis Diderot",
+  "alt": "Retrato de Denis Diderot"
+ },
+ "images/ecrivains/ernest-hemingway.jpg": {
+  "caption": "Ernest Hemingway",
+  "alt": "Retrato de Ernest Hemingway"
+ },
+ "images/ecrivains/euripide.jpg": {
+  "caption": "Eurípides",
+  "alt": "Retrato de Eurípides"
+ },
+ "images/ecrivains/evelyn-waugh.jpg": {
+  "caption": "Evelyn Waugh",
+  "alt": "Retrato de Evelyn Waugh"
+ },
+ "images/ecrivains/fernando-pessoa.jpg": {
+  "caption": "Fernando Pessoa",
+  "alt": "Retrato de Fernando Pessoa"
+ },
+ "images/ecrivains/fiodor-dostoievski.jpg": {
+  "caption": "Fiódor Dostoievski",
+  "alt": "Retrato de Fiódor Dostoievski"
+ },
+ "images/ecrivains/flannery-o-connor.jpg": {
+  "caption": "Flannery O'Connor",
+  "alt": "Retrato de Flannery O'Connor"
+ },
+ "images/ecrivains/franz-kafka.jpg": {
+  "caption": "Franz Kafka",
+  "alt": "Retrato de Franz Kafka"
+ },
+ "images/ecrivains/francois-rene-de-chateaubriand.jpg": {
+  "caption": "François-René de Chateaubriand",
+  "alt": "Retrato de François-René de Chateaubriand"
+ },
+ "images/ecrivains/friedrich-holderlin.jpg": {
+  "caption": "Friedrich Hölderlin",
+  "alt": "Retrato de Friedrich Hölderlin"
+ },
+ "images/ecrivains/friedrich-schiller.jpg": {
+  "caption": "Friedrich Schiller",
+  "alt": "Retrato de Friedrich Schiller"
+ },
+ "images/ecrivains/georg-buchner.png": {
+  "caption": "Georg Büchner",
+  "alt": "Retrato de Georg Büchner"
+ },
+ "images/ecrivains/georg-trakl.jpg": {
+  "caption": "Georg Trakl",
+  "alt": "Retrato de Georg Trakl"
+ },
+ "images/ecrivains/george-eliot.jpg": {
+  "caption": "George Eliot",
+  "alt": "Retrato de George Eliot"
+ },
+ "images/ecrivains/george-gordon-byron.jpg": {
+  "caption": "George Gordon Byron",
+  "alt": "Retrato de George Gordon Byron"
+ },
+ "images/ecrivains/george-orwell.jpg": {
+  "caption": "George Orwell",
+  "alt": "Retrato de George Orwell"
+ },
+ "images/ecrivains/georges-bernanos.jpg": {
+  "caption": "Georges Bernanos",
+  "alt": "Retrato de Georges Bernanos"
+ },
+ "images/ecrivains/germaine-de-stael.jpg": {
+  "caption": "Germaine de Staël",
+  "alt": "Retrato de Germaine de Staël"
+ },
+ "images/ecrivains/giacomo-leopardi.jpg": {
+  "caption": "Giacomo Leopardi",
+  "alt": "Retrato de Giacomo Leopardi"
+ },
+ "images/ecrivains/giuseppe-tomasi-di-lampedusa.jpg": {
+  "caption": "Giuseppe Tomasi di Lampedusa",
+  "alt": "Retrato de Giuseppe Tomasi di Lampedusa"
+ },
+ "images/ecrivains/gotthold-ephraim-lessing.jpg": {
+  "caption": "Gotthold Ephraim Lessing",
+  "alt": "Retrato de Gotthold Ephraim Lessing"
+ },
+ "images/ecrivains/graham-greene.jpg": {
+  "caption": "Graham Greene",
+  "alt": "Retrato de Graham Greene"
+ },
+ "images/ecrivains/gustave-flaubert.jpg": {
+  "caption": "Gustave Flaubert",
+  "alt": "Retrato de Gustave Flaubert"
+ },
+ "images/ecrivains/guy-de-maupassant.jpg": {
+  "caption": "Guy de Maupassant",
+  "alt": "Retrato de Guy de Maupassant"
+ },
+ "images/ecrivains/gerard-de-nerval.jpg": {
+  "caption": "Gérard de Nerval",
+  "alt": "Retrato de Gérard de Nerval"
+ },
+ "images/ecrivains/hans-christian-andersen.jpg": {
+  "caption": "Hans Christian Andersen",
+  "alt": "Retrato de Hans Christian Andersen"
+ },
+ "images/ecrivains/heinrich-heine.jpg": {
+  "caption": "Heinrich Heine",
+  "alt": "Retrato de Heinrich Heine"
+ },
+ "images/ecrivains/heinrich-von-kleist.jpg": {
+  "caption": "Heinrich von Kleist",
+  "alt": "Retrato de Heinrich von Kleist"
+ },
+ "images/ecrivains/henrik-ibsen.jpg": {
+  "caption": "Henrik Ibsen",
+  "alt": "Retrato de Henrik Ibsen"
+ },
+ "images/ecrivains/henry-david-thoreau.jpg": {
+  "caption": "Henry David Thoreau",
+  "alt": "Retrato de Henry David Thoreau"
+ },
+ "images/ecrivains/henryk-sienkiewicz.jpg": {
+  "caption": "Henryk Sienkiewicz",
+  "alt": "Retrato de Henryk Sienkiewicz"
+ },
+ "images/ecrivains/herman-melville.jpg": {
+  "caption": "Herman Melville",
+  "alt": "Retrato de Herman Melville"
+ },
+ "images/ecrivains/hermann-hesse.jpg": {
+  "caption": "Hermann Hesse",
+  "alt": "Retrato de Hermann Hesse"
+ },
+ "images/ecrivains/homere.jpg": {
+  "caption": "Homero",
+  "alt": "Retrato de Homero"
+ },
+ "images/ecrivains/horace.jpg": {
+  "caption": "Horacio",
+  "alt": "Retrato de Horacio"
+ },
+ "images/ecrivains/ignazio-silone.jpg": {
+  "caption": "Ignazio Silone",
+  "alt": "Retrato de Ignazio Silone"
+ },
+ "images/ecrivains/isaac-bashevis-singer.jpg": {
+  "caption": "Isaac Bashevis Singer",
+  "alt": "Retrato de Isaac Bashevis Singer"
+ },
+ "images/ecrivains/ivan-tourgueniev.jpg": {
+  "caption": "Iván Turguénev",
+  "alt": "Retrato de Iván Turguénev"
+ },
+ "images/ecrivains/jack-kerouac.jpg": {
+  "caption": "Jack Kerouac",
+  "alt": "Retrato de Jack Kerouac"
+ },
+ "images/ecrivains/jean-giono.png": {
+  "caption": "Jean Giono",
+  "alt": "Retrato de Jean Giono"
+ },
+ "images/ecrivains/jean-racine.jpg": {
+  "caption": "Jean Racine",
+  "alt": "Retrato de Jean Racine"
+ },
+ "images/ecrivains/jean-de-la-fontaine.jpg": {
+  "caption": "Jean de La Fontaine",
+  "alt": "Retrato de Jean de La Fontaine"
+ },
+ "images/ecrivains/jean-paul-sartre.jpg": {
+  "caption": "Jean-Paul Sartre",
+  "alt": "Retrato de Jean-Paul Sartre"
+ },
+ "images/ecrivains/johann-wolfgang-von-goethe.jpg": {
+  "caption": "Johann Wolfgang von Goethe",
+  "alt": "Retrato de Johann Wolfgang von Goethe"
+ },
+ "images/ecrivains/john-steinbeck.jpg": {
+  "caption": "John Steinbeck",
+  "alt": "Retrato de John Steinbeck"
+ },
+ "images/ecrivains/jonathan-swift.jpg": {
+  "caption": "Jonathan Swift",
+  "alt": "Retrato de Jonathan Swift"
+ },
+ "images/ecrivains/jorge-luis-borges.jpg": {
+  "caption": "Jorge Luis Borges",
+  "alt": "Retrato de Jorge Luis Borges"
+ },
+ "images/ecrivains/joris-karl-huysmans.jpg": {
+  "caption": "Joris-Karl Huysmans",
+  "alt": "Retrato de Joris-Karl Huysmans"
+ },
+ "images/ecrivains/joseph-conrad.png": {
+  "caption": "Joseph Conrad",
+  "alt": "Retrato de Joseph Conrad"
+ },
+ "images/ecrivains/knut-hamsun.jpg": {
+  "caption": "Knut Hamsun",
+  "alt": "Retrato de Knut Hamsun"
+ },
+ "images/ecrivains/laurence-sterne.jpg": {
+  "caption": "Laurence Sterne",
+  "alt": "Retrato de Laurence Sterne"
+ },
+ "images/ecrivains/lewis-carroll.jpg": {
+  "caption": "Lewis Carroll",
+  "alt": "Retrato de Lewis Carroll"
+ },
+ "images/ecrivains/louis-ferdinand-celine.jpg": {
+  "caption": "Louis-Ferdinand Céline",
+  "alt": "Retrato de Louis-Ferdinand Céline"
+ },
+ "images/ecrivains/luigi-pirandello.jpg": {
+  "caption": "Luigi Pirandello",
+  "alt": "Retrato de Luigi Pirandello"
+ },
+ "images/ecrivains/leon-tolstoi.jpg": {
+  "caption": "León Tolstói",
+  "alt": "Retrato de León Tolstói"
+ },
+ "images/ecrivains/marcel-proust.jpg": {
+  "caption": "Marcel Proust",
+  "alt": "Retrato de Marcel Proust"
+ },
+ "images/ecrivains/marguerite-yourcenar.jpg": {
+  "caption": "Marguerite Yourcenar",
+  "alt": "Retrato de Marguerite Yourcenar"
+ },
+ "images/ecrivains/mary-shelley.jpg": {
+  "caption": "Mary Shelley",
+  "alt": "Retrato de Mary Shelley"
+ },
+ "images/ecrivains/matthew-arnold.jpg": {
+  "caption": "Matthew Arnold",
+  "alt": "Retrato de Matthew Arnold"
+ },
+ "images/ecrivains/miguel-de-cervantes.jpg": {
+  "caption": "Miguel de Cervantes",
+  "alt": "Retrato de Miguel de Cervantes"
+ },
+ "images/ecrivains/miguel-de-unamuno.jpg": {
+  "caption": "Miguel de Unamuno",
+  "alt": "Retrato de Miguel de Unamuno"
+ },
+ "images/ecrivains/mikhail-boulgakov.jpg": {
+  "caption": "Mijaíl Bulgákov",
+  "alt": "Retrato de Mijaíl Bulgákov"
+ },
+ "images/ecrivains/naguib-mahfouz.jpg": {
+  "caption": "Naguib Mahfouz",
+  "alt": "Retrato de Naguib Mahfouz"
+ },
+ "images/ecrivains/nicolas-gogol.jpg": {
+  "caption": "Nikolái Gógol",
+  "alt": "Retrato de Nikolái Gógol"
+ },
+ "images/ecrivains/omar-khayyam.jpg": {
+  "caption": "Omar Jayam",
+  "alt": "Retrato de Omar Jayam"
+ },
+ "images/ecrivains/oscar-wilde.jpg": {
+  "caption": "Oscar Wilde",
+  "alt": "Retrato de Oscar Wilde"
+ },
+ "images/ecrivains/ovide.jpg": {
+  "caption": "Ovidio",
+  "alt": "Retrato de Ovidio"
+ },
+ "images/ecrivains/paul-celan.jpg": {
+  "caption": "Paul Celan",
+  "alt": "Retrato de Paul Celan"
+ },
+ "images/ecrivains/paul-valery.jpg": {
+  "caption": "Paul Valéry",
+  "alt": "Retrato de Paul Valéry"
+ },
+ "images/ecrivains/percy-bysshe-shelley.jpg": {
+  "caption": "Percy Bysshe Shelley",
+  "alt": "Retrato de Percy Bysshe Shelley"
+ },
+ "images/ecrivains/pierre-corneille.jpg": {
+  "caption": "Pierre Corneille",
+  "alt": "Retrato de Pierre Corneille"
+ },
+ "images/ecrivains/primo-levi.jpg": {
+  "caption": "Primo Levi",
+  "alt": "Retrato de Primo Levi"
+ },
+ "images/ecrivains/petrarque.jpg": {
+  "caption": "Petrarca",
+  "alt": "Retrato de Petrarca"
+ },
+ "images/ecrivains/rabindranath-tagore.jpg": {
+  "caption": "Rabindranath Tagore",
+  "alt": "Retrato de Rabindranath Tagore"
+ },
+ "images/ecrivains/rainer-maria-rilke.jpg": {
+  "caption": "Rainer Maria Rilke",
+  "alt": "Retrato de Rainer Maria Rilke"
+ },
+ "images/ecrivains/rene-char.jpg": {
+  "caption": "René Char",
+  "alt": "Retrato de René Char"
+ },
+ "images/ecrivains/robert-musil.jpg": {
+  "caption": "Robert Musil",
+  "alt": "Retrato de Robert Musil"
+ },
+ "images/ecrivains/rudyard-kipling.jpg": {
+  "caption": "Rudyard Kipling",
+  "alt": "Retrato de Rudyard Kipling"
+ },
+ "images/ecrivains/rumi.jpg": {
+  "caption": "Rumi",
+  "alt": "Retrato de Rumi"
+ },
+ "images/ecrivains/samuel-beckett.jpg": {
+  "caption": "Samuel Beckett",
+  "alt": "Retrato de Samuel Beckett"
+ },
+ "images/ecrivains/shirley-jackson.png": {
+  "caption": "Shirley Jackson",
+  "alt": "Retrato de Shirley Jackson"
+ },
+ "images/ecrivains/sophocle.jpg": {
+  "caption": "Sófocles",
+  "alt": "Retrato de Sófocles"
+ },
+ "images/ecrivains/stendhal.jpg": {
+  "caption": "Stendhal",
+  "alt": "Retrato de Stendhal"
+ },
+ "images/ecrivains/t-s-eliot.jpg": {
+  "caption": "T. S. Eliot",
+  "alt": "Retrato de T. S. Eliot"
+ },
+ "images/ecrivains/thomas-mann.jpg": {
+  "caption": "Thomas Mann",
+  "alt": "Retrato de Thomas Mann"
+ },
+ "images/ecrivains/umberto-eco.jpg": {
+  "caption": "Umberto Eco",
+  "alt": "Retrato de Umberto Eco"
+ },
+ "images/ecrivains/vassili-grossman.jpg": {
+  "caption": "Vasili Grossman",
+  "alt": "Retrato de Vasili Grossman"
+ },
+ "images/ecrivains/victor-hugo.jpg": {
+  "caption": "Victor Hugo",
+  "alt": "Retrato de Victor Hugo"
+ },
+ "images/ecrivains/voltaire.jpg": {
+  "caption": "Voltaire",
+  "alt": "Retrato de Voltaire"
+ },
+ "images/ecrivains/walt-whitman.jpg": {
+  "caption": "Walt Whitman",
+  "alt": "Retrato de Walt Whitman"
+ },
+ "images/ecrivains/william-blake.jpg": {
+  "caption": "William Blake",
+  "alt": "Retrato de William Blake"
+ },
+ "images/ecrivains/william-shakespeare.jpg": {
+  "caption": "William Shakespeare",
+  "alt": "Retrato de William Shakespeare"
+ },
+ "images/ecrivains/william-wordsworth.jpg": {
+  "caption": "William Wordsworth",
+  "alt": "Retrato de William Wordsworth"
+ },
+ "images/ecrivains/xenophon.jpg": {
+  "caption": "Jenofonte",
+  "alt": "Retrato de Jenofonte"
+ },
+ "images/ecrivains/emile-zola.jpg": {
+  "caption": "Émile Zola",
+  "alt": "Retrato de Émile Zola"
+ },
+ "images/ecrivains/jean-de-la-croix.jpg": {
+  "caption": "Juan de la Cruz",
+  "alt": "Retrato de Juan de la Cruz"
+ },
+ "images/ecrivains/lucien-de-samosate.jpg": {
+  "caption": "Luciano de Samósata",
+  "alt": "Retrato de Luciano de Samósata"
+ },
+ "images/ecrivains/montesquieu.png": {
+  "caption": "Montesquieu",
+  "alt": "Retrato de Montesquieu"
+ },
+ "images/ecrivains/sade.jpg": {
+  "caption": "Sade",
+  "alt": "Retrato de Sade"
+ },
+ "images/ecrivains/d-a-f-de-sade.jpg": {
+  "caption": "D. A. F. de Sade",
+  "alt": "Retrato de D. A. F. de Sade"
+ },
+ "images/ecrivains/abu-l-ala-al-maarri.png": {
+  "caption": "Abu l-Ala al-Maarri",
+  "alt": "Retrato de Abu l-Ala al-Maarri"
+ },
+ "images/ecrivains/angelus-silesius.jpg": {
+  "caption": "Angelus Silesius",
+  "alt": "Retrato de Angelus Silesius"
+ },
+ "images/ecrivains/jacob-et-wilhelm-grimm.jpg": {
+  "caption": "Jacob y Wilhelm Grimm",
+  "alt": "Retrato de Jacob y Wilhelm Grimm"
+ },
+ "images/ecrivains/jean-paul.jpg": {
+  "caption": "Jean Paul",
+  "alt": "Retrato de Jean Paul"
+ },
+ "images/ecrivains/paulo-coelho.jpg": {
+  "caption": "Paulo Coelho",
+  "alt": "Retrato de Paulo Coelho"
+ },
+ "images/artistes/adolph-menzel.jpg": {
+  "caption": "Adolph Menzel",
+  "alt": "Retrato de Adolph Menzel"
+ },
+ "images/artistes/caspar-david-friedrich.jpg": {
+  "caption": "Caspar David Friedrich",
+  "alt": "Retrato de Caspar David Friedrich"
+ },
+ "images/artistes/diego-velazquez.jpg": {
+  "caption": "Diego Velázquez",
+  "alt": "Retrato de Diego Velázquez"
+ },
+ "images/artistes/duccio-di-buoninsegna.jpg": {
+  "caption": "Duccio di Buoninsegna",
+  "alt": "Retrato de Duccio di Buoninsegna"
+ },
+ "images/artistes/eugene-delacroix.jpg": {
+  "caption": "Eugène Delacroix",
+  "alt": "Retrato de Eugène Delacroix"
+ },
+ "images/artistes/francisco-de-goya.jpg": {
+  "caption": "Francisco de Goya",
+  "alt": "Retrato de Francisco de Goya"
+ },
+ "images/artistes/francisco-de-zurbaran.jpg": {
+  "caption": "Francisco de Zurbarán",
+  "alt": "Retrato de Francisco de Zurbarán"
+ },
+ "images/artistes/georges-de-la-tour.jpg": {
+  "caption": "Georges de La Tour",
+  "alt": "Retrato de Georges de La Tour"
+ },
+ "images/artistes/gustave-courbet.jpg": {
+  "caption": "Gustave Courbet",
+  "alt": "Retrato de Gustave Courbet"
+ },
+ "images/artistes/hans-holbein-le-jeune.jpg": {
+  "caption": "Hans Holbein el Joven",
+  "alt": "Retrato de Hans Holbein el Joven"
+ },
+ "images/artistes/ivan-kramskoi.jpg": {
+  "caption": "Iván Kramskói",
+  "alt": "Retrato de Iván Kramskói"
+ },
+ "images/artistes/jacques-louis-david.jpg": {
+  "caption": "Jacques-Louis David",
+  "alt": "Retrato de Jacques-Louis David"
+ },
+ "images/artistes/jan-saenredam.jpg": {
+  "caption": "Jan Saenredam",
+  "alt": "Retrato de Jan Saenredam"
+ },
+ "images/artistes/jean-leon-gerome.jpg": {
+  "caption": "Jean-Léon Gérôme",
+  "alt": "Retrato de Jean-Léon Gérôme"
+ },
+ "images/artistes/johannes-vermeer.jpg": {
+  "caption": "Johannes Vermeer",
+  "alt": "Retrato de Johannes Vermeer"
+ },
+ "images/artistes/joseph-wright-of-derby.jpg": {
+  "caption": "Joseph Wright of Derby",
+  "alt": "Retrato de Joseph Wright of Derby"
+ },
+ "images/artistes/jules-breton.jpg": {
+  "caption": "Jules Breton",
+  "alt": "Retrato de Jules Breton"
+ },
+ "images/artistes/le-caravage.jpg": {
+  "caption": "Caravaggio",
+  "alt": "Retrato de Caravaggio"
+ },
+ "images/artistes/leonard-de-vinci.png": {
+  "caption": "Leonardo da Vinci",
+  "alt": "Retrato de Leonardo da Vinci"
+ },
+ "images/artistes/matthias-grunewald.jpg": {
+  "caption": "Matthias Grünewald",
+  "alt": "Retrato de Matthias Grünewald"
+ },
+ "images/artistes/michel-ange.jpg": {
+  "caption": "Miguel Ángel",
+  "alt": "Retrato de Miguel Ángel"
+ },
+ "images/artistes/nicolas-poussin.jpg": {
+  "caption": "Nicolas Poussin",
+  "alt": "Retrato de Nicolas Poussin"
+ },
+ "images/artistes/paul-gauguin.png": {
+  "caption": "Paul Gauguin",
+  "alt": "Retrato de Paul Gauguin"
+ },
+ "images/artistes/pedro-berruguete.jpg": {
+  "caption": "Pedro Berruguete",
+  "alt": "Retrato de Pedro Berruguete"
+ },
+ "images/artistes/piero-della-francesca.jpg": {
+  "caption": "Piero della Francesca",
+  "alt": "Retrato de Piero della Francesca"
+ },
+ "images/artistes/pieter-bruegel-l-ancien.jpg": {
+  "caption": "Pieter Bruegel el Viejo",
+  "alt": "Retrato de Pieter Bruegel el Viejo"
+ },
+ "images/artistes/raphael.jpg": {
+  "caption": "Rafael",
+  "alt": "Retrato de Rafael"
+ },
+ "images/artistes/rembrandt.jpg": {
+  "caption": "Rembrandt",
+  "alt": "Retrato de Rembrandt"
+ },
+ "images/artistes/sandro-botticelli.jpg": {
+  "caption": "Sandro Botticelli",
+  "alt": "Retrato de Sandro Botticelli"
+ },
+ "images/artistes/titien.jpg": {
+  "caption": "Tiziano",
+  "alt": "Retrato de Tiziano"
+ },
+ "images/artistes/jean-auguste-dominique-ingres.jpg": {
+  "caption": "Jean-Auguste-Dominique Ingres",
+  "alt": "Retrato de Jean-Auguste-Dominique Ingres"
+ },
+ "images/artistes/pierre-paul-rubens.jpg": {
+  "caption": "Pedro Pablo Rubens",
+  "alt": "Retrato de Pedro Pablo Rubens"
+ },
+ "images/artistes/william-adolphe-bouguereau.jpg": {
+  "caption": "William-Adolphe Bouguereau",
+  "alt": "Retrato de William-Adolphe Bouguereau"
+ },
+ "images/artistes/antonio-canova.jpg": {
+  "caption": "Antonio Canova",
+  "alt": "Retrato de Antonio Canova"
+ },
+ "images/artistes/nikiphoros-lytras.png": {
+  "caption": "Nikiforos Lytras",
+  "alt": "Retrato de Nikiforos Lytras"
+ },
+ "images/artistes/frederic-leighton.jpg": {
+  "caption": "Frederic Leighton",
+  "alt": "Retrato de Frederic Leighton"
+ },
+ "images/art/ingres-jupiter-thetis.jpg": {
+  "caption": "Jean-Auguste-Dominique Ingres, Júpiter y Tetis (1811, Aix-en-Provence, Museo Granet): Tetis suplica a Zeus en favor de su hijo Aquiles, en el canto primero de la Ilíada.",
+  "alt": "Zeus entronizado sobre las nubes, impasible, y la ninfa Tetis arrodillada que le acaricia el mentón"
+ },
+ "images/art/exekias-dionysos-navire.jpg": {
+  "caption": "Exequias, Dioniso en su nave, copa ática de figuras negras (h. 530 a. C., Múnich, Staatliche Antikensammlungen): los piratas que habían capturado al dios son convertidos en delfines.",
+  "alt": "Interior de una copa de figuras negras: Dioniso recostado en una nave cuyo mástil se cubre de vid, rodeado de delfines"
+ },
+ "images/art/ingres-oedipe-sphinx.jpg": {
+  "caption": "Jean-Auguste-Dominique Ingres, Edipo explica el enigma de la Esfinge (1808, París, Museo del Louvre).",
+  "alt": "Edipo desnudo, con un pie sobre una roca, interroga a la Esfinge agazapada en la sombra de una gruta"
+ },
+ "images/art/rubens-promethee.jpg": {
+  "caption": "Pedro Pablo Rubens y Frans Snyders, Prometeo encadenado (1611-1618, Filadelfia, Philadelphia Museum of Art).",
+  "alt": "Prometeo encadenado a una roca, tumbado boca arriba, mientras un águila le desgarra el costado"
+ },
+ "images/art/pompei-sacrifice-iphigenie.jpg": {
+  "caption": "El sacrificio de Ifigenia, fresco de la casa del Poeta trágico en Pompeya (siglo I d. C., Nápoles, Museo Arqueológico Nacional): Agamenón aparta la cabeza, Artemisa envía la cierva que sustituirá a la muchacha.",
+  "alt": "Fresco: Ifigenia, alzada por dos hombres, es llevada hacia el altar; Agamenón se cubre el rostro; Artemisa aparece en el aire"
+ },
+ "images/art/bouguereau-remords-oreste.jpg": {
+  "caption": "William-Adolphe Bouguereau, Los remordimientos de Orestes (1862, Norfolk, Chrysler Museum of Art).",
+  "alt": "Orestes se tapa los oídos, perseguido por las Erinias que le muestran el cuerpo de su madre apuñalada"
+ },
+ "images/art/leighton-retour-persephone.jpg": {
+  "caption": "Frederic Leighton, El regreso de Perséfone (1891, Leeds Art Gallery): Hermes trae a Perséfone de los Infiernos hacia su madre Deméter.",
+  "alt": "Hermes levanta a Perséfone fuera de una gruta hacia Deméter, que le tiende los brazos en la luz"
+ },
+ "images/art/zurbaran-hercule-lion.jpg": {
+  "caption": "Francisco de Zurbarán, Hércules y el león de Nemea (1634, Madrid, Prado), de la serie de los trabajos de Hércules pintada para el palacio del Buen Retiro.",
+  "alt": "Heracles, de espaldas, estrangula al león de Nemea entre sus brazos"
+ },
+ "images/art/caravage-narcisse.jpg": {
+  "caption": "Caravaggio, Narciso (h. 1597-1599, Roma, Galleria Nazionale d'Arte Antica).",
+  "alt": "Un joven inclinado sobre el agua oscura contempla su reflejo, con las manos apoyadas en la orilla"
+ },
+ "images/art/canova-psyche.jpg": {
+  "caption": "Antonio Canova, Psique reanimada por el beso del Amor (1787-1793, París, Museo del Louvre).",
+  "alt": "Escultura de mármol: Eros alado se inclina sobre Psique tendida y la levanta en sus brazos"
+ },
+ "images/art/lytras-antigone-polynice.jpg": {
+  "caption": "Nikiforos Lytras, Antígona ante el cuerpo de Polinices (1865, Atenas, Pinacoteca Nacional).",
+  "alt": "Antígona, con un velo oscuro, se inclina sobre el cuerpo de su hermano Polinices tendido en el suelo"
+ }
+}

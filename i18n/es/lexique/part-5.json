@@ -1,0 +1,28 @@
+[
+  {
+    "fr": "Mythe",
+    "terme": "Mito",
+    "langue": "griego *muthos*",
+    "motifs": ["mito", "mitos"],
+    "definition": "El relato tradicional que cuenta el origen del mundo, de los dioses, de los ritos o de las ciudades, transmitido sin autor asignable y reinventado en cada nueva versión. En griego, *muthos* designa primero la palabra y el relato; solo se opone al *logos*, el discurso argumentado, a partir de los filósofos y los historiadores, que agrupan bajo ese nombre lo que quieren mantener a distancia. Jenófanes reprocha a los poetas haber atribuido a los dioses los vicios de los hombres; Platón expulsa a Homero de su ciudad pero inventa sus propios mitos; Aristóteles distingue en la tradición un núcleo verdadero y añadidos míticos destinados a persuadir a la multitud, primera lectura política del mito, que el ensayo sigue de Averroes al Gran Inquisidor. En el siglo XX, Bultmann quiere desmitologizar el Nuevo Testamento, Lévi-Strauss lee los mitos como sistemas de oposiciones, Girard como el relato del linchamiento visto por los linchadores, y Blumenberg describe el trabajo sobre el mito como una manera de mantener a distancia el absolutismo de la realidad. Véase también Alegoría, Desmitologización, Tesis mitista."
+  },
+  {
+    "fr": "Impiété",
+    "terme": "Impiedad",
+    "langue": "griego *asébeia*",
+    "motifs": ["impiedad", "impiedades", "asebeia"],
+    "definition": "En la ciudad griega, la ofensa hecha a los dioses de la comunidad: profanar un santuario, parodiar misterios, mutilar estatuas, enseñar doctrinas que apartan del culto. Como la religión griega no tiene ni dogma ni Iglesia, la impiedad no es una herejía, un error de creencia, sino un atentado contra el orden cívico, juzgado por los tribunales ordinarios. Anaxágoras tuvo que abandonar Atenas, Protágoras habría sido procesado, y Sócrates fue condenado a muerte en el 399 antes de nuestra era por no reconocer a los dioses de la ciudad y por corromper a la juventud. En el libro X de las *Leyes*, Platón hace de ello una doctrina: tres impiedades, negar a los dioses, creerlos indiferentes, creer que se los puede comprar con sacrificios, y un castigo gradual, de la casa de corrección a la muerte para el reincidente. El ensayo ve en ello el caso puro de su criterio, la primera ley que hace de la crítica un crimen en nombre de un absoluto. Los cristianos serán a su vez acusados de ateísmo por haber rechazado los sacrificios. Véase también Criterio del sacrificio."
+  },
+  {
+    "fr": "Cultes à mystères",
+    "terme": "Cultos mistéricos",
+    "motifs": ["cultos mistéricos", "misterios de Eleusis", "misterios"],
+    "definition": "Los ritos de iniciación secretos del mundo griego y romano, abiertos a los individuos que los elegían, junto a los cultos públicos de la ciudad: los misterios de Eleusis, consagrados a Deméter y a Perséfone, el orfismo, y luego, en la época helenística y romana, los cultos de Cibeles y Atis, de Isis y Osiris, de Mitra. El iniciado anudaba en ellos una relación personal con una divinidad y recibía a menudo la esperanza de una suerte mejor después de la muerte; el secreto se guardó tan bien que se conoce mal lo que en ellos se mostraba. La escuela de la historia de las religiones, con Bousset, explicó por estos cultos una parte del cristianismo paulino, el título de Señor, el bautismo y la comida como iniciaciones, y los mitistas vieron en ellos el modelo de un Cristo dios que muere y resucita; los historiadores han matizado desde entonces fuertemente estos paralelos. El ensayo los encuentra en Plotino, que compara la unión con el Uno con un misterio que no se puede divulgar, y en la sección sobre la existencia de Jesús. Véase también Tesis mitista."
+  },
+  {
+    "fr": "Tragédie grecque",
+    "terme": "Tragedia griega",
+    "motifs": ["tragedia griega", "tragedia de Sófocles", "trágicos griegos"],
+    "definition": "El género teatral nacido en Atenas en el siglo VI antes de nuestra era en el culto de Dioniso, representado en las fiestas cívicas de las Dionisias ante la ciudad entera. Sus tres grandes autores, Esquilo, Sófocles y Eurípides, retoman los mitos heroicos, los Atridas, Edipo, Antígona, las Bacantes, para poner en escena conflictos sin salida entre los dioses, la ciudad, la familia y el individuo. Aristóteles la define por la imitación de una acción que, mediante la compasión y el temor, opera la purificación de estas emociones. Hegel ve en ella la colisión de dos derechos igualmente legítimos, Nietzsche la unión de lo apolíneo y lo dionisíaco que Sócrates habría matado, Vernant el momento en que la ciudad interroga sus propios valores. Para Girard, la tragedia es medio lúcida: muestra la simetría de los adversarios que el mito oculta, y deja oír a veces la queja de la víctima, pero acaba ratificando la expulsión. El ensayo la encuentra en la sección sobre Girard y en los recuadros dedicados a Weil, a Sartre y a las Bacantes. Véase también Mito, Mecanismo victimario."
+  }
+]
