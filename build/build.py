@@ -195,7 +195,7 @@ def selecteur_langues(page):
         return ""
     liens = []
     for code, nom, _ in LANGUES:
-        if code in LANGUES_CONSTRUITES:
+        if code in LANGUES_CONSTRUITES and (code != "facile" or LANG == "facile"):  # Facile : par l'URL ou le raccourci seulement
             href = ("" if LANG == "fr" else "../") + ("" if code == "fr" else code + "/") + page
             liens.append('<a class="langue" href="%s" hreflang="%s" lang="%s" data-langue="%s"%s>%s<span>%s</span></a>' % (
                 href, code_html(code), code_html(code), code, ' aria-current="true"' if code == LANG else "", drapeau(code), nom))

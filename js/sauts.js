@@ -23,6 +23,21 @@ window.SDR_T = function (s) { var u = window.SDR_UI || {}; return u[s] || s; };
   });
 })();
 
+/* Version Facile, absente du menu : Cmd+Maj+F (Mac) ou Ctrl+Maj+F ouvre la même page dans facile/, avec l'ancre courante. */
+(function () {
+  "use strict";
+  var mac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+  document.addEventListener("keydown", function (e) {
+    if (!e.shiftKey || e.altKey || (mac ? !e.metaKey || e.ctrlKey : !e.ctrlKey || e.metaKey)) return;
+    if (e.code !== "KeyF" && (e.key || "").toLowerCase() !== "f") return;
+    if (/\/facile\/[^\/]*$/.test(location.pathname)) return;
+    e.preventDefault();
+    var page = location.pathname.replace(/.*\//, "") || "index.html";
+    try { localStorage.setItem("sdr-lang", "facile"); } catch (err) {}
+    location.href = (document.documentElement.getAttribute("data-racine") || "") + "facile/" + page + location.hash;
+  });
+})();
+
 /* Sortir de la religion sans en fonder une autre ? : historique des sauts, commun à toutes les pages du site */
 window.sauts = (function () {
   var K = "sdr-jumps";
