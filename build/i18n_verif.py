@@ -82,7 +82,132 @@ def verif_morceau(src, tr, langue=None):
     return pb, len(t.split()), len(s.split())
 
 
-def main(langue="en"):
+# ---------------------------------------------------------------- version Facile
+# Même essai en français très simple (i18n/guide-facile.md) : la structure est contrôlée comme pour une
+# traduction, mais les paragraphes peuvent être découpés et les citations étrangères retirées.
+
+def prefixe_titre(t):
+    """Ce qui doit rester identique dans un titre : tout ce qui précède « : » (nom, dates, « Première partie »)."""
+    t = t.strip()
+    return t.split(" : ")[0] if " : " in t else None
+
+
+def longueur_phrases(texte):
+    """Nombre moyen de mots par phrase, hors titres, tableaux, en-têtes d'encadrés et lignes de source."""
+    lignes = [l.lstrip("> ").strip() for l in texte.split("\n")]
+    lignes = [l for l in lignes if l and not l.startswith(("#", "|", "**En littérature.**", "Source", "---"))]
+    t = " ".join(lignes)
+    phrases = [p for p in re.split(r"(?<=[.!?…])\s+", t) if len(p.split()) > 1]
+    return sum(len(p.split()) for p in phrases) / len(phrases) if phrases else 0
+
+
+def verif_facile_morceau(src, tr):
+    s, t = open(src, encoding="utf-8").read(), open(tr, encoding="utf-8").read()
+    pb = []
+    ts, tt = re.findall(r"(?m)^(#{1,4}) (.*)$", s), re.findall(r"(?m)^(#{1,4}) (.*)$", t)
+    if [n for n, _ in ts] != [n for n, _ in tt]:
+        pb.append("titres %s au lieu de %s" % (collections.Counter(n for n, _ in tt), collections.Counter(n for n, _ in ts)))
+    else:
+        for (_, a), (_, b) in zip(ts, tt):
+            p = prefixe_titre(a)
+            if p is not None and prefixe_titre(b) != p:
+                pb.append("titre « %s » au lieu de « %s : … »" % (b[:60], p))
+    ent = lambda x: re.findall(r"(?m)^> \*\*En littérature\.\*\*.*$", x)
+    sources = lambda x: re.findall(r"(?m)^> Sources? : .*$", x)
+    if ent(s) != ent(t):
+        pb.append("en-têtes d'encadrés différents (%d au lieu de %d)" % (len(ent(t)), len(ent(s))))
+    if sources(s) != sources(t):
+        pb.append("lignes « Source(s) : » des encadrés différentes")
+    rangees = lambda x: [r.split("|")[1].strip() for r in re.findall(r"(?m)^\|.*$", x) if not re.match(r"^\|[-:| ]+\|$", r)]
+    if rangees(s) and [r for r in rangees(s)[1:]] != [r for r in rangees(t)[1:]]:
+        pb.append("tableau : lignes ou première colonne différentes")
+    bs, bt = blocs(s), blocs(t)
+    if len(bt) < len(bs):
+        pb.append("%d blocs, moins que les %d de l'original" % (len(bt), len(bs)))
+    if re.search("[–—]", t):
+        pb.append("tiret cadratin ou demi-cadratin")
+    lp = longueur_phrases(t)
+    if lp > 14 and not os.path.basename(tr).startswith("15-sources"):
+        pb.append("phrases trop longues (%.1f mots en moyenne)" % lp)
+    return pb, len(t.split()), len(s.split()), lp
+
+
+def main_facile(filtre=None):
+    racine, total = B.RACINE, 0
+    print("== essai")
+    for src in sorted(glob.glob(os.path.join(racine, "i18n", "source", "article", "*.md"))):
+        nom = os.path.basename(src)
+        if filtre and filtre not in nom:
+            continue
+        tr = os.path.join(racine, "i18n", "facile", "article", nom)
+        if not os.path.exists(tr):
+            print("  MANQUANT", nom); total += 1; continue
+        pb, mt, ms, lp = verif_facile_morceau(src, tr)
+        ratio = mt / ms if ms else 0
+        if not 0.5 <= ratio <= 1.8 and not nom.startswith("15-sources"):
+            pb.append("longueur %.2f de l'original" % ratio)
+        print("  %s : %.2f de l'original, %.1f mots par phrase%s" % (nom, ratio, lp, " ; " + " ; ".join(pb) if pb else ""))
+        total += 1 if pb else 0
+    if filtre and not filtre.endswith(".md") and "annexe" not in filtre and "lexique" not in filtre:
+        print("problèmes :", total)
+        return total
+    print("== annexes")
+    for src in sorted(glob.glob(os.path.join(racine, "build", "annexes", "*.md"))):
+        nom = os.path.basename(src)
+        if filtre and filtre != "annexes" and filtre not in nom:
+            continue
+        tr = os.path.join(racine, "i18n", "facile", "annexes", nom)
+        if not os.path.exists(tr):
+            print("  MANQUANT", nom); total += 1; continue
+        s, t = open(src, encoding="utf-8").read(), open(tr, encoding="utf-8").read()
+        tete = lambda x: x.split("\n---", 1)[0]
+        pb = []
+        if tete(s) != tete(t):
+            pb.append("en-tête différent")
+        a, b = B.lire_annexe(src, nom, verifier=False), B.lire_annexe(tr, nom, verifier=False)
+        if a and b:
+            if titres("\n".join(a["lignes"])) != titres("\n".join(b["lignes"])):
+                pb.append("sous-titres différents")
+            ratio = len(" ".join(b["lignes"]).split()) / max(1, len(" ".join(a["lignes"]).split()))
+            if not 0.5 <= ratio <= 1.8:
+                pb.append("longueur %.2f de l'original" % ratio)
+            lp = longueur_phrases("\n".join(b["lignes"]))
+            if lp > 14:
+                pb.append("phrases trop longues (%.1f mots en moyenne)" % lp)
+        if re.search("[–—]", t):
+            pb.append("tiret cadratin ou demi-cadratin")
+        if pb:
+            total += 1
+            print("  %s : %s" % (nom, " ; ".join(pb)))
+    print("== lexique")
+    lex = {e["terme"]: e for e in json.load(open(os.path.join(racine, "build", "lexique.json"), encoding="utf-8"))}
+    trad = {}
+    for f in glob.glob(os.path.join(racine, "i18n", "facile", "lexique", "*.json")):
+        for e in json.load(open(f, encoding="utf-8")):
+            trad[e.get("fr")] = e
+    manq = sorted(set(lex) - set(trad))
+    if manq and not (filtre and filtre != "lexique"):
+        total += 1; print("  %d notions manquantes : %s" % (len(manq), ", ".join(manq[:8])))
+    for k, e in trad.items():
+        n = len(e.get("definition", "").split())
+        pb = []
+        if k not in lex:
+            pb.append("notion inconnue")
+        elif e.get("terme") != k or e.get("motifs") != lex[k]["motifs"]:
+            pb.append("terme ou motifs modifiés")
+        if not 50 <= n <= 160:
+            pb.append("%d mots" % n)
+        if re.search("[–—]", e.get("definition", "")):
+            pb.append("tiret cadratin ou demi-cadratin")
+        if pb:
+            total += 1; print("  %s : %s" % (k, " ; ".join(pb)))
+    print("problèmes :", total)
+    return total
+
+
+def main(langue="en", filtre=None):
+    if langue == "facile":
+        return main_facile(filtre)
     racine = B.RACINE
     total = 0
     print("== essai")

@@ -1,0 +1,244 @@
+## Sources
+
+### Textes sources vérifiés
+
+Voici les fichiers où les citations marquées ont été retrouvées. On les a cherchées mot à mot dans ces textes. L'origine exacte de chaque fichier est notée à part : le site, l'identifiant, l'édition, la date de récupération. Et aussi la qualité de la lecture automatique du texte scanné.
+
+- Nietzsche, Friedrich Wilhelm, Jenseits von Gut und Böse (texte allemand, derive des fichiers HTML de Projekt Gutenberg-DE (edition source non precisee)) : 
+- Nietzsche, Friedrich Wilhelm, Götzen-Dämmerung (texte allemand, derive de Projekt Gutenberg-DE (edition source non precisee) ; fins de ligne CRLF) : 
+- Feuerbach, Ludwig, Das Wesen des Christenthums (1re ed., Leipzig, Otto Wigand, 1841 ; s long normalise en s, cesures de fin de ligne recousues, pagination [NNNN] conservee) : 
+- Stirner, Max, Der Einzige und sein Eigenthum (1re ed., Leipzig, Otto Wigand, 1845 ; s long normalise en s, cesures de fin de ligne recousues, pagination [NNNN] conservee) : 
+- Marx, Karl, Das Kapital. Kritik der politischen Oekonomie, Bd. 1 (1re ed., Hamburg, Otto Meissner, 1867 ; s long normalise en s, cesures de fin de ligne recousues, pagination [NNNN] conservee) : 
+- Spinoza, Ethica ordine geometrico demonstrata (texte latin, Opera posthuma 1677 (edition Wikisource la, a verifier)) : 
+- Marx, Karl, Zur Kritik der Hegelschen Rechtsphilosophie. Einleitung (MEW 1, Dietz, S. 378-391 (texte des Deutsch-Franzoesische Jahrbuecher, 1844), via mlwerke.de archive par web.archive.org) : 
+- Marx, Karl, Thesen über Feuerbach (version originale de 1845 et version Engels 1888) (MEW 3 via Marxists Internet Archive ; deux versions concatenees : originale (1845) puis Engels (1888)) : 
+- Engels, Friedrich, Ludwig Feuerbach und der Ausgang der klassischen deutschen Philosophie (MEW 21 (Die Neue Zeit 1886, en volume 1888), via mlwerke.de archive par web.archive.org) : 
+- Engels, Friedrich, Bruno Bauer und das Urchristentum (MEW 19 (Der Sozialdemokrat, mai 1882), via mlwerke.de archive par web.archive.org) : 
+- Engels, Friedrich, Zur Geschichte des Urchristentums (MEW 22 (Die Neue Zeit 1894-1895), via mlwerke.de archive par web.archive.org) : 
+- Spinoza, Traité théologico-politique (trad. francaise Wikisource (traducteur a lire dans l'en-tete, probablement Saisset)) : 
+- Nietzsche, Le Gai Savoir (trad. Henri Albert, Mercure de France) : 
+- Nietzsche, La Généalogie de la morale (trad. Henri Albert, Mercure de France) : 
+- Nietzsche, L'Antéchrist (trad. Henri Albert, Mercure de France) : 
+- Nietzsche, Der Antichrist (ed. Schlechta, Werke in drei Baenden (Hanser 1954-1956), via zeno.org ; pagination [S. n]) : 
+- Nietzsche, Zur Genealogie der Moral (ed. Schlechta, Werke in drei Baenden (Hanser 1954-1956), via zeno.org ; pagination [S. n]) : 
+- Достоевский, Братья Карамазовы (texte russe, Wikisource ru (edition de reference a lire dans l'en-tete)) : 
+- Dostoïevski, Les Frères Karamazov (trad. Henri Mongault) : 
+- Nietzsche, Die fröhliche Wissenschaft (ed. Schlechta, Werke in drei Baenden (Hanser 1954-1956), via zeno.org ; pagination [S. n]) : 
+- Hume, David, Dialogues concerning Natural Religion (texte anglais (posthume, 1779), edition Gutenberg, source non precisee) : 
+- Renan, Ernest, Vie de Jésus (9e ed., Paris, Michel Levy freres, 1863) : 
+- James, William, The Varieties of Religious Experience (Longmans, Green and Co, New York, 1917 (Gifford Lectures 1901-1902)) : 
+- Feuerbach, Ludwig (trad. Marian Evans [George Eliot]), The Essence of Christianity (trad. de la 2e ed. allemande par Marian Evans (1854) ; reimpr. 2e ed., London, Kegan Paul, Trench, Truebner, 1890) : 
+- Kant, Immanuel, Die Religion innerhalb der Grenzen der bloßen Vernunft (ed. Karl Kehrbach, Leipzig, Reclam : texte de A (1793) avec variantes de B (1794) ; pagination [N]) : 
+- Freud, Sigmund (trad. W. D. Robson-Scott), The Future of an Illusion (trad. anglaise W. D. Robson-Scott, London, Hogarth/Institute of Psycho-Analysis, New York, Liveright, 1928) : 
+- Freud, Sigmund (trad. Joan Riviere), Civilization and its Discontents (trad. anglaise autorisee Joan Riviere, New York, Cape and Smith, 1930) : 
+- Schleiermacher, Friedrich, Über die Religion. Reden an die Gebildeten unter ihren Verächtern (texte de la 1re ed. (Berlin, Unger, 1799, anonyme) d'apres l'ed. Hamburg, Meiner, 1958 (PhB), via zeno.org ; pagination [S. n]) : 
+- Hegel, Georg Wilhelm Friedrich, Glauben und Wissen oder die Reflexionsphilosophie der Subjektivität (Kritisches Journal der Philosophie II, 1 (1802), via zeno.org : Werke in 20 Baenden (Moldenhauer et Michel), t. 2, Frankfurt a. M., Suhrkamp, 1979 ; pagination [S. n]) : 
+- Strauss, David Friedrich, Das Leben Jesu, kritisch bearbeitet (Bd. 1 et 2) (1re ed., Tuebingen, Osiander, 1835-1836, deux tomes concatenes ; s long normalise en s, cesures de fin de ligne recousues, pagination [NNNN] conservee) : 
+- Weber, Max, Wissenschaft als Beruf (1re ed., Muenchen und Leipzig, Duncker und Humblot, 1919 (Geistige Arbeit als Beruf, 1. Vortrag) ; s long normalise en s, cesures de fin de ligne recousues, pagination [NNNN] conservee) : 
+- Schopenhauer, Arthur, Die Welt als Wille und Vorstellung, Erster Band (via zeno.org : Zuercher Ausgabe, Werke in zehn Baenden, Zuerich, Diogenes, 1977, a partir du t. 1 (texte Huebscher) ; les 4 livres et l'appendice Kritik der Kantischen Philosophie ; pagination [S. n]) : 
+- Lucrèce (Titus Lucretius Carus), De rerum natura (texte latin, Wikisource la (edition source a lire dans l'en-tete, non precisee)) : 
+- Cicéron (M. Tullius Cicero), De natura deorum (texte latin, Wikisource la (edition source non precisee) ; l'etymologie religio/relegere est en II, 72) : 
+- Lactance (L. Caecilius Firmianus Lactantius), Divinae institutiones, liber IV (texte latin, Wikisource la (edition source non precisee) ; religio/religare en IV, 28) : 
+- Épicure, Lettre à Ménécée (Diogène Laërce X, 122-135) (deux traductions : J. G. Chauffepie, in Diogene Laerce, Vies, Paris, Lefevre, 1840, p. 487-493 ; puis O. Hamelin, Revue de metaphysique et de morale 18, 1910 (texte Usener p. 59-66)) : 
+- Voltaire, Épître CIV. À l'auteur du livre des Trois imposteurs (1769) (Oeuvres completes, ed. Moland, Paris, Garnier, 1877, t. 10, p. 402-405 (avec notes de l'editeur)) : 
+- Pascal, Blaise, Pensées (éd. Brunschvicg) et Mémorial (ed. Leon Brunschvicg (Hachette, petite ed.), Wikisource fr ; numerotation Brunschvicg ; Memorial en fin de fichier) : 
+- Weber, Max, Die protestantische Ethik und der Geist des Kapitalismus (version GARS 1920, avec la Vorbemerkung) (version revisee des Gesammelte Aufsaetze zur Religionssoziologie, t. 1, Tuebingen, Mohr, 1920 (1re version : Archiv fuer Sozialwissenschaft 20-21, 1904-1905), via zeno.org : GARS t. 1, Tuebingen, Mohr, 8e ed. 1986 ; pagination [S. n] de cette edition) : 
+- Holbach, Paul Henri Thiry d' (sous le nom de Mirabaud), Système de la nature ou des loix du monde physique et du monde moral (ed. originale « Londres », 1770, 2 vol., Wikisource fr (fac-simile)) : 
+- Freud, Sigmund, Die Zukunft einer Illusion (texte de 1927 d'apres une edition S. Fischer 1974 (vraisemblablement Studienausgabe, t. IX) ; numeros de page isoles en tete de chapitre) : 
+- Freud, Sigmund, Das Unbehagen in der Kultur (texte de 1930 (avec les notes ajoutees ensuite, dont celle qui nomme Romain Rolland) d'apres une edition S. Fischer 1974 (vraisemblablement Studienausgabe, t. IX) ; numeros de page isoles en tete de chapitre) : 
+- Schopenhauer, Arthur (trad. T. Bailey Saunders), Religion: a Dialogue, etc. (Parerga und Paralipomena II, ch. 15 « Ueber Religion », extraits) (trad. anglaise T. Bailey Saunders (edition source non precisee par Gutenberg) ; repli faute de texte allemand libre ; fidelite au texte complet du ch. 15 non verifiee) : 
+- Bergson, Henri, Les Deux Sources de la morale et de la religion (20e ed., Paris, Felix Alcan, 1937 (1re ed. 1932), Wikisource fr) : 
+- Hume, David, The Natural History of Religion (texte edite de Hume Texts Online (1757, revu jusqu'a 1777), version editee sans variantes ; reperes ; notes de Hume marquees [note]) : 
+- Weil, Simone, La Pesanteur et la Grâce (Paris, Plon, 1948 (1re ed. 1947, choix et classement de Gustave Thibon) ; introduction de Thibon non reproduite (droits)) : 
+- Kierkegaard, Søren (trad. Lee M. Hollander), Selections from the Writings of Kierkegaard (dont The Present Moment, extraits de Øieblikket, 1855) (trad. anglaise L. M. Hollander, University of Texas Bulletin 2326, Austin, 1923 : Diapsalmata, In vino veritas, Fear and Trembling, Preparation for a Christian Life, The Present Moment (choix)) : 
+- Kierkegaard, Søren, Øieblikket, Nr. 1-10 (SKS t. 13, ed. Cappeloern, Garff, Kondrup, Olesen, Tullberg, Soeren Kierkegaard Forskningscenteret, 2009 ; nr 1-9 parus mai-sept. 1855, nr 10 posthume ; apparat critique et appels de commentaire retires, pagination SKS en [SKS n]) : 
+- Kierkegaard, Søren, Afsluttende uvidenskabelig Efterskrift til de philosophiske Smuler (Johannes Climacus) (SKS t. 7, ed. Cappeloern, Garff, Knudsen, Kondrup, McKinnon, Soeren Kierkegaard Forskningscenteret, 2002 (1re ed. Copenhague, Reitzel, 1846) ; apparat critique et appels de commentaire retires, pagination SKS en [SKS n]) : 
+- Durkheim, Émile, Les Formes élémentaires de la vie religieuse. Le système totémique en Australie (1re ed., Paris, Felix Alcan, 1912, Wikisource fr) : 
+- Hegel, Georg Wilhelm Friedrich, Vorlesungen über die Philosophie der Religion, nebst einer Schrift über die Beweise vom Daseyn Gottes (Werke, Bd. 11-12, ed. Ph. Marheineke, 2e ed. revue, Berlin, Duncker und Humblot, 1840 (1re ed. 1832) ; OCR brute d'un imprime en Fraktur, nombreuses fautes (B/V, f/s, ck lu comme >) : chercher par fragments courts ; cesures recousues) : 
+- Eckhart, Meister (trad. Gustav Landauer), Meister Eckharts mystische Schriften (trad. en allemand moderne) (trad. Gustav Landauer, Berlin, Karl Schnabel (Axel Juncker), 1903 ; OCR archive.org (Univ. of Toronto), espaces normalises et cesures recousues ; le sermon Beati pauperes spiritu (Quint 52) y figure comme Predigt 16 « Von der Armut », p. 102 sq.) : 
+- Bayle, Pierre, Pensées diverses sur la comète, tome I (ed. critique A. Prat, Paris, Societe des textes francais modernes, Cornely, 1911, t. I seul (§ I a CXXXII environ ; texte de base et variantes : voir l'introduction de Prat) ; OCR archive.org (Univ. of Toronto), espaces normalises et cesures recousues ; t. II non trouve (l'item pensesdiverses02bayluoft contient en fait Ch. Adam, Vie et oeuvres de Descartes)) : 
+- Comte, Auguste, Catéchisme positiviste, ou Sommaire exposition de la religion universelle, en onze entretiens systématiques entre une Femme et un Prêtre de l'Humanité (1re ed., Paris, chez l'auteur et Carilian-Goeury et V. Dalmont, octobre 1852 ; OCR archive.org (Univ. of Toronto) de qualite mediocre (titres et noms propres souvent deformes), espaces normalises et cesures recousues) : 
+- Hegel, Georg Wilhelm Friedrich, Vorrede zu Hinrichs' Religionsphilosophie (1822) (Werke, Bd. 17 = Vermischte Schriften II, ed. F. Foerster et L. Boumann, Berlin, Duncker und Humblot, 1835, p. 280 sq. selon la table (Vorrede datee de Paques 1822) ; OCR TRES fautive d'un imprime en Fraktur (ex. ber Hunb ecrit ^unb, Christ ecrit (Ehrifl, Abhaengigkeit ecrit älbhängigf eit) : chercher par mots courts et relire le contexte) : 
+- Otto, Rudolf, Das Heilige. Über das Irrationale in der Idee des Göttlichen und sein Verhältnis zum Rationalen (13e ed., Gotha/Stuttgart, F. A. Perthes, 1925 (1re ed. Breslau, Trewendt und Granier, 1917) ; OCR archive.org (Univ. of Illinois), espaces normalises et cesures recousues) : 
+- Eckhart, Meister (trad. Herman Buettner), Meister Eckeharts Schriften und Predigten, Bd. 1 (trad. en allemand moderne) (trad. Herman Buettner, Leipzig, Eugen Diederichs, 1903, t. 1 ; OCR archive.org (Univ. of Toronto) d'un imprime en Fraktur, fautes frequentes (f pour s, D pour V) ; s long normalise, cesures recousues ; Beati pauperes spiritu (Quint 52) = n. 16 « Von der Armut am Geiste », p. 169 sq.) : 
+- Bayle, Pierre, Pensées diverses écrites à un docteur de Sorbonne à l'occasion de la comète qui parut au mois de décembre 1680 (t. I et II) (6e ed., Amsterdam, Meinard Uytwerf, 1749, t. I et II concatenes, soit les Pensees diverses entieres (jusqu au § CCLXII au moins ; le t. III est la Continuation, non recuperee) (meme edition que le fac-simile de Wikisource fr) ; OCR archive.org (Univ. of Ottawa) d'une typographie ancienne, s long souvent lu f ; espaces normalises, cesures recousues ; complete le t. I de l'ed. Prat) : 
+- Platon, Νόμοι (Lois), livre X (texte grec, Platonis Opera t. V, ed. J. Burnet, Oxford, Clarendon Press (impression 1914 selon Perseus) ; Stephanus 884a-910d entre crochets, sigles des locuteurs (ΑΘ., ΚΛ., ΜΕ.) conserves ; sans apparat) : 
+- Platon (trad. Victor Cousin), Les Lois, livre dixième (trad. V. Cousin, Oeuvres de Platon, t. VII-VIII (Paris, 1831-1832 ; en-tete Wikisource « Tome septieme & huitieme ») ; pas de pagination Stephanus) : 
+- Aristote, τὰ μετὰ τὰ φυσικά (Métaphysique), livre Λ (XII) (texte grec, Aristotle's Metaphysics, ed. W. D. Ross, Oxford, Clarendon Press, 1924 ; chapitres 1-10 balises, pagination Bekker et lignes [l.N] ; sans apparat) : 
+- Aristote (trad. Alexis Pierron et Charles Zévort), La Métaphysique, livre XII (Λ) (trad. Pierron et Zevort, La Metaphysique d'Aristote, Paris, 1840, 2 vol., avec leurs notes en fin de livre ; page bilingue (grec en regard, edition grecque non precisee par le site), Bekker entre crochets ; la trad. Cousin du livre XII (1835, 2e ed. 1838) n'a pas ete trouvee en ligne) : 
+- Plotin (trad. Marie-Nicolas Bouillet), Les Ennéades (54 traités, I 1 a VI 9) (trad. M.-N. Bouillet, Les Enneades de Plotin, Paris, Hachette, 1857-1861, 3 vol. ; notes et eclaircissements de Bouillet NON inclus (pages /Notes separees sur Wikisource) ; I 6 Du beau, V 1, VI 9 Du bien ou de l'un reperables par « ===== ») : 
+- Averroès (Ibn Rushd) (trad. Léon Gauthier), Accord de la religion et de la philosophie (Fasl al-maqal, Discours décisif) (trad. et notes L. Gauthier, Alger, P. Fontana, 1905 ; OCR mediocre (page de titre et mots isoles deformes, reperes *p.N de pagination arabe), avertissement Google retire, espaces normalises et cesures recousues) : 
+- Averroès (Ibn Rushd) (trad. Mohammad Jamil-ur-Rehman), The Philosophy and Theology of Averroes (I : A Decisive Discourse ; Ia : appendice sur la science eternelle [Damima] ; II : An Exposition of the Methods of Argument) (trad. anglaise M. Jamil-ur-Rehman, Baroda, A. G. Widgery (Gaekwad Studies in Religion and Philosophy XI), 1921, sur le texte arabe de M. J. Mueller (Munich, 1859) ; complement lisible de l'OCR Gauthier) : 
+- Maïmonide (trad. Salomon Munk), Le Guide des égarés (Dalalat al-ha'irin), parties I a III (trad. et notes S. Munk, Paris, A. Franck, t. I 1856, t. II 1861, t. III 1866, concatenes ; OCR archive.org (Univ. of Toronto), espaces normalises et cesures recousues ; le texte arabe en caracteres hebreux et les mots hebreux des notes sont illisibles ; attributs (I, 50-60) au t. I) : 
+- Maïmonide (trad. Michael Friedländer), The Guide for the Perplexed (trad. anglaise M. Friedlaender, 2e ed. revue en un volume (preface juillet 1904), London, Routledge, et New York, Dutton, reimpr. 1910 ; sans les notes de la 1re ed. (1881-1885) ; telecharge via le miroir gutenberg.pglaf.org) : 
+- Montaigne, Michel de, Essais, livre II, chapitre 12 : Apologie de Raimond Sebond (texte de l'edition Wikisource dite exemplaire de Bordeaux (en-tete « Essais, exemplaire de Bordeaux (1595) », Livre II, f. 183v-258 : mention ambigue entre l'EB de 1588 annote et l'edition posthume de 1595, a verifier avant de citer une couche A/B/C) ; orthographe ancienne) : 
+- Descartes, René (trad. duc de Luynes), Méditations métaphysiques (Épître, Préface, Abrégé, Méditations I a VI) (Oeuvres de Descartes, ed. V. Cousin, Paris, Levrault, 1824, t. I, p. 213 sq. : trad. francaise du duc de Luynes (1647, revue par Descartes) MAIS Cousin declare reproduire la 3e ed. (Paris, 1673, ed. R. Fede) sans ses sommaires ; ce n'est donc pas le texte de 1647 a la lettre ; objections et reponses non incluses) : 
+- Leibniz, Gottfried Wilhelm, La Monadologie (1714) (Oeuvres philosophiques de Leibniz, ed. P. Janet, Paris, Felix Alcan, 1900, t. I, p. 707-722, avec les notes de Janet ; titre et texte francais de Leibniz (publie posthume, en allemand 1720, en latin 1721)) : 
+- Leibniz, Gottfried Wilhelm, Essais de Théodicée sur la bonté de Dieu, la liberté de l'homme et l'origine du mal (1710) (Oeuvres philosophiques de Leibniz, ed. P. Janet, Paris, Felix Alcan, 1900, t. II, p. 1-418 : preface, Discours de la conformite de la foi avec la raison, parties I-III, Abrege, remarques sur Hobbes et King) : 
+- Plotin, Ἐννεάδες (54 traités, texte grec) (texte grec de R. Volkmann, Leipzig, Teubner, 1883-1884, 2 vol. (en-tete Wikisource) ; numerotation grecque des traites : I 6 Περὶ τοῦ καλοῦ = « Εννεάδες/Α/στ » (et non ζ), V 1 = « Ε/α », VI 9 = « Στ/θ » ; chapitres [N] ; sans apparat ; recupere par index.php?action=render (API saturee)) : 
+- Descartes, René, Meditationes de prima philosophia (Epistola, Praefatio, Synopsis, Meditationes I-VI) (texte latin de l'ed. Adam et Tannery, Oeuvres de Descartes, t. VII, Paris, Cerf, 1904 (1re ed. Paris, M. Soly, 1641 ; 2e ed. Amsterdam, Elzevier, 1642 ; texte de base retenu par AT non verifie) ; pagination AT entre crochets [N] dans le texte ; la numerotation des paragraphes est celle de Wikisource ; objections et reponses non incluses) : 
+- Leibniz, Gottfried Wilhelm, Principes de la nature et de la grâce fondés en raison (1714) (Oeuvres philosophiques de Leibniz, ed. P. Janet, Paris, Felix Alcan, 1900, t. I, p. 723-731 (texte de L'Europe savante, nov. 1718, art. VI)) : 
+- Rousseau, Jean-Jacques, Émile, ou De l'éducation, livre IV (dont la Profession de foi du vicaire savoyard) (Collection complete des oeuvres de J. J. Rousseau, [Geneve], 1782, t. IV, p. 357-458 et suite (1re ed. de l'Emile : 1762) ; orthographe d'epoque) : 
+- Rousseau, Jean-Jacques, Du contrat social, ou Principes du droit politique (texte entier ; IV, 8 « De la Religion civile ») (ed. originale, Amsterdam, Marc Michel Rey, 1762 ; orthographe d'epoque) : 
+- Rousseau, Jean-Jacques, Lettre à M. de Voltaire, 18 août 1756 (Collection complete des oeuvres de J. J. Rousseau, 1782, t. XII, p. 91-114) : 
+- Wittgenstein, Ludwig (trad. C. K. Ogden), Tractatus logico-philosophicus / Logisch-philosophische Abhandlung (bilingue) (ed. bilingue, London, Kegan Paul, Trench, Trubner, 1922 (trad. Ogden avec F. P. Ramsey, introduction de B. Russell) ; texte allemand revu par l'auteur sur celui des Annalen der Naturphilosophie, 1921 ; anglais puis allemand dans le fichier ; formules et tables de verite converties approximativement (colonnes separees par) : 
+- Bergson, Henri, L'Évolution créatrice (Paris, Felix Alcan, 1908 (1re ed. 1907) ; l'idee de neant au chapitre IV) : 
+- Schelling, Friedrich Wilhelm Joseph, Philosophie der Offenbarung, Erster Theil (SW XIII) (Saemmtliche Werke, ed. K. F. A. Schelling, II. Abt., Bd. 3, Stuttgart und Augsburg, Cotta, 1858 (posthume) ; OCR d'un imprime en Fraktur, s long normalise, cesures recousues, pagination [S. n] = SW XIII ; « warum ist ueberhaupt etwas? warum ist nicht nichts? » en (verifie par grep) et) : 
+- Feuerbach, Ludwig, Todesgedanken. 1830, avec Der Schriftsteller und der Mensch et Die Unsterblichkeitsfrage vom Standpunkt der Anthropologie (Saemmtliche Werke, Bd. 3, 3e ed., Leipzig, Wigand, 1876 (1re ed. du Bd. 3 : 1847) : version remaniee pour les SW, PAS le texte anonyme de 1830 (Nuernberg, Stein) a la lettre, que je n'ai pas trouve en ligne ; Fraktur, s long normalise, cesures recousues, [S. n]) : 
+- Feuerbach, Ludwig, Vorläufige Thesen zur Reform der Philosophie (1842, Anekdota 1843) (via zeno.org : Kleine philosophische Schriften (1842-1845), ed. M. G. Lange, Leipzig, Meiner, 1950 (PhB 227), S. 55-79 ; pagination [S. n]) : 
+- Feuerbach, Ludwig, Grundsätze der Philosophie der Zukunft (1843) (via zeno.org : Kleine philosophische Schriften (1842-1845), ed. M. G. Lange, Leipzig, Meiner, 1950, S. 87-171 ; §§ 1-65 ; pagination [S. n]) : 
+- Feuerbach, Ludwig, Über das « Wesen des Christentums » in Beziehung auf den « Einzigen und sein Eigentum » (1845) (via zeno.org : Kleine philosophische Schriften (1842-1845), ed. M. G. Lange, Leipzig, Meiner, 1950, S. 171-197 (texte paru dans Wigands Vierteljahrsschrift, 1845) ; pagination [S. n]) : 
+- Feuerbach, Ludwig, Das Wesen der Religion (§§ 1-55) (Saemmtliche Werke, Bd. 1 (Erlaeuterungen und Ergaenzungen zum Wesen des Christenthums), Leipzig, Wigand, 1846, S. 410-486 (date 1845 en tete ; paru aussi dans Die Epigonen I, 1846) ; Fraktur, s long normalise, cesures recousues, [S. n] ; la version de Projekt Gutenberg-DE (modernisee, decoupee en 4 chapitres titres par un editeur) a ete ecartee) : 
+- Feuerbach, Ludwig, Vorlesungen über das Wesen der Religion. Nebst Zusätzen und Anmerkungen (30 leçons, Heidelberg 1848-1849) (1re ed. = Saemmtliche Werke, Bd. 8, Leipzig, Wigand, 1851 ; Fraktur, s long normalise, cesures recousues, [S. n] ; une ed. Bolin-Jodl en Antiqua (Stuttgart, Frommann, 1908, archive.org 10931540bsb) existe en recours) : 
+- Philon d'Alexandrie (trad. C. D. Yonge), On the Creation (De opificio mundi) (trad. anglaise C. D. Yonge, The Works of Philo Judaeus, London, H. G. Bohn, 1854-1855, t. I, p. 1-52 ; texte saisi par ECW avec la numerotation des paragraphes (1) a (172) de l'edition revue Hendrickson (1993), libelle conforme au Bohn 1854 sur les passages compares (scan archive.org worksphilojudaeu01philuoft)) : 
+- Philon d'Alexandrie (trad. F. H. Colson et G. H. Whitaker), Περὶ τῆς κατὰ Μωυσέα κοσμοποιίας / On the Account of the World's Creation given by Moses (De opificio mundi), grec et anglais (Philo, vol. I, Loeb Classical Library, London, Heinemann, et New York, Putnam, 1929, p. 2-137 environ, avec l'introduction analytique ; texte grec (Cohn-Wendland) et traduction en pages alternees ; OCR du grec correct sur le texte courant mais lignes d'accents parasites, titres courants et numeros de page conserves ; domaine public aux Etats-Unis depuis 2025) : 
+- Justin Martyr (trad. Marcus Dods et George Reith), The First Apology ; The Second Apology (Ante-Nicene Fathers, vol. I, ed. A. Roberts, J. Donaldson et A. C. Coxe, Buffalo, Christian Literature Publishing Co., 1885, texte « revised and edited for New Advent by Kevin Knight » (retouches modernes non signalees) ; titres de chapitres de l'ANF ; texte grec non recupere) : 
+- Origène (trad. Frederick Crombie ; livres VII-VIII W. H. Cairns), Against Celsus (Contra Celsum), livres I a VIII (Ante-Nicene Christian Library, vol. X (1869, livre I a la suite du De principiis) et vol. XXIII (1872), Edinburgh, T. & T. Clark ; fragments de Celse entre guillemets dans la reponse d'Origene ; notes placees apres chaque chapitre ; analyse des contenus et index du vol. XXIII inclus) : 
+- Augustin (Augustinus), Confessiones, liber VII (texte latin de J. J. O'Donnell, Augustine: Confessions, Oxford, Clarendon Press, 1992 (site d'O'Donnell), numerotation livre.chapitre.paragraphe ; « platonicorum libros ex graeca lingua in latinam versos » en 7.9.13, « lectis platonicorum illis libris » en 7.20.26 (verifie par grep)) : 
+- Augustin (Augustinus), De civitate Dei, liber VIII (texte latin, edition source non precisee par le site ; chapitres [I] a [XXVII]) : 
+- Porphyre (trad. Marie-Nicolas Bouillet), Vie de Plotin et ordre de ses livres (trad. M.-N. Bouillet, Les Enneades de Plotin, t. I, Paris, Hachette, 1857, avec les notes de Bouillet en fin de texte ; chapitres I a XXIV (numerotation de Bouillet) ; absente de (qui commence a I 1) ; recupere par index.php?action=render) : 
+- Schweitzer, Albert, Von Reimarus zu Wrede. Eine Geschichte der Leben-Jesu-Forschung (1re ed., Tuebingen, J. C. B. Mohr (Paul Siebeck), 1906 ; OCR d'un imprime en Fraktur, s long normalise, cesures recousues ; confusions f/s et autres fautes d'OCR frequentes (« fonfequente » pour « konsequente »), a recouper avant toute citation) : 
+- Schweitzer, Albert (trad. W. Montgomery), The Quest of the Historical Jesus. A Critical Study of its Progress from Reimarus to Wrede (trad. anglaise W. Montgomery, preface de F. C. Burkitt, 2e ed. anglaise, London, A. & C. Black, 1911 (1re ed. 1910) ; traduction de l'edition allemande de 1906) : 
+- Drews, Arthur, Die Christusmythe (Jena, Eugen Diederichs, 1909 (date de la notice archive.org ; preface datee « Karlsruhe im Maerz 1909 », page de titre illisible) : 1re ed. probable ; OCR en Antiqua de bonne qualite) : 
+- Drews, Arthur, Die Christusmythe, verbesserte und erweiterte Ausgabe (Jena, Eugen Diederichs, 1910, « verbesserte und erweiterte Ausgabe, 3. bis 5. Tausend » (exemplaire Duke University) ; OCR correcte, page de titre et ex-libris bruites) : 
+- Drews, Arthur (trad. C. Delisle Burns), The Christ Myth (trad. anglaise C. Delisle Burns sur la 3e ed. allemande revue et augmentee, London, T. Fisher Unwin, sans date sur la page de titre (prefaces datees janvier et mars 1910)) : 
+- Bousset, Wilhelm, Kyrios Christos. Geschichte des Christusglaubens von den Anfängen des Christentums bis Irenaeus (1re ed., Goettingen, Vandenhoeck & Ruprecht, 1913 (FRLANT, N. F. 4) ; OCR d'un imprime en Fraktur, s long normalise, cesures recousues ; fautes d'OCR frequentes (f/s, j/s, D/V), grec souvent illisible ; deux autres scans (kyrioschristosge00bous, kyrioschristosg00bousgoog) ecartes, OCR inutilisable) : 
+- Tylor, Edward B., Primitive Culture. Researches into the Development of Mythology, Philosophy, Religion, Language, Art, and Custom, vol. I et II (London, John Murray, 6e ed., 1920, 2 vol. concatenes (1re ed. 1871 ; texte des editions revues) ; animisme : ch. XI (fin du vol. I) a XVII (vol. II)) : 
+- Frazer, James George, The Golden Bough. A Study in Magic and Religion (edition abregee) (edition abregee en un volume, London, Macmillan, 1922 (preface datee juin 1922) ; sans les notes de l'edition en 12 vol. ; 69 chapitres) : 
+- Malinowski, Bronisław, Magic, Science and Religion (in J. Needham (ed.), Science, Religion and Reality, New York, Macmillan, copyright 1925, reimpr. 1928, p. 19-84, avec la bibliographie de l'auteur ; essai seul extrait du volume ; OCR propre, espaces normalises et cesures recousues ; domaine public aux Etats-Unis (1925) et dans l'UE (auteur mort en 1942)) : 
+- Renan, Ernest, Les Apôtres (Histoire des origines du christianisme, II) (Paris, Michel Levy freres, 1866 (1re ed.), notes en fin de texte) : 
+- Renan, Ernest, Saint Paul (Histoire des origines du christianisme, III) (fac-simile de la 14e ed., Paris, Calmann Levy, 1899 (et non la 1re ed., Michel Levy, 1869, que l'en-tete Wikisource indique), notes en fin de texte) : 
+
+
+
+Les encadrés « En littérature » citent aussi les textes suivants. Ils ont été récupérés et classés de la même manière. Certains dossiers viennent de zeno.org et de Projekt Gutenberg-DE. Les autres viennent de Project Gutenberg et de Wikisource :
+
+- Eliot, George, Adam Bede (non precisee) : 
+- Pope, Alexander, An Essay on Man; Moral Essays and Satires (non precisee) : 
+- Flaubert, Gustave, Antigonè (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Archaïscher Torso Apollos (voir l'en-tete du texte) : 
+- Melville, Herman, Billy Budd : $b and other prose pieces (non precisee) : 
+- Flaubert, Gustave, Bouvard et Pécuchet (non precisee) : 
+- Flaubert, Gustave, Brief an den Vater (voir l'en-tete du texte) : 
+- Mann, Thomas, Buddenbrooks: Verfall einer Familie (non precisee) : 
+- Flaubert, Gustave, Canti (Leopardi - Donati)/XXIII. Canto notturno di un pastore errante dell'Asia (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Canti (Leopardi - Donati)/XXXIV. La ginestra (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Carmina (Horatius)/Liber I/Carmen XI (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Carmina (Horatius)/Liber I/Carmen XXXIV (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Così è (se vi pare)/Atto Terzo (voir l'en-tete du texte) : 
+- Büchner, Georg, Dantons Tod (non precisee) : 
+- Flaubert, Gustave, Das Göttliche (voir l'en-tete du texte) : 
+- Rilke, Rainer Maria, Das Stunden-Buch (non precisee) : 
+- Flaubert, Gustave, De l’Allemagne/Seconde partie/XXVIII (voir l'en-tete du texte) : 
+- Wilde, Oscar, De Profundis (non precisee) : 
+- Flaubert, Gustave, Der Gevatter Tod (1857) (voir l'en-tete du texte) : 
+- Kafka, Franz, Der Prozess: Roman (non precisee) : 
+- Mann, Thomas, Der Zauberberg. Erster Band (non precisee) : 
+- Mann, Thomas, Der Zauberberg. Zweiter Band (non precisee) : 
+- Heine, Heinrich, Deutschland. Ein Wintermärchen (non precisee) : 
+- Flaubert, Gustave, Dialogue entre un prêtre et un moribond (voir l'en-tete du texte) : 
+- Lessing, Gotthold Ephraim, Die Erziehung des Menschengeschlechts (non precisee) : 
+- Flaubert, Gustave, Divina Commedia/Inferno/Canto IV (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Divina Commedia/Paradiso/Canto XXXIII (voir l'en-tete du texte) : 
+- Proust, Marcel, Du côté de chez Swann (texte francais, edition Gutenberg) : 
+- Kafka, Franz, Ein Landarzt: Kleine Erzählungen (non precisee) : 
+- Flaubert, Gustave, Entretien d’un philosophe avec la maréchale de *** (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Fables de La Fontaine (éd. Barbin)/2/Le Chartier embourbé (voir l'en-tete du texte) : 
+- Turgenev, Ivan Sergeevich, Fathers and Children (non precisee) : 
+- Goethe, Johann Wolfgang von, Faust: Der Tragödie erster Teil (non precisee) : 
+- Shelley, Mary Wollstonecraft, Frankenstein; or, the modern prometheus (non precisee) : 
+- Zola, Émile, Germinal (non precisee) : 
+- Goethe, Johann Wolfgang von, Aus meinem Leben. Dichtung und Wahrheit, Dritter Teil, Vierzehntes Buch (via zeno.org (Berliner Ausgabe, Aufbau, 1960 ss., d'apres l'en-tete du site, a verifier) ; pagination [S. n]) : 
+- Flaubert, Gustave, Gränzen der Menschheit (1789) (voir l'en-tete du texte) : 
+- Swift, Jonathan, Gulliver's Travels into Several Remote Nations of the World (non precisee) : 
+- inconnu, gutenberg-24850 (non precisee) : 
+- Flaubert, Gustave, Hälfte des Lebens (voir l'en-tete du texte) : 
+- Shakespeare, William, Hamlet (non precisee) : 
+- Dickens, Charles, Hard Times (non precisee) : 
+- Conrad, Joseph, Heart of Darkness (non precisee) : 
+- Hölderlin, Friedrich, Hyperion oder der Eremit in Griechenland, Erster Band, Erstes Buch (via zeno.org (edition source a lire dans l'en-tete du site)) : 
+- Hamsun, Knut, Hunger (non precisee) : 
+- Flaubert, Gustave, Iliade/Rhapsodie XXIV (voir l'en-tete du texte) : 
+- Tennyson, Alfred Tennyson, Baron, In memoriam (non precisee) : 
+- James, William, The Varieties of Religious Experience (Longmans, Green and Co, New York, 1917 (Gifford Lectures 1901-1902)) : 
+- Jean Paul, Siebenkäs (dont « Erstes Blumenstück: Rede des toten Christus vom Weltgebäude herab, daß kein Gott sei ») (texte de 1796-1797 d'apres l'edition en ligne (edition source a lire dans l'en-tete) ; pages de chapitres concatenees) : 
+- Flaubert, Gustave, Journal d’un curé de campagne/3 (voir l'en-tete du texte) : 
+- Kafka, Franz, Das Schloß (edition en ligne (source a lire dans l'en-tete) ; pages de chapitres concatenees, avec repetitions) : 
+- Kafka, Franz, In der Strafkolonie (edition en ligne (source a lire dans l'en-tete) ; pages de chapitres concatenees, avec repetitions) : 
+- Kipling, Rudyard, Kim (non precisee) : 
+- Shakespeare, William, King Lear (non precisee) : 
+- Shakespeare, William, King Richard II (non precisee) : 
+- Kleist, Heinrich von, Michael Kohlhaas (texte de 1810 d'apres l'edition en ligne (edition source a lire dans l'en-tete) ; pages de chapitres concatenees, certaines en double) : 
+- Flaubert, Gustave, La Légende des siècles/La Conscience (voir l'en-tete du texte) : 
+- Flaubert, Gustave, La Légende des siècles/Le Satyre (voir l'en-tete du texte) : 
+- Flaubert, Gustave, La Mort d’Ivan Ilitch/12 (voir l'en-tete du texte) : 
+- Proust, Marcel, La Prisonnière (Sodome et Gomorrhe III) (originale NRF) : 
+- Flaubert, Gustave, La Soirée avec monsieur Teste (voir l'en-tete du texte) : 
+- Flaubert, Gustave, La Tentation de saint Antoine - Éd. L. Conard (1910)/La Tentation de saint Antoine/IV (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Le Colporteur (recueil)/Auprès d’un mort (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Le Porche du mystère de la deuxième vertu (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Le Rouge et le Noir/Texte entier (voir l'en-tete du texte) : 
+- Proust, Marcel, Le temps retrouvé Tome 2 (de 2) : $b À la recherche du temps perdu vol.VII (originale NRF, copyright Gallimard 1927) : 
+- Whitman, Walt, Leaves of Grass (non precisee) : 
+- Flaubert, Gustave, Les Animaux malades de la peste (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Les Bakkhantes (Euripide, Leconte de Lisle) (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Les Chimères/Le Christ aux Oliviers (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Les Contemplations/Ce que dit la bouche d’ombre (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Les Destinées (recueil)/Le Mont des Oliviers (voir l'en-tete du texte) : 
+- France, Anatole, Les Dieux ont soif (non precisee) : 
+- Flaubert, Gustave, Les Fleurs du mal (1861)/Correspondances (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Les Fleurs du mal (1861)/Les Litanies de Satan (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Les Fleurs du mal (1868)/Le Gouffre (voir l'en-tete du texte) : 
+- Hugo, Victor, Les misérables Tome I: Fantine (non precisee) : 
+- Hugo, Victor, Les misérables Tome V: Jean Valjean (non precisee) : 
+- Flaubert, Gustave, Les Nuées (trad. Eugène Talbot) (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Lettre sur les aveugles à l’usage de ceux qui voient (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Lettres persanes/Lettre 12 (voir l'en-tete du texte) : 
+- Flaubert, Gustave, L’Étui de nacre/Le Procurateur de Judée (voir l'en-tete du texte) : 
+- Flaubert, Gustave, L’Idiot/II/Chapitre 4 (voir l'en-tete du texte) : 
+- Flaubert, Gustave, L’Idiot/III/Chapitre 6 (voir l'en-tete du texte) : 
+- Flaubert, Gustave, L’Immoraliste/Texte entier (voir l'en-tete du texte) : 
+- Flaubert, Gustave, L’Ingénieux Hidalgo Don Quichotte de la Manche/Deuxième partie/Chapitre LXXIV (voir l'en-tete du texte) : 
+- Conrad, Joseph, Lord Jim (non precisee) : 
+- Flaubert, Gustave, Lyrical Ballads (1798)/Lines written a few miles above Tintern Abbey (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Madame Bovary (non precisee) : 
+- Flaubert, Gustave, Maître et serviteur (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Manfred, a dramatic poem/Act 3 Scene 4 (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Metamorphoses (Ovidius)/Liber I (voir l'en-tete du texte) : 
+- Eliot, George, Middlemarch (non precisee) : 
+- Melville, Herman, Moby Dick; Or, The Whale (non precisee) : 
+- Lessing, Gotthold Ephraim, Nathan der Weise: Ein Dramatisches Gedicht, in fünf Aufzügen (non precisee) : 
+- Flaubert, Gustave, Noche oscura (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Nouvelles (1836-1842)/Le Portrait/I (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Pastiches et Mélanges/Texte entier (voir l'en-tete du texte) : 
+- Pessoa, Fernando (Alberto Caeiro), O Guardador de Rebanhos, V (« Há metafísica bastante em não pensar em nada ») (texte portugais, Wikisource pt (edition source non precisee)) : 
+- Flaubert, Gustave, Phèdre (Racine), Didot, 1854/Acte I (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Poems and Ballads (Swinburne)/Hymn to Proserpine (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Polyeucte/Édition Masson, 1887 (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Prometheus (Gedicht, späte Fassung) (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Prometheus (Kafka) (voir l'en-tete du texte) : 
+- Hugo, Victor, Quatrevingt-Treize (non precisee) : 
+- Flaubert, Gustave, Queen Mab/Canto VII (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Queen Mab/Notes (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Religions et Religion/Conclusion (voir l'en-tete du texte) : 
+- Flaubert, Gustave, René (voir l'en-tete du texte) : 
+- Rilke, Rainer Maria, Duineser Elegien, Die erste Elegie (via zeno.org (edition source a lire dans l'en-tete du site)) : 
+- Angelus Silesius, Cherubinischer Wandersmann, I, 8 et I, 289 (ed. zeno.org (Sämtliche poetische Werke, Munich, Hanser, 1952 ?) ; deux distiques seulement) : 
+- Blake, William, Songs of Innocence and of Experience (non precisee) : 
+- France, Anatole, Sur la pierre blanche (non precisee) : 
+- Flaubert, Gustave, The Collected Works of Henrik Ibsen/Volume 3/Brand/Act 5 (voir l'en-tete du texte) : 
+- Tagore, Rabindranath, The King of the Dark Chamber (non precisee) : 
+- Defoe, Daniel, The Life and Adventures of Robinson Crusoe (non precisee) : 
+- Sterne, Laurence, The life and opinions of Tristram Shandy, gentleman (non precisee) : 
+- Wilde, Oscar, The Picture of Dorian Gray (non precisee) : 
+- Flaubert, Gustave, The poems of George Eliot (Crowell, 1884)/Oh, may I join the Choir invisible (voir l'en-tete du texte) : 
+- Flaubert, Gustave, The poetical works of Matthew Arnold/Dover Beach (voir l'en-tete du texte) : 
+- Omar Khayyam, The Rubaiyat of Omar Khayyam (non precisee) : 
+- Shakespeare, William, The Tempest (non precisee) : 
+- Byron, George Gordon Byron, Baron, The Works of Lord Byron. Vol. 5: Poetry (non precisee) : 
+- Carroll, Lewis, Through the Looking-Glass (non precisee) : 
+- Flaubert, Gustave, Trois Contes (Flaubert)/Un Cœur simple (voir l'en-tete du texte) : 
+- Flaubert, Gustave, Œuvres (Rimbaud)/Derniers vers/Fêtes de la patience/L’Éternité (voir l'en-tete du texte) : 
+- Thoreau, Henry David, Walden, and On The Duty Of Civil Disobedience (non precisee) : 
+- Tolstoy, Leo, graf, War and Peace (non precisee) : 
+- Flaubert, Gustave, Zadig/Texte entier (voir l'en-tete du texte) :

@@ -28,11 +28,19 @@ RESUME = "L'essai en dix minutes"
 # Le français est la source et l'identité du site : ids, portraits, dates de tri, écrivains, artistes se résolvent
 # toujours par la structure française. Une traduction (i18n/<langue>/) ne fournit que l'affichage ; le build
 # l'aligne par position sur la source française et la publie dans le dossier <langue>/ avec les mêmes fichiers.
-LANGUES = (("fr", "Français", "fr_FR"), ("en", "English", "en_GB"), ("ru", "Русский", "ru_RU"),
+LANGUES = (("fr", "Français", "fr_FR"), ("facile", "Facile", "fr_FR"), ("en", "English", "en_GB"), ("ru", "Русский", "ru_RU"),
            ("de", "Deutsch", "de_DE"), ("es", "Español", "es_ES"))
+# « facile » n'est pas une langue mais une version du français : l'essai entier en phrases simples
+# (i18n/guide-facile.md), publiée dans facile/ comme une traduction, en <html lang="fr">.
+LANGUES_HTML = {"facile": "fr"}
 LANG = "fr"
 LANGUES_CONSTRUITES = ["fr"]
 I18N = {}
+
+
+def code_html(l):
+    """Code de langue des attributs lang et hreflang (le dossier facile/ est du français)."""
+    return LANGUES_HTML.get(l, l)
 
 
 def dossier_langue(l):
@@ -116,8 +124,7 @@ def localiser(h):
     if LANG == "fr":
         return h
     h = re.sub(r'((?:src|href|data-grand)=")(?=(?:css|js|images)/|favicon\.svg|apple-touch-icon\.png)', r"\1../", h)
-    code = next(c for c, _, _ in LANGUES if c == LANG)
-    h = h.replace('<html lang="fr">', '<html lang="%s" data-racine="../">' % code, 1)
+    h = h.replace('<html lang="fr">', '<html lang="%s" data-racine="../">' % code_html(LANG), 1)
     h = h.replace('content="fr_FR"', 'content="%s"' % next(loc for c, _, loc in LANGUES if c == LANG))
     morceaux = re.split(r"(<[^>]+>)", h)
     dans_script = False
@@ -167,6 +174,7 @@ def bandes(couleurs, verticales=False, poids=None):
 
 DRAPEAUX = {
     "fr": bandes(["#002654", "#fff", "#ce1126"], verticales=True),
+    "facile": bandes(["#002654", "#fff", "#ce1126"], verticales=True),
     "ru": bandes(["#fff", "#0039a6", "#d52b1e"]),
     "de": bandes(["#000", "#dd0000", "#ffce00"]),
     "es": bandes(["#aa151b", "#f1bf00", "#aa151b"], poids=[1, 2, 1]),
@@ -190,16 +198,17 @@ def selecteur_langues(page):
         if code in LANGUES_CONSTRUITES:
             href = ("" if LANG == "fr" else "../") + ("" if code == "fr" else code + "/") + page
             liens.append('<a class="langue" href="%s" hreflang="%s" lang="%s" data-langue="%s"%s>%s<span>%s</span></a>' % (
-                href, code, code, code, ' aria-current="true"' if code == LANG else "", drapeau(code), nom))
+                href, code_html(code), code_html(code), code, ' aria-current="true"' if code == LANG else "", drapeau(code), nom))
     return ('<div class="langues"><button class="icon-btn langue-btn" type="button" aria-haspopup="true" aria-expanded="false" '
-            'aria-label="Changer de langue">%s</button><div class="langues-menu" hidden>%s</div></div>') % (drapeau(LANG), "".join(liens))
+            'aria-label="Changer de langue">%s%s</button><div class="langues-menu" hidden>%s</div></div>') % (
+                drapeau(LANG), '<span class="langue-tag">Facile</span>' if LANG == "facile" else "", "".join(liens))
 
 
 def hreflangs(page):
     """Balises <link rel="alternate" hreflang> de la page dans toutes les langues construites."""
     out = []
     for code, _, _ in LANGUES:
-        if code in LANGUES_CONSTRUITES and len(LANGUES_CONSTRUITES) > 1:
+        if code in LANGUES_CONSTRUITES and len(LANGUES_CONSTRUITES) > 1 and code not in LANGUES_HTML:
             out.append('<link rel="alternate" hreflang="%s" href="%s%s%s">' % (code, BASE_URL, "" if code == "fr" else code + "/", page))
     if out:
         out.append('<link rel="alternate" hreflang="x-default" href="%s%s">' % (BASE_URL, page))
@@ -1411,7 +1420,7 @@ def construire(chemin, version=None, fr_parties=None):
             del LETTRES_BUF[:]
             corps_sec = rendre_blocs(sec["lignes"])
             buf = list(LETTRES_BUF)
-            if fr_parties is not parties and len(corps_sec) != len(rendre_blocs(sec_fr["lignes"])):
+            if fr_parties is not parties and LANG not in LANGUES_HTML and len(corps_sec) != len(rendre_blocs(sec_fr["lignes"])):
                 print("  traduction %s, %s : nombre de blocs différent du français" % (LANG, sid))
             if buf:
                 lettres.append({"id": sid, "nom": nom if dates else sec["titre"], "oeuvres": buf})
